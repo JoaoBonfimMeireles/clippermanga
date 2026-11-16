@@ -442,7 +442,13 @@ export async function enforceProject(projectId: string, ctx?: JobCtx): Promise<s
       if (!pg || v.rotate || v.fit === 'cover') { outViews.push(v); continue; }
       const r = await enforceFocus(path.join(dir, pg.file), pg, v.focus, v);
       if (r.changed) any = true;
-      outViews.push({ ...v, focus: r.focus, stretch: r.stretch, zoom: Math.max(1, v.zoom ?? 1) });
+      // recorte com o formato da tela a menos de 2% (o encaixe arredonda em pixels e sobra 1,79 em vez de 1,78): em
+      // "contain" ficava com 3 px de faixa borrada em cima e embaixo ("solto no meio"). Em "cover" preenche a tela e
+      // perde menos de 1% nas laterais.
+      const px = cropPx(r.focus, pg.width, pg.height);
+      const nearScreen = p.format === 'horizontal' && Math.abs((px.w * r.stretch) / px.h / (16 / 9) - 1) < 0.02;
+      if (nearScreen) any = true; // aqui v.fit nunca é "cover" (esses saem antes, sem mexer)
+      outViews.push({ ...v, focus: r.focus, stretch: r.stretch, zoom: Math.max(1, v.zoom ?? 1), ...(nearScreen ? { fit: 'cover' as const } : {}) });
     }
     if (any) fixed.set(s.id, outViews);
   });
