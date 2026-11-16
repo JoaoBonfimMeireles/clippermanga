@@ -215,25 +215,39 @@ Ordem por ganho ÷ (risco × esforço). ★ = muda comportamento visível.
 Não entram: voz/TTS, publicação, `../videos`, política de esticar (item 15), edição em paralelo por capítulo (25),
 divisão do `video-editor.tsx` (31).
 
-## 7. O que foi feito (estado em 16/11/2026, trabalho interrompido pelo limite de uso)
+## 7. O que foi feito
 
 | Commit | Lote | Conteúdo |
 |---|---|---|
 | `45667ed` | 1 | Telas mandam só as partes alteradas e o servidor mescla (`lib/shots-merge.ts`); placar ignora lotes do app; histórico com critério e etapa; `scripts/selftest.ts` |
 | `98bb834` | 2 ★ | Habilidades reescritas e ordenadas; 18 arquivos movidos para `projetos/_skills/_arquivo/` (nada apagado; ver `LEIA.md` lá) |
 | `2d91b75` | 3 ★ | Prompts do Leitor, edição, estilo, gestor, aprendizado e perfis; regras fixas do job no `system` (cache) |
+| `8d25c2d` | – | Conserto: o commit `bad862c` tinha sobrescrito `lib/pool.ts` (usado por render, importação e voz); restaurado |
+| `607316f` | 4 | Estilo com 5 páginas ao mesmo tempo, validação com 4 lotes ao mesmo tempo |
+| `4cca81a` | 4 | Piso de tamanho com memória (40 partes: 5,1 s na 1ª rodada, 0,05 s na 2ª, resultado idêntico) e 6 partes ao mesmo tempo; auditoria do gestor uma vez por lote |
+| (este) | 5 | `scripts/crop-report.ts` com os indicadores novos; README; `.env.example` |
 
-Placar recalculado com o critério novo: `solo-swordmaster` Cortador 92 (139 partes corrigidas à mão), não 41.
+★ = muda prompts ou habilidades. Para desfazer um lote: `git revert <commit>`; os lotes 2 e 3 revertem um a um.
 
-Para desfazer um lote: `git revert <commit>`. Os lotes 2 e 3 mexem em prompts/habilidades e podem ser revertidos um a um.
+Números depois das mudanças (recalculados nos dados reais, sem IA):
 
-## 8. Pendente (não feito)
+- Placar com o critério novo: `solo-swordmaster` Cortador 92 (139 partes corrigidas à mão), não 41.
+- Habilidades do Cortador no prompt: 8.450 → 1.169 caracteres. Prompt fixo da edição: 10,3 mil → 6 mil caracteres.
+- Indicador "apertado" (a sua dor 3): `Mansion` 77%, `Tomb Raider King` 30%. É a linha de base para comparar o próximo lote.
 
-- **Lote 4 (velocidade/custo)**: só `lib/pool.ts` foi criado e ainda não é usado. Falta: estilo (`restyle.ts`) e validação
-  (`shot-check.ts`) em paralelo, memória do piso (`crop-enforce.ts`), auditoria do gestor só depois da validação.
-- **Lote 5**: relatório de balão/recorte apertado em `scripts/crop-report.ts`, limpeza de código morto, README.
-- Itens 8, 15, 22, 23, 25, 27 e 31 da seção 4.
-- **Nada disto foi testado com IA nem no navegador**: só `npm run typecheck` e `scripts/selftest.ts`.
+O que NÃO dá para afirmar: quanto caiu o tempo e o consumo do Claude. Estilo e validação em paralelo e o cache das
+regras devem reduzir os dois, mas isso só se mede rodando um lote, e nenhum job de IA foi rodado.
+
+## 8. Pendente
+
+- **Nada foi testado com IA nem no navegador**: só `npm run typecheck`, `scripts/selftest.ts` e leituras dos dados reais.
+- Medir balão DENTRO do recorte (a dor 1). A medida nas bordas dá sempre 0% porque o app já apara; precisa expor a
+  máscara de "não arte" de `lib/crop-enforce.ts`.
+- Item 8 (perfil de corte não aprende quando as partes do teste são recriadas), 15 (esticar), 22 (raciocínio do Haiku),
+  23 (`MANGA_FORCE_CLAUDE`), 25 (edição por capítulo em paralelo), 27 (estatística por modelo da OmniRoute),
+  28-29 (limpeza de código morto), 31 (dividir `video-editor.tsx`).
+- "Soltos no meio" deveria ser zero e não é: 58 no `Mansion`, 26 no `Tomb Raider King`. Não investiguei se são ajustes
+  seus à mão ou recortes mais largos que 16:9 que o piso deixou passar.
 
 ## 9. Como validar (1 capítulo)
 
