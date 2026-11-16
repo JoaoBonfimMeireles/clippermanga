@@ -1,0 +1,2 @@
+# Tamanho mínimo e máximo na tela
+PISO ABSOLUTO: o recorte nítido ocupa pelo menos 40% da tela (em 16:9, altura toda e 40% da largura: o retângulo azul que o usuário marcou), nunca menos, e mais sempre que der. Quadro alto: escolha o detalhe mais importante ou a cena de maior impacto (o golpe, o rosto, a criatura) como uma janela de altura até 1,6x a largura, não a tira inteira. Pode cortar perna, parte do poder disparado e balão que não está na cena; nunca corte cabeça ou tronco de forma brusca. Esticar na horizontal até 1,4x. Ampliação máxima 1,5x.

@@ -1,0 +1,17 @@
+.next/
+*.tsbuildinfo
+.env
+.env.local
+amostras-voz/
+tools/
+projetos/*
+!projetos/_skills/
+!projetos/_perfis/
+!projetos/_aprendizado.json
+!projetos/_gestao.json
+!projetos/_revisoes.json
+voice-samples/
+thumb-tests/
+*.mp4
+*.wav
+*.mp3

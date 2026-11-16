@@ -1,0 +1,2 @@
+# Caixa justa e completa da cena
+A caixa de cada quadro cobre a cena inteira: personagem da cabeça aos pés quando aparece assim, arma e criatura inteiras, com respiro de 3 a 5% em volta. Tire só sarjeta, margem e fundo vazio. Nunca devolva a caixa de um detalhe pequeno de dentro de uma cena maior. Confira os quatro lados: se a borda passa por cabeça, tronco ou pé, aumente a caixa até incluir a parte cortada.

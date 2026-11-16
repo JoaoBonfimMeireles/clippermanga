@@ -1,0 +1,3 @@
+# Fonte pequena: medir a ampliação antes de entregar
+Antes de entregar, calcule a ampliação. Se passar de 1,5x, primeiro amplie a área recortada (quadro inteiro, mais contexto) e depois baixe a ocupação até no mínimo 30%. Se mesmo a 30% passar de 1,8x, marque 'fonte em baixa resolução' para revisão, em vez de entregar a 100% da tela.
+Por quê: Todas as 14 partes saíram borradas. Várias estavam a 98–100% da tela com 2,5–3,5x de ampliação, e outras perto de 40–51% ainda passavam de 2,3x. A habilidade 'Baixar a ocupação antes de ampliar' não está sendo aplicada, e falta um limite numérico e um caminho de saída quando a fonte é pequena. Não é o teto de 40% que foi rejeitado: o piso continua sendo 30–40%, e o que se pede é medir e sinalizar.

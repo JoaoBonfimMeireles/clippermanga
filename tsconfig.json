@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "ES2023"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [{ "name": "next" }],
+    // Pacotes e dependências vêm do monorepo ../videos (sem symlinks: o disco é exFAT).
+    "typeRoots": ["../videos/node_modules/@types"],
+    "types": ["node", "react", "react-dom"],
+    "paths": {
+      "@/*": ["./*"],
+      "@clipper/shared": ["../videos/packages/shared/src/index.ts"],
+      "@clipper/shared/server": ["../videos/packages/shared/src/server.ts"],
+      "@clipper/ai-providers": ["../videos/packages/ai-providers/src/index.ts"],
+      "@clipper/video-processing": ["../videos/packages/video-processing/src/index.ts"],
+      "@clipper/editing-planner": ["../videos/packages/editing-planner/src/index.ts"],
+      "@clipper/clip-selection": ["../videos/packages/clip-selection/src/index.ts"],
+      "*": ["../videos/node_modules/@types/*", "../videos/node_modules/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

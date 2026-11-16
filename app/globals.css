@@ -1,0 +1,31 @@
+/* Só varre apps/manga (o Next roda da raiz do repositório; sem isto o Tailwind olharia data/). */
+@import 'tailwindcss' source('..');
+
+:root {
+  --background: oklch(0.145 0.01 265);
+  --foreground: oklch(0.97 0 0);
+  --card: oklch(0.19 0.012 265);
+  --muted: oklch(0.25 0.012 265);
+  --muted-foreground: oklch(0.7 0.015 265);
+  --border: oklch(0.3 0.012 265);
+  --primary: oklch(0.75 0.16 60);
+  --primary-foreground: oklch(0.18 0.02 60);
+  --destructive: oklch(0.64 0.21 25);
+  color-scheme: dark;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-destructive: var(--destructive);
+}
+* { border-color: var(--border); }
+body { background: var(--background); color: var(--foreground); }
+.btn { @apply inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm hover:bg-muted disabled:opacity-50; }
+.btn-primary { @apply inline-flex items-center gap-1.5 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:opacity-90 disabled:opacity-50; }
+.field { @apply w-full rounded-md border bg-background px-2 py-1.5 text-sm outline-none focus:border-primary; }
