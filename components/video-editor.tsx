@@ -5,6 +5,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { JobInfo, Shot, ShotView, StudioProject } from '@/lib/types';
 import { MOTIONS, jobEta, quotaFromLogs, quotaText } from '@/lib/types';
+import { baseOf, shotsDelta, type ShotsBase } from '@/lib/shots-merge';
 import { FocusEditor } from './focus-editor';
 import { CropThumb, DoubtsModal, useQueuedDoubts } from './doubts-modal';
 import { DictateButton } from './learn-helpers';
@@ -224,9 +225,14 @@ export function VideoEditor({ id }: { id: string }) {
   const lastPush = useRef(0);
   const deleteRef = useRef<() => void>(() => {});
 
+  // retrato das partes como o servidor as conhece: o salvamento manda só o que mudou em relação a ele (lib/shots-merge.ts)
+  const base = useRef<ShotsBase | null>(null);
   const load = useCallback(async () => {
     const r = await fetch(`/api/projects/${id}`);
-    if (r.ok) setP(await r.json());
+    if (!r.ok) return;
+    const j = (await r.json()) as StudioProject;
+    base.current = baseOf(j.shots ?? []);
+    setP(j);
   }, [id]);
   useEffect(() => {
     load();
@@ -237,7 +243,8 @@ export function VideoEditor({ id }: { id: string }) {
   const save = useCallback(async (cur: StudioProject) => {
     if (restylingRef.current) return; // a IA está mexendo nos recortes: não sobrescreve
     dirty.current = false;
-    await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ shots: cur.shots, cutWords: cur.cutWords, endSilence: cur.endSilence ?? 3, endTalkPad: cur.endTalkPad ?? 0.8 }) });
+    const r = await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ shots: cur.shots, ...shotsDelta(base.current, cur.shots), cutWords: cur.cutWords, endSilence: cur.endSilence ?? 3, endTalkPad: cur.endTalkPad ?? 0.8 }) });
+    if (r.ok) base.current = baseOf(cur.shots);
   }, [id]);
   useEffect(() => {
     if (!p || !dirty.current) return;
@@ -509,8 +516,14 @@ export function VideoEditor({ id }: { id: string }) {
     return () => window.removeEventListener('keydown', k);
   }, [undo, redo]);
 
+  // as respostas das dúvidas já foram gravadas pelo modal: essas partes passam a ser "o que o servidor conhece"
+  const syncBase = (shots: Shot[]) => {
+    const b = base.current;
+    if (b && p) shots.forEach((s, i) => s !== p.shots[i] && b.set(s.id, JSON.stringify(s)));
+  };
   const dq = useQueuedDoubts(p, running, (shots, render) => {
     if (!p) return;
+    syncBase(shots);
     history.current = [...history.current.slice(-99), p.shots];
     dirty.current = false;
     setP({ ...p, shots, doubts: [] });
@@ -791,6 +804,7 @@ export function VideoEditor({ id }: { id: string }) {
           });
           setDoubtsOpen(false); keepAdjusting.current = part - 1 !== sel; setAdjusting(true); setTab('parte'); goTo(part - 1); setJumpTick((n) => n + 1); }}
         onDone={(shots, render) => {
+          syncBase(shots);
           history.current = [...history.current.slice(-99), p.shots];
           dirty.current = false;
           setP({ ...p, shots, doubts: [] });

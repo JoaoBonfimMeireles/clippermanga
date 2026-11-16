@@ -4,6 +4,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useStickBottom } from './use-stick-bottom';
 import type { JobInfo, StudioProject } from '@/lib/types';
+import { baseOf, shotsDelta, type ShotsBase } from '@/lib/shots-merge';
 import { pageUrl } from './preview';
 import { PublishPanel } from './publish-panel';
 import { ShortsPanel } from './shorts-panel';
@@ -23,7 +24,13 @@ export function FinalStudio({ id }: { id: string }) {
   const video = useRef<HTMLVideoElement>(null);
   const dirty = useRef(false);
 
-  const load = useCallback(async () => setP(await (await fetch(`/api/projects/${id}`)).json()), [id]);
+  // retrato das partes como o servidor as conhece: o salvamento manda só o que mudou em relação a ele (lib/shots-merge.ts)
+  const base = useRef<ShotsBase | null>(null);
+  const load = useCallback(async () => {
+    const j = (await (await fetch(`/api/projects/${id}`)).json()) as StudioProject;
+    base.current = baseOf(j.shots ?? []);
+    setP(j);
+  }, [id]);
   useEffect(() => {
     load();
     fetch(`/api/projects/${id}/jobs`).then((r) => (r.ok ? r.json() : [])).then(setJobs).catch(() => {});
@@ -31,7 +38,8 @@ export function FinalStudio({ id }: { id: string }) {
 
   const save = useCallback(async (cur: StudioProject) => {
     dirty.current = false;
-    await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ shots: cur.shots, cutWords: cur.cutWords }) });
+    const r = await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ shots: cur.shots, ...shotsDelta(base.current, cur.shots), cutWords: cur.cutWords }) });
+    if (r.ok) base.current = baseOf(cur.shots);
   }, [id]);
   useEffect(() => {
     if (!p || !dirty.current) return;

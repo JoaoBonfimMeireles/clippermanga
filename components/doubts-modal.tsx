@@ -62,7 +62,9 @@ export async function applyDoubts(p: StudioProject, ds: Doubt[], manual: (d: Dou
     const nx = out[j];
     if (nx) out[i] = { ...p.shots[i], pageId: nx.pageId, focus: nx.focus, stretch: nx.stretch, zoom: nx.zoom, rotate: nx.rotate };
   }
-  await fetch(`/api/projects/${p.id}`, { method: 'PUT', body: JSON.stringify({ shots: out, doubts: [], doubtAnswers: ds.map((d) => ({ ...d, manual: manual(d) })) }) });
+  // só as partes que as respostas mudaram: o resto fica como está no servidor (um job pode ter mexido depois que a tela carregou)
+  const changedIds = out.filter((s, i) => s !== p.shots[i]).map((s) => s.id);
+  await fetch(`/api/projects/${p.id}`, { method: 'PUT', body: JSON.stringify({ shots: out, changedIds, removedIds: [], doubts: [], doubtAnswers: ds.map((d) => ({ ...d, manual: manual(d) })) }) });
   return out;
 }
 

@@ -62,6 +62,15 @@ export function cropMetrics(focus: Rect, page: Dim, look: Look = {}, screen: Scr
   return { area, upscale, tall: e.h / e.w, fillsHeight, problems };
 }
 
+/**
+ * Recorte "apertado": mais largo que alto e ampliado mais de 2x. É o sinal do "muito próximo" que o usuário corrige abrindo
+ * a cena (nas correções dele o recorte final é 1,2 a 1,6x a caixa da leitura e quase sempre mais alto). Indicador, não erro:
+ * um quadro largo de página estreita cai aqui mesmo inteiro.
+ */
+export const isTight = (m: Pick<CropMetrics, 'tall' | 'upscale'>) => m.tall < 0.8 && m.upscale > 2;
+/** Ampliação a partir da qual a fonte é pequena demais para qualquer tela (o "borrão sem sentido"). */
+export const EXTREME_UPSCALE = 3;
+
 export const judgeShot = (s: Pick<Shot, 'focus' | 'rotate' | 'stretch' | 'zoom' | 'fit'>, page: Dim, screen?: Screen) =>
   cropMetrics(s.focus, page, s, screen);
 

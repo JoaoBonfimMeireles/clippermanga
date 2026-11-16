@@ -5,6 +5,7 @@ import { renameProject, RenameError } from '@/lib/series';
 import type { Doubt, StudioProject } from '@/lib/types';
 import { dedupeImports, hasDuplicateImports, healTest } from '@/lib/cut-profiles';
 import { logDoubtAnswers, logEdits } from '@/lib/learning';
+import { mergeShots } from '@/lib/shots-merge';
 
 export const dynamic = 'force-dynamic';
 type Ctx = { params: Promise<{ id: string }> };
@@ -28,10 +29,13 @@ export async function GET(req: Request, { params }: Ctx) {
 
 /** Salva o que o editor muda (título, contexto, formato, narração, linha do tempo). Páginas e render ficam com o servidor. */
 export async function PUT(req: Request, { params }: Ctx) {
-  const body = (await req.json()) as Partial<StudioProject> & { doubtAnswers?: (Doubt & { manual?: boolean })[] };
+  const body = (await req.json()) as Partial<StudioProject> & { doubtAnswers?: (Doubt & { manual?: boolean })[]; changedIds?: string[]; removedIds?: string[] };
   try {
     const pid = (await params).id;
     const p = updateProject(pid, (cur) => {
+      // a tela diz quais partes mudou: só essas valem; o resto fica como está no disco (um job pode ter mexido depois
+      // que a tela carregou). Sem isso o salvamento desfazia o trabalho do job e anotava a diferença como correção sua.
+      if (body.shots && Array.isArray(body.changedIds)) body.shots = mergeShots(cur.shots, body.shots, { changedIds: body.changedIds, removedIds: body.removedIds ?? [] });
       // anota o que o usuário mudou na linha do tempo (a IA aprende com isso depois do render)
       if (body.shots) {
         try {

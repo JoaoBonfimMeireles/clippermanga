@@ -14,6 +14,7 @@ import { needsPanelCrops } from '@/lib/crop-guard';
 import { VoicePicker } from './voice-picker';
 import { FocusEditor } from './focus-editor';
 import { DoubtsModal, useQueuedDoubts } from './doubts-modal';
+import { baseOf, shotsDelta, type ShotsBase } from '@/lib/shots-merge';
 import { ImportPause } from './import-pause';
 import { pageUrl, Preview } from './preview';
 import { fmtDuration } from '@/lib/duration';
@@ -92,14 +93,21 @@ export function Studio({ id }: { id: string }) {
   const [ctxSaved, setCtxSaved] = useState(false);
   const dragFrom = useRef<number | null>(null);
 
-  const load = useCallback(async () => setP(await (await fetch(`/api/projects/${id}`)).json()), [id]);
+  // retrato das partes como o servidor as conhece: o salvamento manda só o que mudou em relação a ele (lib/shots-merge.ts)
+  const base = useRef<ShotsBase | null>(null);
+  const load = useCallback(async () => {
+    const j = (await (await fetch(`/api/projects/${id}`)).json()) as StudioProject;
+    base.current = baseOf(j.shots ?? []);
+    setP(j);
+  }, [id]);
   useEffect(() => {
     load();
   }, [load]);
 
   const save = useCallback(async (cur: StudioProject) => {
     dirty.current = false;
-    await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ title: cur.title, context: cur.context, format: cur.format, narration: cur.narration, voice: cur.voice, subtitles: !!cur.subtitles, chapterContexts: cur.chapterContexts, shots: cur.shots, cutWords: cur.cutWords, targetMinutes: cur.targetMinutes ?? 0, englishAudio: !!cur.englishAudio, autoPaid: !!cur.autoPaid, series: cur.series ?? '' }) });
+    const r = await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ title: cur.title, context: cur.context, format: cur.format, narration: cur.narration, voice: cur.voice, subtitles: !!cur.subtitles, chapterContexts: cur.chapterContexts, shots: cur.shots, ...shotsDelta(base.current, cur.shots), cutWords: cur.cutWords, targetMinutes: cur.targetMinutes ?? 0, englishAudio: !!cur.englishAudio, autoPaid: !!cur.autoPaid, series: cur.series ?? '' }) });
+    if (r.ok) base.current = baseOf(cur.shots);
   }, [id]);
 
   // projeto com páginas e linha do tempo vazia: monta sozinha, em ordem cronológica

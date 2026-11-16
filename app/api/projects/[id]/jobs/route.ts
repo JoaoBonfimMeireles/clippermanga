@@ -6,7 +6,7 @@ import { candidates, learnTemplate } from '@/lib/patterns';
 import { renderProject } from '@/lib/render';
 import { learnFromEdits } from '@/lib/learning';
 import { finishTest, healTest, learnCutProfile, parkChapters, replaceOldCopies, snapshotBaseline, startTest } from '@/lib/cut-profiles';
-import { auditProject } from '@/lib/manager';
+import { auditProject, noteEditDone, recordSnapshot } from '@/lib/manager';
 import { reviewStage } from '@/lib/stage-review';
 import { renderEnglish, translateOnly } from '@/lib/english';
 import { approveShortsPlan, generateShorts, renderOneShort } from '@/lib/shorts';
@@ -229,6 +229,7 @@ export async function POST(req: Request, { params }: Ctx) {
     return Response.json(
       startJob('edit', id, async (ctx, signal) => {
         const r = await autoEdit(id, ctx);
+        noteEditDone(id); // as correções feitas daqui em diante contam para este lote no placar
         await reviewStage(id, 'leitura', ctx).then((m) => ctx.log(m)).catch((e) => ctx.log(`Revisão final do gestor falhou: ${(e as Error).message.slice(0, 160)}`));
         // o gestor audita uma amostra do lote (1 chamada); nunca derruba a edição
         await auditProject(id, ctx, signal).then((m) => ctx.log(m)).catch((e) => ctx.log(`Auditoria do gestor falhou: ${(e as Error).message.slice(0, 160)}`));
@@ -320,6 +321,8 @@ export async function POST(req: Request, { params }: Ctx) {
         await enforceProject(id, ctx).catch((e) => ctx.log(`Piso de tamanho falhou: ${(e as Error).message.slice(0, 160)}`));
         const r = await renderProject(id, ctx, signal, { cacheOnly: !!body.cacheOnly });
         // aprende com as correções feitas no editor (nunca derruba o render)
+        // placar que vale: medido no render, quando você já corrigiu à mão o que quis (sem IA)
+        recordSnapshot(id, 'render');
         await learnFromEdits(id, ctx, signal).catch((e) => ctx.log(`Aprendizado falhou: ${(e as Error).message.slice(0, 160)}`));
         return r;
       }),

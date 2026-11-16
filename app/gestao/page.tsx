@@ -15,11 +15,12 @@ interface Data {
   skills: Record<ManagedAgent, { name: string; count: number }>;
 }
 const AGENTS: ManagedAgent[] = ['leitor', 'cortador', 'montador'];
+const STAGE: Record<string, string> = { edit: 'depois da edição', check: 'depois da validação', render: 'no render', audit: 'auditoria manual' };
 const NAME: Record<ManagedAgent, string> = { leitor: 'Leitor', cortador: 'Cortador', montador: 'Montador' };
 const ROLE: Record<ManagedAgent, string> = {
-  leitor: 'Lê as páginas e escreve o roteiro. Nota cai quando você reescreve o texto.',
-  cortador: 'Recorta a melhor parte da imagem. Nota cai quando você muda recorte, zoom, esticar ou responde dúvida.',
-  montador: 'Escolhe a imagem de cada fala e o ritmo. Nota cai quando você troca imagem, duração, velocidade ou apaga/move partes.',
+  leitor: 'Lê as páginas, desenha a caixa de cada quadro e escreve o roteiro. Nota cai quando você reescreve o texto ou precisa ABRIR um recorte (a caixa veio pequena).',
+  cortador: 'Recorta a melhor parte da imagem. Nota cai quando você muda recorte, zoom ou esticar à mão, ou troca o palpite da IA numa dúvida.',
+  montador: 'Escolhe a imagem de cada fala e o ritmo. Nota cai quando você troca a imagem (inclusive para repetir a da fala vizinha), duração, velocidade ou apaga/move partes.',
 };
 const SEV: Record<Finding['severity'], string> = { alta: 'border-red-500 text-red-300', media: 'border-amber-500 text-amber-300', baixa: 'border-sky-500 text-sky-300' };
 const tone = (s: number) => (s >= 85 ? 'text-green-400' : s >= 65 ? 'text-amber-300' : 'text-red-400');
@@ -78,7 +79,8 @@ export default function Gestao() {
 
   const proj = d.projects.find((p) => p.projectId === pick);
   const hist = d.history.filter((h) => h.projectId === pick);
-  const trend = (a: ManagedAgent) => (hist.length >= 2 ? hist[hist.length - 1].scores[a] - hist[hist.length - 2].scores[a] : null);
+  // só compara pontos medidos com o mesmo critério (os antigos contavam mudanças do próprio app como correção sua)
+  const trend = (a: ManagedAgent) => (hist.length >= 2 && hist[hist.length - 1].criteria === hist[hist.length - 2].criteria ? hist[hist.length - 1].scores[a] - hist[hist.length - 2].scores[a] : null);
   const pending = d.audits.flatMap((a) => a.proposals.filter((x) => x.status === 'pending').map((x) => ({ x, a })));
 
   return (
@@ -128,10 +130,10 @@ export default function Gestao() {
         </div>
         {hist.length > 0 && (
           <details className="text-sm">
-            <summary className="cursor-pointer text-sky-300">Evolução (uma linha por auditoria)</summary>
+            <summary className="cursor-pointer text-sky-300">Evolução (uma linha por medição; a que vale é a do render, depois das suas correções)</summary>
             <table className="mt-2 w-full text-xs">
-              <thead><tr className="text-left text-muted-foreground"><th>Quando</th><th>Leitor</th><th>Cortador</th><th>Montador</th></tr></thead>
-              <tbody>{hist.slice().reverse().map((h) => <tr key={h.at}><td>{new Date(h.at).toLocaleString('pt-BR')}</td><td>{h.scores.leitor}</td><td>{h.scores.cortador}</td><td>{h.scores.montador}</td></tr>)}</tbody>
+              <thead><tr className="text-left text-muted-foreground"><th>Quando</th><th>Etapa</th><th>Leitor</th><th>Cortador</th><th>Montador</th><th>Corrigidas à mão (corte)</th></tr></thead>
+              <tbody>{hist.slice().reverse().map((h) => <tr key={h.at} className={h.criteria ? '' : 'text-muted-foreground'} title={h.criteria ? '' : 'Critério antigo: contava como correção sua o que o próprio app regravava em massa. Não compare com as linhas novas.'}><td>{new Date(h.at).toLocaleString('pt-BR')}</td><td>{h.criteria ? STAGE[h.stage ?? 'audit'] : 'critério antigo'}</td><td>{h.scores.leitor}</td><td>{h.scores.cortador}</td><td>{h.scores.montador}</td><td>{h.corrected ? `${h.corrected.cortador} de ${h.shots}` : '–'}</td></tr>)}</tbody>
             </table>
           </details>
         )}

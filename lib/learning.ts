@@ -49,6 +49,19 @@ export function writeLearning(l: Learning) {
 
 const same = (a: unknown, b: unknown) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
 
+/**
+ * Um salvamento que muda dezenas de partes no MESMO instante não é correção feita à mão (ninguém ajusta 30 recortes em
+ * 0,7 s): é o app (validação, piso de tamanho, tela desatualizada gravando por cima, linha do tempo recriada). Esses
+ * lotes não contam como gosto do usuário nem no aprendizado nem no placar do gestor. As respostas às dúvidas ("doubt")
+ * ficam de fora da conta: são escolhas dele, anotadas à parte.
+ */
+export const BULK_SAVE = 30;
+export function bulkSaves(entries: { at?: string; kind: string }[]): Set<string> {
+  const n = new Map<string, number>();
+  for (const e of entries) if (e.at && (e.kind === 'change' || e.kind === 'add' || e.kind === 'remove')) n.set(e.at, (n.get(e.at) ?? 0) + 1);
+  return new Set([...n].filter(([, c]) => c >= BULK_SAVE).map(([at]) => at));
+}
+
 /** Chamado ao salvar a linha do tempo: anota o que o usuário mudou em relação ao que estava salvo. */
 export function logEdits(projectId: string, before: Shot[], after: Shot[]) {
   const out: LogEntry[] = [];
@@ -117,13 +130,8 @@ export function pendingEdits(projectId: string, only?: { fields?: ReadonlySet<st
   }
   const from = only?.ignoreMark ? 0 : Number(fs.existsSync(markFile(projectId)) ? fs.readFileSync(markFile(projectId), 'utf8') : 0) || 0;
   const lines = all.slice(from).split('\n').filter(Boolean);
-  // centenas de partes mudadas no MESMO instante são do app (validação, encaixe, salvar tudo de uma vez), não correção do usuário
-  const batch = new Map<string, number>();
-  for (const l of lines) {
-    const at = /"at":"([^"]+)"/.exec(l)?.[1];
-    if (at && /"kind":"(change|add|remove)"/.test(l)) batch.set(at, (batch.get(at) ?? 0) + 1);
-  }
-  const bulk = new Set([...batch].filter(([, n]) => n > 200).map(([at]) => at));
+  // dezenas de partes mudadas no MESMO instante são do app (validação, encaixe, salvar tudo de uma vez), não correção do usuário
+  const bulk = bulkSaves(lines.map((l) => ({ at: /"at":"([^"]+)"/.exec(l)?.[1], kind: /"kind":"(\w+)"/.exec(l)?.[1] ?? '' })));
   const by = new Map<string, { e: LogEntry; changes: Record<string, [unknown, unknown]>; kinds: Set<string>; notes: string[] }>();
   for (const l of lines) {
     let e: LogEntry;
