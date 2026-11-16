@@ -14,6 +14,7 @@ import { pageBlocks, trimBorders } from './autoedit';
 import { learningPrompt } from './learning';
 import { cutsPrompt } from './cut-profiles';
 import { skillsPrompt } from './skills';
+import { concurrency, pool } from './pool';
 import { lockedSet } from './lock';
 import { avoidAds, findPromo, findRepeatedEnds } from './promo';
 import { enforceProject } from './crop-enforce';
@@ -109,13 +110,16 @@ export async function restyleProject(projectId: string, ctx: JobCtx, opts: { tid
   if (repeated.size) ctx.log(`Logos e créditos repetidos achados em ${repeated.size} página(s): ficaram fora dos recortes`);
   const doubts: Doubt[] = [];
   let changed = 0, same = 0;
-  for (const [k, run] of runs.entries()) {
-    if (ctx.signal?.aborted) throw new Error('cancelado');
-    ctx.progress(k / runs.length, `Página ${k + 1} de ${runs.length} (partes ${run.idx[0] + 1}–${run.idx[run.idx.length - 1] + 1})`);
+  // cada página é independente (a fala "same" só olha para dentro da própria página): várias ao mesmo tempo.
+  // Antes era uma chamada por vez (~580 num lote de 15 capítulos) e este passo era o maior tempo da edição.
+  const CONC = concurrency('MANGA_RESTYLE_CONCURRENCY', 5);
+  if (runs.length > 1) ctx.log(`Estilo: ${runs.length} página(s), ${Math.min(CONC, runs.length)} ao mesmo tempo`);
+  let doneRuns = 0;
+  const one = async (run: (typeof runs)[number], k: number): Promise<void> => {
     const pg = pageOf.get(run.pageId);
     const cur = readProject(projectId)!;
     const shots = run.idx.map((i) => cur.shots[i]);
-    if (!pg || shots.every((s) => s.newImage)) continue;
+    if (!pg || shots.every((s) => s.newImage)) return;
     const img = path.join(projectDir(projectId), pg.file);
     // propaganda/créditos da scan nunca viram quadro: nem como recorte, nem como opção de dúvida
     const ads = [...(await findPromo(img, pg)), ...(repeated.get(img) ?? [])];
@@ -128,7 +132,7 @@ export async function restyleProject(projectId: string, ctx: JobCtx, opts: { tid
       const r = avoidAds({ x0: b.x0, x1: b.x1, y0: b.y0, y1: b.y1 }, ads);
       return r ? [{ x0: r.x0, x1: r.x1, y0: r.y0, y1: r.y1, what: b.what }] : [];
     });
-    if (!blocks.length) continue;
+    if (!blocks.length) return;
     const desc = (b: { y0: number; y1: number; what?: string }) =>
       b.what ||
       panels.filter((q) => Math.min(b.y1, q.box.y1) - Math.max(b.y0, q.box.y0) > (q.box.y1 - q.box.y0) * 0.4).map((q) => q.what).join('; ') ||
@@ -147,7 +151,7 @@ export async function restyleProject(projectId: string, ctx: JobCtx, opts: { tid
     } catch (e) {
       if (ctx.signal?.aborted) throw e;
       ctx.log(`Página ${k + 1}: IA falhou (${(e as Error).message.slice(0, 100)}); mantida`);
-      continue;
+      return;
     }
     const rectOf = async (q: number[] | undefined): Promise<Rect | null> => {
       const ns = (q ?? []).map(Number).filter((n) => n >= 1 && n <= blocks.length);
@@ -187,7 +191,13 @@ export async function restyleProject(projectId: string, ctx: JobCtx, opts: { tid
         s.fit = s.fit ?? 'contain';
       }
     });
-  }
+  };
+  await pool(runs, CONC, async (run, k) => {
+    await one(run, k);
+    doneRuns++;
+    ctx.progress(doneRuns / runs.length, `Estilo: página ${doneRuns} de ${runs.length}`);
+  }, ctx.signal);
+  doubts.sort((a, b) => a.part - b.part);
   updateProject(projectId, (d) => {
     const inRange = new Set(d.shots.slice(from - 1, to).filter((s) => !locked.has(s.pageId)).map((s) => s.id));
     d.doubts = [...(d.doubts ?? []).filter((x) => !inRange.has(x.shotId)), ...doubts];

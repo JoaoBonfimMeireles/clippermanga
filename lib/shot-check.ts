@@ -14,6 +14,7 @@ import { cleanRect, cropPx, rotateFilter } from './camera';
 import { readNotes } from './page-notes';
 import { lockedSet } from './lock';
 import { enforceProject } from './crop-enforce';
+import { concurrency, pool } from './pool';
 import { projectDir, readProject, updateProject } from './store';
 import type { JobCtx } from './jobs';
 import type { Rect, Shot, StudioPage, StudioProject } from './types';
@@ -62,10 +63,11 @@ export async function checkShots(projectId: string, ctx: JobCtx, range?: { from?
   const verdicts = new Map<string, Verdict>();
 
   const judge = async (ids: string[], rev: boolean) => {
-    for (let b = 0; b < ids.length; b += BATCH) {
-      if (ctx.signal?.aborted) throw new Error('cancelado');
-      ctx.progress((rev ? 0.85 : 0) + (b / Math.max(1, ids.length)) * (rev ? 0.1 : 0.6), `${rev ? 'Revalidando' : 'Validando'} partes ${b + 1}–${Math.min(ids.length, b + BATCH)} de ${ids.length}`);
-      const cur = readProject(projectId)!;
+    // os lotes são independentes (a validação só lê o projeto e anota o veredito): vários ao mesmo tempo
+    const starts = Array.from({ length: Math.ceil(ids.length / BATCH) }, (_, k) => k * BATCH);
+    const cur = readProject(projectId)!;
+    let done = 0;
+    await pool(starts, concurrency('MANGA_CHECK_CONCURRENCY', 4), async (b) => {
       const group = ids.slice(b, b + BATCH).map((id) => cur.shots.find((s) => s.id === id)).filter((s): s is Shot => !!s);
       const imgs = [];
       for (const s of group) imgs.push(await cropImage(cur, s, pageOf.get(s.pageId)!, dir));
@@ -89,7 +91,9 @@ export async function checkShots(projectId: string, ctx: JobCtx, range?: { from?
         if (ctx.signal?.aborted) throw e;
         ctx.log(`Validação de ${group.length} parte(s) falhou (${(e as Error).message.slice(0, 120)}); mantidas`);
       }
-    }
+      done += group.length;
+      ctx.progress((rev ? 0.85 : 0) + (done / Math.max(1, ids.length)) * (rev ? 0.1 : 0.6), `${rev ? 'Revalidando' : 'Validando'}: ${done} de ${ids.length} partes`);
+    }, ctx.signal);
   };
 
   // 0) sem esticar/aproximar (corta a cena); partes com imagem trocada à mão (newImage) ficam como estão
