@@ -214,3 +214,37 @@ Ordem por ganho ÷ (risco × esforço). ★ = muda comportamento visível.
 
 Não entram: voz/TTS, publicação, `../videos`, política de esticar (item 15), edição em paralelo por capítulo (25),
 divisão do `video-editor.tsx` (31).
+
+## 7. O que foi feito (estado em 16/11/2026, trabalho interrompido pelo limite de uso)
+
+| Commit | Lote | Conteúdo |
+|---|---|---|
+| `45667ed` | 1 | Telas mandam só as partes alteradas e o servidor mescla (`lib/shots-merge.ts`); placar ignora lotes do app; histórico com critério e etapa; `scripts/selftest.ts` |
+| `98bb834` | 2 ★ | Habilidades reescritas e ordenadas; 18 arquivos movidos para `projetos/_skills/_arquivo/` (nada apagado; ver `LEIA.md` lá) |
+| `2d91b75` | 3 ★ | Prompts do Leitor, edição, estilo, gestor, aprendizado e perfis; regras fixas do job no `system` (cache) |
+
+Placar recalculado com o critério novo: `solo-swordmaster` Cortador 92 (139 partes corrigidas à mão), não 41.
+
+Para desfazer um lote: `git revert <commit>`. Os lotes 2 e 3 mexem em prompts/habilidades e podem ser revertidos um a um.
+
+## 8. Pendente (não feito)
+
+- **Lote 4 (velocidade/custo)**: só `lib/pool.ts` foi criado e ainda não é usado. Falta: estilo (`restyle.ts`) e validação
+  (`shot-check.ts`) em paralelo, memória do piso (`crop-enforce.ts`), auditoria do gestor só depois da validação.
+- **Lote 5**: relatório de balão/recorte apertado em `scripts/crop-report.ts`, limpeza de código morto, README.
+- Itens 8, 15, 22, 23, 25, 27 e 31 da seção 4.
+- **Nada disto foi testado com IA nem no navegador**: só `npm run typecheck` e `scripts/selftest.ts`.
+
+## 9. Como validar (1 capítulo)
+
+1. `npm run typecheck` e `node ../videos/node_modules/tsx/dist/cli.mjs scripts/selftest.ts`.
+2. Importe 1 capítulo novo (a leitura antiga fica em cache e não usa o prompt novo do Leitor), rode roteiro, edição e validação.
+3. Com a validação rodando, edite uma parte no editor: ao terminar, os recortes trocados pela validação devem continuar lá.
+4. Em `/gestao`, confira a linha "no render" do histórico e se as propostas citam 3+ correções suas.
+5. Compare no log do job "tokens de entrada (… do cache)" da edição com um lote antigo.
+
+## 10. Perguntas para você
+
+1. Esticar: o piso obrigatório é 30% e 40% é meta. Quer que o app só estique abaixo de 30% (hoje estica até 41,5%)?
+2. `MANGA_FORCE_CLAUDE=1` está ligado: é de propósito? Com ele a cadeia grátis não é usada.
+3. Posso testar `MAX_THINKING_TOKENS=0` para o Haiku (exige mexer em `../videos` ou no `.env`)? É o maior corte de custo possível.
