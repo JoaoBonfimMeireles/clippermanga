@@ -1,6 +1,14 @@
-// Habilidades (skills) padrão dos três agentes. Valem para TODAS as obras: na primeira execução são gravadas em
+// Habilidades (skills) padrão dos agentes. Valem para TODAS as obras: na primeira execução são gravadas em
 // <studio>/_skills/<agente>/<id>.md, onde você pode editar, apagar ou acrescentar arquivos; o que está lá é o que vai
 // para o prompt do agente. Cada habilidade é curta de propósito: custa token em toda chamada.
+//
+// Regra para escrever uma habilidade: só o que AQUELE agente controla.
+//  - leitor:   vê a imagem e desenha a CAIXA de cada quadro (é ela que vira o recorte), descreve e dá o impacto;
+//  - cortador: NÃO vê a imagem; escolhe o quadro pelo número e decide se usa o close;
+//  - montador: NÃO vê a imagem; decide qual imagem vai em cada fala, quando repetir e quando juntar quadros vizinhos;
+//  - diretor:  planeja os shorts.
+// Tamanho na tela, altura cheia, piso de 30/40%, esticar e balão nas bordas são garantidos em código (lib/crop-enforce.ts):
+// não adianta (e custa token) repetir isso para quem só escolhe o número do quadro.
 export type Agent = 'leitor' | 'cortador' | 'montador' | 'diretor';
 
 export interface SkillDef { id: string; title: string; body: string }
@@ -10,86 +18,76 @@ export const DEFAULT_SKILLS: Record<Agent, SkillDef[]> = {
   leitor: [
     {
       id: 'caixa-da-cena',
-      title: 'Caixa justa e completa da cena',
-      body: 'A caixa de cada quadro cobre a cena inteira: personagem da cabeça aos pés quando aparece assim, arma e criatura inteiras, com respiro de 3 a 5% em volta. Tire só sarjeta, margem e fundo vazio. Nunca devolva a caixa de um detalhe pequeno de dentro de uma cena maior. Confira os quatro lados: se a borda passa por cabeça, tronco ou pé, aumente a caixa até incluir a parte cortada.',
+      title: 'A caixa é o quadro inteiro',
+      body: 'A caixa vai de borda a borda do quadro desenhado: toda a largura e toda a altura dele, com personagem da cabeça aos pés, arma e criatura inteiras. Tire só sarjeta e margem. Nunca devolva um pedaço (rosto, mão, faixa) de dentro de um quadro maior. Desenhos colados ou sobrepostos que mostram o MESMO momento (golpe e quem apanha, quem fala e quem ouve) são UMA caixa. Confira: caixa com menos de 60% da largura do quadro real está pequena; aumente.',
     },
     {
       id: 'quadro-alto-em-trechos',
-      title: 'Quadro alto vira trechos largos',
-      body: 'Quadro com altura maior que 1,7x a largura é dividido em trechos: cada elemento interessante (rosto, golpe, criatura, cenário) vira um quadro separado, de formato largo ou quase quadrado, com a descrição do que mostra. Escolha o trecho que ilustra a ação da cena e deixe o resto de fora. Cada trecho deve ter pelo menos 450 px de largura e 300 px de altura no original.',
+      title: 'Só divida quadro muito alto',
+      body: 'Divida um quadro apenas quando a altura dele passa de 1,9x a largura. Cada trecho cobre toda a largura do quadro e uma sub-cena completa (o personagem inteiro, o golpe inteiro), com altura entre 0,8x e 1,7x a largura. Nunca faixas baixas nem quadradinhos de detalhe. Quadro com altura até 1,9x a largura fica inteiro, numa caixa só.',
+    },
+    {
+      id: 'descricao-fiel-e-impacto',
+      title: 'Descrição fiel, balão não é quadro',
+      body: '"what": quem, ação e expressão em até 10 palavras, só o que está desenhado; quem edita não vê a imagem. Quadro que é só balão, caixa de narração, placa, logo, título ou onomatopeia NÃO entra em "panels" (o texto vai em "dialogue"); a caixa nunca é desenhada em volta de um balão. Impacto: 9-10 clímax e virada, 6-8 ação e emoção, 3-5 transição, 1-2 enchimento; nem tudo é 8+.',
     },
     {
       id: 'quem-fala-e-nomes',
       title: 'Quem fala e nomes certos',
-      body: 'Cada balão é de quem o rabicho aponta; caixa retangular é narração de quem está em foco. Use o nome curto da ficha, nunca "um homem" ou "uma mulher" para quem já tem ficha. Numa conversa, confira se as falas alternam entre os dois lados. Na dúvida sobre quem fala, escreva "Narração" em vez de adivinhar.',
+      body: 'Cada balão é de quem o rabicho aponta; caixa retangular é narração de quem está em foco. Use o nome curto da ficha, nunca "um homem" ou "uma mulher" para quem já tem ficha, e sempre o mesmo nome do começo ao fim. Na dúvida sobre quem fala, escreva "Narração". Termine toda fala e toda descrição: nada cortado no meio.',
     },
     {
       id: 'sem-anuncio-de-scan',
       title: 'Nunca propaganda ou crédito de scan',
-      body: 'Rodapé, cabeçalho, mascote, "SUPPORT US", links, Discord, Ko-fi, Patreon, créditos de tradução e anúncios de outras obras nunca são quadros nem entram em "what". Isso vale mesmo quando dividem a tira com um quadro real. Tira só de divulgação: "panels": [] e events "página de divulgação da scan, sem história".',
-    },
-    {
-      id: 'descricao-fiel-e-impacto',
-      title: 'Descrição fiel e impacto calibrado',
-      body: '"what" diz quem, ação e expressão em até 10 palavras, só o que está desenhado. Quem edita não vê a imagem: sua descrição é o único olho dele. Impacto: 9-10 clímax e virada, 6-8 ação e emoção, 3-5 transição, 1-2 enchimento; nem tudo é 8+. Quadro só de balão não é quadro: junte à arte vizinha. Cena ambígua: diga que é ambígua.',
+      body: 'Rodapé, cabeçalho, mascote, "SUPPORT US", links, Discord, Ko-fi, Patreon, créditos e anúncios de outras obras nunca são quadros nem entram em "what", mesmo dividindo a tira com um quadro real. Tira só de divulgação: "panels": [] e events "página de divulgação da scan, sem história".',
     },
   ],
 
-  // ---------------------------------------------------------------- CORTADOR (define o recorte final)
+  // ---------------------------------------------------------------- CORTADOR (escolhe o quadro pelo número; não vê a imagem)
   cortador: [
     {
+      id: 'arte-no-lugar-de-balao',
+      title: 'Escolha quadro de arte, nunca de texto',
+      body: 'Para cada fala escolha o quadro cuja descrição tem personagem, ação ou cenário. Quadro descrito como balão, caixa de texto, placa, logo, título ou onomatopeia nunca é escolhido, mesmo quando o texto dele é igual à fala. Página sem arte que sirva: não crie recorte; a fala fica no recorte vizinho.',
+    },
+    {
       id: 'cena-inteira',
-      title: 'Cena inteira, sem cortar personagem',
-      body: 'O recorte mostra o personagem inteiro (cabeça, tronco e pés), a arma inteira e a criatura inteira. Nunca entregue só os pés, só a barriga ou só o rosto cortado ao meio. Se o quadro escolhido tem o corpo todo, use o quadro todo. Na dúvida entre apertar e abrir, abra.',
-    },
-    {
-      id: 'trecho-largo-em-quadro-alto',
-      title: 'Quadro alto: escolha um trecho largo',
-      body: 'Quando o quadro é alto (a altura passa de 1,7x a largura), não mostre a tira inteira nem só o topo: escolha o trecho da cena que mostra o que a narração descreve e recorte de forma que ocupe mais a largura e menos a altura, no máximo 1,9x a largura de altura. Se houver mais de um trecho bom, use o mais forte e deixe os outros para as falas seguintes.',
-    },
-    {
-      id: 'tamanho-na-tela',
-      title: 'Tamanho mínimo e máximo na tela',
-      body: 'PISO ABSOLUTO: o recorte nítido ocupa pelo menos 40% da tela (em 16:9, altura toda e 40% da largura: o retângulo azul que o usuário marcou), nunca menos, e mais sempre que der. Quadro alto: escolha o detalhe mais importante ou a cena de maior impacto (o golpe, o rosto, a criatura) como uma janela de altura até 1,6x a largura, não a tira inteira. Pode cortar perna, parte do poder disparado e balão que não está na cena; nunca corte cabeça ou tronco de forma brusca. Esticar na horizontal até 1,4x. Ampliação máxima 1,5x.',
+      title: 'A cena, não o detalhe',
+      body: 'Entre os quadros do mesmo momento, escolha o que mostra a cena completa (corpo inteiro, quem bate e quem apanha, quem fala e quem ouve) e não o de detalhe (mão, olho, pé, objeto solto). Detalhe pequeno citado na fala: use o quadro maior em que ele aparece.',
     },
     {
       id: 'close-so-com-motivo',
-      title: 'Close raro e sempre completo',
-      body: 'Use "close" só em impacto 8+ quando a narração fala daquela pessoa ou golpe e o quadro inteiro é muito maior que o rosto. O close mostra a cabeça inteira, nunca corta cabelo, queixo ou arma. Se o close deixar o recorte menor que 30% da tela ou borrado, volte ao quadro inteiro.',
+      title: 'Close quase nunca',
+      body: '"close": false é o padrão. Só use true com impacto 9+ e quando a fala é sobre o rosto ou a expressão daquela pessoa. O dono do canal desfaz quase todo close.',
     },
     {
-      id: 'arte-no-lugar-de-balao',
-      title: 'Arte em vez de balão, nunca rodapé',
-      body: 'O recorte mostra SÓ a imagem: balão de fala, caixa de texto e área branca lisa nas bordas ficam de fora (a narração já diz o texto); balão só entra se não houver mais nada para mostrar. Pode cortar parte do texto.Prefira sempre o quadro com desenho da cena ao quadro só de balão ou texto. Nunca recorte rodapé, crédito, mascote ou propaganda de scan. Nunca escolha um recorte que seja só onomatopeia ou fundo vazio. Se o único quadro disponível é de balão, mostre-o curto e volte à arte na primeira chance.',
+      id: 'formato-do-quadro',
+      title: 'Evite quadro pequeno e quadro alto demais',
+      body: 'Entre quadros que servem à fala, deixe por último os marcados "pequeno" (ficam muito ampliados) e "ALTO" (viram cortes rápidos). O app cuida do tamanho na tela, de cobrir a altura e de tirar balão das bordas: não tente compensar com close nem com "cover".',
     },
   ],
 
-  // ---------------------------------------------------------------- MONTADOR (escolhe, ordena e cola imagem na fala)
+  // ---------------------------------------------------------------- MONTADOR (qual imagem em cada fala; não vê a imagem)
   montador: [
     {
       id: 'imagem-segue-a-fala',
-      title: 'A imagem ilustra o que está sendo dito',
-      body: 'Cada frase narrada leva o quadro que mostra aquilo: falou do personagem, mostre ele; falou do lugar, do poder ou da criatura, mostre isso. Nunca ilustre uma frase com um quadro de outro momento ou de outra pessoa. Sem quadro que combine, use a regra de segurar a imagem anterior, nunca um quadro qualquer.',
+      title: 'A imagem mostra o que a fala diz',
+      body: 'Falou do personagem, mostre ele; do lugar, do golpe, da criatura, mostre isso. Nunca um quadro de outro momento ou de outra pessoa, nem um quadro adiante na história. Se a página da fala só tem texto ou logo, use o quadro de arte da página vizinha da mesma cena.',
     },
     {
       id: 'segurar-imagem-anterior',
-      title: 'Segurar a imagem quando não há boa nova',
-      body: 'Se não existe imagem decente para a próxima frase (só balão, recorte pequeno demais ou borrado), mantenha a imagem da frase anterior ou da seguinte durante essa fala. Troque de imagem somente quando aparecer um quadro bom para aquela cena, junto com o áudio dessa cena. Imagem boa repetida é melhor que imagem ruim nova.',
+      title: 'Mesmo momento, mesma imagem',
+      body: 'Falas seguidas sobre o mesmo momento (reação, comentário, pensamento, explicação, resposta da mesma conversa, algo citado que não tem quadro próprio) usam a MESMA imagem: o normal é de 2 a 4 falas por imagem. Só troque quando a fala traz momento, personagem ou ação nova que tem quadro próprio. Se o quadro da fala seguinte mostra melhor o momento, use o dela nas duas.',
+    },
+    {
+      id: 'cena-geral',
+      title: 'Juntar quadros só do mesmo momento',
+      body: 'Junte quadros vizinhos numa imagem só quando são o mesmo instante e se completam (encarar + reação, golpe + queda, grupo + provocação) ou quando a fala é uma explicação geral da cena. Nunca junte momentos diferentes, janela de sistema com cena, nem mais de 3 quadros. Fala com dois momentos distantes: um quadro só, o da ação principal.',
     },
     {
       id: 'sem-repeticao-proxima',
-      title: 'Não repetir o mesmo recorte perto',
-      body: 'Não use o mesmo quadro nem um recorte quase igual dentro de 6 partes, a não ser pela regra de segurar a imagem. Quando o capítulo tem poucas imagens, varie com outro trecho do mesmo quadro (mais largo ou mais próximo, dentro dos limites de tamanho). Repetir um recorte que o usuário já ajustou à mão é o erro mais notado: evite.',
-    },
-    {
-      id: 'ritmo-e-duracao',
-      title: 'Ritmo e duração das imagens',
-      body: 'Cada imagem fica pelo menos 1 segundo; uma fala longa pode trocar de imagem várias vezes, com os recortes seguintes sem texto. A duração segue o impacto (1 → 1,6 s, 5 → 3 s, 10 → 4,8 s) e nunca é menor que o tempo de falar o texto. Trocas rápidas e em sequência só em ação; em conversa e emoção, deixe respirar.',
-    },
-    {
-      id: 'ordem-e-fidelidade',
-      title: 'Ordem da história e fidelidade',
-      body: 'Siga a ordem de leitura das páginas; não puxe imagem de capítulo anterior nem seguinte. Mostre só o que existe nas páginas recebidas e narre só o que está nelas. No começo da obra, apresente o protagonista e o mundo com as imagens que existem, sem pular o contexto. Página sem nada relevante fica fora: "shots": [].',
+      title: 'Sem vai e volta',
+      body: 'Depois de trocar de imagem, não volte a uma imagem já mostrada nas últimas 6 partes. A mesma imagem não passa de 4 falas seguidas: se a cena continua, passe para outro quadro do mesmo momento.',
     },
   ],
   // ---------------------------------------------------------------- DIRETOR DE SHORTS (planeja os shorts a partir da história)

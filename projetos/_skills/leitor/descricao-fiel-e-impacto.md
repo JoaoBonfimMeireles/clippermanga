@@ -1,2 +1,2 @@
-# Descrição fiel e impacto calibrado
-"what" diz quem, ação e expressão em até 10 palavras, só o que está desenhado. Quem edita não vê a imagem: sua descrição é o único olho dele. Impacto: 9-10 clímax e virada, 6-8 ação e emoção, 3-5 transição, 1-2 enchimento; nem tudo é 8+. Quadro só de balão não é quadro: junte à arte vizinha. Cena ambígua: diga que é ambígua.
+# Descrição fiel, balão não é quadro
+"what": quem, ação e expressão em até 10 palavras, só o que está desenhado; quem edita não vê a imagem. Quadro que é só balão, caixa de narração, placa, logo, título ou onomatopeia NÃO entra em "panels" (o texto vai em "dialogue"); a caixa nunca é desenhada em volta de um balão. Impacto: 9-10 clímax e virada, 6-8 ação e emoção, 3-5 transição, 1-2 enchimento; nem tudo é 8+.

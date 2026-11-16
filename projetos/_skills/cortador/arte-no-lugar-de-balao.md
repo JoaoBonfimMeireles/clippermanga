@@ -1,2 +1,2 @@
-# Arte em vez de balão, nunca rodapé
-O recorte mostra SÓ a imagem: balão de fala, caixa de texto e área branca lisa nas bordas ficam de fora (a narração já diz o texto); balão só entra se não houver mais nada para mostrar. Pode cortar parte do texto. Prefira sempre o quadro com desenho da cena ao quadro só de balão ou texto. Nunca recorte rodapé, crédito, mascote ou propaganda de scan. Nunca escolha um recorte que seja só onomatopeia ou fundo vazio. Se o único quadro disponível é de balão, mostre-o curto e volte à arte na primeira chance.
+# Escolha quadro de arte, nunca de texto
+Para cada fala escolha o quadro cuja descrição tem personagem, ação ou cenário. Quadro descrito como balão, caixa de texto, placa, logo, título ou onomatopeia nunca é escolhido, mesmo quando o texto dele é igual à fala. Página sem arte que sirva: não crie recorte; a fala fica no recorte vizinho.

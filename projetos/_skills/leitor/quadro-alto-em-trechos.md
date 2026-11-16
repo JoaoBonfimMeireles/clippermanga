@@ -1,2 +1,2 @@
-# Quadro alto vira trechos largos
-Quadro com altura maior que 1,7x a largura é dividido em trechos: cada elemento interessante (rosto, golpe, criatura, cenário) vira um quadro separado, de formato largo ou quase quadrado, com a descrição do que mostra. Escolha o trecho que ilustra a ação da cena e deixe o resto de fora. Cada trecho deve ter pelo menos 450 px de largura e 300 px de altura no original.
+# Só divida quadro muito alto
+Divida um quadro apenas quando a altura dele passa de 1,9x a largura. Cada trecho cobre toda a largura do quadro e uma sub-cena completa (o personagem inteiro, o golpe inteiro), com altura entre 0,8x e 1,7x a largura. Nunca faixas baixas nem quadradinhos de detalhe. Quadro com altura até 1,9x a largura fica inteiro, numa caixa só.

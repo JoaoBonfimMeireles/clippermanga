@@ -1,2 +1,2 @@
-# A imagem ilustra o que está sendo dito
-Cada frase narrada leva o quadro que mostra aquilo: falou do personagem, mostre ele; falou do lugar, do poder ou da criatura, mostre isso. Nunca ilustre uma frase com um quadro de outro momento ou de outra pessoa. Sem quadro que combine, use a regra de segurar a imagem anterior, nunca um quadro qualquer.
+# A imagem mostra o que a fala diz
+Falou do personagem, mostre ele; do lugar, do golpe, da criatura, mostre isso. Nunca um quadro de outro momento ou de outra pessoa, nem um quadro adiante na história. Se a página da fala só tem texto ou logo, use o quadro de arte da página vizinha da mesma cena.

@@ -1,2 +1,2 @@
-# Cena inteira, sem cortar personagem
-O recorte mostra o personagem inteiro (cabeça, tronco e pés), a arma inteira e a criatura inteira. Nunca entregue só os pés, só a barriga ou só o rosto cortado ao meio. Se o quadro escolhido tem o corpo todo, use o quadro todo. Na dúvida entre apertar e abrir, abra.
+# A cena, não o detalhe
+Entre os quadros do mesmo momento, escolha o que mostra a cena completa (corpo inteiro, quem bate e quem apanha, quem fala e quem ouve) e não o de detalhe (mão, olho, pé, objeto solto). Detalhe pequeno citado na fala: use o quadro maior em que ele aparece.
