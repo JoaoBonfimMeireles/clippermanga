@@ -161,13 +161,22 @@ export function pendingEdits(projectId: string, only?: { fields?: ReadonlySet<st
     }
     return JSON.stringify(v ?? 'padrão').slice(0, 120);
   };
+  // o gesto em palavras (os números sozinhos viravam regra com coordenada, que nenhuma IA consegue aplicar)
+  const gesture = (a: unknown, b: unknown) => {
+    const ok = (v: unknown): v is { x0: number; y0: number; x1: number; y1: number } => !!v && typeof v === 'object' && 'x0' in (v as object);
+    if (!ok(a) || !ok(b)) return '';
+    const ar = (r: { x0: number; y0: number; x1: number; y1: number }) => Math.max(1e-6, (r.x1 - r.x0) * (r.y1 - r.y0));
+    const k = ar(b) / ar(a);
+    const how = [b.x1 - b.x0 > (a.x1 - a.x0) * 1.1 ? 'mais largo' : '', b.y1 - b.y0 > (a.y1 - a.y0) * 1.1 ? 'mais alto' : '', b.y1 - b.y0 < (a.y1 - a.y0) * 0.9 ? 'mais baixo' : ''].filter(Boolean).join(', ');
+    return k >= 1.2 ? ` [ABRIU o recorte: ${k.toFixed(1)}x a área${how ? `, ${how}` : ''}]` : k <= 0.8 ? ` [FECHOU o recorte: ${k.toFixed(1)}x a área${how ? `, ${how}` : ''}]` : ' [só moveu/ajustou a borda]';
+  };
   const summary = [...by.values()].map(({ e, changes, kinds, notes }) => {
     const head = `Parte ${e.part}${e.shotKind ? ` (${e.shotKind}${e.impact ? `, impacto ${e.impact}` : ''})` : ''} "${e.text ?? ''}"`;
     if (kinds.has('remove')) return `${head}: APAGADA pelo usuário`;
     if (kinds.has('add')) return `${head}: parte NOVA criada pelo usuário`;
     const ch = Object.entries(changes)
       .filter(([, [a, b]]) => !same(a, b))
-      .map(([k, [a, b]]) => (k === 'extra' ? `imagens durante a fala: ${((a as unknown[] | undefined)?.length ?? 0) + 1} → ${((b as unknown[] | undefined)?.length ?? 0) + 1}` : `${k}: ${fmt(a)} → ${fmt(b)}`));
+      .map(([k, [a, b]]) => (k === 'extra' ? `imagens durante a fala: ${((a as unknown[] | undefined)?.length ?? 0) + 1} → ${((b as unknown[] | undefined)?.length ?? 0) + 1}` : `${k}: ${fmt(a)} → ${fmt(b)}${k === 'focus' ? gesture(a, b) : ''}`));
     const all2 = [...notes, ...ch];
     return all2.length ? `${head}: ${all2.join('; ')}` : '';
   }).filter(Boolean);
@@ -178,10 +187,18 @@ const SYSTEM = `Você aprende o gosto de um editor de vídeos de resumo de mang�
 (recorte de cada quadro da página, encaixe, zoom, esticar, movimento de câmera, duração, velocidade, texto narrado) e
 o usuário corrige no editor. Você recebe as correções que ele fez e as regras que já aprendeu.
 Responda SOMENTE JSON: {"rules": ["regra 1", ...], "questions": [{"part": 12, "question": "..."}]}
-- "rules": a lista COMPLETA e atualizada (máx. 30), em português, curtas e acionáveis para a IA de edição,
-  ex.: "Em cenas de ação, aproxime mais o recorte no personagem (zoom ~1.3) em vez de mostrar o quadro inteiro."
-  Junte regras parecidas, mantenha as antigas que continuam valendo, e use as respostas do usuário.
-  Só crie regra quando houver padrão (2+ mudanças parecidas) ou explicação do usuário.
+QUEM USA AS REGRAS (escreva para quem pode cumprir):
+- A IA que monta o vídeo NÃO vê as imagens e não mexe em tamanho: ela só escolhe QUAL quadro vai em cada fala, quando REPETIR
+  a imagem da fala vizinha e quando JUNTAR quadros vizinhos numa cena geral. A maioria das regras é para ela: diga QUANDO
+  (tipo de cena ou de fala) fazer cada coisa.
+- A IA que lê as páginas VÊ a imagem e desenha a caixa de cada quadro (a caixa vira o recorte). Para ela, comece a regra
+  com "GEOMETRIA:" (no máximo 6): quanto do quadro a caixa pega, largura, altura, quando dividir, o que deixar de fora.
+- O app força sozinho: recorte cobrindo a altura da tela, piso de 30-40% da largura, zoom 1, esticar só para cumprir o piso,
+  balão aparado das bordas. NÃO escreva regra sobre zoom, stretch, rotate, fit ou bgBand, nem regra que contrarie isso.
+- "rules": a lista COMPLETA e atualizada (máx. 24), em português, uma ideia por regra, até 45 palavras cada, sem coordenadas
+  nem porcentagens de página (ninguém consegue aplicar "x 0.05–0.95") e sem citar partes ou cenas de uma obra específica.
+  Junte regras parecidas, mantenha as antigas que continuam valendo, remova as que as correções contradizem, e use as respostas do usuário.
+  Só crie regra quando houver padrão (3+ mudanças parecidas) ou explicação do usuário.
   Linhas com "passou a usar a MESMA imagem da fala anterior/posterior" mostram que o usuário reaproveita a cena vizinha: descubra QUANDO (fala de transição, mesmo assunto, reação, falas curtas, cena que se estende) e escreva a regra.
   Linhas com "imagens durante a fala: 1 → 2" mostram que ele colocou mais de uma imagem na mesma fala: descubra o padrão.
   Linhas com "DÚVIDA DA IA" são respostas diretas do usuário: valem mais que um ajuste solto. Procure o padrão de quando o palpite errou.
@@ -222,6 +239,27 @@ export async function learnFromEdits(projectId: string, ctx: JobCtx, signal?: Ab
   writeLearning(fresh);
   fs.writeFileSync(markFile(projectId), String(size));
   ctx.log(`Aprendizado: ${fresh.rules.length} regra(s)${qs.length ? ` · ${qs.length} pergunta(s) para você no editor (painel Aprendizado)` : ''}`);
+}
+
+/**
+ * Regra de enquadramento (para quem desenha a caixa): só as marcadas "GEOMETRIA:". As regras antigas, sem a marca, trazem
+ * coordenadas e porcentagens da página inteira ("~5–12% da tira"), que confundiriam o Leitor (ele vê fatias da página); o
+ * essencial delas já está nas habilidades fixas do Leitor. A marca aparece na próxima rodada do aprendizado.
+ */
+const isFraming = (r: string) => /^GEOMETRIA:/i.test(r);
+
+/** Bloco para o prompt do LEITOR: só o que o usuário ensinou sobre enquadramento (as correções dele quase sempre abrem o recorte). */
+export function framingPrompt(max = 1600): string {
+  const rules = readLearning().rules.filter(isFraming).map((r) => r.replace(/^GEOMETRIA:\s*/i, ''));
+  if (!rules.length) return '';
+  const out: string[] = [];
+  let size = 0;
+  for (const r of rules) {
+    if (size + r.length > max) break;
+    out.push(`- ${r}`);
+    size += r.length;
+  }
+  return out.length ? `\n\nENQUADRAMENTO QUE O DONO DO CANAL PREFERE (aprendido das correções dele; vale para as caixas "box"):\n${out.join('\n')}\n` : '';
 }
 
 /** Bloco para o prompt da edição com IA: regras aprendidas + explicações do usuário. */

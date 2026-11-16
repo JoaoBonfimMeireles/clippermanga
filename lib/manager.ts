@@ -9,7 +9,7 @@ import { extractJson } from '@clipper/editing-planner';
 import { jobLLM } from './ai-meter';
 import { cropMetrics, EXTREME_UPSCALE, isTight, QUALITY } from './crop-quality';
 import { bulkSaves, readLearning } from './learning';
-import { addLearnedSkill, readSkills, type Agent } from './skills';
+import { addLearnedSkill, archivedSkillTitles, readSkills, type Agent } from './skills';
 import { listProjects, projectDir, readProject, studioDir } from './store';
 import { projectJobs, type JobCtx } from './jobs';
 import { cropSheet } from './visual-review';
@@ -269,18 +269,27 @@ export function scoreboard(): { projects: ProjectScore[]; history: Snapshot[] } 
 
 // -------- auditoria --------
 
-const SYSTEM = `Você é o GESTOR de uma empresa de edição de vídeos de resumo de mangá. Três agentes de IA trabalham para você:
-- LEITOR: lê as páginas e escreve o roteiro/notas de cada página (o que acontece, quem fala).
-- CORTADOR: escolhe e recorta a melhor parte de cada imagem (só a arte, sem balões; grudado em cima e embaixo). Ocupação da tela: 40% é o MÍNIMO (meta; nunca abaixo de 30%); ocupar mais é ótimo, 100% NÃO é problema. O problema real é a imagem borrada: ampliação acima de ~1,5x.
-- MONTADOR: monta a linha do tempo (qual imagem em cada fala, sem repetir imagem, duração, ritmo).
-Você recebe uma AMOSTRA de partes já editadas, com métricas e o que o dono do canal corrigiu à mão. Audite com rigor e seja concreto.
+/** Uma proposta de regra só é aceita com pelo menos isto de exemplos corrigidos à mão pelo dono na amostra. */
+const MIN_EXAMPLES = 3;
+const MAX_PROPOSALS = 2;
+
+const SYSTEM = `Você é o GESTOR de uma empresa de edição de vídeos de resumo de mangá. Três agentes de IA trabalham para você. Saiba o que cada um CONTROLA: regra só serve para quem pode cumprir.
+- LEITOR (vê a imagem): desenha a CAIXA de cada quadro (é ela que vira o recorte), descreve o quadro, dá o impacto, transcreve falas e nomes.
+- CORTADOR (não vê a imagem): escolhe o quadro pelo número e decide se usa o close. Não mede pixels nem muda o tamanho do recorte.
+- MONTADOR (não vê a imagem): decide qual imagem vai em cada fala, quando repetir a imagem da fala vizinha e quando juntar quadros vizinhos.
+REGRAS FIXAS, já garantidas em código (não proponha nada que as contrarie nem que as repita): o recorte cobre a altura inteira da tela; ocupa no mínimo 30% da largura (meta 40%); estica até 1,4x; balão e branco das bordas são aparados; rodapé e anúncio de scan nunca entram; parte sem fala não entra no vídeo.
+AMPLIAÇÃO NÃO É ERRO POR SI: as páginas têm 700 a 800 px de largura e o recorte cobre a altura da tela, então quase todo recorte passa de 1,5x. Só é problema o recorte marcado "APERTADO" (pedaço baixo e largo de uma cena maior) ou "FONTE MINÚSCULA" (acima de 3x). A cura é uma caixa maior (Leitor) ou juntar o quadro vizinho do mesmo momento (Montador); nunca encolher o recorte na tela.
+Você recebe uma AMOSTRA de partes já editadas, com métricas e o que o dono do canal corrigiu À MÃO (mudanças feitas pelo próprio app já foram tiradas). "…" no fim de um texto quer dizer cortado por esta amostra, não pelo agente. Audite com rigor e seja concreto.
 Responda SOMENTE JSON:
 {"summary":"2-3 frases: como foi o lote e o que mais preocupa",
  "findings":[{"shot":"<id da parte>","agent":"leitor|cortador|montador","severity":"alta|media|baixa","problem":"o que está errado, concreto","suggestion":"o que o agente deveria ter feito"}],
- "proposals":[{"agent":"leitor|cortador|montador","title":"título curto","rule":"regra curta e acionável para o prompt do agente","why":"por que (padrão visto nos exemplos)","shots":["<ids dos exemplos>"]}]}
-- Só aponte o que as métricas ou as correções do dono mostram; não invente. No máximo 8 achados e 3 propostas.
-- Proposta só se houver padrão (2+ exemplos) e a regra ainda NÃO existir nas regras atuais, nem foi rejeitada antes.
-- Corrija o agente certo: recorte/tamanho/balão = cortador; imagem repetida/duração/ordem = montador; texto/roteiro = leitor.`;
+ "proposals":[{"agent":"leitor|cortador|montador","title":"título curto","rule":"regra para o prompt do agente, em até 40 palavras","why":"padrão visto nos exemplos","shots":["<ids dos exemplos>"]}]}
+- Só aponte o que as correções do dono ou a imagem mostram; não invente. No máximo 8 achados.
+- Atribua a quem controla aquilo: caixa pequena, cortada ou descrição errada = leitor; quadro de texto ou de detalhe escolhido, close = cortador; imagem que não combina com a fala, repetição, junção de quadros = montador.
+- PROPOSTA (no máximo 2, e o normal é nenhuma): só com 3 ou mais exemplos desta amostra em que o DONO corrigiu a mesma coisa; só para algo que o agente controla; e só se nenhuma habilidade atual, arquivada ou recusada já diz isso (a mesma ideia com outras palavras conta como repetida). A regra vale para qualquer obra: sem números de pixel, sem ampliação, sem nomes ou falas de uma obra.`;
+
+/** Corta um texto para a amostra deixando a marca "…" (sem ela o gestor concluía que o agente tinha cortado a fala no meio). */
+const clip = (t: string, n: number) => (t.length > n ? `${t.slice(0, n).trimEnd()}…` : t);
 
 /** Escolhe a amostra: as partes com mais problema + as que o dono corrigiu + algumas aleatórias, no máximo `max`. */
 function sample(p: StudioProject, max = 14) {
@@ -292,7 +301,8 @@ function sample(p: StudioProject, max = 14) {
     const prev = p.shots[i - 1];
     const repeated = sameImage(prev, s);
     const mine = (['leitor', 'cortador', 'montador'] as const).flatMap((a) => (touches[a].has(s.id) ? [`${a}: ${touches[a].get(s.id)!.join(', ')}`] : []));
-    const bad = (m && m.area < QUALITY.minArea ? 3 : 0) + (m?.problems.includes('blurry') ? 2 : 0) + (m && !m.fillsHeight ? 1 : 0) + (repeated ? 2 : 0) + mine.length * 2;
+    // o que o dono corrigiu à mão pesa mais que qualquer métrica; "borrado" (ampliação > 1,5x) saiu: com a altura cheia quase tudo passa disso
+    const bad = mine.length * 3 + (m && m.area < QUALITY.hardMinArea ? 3 : 0) + (m && !m.fillsHeight ? 2 : 0) + (m && m.upscale > EXTREME_UPSCALE ? 2 : 0) + (m && isTight(m) ? 1 : 0) + (repeated ? 1 : 0);
     return { s, i, page, m, repeated, mine, bad };
   });
   const worst = [...rows].sort((a, b) => b.bad - a.bad).filter((r) => r.bad > 0).slice(0, Math.ceil(max * 0.75));
@@ -310,12 +320,13 @@ export async function auditProject(projectId: string, ctx: JobCtx, signal?: Abor
   const data = readManager();
   const rejected = data.audits.flatMap((a) => a.proposals).filter((x) => x.status === 'rejected').slice(-15).map((x) => `- ${x.rule}`);
   const rules = readLearning().rules;
-  const skills = MANAGED.map((a) => `${AGENT_NAME[a]}: ${readSkills(a).map((s) => s.title).join('; ')}`);
+  const skills = MANAGED.map((a) => `${AGENT_NAME[a]}:\n${readSkills(a).map((s) => `  - ${s.title}: ${clip(s.body.replace(/\s+/g, ' '), 140)}`).join('\n')}`);
+  const archived = MANAGED.flatMap((a) => archivedSkillTitles(a).map((t) => `- ${AGENT_NAME[a]}: ${t}`));
   const lines = rows.map((r) => {
     const m = r.m;
-    return `[${r.s.id}] parte ${r.i + 1} (${r.s.kind ?? '?'}, ${r.s.duration.toFixed(1)} s) "${r.s.text.slice(0, 140)}"
-  roteiro da página: ${(p.pageScript?.[r.s.pageId] ?? '(sem)').slice(0, 160)}
-  recorte: ${m ? `${Math.round(m.area * 100)}% da tela, ampliação ${m.upscale.toFixed(2)}x, ${m.fillsHeight ? 'cobre a altura' : 'SOLTO no meio'}${m.problems.length ? `, problemas: ${m.problems.join('/')}` : ''}` : 'sem página'}${r.repeated ? '\n  MESMA IMAGEM da parte anterior' : ''}${r.mine.length ? `\n  dono corrigiu: ${r.mine.join(' | ')}` : ''}`;
+    return `[${r.s.id}] parte ${r.i + 1} (${r.s.kind ?? '?'}, ${r.s.duration.toFixed(1)} s) "${clip(r.s.text, 200)}"
+  roteiro da página: ${clip(p.pageScript?.[r.s.pageId] ?? '(sem)', 160)}
+  recorte: ${m ? `${Math.round(m.area * 100)}% da tela, ampliação ${m.upscale.toFixed(1)}x, ${m.fillsHeight ? 'cobre a altura' : 'SOLTO no meio'}${m.area < QUALITY.hardMinArea ? ', ABAIXO DO PISO de 30%' : ''}${isTight(m) ? ', APERTADO' : ''}${m.upscale > EXTREME_UPSCALE ? ', FONTE MINÚSCULA' : ''}` : 'sem página'}${r.repeated ? '\n  mesma imagem da parte anterior' : ''}${r.mine.length ? `\n  DONO CORRIGIU À MÃO: ${r.mine.join(' | ')}` : ''}`;
   });
   ctx.progress(0.3, `Gestor: auditando ${rows.length} parte(s) da amostra`);
   const llm = jobLLM(ctx);
@@ -326,7 +337,7 @@ export async function auditProject(projectId: string, ctx: JobCtx, signal?: Abor
   const raw = await llm.complete({
     system: SYSTEM,
     images: sheet ? [sheet] : undefined,
-    prompt: `Obra: ${p.title} (${p.shots.length} partes)\n\nPlacar atual: ${MANAGED.map((a) => `${AGENT_NAME[a]} ${score.agents[a].score}/100`).join(', ')}\n\nRegras já aprendidas (não repita):\n${rules.map((r) => `- ${r}`).join('\n') || '(nenhuma)'}\n\nHabilidades dos agentes: ${skills.join(' | ')}\n\nPropostas já rejeitadas pelo dono (não repita):\n${rejected.join('\n') || '(nenhuma)'}\n\n${sheetNote}AMOSTRA:\n${lines.join('\n')}`.slice(0, 36000),
+    prompt: `Obra: ${p.title} (${p.shots.length} partes)\n\nPlacar atual: ${MANAGED.map((a) => `${AGENT_NAME[a]} ${score.agents[a].score}/100`).join(', ')}\n\nPreferências já aprendidas das correções do dono (não repita):\n${rules.map((r) => `- ${clip(r, 160)}`).join('\n') || '(nenhuma)'}\n\nHabilidades atuais dos agentes (não repita):\n${skills.join('\n')}\n\nHabilidades arquivadas (já testadas e retiradas; não proponha de novo):\n${archived.join('\n') || '(nenhuma)'}\n\nPropostas já recusadas pelo dono (não repita, nem com outras palavras):\n${rejected.join('\n') || '(nenhuma)'}\n\n${sheetNote}AMOSTRA:\n${lines.join('\n')}`.slice(0, 36000),
     maxTokens: 3000,
     temperature: 0.2,
     tier: 'manager', // o gestor é sempre o Opus
@@ -360,10 +371,17 @@ export async function auditProject(projectId: string, ctx: JobCtx, signal?: Abor
   const proposals: Proposal[] = [];
   for (const pr of out.proposals ?? []) {
     if (!okAgent(pr.agent) || !String(pr.rule ?? '').trim()) continue;
-    const ex = (Array.isArray(pr.shots) ? pr.shots : []).flatMap((s) => idMap.get(String(s)) ?? []);
+    const shotIds = [...new Set((Array.isArray(pr.shots) ? pr.shots : []).map(String))];
+    // critério de aceite: 3+ partes da amostra que o DONO corrigiu à mão (regra nascida de métrica ou de 1-2 casos é ruído)
+    const owned = shotIds.filter((s) => byId.get(s)?.mine.length);
+    if (owned.length < MIN_EXAMPLES) {
+      ctx.log(`Proposta do gestor descartada ("${String(pr.title ?? pr.rule).slice(0, 60)}"): só ${owned.length} exemplo(s) com correção sua; o mínimo é ${MIN_EXAMPLES}`);
+      continue;
+    }
+    const ex = shotIds.flatMap((s) => idMap.get(s) ?? []);
     proposals.push({ id: randomUUID().slice(0, 8), agent: pr.agent, title: String(pr.title ?? pr.rule).trim().slice(0, 80), rule: String(pr.rule).trim(), why: String(pr.why ?? '').trim(), findingIds: [...new Set(ex)], status: 'pending' });
   }
-  const audit: Audit = { id: randomUUID().slice(0, 8), at: new Date().toISOString(), projectId, title: p.title, summary: String(out.summary ?? '').trim(), sampled: rows.length, findings, proposals: proposals.slice(0, 3) };
+  const audit: Audit = { id: randomUUID().slice(0, 8), at: new Date().toISOString(), projectId, title: p.title, summary: String(out.summary ?? '').trim(), sampled: rows.length, findings, proposals: proposals.slice(0, MAX_PROPOSALS) };
   const fresh = readManager();
   fresh.audits.push(audit);
   writeManager(fresh);

@@ -13,6 +13,7 @@ import { cleanRect } from './camera';
 import { pageBlocks, trimBorders } from './autoedit';
 import { learningPrompt } from './learning';
 import { cutsPrompt } from './cut-profiles';
+import { skillsPrompt } from './skills';
 import { lockedSet } from './lock';
 import { avoidAds, findPromo, findRepeatedEnds } from './promo';
 import { enforceProject } from './crop-enforce';
@@ -21,22 +22,19 @@ import { projectDir, readProject, updateProject } from './store';
 import type { JobCtx } from './jobs';
 import type { Doubt, Rect, Shot, StudioPage } from './types';
 
-const SYSTEM = `Você escolhe os recortes de imagem de um vídeo de resumo de manhwa/webtoon, seguindo o gosto do editor.
-Recebe UMA página (tira vertical) dividida em quadros numerados (Q1, Q2... de cima para baixo, com a descrição) e as
+const SYSTEM = `Você escolhe a imagem de cada fala de um vídeo de resumo de manhwa/webtoon, seguindo o gosto do dono do canal. Você NÃO vê as imagens: decide pelas descrições.
+Recebe UMA página (tira vertical) dividida em quadros numerados (Q1, Q2... de cima para baixo, com a descrição e o formato) e as
 falas narradas enquanto a página aparece. Para cada fala escolha o que mostrar:
-- "q": [n] um quadro, ou [n, m] do quadro n até o m juntos (cena geral, várias coisas da mesma cena numa imagem só);
-- "same": true = repete exatamente a mesma imagem da fala anterior (mesma cena/assunto continuando).
-REGRAS DO EDITOR:
-- Falas seguidas sobre a MESMA cena ou o mesmo assunto repetem a mesma imagem ("same": true). Não faça um recorte novo a cada fala.
-- Explicação geral (mundo, situação, várias criaturas/pessoas) = imagem geral, juntando os quadros da cena; não aproxime em cada um.
-- Quando as falas falam de coisas DIFERENTES mostradas em quadros diferentes, aí sim cada fala no seu quadro.
-- Fala sobre um personagem: o quadro dele, sem caixas de texto/janelas de sistema soltas, a menos que a fala seja sobre o sistema.
-- A imagem tem que mostrar o que a fala diz (ação, personagem, objeto). Nunca só um balão.
-- A primeira fala da página nunca é "same" com outra página.
-- Quadro "(sem descrição)" pode ser logo, título ou créditos: nunca use como palpite principal se houver quadro descrito ou se puder repetir a imagem anterior.
-DÚVIDA: quando não tiver certeza (quadros colados, nenhum quadro mostra o que a fala diz, repetir ou trocar), mesmo assim
-dê o seu melhor palpite e acrescente "doubt": {"question": "pergunta curta", "options": [[n], [n, m], "same"]} com 2 a 3
-opções (a primeira = seu palpite). Só pergunte quando a dúvida for real: a maioria das falas não tem dúvida.
+- "q": [n] um quadro, ou [n, m] do quadro n até o m juntos numa imagem só (cena geral);
+- "same": true = repete exatamente a imagem da fala anterior.
+COMO DECIDIR, nesta ordem:
+1. A fala continua o MESMO momento da anterior (reação, comentário, pensamento, explicação, resposta da mesma conversa, algo citado que não tem quadro próprio)? "same": true. O normal é de 2 a 4 falas por imagem: não faça um recorte novo a cada fala.
+2. A fala traz momento, personagem ou ação NOVA? O quadro que mostra isso: [n]. A imagem tem que mostrar o que a fala diz, nunca outro momento nem um quadro adiante na história.
+3. Dois quadros vizinhos mostram o MESMO instante e se completam (encarar + reação, golpe + queda, grupo + provocação), ou a fala é uma explicação geral da cena? Junte: [n, m]. Quadro marcado "baixo" fica muito ampliado sozinho: se o vizinho é do mesmo momento, junte os dois. Nunca junte momentos diferentes, janela de sistema com cena, nem mais de 3 quadros.
+4. Nunca um quadro que é só balão, caixa de texto, logo ou título. "(sem descrição)" costuma ser isso: evite se houver quadro descrito ou der para repetir. Janela de sistema só quando a fala é sobre o sistema.
+5. A primeira fala da página nunca é "same".
+DÚVIDA: só quando for real (nenhum quadro mostra o que a fala diz, ou dois quadros servem igualmente). Dê o seu melhor palpite e acrescente
+"doubt": {"question": "pergunta curta", "options": [[n], [n, m], "same"]} com 2 a 3 opções (a primeira = seu palpite). No máximo 1 dúvida a cada 5 falas: o dono confirma o palpite em 2 de cada 3 dúvidas, então na maioria das vezes perguntar só toma o tempo dele.
 Responda SOMENTE JSON: {"r":[{"part":12,"q":[2]},{"part":13,"same":true},{"part":14,"q":[3,4],"doubt":{"question":"...","options":[[3,4],[3],"same"]}}]}`;
 
 type Pick = { part?: number; q?: number[]; same?: boolean; doubt?: { question?: string; options?: (number[] | string)[] } };
@@ -87,7 +85,9 @@ export async function restyleProject(projectId: string, ctx: JobCtx, opts: { tid
   const notes = readNotes(projectId);
   const pageOf = new Map(p0.pages.map((pg) => [pg.id, pg]));
   const llm = jobLLM(ctx);
-  const rules = learningPrompt(7500) + cutsPrompt(p0); // as 30 regras inteiras (antes cortava no meio e a IA nunca via as últimas)
+  // regras fixas do job no SYSTEM (igual em todas as chamadas: o provedor guarda em cache e não cobra de novo a cada página).
+  // Esta etapa decide qual imagem vai em cada fala: é o trabalho do Montador, então as habilidades dele também entram aqui.
+  const system = `${SYSTEM}${skillsPrompt('montador')}\n${learningPrompt(7500)}${cutsPrompt(p0)}`;
   const locked = lockedSet(p0);
   // páginas em sequência dentro do trecho (uma chamada por página)
   const runs: { pageId: string; idx: number[] }[] = [];
@@ -135,10 +135,15 @@ export async function restyleProject(projectId: string, ctx: JobCtx, opts: { tid
       '(sem descrição)';
     const qOf = (f: Rect) => blocks.map((b, j) => (Math.min(b.y1, f.y1) - Math.max(b.y0, f.y0) > 0 ? j + 1 : 0)).filter(Boolean);
     const prev = cur.shots[run.idx[0] - 1];
-    const prompt = `${rules}\nPÁGINA (${blocks.length} quadros):\n${blocks.map((b, j) => `Q${j + 1} (altura ${Math.round(b.y0 * 100)}–${Math.round(b.y1 * 100)}%): ${desc(b)}`).join('\n')}\n\n${prev ? `Fala anterior (outra página): "${prev.text.slice(0, 160)}"\n` : ''}FALAS:\n${shots.map((s, j) => `Parte ${run.idx[j] + 1} (hoje mostra Q${qOf(s.focus).join('–') || '?'}): "${s.text.slice(0, 220)}"`).join('\n')}`;
+    // formato do quadro em palavras: "baixo" (bem mais largo que alto) fica muito ampliado sozinho, e é o que o dono mais corrige abrindo a cena
+    const shapeOf = (q: { x0: number; x1: number; y0: number; y1: number }) => {
+      const r = ((q.y1 - q.y0) * pg.height) / Math.max(1, (q.x1 - q.x0) * pg.width);
+      return r < 0.6 ? 'baixo' : r > 1.3 ? 'alto' : 'médio';
+    };
+    const prompt = `PÁGINA (${blocks.length} quadros):\n${blocks.map((b, j) => `Q${j + 1} (altura ${Math.round(b.y0 * 100)}–${Math.round(b.y1 * 100)}%, ${shapeOf(b)}): ${desc(b)}`).join('\n')}\n\n${prev ? `Fala anterior (outra página): "${prev.text.slice(0, 160)}"\n` : ''}FALAS:\n${shots.map((s, j) => `Parte ${run.idx[j] + 1} (hoje mostra Q${qOf(s.focus).join('–') || '?'}): "${s.text.slice(0, 220)}"`).join('\n')}`;
     let out: { r?: Pick[] } = {};
     try {
-      out = extractJson(await llm.complete({ system: SYSTEM, prompt: prompt.slice(0, 20000), maxTokens: 1500, temperature: 0.2, tier: 'small', signal: ctx.signal })) as { r?: Pick[] };
+      out = extractJson(await llm.complete({ system, prompt: prompt.slice(0, 20000), maxTokens: 1500, temperature: 0.2, tier: 'small', signal: ctx.signal })) as { r?: Pick[] };
     } catch (e) {
       if (ctx.signal?.aborted) throw e;
       ctx.log(`Página ${k + 1}: IA falhou (${(e as Error).message.slice(0, 100)}); mantida`);

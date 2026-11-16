@@ -16,6 +16,7 @@ import { isClaude } from './ai-meter';
 import { cleanRect } from './camera';
 import { projectDir } from './store';
 import { skillsPrompt } from './skills';
+import { framingPrompt } from './learning';
 import type { JobCtx } from './jobs';
 import type { Rect, StudioPage, StudioProject } from './types';
 
@@ -61,13 +62,13 @@ Para cada PÁGINA (pode vir em várias imagens, fatias de cima para baixo da mes
 - "characters": nomes (ou descrição curta, se não tiver nome) de quem aparece.
 - "panels": os quadros com conteúdo, na ordem de leitura. Cada um:
   "img": número da imagem em que ele está;
-  "box": [x0,y0,x1,y1] em frações 0..1 DESSA imagem (x da esquerda, y do topo), ENQUADRE A CENA COMPLETA do quadro: personagem INTEIRO (da cabeça aos pés quando aparece assim), arma/objeto inteiro (a espada toda), criatura inteira, com um respiro pequeno em volta. NUNCA corte a cabeça, o corpo ou a arma ao meio e NUNCA faça um recorte quadradinho minúsculo de dentro de uma cena maior. Tire só sarjetas, margens, fundo vazio nas bordas, marca d'água e créditos. Balão que faz parte da cena pode ficar dentro; nunca devolva um quadro que seja só balão/caixa de texto (balão sem desenho = junte ao quadro de arte vizinho ou ignore). Evite caixas com altura maior que 1,7 vezes a largura: divida em dois quadros;
+  "box": [x0,y0,x1,y1] em frações 0..1 DESSA imagem (x da esquerda, y do topo). A caixa é O QUADRO INTEIRO, de borda a borda: toda a largura e toda a altura do quadro desenhado, com personagem INTEIRO (da cabeça aos pés quando aparece assim), arma e criatura inteiras. Essa caixa vira o recorte do vídeo: caixa pequena = imagem ampliada e sem a cena. NUNCA devolva um pedaço (rosto, mão, faixa) de dentro de um quadro maior e NUNCA corte cabeça, corpo ou arma ao meio. Tire só sarjetas, margens, marca d'água e créditos. Balão que faz parte da cena fica dentro; nunca devolva um quadro que seja só balão/caixa de texto (o texto dele vai em "dialogue"). Só divida um quadro quando a altura passa de 1,9 vezes a largura: em trechos que cobrem toda a largura, cada um com uma sub-cena completa;
   "focus": opcional e RARO, só em quadros de impacto 8+ [x0,y0,x1,y1] só do essencial (rosto, reação) quando ele ocupa bem menos da metade do quadro; o focus mostra o rosto/personagem INTEIRO e nunca corta cabeça, corpo ou arma;
   "what": o que o quadro mostra em até 10 palavras (quem, ação/expressão);
   "kind": "action" (luta, golpe, corrida, explosão, poder), "reaction" (rosto, surpresa, emoção), "dialogue" (conversa) ou "scene" (lugar ou personagem novo);
   "impact": 1 a 10, o quanto o momento importa para a história (9-10 clímax/virada/revelação/golpe decisivo/morte/primeira aparição importante; 6-8 ação forte, emoção marcante, informação da trama; 3-5 transição, contexto; 1-2 enchimento). Seja criterioso: nem tudo é 8+;
   "rotate": 90 ou -90 se o quadro foi desenhado de lado (90 = o que está à ESQUERDA vai para cima; -90 = o que está à DIREITA vai para cima), senão 0.
-- Quadro muito alto com vários elementos empilhados: liste cada elemento como um quadro separado.
+- Desenhos colados ou sobrepostos que mostram o MESMO momento (golpe e quem apanha, quem fala e quem ouve) são UM quadro, com uma caixa só.
 - Pule transições, logos, créditos, avisos e páginas sem história (devolva "panels": []).
 - PROPAGANDA DA SCAN (regra rígida, vale para o INÍCIO e o RODAPÉ de cada capítulo e para qualquer ponto da tira): "SUPPORT US", "REZO SCANS", "Produce by Rezo Team", rezoscan.org, "Reminder", "read at mgeko", Discord, Ko-fi, Patreon, links e nomes de site/grupo, mascote da scan, "junte-se/recrutamos", créditos de tradução/edição, capas e títulos de divulgação, anúncios de OUTRAS obras, marca d'água (ex.: bilibili) NUNCA são quadros de história, mesmo quando dividem a mesma tira com um quadro real, mesmo com personagem desenhado ou balão ("Okay!") perto deles. Liste só o quadro de história de verdade; se a tira inteira for isso, "panels": []. Não descreva a propaganda em "what"; em "events" escreva só "página de divulgação da scan, sem história".
 - NÃO liste quadros de enchimento (impacto 1-2: objeto solto, fundo, repetição sem ação nova). No MÁXIMO 8 quadros por página: junte os parecidos e fique com os que mais importam.
@@ -534,7 +535,7 @@ export async function ensurePageNotes(p: StudioProject, pages: StudioPage[], llm
       for (let attempt = 1; attempt <= 2 && !got; attempt++) {
         try {
           const raw = await llm.complete({
-            system: NOTES_SYSTEM + skillsPrompt('leitor'),
+            system: NOTES_SYSTEM + skillsPrompt('leitor') + framingPrompt(),
             prompt: `${p.context ? `Obra: ${p.context.slice(0, 2000)}\n` : ''}${castText(cast, chapterNames(batch[0]))}${prevContext(batch[0])}${batch.length} página(s), ${parts.length} imagem(ns):\n${legend}`,
             images: parts.map((x) => x.image),
             tier: 'small', // no Claude: Haiku (escolha do usuário: Haiku em tudo)

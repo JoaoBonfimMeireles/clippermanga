@@ -300,7 +300,7 @@ function stats(shots: Shot[], pages: Map<string, StudioPage>): Stats {
 
 const CUT_FIELDS = new Set(['focus', 'fit', 'rotate', 'stretch', 'zoom', 'bgBand', 'motion', 'pageId', 'extra']);
 
-const SYSTEM = `Você é o GESTOR de uma empresa de edição de vídeos de resumo de mangá. A IA pequena (Haiku) faz os CORTES (qual parte da imagem, o recorte de cada quadro) e a DISPOSIÇÃO das imagens (qual imagem em cada fala, se repete imagem, quantas imagens por fala). O dono do canal validou um TESTE de 1-2 capítulos de uma obra e corrigiu à mão o que não gostou. Você aprende com isso.
+const SYSTEM = `Você é o GESTOR de uma empresa de edição de vídeos de resumo de mangá. A IA pequena (Haiku) faz os CORTES e a DISPOSIÇÃO das imagens. Na prática ela NÃO vê a imagem nem mexe em tamanho: escolhe QUAL quadro vai em cada fala, quando REPETIR a imagem da fala vizinha, quando JUNTAR quadros vizinhos numa cena geral e quantas imagens uma fala tem. Escreva regras sobre essas escolhas (regra com coordenada, porcentagem de página, zoom ou esticar ninguém consegue aplicar). O dono do canal validou um TESTE de 1-2 capítulos de uma obra e corrigiu à mão o que não gostou. Você aprende com isso.
 Escopo: SÓ cortes e disposição das imagens. Não aprenda sobre texto da narração nem sobre duração.
 Você recebe: números da proposta da IA vs. o resultado final do dono, as correções dele (antes → depois), as respostas dele às dúvidas da IA, o perfil atual desta obra, as regras globais e os perfis de obras parecidas.
 Responda SOMENTE JSON:
@@ -313,7 +313,7 @@ Regras:
 - "global": só proponha quando OUTRA obra do perfil já mostra o mesmo padrão ("alsoIn" obrigatório, com o título dela). Sem obras parecidas nos perfis, devolva [].
 - Só crie regra com padrão (2+ ocorrências nas correções ou nos números) ou explicação direta do dono (respostas às dúvidas valem mais). Com UM capítulo de teste, use "baixa" e só regras vistas 2+ vezes dentro dele. Ajuste solto, visto uma vez, NÃO vira regra.
 - Descubra QUANDO: em que tipo de cena (ação, reação, diálogo, cena nova) o dono repetiu/trocou/apagou imagem, esticou, aproximou ou mudou recorte. Regra sem o "quando" não serve.
-- Nunca contradiga as regras duras (recorte ocupa ao menos 30-40% da tela; sem foto borrada; balão quase nunca). Regra que afrouxa isso não pode existir.
+- Nunca contradiga as regras duras, garantidas em código: o recorte cobre a altura inteira da tela, ocupa ao menos 30% da largura (meta 40%), estica no máximo 1,4x, e balão quase nunca. Regra que afrouxa isso não pode existir. Ampliação alta não é assunto de regra: é a resolução da página.
 - Sem correções do dono: ele aprovou o que a IA fez. Isso confirma as regras atuais (mantenha) e não cria nenhuma.`;
 
 const rid = () => randomUUID().slice(0, 8);

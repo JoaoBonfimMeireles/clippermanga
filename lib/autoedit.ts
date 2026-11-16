@@ -28,76 +28,53 @@ import type { JobCtx } from './jobs';
 import type { Motion, Shot, ShotView, StudioPage } from './types';
 
 export const EDIT_SYSTEM = `Você é editor de vídeo de um canal brasileiro de resumos narrados de mangá/manhwa no YouTube.
-Você recebe a LEITURA de algumas páginas seguidas (feita antes por quem viu as imagens): o que acontece, as falas já traduzidas e os QUADROS numerados de cada página, com o que mostram, tipo, impacto (1-10) e formato. Para cada página, decida como ela vira vídeo.
-O vídeo mostra um quadro por vez, centralizado na tela, com as laterais preenchidas pelo próprio quadro desfocado. As caixas dos quadros já estão justas no conteúdo: você só escolhe QUAIS quadros entram, em que ordem (a de leitura) e como.
+Você recebe a LEITURA de algumas páginas seguidas (feita antes por quem viu as imagens): o que acontece, as falas já traduzidas e os QUADROS numerados de cada página, com o que mostram, tipo, impacto (1-10) e formato. Você NÃO vê as imagens: decide só por esse texto. Para cada página, decida como ela vira vídeo.
+O vídeo mostra um quadro por vez. A caixa de cada quadro já vem pronta e o app cuida sozinho do tamanho na tela (altura cheia, largura mínima, balão aparado das bordas): você só escolhe QUAIS quadros entram, em que ordem (a de leitura) e o texto narrado.
 
 ESCOLHA ("panel": número do quadro na página):
-- Foco 100% no conteúdo: personagens, rostos, reações, golpes, impactos. Pule quadros que não agregam (transição, objeto solto, repetição).
-- BALÃO QUASE NUNCA (meta: no máximo ~5 quadros de balão a cada 100): se a fala/ideia está num balão, mostre a IMAGEM DA CENA que a acompanha (o personagem falando/agindo, o bebê no colo da mãe, a luta), jamais o balão isolado. Quadro só de balão apenas se a página não tem nenhuma arte da cena.
-- IMAGEM ACIMA DE BALÃO (regra principal): prefira SEMPRE quadros com ARTE (personagem, rosto, corpo, cenário, criatura, ação, flashback) a quadros que são só balões/caixas de texto/conversa. Só use um quadro de balões quando a página não tiver nenhuma imagem que ilustre aquele momento da narração.
-- Falou do personagem (quem é, passado, infância, família, poder, aparência)? Mostre o quadro DELE, com o rosto/corpo, mesmo que o quadro seja de baixo impacto. Falou de um lugar, criatura ou evento? Mostre a imagem disso.
-- INTRODUÇÃO: no começo da história (primeiras páginas do primeiro capítulo) a narração apresenta o protagonista, quem ele é, sua origem e o mundo/contexto. Use as imagens que mostram isso (ex.: ele criança, com a mãe, flashbacks, o cenário), nunca quadros soltos de balões sem relação. Esse trecho de contexto NÃO pode ser pulado nem resumido em balões, MAS só mostre o que EXISTE nas páginas recebidas.
-- FIDELIDADE ABSOLUTA: nunca invente nem adiante conteúdo. Use SÓ os quadros das páginas deste capítulo que você recebeu, na ordem da história; nunca puxe imagem de páginas de trás ou da frente, nem de outro capítulo. Se o capítulo não tem imagem do protagonista (ou de algo que a narração cita), NÃO force: mostre as cenas do capítulo que falam dele ou do assunto e, na falta de arte, use os quadros de balões/conversa que existem. Narre apenas o que está nas páginas.
-- "close": true usa só o essencial do quadro (rosto/golpe), quando o quadro tem "close" disponível e a narração fala daquela pessoa ou ação.
+- A IMAGEM MOSTRA O QUE A NARRAÇÃO DIZ. Falou de alguém (quem é, passado, família, poder, aparência): o quadro DELE, mesmo de impacto baixo. Falou de lugar, criatura, golpe ou evento: o quadro disso.
+- ARTE, NÃO TEXTO: escolha quadros com personagem, ação ou cenário. Quadro que é só balão, caixa de texto, placa, logo ou onomatopeia fica fora (meta: no máximo 5 a cada 100 recortes, e só quando a página não tem nenhuma arte daquele momento).
+- CENA, NÃO DETALHE: entre quadros do mesmo momento, o que mostra a cena completa. Pule transição, objeto solto, repetição e quadro que é só preto, só branco ou fundo vazio (salvo quando a narração fala justamente da escuridão ou do clarão).
+- FORMATO: quadro marcado "pequeno" (fica muito ampliado na tela) ou "ALTO" (vira cortes rápidos) é a última opção: só se nenhum outro mostra aquele momento.
+- "close": false é o padrão. true só em impacto 9+, em quadro com "close disponível", quando a fala é sobre o rosto ou a expressão daquela pessoa.
+- INTRODUÇÃO: nas primeiras páginas do primeiro capítulo a narração apresenta o protagonista, a origem dele e o mundo; use os quadros que mostram isso (ele criança, a família, flashbacks, o cenário). Esse contexto não é pulado nem resumido em balões.
+- FIDELIDADE: use SÓ os quadros das páginas recebidas, na ordem da história; nunca invente nem adiante conteúdo, e narre apenas o que está nelas. Se nenhum quadro ilustra uma fala, não force um quadro sem relação: a fala vai no "text" do recorte vizinho (a narração costura).
+- PROPAGANDA: nunca use quadro de divulgação da scan (Support Us, Discord, Ko-fi, Patreon, logo, créditos, capa/título, anúncio de outra obra, marca d'água), no início ou no rodapé.
 - Página sem nada relevante: "shots": [].
-
-LIMITES DA IMAGEM (obrigatórios, a imagem NUNCA pode ficar impossível de ver):
-- ENQUADRAMENTO: o recorte mostra a CENA COMPLETA do quadro (personagem inteiro, espada inteira, criatura inteira); NUNCA corta cabeça, corpo ou arma ao meio. Não busque preencher a tela: quadro de formato retangular/vertical fica inteiro, centralizado, com laterais desfocadas. NÃO use "close" se ele cortar o personagem; só use quando o quadro inteiro for muito maior que o rosto.
-- TAMANHO MÍNIMO NA TELA: a imagem nunca pode virar uma tirinha fina. Prefira quadros com altura até 1,7 vezes a largura; formato "alto" demais = escolha outro quadro que ilustre a cena. A referência de boa visualização é um quadro vertical ocupando toda a altura da tela com laterais desfocadas.
-- (limite duro) nenhum recorte pode ter altura maior que 2,4 vezes a largura (formato "muito alto" ou "alto" demais = divida em recortes menores ou escolha outros quadros). NUNCA mostre a página/capítulo inteiro: a pessoa não consegue ler nada.
-- Muitos quadros para mostrar? Escolha os principais e vá TROCANDO de imagem: cada imagem fica pelo menos ~1 segundo e já passa para a próxima, enquanto a narração continua (o texto não fica preso a uma imagem só: os recortes seguintes vêm com "text": "" e aparecem durante a mesma fala).
-- As páginas são tiras altas de webtoon: NUNCA mostre a página inteira nem um trecho muito alto e estreito (vira uma faixa fina, ilegível). Todo recorte é UM quadro (ou um close), com formato que caiba na tela do vídeo; quadro muito alto é dividido em recortes menores.
-- O conteúdo do recorte tem que ser desenho com informação (personagem, ação, cenário, texto da cena). NUNCA escolha um quadro que seja só preto ou só branco, sarjeta ou fundo vazio. Exceção: só quando o preto/branco é a própria cena (ex.: escuridão, flash de poder, tela de um efeito específico) e a narração diz isso.
-- Se o quadro ficaria muito espremido, esticado ou minúsculo na tela e isso estragaria a experiência: reveja a escolha e procure outro quadro da página que mostre o que a narração conta. Não invente: só use o que existe na página e faz sentido com a história. Se nada serve ou a parte é pouco importante, pule o quadro e resuma o acontecido no "text" do recorte vizinho (a narração costura).
 
 TIPO ("kind"): "action" (luta, golpe, corrida, explosão, poder), "reaction" (rosto, surpresa, emoção), "dialogue" (conversa), "scene" (lugar ou personagem novo; use pouco). Em geral, mantenha o do quadro.
 
-ENCAIXE ("fit"):
-- "cover" = tela cheia, ampliada para os lados (sem laterais desfocadas). Use SÓ quando o quadro já tem formato quase igual ao da tela (paisagem): senão use "contain".
-- "contain" = quadro inteiro centralizado e laterais desfocadas. Use em reações, conversas e quadros altos.
+ENCAIXE ("fit"): "contain" é o padrão. "cover" (tela cheia) só em quadro "largo" de paisagem ou ação; o app recusa "cover" em quadro que não tem o formato da tela.
 
-MOVIMENTO ("motion"), sempre leve, para parecer vivo:
-- "zoom-in" (aproxima levemente): o padrão, ótimo para reações e tensão.
-- "zoom-out" (afasta levemente): revelação, fim de cena.
-- "pan" (percorre o quadro): só com "cover", em quadro de ação bem mais alto ou largo que a tela.
-- "static": evite.
+MOVIMENTO ("motion"), sempre leve: "zoom-in" (o padrão: reações e tensão), "zoom-out" (revelação, fim de cena), "pan" (só com "cover"). Evite "static".
 
-ECONOMIA (resumir):
-- Estilo canal de resumo: foco em ação, emoção, clímax e na apresentação dos personagens/mundo. Conversa, explicação e enchimento viram UM recorte curto com o texto resumindo tudo, de preferência numa imagem (rosto/cena), não num balão.
-- Página com muita conversa: no máximo 1 recorte (os rostos principais), com o texto resumindo a conversa toda.
-- Ação: pode usar mais recortes (até 6 por página), com duração curta e ritmo rápido.
+RITMO:
+- Canal de resumo: ação, emoção, clímax e apresentação de personagem/mundo ganham recortes. Conversa, explicação e enchimento viram UM recorte com o texto resumindo tudo, numa imagem de rosto ou de cena.
+- Página com muita conversa: no máximo 1 recorte. Ação: até 6 recortes por página, com ritmo rápido.
+- Uma fala pode ter 2 ou 3 imagens: os recortes seguintes vêm com "text": "" e aparecem NA TELA DURANTE a mesma fala, trocando de imagem enquanto a voz continua (ex.: "Um meteoro caiu bem no centro da cidade" mostra o céu, a explosão e a cratera). Cada imagem fica pelo menos ~1 segundo.
+- O vídeo NUNCA fica com imagem sem narração: recorte com "text": "" só existe depois de um recorte com fala, e o PRIMEIRO recorte de cada página com algo para mostrar sempre tem "text".
 
 NOTA DE IMPACTO ("impact", 1 a 10): parte da nota do quadro e ajuste pelo papel na história. Ela decide quanto tempo o recorte fica na tela.
 - 9-10: clímax, virada, revelação, golpe decisivo, morte, transformação, primeira aparição de alguém importante.
 - 6-8: ação forte, emoção marcante, informação importante da trama.
 - 3-5: transição útil, contexto, reação comum.
 - 1-2: enchimento. Prefira pular esses recortes em vez de incluí-los.
-Seja criterioso: nem tudo é 8+. Varie as notas ao longo do capítulo para criar ritmo (momentos rápidos e momentos que respiram).
+Seja criterioso: nem tudo é 8+. Varie as notas ao longo do capítulo para criar ritmo.
 
-ROTEIRO (quando a página vier com "ROTEIRO NARRADO"): mostre na tela o que a narração fala:
-- falando do herói/de alguém: escolha os quadros (ou o "close") dessa pessoa;
-- falando da luta: foque nos golpes e impactos;
-- falando do lugar/ambiente: use um quadro do cenário;
-- o que o roteiro não menciona tem impacto baixo (ou fica fora).
-- Reaproveite as frases do roteiro no "text", repartindo-as entre os recortes na ordem (pode ajustar levemente), sem quebrar o encadeamento: cada pedaço continua o anterior.
-- NUNCA corte uma frase no meio para repartir entre recortes ("E no meio" | "protagonista aqui,"): a voz fala cada "text" separado e o corte vira uma pausa dramática sem sentido. Reparta só em fim de frase ou de oração inteira (depois de ponto, ou de vírgula que fecha uma ideia completa). Se a frase não dá para dividir, ela fica INTEIRA num recorte e os recortes seguintes dela vêm com "text": "": eles aparecem NA TELA DURANTE essa mesma frase, trocando de imagem enquanto a voz continua (sem pausa).
-
-PROPAGANDA: nunca use quadro de divulgação da scan (Support Us, Discord, Ko-fi, Patreon, logos, créditos, capa/título, anúncio de outras obras, marca d'água), nem no início nem no rodapé da página. Quadro que não tenha a ver com a fala é pior que repetir uma imagem: prefira reaproveitar um quadro anterior/seguinte da história ("text": "" no recorte) a mostrar algo sem relação com a narração.
+ROTEIRO (quando a página vier com "ROTEIRO NARRADO"): mostre na tela o que a narração fala e reparta as frases do roteiro no "text" dos recortes, na ordem, sem mudar o sentido.
+- O que o roteiro não menciona tem impacto baixo ou fica fora.
+- NUNCA corte uma frase no meio para repartir entre recortes ("E no meio" | "protagonista aqui,"): a voz fala cada "text" separado e o corte vira uma pausa sem sentido. Reparta só em fim de frase ou de oração inteira. Frase que não dá para dividir fica INTEIRA num recorte, e os recortes seguintes dela vêm com "text": "".
 
 CONTINUIDADE: os "text" de todas as páginas formam UMA narração corrida, como filme. O primeiro "text" continua direto do fim da "História até aqui" (sem repetir nem recomeçar), cada página continua a anterior e o último deixa um gancho para a página seguinte.
 
-REGRA ABSOLUTA: o vídeo NUNCA fica com imagem parada sem narração. Recorte com "text": "" NÃO é silêncio: ele é mostrado DURANTE a fala do recorte anterior, que continua (ex.: "Um meteoro caiu bem no centro da cidade" mostra o céu, depois a explosão, depois a cratera, tudo enquanto a frase é falada). Use isso à vontade para ilustrar e contextualizar a frase com mais de uma imagem. O PRIMEIRO recorte de cada página com algo para mostrar sempre tem "text"; nunca deixe uma página inteira sem fala.
-
-TEXTO ("text"): SEMPRE em português do Brasil, qualquer que seja o idioma da obra (inglês, japonês, coreano, chinês, espanhol...).
+TEXTO ("text"): SEMPRE em português do Brasil, qualquer que seja o idioma da obra.
 ${NARRATOR_STYLE}
-- NUNCA repita no começo de um "text" o final do anterior (nem a mesma oração com outras palavras): cada trecho traz só informação NOVA. Releia a "História até aqui" e o último "text" antes de escrever o primeiro.
-- Cada "text" é frase completa dentro da história, nunca legenda solta ("Fulano surpreso.").
-- FLUIDEZ: leia o "text" de cada recorte em sequência como se fosse uma narração só: tem que soar natural, sem trechos de 2-3 palavras soltos ("E no meio", "protagonista aqui,") e sem começar no meio de uma ideia. Cada "text" com voz tem no mínimo ~6 palavras e termina numa pausa natural; se sobrar pouco texto, junte ao recorte vizinho e deixe o outro com "text": "" (ele vira mais uma imagem durante a mesma fala).
-- Tamanho do texto proporcional ao impacto: impacto alto pode ter uma frase mais longa; impacto baixo, poucas palavras.
-- Modo voz: a duração final acompanha a fala (cerca de 2,5 palavras por segundo).
+- NUNCA repita no começo de um "text" o final do anterior (nem a mesma oração com outras palavras): cada trecho traz só informação NOVA.
+- Cada "text" com voz tem no mínimo ~6 palavras, é frase completa dentro da história (nunca legenda solta como "Fulano surpreso.") e termina numa pausa natural. Sobrou pouco texto? Junte ao recorte vizinho e deixe o outro com "text": "".
+- Tamanho proporcional ao impacto: impacto alto pode ter uma frase mais longa; impacto baixo, poucas palavras.
 
 Responda SOMENTE JSON, com TODAS as páginas recebidas, na ordem:
-{"pages":[{"page":12,"shots":[{"panel":2,"close":false,"kind":"action","fit":"cover","motion":"zoom-in","impact":7,"text":"..."}],"summary":"o que aconteceu nesta página, em uma frase"}]}`;
+{"pages":[{"page":12,"shots":[{"panel":2,"close":false,"kind":"action","fit":"contain","motion":"zoom-in","impact":7,"text":"..."}],"summary":"o que aconteceu nesta página, em uma frase"}]}`;
 
 const MOTIONS: Motion[] = ['zoom-in', 'zoom-out', 'pan', 'static'];
 const KINDS = ['action', 'reaction', 'dialogue', 'scene'] as const;
@@ -550,11 +527,20 @@ export function fitBudget(shots: Shot[], maxSec: number): { shots: Shot[]; remov
 }
 
 /** Muda quando o prompt/regras da edição mudam, para não reaproveitar progresso antigo incompatível. */
-const EDIT_CK_VERSION = 'edit-v13'; // v9: recortes vêm dos quadros da leitura das páginas (page-notes), edição só com texto
+const EDIT_CK_VERSION = 'edit-v14'; // v9: recortes vêm dos quadros da leitura das páginas (page-notes), edição só com texto
 
 /** Páginas por chamada da edição (só texto): provedor grátis / Claude. */
 const EDIT_PAGES = 4;
 const EDIT_PAGES_CLAUDE = 8;
+
+/**
+ * Quadro com poucos pixels: para cobrir a altura da tela (ou a largura, se for mais largo que 16:9) seria ampliado mais de 2,5x.
+ * A edição não vê a imagem nem mede nada: recebe só a marca "pequeno" e deixa esse quadro por último.
+ */
+export function isSmallSource(pg: Pick<StudioPage, 'width' | 'height'>, r: Shot['focus'], screen = { w: 1920, h: 1080 }): boolean {
+  const w = (r.x1 - r.x0) * pg.width, h = (r.y1 - r.y0) * pg.height;
+  return Math.min(screen.w / Math.max(1, w), screen.h / Math.max(1, h)) > 2.5;
+}
 
 /** Formato do quadro em palavras (a edição não vê a imagem). */
 function shape(pg: StudioPage, r: Shot['focus']): string {
@@ -567,7 +553,7 @@ function shape(pg: StudioPage, r: Shot['focus']): string {
 function pageBlock(pg: StudioPage, n: number, total: number, note: PageNote, script?: string): string {
   const panels = note.panels.map(
     (q, k) =>
-      `  ${k + 1}. ${q.what || '(sem descrição)'} [${q.kind}, impacto ${q.impact}, ${shape(pg, q.box)}${q.rotate ? ', desenhado de lado' : ''}${q.focus ? ', close disponível' : ''}${q.box.y1 - q.box.y0 > maxHeightFrac(q.box, pg) * 1.02 ? ', ALTO: prefira outro quadro; este vira cortes rápidos' : ''}]`,
+      `  ${k + 1}. ${q.what || '(sem descrição)'} [${q.kind}, impacto ${q.impact}, ${shape(pg, q.box)}${q.rotate ? ', desenhado de lado' : ''}${q.focus ? ', close disponível' : ''}${isSmallSource(pg, q.box) ? ', pequeno' : ''}${q.box.y1 - q.box.y0 > maxHeightFrac(q.box, pg) * 1.02 ? ', ALTO: prefira outro quadro; este vira cortes rápidos' : ''}]`,
   );
   return [
     `PÁGINA ${n} (de ${total}, ${pg.chapter})`,
@@ -648,6 +634,7 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
     `Tela do vídeo: ${w}x${h} (${p.format}). Modo de narração: ${voice ? 'voz' : 'texto'}. ` +
     `${capped ? `Orçamento de tempo: o vídeo inteiro tem no máximo ${Math.round(budget / 60)} min para ${pages.length} páginas; cada página tem cerca de ${Math.max(1, Math.round(secPerPage))} s em média. ${budgetHint(secPerPage)}` : 'SEM teto de duração: o tempo de cada página é o que o roteiro pede. Páginas de capítulos importantes (apresentação, origem, poder, explicações) mostram tudo o que o capítulo traz; o que o roteiro não cita fica fora.'} Dê "impact" alto (8-10) só ao que é realmente marcante.
 `;
+  const system = `${EDIT_SYSTEM}\n\n${fixed}`;
   let calls = 0;
   let stop = false;
   for (let i = 0; i < pages.length && !stop; ) {
@@ -679,10 +666,10 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
       for (let attempt = 1; !out; attempt++) {
         calls++;
         const raw = await llm.complete({
-          system: EDIT_SYSTEM,
-          // parte fixa do job primeiro; história e páginas (o que muda) depois
+          // parte fixa do job (regras aprendidas, habilidades, obra, orçamento) no SYSTEM: é igual em todas as chamadas,
+          // então o provedor guarda em cache em vez de cobrar ~6 mil tokens de novo a cada lote de páginas
+          system,
           prompt:
-            fixed +
             `${p.chapterContexts?.[batch[0].pg.chapter] ? `Resumo do capítulo: ${p.chapterContexts[batch[0].pg.chapter]}\n` : ''}${story ? `História até aqui: ${story.slice(-1200)}\n` : ''}\n` +
             batch.map(({ pg, n }) => pageBlock(pg, n, pages.length, notes[pg.id], script[pg.id])).join('\n\n'),
           maxTokens: (600 + batch.length * 700) * attempt,
