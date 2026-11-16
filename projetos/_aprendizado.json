@@ -3,33 +3,33 @@
     "Nunca use rodapé, créditos ou propaganda da scan (Patreon, Discord, YakshaComics, logos, 'please consider supporting') como recorte nem como opção de dúvida.",
     "O foco é sempre a CENA, não os balões, porque a narração já conta a história. Corte balões, caixas de texto e mensagens e use o espaço para mostrar mais da cena. Só mostre o balão quando a fala for sobre o sistema ou sobre um objeto que só aparece nele.",
     "Padrão principal: use o QUADRO INTEIRO em largura total. O comum é x ~0.05–0.95 (ou 0.00–0.95 / 0.02–0.98), da borda de cima até a base do quadro. Troque recortes estreitos (rosto, braço, figura pequena, 20–70% de largura) pelo quadro completo. Em faixas finas (4–15% de altura), mantenha a altura e estenda para quase toda a largura.",
-    "A altura segue o quadro real, não um número fixo. Em quadro alto ou personagem de corpo inteiro, pegue a altura toda (~40–76%) para mostrar o corpo, e não só pernas ou metade do rosto. Quadros normais ficam em ~15–36%. Se o recorte invade balões ou o quadro de baixo, encolha a altura até a borda real (ex.: 35%→22%, 28%→15%).",
-    "Exceção à largura total: quando o quadro original é uma coluna estreita (~30–70% de largura, como um personagem sentado ao lado de outro quadro), mantenha a largura dele e a altura toda, sem invadir o quadro ao lado.",
+    "Webtoon em tira vertical longa (ex.: Tomb Raider King): use x 0.00–1.00 (largura total, sem margem, troque 0.05–0.95 e 0.15–0.85 por 0.00–1.00) e a altura do quadro real, em geral ~5–12% da tira. Em momento marcante ou de virada (ex.: 'eu tinha voltado quinze anos'), use o quadro grande inteiro (~15–20%). Nunca use fatias de 2–3% de altura: amplie até as bordas reais do quadro (ex.: 2%→6%, 4%→20%).",
+    "A altura segue o quadro real, não um número fixo. Em quadro alto ou personagem de corpo inteiro, pegue a altura toda (~40–76%) para mostrar o corpo, e não só pernas ou metade do rosto. Em páginas normais, quadros comuns ficam em ~15–36%. Se o recorte invade balões ou o quadro de baixo, encolha a altura até a borda real (ex.: 35%→22%, 10%→4–7% na tira).",
+    "Exceção à largura total: quando o quadro original é mais estreito que a página (coluna de ~30–70% ou quadro de ~75–82% com fundo branco nas laterais, comum em webtoon), mantenha a largura dele (ex.: x 0.10–0.86, 0.08–0.90) e a altura toda, sem pegar margem vazia nem o quadro ao lado.",
     "Closes estreitos (rosto, mão, detalhe, punho com pulseira, bichinho caído no chão) quase sempre são rejeitados. Só use close quando o quadro original já for um close ou quando a fala for sobre uma linha do sistema. Detalhe pequeno citado na fala: repita o quadro inteiro anterior, onde ele aparece no contexto.",
-    "Ajuste o recorte às bordas reais do quadro: tire sobras do quadro vizinho e da sarjeta (ex.: 1.00→0.95, 0.00→0.05, y 0.00→0.03) sem cortar parte do próprio quadro. Amplie quando o recorte corta a cena ou o corpo do personagem.",
-    "Quando o recorte pega a sarjeta ou o quadro vizinho de um lado, desloque-o horizontalmente para o lado do personagem que fala ou reage, mantendo a largura.",
-    "Falas vizinhas sobre o mesmo momento usam a MESMA imagem com o MESMO recorte (o comum é 2 a 4 falas por quadro). Repita em reação, comentário, resposta, pergunta seguinte da mesma conversa, pensamento, consequência, transição, presságio ou explicação abstrata (ex.: 'esse acidente me deu uma habilidade').",
-    "Repita o quadro anterior quando a fala descreve algo que NÃO tem quadro próprio ou continua a conversa: risadinha de quem já estava na cena, aviso/bronca durante a mesma ação, conversa enquanto caminham, coisa imaginada ou lembrada, lista, metáfora, sentimento sobre o que acabou de aparecer, pedido simples ('olha no meu bolso') ou comentário sobre um lugar já mostrado. A IA costuma errar puxando um quadro novo e fraco.",
+    "Ajuste o recorte às bordas reais do quadro: em páginas com sarjeta, tire sobras do quadro vizinho (ex.: 1.00→0.95, y 0.00→0.03) sem cortar o próprio quadro; amplie quando o recorte corta a cena ou o corpo. Se pegar sarjeta de um lado, desloque horizontalmente para o lado de quem fala ou reage, mantendo a largura.",
+    "Falas vizinhas sobre o mesmo momento usam a MESMA imagem com o MESMO recorte (o comum é 2 a 4 falas por quadro). Repita em reação, comentário, resposta, descrição da situação em que o narrador já está (ex.: apresentação 'vou morrer hoje' + 'estou caído na masmorra'), juramento/ameaça que continua o grito anterior, pergunta seguinte da mesma conversa, pensamento, consequência, transição, presságio ou explicação abstrata.",
+    "Repita o quadro anterior quando a fala descreve algo que NÃO tem quadro próprio ou continua a conversa: risadinha de quem já estava na cena, aviso/bronca durante a mesma ação, conversa enquanto caminham, coisa imaginada ou lembrada, lista, metáfora, sentimento sobre o que acabou de aparecer, pedido simples ou comentário sobre um lugar já mostrado. A IA costuma errar puxando um quadro novo e fraco.",
     "Coisa citada que não aparece em nenhum quadro (cadáveres lembrados, ouro pouco visível, a garota ausente): use o quadro inteiro de quem está pensando ou falando naquele momento (geralmente o primeiro da cena), sem juntar quadros.",
     "Ao repetir a imagem, use um único recorte que funcione para todas as falas: o maior e mais completo entre elas (ex.: 31%→66%, 35%→65%). Se a fala de abertura tem um quadro próprio fraco, use o quadro da fala seguinte quando ele mostra melhor o momento.",
     "Só troque de quadro quando a fala trouxer um momento novo, um personagem novo ou uma ação nova com quadro próprio. Siga a ordem das páginas e não adiante quadros: a IA costuma errar um quadro para frente.",
-    "Use a 'cena geral' (faixa ou bloco dos dois quadros, largura total ~30–45%) quando a fala vai de um quadro ao vizinho no mesmo instante e os dois se completam. Exemplos: encarar + reação dela, sorriso + quem ouve, pergunta + ameaça, surpresa + sorriso, cálculo + preço, ele no chão + olhar em volta.",
-    "Fala com dois momentos em quadros distintos (principalmente EMPILHADOS) usa UM quadro inteiro, o da ação ou do sujeito principal. Escolha o impacto em vez do aviso (explosão > comando; pisão > meio sorriso). Escolha o ato descrito em vez da consequência (abraço > cara emburrada; resposta alta > hesitação). Não junte num bloco alto demais.",
-    "Quadros que se sobrepõem numa mesma ação (mão com garras + medo, faca + zumbi, queda + rosnado, chute + criatura assustada, colo + pulo na banheira): use o bloco inteiro que cobre todos (~35–76% de altura), largura total.",
-    "Explicação geral (mundo, história, era, facções, reflexão) usa o bloco inteiro em largura total, e as falas seguidas reutilizam o mesmo bloco. Se o recorte for só um borrão sem sentido, use a imagem inteira.",
+    "Use a 'cena geral' (faixa ou bloco dos dois quadros, largura total) quando a fala vai de um quadro ao vizinho no mesmo instante e os dois se completam. Exemplos: encarar + reação dela, sorriso + quem ouve, pergunta + ameaça, surpresa + sorriso, cálculo + preço, ele no chão + criatura vindo, recusa + mão fechada de raiva, grupo cercando + provocação.",
+    "Fala com dois momentos em quadros distintos e distantes usa UM quadro inteiro, o da ação ou do sujeito principal. Escolha o impacto em vez do aviso (explosão > comando; pisão > meio sorriso; entidade avançando > desprezo lembrado). Escolha o ato descrito em vez da consequência (abraço > cara emburrada; criatura revelada > deboche). Não junte num bloco alto demais.",
+    "Quadros que se sobrepõem numa mesma ação (mão com garras + medo, faca + zumbi, queda + rosnado, chute + criatura assustada, golpe + garoto caindo no chão): use o bloco inteiro que cobre todos (~35–76% de altura em página normal; ~10–12% na tira), largura total.",
+    "Explicação geral (mundo, história, era, facções, tumbas e relíquias surgindo, reflexão) usa o bloco inteiro em largura total, e as falas seguidas reutilizam o mesmo bloco. Se o recorte for só um borrão sem sentido, use a imagem inteira.",
     "Página que é uma única cena grande (personagem apontando arma, conversa de braços cruzados, pedido à estrela cadente, protagonista bebendo no telhado): use a página/imagem inteira (~74–100%) e mantenha nas 3–4 falas daquela conversa, em vez de recortar rostos.",
     "Imagem comprida com cenas diferentes: recorte em blocos, um por momento, cada bloco inteiro em largura total, usados na ordem das falas.",
     "Quadro gigante (mais de ~45% da página): corte o topo com sobras e balões e fique com a sub-cena citada inteira (~35–60%). Em caos total, luz ofuscante, paisagem distante ou ilustração de página inteira, use ~50–100% e tire só a sobra.",
-    "Ação, impacto, tiroteio, explosão e combate usam o quadro inteiro da ação (~25–60%) com corpo, inimigo e efeito. Não use só o clarão, as marcas de tiro ou uma figura pequena.",
-    "Fala sobre o sistema (janela, notificação): mostre só a janela citada, enxuta (~4–12% de altura, ~45–80% de largura). Se o aviso vem junto da cena, use o bloco inteiro (~26–42%). Se o sistema é citado só de passagem, mostre a cena. Telas de celular citadas de passagem não ganham quadro próprio: mostre a pessoa.",
-    "Reação, emoção e diálogo (choque, raiva, alívio, medo, susto, desconfiança, riso sem graça, provocação, alegria com comida) usam o quadro inteiro onde o personagem reage, com corpo e postura. Se a emoção é do narrador, use o quadro dele.",
-    "Voz de fora, alguém que não aparece ou coisa abstrata: use o quadro inteiro da cena principal daquele momento ou repita o vizinho, sem juntar quadro extra.",
-    "Revelação de personagem, criatura ou objeto (marca no braço, poder novo), ou personagem novo: use o primeiro quadro dele, inteiro (~20–60%), mantido nas falas seguintes. Multidão, grupo armado ou mudança de local: use o quadro inteiro do local (~20–40%).",
-    "Fala do narrador sobre si mesmo, a postura ou o passado dele: use o quadro inteiro do protagonista posicionado (~20–45%), ou a página inteira se ela for uma cena só dele.",
+    "Ação, impacto, tiroteio, explosão e combate usam o quadro inteiro da ação com corpo, inimigo e efeito. Não use só o clarão, as marcas de tiro, o punho agarrado ou uma figura pequena.",
+    "Fala sobre o sistema (janela, notificação, missão, painel): mostre só a janela citada, enxuta (~4–12% de altura, ~45–100% de largura). Se o aviso vem junto da cena, use o bloco inteiro. Se o sistema é citado só de passagem, mostre a cena. Telas de celular citadas de passagem não ganham quadro próprio: mostre a pessoa.",
+    "Reação, emoção e diálogo (choque, raiva, alívio, medo, susto, desconfiança, riso sem graça, provocação, empolgação, alegria com comida) usam o quadro inteiro onde o personagem reage, com corpo e postura. Se a emoção é do narrador, use o quadro dele. Voz de fora, alguém que não aparece ou coisa abstrata: use o quadro da cena principal ou repita o vizinho.",
+    "Revelação de personagem, criatura ou objeto (marca no braço, poder novo, corvo surgindo), ou personagem novo: use o primeiro quadro dele, inteiro, mantido nas falas seguintes. Multidão, grupo armado ou mudança de local (delegacia, cela): use o quadro inteiro do local.",
+    "Fala do narrador sobre si mesmo, a postura, os planos ou o passado dele: use o quadro inteiro do protagonista posicionado (~20–45% em página normal; ~6–12% na tira), ou a página inteira se ela for uma cena só dele.",
     "Zoom: 1 em ação e em cenas gerais; ~1.25 em reação/emoção, introspecção, explicação importante, súplica/comemoração e ameaça dramática.",
-    "Stretch padrão 1, inclusive em cena geral, página inteira e imagem repetida (a IA erra pondo 1.1–1.35; troque por 1). Rotate sempre 0 explícito. Fit 'cover' em ação e detalhes finos.",
+    "Stretch padrão 1, inclusive em cena geral, página inteira, ação e imagem repetida (a IA erra pondo 1.05–1.35; troque por 1). Rotate sempre 0 explícito. Fit 'cover' em ação e detalhes finos.",
     "bgBand: escolha a faixa que esconde os balões e destaca a cena. Em imagem repetida, alterne top/bottom em relação à fala anterior.",
-    "Texto narrado: fala dividida em duas partes tem a primeira terminando em vírgula e a segunda começando em minúscula. Nas dúvidas, proponha direto o quadro inteiro (ou a cena geral) e NÃO pergunte, a não ser que haja dois quadros realmente equivalentes. Quando a fala usa 2 imagens, cada uma deve ser o quadro inteiro em largura total (~20–40%)."
+    "Texto narrado: fala dividida em duas partes tem a primeira terminando em vírgula e a segunda começando em minúscula. Quando a fala usa 2 ou 3 imagens, cada uma deve ser o quadro inteiro em largura total.",
+    "Dúvidas: o usuário quase sempre rejeita as opções e ajusta à mão. Proponha direto o quadro inteiro (ou a cena geral dos quadros vizinhos), já em largura total e com altura real, e NÃO pergunte, a não ser que haja dois quadros realmente equivalentes e distantes entre si."
   ],
   "questions": [
     {
@@ -110,7 +110,8 @@
       "title": "I have a Mansion in the Post-Apocalyptic World",
       "part": 145,
       "question": "Na parte 145 você deslocou o recorte para a direita (x 0.04→0.34) sem mudar o tamanho. Foi para centralizar o protagonista que responde ou para tirar algo que aparecia à esquerda?",
-      "at": "2026-11-15T23:11:28.313Z"
+      "at": "2026-11-15T23:11:28.313Z",
+      "answer": "eu fiz essa edição para dar mais foco no protagonista em vez do Balão"
     },
     {
       "id": "57b54007",
@@ -147,7 +148,39 @@
       "question": "Na parte 29 você trocou o bloco largo (93%×43%) por um recorte menor só à direita (71%×28%). Foi para mostrar só o Jiang sorrindo nervoso, ou porque o bloco pegava outro quadro?",
       "at": "2026-11-16T00:27:42.593Z",
       "answer": "é com essa forma ocupava mais espaço na tela e não estava aparecendo o rosto da da mulher somente parte do pescoço para baixo isso Ficou muito estranho então eu trouxe só o protagonista"
+    },
+    {
+      "id": "ea204273",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "part": 26,
+      "question": "Na parte 26 você desceu o recorte (y 0.30→0.35). O quadro escolhido foi o do Joo-heon empolgado, o das relíquias ou outro entre os dois?",
+      "at": "2026-11-16T04:25:48.122Z"
+    },
+    {
+      "id": "8c5f6f47",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "part": 12,
+      "question": "Na parte 12 você manteve a borda direita em 0.88 em vez de 1.00. Foi para cortar um balão ou outro quadro naquele lado?",
+      "at": "2026-11-16T04:25:48.122Z"
+    },
+    {
+      "id": "32b78482",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "part": 61,
+      "question": "Nas partes 61, 67, 75 e 81 você estreitou o recorte (ex.: 96%→76% de largura, 6%→4% de altura), ao contrário do resto, onde alargou para 100%. Foi porque esses quadros são mais estreitos na tira (com margem branca dos lados) ou para tirar algum balão?",
+      "at": "2026-11-16T04:59:44.004Z"
+    },
+    {
+      "id": "49ba8649",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "part": 27,
+      "question": "Nas partes 27 a 54 e 94 a 103 você criou várias falas novas que recontam a história (masmorra, corvo, delegacia). Quer que a IA faça um resumo mais detalhado assim desde o começo, ou isso foi um ajuste só deste capítulo?",
+      "at": "2026-11-16T04:59:44.004Z"
     }
   ],
-  "updatedAt": "2026-11-16T02:35:45.530Z"
+  "updatedAt": "2026-11-16T04:59:44.004Z"
 }

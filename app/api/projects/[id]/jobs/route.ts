@@ -5,7 +5,7 @@ import { answerPaid, cancelJob, projectJobs, resumeJob, startJob } from '@/lib/j
 import { candidates, learnTemplate } from '@/lib/patterns';
 import { renderProject } from '@/lib/render';
 import { learnFromEdits } from '@/lib/learning';
-import { finishTest, healTest, learnCutProfile, parkChapters, snapshotBaseline, startTest } from '@/lib/cut-profiles';
+import { finishTest, healTest, learnCutProfile, parkChapters, replaceOldCopies, snapshotBaseline, startTest } from '@/lib/cut-profiles';
 import { auditProject } from '@/lib/manager';
 import { reviewStage } from '@/lib/stage-review';
 import { renderEnglish, translateOnly } from '@/lib/english';
@@ -21,9 +21,12 @@ import { jobLLM } from '@/lib/ai-meter';
 import { updateSeriesMemory } from '@/lib/series';
 import { generateChapterContexts, generateScript } from '@/lib/script';
 import { expandChapters, fillVar, hasVar, parseRange } from '@/lib/ranges';
-import { peekProject, readProject, updateProject } from '@/lib/store';
+import { peekProject, projectDir, readProject, updateProject } from '@/lib/store';
 import { FULL } from '@/lib/types';
+import { addPagesToTimeline } from '@/lib/timeline';
 import { randomUUID } from 'node:crypto';
+import fs from 'node:fs';
+import path from 'node:path';
 
 export const dynamic = 'force-dynamic';
 type Ctx = { params: Promise<{ id: string }> };
@@ -86,7 +89,7 @@ export async function POST(req: Request, { params }: Ctx) {
   if (body.kind === 'import') {
     let list, pageSel: number[];
     try {
-      const existing = new Set(p.pages.map((x) => x.chapter)).size;
+      const existing = new Set([...p.pages.map((x) => x.chapter), ...(p.parked ?? []).map((x) => x.chapter)]).size;
       list = expandChapters(body.url ?? '', body.chapters ?? '', body.chapter ?? '', (i) => `Capítulo ${existing + i + 1}`);
       pageSel = parseRange(body.pages ?? '');
     } catch (e) {
@@ -159,6 +162,13 @@ export async function POST(req: Request, { params }: Ctx) {
             okChapters.push(c.chapter);
           }
         }
+        // TRAVA: capítulo já baixado antes (nas páginas ou esperando o teste) é substituído pela cópia nova: nunca fica duplicado
+        if (total && okChapters.length) {
+          let oldDirs: string[] = [];
+          updateProject(id, (cur) => { oldDirs = replaceOldCopies(cur, okChapters, new Set(cur.pages.filter((pg) => !before.has(pg.id)).map((pg) => pg.id))); });
+          for (const d of oldDirs) fs.rmSync(path.join(projectDir(id), 'pages', d), { recursive: true, force: true });
+          if (oldDirs.length) ctx.log(`Cópia antiga de ${oldDirs.length} pasta(s) de capítulo(s) já baixado(s) apagada: ficou só a nova`);
+        }
         if (total && body.url?.trim()) updateProject(id, (cur) => { cur.lastImportUrl = body.url!.trim(); });
         if (!total) updateProject(id, (cur) => { cur.lockedPages = lockBefore; });
         // modo teste: com um teste em andamento os capítulos novos esperam; senão, o lote começa um teste (1-2 capítulos) e o resto espera
@@ -166,14 +176,9 @@ export async function POST(req: Request, { params }: Ctx) {
         if (total && okChapters.length && (testCount > 0 || readProject(id)?.test)) {
           updateProject(id, (cur) => {
             if (cur.test) {
-              // os capítulos do próprio teste nunca são estacionados; se já existiam, a cópia nova (duplicada) é descartada
+              // os capítulos do próprio teste nunca são estacionados
               const mine = new Set(cur.test.chapters);
               const fresh = new Set(okChapters.filter((c) => !mine.has(c)));
-              const dupIds = new Set(cur.pages.filter((pg) => mine.has(pg.chapter) && !before.has(pg.id) && cur.pages.some((o) => o.chapter === pg.chapter && before.has(o.id))).map((pg) => pg.id));
-              if (dupIds.size) {
-                cur.pages = cur.pages.filter((pg) => !dupIds.has(pg.id));
-                cur.shots = cur.shots.filter((s) => !dupIds.has(s.pageId));
-              }
               parkChapters(cur, [...fresh]);
               healTest(cur);
             } else startTest(cur, okChapters, testCount);
@@ -203,6 +208,22 @@ export async function POST(req: Request, { params }: Ctx) {
       const busy = projectJobs(id).find((j) => j.status === 'running' && (MUTATING.includes(j.kind) || j.kind === 'render'));
       if (busy) return new Response(`Já tem um processo rodando neste projeto (${busy.kind}): espere terminar ou cancele antes de começar outro.`, { status: 409 });
     }
+  }
+  // recomeçar do zero: apaga roteiro, partes, resumos e dúvidas; fica só a leitura das imagens (page-notes) e as páginas
+  if ((body as { kind: string }).kind === 'resetWork') {
+    if (projectJobs(id).some((j) => j.status === 'running')) return new Response('Tem processo rodando: espere terminar.', { status: 409 });
+    updateProject(id, (cur) => {
+      cur.shots = [];
+      addPagesToTimeline(cur, cur.pages);
+      cur.pageScript = undefined;
+      cur.chapterContexts = undefined;
+      cur.doubts = [];
+      cur.lockedPages = undefined;
+      cur.test = undefined;
+      cur.parked = undefined;
+      cur.autoPaid = true;
+    });
+    return Response.json({ ok: true, shots: readProject(id)?.shots.length ?? 0 });
   }
   if (body.kind === 'edit')
     return Response.json(
@@ -286,6 +307,12 @@ export async function POST(req: Request, { params }: Ctx) {
   }
   if ((body.kind === 'render' || body.kind === 'polish') && projectJobs(id).some((j) => (j.kind === 'render' || j.kind === 'polish') && j.status === 'running'))
     return new Response('Já tem um render rodando neste projeto: espere terminar (ou cancele) antes de começar outro.', { status: 409 });
+  // REGRA: a validação (passo 3) é obrigatória antes de qualquer render, venha o pedido do automático, do modal de dúvidas ou do editor
+  if (body.kind === 'render') {
+    const done = (k: string) => Math.max(0, ...projectJobs(id).filter((j) => j.kind === k && j.status === 'done').map((j) => j.endedAt ?? 0));
+    if (done('check') === 0 || done('check') < Math.max(done('edit'), done('script')))
+      return new Response('Falta o passo 3 (Validar com IA): a validação é obrigatória antes de renderizar. Rode "3 · Validar (IA)" primeiro.', { status: 409 });
+  }
   if (body.kind === 'render')
     return Response.json(
       startJob('render', id, async (ctx, signal) => {

@@ -227,7 +227,7 @@ export function DoubtsModal({ p, busy, onClose, onDone, onGoTo, onQueue }: { p: 
   };
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" onClick={onClose}>
-      <div className="flex max-h-[90vh] w-full max-w-4xl flex-col rounded-lg border bg-background text-sm" onClick={(e) => e.stopPropagation()}>
+      <div className="flex max-h-[90vh] w-full max-w-[1075px] flex-col rounded-lg border bg-background text-sm" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center gap-2 border-b p-3">
           <p className="flex-1 font-semibold">❓ Dúvidas da IA nos recortes ({doubts.length})</p>
           <button className="btn px-2 py-0.5" onClick={onClose} title="Fechar sem fazer nada (dá para responder depois)">
@@ -244,6 +244,16 @@ export function DoubtsModal({ p, busy, onClose, onDone, onGoTo, onQueue }: { p: 
               <p className="pr-40 text-xs">
                 <b>Parte {d.part}</b> · <span className="italic">“{d.text}”</span>
               </p>
+              {(() => {
+                const o0 = d.options[0];
+                const pg0 = o0 && pageById.get(o0.pageId);
+                return pg0 ? (
+                  <div className="space-y-1">
+                    <p className="text-xs text-muted-foreground">⭐ Palpite da IA no contexto (contorno tracejado = o que ela pegou; 25% a mais acima e abaixo):</p>
+                    <ContextThumb src={pageUrl(p.id, pg0)} page={pg0} focus={o0.focus} scale={zoom[d.id]} />
+                  </div>
+                ) : null;
+              })()}
               <p className="text-amber-300">{d.question}</p>
               <div className="flex flex-wrap gap-2">
                 {d.options.map((o, k) => {
@@ -317,11 +327,27 @@ export function DoubtsModal({ p, busy, onClose, onDone, onGoTo, onQueue }: { p: 
 }
 
 /** Miniatura de um recorte da página (posiciona a página inteira atrás de uma janela). */
+/** Mostra o recorte do palpite da IA com 25% a mais para cima e para baixo (até a borda da página), com o recorte contornado. */
+function ContextThumb({ src, page, focus, scale = 1 }: { src: string; page: { width: number; height: number }; focus: { x0: number; y0: number; x1: number; y1: number }; scale?: number }) {
+  const fh = Math.max(0.01, focus.y1 - focus.y0);
+  const y0 = Math.max(0, focus.y0 - fh * 0.25), y1 = Math.min(1, focus.y1 + fh * 0.25);
+  const x0 = Math.max(0, focus.x0), x1 = Math.min(1, focus.x1), fw = Math.max(0.01, x1 - x0);
+  const ar = (fw * page.width) / ((y1 - y0) * page.height);
+  const W = Math.min(990, Math.min(260, 150 * ar) * scale);
+  const iw = W / fw, ih = (iw * page.height) / page.width, H = W / ar;
+  return (
+    <div className="relative overflow-hidden rounded bg-black" style={{ width: W, height: H }}>
+      <img src={src} alt="" loading="lazy" className="absolute max-w-none" style={{ width: iw, height: ih, left: -x0 * iw, top: -y0 * ih }} />
+      <div className="pointer-events-none absolute border-2 border-dashed border-amber-400" style={{ left: 0, width: '100%', top: ((focus.y0 - y0) / (y1 - y0)) * H, height: (fh / (y1 - y0)) * H }} />
+    </div>
+  );
+}
+
 export function CropThumb({ src, page, focus, scale = 1 }: { src: string; page: { width: number; height: number }; focus: { x0: number; y0: number; x1: number; y1: number }; scale?: number }) {
   const fw = Math.max(0.01, focus.x1 - focus.x0), fh = Math.max(0.01, focus.y1 - focus.y0);
   const ar = (fw * page.width) / (fh * page.height);
   const base = Math.min(260, 150 * ar);
-  const W = Math.min(820, base * scale); // não passa da largura do modal
+  const W = Math.min(990, base * scale); // não passa da largura do modal
   const iw = W / fw, ih = (iw * page.height) / page.width;
   return (
     <div className="relative overflow-hidden rounded bg-black" style={{ width: W, height: W / ar }}>

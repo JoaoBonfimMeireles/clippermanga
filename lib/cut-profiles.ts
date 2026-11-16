@@ -19,6 +19,7 @@ import { addPagesToTimeline, chaptersInOrder } from './timeline';
 import { projectDir, readProject, studioDir, updateProject } from './store';
 import type { JobCtx } from './jobs';
 import type { Shot, StudioPage, StudioProject } from './types';
+import { readJsonRetry, writeJsonAtomic } from './json-file';
 
 export type Confidence = 'baixa' | 'media' | 'alta';
 export interface CutRule {
@@ -53,7 +54,7 @@ const fileOf = (key: string) => path.join(dir(), `${key.replace(/[^a-z0-9_-]/gi,
 
 export function readGlobalCuts(): GlobalProfile {
   try {
-    return JSON.parse(fs.readFileSync(fileOf(GLOBAL_KEY), 'utf8')) as GlobalProfile;
+    return readJsonRetry<GlobalProfile>(fileOf(GLOBAL_KEY));
   } catch {
     return { rules: [], updatedAt: '' };
   }
@@ -61,11 +62,11 @@ export function readGlobalCuts(): GlobalProfile {
 export function writeGlobalCuts(g: GlobalProfile) {
   fs.mkdirSync(dir(), { recursive: true });
   g.updatedAt = new Date().toISOString();
-  fs.writeFileSync(fileOf(GLOBAL_KEY), JSON.stringify(g, null, 2), 'utf8');
+  writeJsonAtomic(fileOf(GLOBAL_KEY), g);
 }
 export function readCutProfile(key: string): CutProfile | null {
   try {
-    return JSON.parse(fs.readFileSync(fileOf(key), 'utf8')) as CutProfile;
+    return readJsonRetry<CutProfile>(fileOf(key));
   } catch {
     return null;
   }
@@ -73,14 +74,20 @@ export function readCutProfile(key: string): CutProfile | null {
 export function writeCutProfile(p: CutProfile) {
   fs.mkdirSync(dir(), { recursive: true });
   p.updatedAt = new Date().toISOString();
-  fs.writeFileSync(fileOf(p.key), JSON.stringify(p, null, 2), 'utf8');
+  writeJsonAtomic(fileOf(p.key), p);
 }
 export function listCutProfiles(): CutProfile[] {
   try {
     return fs
       .readdirSync(dir())
       .filter((f) => f.endsWith('.json') && f !== `${GLOBAL_KEY}.json`)
-      .map((f) => JSON.parse(fs.readFileSync(path.join(dir(), f), 'utf8')) as CutProfile)
+      .flatMap((f) => {
+        try {
+          return [readJsonRetry<CutProfile>(path.join(dir(), f))]; // um perfil quebrado não esconde os outros
+        } catch {
+          return [];
+        }
+      })
       .filter((p) => p.key);
   } catch {
     return [];
@@ -107,6 +114,52 @@ export function deleteCutRule(profile: string, ruleId: string): boolean {
 
 // ---------------------------------------------------------------- estado do teste
 
+const dirOf = (pg: StudioPage) => pg.file.split('/')[1] ?? '';
+
+/** Há capítulo baixado mais de uma vez (várias pastas de download para o mesmo capítulo)? */
+export function hasDuplicateImports(p: StudioProject): boolean {
+  const seen = new Map<string, string>();
+  for (const pg of [...p.pages, ...(p.parked ?? []).flatMap((x) => x.pages)]) {
+    const d = seen.get(pg.chapter);
+    if (d === undefined) seen.set(pg.chapter, dirOf(pg));
+    else if (d !== dirOf(pg)) return true;
+  }
+  return false;
+}
+
+/** Conserta capítulos baixados duas vezes (a história se repetia): fica só a primeira cópia de cada capítulo. */
+export function dedupeImports(p: StudioProject): boolean {
+  if (!hasDuplicateImports(p)) return false;
+  const keep = new Map<string, string>();
+  for (const pg of [...p.pages, ...(p.parked ?? []).flatMap((x) => x.pages)]) if (!keep.has(pg.chapter)) keep.set(pg.chapter, dirOf(pg));
+  const ok = (pg: StudioPage) => keep.get(pg.chapter) === dirOf(pg);
+  const dropped = new Set(p.pages.filter((pg) => !ok(pg)).map((pg) => pg.id));
+  p.pages = p.pages.filter(ok);
+  p.shots = p.shots.filter((s) => !dropped.has(s.pageId));
+  if (p.pageScript) for (const id of dropped) delete p.pageScript[id];
+  if (p.parked) p.parked = p.parked.map((x) => ({ ...x, pages: x.pages.filter(ok) }));
+  return true;
+}
+
+/**
+ * TRAVA contra capítulo duplicado: o capítulo baixado agora (cópia nova) SUBSTITUI a cópia antiga do mesmo nome, esteja ela
+ * nas páginas ou estacionada. Devolve as pastas de download antigas para apagar do disco.
+ */
+export function replaceOldCopies(p: StudioProject, chapters: string[], keepIds: Set<string>): string[] {
+  const set = new Set(chapters);
+  const old = p.pages.filter((pg) => set.has(pg.chapter) && !keepIds.has(pg.id));
+  const parkedOld = (p.parked ?? []).filter((x) => set.has(x.chapter)).flatMap((x) => x.pages);
+  const oldIds = new Set([...old, ...parkedOld].map((pg) => pg.id));
+  if (!oldIds.size) return [];
+  p.pages = p.pages.filter((pg) => !oldIds.has(pg.id));
+  p.shots = p.shots.filter((s) => !oldIds.has(s.pageId));
+  if (p.pageScript) for (const id of oldIds) delete p.pageScript[id];
+  p.parked = (p.parked ?? []).filter((x) => !set.has(x.chapter));
+  if (!p.parked.length) p.parked = undefined;
+  const still = new Set(p.pages.map(dirOf));
+  return [...new Set([...old, ...parkedOld].map(dirOf))].filter((d) => d && !still.has(d));
+}
+
 /** Estaciona os capítulos que não são do teste: saem de pages/shots até o teste terminar. */
 export function parkChapters(p: StudioProject, chapters: string[]): void {
   const set = new Set(chapters);
@@ -119,7 +172,7 @@ export function parkChapters(p: StudioProject, chapters: string[]): void {
   for (const ch of chaptersInOrder(out)) {
     const pages = out.filter((pg) => pg.chapter === ch);
     const cur = parked.find((x) => x.chapter === ch);
-    if (cur) cur.pages.push(...pages);
+    if (cur) cur.pages = pages; // o capítulo foi baixado de novo: a cópia nova substitui a antiga (nunca duplica)
     else parked.push({ chapter: ch, pages });
   }
   p.parked = parked;
@@ -180,7 +233,7 @@ export function snapshotBaseline(projectId: string): void {
     const shots = p.shots.filter((s) => pages.has(s.pageId));
     if (!shots.length) return;
     fs.mkdirSync(path.dirname(baseFile(projectId)), { recursive: true });
-    fs.writeFileSync(baseFile(projectId), JSON.stringify({ at: new Date().toISOString(), shots }), 'utf8');
+    writeJsonAtomic(baseFile(projectId), { at: new Date().toISOString(), shots });
   } catch {
     /* baseline é só aprendizado: nunca derruba a etapa */
   }
@@ -285,7 +338,7 @@ export async function learnCutProfile(projectId: string, ctx: JobCtx, signal?: A
   const others = listCutProfiles().filter((o) => o.key !== key);
 
   const ids = new Set([...final.map((s) => s.id), ...base.map((s) => s.id)]);
-  const { summary: edits } = pendingEdits(projectId, { fields: CUT_FIELDS, shotIds: ids });
+  const { summary: edits } = pendingEdits(projectId, { fields: CUT_FIELDS, shotIds: ids, ignoreMark: true }); // o aprendizado geral do render já consumiu a marca: o perfil de cortes lê o log inteiro
   ctx.progress(0.2, `Gestor: lendo o teste (${chapters.join(', ')}) e ${edits.length} correção(ões) suas`);
 
   const ruleLines = (rs: CutRule[]) => rs.map((r) => `[${r.id}] (${r.confidence}, visto ${r.seen}x) ${r.text}`).join('\n') || '(nenhuma)';
@@ -360,21 +413,17 @@ export function finishTest(projectId: string): { released: number; locked: boole
   let released = 0;
   let locked = false;
   updateProject(projectId, (cur) => {
-    const test = cur.test;
+    // O teste só ensina (perfil de cortes). Depois, os capítulos do teste e os que esperavam voltam juntos e TUDO é refeito do zero
+    // (roteiro, edição, validação) com um contexto só: as partes e o roteiro antigos saem, as páginas ficam.
     const pages: StudioPage[] = (cur.parked ?? []).flatMap((x) => x.pages);
-    if (pages.length) {
-      // o teste que já tem partes com fala fica protegido: roteiro, edição e validação só mexem nos capítulos que entram agora
-      const testPages = cur.pages.filter((pg) => test?.chapters.includes(pg.chapter)).map((pg) => pg.id);
-      const done = new Set(cur.shots.filter((s) => s.text.trim()).map((s) => s.pageId));
-      const keep = testPages.filter((id) => done.has(id));
-      if (keep.length) {
-        cur.lockedPages = [...new Set([...(cur.lockedPages ?? []), ...keep])];
-        locked = true;
-      }
-      cur.pages.push(...pages);
-      addPagesToTimeline(cur, pages);
-      released = new Set(pages.map((x) => x.chapter)).size;
-    }
+    cur.pages.push(...pages);
+    cur.shots = [];
+    addPagesToTimeline(cur, cur.pages);
+    cur.pageScript = undefined;
+    cur.chapterContexts = undefined;
+    cur.doubts = [];
+    cur.lockedPages = undefined;
+    released = new Set(pages.map((x) => x.chapter)).size;
     cur.parked = undefined;
     cur.test = undefined;
   });

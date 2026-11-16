@@ -1,0 +1,23 @@
+{
+  "key": "tomb-raider-king",
+  "title": "Tomb Raider King",
+  "tags": [
+    "muitas reações",
+    "diálogo frequente",
+    "ação pontual",
+    "cenas novas frequentes",
+    "recorte médio (~55% da tela)"
+  ],
+  "rules": [],
+  "tests": [
+    {
+      "at": "2026-11-16T05:10:25.919Z",
+      "chapters": [
+        "Capítulo 1",
+        "Capítulo 2"
+      ],
+      "summary": "O dono não corrigiu nenhum corte nem a disposição das imagens, então aprovou o que a IA fez. A queda de 103 para 65 partes não veio de correções de imagem e parece vir da narração ou da duração, que estão fora do escopo. Os indicadores de imagem ficaram iguais (área média de 55%, 3 repetições seguidas). Por isso não há regra nova."
+    }
+  ],
+  "updatedAt": "2026-11-16T05:10:26.010Z"
+}

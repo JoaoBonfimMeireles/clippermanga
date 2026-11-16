@@ -32,6 +32,7 @@ const PICK_SYSTEM = `Você escolhe a imagem certa para uma frase narrada de um v
 
 type Verdict = 'ok' | 'balloon' | 'mismatch' | 'cut' | 'small';
 
+
 /** Recorte reduzido (lado maior 512, preto e branco) como imagem para a IA. */
 async function cropImage(p: StudioProject, s: Shot, page: StudioPage, dir: string) {
   const c = cropPx(s.focus, page.width, page.height);
@@ -163,6 +164,7 @@ export async function checkShots(projectId: string, ctx: JobCtx, range?: { from?
   });
   ctx.log(`Trocadas por outro quadro: ${swapped} · recorte ampliado para a cena inteira: ${grown}`);
 
+
   // 2) segunda olhada só nas trocadas/ampliadas; se ainda reprovar, volta ao que era
   verdicts.clear();
   await judge([...changed], true);
@@ -182,5 +184,13 @@ export async function checkShots(projectId: string, ctx: JobCtx, range?: { from?
   fs.rmSync(dir, { recursive: true, force: true });
   // a validação amplia para "a cena inteira" e reverte: depois dela vale o piso de 40% da tela
   await enforceProject(projectId, ctx).catch((e) => ctx.log(`Piso de tamanho falhou: ${(e as Error).message.slice(0, 160)}`));
+  // a validação mexeu nos cortes: a 1ª opção de cada dúvida passa a ser o corte validado, senão o modal acha que foi o usuário que ajustou
+  updateProject(projectId, (cur) => {
+    const byId = new Map(cur.shots.map((s) => [s.id, s]));
+    for (const d of cur.doubts ?? []) {
+      const s = byId.get(d.shotId);
+      if (s && d.options[0]) d.options[0] = { ...d.options[0], pageId: s.pageId, focus: s.focus };
+    }
+  });
   return `Validação: ${ids.length} partes · ${bad.length} reprovadas · ${swapped} trocadas · ${grown} ampliadas · ${reverted} revertidas`;
 }

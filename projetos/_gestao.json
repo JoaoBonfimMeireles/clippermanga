@@ -76,6 +76,72 @@
         "cortador": 97,
         "montador": 100
       }
+    },
+    {
+      "at": "2026-11-16T03:20:16.478Z",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "shots": 103,
+      "scores": {
+        "leitor": 100,
+        "cortador": 100,
+        "montador": 100
+      }
+    },
+    {
+      "at": "2026-11-16T04:03:48.641Z",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "shots": 103,
+      "scores": {
+        "leitor": 100,
+        "cortador": 84,
+        "montador": 100
+      }
+    },
+    {
+      "at": "2026-11-16T08:00:30.171Z",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "shots": 1485,
+      "scores": {
+        "leitor": 100,
+        "cortador": 100,
+        "montador": 100
+      }
+    },
+    {
+      "at": "2026-11-16T08:50:05.311Z",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "shots": 1485,
+      "scores": {
+        "leitor": 100,
+        "cortador": 100,
+        "montador": 100
+      }
+    },
+    {
+      "at": "2026-11-16T14:00:07.210Z",
+      "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca",
+      "title": "Warden of the Demonesses",
+      "shots": 688,
+      "scores": {
+        "leitor": 100,
+        "cortador": 100,
+        "montador": 100
+      }
+    },
+    {
+      "at": "2026-11-16T14:26:06.069Z",
+      "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca",
+      "title": "Warden of the Demonesses",
+      "shots": 688,
+      "scores": {
+        "leitor": 100,
+        "cortador": 100,
+        "montador": 100
+      }
     }
   ],
   "audits": [
@@ -1705,6 +1771,1403 @@
           ],
           "status": "approved",
           "decidedAt": "2026-11-15T21:03:30.401Z"
+        }
+      ]
+    },
+    {
+      "id": "02d901b6",
+      "at": "2026-11-16T03:20:16.478Z",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "summary": "O lote está ruim, apesar do placar 100/100. Quase todas as partes saem borradas (ampliação de 1,8x a 5,2x), e várias usam balão, caixa de narração ou fundo preto como imagem. O que mais preocupa: o Cortador enche a tela sem olhar o tamanho real do quadro (partes 7–9 a 4,1x, parte 37 a 5,2x), e o Montador segura uma imagem só de texto por três falas seguidas.",
+      "sampled": 14,
+      "findings": [
+        {
+          "id": "9fda848b",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "O recorte da parte 7 é um bloco preto com a caixa de narração 'THE MORE CEO KWON ROSE IN STATUS...'. Não tem arte nenhuma, é texto recortado como imagem, e está ampliado 4,15x a 85% da tela. O mesmo recorte segue nas partes 8 e 9.",
+          "suggestion": "Descartar a faixa de narração e usar o quadro com arte mais próximo da página (o Tae-joon, a TKBM ou o protagonista). Esse quadro precisa caber a 40% da tela sem passar de ~1,5x.",
+          "part": 7,
+          "shotId": "46bb5953",
+          "text": "Achei que tinha tirado a sorte grande, mas o mundo ganhou novas leis, e quem juntou relíquias passou a monopolizá-las.",
+          "page": {
+            "id": "d7a22855",
+            "file": "pages/ae6945ef/p004.jpg",
+            "width": 720,
+            "height": 13027,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.5381195590040402,
+            "x1": 0.5956250000000001,
+            "y1": 0.5581195590040402
+          },
+          "areaPct": 85,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "5b3f32f6",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "O recorte da parte 37 é só o balão 'MY GOODNESS YOU ARE A NOISY ONE', ampliado 5,16x, a 99% da tela e solto no meio. Mostra só texto, não a serpente.",
+          "suggestion": "Usar o quadro inteiro da serpente/entidade ou do protagonista caído com a cabeça dela na mão, na largura total, sem o balão e grudado em cima e embaixo.",
+          "part": 37,
+          "shotId": "e7b489ad",
+          "text": "E a serpente ainda teve a pachorra de dizer que eu era barulhento demais.",
+          "page": {
+            "id": "5cc1eedb",
+            "file": "pages/13a8842f/p005.jpg",
+            "width": 720,
+            "height": 6990,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.06666666666666667,
+            "x1": 0.5838888888888888,
+            "y0": 0.6464657016076234,
+            "y1": 0.6763090128755365
+          },
+          "areaPct": 99,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "f7d3657f",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "O quadro da criatura de chifres é uma faixa fina e de baixa resolução. Esticado a 100% da tela, fica com 2,96x de ampliação e ainda carrega um pedaço de balão branco na base.",
+          "suggestion": "Fechar a altura acima do balão e reduzir a ocupação para ~40–50%. Se mesmo assim passar de ~1,5x, usar o bloco maior que inclui o protagonista caído e a criatura, que é a cena descrita na fala.",
+          "part": 2,
+          "shotId": "04884a03",
+          "text": "Estou caído nessa masmorra, todo ferido e sangrando, com uma criatura de chifres rugindo e vindo pra cima de mim.",
+          "page": {
+            "id": "db34df7b",
+            "file": "pages/ae6945ef/p001.jpg",
+            "width": 720,
+            "height": 9105,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.16520043931905545,
+            "x1": 0.95,
+            "y1": 0.20523338824821524
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "5b7715bf",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "O balão 'I'M NOT GOING TO DIE A DOG'S DEATH...!' ocupa o terço de baixo do recorte, que está a 77% da tela e 2,28x. A fala fala da mão se fechando de raiva, e a arte fica cortada pelo balão.",
+          "suggestion": "Subir a base do recorte até a borda de cima do balão, ficando só com o protagonista de costas, e baixar a ocupação até a ampliação ficar perto de 1,5x.",
+          "part": 3,
+          "shotId": "58ff4f3e",
+          "text": "Só que eu não aceito. Fui traído por um velho desgraçado, e a minha mão se fecha no chão de raiva, porque não é assim que eu deveria morrer, muito menos como um cão.",
+          "page": {
+            "id": "db34df7b",
+            "file": "pages/ae6945ef/p001.jpg",
+            "width": 720,
+            "height": 9105,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.8361175178473367,
+            "x1": 0.95,
+            "y1": 0.8882427237781438
+          },
+          "areaPct": 77,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "f22c4454",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Nas partes 10 e 11, o recorte do grito tem os balões 'FINE! GO AHEAD!' em cima e 'I'LL FUCKING RIP' embaixo, a 1,81x.",
+          "suggestion": "Encaixar o recorte entre os dois balões (rosto e ombros do protagonista gritando, largura total do quadro) e ocupar menos tela para ficar perto de 1,5x.",
+          "part": 11,
+          "shotId": "4d38d7bc",
+          "text": "Jurei também que, mesmo virando fantasma, arruinaria a vida do Tae-joon.",
+          "page": {
+            "id": "c037fcb7",
+            "file": "pages/ae6945ef/p005.jpg",
+            "width": 720,
+            "height": 6990,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.2782832618025751,
+            "x1": 0.95,
+            "y1": 0.3637768240343348
+          },
+          "areaPct": 61,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "7cfd4d4b",
+          "agent": "montador",
+          "severity": "alta",
+          "problem": "A parte 9 cita a 'entidade dracônica avançando em mim', mas repete pela terceira vez seguida a imagem preta de narração das partes 7 e 8. São cerca de 38 s sem arte.",
+          "suggestion": "Trocar de quadro na parte 9 pelo primeiro quadro da entidade ou da serpente, que é um personagem novo com quadro próprio. Não segurar uma imagem sem arte por várias falas.",
+          "part": 9,
+          "shotId": "0edd29f9",
+          "text": "Quanto mais ele subia, mais eu era desprezado, e agora essa missão era uma armadilha, com uma entidade dracônica avançando em mim.",
+          "page": {
+            "id": "d7a22855",
+            "file": "pages/ae6945ef/p004.jpg",
+            "width": 720,
+            "height": 13027,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.29,
+            "y0": 0.9327458355722729,
+            "x1": 0.9349999999999999,
+            "y1": 0.9527458355722729
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "d52d4d33",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Na coluna estreita do corvo/entidade, o recorte desce até o balão 'LET'S SEE IF YOU CAN TRULY CLAIM THE THRONE...', que ocupa o quarto de baixo. Está a 1,86x.",
+          "suggestion": "Manter a largura da coluna, mas terminar o recorte acima do balão, mostrando só a entidade com as asas abertas.",
+          "part": 18,
+          "shotId": "730cac51",
+          "text": "Mandou eu reivindicar o trono de rei, e eu só pensei em que raio de relíquia era aquela, herói ou deus.",
+          "page": {
+            "id": "29868fae",
+            "file": "pages/ae6945ef/p007.jpg",
+            "width": 720,
+            "height": 8739,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.2,
+            "y0": 0.5622840141892665,
+            "x1": 0.8,
+            "y1": 0.6555898844261356
+          },
+          "areaPct": 42,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "34495105",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "O recorte da parte 52 ocupa 57% da tela com ampliação de 3,53x. A fonte é pequena demais para esse tamanho.",
+          "suggestion": "Medir a ampliação antes de entregar: descer para ~40% da tela. Se ainda passar de ~1,5x, escolher um quadro maior da mesma página que mostre o protagonista planejando.",
+          "part": 52,
+          "shotId": "1827596b",
+          "text": "Minhas memórias e meu conhecimento continuavam intactos, e eu podia coletar todas as relíquias antes de qualquer um.",
+          "page": {
+            "id": "7faec61f",
+            "file": "pages/13a8842f/p010.jpg",
+            "width": 720,
+            "height": 9197,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.1072,
+            "x1": 0.5362,
+            "y0": 0.6154473125020903,
+            "y1": 0.648702837881918
+          },
+          "areaPct": 57,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "5f30238e",
+          "agent": "cortador",
+          "title": "Ocupação limitada pela resolução do quadro",
+          "rule": "Antes de definir a ocupação, calcule a ocupação máxima com a fórmula 1,5 × (altura do recorte em px ÷ altura da tela). Use o menor valor entre a ocupação desejada e esse limite, nunca abaixo de 40%. Se a 40% a ampliação ainda passar de ~1,5x, o quadro é pequeno demais: troque por um quadro ou bloco maior da mesma página, em vez de esticar.",
+          "why": "A regra rejeitada fixava um teto de 40%. Esta não fixa teto: 100% continua permitido quando a resolução aguenta. Mesmo assim, quase todas as partes passaram de 1,5x porque a ocupação foi decidida sem olhar o tamanho real do quadro: 2,96x a 100%, 4,15x a 85%, 4,14x a 100%, 5,16x a 99%, 3,53x a 57%, 2,21x a 70%.",
+          "findingIds": [
+            "f7d3657f",
+            "9fda848b",
+            "7cfd4d4b",
+            "5b3f32f6",
+            "34495105"
+          ],
+          "status": "approved",
+          "decidedAt": "2026-11-16T04:00:32.366Z"
+        }
+      ]
+    },
+    {
+      "id": "1c9d7768",
+      "at": "2026-11-16T04:03:48.641Z",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "summary": "Leitor e Montador não tiveram problemas visíveis. Os erros ficaram todos no Cortador, com dois padrões. O primeiro é a ampliação exagerada: 7 das 14 partes passam de 1,5x e ficam borradas, e há casos extremos de 3,55x e 4,59x, um deles um borrão sem sentido. O segundo são balões e pedaços de balão dentro do recorte, e o dono corrigiu o 'focus' em quase todas as partes.",
+      "sampled": 14,
+      "findings": [
+        {
+          "id": "56bcc5fe",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 52: o recorte é só uma mancha preta e bege, sem personagem nem cena reconhecível. Ocupa 100% da tela com ampliação de 4,59x, borrado.",
+          "suggestion": "Aplicar a regra do borrão sem sentido: usar a imagem/quadro inteiro do protagonista naquele momento, com ocupação reduzida para que a ampliação fique em ~1,5x ou menos.",
+          "part": 52,
+          "shotId": "1827596b",
+          "text": "Minhas memórias e meu conhecimento continuavam intactos, e eu podia coletar todas as relíquias antes de qualquer um.",
+          "page": {
+            "id": "7faec61f",
+            "file": "pages/13a8842f/p010.jpg",
+            "width": 720,
+            "height": 9197,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.11333333333333334,
+            "x1": 0.6933333333333334,
+            "y0": 0.6269252859717164,
+            "y1": 0.6523797431807222
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "626fed78",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 7: ocupa 100% da tela com ampliação de 3,55x, borrado. É uma explicação geral (novas leis, monopólio de relíquias) esticada para preencher a tela.",
+          "suggestion": "Usar o bloco inteiro da explicação em largura total e baixar a ocupação (ex.: ~40–50%) até a ampliação ficar em ~1,5x ou menos, sem esticar.",
+          "part": 7,
+          "shotId": "46bb5953",
+          "text": "Achei que tinha tirado a sorte grande, mas o mundo ganhou novas leis, e quem juntou relíquias passou a monopolizá-las.",
+          "page": {
+            "id": "d7a22855",
+            "file": "pages/ae6945ef/p004.jpg",
+            "width": 720,
+            "height": 13027,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.4437721655024181,
+            "x1": 0.8,
+            "y1": 0.46716895678206805
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "18b284cb",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Partes 10 e 11 (mesmo recorte): ampliação de 2,34x a 88% da tela, borrado. O recorte também inclui um pedaço de balão no canto superior esquerdo e outro na base, com as letras 'SH...' visíveis.",
+          "suggestion": "Fechar o recorte entre os balões (topo abaixo do balão, base acima do balão branco), mantendo o grito do protagonista com o corpo, e baixar a ocupação para ~45–55% para a ampliação ficar em ~1,5x ou menos.",
+          "part": 10,
+          "shotId": "2239e606",
+          "text": "Ela tinha devorado todos os meus companheiros, então gritei que aquela cobra gorda podia vir, que eu arrancava as entranhas dela.",
+          "page": {
+            "id": "c037fcb7",
+            "file": "pages/ae6945ef/p005.jpg",
+            "width": 720,
+            "height": 6990,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0,
+            "y0": 0.2904476957298161,
+            "x1": 1,
+            "y1": 0.35661518217989285
+          },
+          "areaPct": 88,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "b1672cc9",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 18: o recorte é uma coluna estreita com o balão preto 'LET'S SEE IF YOU CAN TRULY CLAIM THE THRONE...' ocupando metade da altura. Não é fala de sistema, e o corvo fica pequeno.",
+          "suggestion": "Cortar o balão e usar só o quadro do corvo de asas abertas, inteiro, como na parte 43, mas sem ampliar acima de ~1,5x.",
+          "part": 18,
+          "shotId": "730cac51",
+          "text": "Mandou eu reivindicar o trono de rei, e eu só pensei em que raio de relíquia era aquela, herói ou deus.",
+          "page": {
+            "id": "29868fae",
+            "file": "pages/ae6945ef/p007.jpg",
+            "width": 720,
+            "height": 8739,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0,
+            "y0": 0.5403751410228315,
+            "x1": 1,
+            "y1": 0.6780296574058292
+          },
+          "areaPct": 42,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "5f8d8dd6",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 43: o enquadramento do corvo está bom, mas ocupa 79% da tela com ampliação de 2,11x e fica borrado.",
+          "suggestion": "Manter o mesmo recorte e reduzir a ocupação para ~55% (ampliação de ~1,5x).",
+          "part": 43,
+          "shotId": "6c9dc73f",
+          "text": "De dentro da luz surgiu um corvo negro gigante, chamado Crow, que me desafiou a reivindicar o trono do rei. Eu só debochei e perguntei que tipo de relíquia era aquela.",
+          "page": {
+            "id": "d80c536b",
+            "file": "pages/13a8842f/p007.jpg",
+            "width": 720,
+            "height": 8739,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0,
+            "y0": 0.5531514533906743,
+            "x1": 1,
+            "y1": 0.6117243995375964
+          },
+          "areaPct": 79,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "f1b2147b",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 1: o balão 'DAMN IT!' está dentro do recorte no canto superior esquerdo, e a ampliação é de 1,94x (borrado). Na parte 2, que usa a MESMA IMAGEM, o recorte é diferente.",
+          "suggestion": "Cortar o balão, usar o quadro inteiro do protagonista caído e ferido, e reutilizar exatamente o mesmo recorte na parte 2, com ampliação de 1,5x ou menos.",
+          "part": 1,
+          "shotId": "e3616791",
+          "text": "Meu nome é Seo Joo-heon, tenho 38 anos e acho que vou morrer hoje.",
+          "page": {
+            "id": "db34df7b",
+            "file": "pages/ae6945ef/p001.jpg",
+            "width": 720,
+            "height": 9105,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.20460186710598574,
+            "x1": 0.95,
+            "y1": 0.2660186710598572
+          },
+          "areaPct": 65,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "6f3df340",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 2: o recorte mistura dois quadros (os chifres da criatura no topo e o protagonista embaixo) e ainda inclui o balão 'DAMN IT!' no meio. O dono corrigiu o focus.",
+          "suggestion": "Como a fala cita a criatura vindo, usar a cena geral criatura + protagonista sem o balão, ou o quadro inteiro do protagonista ferido, igual ao da parte 1.",
+          "part": 2,
+          "shotId": "04884a03",
+          "text": "Estou caído nessa masmorra, todo ferido e sangrando, com uma criatura de chifres rugindo e vindo pra cima de mim.",
+          "page": {
+            "id": "db34df7b",
+            "file": "pages/ae6945ef/p001.jpg",
+            "width": 720,
+            "height": 9105,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0,
+            "y0": 0.17411755725919176,
+            "x1": 1,
+            "y1": 0.28220039405200914
+          },
+          "areaPct": 43,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "8e62c646",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 3: o balão branco 'I'M NOT' fica grudado na base do recorte, junto com as onomatopeias. O dono corrigiu o focus.",
+          "suggestion": "Encerrar o recorte na borda real, acima do balão, mantendo a criatura e o protagonista de costas.",
+          "part": 3,
+          "shotId": "58ff4f3e",
+          "text": "Só que eu não aceito. Fui traído por um velho desgraçado, e a minha mão se fecha no chão de raiva, porque não é assim que eu deveria morrer, muito menos como um cão.",
+          "page": {
+            "id": "db34df7b",
+            "file": "pages/ae6945ef/p001.jpg",
+            "width": 720,
+            "height": 9105,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0,
+            "y0": 0.7637611596428914,
+            "x1": 1,
+            "y1": 0.8777982580010487
+          },
+          "areaPct": 43,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "75fe94ee",
+          "agent": "cortador",
+          "title": "Ampliação acima de 1,5x: encolher, não esticar",
+          "rule": "Antes de entregar, calcule a ampliação. Se passar de ~1,5x, mantenha o mesmo quadro inteiro e reduza a ocupação da tela (fit 'contain' + bgBand) até ficar em ~1,5x ou menos, mesmo que caia para 40–55%. Nunca use 'cover' ou 100% de tela em quadro de baixa resolução.",
+          "why": "Sete partes passaram de 1,5x por esticar o quadro para encher a tela (65–100% de ocupação). Algumas ficaram com 2–4,6x e ficaram borradas ou sem sentido. Esta regra não limita a ocupação máxima, apenas a ampliação, então é diferente da proposta rejeitada.",
+          "findingIds": [
+            "626fed78",
+            "56bcc5fe",
+            "18b284cb",
+            "5f8d8dd6",
+            "f1b2147b"
+          ],
+          "status": "approved",
+          "decidedAt": "2026-11-16T04:50:54.462Z"
+        }
+      ]
+    },
+    {
+      "id": "06bca768",
+      "at": "2026-11-16T08:00:30.171Z",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "summary": "Lote ruim no corte: as 14 partes da amostra saíram borradas, com ampliação entre 1,59x e 5,24x. Em quase todas o recorte já ocupa 42–100% da tela, então bastaria reduzir a ocupação. O mais grave são 37, 636, 713, 262 e 569, com ampliação acima de 2x, sinal de fatia pequena demais ou recorte solto. Na imagem da parte 2 aparece ainda um pedaço de balão ('YOU?!').",
+      "sampled": 14,
+      "findings": [
+        {
+          "id": "36acaa3b",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 2: no recorte real aparece o balão branco com 'YOU?!' no topo. A ampliação é 1,94x a 65% da tela (borrado).",
+          "suggestion": "Descer o topo do recorte até abaixo do balão e mostrar a criatura e o protagonista caído. Reduzir a ocupação para ~50% (65×1,5/1,94), o que deixa a ampliação em ≤1,5x.",
+          "part": 2,
+          "shotId": "ee6900b6",
+          "text": "Estou caído numa masmorra, ferido, sangrando e encurralado por uma criatura monstruosa, e o que mais me corrói é a traição.",
+          "page": {
+            "id": "db34df7b",
+            "file": "pages/ae6945ef/p001.jpg",
+            "width": 720,
+            "height": 9105,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.20460186710598574,
+            "x1": 0.95,
+            "y1": 0.2660186710598572
+          },
+          "areaPct": 65,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "1ec537bd",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 37: ampliação 5,24x a 78% da tela. A ocupação que dá 1,5x seria ~22%, abaixo do mínimo de 30%, então a fonte é uma fatia minúscula da tira.",
+          "suggestion": "Trocar pelo quadro real do corvo/delegacia (~6–12% da tira, x 0.00–1.00), com resolução que caiba em ≥40% sem passar de 1,5x.",
+          "part": 37,
+          "shotId": "ed98290a",
+          "text": "Será que aquele corvo tinha feito tudo aquilo comigo?",
+          "page": {
+            "id": "7a8259fc",
+            "file": "pages/ae6945ef/p008.jpg",
+            "width": 720,
+            "height": 9444,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.24333333333333332,
+            "x1": 0.64,
+            "y0": 0.4014049324246275,
+            "y1": 0.42326729814023334
+          },
+          "areaPct": 78,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "528a31ea",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 636: 99% da tela com 4,19x e SOLTO no meio. Não fica colado em cima e embaixo e está muito borrado.",
+          "suggestion": "Pegar o quadro inteiro da entidade rosnando (bloco maior da tira), colado em cima e embaixo. Se não houver resolução, ficar em ~35% da tela (99×1,5/4,19).",
+          "part": 636,
+          "shotId": "868638d4",
+          "text": "E, se eu não me submetesse, ela ia me despedaçar.",
+          "page": {
+            "id": "0920c880",
+            "file": "pages/156a3d8b/p029.jpg",
+            "width": 720,
+            "height": 2603,
+            "chapter": "Capítulo 10"
+          },
+          "focus": {
+            "x0": 0.05,
+            "x1": 0.6855,
+            "y0": 0.5090074304507932,
+            "y1": 0.6078947368421053
+          },
+          "areaPct": 99,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "6906bc1d",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 713: 100% da tela a 3,40x. O recorte da sala de reunião é pequeno demais para ocupar a tela toda.",
+          "suggestion": "Reduzir a ocupação para ~44% (100×1,5/3,4) ou ampliar a fonte para o bloco inteiro da reunião em largura total.",
+          "part": 713,
+          "shotId": "c124df28",
+          "text": "A mídia já falava de tumbas e relíquias, e o país estava passando uma vergonha enorme.",
+          "page": {
+            "id": "9df585a7",
+            "file": "pages/ee8d118a/p026.jpg",
+            "width": 720,
+            "height": 2457,
+            "chapter": "Capítulo 11"
+          },
+          "focus": {
+            "x0": 0.03333333333333333,
+            "x1": 0.8166666666666667,
+            "y0": 0.12392345007729624,
+            "y1": 0.2535612535612536
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "5d30dde7",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 262: 68% da tela com 2,32x. Pela regra das habilidades, ampliação acima de 2x indica recorte errado.",
+          "suggestion": "Usar o quadro inteiro do clarão e das janelas cobrindo a visão, com altura real. Exibir em ~44% da tela para ficar em 1,5x.",
+          "part": 262,
+          "shotId": "f93ed56c",
+          "text": "As janelas cobriram minha visão, e pedi que tirassem aquilo da minha cara, porque eu não enxergava nada.",
+          "page": {
+            "id": "19215047",
+            "file": "pages/178b932a/p025.jpg",
+            "width": 720,
+            "height": 7195,
+            "chapter": "Capítulo 5"
+          },
+          "focus": {
+            "x0": 0.11,
+            "y0": 0.6610312717164698,
+            "x1": 0.89,
+            "y1": 0.7259883210770333
+          },
+          "areaPct": 68,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "003e8a88",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 569: 53% da tela com 2,25x numa fala longa (11,5 s) sobre a habilidade. Fica muito tempo borrada na tela.",
+          "suggestion": "Se for a janela do sistema, recortar a janela inteira enxuta. Exibir em ~35% (53×1,5/2,25) ou buscar uma fonte maior.",
+          "part": 569,
+          "shotId": "ffe38f78",
+          "text": "Além disso, a habilidade gasta menos as relíquias consumíveis, ajuda a consertar outras e ainda aumenta a chance de roubar relíquias dos outros.",
+          "page": {
+            "id": "181150fc",
+            "file": "pages/2c6867ef/p044.jpg",
+            "width": 720,
+            "height": 2500,
+            "chapter": "Capítulo 9"
+          },
+          "focus": {
+            "x0": 0.14,
+            "y0": 0.139684,
+            "x1": 0.77,
+            "y1": 0.3315199999999999
+          },
+          "areaPct": 53,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "6a507872",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 812: 71% da tela com 1,88x. A corda serpente fica borrada por 6,8 s.",
+          "suggestion": "Manter o quadro inteiro e baixar a ocupação para ~57%, o que deixa a ampliação em 1,5x.",
+          "part": 812,
+          "shotId": "08ba7d87",
+          "text": "Lá em cima, uma corda se contorcia como uma serpente, enquanto outras cordas escuras cruzavam o chão.",
+          "page": {
+            "id": "de85e890",
+            "file": "pages/4afcfd6a/p039.jpg",
+            "width": 720,
+            "height": 2096,
+            "chapter": "Capítulo 12"
+          },
+          "focus": {
+            "x0": 0,
+            "y0": 0.06383110687022901,
+            "x1": 1,
+            "y1": 0.3379293893129771
+          },
+          "areaPct": 71,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "a4acede3",
+          "agent": "cortador",
+          "severity": "baixa",
+          "problem": "Parte 32: 42% da tela já com 1,86x. É fonte pequena: o quadro foi pego estreito ou baixo demais.",
+          "suggestion": "Ampliar o recorte até as bordas reais do quadro da entidade (largura total da tira) em vez de ampliar a imagem. Se não der, ficar em ~34%.",
+          "part": 32,
+          "shotId": "472ba8b9",
+          "text": "Rei, uma ova, pensei. Mas a dúvida era outra: aquilo era uma relíquia de rank herói ou de rank deus?",
+          "page": {
+            "id": "29868fae",
+            "file": "pages/ae6945ef/p007.jpg",
+            "width": 720,
+            "height": 8739,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.2,
+            "y0": 0.5622840141892665,
+            "x1": 0.8,
+            "y1": 0.6555898844261356
+          },
+          "areaPct": 42,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "57b2373e",
+          "agent": "cortador",
+          "title": "Fórmula de ocupação máxima",
+          "rule": "Antes de entregar, calcule ocupação_max = ocupação × 1,5 ÷ ampliação e use no máximo esse valor, sem mudar o recorte. Se o resultado ficar abaixo de 30%, o recorte é uma fatia pequena demais: refaça pegando o bloco/quadro inteiro maior da tira. Nunca entregue com ampliação acima de 1,5x.",
+          "why": "As 14 partes saíram borradas com 42–100% de ocupação. Em todas, aplicar a fórmula manteria o mesmo quadro em 34–57% de ocupação, sem borrão. Nos casos em que ela cai abaixo de 30% (37) ou perto disso (636), o problema é a fonte minúscula. A diferença para a proposta rejeitada: não há teto fixo de 40% nem troca por sub-cena, a ocupação só desce até o limite da resolução.",
+          "findingIds": [
+            "36acaa3b",
+            "1ec537bd",
+            "528a31ea",
+            "6906bc1d",
+            "5d30dde7",
+            "003e8a88",
+            "6a507872"
+          ],
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "ece75e8f",
+      "at": "2026-11-16T08:50:05.311Z",
+      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
+      "title": "Tomb Raider King",
+      "summary": "Lote ruim em nitidez: 12 das 14 partes estão marcadas como borradas, e sete delas passam de 2x de ampliação (até 5,57x). O padrão é o cortador pegar fatias pequenas da tira e esticá-las até 65–100% da tela, em vez de pegar uma região maior do quadro. Também há dois recortes 'SOLTO no meio' e uma parte (18) cuja imagem parece ser de outra página, não da fala.",
+      "sampled": 14,
+      "findings": [
+        {
+          "id": "64fa7f72",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 37: o recorte ocupa 72% da tela com ampliação de 5,57x, o pior do lote. A origem é uma fatia minúscula que fica totalmente borrada.",
+          "suggestion": "Pegar o quadro inteiro do corvo/delegacia em largura total e altura real. Se ainda passar de 1,5x, reduzir a ocupação até ~1,5x sem cair abaixo de 30%. Ampliação acima de 2x indica que a região de origem está errada.",
+          "part": 37,
+          "shotId": "ed98290a",
+          "text": "Será que aquele corvo tinha feito tudo aquilo comigo?",
+          "page": {
+            "id": "7a8259fc",
+            "file": "pages/ae6945ef/p008.jpg",
+            "width": 720,
+            "height": 9444,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.2869666666666667,
+            "x1": 0.6307444444444444,
+            "y0": 0.4020457259024987,
+            "y1": 0.4226265046623621
+          },
+          "areaPct": 72,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "1415e694",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 636: 99% da tela com ampliação de 4,19x e posição 'SOLTO no meio', sem encostar em cima e embaixo. Fica borrado e desalinhado.",
+          "suggestion": "Usar o quadro inteiro da entidade rosnando, colado em cima e embaixo, com ocupação limitada pela resolução (no máximo ~1,5x).",
+          "part": 636,
+          "shotId": "868638d4",
+          "text": "E, se eu não me submetesse, ela ia me despedaçar.",
+          "page": {
+            "id": "0920c880",
+            "file": "pages/156a3d8b/p029.jpg",
+            "width": 720,
+            "height": 2603,
+            "chapter": "Capítulo 10"
+          },
+          "focus": {
+            "x0": 0.05,
+            "x1": 0.6855,
+            "y0": 0.5090074304507932,
+            "y1": 0.6078947368421053
+          },
+          "areaPct": 99,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "ed496d49",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 18: 100% da tela com ampliação de 4,14x, imagem esticada e borrada numa cena de ação.",
+          "suggestion": "Pegar o bloco inteiro da ação (cobra + protagonista) em largura total, com ocupação que mantenha a ampliação em até ~1,5x.",
+          "part": 18,
+          "shotId": "1b450340",
+          "text": "Foi nessa hora que a cobra gigante apareceu, depois de devorar todos os meus companheiros. Eu, já em pedaços, gritei que ela ainda não estava satisfeita e que ia arrancar as entranhas dela. Jurei que,",
+          "page": {
+            "id": "d7a22855",
+            "file": "pages/ae6945ef/p004.jpg",
+            "width": 720,
+            "height": 13027,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.29,
+            "y0": 0.9327458355722729,
+            "x1": 0.9349999999999999,
+            "y1": 0.9527458355722729
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "a2fa65ba",
+          "agent": "montador",
+          "severity": "media",
+          "problem": "Parte 18: a fala é sobre a cobra gigante aparecendo depois de devorar os companheiros, mas a página usada trata do monopólio de relíquias e das leis. A imagem repete a anterior e não ilustra a cobra.",
+          "suggestion": "Trocar para o primeiro quadro em que a cobra gigante aparece, que é um momento novo com quadro próprio.",
+          "part": 18,
+          "shotId": "1b450340",
+          "text": "Foi nessa hora que a cobra gigante apareceu, depois de devorar todos os meus companheiros. Eu, já em pedaços, gritei que ela ainda não estava satisfeita e que ia arrancar as entranhas dela. Jurei que,",
+          "page": {
+            "id": "d7a22855",
+            "file": "pages/ae6945ef/p004.jpg",
+            "width": 720,
+            "height": 13027,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.29,
+            "y0": 0.9327458355722729,
+            "x1": 0.9349999999999999,
+            "y1": 0.9527458355722729
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "57180a28",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 130: 100% da tela com ampliação de 3,12x numa reação curta de 3 s. Fatia pequena esticada.",
+          "suggestion": "Usar o quadro inteiro do protagonista em dúvida e diminuir a ocupação até a ampliação ficar em ~1,5x.",
+          "part": 130,
+          "shotId": "1329e1cf",
+          "text": "então comecei a duvidar de mim mesmo",
+          "page": {
+            "id": "f23bb1de",
+            "file": "pages/c2f47150/p004.jpg",
+            "width": 720,
+            "height": 2332,
+            "chapter": "Capítulo 4"
+          },
+          "focus": {
+            "x0": 0.06996666666666666,
+            "x1": 0.9240166666666666,
+            "y0": 0.4501421509704083,
+            "y1": 0.5988765008576329
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "0551a450",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 1483: 100% da tela com ampliação de 3,00x na apresentação da advogada. É revelação de personagem e sai borrada.",
+          "suggestion": "Pegar o primeiro quadro inteiro da advogada com a maleta, com ocupação calculada pela resolução (≤1,5x).",
+          "part": 1483,
+          "shotId": "c273d276",
+          "text": "Ela se apresentou como a advogada exclusiva da TKBM, e eu só pensei: então é ela, a segunda capanga do Kwon.",
+          "page": {
+            "id": "6771647c",
+            "file": "pages/6f6606af/p038.jpg",
+            "width": 720,
+            "height": 1934,
+            "chapter": "Capítulo 20"
+          },
+          "focus": {
+            "x0": 0.05,
+            "x1": 0.93875,
+            "y0": 0.8138863753877973,
+            "y1": 1
+          },
+          "areaPct": 100,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "693b3d2e",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 942: 99% da tela, ampliação de 2,67x e posição 'SOLTO no meio'.",
+          "suggestion": "Recortar o quadro do protagonista com o copo d'água, colado em cima e embaixo, e reduzir a ocupação até ~1,5x.",
+          "part": 942,
+          "shotId": "07e26d00",
+          "text": "Só que eu não tinha paciência nenhuma. Segurei meu copo d'água e reclamei baixinho do atraso dos outros.",
+          "page": {
+            "id": "864a8d71",
+            "file": "pages/37e47c23/p027.jpg",
+            "width": 720,
+            "height": 2005,
+            "chapter": "Capítulo 14"
+          },
+          "focus": {
+            "x0": 0,
+            "x1": 1,
+            "y0": 0.10924145945815075,
+            "y1": 0.3103890758540542
+          },
+          "areaPct": 99,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        },
+        {
+          "id": "729f2900",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 2: ampliação de 1,94x (borrado). O único recorte que aparece na imagem enviada, o primeiro da lista, mostra um balão ('YOU?!') tomando o topo e só riscos vermelhos abstratos, sem o protagonista caído nem a criatura. Os recortes das outras 7 partes listadas não estão visíveis na imagem, então não pude confirmá-los.",
+          "suggestion": "Descer o recorte abaixo do balão e pegar o quadro inteiro do protagonista ferido diante da criatura, com ampliação de até ~1,5x.",
+          "part": 2,
+          "shotId": "ee6900b6",
+          "text": "Estou caído numa masmorra, ferido, sangrando e encurralado por uma criatura monstruosa, e o que mais me corrói é a traição.",
+          "page": {
+            "id": "db34df7b",
+            "file": "pages/ae6945ef/p001.jpg",
+            "width": 720,
+            "height": 9105,
+            "chapter": "Capítulo 1"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.20460186710598574,
+            "x1": 0.95,
+            "y1": 0.2660186710598572
+          },
+          "areaPct": 65,
+          "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "ad8d8207",
+          "agent": "cortador",
+          "title": "Ampliação manda na ocupação",
+          "rule": "Antes de entregar, calcule a ampliação. Se passar de 1,5x, primeiro aumente a região de origem (quadro inteiro ou bloco vizinho, largura total). Se ainda passar, reduza a ocupação até ~1,5x, aceitando de 30% a 40% da tela. Nunca estique uma fatia pequena até 65–100% da tela. Não há teto de ocupação quando a nitidez permite.",
+          "why": "12 de 14 partes estão borradas. Sete passam de 2x (37: 5,57x; 636: 4,19x; 18: 4,14x; 130: 3,12x; 1483: 3,00x; 250: 2,81x; 942: 2,67x), quase todas ocupando 99–100% da tela. A proposta anterior foi rejeitada por limitar a ocupação a 40%; esta só limita a ampliação.",
+          "findingIds": [
+            "64fa7f72",
+            "1415e694",
+            "ed496d49",
+            "a2fa65ba",
+            "57180a28",
+            "0551a450",
+            "693b3d2e"
+          ],
+          "status": "approved",
+          "decidedAt": "2026-11-16T15:55:17.156Z"
+        },
+        {
+          "id": "ad53059a",
+          "agent": "cortador",
+          "title": "Recorte sempre colado em cima e embaixo",
+          "rule": "O recorte deve cobrir a altura da tela, colado em cima e embaixo. Se ficar 'SOLTO no meio', ajuste a proporção da região de origem (mais altura do quadro real) em vez de centralizar uma faixa esticada.",
+          "why": "Partes 636 e 942 saíram 'SOLTO no meio', ambas com 99% de ocupação e ampliação acima de 2,6x.",
+          "findingIds": [
+            "1415e694",
+            "693b3d2e"
+          ],
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "9be67393",
+      "at": "2026-11-16T14:00:07.210Z",
+      "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca",
+      "title": "Warden of the Demonesses",
+      "summary": "Lote ruim no corte: 13 das 14 partes estão borradas, com ampliação entre 1,55x e 3,65x, e sete delas acima de 2x. As imagens confirmam que recortes de quadros pequenos foram esticados para ocupar a tela, ainda com balões e letras visíveis (26, 72, 100, 205, 116). As regras certas já existem: 'ampliação >2x = recorte errado', 'baixar a ocupação antes de ampliar' e 'nem pedaço de balão'. O cortador não as está cumprindo, e as repetições de imagem levam o mesmo recorte borrado adiante.",
+      "sampled": 14,
+      "findings": [
+        {
+          "id": "db02f20a",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 26: ocupa 100% da tela com ampliação de 3,65x, a pior do lote. O recorte é metade balão 'KILL! KILL!' e mostra só duas cabeças gritando, sem a multidão citada na fala.",
+          "suggestion": "Usar o quadro inteiro da multidão, sem o balão, e baixar a ocupação para ficar perto de 1,5x. Ampliação acima de 2x indica recorte errado.",
+          "part": 26,
+          "shotId": "73899a28",
+          "text": "Eu estava no meio de uma multidão que berrava para me matarem.",
+          "page": {
+            "id": "620463a0",
+            "file": "pages/42787cd4/p001.jpg",
+            "width": 800,
+            "height": 1977,
+            "chapter": "Capítulo 3"
+          },
+          "focus": {
+            "x0": 0.02,
+            "y0": 0.2955741021750127,
+            "x1": 0.6792,
+            "y1": 0.44563480020232676
+          },
+          "areaPct": 100,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "4ee952bc",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 93: close de uma mão segurando um fio, com ampliação de 3,44x e um pedaço do balão 'YOU GO YOURS'. A fala é um diálogo sobre o acessório e a cláusula do contrato, e o recorte não mostra nenhum dos dois personagens.",
+          "suggestion": "Usar o quadro inteiro (ou o bloco) com a garota e o acessório em contexto, sem o balão, e com ampliação de no máximo ~1,5x.",
+          "part": 93,
+          "shotId": "98c4d07d",
+          "text": "Desconfiado, perguntei se ela andava com algo tão perigoso, e ela lembrou da cláusula de liberdade do contrato: acessório também é roupa.",
+          "page": {
+            "id": "252f7376",
+            "file": "pages/c70b9970/p003.jpg",
+            "width": 800,
+            "height": 15688,
+            "chapter": "Capítulo 7"
+          },
+          "focus": {
+            "x0": 0.19,
+            "x1": 0.696,
+            "y0": 0.6372896481387048,
+            "y1": 0.6569352371239163
+          },
+          "areaPct": 72,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "4cf95e0e",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 34: o recorte junta três quadros (cabelo rosa no topo, coração com raízes vermelhas e o olho do rapaz), com ampliação de 2,11x. Isso viola 'um recorte = um quadro', e a prisioneira descrita na fala não aparece por inteiro.",
+          "suggestion": "Escolher apenas o quadro da prisioneira com o olhar de raízes, inteiro, sem pegar os quadros vizinhos.",
+          "part": 34,
+          "shotId": "ead799a3",
+          "text": "Era uma prisioneira com um olhar estranho, cheio de raízes, e ela dizia que ia morrer em paz.",
+          "page": {
+            "id": "ff93ebf5",
+            "file": "pages/6da339fd/p001.jpg",
+            "width": 800,
+            "height": 1912,
+            "chapter": "Capítulo 4"
+          },
+          "focus": {
+            "x0": 0.05,
+            "y0": 0.011642259414225942,
+            "x1": 0.95,
+            "y1": 0.2794142259414226
+          },
+          "areaPct": 79,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "d1aa5f1d",
+          "agent": "montador",
+          "severity": "media",
+          "problem": "Parte 100: a fala é sobre a desconfiança dela, mas a imagem mostra o homem de cartola com dois balões grandes de texto ('Flora said...', 'How about I bring back...'). A ampliação é de 2,08x.",
+          "suggestion": "Trocar pelo quadro inteiro da reação dela, desconfiada. Se esse quadro não existir, repetir o quadro da cena sem balões.",
+          "part": 100,
+          "shotId": "544d0ff3",
+          "text": "Ela ficou desconfiada, sem entender quando eu virei tão gentil, e eu nem imaginava o que me esperava ao desenterrar aquela cova.",
+          "page": {
+            "id": "86bbe737",
+            "file": "pages/c70b9970/p004.jpg",
+            "width": 800,
+            "height": 13030,
+            "chapter": "Capítulo 7"
+          },
+          "focus": {
+            "x0": 0.04,
+            "y0": 0.5032620665596874,
+            "x1": 1,
+            "y1": 0.5429838833461244
+          },
+          "areaPct": 83,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "42287f7d",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 453: ocupa 95% da tela com ampliação de 2,73x, repetindo a imagem anterior. A cena da discussão com a vampira fica borrada durante 8,8 s.",
+          "suggestion": "Reduzir a ocupação até a ampliação ficar em ~1,5x (cerca de 50% da tela), mantendo o quadro inteiro.",
+          "part": 453,
+          "shotId": "62304c55",
+          "text": "Enquanto isso, a discussão esquentava lá dentro, com uma presa vampira reclamando que nobres como ela precisam de plasma fresco para sobreviver.",
+          "page": {
+            "id": "c56c535c",
+            "file": "pages/5af5ffb5/p002.jpg",
+            "width": 800,
+            "height": 1778,
+            "chapter": "Capítulo 21"
+          },
+          "focus": {
+            "x0": 0.0853125,
+            "y0": 0.4420697412823397,
+            "x1": 0.9246875,
+            "y1": 0.6652418447694038
+          },
+          "areaPct": 95,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "003b61ac",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 8: o quadro é uma coluna estreita com a mulher na maca, ampliada 2,67x para ocupar 42% da tela. O quadro de origem tem pouca resolução para esse tamanho.",
+          "suggestion": "Manter a coluna inteira e aceitar uma ocupação menor (~30–35%), ou usar o bloco com o corredor e os homens de máscara, que é mais largo.",
+          "part": 8,
+          "shotId": "810e70d4",
+          "text": "e dois homens de máscara passaram pelo corredor empurrando uma maca com uma mulher desacordada.",
+          "page": {
+            "id": "66234439",
+            "file": "pages/30aef69b/p001.jpg",
+            "width": 800,
+            "height": 1855,
+            "chapter": "Capítulo 2"
+          },
+          "focus": {
+            "x0": 0.4,
+            "x1": 0.78,
+            "y0": 0.6316368952441866,
+            "y1": 0.8935839919594317
+          },
+          "areaPct": 42,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "a3f4f860",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 205: o recorte mantém os balões 'HE FRAMED HER AND SENT HER TO JAIL' e 'ADOPTED WAS RES...' sobre o grupo, com ampliação de 2,28x.",
+          "suggestion": "Cortar os balões e mostrar o grupo inteiro em largura total, com ampliação de ~1,5x no máximo.",
+          "part": 205,
+          "shotId": "fab4f873",
+          "text": "descobriram que o filho adotivo dele, o Long, foi quem a incriminou e a mandou para a cadeia.",
+          "page": {
+            "id": "c66cf85c",
+            "file": "pages/bbc28e50/p003.jpg",
+            "width": 800,
+            "height": 1969,
+            "chapter": "Capítulo 14"
+          },
+          "focus": {
+            "x0": 0,
+            "x1": 0.68,
+            "y0": 0.1937044273576683,
+            "y1": 0.48195506330657945
+          },
+          "areaPct": 65,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "782238ae",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 116: o recorte do homem de casaco azul de costas leva junto uma caixa de narração pequena e um balão com texto cortado ('MEDIUM'S... DOESN'T MATCH...'). A ampliação é de 2,01x.",
+          "suggestion": "Fechar o recorte só na figura e no cenário, sem nenhuma letra, e reduzir a ocupação para não passar de 1,5x.",
+          "part": 116,
+          "shotId": "43f85896",
+          "text": "Ou seja, o Bruce não era o assassino, mas havia um peixe grande por trás dele.",
+          "page": {
+            "id": "0679101f",
+            "file": "pages/2f07a4b4/p003.jpg",
+            "width": 800,
+            "height": 13681,
+            "chapter": "Capítulo 8"
+          },
+          "focus": {
+            "x0": 0.46,
+            "y0": 0.48626123821358086,
+            "x1": 0.97,
+            "y1": 0.5354610552320161
+          },
+          "areaPct": 43,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        }
+      ],
+      "proposals": []
+    },
+    {
+      "id": "e66a25bb",
+      "at": "2026-11-16T14:26:06.069Z",
+      "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca",
+      "title": "Warden of the Demonesses",
+      "summary": "Lote ruim no quesito nitidez: todas as 14 partes da amostra estão marcadas como borradas, com ampliação entre 1,64x e 3,65x, e 10 delas reaproveitam a imagem da parte anterior sem refazer o cálculo de ampliação. O recorte visível da parte 291 ainda traz balão com letras cortadas e só um pedaço do bolo. Duas falas longas batem no teto de 10 s e são cortadas no meio da palavra ('U', 'ti').",
+      "sampled": 14,
+      "findings": [
+        {
+          "id": "2901c183",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 26: ocupa 100% da tela com ampliação de 3,65x, o pior caso do lote. Uma cena de multidão ampliada mais de 3x vira borrão, e o problema passa para a parte seguinte porque a imagem é repetida.",
+          "suggestion": "Pela conta 100% × 1,5 / 3,65, a ocupação nítida fica em ~41%. Exibir a ~40%, ou pegar uma área maior da fonte (o bloco inteiro da multidão), para ficar em no máximo 1,5x.",
+          "part": 26,
+          "shotId": "73899a28",
+          "text": "Eu estava no meio de uma multidão que berrava para me matarem.",
+          "page": {
+            "id": "620463a0",
+            "file": "pages/42787cd4/p001.jpg",
+            "width": 800,
+            "height": 1977,
+            "chapter": "Capítulo 3"
+          },
+          "focus": {
+            "x0": 0.02,
+            "y0": 0.2955741021750127,
+            "x1": 0.6792,
+            "y1": 0.44563480020232676
+          },
+          "areaPct": 100,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "b54bfd44",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 93: 72% da tela com ampliação de 3,44x, segurada por 8,8 s. É muito tempo de tela com arte borrada.",
+          "suggestion": "Reduzir para ~31% da tela (72 × 1,5 / 3,44) ou ampliar a área de origem até o quadro inteiro, mantendo a ampliação em até 1,5x.",
+          "part": 93,
+          "shotId": "98c4d07d",
+          "text": "Desconfiado, perguntei se ela andava com algo tão perigoso, e ela lembrou da cláusula de liberdade do contrato: acessório também é roupa.",
+          "page": {
+            "id": "252f7376",
+            "file": "pages/c70b9970/p003.jpg",
+            "width": 800,
+            "height": 15688,
+            "chapter": "Capítulo 7"
+          },
+          "focus": {
+            "x0": 0.19,
+            "x1": 0.696,
+            "y0": 0.6372896481387048,
+            "y1": 0.6569352371239163
+          },
+          "areaPct": 72,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "a05dea14",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 8: 42% da tela com ampliação de 2,67x. Para ficar nítido, teria que cair para ~24% da tela, abaixo do piso de 30%. Isso indica que a área recortada na fonte é pequena demais (pela habilidade 'ampliação >2x = recorte errado').",
+          "suggestion": "Não encolher abaixo de 30%. Pegar o quadro inteiro do corredor com a maca, que tem mais pixels de origem, e exibir com no máximo 1,5x.",
+          "part": 8,
+          "shotId": "810e70d4",
+          "text": "e dois homens de máscara passaram pelo corredor empurrando uma maca com uma mulher desacordada.",
+          "page": {
+            "id": "66234439",
+            "file": "pages/30aef69b/p001.jpg",
+            "width": 800,
+            "height": 1855,
+            "chapter": "Capítulo 2"
+          },
+          "focus": {
+            "x0": 0.4,
+            "x1": 0.78,
+            "y0": 0.6316368952441866,
+            "y1": 0.8935839919594317
+          },
+          "areaPct": 42,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "02da08a2",
+          "agent": "cortador",
+          "severity": "alta",
+          "problem": "Parte 291: o recorte visível é uma tira estreita com o balão 'THIS IS A CAKE ORDERED BY THE WARDEN...' cortado na lateral e só metade do bolo. Tem ampliação de 2,49x. Também desrespeita as regras 'nem pedaço de balão ou letra' e 'um recorte = um quadro'.",
+          "suggestion": "Tirar o balão e usar o quadro inteiro em largura total, com o bolo completo ou a fila de presos (já que a fala fala da voz distribuindo remédio), com ampliação de até 1,5x.",
+          "part": 291,
+          "shotId": "dac5f4a4",
+          "text": "Antes que eu decidisse se encostava naquele bolo, uma voz de fora do quadro começou a distribuir remédio, e os presos reagiram assustados. Um deles pediu o seu também, mas a voz cortou na hora: tinha ",
+          "page": {
+            "id": "52dd1898",
+            "file": "pages/8f916dea/p014.jpg",
+            "width": 800,
+            "height": 1958,
+            "chapter": "Capítulo 17"
+          },
+          "focus": {
+            "x0": 0.43333333333333335,
+            "x1": 0.8333333333333334,
+            "y0": 0.7455988407152614,
+            "y1": 1
+          },
+          "areaPct": 42,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "fe9e8c14",
+          "agent": "leitor",
+          "severity": "media",
+          "problem": "A fala termina em '...e os presos reagiram assustados. U', cortada no meio de uma palavra e no limite de 10,0 s.",
+          "suggestion": "Dividir em duas falas no ponto final ou numa vírgula: a primeira termina em vírgula ou ponto e a segunda começa em minúscula, sem cortar palavra.",
+          "part": 291,
+          "shotId": "dac5f4a4",
+          "text": "Antes que eu decidisse se encostava naquele bolo, uma voz de fora do quadro começou a distribuir remédio, e os presos reagiram assustados. Um deles pediu o seu também, mas a voz cortou na hora: tinha ",
+          "page": {
+            "id": "52dd1898",
+            "file": "pages/8f916dea/p014.jpg",
+            "width": 800,
+            "height": 1958,
+            "chapter": "Capítulo 17"
+          },
+          "focus": {
+            "x0": 0.43333333333333335,
+            "x1": 0.8333333333333334,
+            "y0": 0.7455988407152614,
+            "y1": 1
+          },
+          "areaPct": 42,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "80d14722",
+          "agent": "leitor",
+          "severity": "media",
+          "problem": "A fala termina em '...completou que os dois ti', cortada no meio da palavra e no limite de 10,0 s.",
+          "suggestion": "Quebrar depois de 'ali,' e passar 'e completou que os dois ti...' para a fala seguinte, inteira.",
+          "part": 659,
+          "shotId": "e78b9fbc",
+          "text": "Aí a Trançada, achando graça, disse que o mundo era pequeno, porque não esperava encontrar o Daley e a Asena ali, e completou que os dois tinham caído tão baixo a ponto de virar Lutadores de Medalha d",
+          "page": {
+            "id": "089bdc31",
+            "file": "pages/14b825ac/p013.jpg",
+            "width": 800,
+            "height": 1771,
+            "chapter": "Capítulo 25"
+          },
+          "focus": {
+            "x0": 0,
+            "y0": 0.6330930618294749,
+            "x1": 1,
+            "y1": 0.9833145115753811
+          },
+          "areaPct": 73,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "b3c3382f",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 100: 83% da tela com ampliação de 2,08x, repetida da parte anterior e segurada por 8,8 s.",
+          "suggestion": "Exibir a ~60% (83 × 1,5 / 2,08) ou usar uma área maior da fonte. Ocupar bastante é bom, mas não acima de 1,5x.",
+          "part": 100,
+          "shotId": "544d0ff3",
+          "text": "Ela ficou desconfiada, sem entender quando eu virei tão gentil, e eu nem imaginava o que me esperava ao desenterrar aquela cova.",
+          "page": {
+            "id": "86bbe737",
+            "file": "pages/c70b9970/p004.jpg",
+            "width": 800,
+            "height": 13030,
+            "chapter": "Capítulo 7"
+          },
+          "focus": {
+            "x0": 0.04,
+            "y0": 0.5032620665596874,
+            "x1": 1,
+            "y1": 0.5429838833461244
+          },
+          "areaPct": 83,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        },
+        {
+          "id": "eb215b6e",
+          "agent": "cortador",
+          "severity": "media",
+          "problem": "Parte 448: 56% da tela com ampliação de 2,09x, herdada da parte anterior. A parte 476 tem o mesmo problema (49%, 1,95x).",
+          "suggestion": "Ao reaproveitar a imagem, recalcular a ocupação para ~40% (448) e ~38% (476) ou alargar o recorte na fonte.",
+          "part": 448,
+          "shotId": "fbee2513",
+          "text": "Uma guarda-dragão gritou para os guardas não se deixarem enganar pelos presos.",
+          "page": {
+            "id": "217b0338",
+            "file": "pages/1c66070f/p004.jpg",
+            "width": 800,
+            "height": 16375,
+            "chapter": "Capítulo 20"
+          },
+          "focus": {
+            "x0": 0.36,
+            "y0": 0.35829007633587784,
+            "x1": 1,
+            "y1": 0.38980152671755725
+          },
+          "areaPct": 56,
+          "projectId": "98d95a4d-e2b4-4422-838c-fd80c6d961ca"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "41feee13",
+          "agent": "cortador",
+          "title": "Conta da ocupação nítida",
+          "rule": "Antes de entregar, calcule a ocupação nítida = ocupação × 1,5 / ampliação. Se o resultado for 30% ou mais, use esse tamanho, já que ocupar muito é bom quando fica em até 1,5x. Se ficar abaixo de 30%, o recorte de origem é pequeno demais: alargue até o quadro ou bloco inteiro (mais pixels da fonte) em vez de ampliar.",
+          "why": "Todas as partes da amostra saíram borradas (1,64x–3,65x). Alguns casos, como 8 e 116, só se resolvem pegando mais área da fonte, não encolhendo. Esta regra não limita a ocupação a 40% como a proposta rejeitada; ela só limita a ampliação.",
+          "findingIds": [
+            "2901c183",
+            "b54bfd44",
+            "a05dea14",
+            "02da08a2",
+            "fe9e8c14",
+            "b3c3382f"
+          ],
+          "status": "approved",
+          "decidedAt": "2026-11-16T15:54:25.312Z"
+        },
+        {
+          "id": "555860bd",
+          "agent": "cortador",
+          "title": "Imagem repetida refaz a checagem",
+          "rule": "Quando a fala reaproveita a imagem da anterior com o recorte 'maior e mais completo', verifique de novo a ampliação. Se passar de 1,5x, corrija o recorte compartilhado uma vez para todas as falas, em vez de herdar o borrão.",
+          "why": "10 das 14 partes borradas são 'MESMA IMAGEM da parte anterior', ou seja, o mesmo recorte ruim se espalha por várias falas seguidas.",
+          "findingIds": [
+            "a05dea14",
+            "2901c183",
+            "b54bfd44",
+            "b3c3382f",
+            "eb215b6e"
+          ],
+          "status": "approved",
+          "decidedAt": "2026-11-16T15:54:46.735Z"
+        },
+        {
+          "id": "bc2d2f5d",
+          "agent": "leitor",
+          "title": "Fala cabe em 10 s inteira",
+          "rule": "Mantenha cada fala com até ~30 palavras (cerca de 9 s). Se passar disso, divida em vírgula ou ponto antes de chegar ao limite. Nunca deixe a fala terminar no meio de uma palavra.",
+          "why": "As falas que bateram no teto de 10,0 s foram cortadas no meio da palavra ('U', 'ti'), o que quebra a narração.",
+          "findingIds": [
+            "02da08a2",
+            "fe9e8c14",
+            "80d14722"
+          ],
+          "status": "approved",
+          "decidedAt": "2026-11-16T15:55:05.533Z"
         }
       ]
     }

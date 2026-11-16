@@ -10,6 +10,7 @@ import { createHash } from 'node:crypto';
 import { extractJson } from '@clipper/editing-planner';
 import type { LLMProvider } from '@clipper/ai-providers';
 import { studioDir } from './store';
+import { readJsonRetry, writeJsonAtomic } from './json-file';
 
 interface WorkerStats { calls: number; reviewed: number; redone: number }
 export interface TaskMemory {
@@ -24,7 +25,7 @@ export type ReviewData = Record<string, TaskMemory>;
 const file = () => path.join(studioDir(), '_revisoes.json');
 export function readReviews(): ReviewData {
   try {
-    return JSON.parse(fs.readFileSync(file(), 'utf8')) as ReviewData;
+    return readJsonRetry<ReviewData>(file());
   } catch {
     return {};
   }
@@ -41,7 +42,7 @@ function update(key: string, label: string, fn: (m: TaskMemory) => void) {
     m.updatedAt = new Date().toISOString();
     m.recent = m.recent.slice(-20);
     all[key] = m;
-    fs.writeFileSync(file(), JSON.stringify(all, null, 2), 'utf8');
+    writeJsonAtomic(file(), all);
   } catch {
     /* o registro nunca derruba a chamada */
   }

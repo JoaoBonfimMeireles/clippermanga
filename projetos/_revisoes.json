@@ -15,7 +15,7 @@
     ],
     "workers": {
       "claude-code/haiku": {
-        "calls": 778,
+        "calls": 1049,
         "reviewed": 120,
         "redone": 72
       },
@@ -209,7 +209,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-11-15T18:26:55.886Z"
+    "updatedAt": "2026-11-16T12:39:18.189Z"
   },
   "6d9f8ef9bd": {
     "label": "Você revisa descrições em texto de páginas de mangá (já lidas por outr",
@@ -221,13 +221,13 @@
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 39,
+        "calls": 59,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-15T18:28:48.285Z"
+    "updatedAt": "2026-11-16T12:42:07.082Z"
   },
   "22f602ae1c": {
     "label": "Você é o PROTAGONISTA desta história de mangá/quadrinho e resume o cap",
@@ -239,13 +239,13 @@
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 46,
+        "calls": 91,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-15T18:34:57.505Z"
+    "updatedAt": "2026-11-16T12:45:59.025Z"
   },
   "a9216d5c4f": {
     "label": "Você é o protagonista desta história e narra o vídeo em primeira pesso",
@@ -257,13 +257,13 @@
         "redone": 0
       },
       "claude-code": {
-        "calls": 49,
+        "calls": 152,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-15T18:44:10.145Z"
+    "updatedAt": "2026-11-16T12:53:27.791Z"
   },
   "9e9bc46e3a": {
     "label": "Você mantém a MEMÓRIA de uma série de vídeos narrados de mangá (narrad",
@@ -275,25 +275,28 @@
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 1,
+        "calls": 4,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-15T18:44:53.931Z"
+    "updatedAt": "2026-11-16T12:53:56.173Z"
   },
   "stage-roteiro": {
     "label": "Revisão final: roteiro",
     "lessons": [
       "Nomeie sempre quem fala e quem age, com o mesmo nome e título do início ao fim. Fixe um ponto de vista (1ª pessoa) e um tempo verbal. Ignore falas de fundo irrelevantes e confira se cada frase termina",
-      "Mantenha o Jiang como narrador em primeira pessoa do início ao fim. Fale de todos os outros personagens em terceira pessoa e pelo nome (Jiao, Yao-Yao, etc.), nunca com rótulos como 'o rapaz', 'a mulhe"
+      "Mantenha o Jiang como narrador em primeira pessoa do início ao fim. Fale de todos os outros personagens em terceira pessoa e pelo nome (Jiao, Yao-Yao, etc.), nunca com rótulos como 'o rapaz', 'a mulhe",
+      "Nunca reconte uma cena já narrada; se a obra repetir a abertura como flashback, resuma em uma frase e siga em frente. Fixe uma única forma para nomes de relíquias e personagens e use-a do início ao fi",
+      "Sempre nomeie quem fala e age, usando o nome já estabelecido e nunca a roupa ou aparência ('o sobretudo', 'o Óculos'). Confira se cada ação pertence ao personagem certo. Nunca descreva a tela ou trans",
+      "Fixe UM narrador, com pessoa e gênero constantes do começo ao fim. Chame todo personagem pelo nome assim que ele for conhecido e nunca use rótulo genérico como nome ('a Amiga', 'a Ruiva'). Converta de"
     ],
     "workers": {
       "opus": {
-        "calls": 2,
-        "reviewed": 2,
-        "redone": 2
+        "calls": 5,
+        "reviewed": 5,
+        "redone": 5
       }
     },
     "recent": [
@@ -320,9 +323,45 @@
           "Cap. 33, pág. 333: 'Ele ainda atirou num soldado sentado' tem sujeito ambíguo e emenda com 'mas eu ria e gritava', o que deixa a ação confusa.",
           "Cap. 42, pág. 411: a frase 'dizendo que não tinha escolha a não ser insistir na moderação' está mal construída. Não fica claro se quem não tem escolha é a Jiao ou o Jiang."
         ]
+      },
+      {
+        "at": "2026-11-16T02:59:25.473Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Repetição estrutural: as págs. 11-19 recontam a masmorra, a traição, a relíquia zombando do 'corpo partido', o corvo, a delegacia e o '1º de janeiro de 2025', tudo já narrado nas págs. 1-9. Ex.: pág. ",
+          "Nome da relíquia inconsistente: 'Relíquia do Arcaísta' (pág. 3), 'Relíquia do Arqueólogo' (pág. 12) e 'minha relíquia arcaica' (pág. 28).",
+          "O corvo é descrito de formas diferentes: 'um pássaro, parecido com um corvo' (pág. 7) e 'um corvo negro gigante, o Crow' (pág. 17). O nome em inglês 'Crow' destoa do resto da narração.",
+          "Frases cortadas no fim de vários trechos, possivelmente por truncamento da própria amostra; vale conferir no roteiro: 'Quanto mais ele sub' (pág. 4), 'eu só pensei em que' (pág. 7), 'roubei relíquias ",
+          "Português quebrado na pág. 23: 'O garoto do colégio tinha armado tudo, caiu mal eu encostei nele'."
+        ]
+      },
+      {
+        "at": "2026-11-16T05:47:36.688Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Descrições visuais no lugar de nomes, de forma recorrente: 'o militar caído' (cap. 5 e 13), 'uma figura de costas, com o braço estendido' e 'o outro' (cap. 10), 'O sobretudo avançava' e 'o homem de ch",
+          "Nome inconsistente: no cap. 18 é 'O Sousuke, de óculos', e no cap. 19 vira 'O Óculos, suando frio', usado como apelido.",
+          "Enchimento metalinguístico que descreve a tela em vez da história: 'A tela escureceu por um instante, como se a história respirasse antes de seguir para a próxima cena' (cap. 8, pág. 184). A pág. 185 ",
+          "Ação atribuída à pessoa errada (cap. 15): quem queria mais dinheiro para o leilão era o narrador, mas a pág. 489 diz 'O Seung-woo mandou todo mundo terminar de comer, porque ele ia encarar mais uma ro",
+          "Narrador confuso no cap. 9: 'eu apareci com um sorriso nervoso e uma criatura no ombro' soa como descrição de painel transposta para a primeira pessoa."
+        ]
+      },
+      {
+        "at": "2026-11-16T12:54:20.231Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Narrador inconsistente: no Cap.1 é o Aiden em 1ª pessoa ('Eu me chamo Aiden'). No Cap.12 vira 3ª pessoa ('Antes que o Aiden respondesse'). No Cap.16 o 'eu' é uma mulher ('eu respirei aliviada', 'quand",
+          "Rótulos genéricos tratados como nome próprio: 'A Amiga e os outros me reconheceram' (Cap.16), 'A Ruiva ainda lembrou' / 'A Ruiva ficou impressionada' (Cap.25), 'O Chefe, de cartola' (Cap.6).",
+          "Personagens descritos pela aparência no painel em vez de identificados: 'um homem de cartola' (Cap.1), 'um homem de casaco segurou a cabeça do cavalo' (Cap.12), 'Uma mulher de capa, de costas' (Cap.22",
+          "Descrição de quadrinho em vez de narração: 'alguém, de costas diante da mesa, olha um papel', 'Uma figura envolta em luz branca e energia surge, depois outra, esvoaçante' (Cap.18), 'sob um céu nublado",
+          "Ficha de personagem lida crua, sem virar frase: 'se apresenta: Mary, crime, contrabando' (Cap.18)."
+        ]
       }
     ],
-    "updatedAt": "2026-11-15T18:45:12.397Z"
+    "updatedAt": "2026-11-16T12:54:20.231Z"
   },
   "73c4b62ef1": {
     "label": "Você é editor de vídeo de um canal brasileiro de resumos narrados de m",
@@ -334,13 +373,13 @@
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 82,
+        "calls": 218,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-15T19:29:10.778Z"
+    "updatedAt": "2026-11-16T13:27:37.738Z"
   },
   "d8a18df68b": {
     "label": "Você escolhe os recortes de imagem de um vídeo de resumo de manhwa/web",
@@ -352,25 +391,28 @@
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 583,
+        "calls": 1579,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-15T20:18:18.539Z"
+    "updatedAt": "2026-11-16T13:57:45.471Z"
   },
   "stage-leitura": {
     "label": "Revisão final: leitura das páginas",
     "lessons": [
       "Mantenha um elenco fixo com nomes reais: assim que um nome aparecer, use-o em todas as páginas seguintes, nunca rótulos visuais inventados, e o protagonista sempre pelo nome. Nunca deixe campos ou fal",
-      "Nunca truncar falas nem descrições: transcreva o texto completo. Assim que um personagem tiver nome conhecido, use sempre esse mesmo nome canônico (Jiang, Jiao, Yao-Yao) nos rótulos de fala, nunca 'Pr"
+      "Nunca truncar falas nem descrições: transcreva o texto completo. Assim que um personagem tiver nome conhecido, use sempre esse mesmo nome canônico (Jiang, Jiao, Yao-Yao) nos rótulos de fala, nunca 'Pr",
+      "Antes de ler, verificar se há páginas duplicadas ou versões repetidas do mesmo capítulo e descartá-las. Fixar um glossário único (nomes de relíquias, tumbas e falantes) e usá-lo em todo o projeto, sem",
+      "Nunca corte falas: transcreva-as inteiras ou resuma a fala completa. Assim que um personagem for nomeado na obra, use sempre o nome e mantenha uma só forma (ex.: 'Yuka Sasaki', 'Corvo'). Descrição por",
+      "Nunca truncar descrições ou falas: termine sempre a frase. Use o nome do personagem sempre que ele já tiver aparecido ou puder ser deduzido pela aparência (ex.: o homem de chapéu alto/cartola é o Aide"
     ],
     "workers": {
       "opus": {
-        "calls": 2,
-        "reviewed": 2,
-        "redone": 2
+        "calls": 5,
+        "reviewed": 5,
+        "redone": 5
       }
     },
     "recent": [
@@ -397,35 +439,71 @@
           "Personagem citado de forma vaga sem identificação: 'a Figura aparece na penumbra' (Cap. 32 pág. 318), 'uma figura de cabelo claro se joga em seus braços' (Cap. 26 pág. 262, provavelmente Yao-Yao) e 'F",
           "Rótulo estranho que parece texto de onomatopeia ou de camiseta incorporado ao nome: 'Jiang 'SEASON' discursa' (Cap. 11 pág. 131)."
         ]
+      },
+      {
+        "at": "2026-11-16T03:19:13.871Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Conteúdo duplicado em sequência: as págs. 3–10 e 13–20 narram as mesmas cenas com as mesmas falas. É o caso de 'Se eu fosse falar de onde tudo deu errado...' (pág. 3 e pág. 13), 'Uma nova lei tomou co",
+          "Duplicação também no Capítulo 2: a pág. 24 repete a pág. 31 ('Acho que isso é uma vantagem pra mim. / Calma, tia.'), a pág. 25 repete a pág. 32 (janelas de jogo e 'Espião (Rank F)') e a pág. 26 repete",
+          "O nome da relíquia muda de página para página: 'Relíquia do Arcaísta' (pág. 3), 'Relíquia do Arqueólogo' (pág. 13), 'relíquia arcaica' (pág. 25) e 'relíquia do Archaist' (pág. 33). Da mesma forma, apa",
+          "Alternância entre 'tumbas' (pág. 3) e 'túmulos' (pág. 13) para o mesmo conceito.",
+          "A natureza da entidade é contraditória: 'entidade dracônica' (pág. 7), corvo (pág. 8) e serpente que fala como 'Relíquia' (pág. 16). Falta deixar claro quem é a cobra e quem é a relíquia-corvo que o s"
+        ]
+      },
+      {
+        "at": "2026-11-16T07:59:53.590Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Falas truncadas de forma sistemática, provavelmente por limite de caracteres: 'Narração: Joo-heon, 38 ano' (cap.1), 'não, preciso saber o m' (cap.5), 'Tem certeza que é se' (cap.7), 'a habilidade mais",
+          "Personagens identificados pela aparência em vez do nome: 'Homem de jaqueta', 'Homem de sobretudo', 'Homem de suéter' (cap.7), 'Homem do chapéu' (cap.12), 'Homem de terno sem rosto', 'Interlocutor', 'H",
+          "Mesmo personagem com nomes diferentes: 'Yuka' no cap.12 e 'Sasaki' no cap.13, aparentemente a mesma usuária do guia do futuro; o pássaro aparece como 'corvo' e como 'Crow' no mesmo trecho (cap.11, pág",
+          "Atribuições feitas por palpite: 'provavelmente Dong-hyun, pelo suéter escuro' (cap.9, pág.217), três falas marcadas '(provável)' na pág.246 e 'Linda (provável)' no cap.6. Dong-hyun já tinha aparecido ",
+          "Descrição visual usada como se fosse identidade: no cap.7 o 'Homem de sobretudo' chama 'Joo-heon!', mas no cap.14 quem está de sobretudo é o próprio Joo-heon, e no cap.8 ele aparece 'de cachecol'. Ide"
+        ]
+      },
+      {
+        "at": "2026-11-16T13:59:31.513Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Frases e descrições cortadas no meio, padrão recorrente: pág. 81 'Veronica: Quando e'; pág. 107 'segredos ainda mais sombri' e 'Tudo isso é'; pág. 160 'A identidade da'; pág. 186 'conviver com '; pág.",
+          "Rótulos genéricos onde provavelmente há personagem conhecido: pág. 254 'Cartola, de costas no corredor' quase certamente é o Aiden, descrito antes 'de chapéu alto' (pág. 201). Também 'Figura clara' ch",
+          "'Chefe' é ambíguo: na pág. 1 parece um líder de guardas genérico, e na pág. 147 Meng chama de 'Chefe' alguém que pode ser o próprio Aiden (carcereiro). Precisa de identificação consistente.",
+          "Atribuição de fala incoerente na pág. 27: Aiden diz 'Bem-vindo, Anthony' e logo depois a 'Narração' pergunta 'Anthony? O que o traz aqui?'. Parece ser a fala ou o pensamento de outro personagem atribu",
+          "Gênero inconsistente na pág. 186: a descrição diz 'Duas soldadas', mas uma das falas é atribuída a 'Soldado'."
+        ]
       }
     ],
-    "updatedAt": "2026-11-15T20:20:43.106Z"
+    "updatedAt": "2026-11-16T13:59:31.513Z"
   },
   "687aac4053": {
     "label": "Você confere os recortes de um vídeo de resumo de mangá/webtoon. Receb",
     "lessons": [],
     "workers": {
       "claude-code/haiku": {
-        "calls": 579,
+        "calls": 1041,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-15T20:55:03.926Z"
+    "updatedAt": "2026-11-16T14:23:43.764Z"
   },
   "b1d24372b0": {
     "label": "Você escolhe a imagem certa para uma frase narrada de um vídeo de mang",
     "lessons": [],
     "workers": {
       "claude-code/haiku": {
-        "calls": 51,
+        "calls": 83,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-15T20:50:20.918Z"
+    "updatedAt": "2026-11-16T14:19:19.656Z"
   },
   "161d1fb8b8": {
     "label": "Você cria o material de publicação de um vídeo do YouTube que resume/n",
@@ -642,5 +720,18 @@
       }
     ],
     "updatedAt": "2026-11-16T02:10:14.650Z"
+  },
+  "e3fb837b56": {
+    "label": "Você reescreve frases narradas ruins de um vídeo de resumo de mangá/we",
+    "lessons": [],
+    "workers": {
+      "claude-code/haiku": {
+        "calls": 1,
+        "reviewed": 0,
+        "redone": 0
+      }
+    },
+    "recent": [],
+    "updatedAt": "2026-11-16T03:59:26.150Z"
   }
 }

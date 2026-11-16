@@ -1,8 +1,9 @@
 import { createHash } from 'node:crypto';
-import { deleteProject, readProjectRaw, updateProject } from '@/lib/store';
+import { deleteProject, peekProject, readProjectRaw, updateProject } from '@/lib/store';
 import { cancelJob, projectJobs } from '@/lib/jobs';
 import { renameProject, RenameError } from '@/lib/series';
 import type { Doubt, StudioProject } from '@/lib/types';
+import { dedupeImports, hasDuplicateImports, healTest } from '@/lib/cut-profiles';
 import { logDoubtAnswers, logEdits } from '@/lib/learning';
 
 export const dynamic = 'force-dynamic';
@@ -10,8 +11,15 @@ type Ctx = { params: Promise<{ id: string }> };
 
 /** Devolve o JSON como está no disco (sem parse + stringify) e responde 304 se o navegador já tem esta versão. */
 export async function GET(req: Request, { params }: Ctx) {
-  const r = readProjectRaw((await params).id);
+  const pid = (await params).id;
+  let r = readProjectRaw(pid);
   if (!r) return new Response('Não encontrado', { status: 404 });
+  // conserta um teste que estacionou os próprios capítulos (reimportação com o teste ativo)
+  const pk = peekProject(pid);
+  if (pk && ((pk.test && pk.parked?.some((x) => pk.test!.chapters.includes(x.chapter))) || hasDuplicateImports(pk))) {
+    updateProject(pid, (cur) => { healTest(cur); dedupeImports(cur); });
+    r = readProjectRaw(pid) ?? r;
+  }
   const etag = `"${createHash('sha1').update(r.version).digest('hex').slice(0, 16)}"`;
   const headers = { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'private, no-cache', etag };
   if (req.headers.get('if-none-match') === etag) return new Response(null, { status: 304, headers });

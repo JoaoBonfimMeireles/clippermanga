@@ -14,6 +14,7 @@ import { listProjects, projectDir, readProject, studioDir } from './store';
 import { projectJobs, type JobCtx } from './jobs';
 import { cropSheet } from './visual-review';
 import type { Rect, StudioPage, StudioProject } from './types';
+import { readJsonRetry, writeJsonAtomic } from './json-file';
 
 export type ManagedAgent = Exclude<Agent, 'diretor'>;
 export const MANAGED: ManagedAgent[] = ['leitor', 'cortador', 'montador'];
@@ -84,7 +85,7 @@ export interface ManagerData {
 const file = () => path.join(studioDir(), '_gestao.json');
 export function readManager(): ManagerData {
   try {
-    return JSON.parse(fs.readFileSync(file(), 'utf8')) as ManagerData;
+    return readJsonRetry<ManagerData>(file());
   } catch {
     return { history: [], audits: [] };
   }
@@ -92,7 +93,7 @@ export function readManager(): ManagerData {
 function writeManager(d: ManagerData) {
   d.history = d.history.slice(-200);
   d.audits = d.audits.slice(-30);
-  fs.writeFileSync(file(), JSON.stringify(d, null, 2), 'utf8');
+  writeJsonAtomic(file(), d);
 }
 
 const AREA: Record<string, ManagedAgent> = {

@@ -1,0 +1,3 @@
+# Ocupação limitada pela resolução do quadro
+Antes de definir a ocupação, calcule a ocupação máxima com a fórmula 1,5 × (altura do recorte em px ÷ altura da tela). Use o menor valor entre a ocupação desejada e esse limite, nunca abaixo de 40%. Se a 40% a ampliação ainda passar de ~1,5x, o quadro é pequeno demais: troque por um quadro ou bloco maior da mesma página, em vez de esticar.
+Por quê: A regra rejeitada fixava um teto de 40%. Esta não fixa teto: 100% continua permitido quando a resolução aguenta. Mesmo assim, quase todas as partes passaram de 1,5x porque a ocupação foi decidida sem olhar o tamanho real do quadro: 2,96x a 100%, 4,15x a 85%, 4,14x a 100%, 5,16x a 99%, 3,53x a 57%, 2,21x a 70%.

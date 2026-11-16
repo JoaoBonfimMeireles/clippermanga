@@ -1,0 +1,3 @@
+# Ampliação manda na ocupação
+Antes de entregar, calcule a ampliação. Se passar de 1,5x, primeiro aumente a região de origem (quadro inteiro ou bloco vizinho, largura total). Se ainda passar, reduza a ocupação até ~1,5x, aceitando de 30% a 40% da tela. Nunca estique uma fatia pequena até 65–100% da tela. Não há teto de ocupação quando a nitidez permite.
+Por quê: 12 de 14 partes estão borradas. Sete passam de 2x (37: 5,57x; 636: 4,19x; 18: 4,14x; 130: 3,12x; 1483: 3,00x; 250: 2,81x; 942: 2,67x), quase todas ocupando 99–100% da tela. A proposta anterior foi rejeitada por limitar a ocupação a 40%; esta só limita a ampliação.

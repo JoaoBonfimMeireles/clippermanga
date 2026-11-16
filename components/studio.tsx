@@ -140,23 +140,46 @@ export function Studio({ id }: { id: string }) {
   useEffect(() => {
     if (!running) return;
     const t = setInterval(async () => {
-      const list = (await (await fetch(`/api/projects/${id}/jobs`)).json()) as JobInfo[];
-      setJobs(list);
-      if (!list.some((j) => j.status === 'running')) {
-        await load();
-        // modo automático: o passo terminou bem → emenda o próximo (roteiro → edição → validação → render)
-        const a = chain.current;
-        const done = a && list.find((j) => j.id === a.jobId);
-        if (a && done && done.status !== 'running') {
-          chain.current = null;
-          const next = NEXT[a.kind];
-          // roteiro → edição → validação → render só no modo automático; o inglês entra depois do render quando o check está ligado
-          if (done.status === 'done' && next && (a.kind === 'render' ? englishRef.current : autoRef.current)) startRef.current?.({ kind: next });
-        }
+      try {
+        const list = (await (await fetch(`/api/projects/${id}/jobs`)).json()) as JobInfo[];
+        setJobs(list);
+        if (!list.some((j) => j.status === 'running')) await load();
+      } catch {
+        /* servidor ocupado: tenta de novo no próximo ciclo */
       }
     }, 800);
     return () => clearInterval(t);
   }, [running, id, load]);
+
+  // modo automático: o passo terminou bem → emenda o próximo (roteiro → edição → validação → render).
+  // Fica num efeito sobre `jobs` (não no intervalo) e a cadeia sobrevive a recarregar a página.
+  useEffect(() => {
+    if (!chain.current) {
+      try {
+        const raw = sessionStorage.getItem(`chain:${id}`);
+        if (raw && jobs.length) chain.current = JSON.parse(raw);
+      } catch {
+        /* sem storage */
+      }
+    }
+    const a = chain.current;
+    if (!a) return;
+    const done = jobs.find((j) => j.id === a.jobId);
+    if (!done || done.status === 'running') return;
+    chain.current = null;
+    try {
+      sessionStorage.removeItem(`chain:${id}`);
+    } catch {
+      /* sem storage */
+    }
+    const next = NEXT[a.kind];
+    const forced = a.kind === 'check' && forceRender.current;
+    forceRender.current = false;
+    if (done.status === 'done' && next && (forced || (a.kind === 'render' ? englishRef.current : autoRef.current))) {
+      load().then(() => startRef.current?.({ kind: next }));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [jobs]);
 
   // ocioso: um processo iniciado de fora (a cadeia automática, outra aba, o servidor) aparece sozinho, sem precisar de refresh
   useEffect(() => {
@@ -175,14 +198,18 @@ export function Studio({ id }: { id: string }) {
   // dúvidas da IA nos recortes (fim do passo 2): abre sozinho quando chegam novas
   const [doubtsOpen, setDoubtsOpen] = useState(false);
   const doubtKey = (p?.doubts ?? []).map((d) => d.id).join(',');
+  // as dúvidas só aparecem depois da validação com IA (passo 3) terminar depois da última edição
+  const lastDone = (k: string) => Math.max(0, ...jobs.filter((j) => j.kind === k && j.status === 'done').map((j) => j.endedAt ?? 0));
+  const validated = lastDone('check') > 0 && lastDone('check') >= Math.max(lastDone('edit'), lastDone('script'));
   useEffect(() => {
-    if (doubtKey) setDoubtsOpen(true);
-  }, [doubtKey]);
+    if (doubtKey && validated && !running) setDoubtsOpen(true);
+  }, [doubtKey, validated, running]);
   const [auto, setAuto] = useState(false);
   const autoRef = useRef(auto);
   autoRef.current = auto;
   const englishRef = useRef(false);
   englishRef.current = !!p?.englishAudio;
+  const forceRender = useRef(false);
   const chain = useRef<{ jobId: string; kind: string } | null>(null);
   const startRef = useRef<((b: object) => Promise<void>) | null>(null);
 
@@ -194,6 +221,12 @@ export function Studio({ id }: { id: string }) {
     const j = (await r.json()) as JobInfo;
     const kind = !(body instanceof FormData) && (body as { kind?: string }).kind;
     chain.current = kind && NEXT[kind] ? { jobId: j.id, kind } : null;
+    try {
+      if (chain.current) sessionStorage.setItem(`chain:${id}`, JSON.stringify(chain.current));
+      else sessionStorage.removeItem(`chain:${id}`);
+    } catch {
+      /* sem storage */
+    }
     setJobs((cur) => [...cur.filter((x) => x.id !== j.id), j]);
   };
   startRef.current = start;
@@ -211,7 +244,13 @@ export function Studio({ id }: { id: string }) {
 
   const dq = useQueuedDoubts(p, running, async (_, render) => {
     await load();
-    if (render) start({ kind: 'render', cacheOnly: true });
+    if (render) {
+      if (stepDone('check')) start({ kind: 'render', cacheOnly: true });
+      else {
+        forceRender.current = true; // a validação é obrigatória antes do render
+        start({ kind: 'check' });
+      }
+    }
   });
   if (!p) return <p className="text-muted-foreground">Carregando…</p>;
   const segs = p.lastRender?.segments ?? [];
@@ -440,7 +479,14 @@ export function Studio({ id }: { id: string }) {
           onDone={async (_, render) => {
             setDoubtsOpen(false);
             await load();
-            if (render) start({ kind: 'render', cacheOnly: true });
+            // no automático, "renderizar depois" não pula a validação: valida primeiro (a cadeia segue para o render sozinha)
+            if (render) {
+              if (stepDone('check')) start({ kind: 'render', cacheOnly: true });
+              else {
+                forceRender.current = true; // a validação é obrigatória: valida e só então renderiza
+                start({ kind: 'check' });
+              }
+            }
           }}
         />
       )}
@@ -457,7 +503,7 @@ export function Studio({ id }: { id: string }) {
             </span>
           )}
           {!!p.doubts?.length && (
-            <button className="btn border-amber-400 px-2 py-0.5 text-xs text-amber-300" onClick={(e) => { e.preventDefault(); setDoubtsOpen(true); }}>
+            <button className="btn border-amber-400 px-2 py-0.5 text-xs text-amber-300 disabled:opacity-50" disabled={!validated} title={validated ? undefined : 'As dúvidas só abrem depois da validação com IA (passo 3)'} onClick={(e) => { e.preventDefault(); setDoubtsOpen(true); }}>
               ❓ Dúvidas da IA ({p.doubts.length})
             </button>
           )}

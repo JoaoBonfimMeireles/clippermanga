@@ -11,6 +11,7 @@ import { avoidPrompt } from './exemplos';
 import { projectDir, readProject, studioDir } from './store';
 import type { JobCtx } from './jobs';
 import type { Doubt, Shot } from './types';
+import { readJsonRetry, writeJsonAtomic } from './json-file';
 
 export interface LearnQuestion {
   id: string;
@@ -36,14 +37,14 @@ const markFile = (id: string) => path.join(projectDir(id), '.progress', 'editlog
 
 export function readLearning(): Learning {
   try {
-    return JSON.parse(fs.readFileSync(learnFile(), 'utf8')) as Learning;
+    return readJsonRetry<Learning>(learnFile());
   } catch {
     return { rules: [], questions: [], updatedAt: '' };
   }
 }
 export function writeLearning(l: Learning) {
   l.updatedAt = new Date().toISOString();
-  fs.writeFileSync(learnFile(), JSON.stringify(l, null, 2), 'utf8');
+  writeJsonAtomic(learnFile(), l);
 }
 
 const same = (a: unknown, b: unknown) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
@@ -107,14 +108,14 @@ export function logDoubtAnswers(projectId: string, answers: (Doubt & { manual?: 
 }
 
 /** Edições ainda não analisadas, juntadas por parte (primeiro valor → último valor). */
-export function pendingEdits(projectId: string, only?: { fields?: ReadonlySet<string>; shotIds?: ReadonlySet<string> }): { summary: string[]; size: number } {
+export function pendingEdits(projectId: string, only?: { fields?: ReadonlySet<string>; shotIds?: ReadonlySet<string>; ignoreMark?: boolean }): { summary: string[]; size: number } {
   let all = '';
   try {
     all = fs.readFileSync(logFile(projectId), 'utf8');
   } catch {
     return { summary: [], size: 0 };
   }
-  const from = Number(fs.existsSync(markFile(projectId)) ? fs.readFileSync(markFile(projectId), 'utf8') : 0) || 0;
+  const from = only?.ignoreMark ? 0 : Number(fs.existsSync(markFile(projectId)) ? fs.readFileSync(markFile(projectId), 'utf8') : 0) || 0;
   const lines = all.slice(from).split('\n').filter(Boolean);
   // centenas de partes mudadas no MESMO instante são do app (validação, encaixe, salvar tudo de uma vez), não correção do usuário
   const batch = new Map<string, number>();
