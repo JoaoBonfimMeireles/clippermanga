@@ -17,12 +17,15 @@ import { runFfmpeg } from '@clipper/video-processing';
 import { cropPx } from './camera';
 import { cropMetrics, QUALITY } from './crop-quality';
 import { lockedSet } from './lock';
+import { mapPool } from './pool';
 import { projectDir, readProject, updateProject } from './store';
 import type { JobCtx } from './jobs';
 import type { Rect, Shot, StudioPage } from './types';
 
 const SW = 120; // largura da leitura em cinza
 const TARGET = QUALITY.minArea + 0.015; // meta (40% + folga)
+/** Partes medidas ao mesmo tempo (cada uma chama o FFmpeg 1 a 3 vezes numa imagem reduzida). */
+const ENFORCE_JOBS = 6;
 const FILL = 9 / 16; // altura/largura de uma tela 16:9: abaixo disso o recorte não cobriria a altura
 
 /** Ajustes da limpeza de balão/branco (calibrados contra os cortes do usuário: scripts/crop-eval.ts). */
@@ -278,7 +281,34 @@ function narrowTo(r: Rows | null, f: Rect, page: StudioPage, ratio: number): Rec
   return { ...f, x0: f.x0 + (x0 / SW) * fw, x1: f.x0 + ((x0 + span) / SW) * fw };
 }
 
+// O piso roda no fim do estilo, no fim da validação e no começo de CADA render, sempre em todas as partes (1 a 3 FFmpeg
+// por parte). O resultado depende só da imagem, do recorte e do esticar/zoom de entrada: guardado em memória, as partes
+// que não mudaram desde a última rodada não custam nada.
+const gEnf = globalThis as unknown as { __mangaEnforce?: Map<string, Enforced> };
+const enfCache = (gEnf.__mangaEnforce ??= new Map());
+const ENF_MAX = 30_000;
+const n5 = (v: number) => v.toFixed(5);
+function enfKey(img: string, page: StudioPage, f: Rect, cur: { stretch?: number; zoom?: number }): string {
+  let mt = 0;
+  try {
+    mt = fs.statSync(img).mtimeMs;
+  } catch {
+    /* sem arquivo: a leitura em cinza falha e o resultado é só geometria */
+  }
+  return `${img}|${mt}|${page.width}x${page.height}|${n5(f.x0)},${n5(f.y0)},${n5(f.x1)},${n5(f.y1)}|${cur.stretch ?? 1}|${cur.zoom ?? 1}`;
+}
+
 export async function enforceFocus(img: string, page: StudioPage, focus: Rect, cur: { stretch?: number; zoom?: number } = {}): Promise<Enforced> {
+  const key = enfKey(img, page, focus, cur);
+  const hit = enfCache.get(key);
+  if (hit) return { ...hit, focus: { ...hit.focus } };
+  const out = await enforceFocusRaw(img, page, focus, cur);
+  if (enfCache.size >= ENF_MAX) enfCache.clear();
+  enfCache.set(key, { ...out, focus: { ...out.focus } });
+  return out;
+}
+
+async function enforceFocusRaw(img: string, page: StudioPage, focus: Rect, cur: { stretch?: number; zoom?: number } = {}): Promise<Enforced> {
   const zoom0 = cur.zoom ?? 1;
   let f = focus;
   let stretch = cur.stretch ?? 1;
@@ -395,11 +425,11 @@ export async function enforceProject(projectId: string, ctx?: JobCtx): Promise<s
   const fixed = new Map<string, View[]>();
   let merged = 0;
   let i = 0;
-  for (const s of p.shots) {
+  await mapPool(p.shots, ENFORCE_JOBS, async (s) => {
     i++;
-    if (ctx && i % 25 === 0) ctx.progress(i / p.shots.length, `Limpando e dimensionando os recortes (${i}/${p.shots.length})`);
+    if (ctx && i % 100 === 0) ctx.progress(i / p.shots.length, `Limpando e dimensionando os recortes (${i}/${p.shots.length})`);
     const pg0 = pages.get(s.pageId);
-    if (!pg0 || locked.has(s.pageId)) continue;
+    if (!pg0 || locked.has(s.pageId)) return;
     // 1) imagens repetidas da mesma fala (mesmo quadro, ângulo parecido): fica só a mais completa
     const before = 1 + (s.extra?.length ?? 0);
     const views = await mergeViews(dir, pages, s);
@@ -415,7 +445,7 @@ export async function enforceProject(projectId: string, ctx?: JobCtx): Promise<s
       outViews.push({ ...v, focus: r.focus, stretch: r.stretch, zoom: Math.max(1, v.zoom ?? 1) });
     }
     if (any) fixed.set(s.id, outViews);
-  }
+  });
   // opções das dúvidas: com a mesma regra (cada opção guarda o esticar que precisa)
   const optFix = new Map<string, { focus: Rect; stretch: number }[]>();
   for (const d of p.doubts ?? []) {

@@ -231,8 +231,8 @@ export async function POST(req: Request, { params }: Ctx) {
         const r = await autoEdit(id, ctx);
         noteEditDone(id); // as correções feitas daqui em diante contam para este lote no placar
         await reviewStage(id, 'leitura', ctx).then((m) => ctx.log(m)).catch((e) => ctx.log(`Revisão final do gestor falhou: ${(e as Error).message.slice(0, 160)}`));
-        // o gestor audita uma amostra do lote (1 chamada); nunca derruba a edição
-        await auditProject(id, ctx, signal).then((m) => ctx.log(m)).catch((e) => ctx.log(`Auditoria do gestor falhou: ${(e as Error).message.slice(0, 160)}`));
+        // a auditoria do gestor roda uma vez só por lote, no fim da validação (passo 3, obrigatório antes do render):
+        // aqui o placar era sempre 100 (você ainda não tinha corrigido nada) e gastava uma chamada de Opus com imagem
         snapshotBaseline(id); // modo teste: guarda o que a IA propôs, para comparar com o que o dono ajustar
         return r;
       }),
@@ -272,7 +272,7 @@ export async function POST(req: Request, { params }: Ctx) {
       startJob('check', id, async (ctx, signal) => {
         const r = await checkShots(id, ctx, { from: body.from, to: body.to });
         // o gestor audita o resultado já validado (1 chamada); nunca derruba a validação
-        await auditProject(id, ctx, signal).then((m) => ctx.log(m)).catch((e) => ctx.log(`Auditoria do gestor falhou: ${(e as Error).message.slice(0, 160)}`));
+        await auditProject(id, ctx, signal, 'check').then((m) => ctx.log(m)).catch((e) => ctx.log(`Auditoria do gestor falhou: ${(e as Error).message.slice(0, 160)}`));
         snapshotBaseline(id);
         return r;
       }),
