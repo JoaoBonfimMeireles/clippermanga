@@ -1,0 +1,7 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Mangá: build + iniciar (produção)", "type": "npm", "script": "app", "problemMatcher": [], "isBackground": true },
+    { "label": "Mangá: só iniciar (já buildado)", "type": "npm", "script": "start", "problemMatcher": [], "isBackground": true }
+  ]
+}

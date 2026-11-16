@@ -20,7 +20,9 @@ const nextConfig: NextConfig = {
   outputFileTracingRoot: path.dirname(videos),
   experimental: { externalDir: true, webpackMemoryOptimizations: true },
   devIndicators: false,
-  webpack: (config, { isServer, nextRuntime }) => {
+  webpack: (config, { isServer, nextRuntime, dev }) => {
+    // o cache em disco do webpack não consegue fazer snapshot dos pacotes de ../videos (só gera aviso e atrasa o build)
+    if (!dev) config.cache = false;
     // Sem node_modules neste app, o Next não troca o runtime JSX pelo React embutido dele no servidor
     // (RSC/SSR) e o app carregaria duas cópias do React. Faz a troca na mão, por camada.
     if (!isServer) {

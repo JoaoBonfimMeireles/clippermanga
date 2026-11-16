@@ -8,6 +8,7 @@
     "dev": "node scripts/next.js dev --webpack -p 3100",
     "build": "node scripts/next.js build --webpack",
     "start": "node scripts/next.js start -p 3100",
+    "app": "node scripts/next.js build --webpack && node scripts/next.js start -p 3100",
     "typecheck": "node ../videos/node_modules/typescript/bin/tsc --noEmit -p ."
   }
 }
