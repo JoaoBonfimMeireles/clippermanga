@@ -1,0 +1,207 @@
+{
+  "fish-jovem-anime": {
+    "voice": "fish-jovem-anime",
+    "name": "Jovem anime",
+    "provider": "fishaudio",
+    "requests": 1,
+    "ok": 1,
+    "fail": 0,
+    "quotaHits": 0,
+    "chars": 187,
+    "audioSec": 12.826125,
+    "ms": 6976,
+    "lastAt": "2026-11-05T18:31:26.348Z",
+    "days": {
+      "2026-11-05": {
+        "requests": 1,
+        "chars": 187,
+        "audioSec": 12.826125,
+        "fail": 0
+      }
+    }
+  },
+  "eleven-charlie": {
+    "voice": "eleven-charlie",
+    "name": "Charlie",
+    "provider": "elevenlabs",
+    "requests": 1,
+    "ok": 1,
+    "fail": 0,
+    "quotaHits": 0,
+    "chars": 187,
+    "audioSec": 13.606896,
+    "ms": 1601,
+    "lastAt": "2026-11-05T18:31:28.220Z",
+    "days": {
+      "2026-11-05": {
+        "requests": 1,
+        "chars": 187,
+        "audioSec": 13.606896,
+        "fail": 0
+      }
+    }
+  },
+  "fish-animado-dark": {
+    "voice": "fish-animado-dark",
+    "name": "Animado Dark",
+    "provider": "fishaudio",
+    "requests": 28048,
+    "ok": 28027,
+    "fail": 21,
+    "quotaHits": 0,
+    "chars": 3222759,
+    "audioSec": 162713.55367232763,
+    "ms": 108665964,
+    "lastAt": "2026-11-19T15:14:12.691Z",
+    "days": {
+      "2026-11-05": {
+        "requests": 661,
+        "chars": 47189,
+        "audioSec": 2451.7554640000026,
+        "fail": 0
+      },
+      "2026-11-06": {
+        "requests": 398,
+        "chars": 37543,
+        "audioSec": 1891.2433333333329,
+        "fail": 0
+      },
+      "2026-11-08": {
+        "requests": 939,
+        "chars": 289570,
+        "audioSec": 17419.63458333334,
+        "fail": 0
+      },
+      "2026-11-09": {
+        "requests": 178,
+        "chars": 38289,
+        "audioSec": 1819.3520625000006,
+        "fail": 0
+      },
+      "2026-11-10": {
+        "requests": 3035,
+        "chars": 284310,
+        "audioSec": 14347.47375000003,
+        "fail": 1
+      },
+      "2026-11-11": {
+        "requests": 1171,
+        "chars": 84347,
+        "audioSec": 4387.38162499999,
+        "fail": 1
+      },
+      "2026-11-12": {
+        "requests": 1101,
+        "chars": 124408,
+        "audioSec": 6152.919062499999,
+        "fail": 0
+      },
+      "2026-11-13": {
+        "requests": 2774,
+        "chars": 381692,
+        "audioSec": 18778.072833333303,
+        "fail": 3
+      },
+      "2026-11-14": {
+        "requests": 1568,
+        "chars": 129625,
+        "audioSec": 6512.369208333344,
+        "fail": 1
+      },
+      "2026-11-15": {
+        "requests": 4660,
+        "chars": 498754,
+        "audioSec": 24579.41808333339,
+        "fail": 1
+      },
+      "2026-11-16": {
+        "requests": 2279,
+        "chars": 251602,
+        "audioSec": 12344.292354166631,
+        "fail": 1
+      },
+      "2026-11-17": {
+        "requests": 2034,
+        "chars": 242371,
+        "audioSec": 11963.606354166652,
+        "fail": 2
+      },
+      "2026-11-18": {
+        "requests": 5162,
+        "chars": 606696,
+        "audioSec": 29827.371187500095,
+        "fail": 9
+      },
+      "2026-11-19": {
+        "requests": 2088,
+        "chars": 206363,
+        "audioSec": 10238.663770833322,
+        "fail": 2
+      }
+    },
+    "lastError": "terminated"
+  },
+  "eleven-will": {
+    "voice": "eleven-will",
+    "name": "Will",
+    "provider": "elevenlabs",
+    "requests": 1,
+    "ok": 1,
+    "fail": 0,
+    "quotaHits": 0,
+    "chars": 187,
+    "audioSec": 13.235375,
+    "ms": 1770,
+    "lastAt": "2026-11-05T18:59:42.650Z",
+    "days": {
+      "2026-11-05": {
+        "requests": 1,
+        "chars": 187,
+        "audioSec": 13.235375,
+        "fail": 0
+      }
+    }
+  },
+  "fish-alex-jovem": {
+    "voice": "fish-alex-jovem",
+    "name": "Alex jovem",
+    "provider": "fishaudio",
+    "requests": 1,
+    "ok": 1,
+    "fail": 0,
+    "quotaHits": 0,
+    "chars": 187,
+    "audioSec": 9.169,
+    "ms": 5503,
+    "lastAt": "2026-11-05T18:59:49.742Z",
+    "days": {
+      "2026-11-05": {
+        "requests": 1,
+        "chars": 187,
+        "audioSec": 9.169,
+        "fail": 0
+      }
+    }
+  },
+  "eleven-liam": {
+    "voice": "eleven-liam",
+    "name": "Liam",
+    "provider": "elevenlabs",
+    "requests": 1,
+    "ok": 1,
+    "fail": 0,
+    "quotaHits": 0,
+    "chars": 187,
+    "audioSec": 12.910313,
+    "ms": 1354,
+    "lastAt": "2026-11-05T18:59:52.519Z",
+    "days": {
+      "2026-11-05": {
+        "requests": 1,
+        "chars": 187,
+        "audioSec": 12.910313,
+        "fail": 0
+      }
+    }
+  }
+}

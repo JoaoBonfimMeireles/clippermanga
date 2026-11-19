@@ -2,7 +2,6 @@
 *.tsbuildinfo
 .env
 .env.local
-amostras-voz/
 tools/
 projetos/*
 !projetos/_skills/
@@ -10,8 +9,14 @@ projetos/*
 !projetos/_aprendizado.json
 !projetos/_gestao.json
 !projetos/_revisoes.json
-voice-samples/
 thumb-tests/
 *.mp4
 *.wav
 *.mp3
+# vozes usadas pelo app (amostras e vozes simples): pequenas, entram no git
+!amostras-voz/
+!amostras-voz/**
+!voice-samples/
+!voice-samples/**
+!projetos/_voices/
+!projetos/_voices/**
