@@ -1,0 +1,23 @@
+{
+  "aiProvider": "claude-code",
+  "anthropicModel": "claude-sonnet-5-5",
+  "anthropicSelectModel": "claude-opus-5-5",
+  "claudeCodeModel": "sonnet",
+  "editingPrompt": "",
+  "geminiFallbackModel": "gemini-3.1-flash-lite",
+  "geminiFlashModel": "gemini-3-flash-preview",
+  "geminiPlan": "free",
+  "geminiProModel": "gemini-3.1-pro-preview",
+  "hwAccel": "none",
+  "ollamaModel": "llama3",
+  "ollamaUrl": "http://127.0.0.1:11434",
+  "postLanguage": "pt",
+  "ptTranscript": true,
+  "sendFramesToAI": true,
+  "subtitleRemoval": "crop",
+  "threads": 4,
+  "useIllustrations": true,
+  "useReferences": true,
+  "whisperDevice": "auto",
+  "whisperModel": "small"
+}

@@ -9,6 +9,8 @@ projetos/*
 !projetos/_aprendizado.json
 !projetos/_gestao.json
 !projetos/_revisoes.json
+!projetos/_coach.json
+!projetos/_series/
 thumb-tests/
 *.mp4
 *.wav

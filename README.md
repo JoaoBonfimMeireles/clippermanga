@@ -32,6 +32,16 @@ No campo **Parte** do projeto (ex.: capítulos 16-22 = parte 3) o roteiro ganha 
 Regras fixas dos recortes (altura cheia, piso de 30/40% da largura, esticar, balão das bordas) são garantidas em código,
 em `lib/crop-enforce.ts`, no fim de cada passo que mexe neles.
 
+## Máquina nova
+
+1. Clone `clippermanga` em `.../manga` e `Local-AI-Video-Clipper` em `.../videos` (ao lado); `npm install` em `videos`.
+2. Copie `.env.example` para `.env` e preencha (chaves do OmniRoute, caminho do yt-dlp).
+3. `npm run settings` aplica `config/app-settings.json` (provedor de IA, modelos, render) no banco `../videos/data/database.db`.
+4. Copie a pasta `projetos/<id>/` dos webtoons (não vão para o git). As vozes (`amostras-voz/`, `voice-samples/`,
+   `projetos/_voices/`), as regras (`_aprendizado.json`, `_coach.json`, `_perfis/`, `_skills/`) e a memória das séries
+   (`projetos/_series/`) já vêm no git.
+5. `npm run app` → http://localhost:3100
+
 ## Onde ficam os dados
 
 Tudo em `projetos/`: um diretório por projeto (`project.json`, páginas, vídeos, `.progress/`), mais:

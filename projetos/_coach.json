@@ -1,0 +1,131 @@
+{
+  "edicao": {
+    "kinds": {
+      "cortado": {
+        "hits": 11,
+        "at": 1795060080767
+      },
+      "vazio": {
+        "hits": 2,
+        "at": 1795060080767
+      }
+    },
+    "works": {
+      "solo-swordmaster": {
+        "lessons": [],
+        "at": 1795010199634
+      },
+      "": {
+        "lessons": [],
+        "at": 1795049406939
+      },
+      "Kidnapped Dragons": {
+        "lessons": [],
+        "at": 1795040867383
+      },
+      "Lord of Summons! Sudden Mutation": {
+        "lessons": [],
+        "at": 1795052739285
+      },
+      "Tomb Raider King": {
+        "lessons": [],
+        "at": 1795060080767
+      }
+    },
+    "global": {
+      "lessons": [
+        "Comece o recorte na borda superior do quadro, para que nenhum balão ou cabeça de personagem fique partido no topo.",
+        "Evite recortes cuja metade seja só linhas de velocidade ou efeito sonoro; priorize o trecho com os personagens.",
+        "Nunca termine o recorte no meio de um rosto: inclua a cabeça inteira, dos cabelos ao queixo, do personagem que reage à fala.",
+        "Quando um balão fica acima ou abaixo do rosto de quem fala, estenda o recorte até cobrir os dois por completo.",
+        "Não termine o recorte com um balão de fala surgindo na borda: inclua o balão inteiro ou corte antes dele.",
+        "Quando a narração cita personagens aparecendo ou em pé, escolha o quadro que mostra corpo e rosto, não só pernas ou pés.",
+        "Não termine o recorte no meio de um balão de fala; inclua o balão inteiro ou corte antes dele.",
+        "Avoid panels whose speech balloon runs past the side edge of the panel; prefer panels where the whole balloon fits inside the width."
+      ],
+      "at": 1795060080767
+    }
+  },
+  "roteiro": {
+    "kinds": {
+      "portugues": {
+        "hits": 15,
+        "at": 1795113771036
+      },
+      "nome_generico": {
+        "hits": 19,
+        "at": 1795113771036
+      },
+      "so_descreve": {
+        "hits": 9,
+        "at": 1795113771036
+      },
+      "contradicao": {
+        "hits": 26,
+        "at": 1795113771036
+      },
+      "continuidade": {
+        "hits": 11,
+        "at": 1795113771036
+      },
+      "grafia_nome": {
+        "hits": 10,
+        "at": 1795113771036
+      },
+      "cortado": {
+        "hits": 11,
+        "at": 1795113771036
+      }
+    },
+    "works": {
+      "": {
+        "lessons": [
+          "O narrador 'eu' é o Yu; Chan-seok é outro personagem (o do olho de relógio). Nunca escreva 'eu, Chan-seok'.",
+          "Gordon é o assistente de óculos que carrega as maletas e entra em pânico com as regras; Berge (narrador, cabelo espetado) é quem rejeita os padrões. Escreva sempre 'Berge', nunca 'Berje'.",
+          "A elfa comprada se chama Granada e é mulher: nunca escreva 'Elfodo', 'um elfo' nem use pronome masculino para ela. Ela é a espiã do plano.",
+          "O líder dos heróis se chama Hillen (nunca Killen) e o elfo de trança é Granada; prefira esses nomes a 'o herói' ou 'o elfo'.",
+          "Nairuniel é feminina (use 'ela', 'surpresa', 'a'), e quem a invocou foi a Ernan, não o Berge."
+        ],
+        "at": 1795113771036
+      },
+      "Kidnapped Dragons": {
+        "lessons": [
+          "Nesta obra: Red = Yeoreum (15 anos), Bom = a de cabelo claro e flor (20 anos), Dragoa = Ga-eul (10 anos), o ovo azul = Gyeo-ul. Chame sempre a Dragoa de 'Dragoa' e a Red de 'Red'.",
+          "Escreva sempre 'Gyeoul', sem hífen, igual à ficha.",
+          "Escreva sempre 'Yeo-reum', com hífen. O homem de sobretudo que explica as regras é o professor, não o Jitae, que é o narrador ('eu')."
+        ],
+        "at": 1795026403351
+      },
+      "Lord of Summons! Sudden Mutation": {
+        "lessons": [
+          "O narrador é o Yuan, que também é o espadachim de lâmina branca. Nunca escreva 'o Yuan' nem 'o Espadachim' em terceira pessoa: use 'eu'.",
+          "Mantenha sempre a mesma grafia dos nomes: Immortal World, Espada Lua de Prata, Portão do Mundo Inferior.",
+          "Quando o nome já é conhecido (Pai, Mãe, Doug), use sempre o nome e nunca o rótulo visual, como Homem-gravata, Loira-porta ou Envenenado."
+        ],
+        "at": 1795043547182
+      },
+      "Tomb Raider King": {
+        "lessons": [
+          "O chefe da gangue de faca na mão, que diz ter criado Joo-heon como filho, é Park Kyung-tae: chame-o sempre de Kyung-tae. Joo-heon é um saqueador de tumbas experiente, não alguém inexperiente.",
+          "Na prova da Relíquia-dragão, os objetos oferecidos são machados (dourado e prateado, da fábula de Mercúrio e o lenhador), não facas; a adaga é a arma do Joo-heon.",
+          "Joo-heon é o narrador (masculino) e a Muramasa é tratada no feminino; mantenha a concordância.",
+          "Jin-ah é advogada (feminino) e Kwon é homem ('o Kwon', 'capanga do Kwon'). O Si-woo foi zumbificado e preso em Las Vegas."
+        ],
+        "at": 1795048165113
+      }
+    },
+    "global": {
+      "lessons": [
+        "Antes de escrever, confira o que as partes vizinhas já disseram (aceitou/recusou, ferido/curado, posição no ranking) e não contradiga; se a imagem não sustenta um fato, não o invente.",
+        "Nunca copie rótulos de quadro com hífen (Garoto-lança, Castanho, Mulher-da-espada) nem escreva 'a narração', 'a pessoa fora do quadro' ou 'balão'; use o nome ou uma descrição natural.",
+        "Não afirme como fato o que a parte seguinte trata como suspeita ou dúvida. Mantenha o mesmo grau de certeza entre partes vizinhas.",
+        "Depois de apresentar um personagem por um rótulo (ex.: 'homem de hanbok'), continue usando o mesmo rótulo ou o nome. Não troque por outra descrição.",
+        "Nunca use rótulos da descrição do quadro ('Figura', 'Gritador', 'Capa Riso') como nome; identifique o personagem e use o nome dele ou uma descrição natural.",
+        "Nunca atribua uma fala a 'uma voz', 'um mago' ou 'alguém' quando o quadro e o contexto indicam o personagem; use o nome dele ou a primeira pessoa se for o narrador.",
+        "Não use rótulos da descrição do quadro ('Coque', 'Capa', 'Herói Frente', 'Figura') como nome próprio, e só use 'eu' para o próprio narrador.",
+        "Em diálogos entre outros personagens, não use 'eu' nem 'me' na fala deles; deixe claro quem fala com quem (ex.: Kaede falando com o herói)."
+      ],
+      "at": 1795113771036
+    }
+  }
+}
