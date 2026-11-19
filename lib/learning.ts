@@ -8,9 +8,10 @@ import { randomUUID } from 'node:crypto';
 import { extractJson } from '@clipper/editing-planner';
 import { jobLLM } from './ai-meter';
 import { avoidPrompt } from './exemplos';
+import { beforeAfterSheets, type BeforeAfter } from './visual-review';
 import { projectDir, readProject, studioDir } from './store';
 import type { JobCtx } from './jobs';
-import type { Doubt, Shot } from './types';
+import type { Doubt, Rect, Shot } from './types';
 import { readJsonRetry, writeJsonAtomic } from './json-file';
 
 export interface LearnQuestion {
@@ -183,10 +184,42 @@ export function pendingEdits(projectId: string, only?: { fields?: ReadonlySet<st
   return { summary, size: all.length };
 }
 
+/** Recortes que o usuário mudou (primeiro valor → último), os de mudança maior primeiro: material para o Opus COMPARAR imagens. */
+export function pendingFocusPairs(projectId: string, max = 12): { shotId: string; part: number; text: string; before: Rect; after: Rect }[] {
+  let all = '';
+  try {
+    all = fs.readFileSync(logFile(projectId), 'utf8');
+  } catch {
+    return [];
+  }
+  const from = Number(fs.existsSync(markFile(projectId)) ? fs.readFileSync(markFile(projectId), 'utf8') : 0) || 0;
+  const lines = all.slice(from).split('\n').filter(Boolean);
+  const bulk = bulkSaves(lines.map((l) => ({ at: /"at":"([^"]+)"/.exec(l)?.[1], kind: /"kind":"(\w+)"/.exec(l)?.[1] ?? '' })));
+  const by = new Map<string, { part: number; text: string; before: Rect; after: Rect }>();
+  const isRect = (v: unknown): v is Rect => !!v && typeof v === 'object' && 'x0' in (v as object) && 'y1' in (v as object);
+  for (const l of lines) {
+    let e: LogEntry;
+    try {
+      e = JSON.parse(l) as LogEntry;
+    } catch {
+      continue;
+    }
+    if (e.kind !== 'change' || bulk.has(e.at) || !e.changes?.focus) continue;
+    const [a, b] = e.changes.focus;
+    if (!isRect(a) || !isRect(b)) continue;
+    const cur = by.get(e.id);
+    by.set(e.id, { part: e.part, text: e.text ?? '', before: cur?.before ?? a, after: b });
+  }
+  const area = (r: Rect) => Math.max(1e-6, (r.x1 - r.x0) * (r.y1 - r.y0));
+  const score = (p: { before: Rect; after: Rect }) => Math.abs(Math.log(area(p.after) / area(p.before))) + Math.abs((p.after.y0 + p.after.y1) / 2 - (p.before.y0 + p.before.y1) / 2) * 4;
+  return [...by].map(([shotId, v]) => ({ shotId, ...v })).filter((p) => score(p) > 0.15).sort((x, y) => score(y) - score(x)).slice(0, max);
+}
+
 const SYSTEM = `Você aprende o gosto de um editor de vídeos de resumo de mangá no YouTube. A IA dele faz a edição automática
 (recorte de cada quadro da página, encaixe, zoom, esticar, movimento de câmera, duração, velocidade, texto narrado) e
 o usuário corrige no editor. Você recebe as correções que ele fez e as regras que já aprendeu.
 Responda SOMENTE JSON: {"rules": ["regra 1", ...], "questions": [{"part": 12, "question": "..."}]}
+COMPARAÇÃO DE IMAGENS: às vezes vêm folhas de imagem. Cada linha da folha tem 3 quadros, da esquerda para a direita: (1) a página em volta, com o recorte que a IA fez em VERMELHO e o do usuário em VERDE; (2) o que o recorte da IA mostrava (borda vermelha); (3) o que o recorte do usuário mostra (borda verde). COMPARE os dois: o que a IA deixou de fora e o usuário incluiu (cabeça, corpo inteiro, outro personagem, balão, cenário) e o que o usuário tirou (balão, sarjeta, outro quadro). A causa visual é o que vira regra (ex.: "sempre incluir a cabeça inteira", "tirar o balão da borda"), sempre sem coordenadas. Use as imagens para entender o porquê em vez de perguntar; só pergunte se mesmo vendo ainda não dá para saber.
 QUEM USA AS REGRAS (escreva para quem pode cumprir):
 - A IA que monta o vídeo NÃO vê as imagens e não mexe em tamanho: ela só escolhe QUAL quadro vai em cada fala, quando REPETIR
   a imagem da fala vizinha e quando JUNTAR quadros vizinhos numa cena geral. A maioria das regras é para ela: diga QUANDO
@@ -218,10 +251,31 @@ export async function learnFromEdits(projectId: string, ctx: JobCtx, signal?: Ab
   // em blocos: nenhuma correção fica de fora, e as regras de um bloco seguem para o próximo
   let rules = l.rules;
   const asked: { part?: number; question?: string }[] = [];
+  // antes → depois em IMAGEM: o Opus compara o recorte da IA com o seu e entende o porquê (até 12 pares, o de maior mudança primeiro)
+  let images: Awaited<ReturnType<typeof beforeAfterSheets>> = [];
+  let imageNote = '';
+  try {
+    const pairs = pendingFocusPairs(projectId);
+    const shotById = new Map(p.shots.map((x) => [x.id, x]));
+    const pageById = new Map(p.pages.map((x) => [x.id, x]));
+    const rows: (BeforeAfter & { part: number })[] = [];
+    for (const pr of pairs) {
+      const pg = pageById.get(shotById.get(pr.shotId)?.pageId ?? '');
+      if (pg) rows.push({ page: pg, before: pr.before, after: pr.after, part: pr.part });
+    }
+    images = await beforeAfterSheets(projectId, rows);
+    if (images.length) {
+      imageNote = `\n\nFOLHAS DE IMAGEM (comparação antes → depois): ${images.length} folha(s), 4 linhas por folha, na ordem das partes ${rows.map((r) => r.part).join(', ')}.\n`;
+      ctx.log(`Aprendizado: ${rows.length} recorte(s) seu(s) comparados em imagem (IA em vermelho, você em verde)`);
+    }
+  } catch (e) {
+    ctx.log(`Comparação em imagem pulada (${(e as Error).message.slice(0, 100)})`);
+  }
   for (let i = 0; i < summary.length; i += 120) {
     const raw = await llm.complete({
       system: SYSTEM,
-      prompt: `Obra: ${p.title}\n\nRegras atuais:\n${rules.map((r, n) => `${n + 1}. ${r}`).join('\n') || '(nenhuma)'}\n\nRespostas do usuário a perguntas anteriores:\n${answered.join('\n') || '(nenhuma)'}\n\nCorreções feitas agora (antes → depois):\n${summary.slice(i, i + 120).join('\n')}`.slice(0, 40000),
+      images: i === 0 && images.length ? images : undefined,
+      prompt: `Obra: ${p.title}\n\nRegras atuais:\n${rules.map((r, n) => `${n + 1}. ${r}`).join('\n') || '(nenhuma)'}\n\nRespostas do usuário a perguntas anteriores:\n${answered.join('\n') || '(nenhuma)'}\n\nCorreções feitas agora (antes → depois):\n${summary.slice(i, i + 120).join('\n')}${i === 0 ? imageNote : ''}`.slice(0, 40000),
       maxTokens: 2500,
       temperature: 0.2,
       tier: 'manager', // gestão: Opus

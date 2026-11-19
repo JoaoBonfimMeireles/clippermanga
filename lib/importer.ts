@@ -12,6 +12,7 @@ import { projectDir, updateProject } from './store';
 import type { JobCtx } from './jobs';
 import { addPagesToTimeline } from './timeline';
 import { mapPool } from './pool';
+import { stitchChapter } from './stitch';
 import { needsReader, readerImagesFromHtml, readerOpenChapter } from './reader';
 import type { StudioPage } from './types';
 
@@ -192,10 +193,19 @@ export async function importFromUrl(projectId: string, url: string, chapter: str
     fs.rmSync(dir, { recursive: true, force: true });
     throw new Error(`O capítulo tem ${valid.length} páginas; nenhuma das escolhidas existe.`);
   }
-  for (const g of keep) {
-    const file = `p${String(pages.length + 1).padStart(3, '0')}.jpg`;
-    fs.renameSync(g.tmpFile, path.join(dir, file));
-    pages.push({ id: randomUUID().slice(0, 8), file: `pages/${chId}/${file}`, width: g.width, height: g.height, chapter });
+  // emenda as imagens do site (fatiadas em pontos aleatórios) e corta só em faixa lisa: personagem nunca fica partido
+  const joined = await stitchChapter(keep.map((g) => ({ file: g.tmpFile, width: g.width, height: g.height })), dir).catch((e) => {
+    ctx.log(`Emenda falhou (${(e as Error).message}); mantendo as imagens como vieram`);
+    return null;
+  });
+  if (joined?.length) {
+    for (const j of joined) pages.push({ id: randomUUID().slice(0, 8), file: `pages/${chId}/${path.basename(j.file)}`, width: j.width, height: j.height, chapter });
+  } else {
+    for (const g of keep) {
+      const file = `p${String(pages.length + 1).padStart(3, '0')}.jpg`;
+      fs.renameSync(g.tmpFile, path.join(dir, file));
+      pages.push({ id: randomUUID().slice(0, 8), file: `pages/${chId}/${file}`, width: g.width, height: g.height, chapter });
+    }
   }
   fs.rmSync(tmp, { recursive: true, force: true });
   if (!pages.length) throw new Error('As imagens desse link não puderam ser baixadas. Envie as imagens do capítulo.');
@@ -220,11 +230,17 @@ export async function importFromFiles(projectId: string, files: { name: string; 
     ctx.progress(++done / sorted.length, `Convertendo páginas (${done}/${sorted.length})`);
     return dim ? { tmp, ...dim } : null;
   });
-  for (const c of conv) {
-    if (!c) continue;
-    const file = `p${String(pages.length + 1).padStart(3, '0')}.jpg`;
-    fs.renameSync(c.tmp, path.join(dir, file));
-    pages.push({ id: randomUUID().slice(0, 8), file: `pages/${chId}/${file}`, width: c.width, height: c.height, chapter });
+  const okConv = conv.filter((c): c is NonNullable<typeof c> => !!c);
+  const joined = await stitchChapter(okConv.map((c) => ({ file: c.tmp, width: c.width, height: c.height })), dir, 's').catch(() => null);
+  if (joined?.length) {
+    for (const j of joined) pages.push({ id: randomUUID().slice(0, 8), file: `pages/${chId}/${path.basename(j.file)}`, width: j.width, height: j.height, chapter });
+    for (const c of okConv) fs.rmSync(c.tmp, { force: true });
+  } else {
+    for (const c of okConv) {
+      const file = `p${String(pages.length + 1).padStart(3, '0')}.jpg`;
+      fs.renameSync(c.tmp, path.join(dir, file));
+      pages.push({ id: randomUUID().slice(0, 8), file: `pages/${chId}/${file}`, width: c.width, height: c.height, chapter });
+    }
   }
   if (!pages.length) throw new Error('Nenhuma imagem válida');
   addPages(projectId, pages);

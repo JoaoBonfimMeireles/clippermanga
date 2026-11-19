@@ -13,7 +13,7 @@ import { PaidAsk } from './paid-ask';
 import { fmtDuration } from '@/lib/duration';
 
 const fmtTime = (t: number) => fmtDuration(t);
-const KIND: Record<JobInfo['kind'], string> = { import: 'Importar', script: 'Roteiro', edit: 'Edição', check: 'Validação', render: 'Render', context: 'Resumos', polish: 'Polir', publish: 'Publicação', subs: 'Legendas', shorts: 'Shorts', english: 'Inglês', restyle: 'Meu estilo', audit: 'Auditoria do gestor', test: 'Teste finalizado' };
+const KIND: Record<JobInfo['kind'], string> = { import: 'Importar', script: 'Roteiro', edit: 'Edição', check: 'Validação', render: 'Render', context: 'Resumos', polish: 'Polir', publish: 'Publicação', subs: 'Legendas', shorts: 'Shorts', english: 'Inglês', restyle: 'Meu estilo', audit: 'Auditoria do gestor', test: 'Teste finalizado', hooks: 'Ganchos da parte', join: 'Juntar partes' };
 
 export function FinalStudio({ id }: { id: string }) {
   const [p, setP] = useState<StudioProject | null>(null);

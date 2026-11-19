@@ -1,5 +1,6 @@
 // Render final: um segmento por parte (recorte do foco com laterais desfocadas + câmera do lib/camera.ts,
 // a mesma da prévia), legenda queimada e áudio (silêncio no modo texto, TTS no modo voz), depois concat sem recodificar.
+import { mkdirRetry } from './safe-mkdir';
 import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
@@ -18,6 +19,7 @@ import { cutWordsFromAudio, hasCutWord, prepareWordCuts, stripWords } from './wo
 import type { JobCtx } from './jobs';
 import type { ShotView, StudioPage, StudioProject } from './types';
 import { renderSig } from './sig';
+import { syncProjectHooks } from './parts';
 import { mapPool, renderConcurrency, serial } from './pool';
 import { planSpeechGains, polishSpeech } from './speech-polish';
 import { cleanSpeechText } from './speech-text';
@@ -139,6 +141,7 @@ export async function renderProject(projectId: string, ctx: JobCtx, signal?: Abo
 }
 
 async function renderProjectInner(projectId: string, ctx: JobCtx, signal: AbortSignal | undefined, opts: { cacheOnly?: boolean; extra?: RenderExtra }, track: { work?: string }): Promise<string> {
+  if (!opts.extra) syncProjectHooks(projectId); // parte de série: abertura e fechamento na linha do tempo (texto editado vale)
   const p = opts.extra?.project ?? readProject(projectId);
   if (!p) throw new Error('Projeto não encontrado');
   if (!p.shots.length) throw new Error('A linha do tempo está vazia');
@@ -175,8 +178,8 @@ async function renderProjectInner(projectId: string, ctx: JobCtx, signal: AbortS
   const nvenc = getAppSettings().hwAccel === 'nvenc';
   const x264 = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20'];
   const enc = nvenc ? ['-c:v', 'h264_nvenc', '-preset', 'p4', '-cq', '21'] : x264;
-  const work = path.join(dataPaths.temp, `manga-studio-${Date.now()}`);
-  fs.mkdirSync(work, { recursive: true });
+  const work = path.join(dataPaths.temp, `manga-studio-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`);
+  await mkdirRetry(work);
   track.work = work;
   const pageById = new Map(p.pages.map((x) => [x.id, x]));
 

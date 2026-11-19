@@ -92,23 +92,47 @@ export function Studio({ id }: { id: string }) {
   const [polishPrompt, setPolishPrompt] = useState('');
   const [ctxSaved, setCtxSaved] = useState(false);
   const dragFrom = useRef<number | null>(null);
+  const [loadError, setLoadError] = useState('');
 
   // retrato das partes como o servidor as conhece: o salvamento manda só o que mudou em relação a ele (lib/shots-merge.ts)
   const base = useRef<ShotsBase | null>(null);
   const load = useCallback(async () => {
-    const j = (await (await fetch(`/api/projects/${id}`)).json()) as StudioProject;
-    base.current = baseOf(j.shots ?? []);
-    setP(j);
+    // servidor ocupado ou arquivo sendo gravado: resposta vazia/erro não derruba a tela, tenta de novo (até ~30 s)
+    for (let i = 0; i < 12; i++) {
+      try {
+        const r = await fetch(`/api/projects/${id}`);
+        if (r.status === 404) return setLoadError('Projeto não encontrado.');
+        if (r.ok) {
+          const j = (await r.json()) as StudioProject;
+          base.current = baseOf(j.shots ?? []);
+          partKey.current = `${j.part?.number ?? 0}`;
+          setLoadError('');
+          return setP(j);
+        }
+      } catch {
+        /* resposta cortada: tenta de novo */
+      }
+      await new Promise((res) => setTimeout(res, Math.min(4000, 500 * (i + 1))));
+    }
+    setLoadError('O servidor não respondeu. Ele pode estar ocupado com um processo pesado: tente de novo em instantes.');
   }, [id]);
   useEffect(() => {
     load();
   }, [load]);
 
+  const partKey = useRef<string | null>(null);
   const save = useCallback(async (cur: StudioProject) => {
     dirty.current = false;
-    const r = await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ title: cur.title, context: cur.context, format: cur.format, narration: cur.narration, voice: cur.voice, subtitles: !!cur.subtitles, chapterContexts: cur.chapterContexts, shots: cur.shots, ...shotsDelta(base.current, cur.shots), cutWords: cur.cutWords, targetMinutes: cur.targetMinutes ?? 0, englishAudio: !!cur.englishAudio, autoPaid: !!cur.autoPaid, series: cur.series ?? '' }) });
+    const r = await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ title: cur.title, context: cur.context, format: cur.format, narration: cur.narration, voice: cur.voice, subtitles: !!cur.subtitles, chapterContexts: cur.chapterContexts, shots: cur.shots, ...shotsDelta(base.current, cur.shots), cutWords: cur.cutWords, targetMinutes: cur.targetMinutes ?? 0, englishAudio: !!cur.englishAudio, autoPaid: !!cur.autoPaid, series: cur.series ?? '', part: cur.part?.number ? { number: cur.part.number, recapUrl: cur.part.recapUrl ?? '' } : null }) });
     if (r.ok) base.current = baseOf(cur.shots);
-  }, [id]);
+    // número da parte mudou: o servidor pôs ou tirou as partes de gancho da linha do tempo, então recarrega
+    const pk = `${cur.part?.number ?? 0}`;
+    if (r.ok && pk !== partKey.current) {
+      const first = partKey.current === null;
+      partKey.current = pk;
+      if (!first) void load();
+    }
+  }, [id, load]);
 
   // projeto com páginas e linha do tempo vazia: monta sozinha, em ordem cronológica
   useEffect(() => {
@@ -260,7 +284,15 @@ export function Studio({ id }: { id: string }) {
       }
     }
   });
-  if (!p) return <p className="text-muted-foreground">Carregando…</p>;
+  if (!p)
+    return loadError ? (
+      <div className="space-y-2">
+        <p className="text-destructive">{loadError}</p>
+        <button className="btn" onClick={() => { setLoadError(''); void load(); }}>Tentar de novo</button>
+      </div>
+    ) : (
+      <p className="text-muted-foreground">Carregando…</p>
+    );
   const segs = p.lastRender?.segments ?? [];
   const playingId = segs.find((g) => videoTime >= g.start && videoTime < g.start + g.dur)?.id;
   const seekTo = (shotId: string) => {
@@ -349,6 +381,37 @@ export function Studio({ id }: { id: string }) {
           Série
           <input className="field w-40" placeholder={p.title.replace(/\d+(\s*-\s*\d+)?/g, '').trim() || 'mesmo do título'} value={p.series ?? ''} onChange={(e) => edit((d) => (d.series = e.target.value))} />
         </label>
+        <label className="flex items-center gap-2 text-sm" title="Este vídeo é uma PARTE da história (ex.: capítulos 16-22 = parte 3). Com o número, o roteiro ganha um gancho de abertura (esta é a parte N + o que houve antes + link na descrição) e um de fechamento (o que vem na parte N+1). Vazio = vídeo comum.">
+          Parte
+          <input
+            type="number"
+            min={0}
+            step={1}
+            className="field w-16"
+            placeholder="não"
+            value={p.part?.number || ''}
+            onChange={(e) => edit((d) => { const n = Math.max(0, Math.floor(Number(e.target.value) || 0)); d.part = n ? { ...d.part, number: n } : undefined; })}
+          />
+        </label>
+        {!!p.part?.number && (
+          <>
+            <label className="flex items-center gap-2 text-sm" title="Link das partes anteriores no YouTube: entra na descrição do vídeo (o gancho de abertura diz para procurar lá).">
+              Link das partes anteriores
+              <input className="field w-56" placeholder="https://youtube.com/..." value={p.part.recapUrl ?? ''} onChange={(e) => edit((d) => { if (d.part) d.part.recapUrl = e.target.value; })} />
+            </label>
+            <button className="btn" disabled={running || !p.shots.some((s) => !s.hook && s.text.trim())} onClick={() => start({ kind: 'hooks' })} title="A IA escreve (de novo) o gancho de abertura (parte N, resumo do que houve antes, link na descrição) e o de fechamento (o que vem na parte seguinte). Ficam no começo e no fim da linha do tempo e você pode editar o texto como qualquer fala.">
+              🪝 Gerar ganchos
+            </button>
+            <button className="btn" disabled={running} onClick={() => start({ kind: 'join' })} title="Emenda os vídeos já renderizados de todas as partes desta série (pela ordem do número), SEM os ganchos de abertura e fechamento, num vídeo completo só. Cada parte precisa ter sido renderizada.">
+              🔗 Juntar partes
+            </button>
+            {p.joined && (
+              <a className="text-sm text-sky-400 hover:underline" href={`/api/file?project=${id}&f=${encodeURIComponent(p.joined.file.replace(/\\/g, '/').split(`${id}/`).pop() ?? '')}`} target="_blank" rel="noreferrer" title={`${p.joined.labels?.join(' + ') ?? `Partes ${p.joined.parts.join(', ')}`} · gerado em ${new Date(p.joined.at).toLocaleString('pt-BR')}`}>
+                ▶ Vídeo completo ({Math.round(p.joined.duration / 60)} min)
+              </a>
+            )}
+          </>
+        )}
         <label className="flex items-center gap-2 text-sm" title="Duração máxima do vídeo final. Vazio = automático: sem teto, a IA decide pela relevância de cada capítulo (importante é destrinchado, enchimento é resumido). Preencha só se quiser forçar um máximo.">
           Duração
           <input

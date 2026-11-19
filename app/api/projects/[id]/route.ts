@@ -6,6 +6,7 @@ import type { Doubt, StudioProject } from '@/lib/types';
 import { dedupeImports, hasDuplicateImports, healTest } from '@/lib/cut-profiles';
 import { logDoubtAnswers, logEdits } from '@/lib/learning';
 import { mergeShots } from '@/lib/shots-merge';
+import { syncHookShots } from '@/lib/parts';
 
 export const dynamic = 'force-dynamic';
 type Ctx = { params: Promise<{ id: string }> };
@@ -51,12 +52,19 @@ export async function PUT(req: Request, { params }: Ctx) {
           /* log é só aprendizado */
         }
       }
-      for (const k of ['title', 'context', 'format', 'narration', 'voice', 'subtitles', 'endSilence', 'endTalkPad', 'chapterContexts', 'shots', 'cutWords', 'targetMinutes', 'englishAudio', 'autoPaid', 'series', 'fullVideoUrl', 'doubts', 'lockedPages', 'lastImportUrl', 'ytTitle', 'publishedAt'] as const) {
+      // parte da série: só número e link vêm da tela (os ganchos vivem na linha do tempo, que um job pode ter mudado)
+      if (body.part !== undefined) {
+        const n = Math.floor(Number(body.part?.number));
+        cur.part = body.part && n > 0 ? { ...cur.part, number: n, recapUrl: String(body.part.recapUrl ?? '').trim() || undefined } : undefined;
+        if (cur.part) syncHookShots(cur);
+        else cur.shots = cur.shots.filter((s) => !s.hook);
+      }
+      for (const k of ['title', 'context', 'format', 'narration', 'voice', 'subtitles', 'endSilence', 'endTalkPad', 'chapterContexts', 'shots', 'cutWords', 'targetMinutes', 'englishAudio', 'autoPaid', 'series', 'fullVideoUrl', 'doubts', 'lockedPages', 'lastImportUrl', 'ytTitle', 'publishedAt', 'partLabel'] as const) {
         if (body[k] === undefined) continue;
         // guarda a data anterior para poder voltar (trocar de lugar com a atual = desfazer/refazer)
         if (k === 'publishedAt' && (body[k] || undefined) !== cur.publishedAt) cur.prevPublishedAt = cur.publishedAt;
         // string vazia = limpar o campo
-        (cur as unknown as Record<string, unknown>)[k] = (k === 'ytTitle' || k === 'publishedAt') && !body[k] ? undefined : body[k];
+        (cur as unknown as Record<string, unknown>)[k] = (k === 'ytTitle' || k === 'publishedAt' || k === 'partLabel') && !body[k] ? undefined : body[k];
       }
     });
     return Response.json(p);

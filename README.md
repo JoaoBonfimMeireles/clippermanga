@@ -25,6 +25,10 @@ Configuração: copie `.env.example` para `.env`. A IA usa primeiro os modelos g
 | 4 · Render | `lib/render.ts`, `lib/voice*.ts` | voz, FFmpeg, depois aprende com o que você editou (`lib/learning.ts`) |
 | Depois | `lib/shorts*.ts`, `lib/publish.ts` | shorts e publicação |
 
+## Partes de uma série
+
+No campo **Parte** do projeto (ex.: capítulos 16-22 = parte 3) o roteiro ganha dois ganchos (`lib/parts.ts`): a abertura ("esta é a parte 3", resumo do que houve antes, link na descrição) e o fechamento (o que vem na parte 4). Eles ficam no começo e no fim da linha do tempo (`hook`), editáveis; **Gerar ganchos** refaz. O link das partes anteriores entra na descrição da publicação. **Juntar partes** emenda os vídeos renderizados de todas as partes da série, sem os ganchos, em `videos/completo/` (aparece como "Vídeo completo").
+
 Regras fixas dos recortes (altura cheia, piso de 30/40% da largura, esticar, balão das bordas) são garantidas em código,
 em `lib/crop-enforce.ts`, no fim de cada passo que mexe neles.
 

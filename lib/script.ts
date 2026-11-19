@@ -15,8 +15,11 @@ import { dropSilentShots } from './speech-only';
 import { budgetHint, videoBudget } from './autoedit';
 import { NARRATOR_STYLE } from './narrator';
 import { cleanSpeechText } from './speech-text';
+import { makeCoach } from './coach';
+import { noteReview } from './review';
 import { ensurePageNotes, pageText, panelsIn, type PageNote } from './page-notes';
 import { readSeries, seriesPrompt, updateSeriesMemory } from './series';
+import { generateHooks, isHook, partNumber } from './parts';
 import { readProject, updateProject } from './store';
 import { chaptersInOrder } from './timeline';
 import type { JobCtx } from './jobs';
@@ -193,11 +196,35 @@ async function trimOldOutro(projectId: string, llm: LLMProvider, ctx: JobCtx): P
   return tailOf(text);
 }
 
+const CHECK_SYSTEM = `Você é o GESTOR (Opus) de uma empresa de edição de vídeos de resumo de mangá/manhwa para YouTube (canal brasileiro). Um redator (Haiku) escreveu a narração em primeira pessoa e você confere o que já está pronto, só pelo texto.
+Procure e corrija SÓ problemas claros: nome de personagem trocado por apelido/descrição ("o de terno", "alguém", "um homem") quando o nome está na ficha ou no resumo; grafia diferente do mesmo nome; fato que contradiz o resumo, a ficha ou outra parte; frase que só descreve quadro sem contar a história; texto cortado, repetido ou sem sentido; português ruim; quebra de continuidade com o texto vizinho; despedida/encerramento fora do fim.
+Regras da correção: mantenha primeira pessoa, o tom e o tamanho (mesmo número de palavras, no máximo 30% a mais); mude o mínimo necessário; não invente acontecimento que o resumo e a descrição não sustentem; parte com texto vazio fica vazia. Não corrija gosto de estilo.
+Para cada correção diga o TIPO do erro em "kind": "nome_generico" (apelido/descrição no lugar do nome), "grafia_nome", "contradicao", "so_descreve" (só descreve o quadro), "cortado" (texto cortado/repetido/sem sentido), "continuidade", "portugues" ou "outro". Em "lessons" escreva até 2 regras curtas para o redator (Haiku) não repetir esses erros nas partes que ainda faltam, no formato {"rule":"texto","global":true|false}: global=true quando a regra serve para QUALQUER obra (jeito de escrever, formato, tipo de erro); global=false quando é só desta obra (nome de personagem, enredo).
+Responda SOMENTE JSON: {"summary":"parecer em 1 frase","fixes":[{"n":número da parte,"kind":"tipo","text":"texto corrigido completo"}],"lessons":[{"rule":"regra curta","global":true}]}. Sem problemas: "fixes": [], "lessons": [].`;
+
+const SCRIPT_RULES: Record<string, string> = {
+  nome_generico: 'use SEMPRE o nome do personagem (da ficha/resumo), nunca apelido, descrição ("o de terno", "alguém", "um homem") ou "o rapaz".',
+  grafia_nome: 'escreva cada nome sempre do mesmo jeito, igual à ficha e ao resumo do capítulo.',
+  contradicao: 'não contradiga o resumo do capítulo, a ficha nem o que você já narrou; na dúvida, narre de forma mais geral.',
+  so_descreve: 'conte o que ACONTECE na história (ação, motivo, consequência), não descreva o desenho do quadro.',
+  cortado: 'cada texto é uma frase completa, com sentido, sem repetir a anterior nem terminar no meio.',
+  continuidade: 'cada texto continua o anterior com naturalidade; ligue os acontecimentos, sem saltos.',
+  portugues: 'português do Brasil correto e natural, sem frases truncadas.',
+};
+
 export async function generateScript(projectId: string, ctx: JobCtx): Promise<string> {
   let p = readProject(projectId);
   if (!p) throw new Error('Projeto não encontrado');
   if (!p.pages.length) throw new Error('Importe páginas antes de gerar o roteiro');
   // linha do tempo vazia (roteiro antes da edição): uma parte provisória por página inteira, só para escrever o texto
+  // parte de série: os ganchos (abertura/fechamento) saem do roteiro da história e são escritos à parte no fim
+  if (p.shots.some(isHook)) {
+    updateProject(projectId, (cur) => {
+      cur.shots = cur.shots.filter((s) => !isHook(s));
+    });
+    p = readProject(projectId) as StudioProject;
+  }
+  const part = partNumber(p);
   const draft = !p.shots.length;
   const locked = lockedSet(p);
   const llm = jobLLM(ctx);
@@ -250,6 +277,52 @@ export async function generateScript(projectId: string, ctx: JobCtx): Promise<st
     `${capped ? `Duração-alvo do vídeo: ${Math.round(budget / 60)} min no total. ${budgetHint(secPerPage)} ` : 'SEM teto de duração: o tamanho de cada texto acompanha o tempo da parte. '}Relevância deste capítulo: ${relOf(ch)}. Parte sem importância pode ficar com texto vazio ("") e a narração das importantes pode ser um pouco maior. O que foi pulado tem que ser costurado: o texto seguinte resume em poucas palavras o que aconteceu no meio e liga com naturalidade à cena atual, para a narração soar contínua, linear e sem saltos.
 `;
   let calls = 0;
+  // Opus confere o texto escrito ao chegar em 10%, 25%, 50% e 100% e corrige na hora o que estiver errado (só texto, 1 chamada por marco)
+  const MARKS = [0.1, 0.25, 0.5, 1];
+  let nextMark = 0;
+  let reviewedTo = 0;
+  const coach = makeCoach(SCRIPT_RULES, { stage: 'roteiro', work: p!.series ?? p!.title });
+  const wordsOf = (t: string) => t.split(/\s+/).filter(Boolean).length;
+  const opusCheck = async (upTo: number, label: string) => {
+    const from = Math.max(reviewedTo, upTo - 40, 0);
+    const rows = shots.slice(from, upTo).map((sh, k) => ({ n: from + k + 1, sh, t: texts.get(sh.id) ?? '' })).filter((r) => r.t);
+    reviewedTo = upTo;
+    if (!rows.length) return;
+    ctx.progress(0.45 + (upTo / shots.length) * 0.55, `Gestor (Opus): conferindo o roteiro em ${label}`);
+    const before = from > 0 ? shots.slice(Math.max(0, from - 3), from).map((sh) => texts.get(sh.id)).filter(Boolean).join(' ') : '';
+    const list = rows.map((r) => `[${r.n}] (${r.sh.duration}s, ${chOf(r.sh)}) mostra: ${shotDesc(r.sh, notes[r.sh.pageId]).slice(0, 160)}\n    texto: ${r.t}`).join('\n');
+    try {
+      const raw = await llm.complete({
+        system: CHECK_SYSTEM,
+        prompt: `${memory.slice(0, 2500)}${p!.context ? `Obra: ${p!.context.slice(0, 800)}\n` : ''}${before ? `Texto logo antes deste trecho: "${before.slice(-400)}"\n` : ''}\nPARTES JÁ ESCRITAS (${label}):\n${list}`.slice(0, 28000),
+        maxTokens: 2500,
+        temperature: 0.2,
+        tier: 'manager',
+        signal: ctx.signal,
+      });
+      const v = extractJson(raw) as { fixes?: { n?: unknown; text?: unknown; kind?: unknown }[]; summary?: unknown; lessons?: unknown };
+      const kinds: string[] = [];
+      let applied = 0;
+      for (const f of Array.isArray(v.fixes) ? v.fixes : []) {
+        if (typeof f?.kind === 'string') kinds.push(f.kind);
+        const r = rows.find((x) => x.n === Number(f?.n));
+        const text = typeof f?.text === 'string' ? cleanSpeechText(f.text.trim()) : '';
+        if (!r || !text || text === r.t) continue;
+        // a correção não pode estourar o tempo da parte: no máximo 30% mais palavras (+3) que o texto original
+        if (wordsOf(text) > Math.ceil(wordsOf(r.t) * 1.3) + 3) continue;
+        texts.set(r.sh.id, text);
+        saveCheckpoint(projectId, 'script', CK_VERSION, r.sh.id, text);
+        applied++;
+      }
+      const lessons: unknown[] = Array.isArray(v.lessons) ? v.lessons : [];
+      coach.record(kinds, lessons);
+      noteReview('stage-roteiro', 'Conferência do roteiro durante a escrita', 'opus', !kinds.length, kinds.slice(0, 5), String((lessons[0] as { rule?: unknown })?.rule ?? lessons[0] ?? ''));
+      ctx.log(`Gestor (Opus) conferiu o roteiro em ${label}: ${applied ? `${applied} parte(s) corrigida(s)` : 'tudo certo'}${v.summary ? ` — ${String(v.summary).slice(0, 160)}` : ''}${coach.summary() ? ` · regras para o Haiku: ${coach.summary()}` : ''}`);
+    } catch (e) {
+      if (ctx.signal?.aborted) throw e;
+      ctx.log(`Conferência do Opus em ${label} não saiu (${(e as Error).message.slice(0, 120)}); segue sem ela`);
+    }
+  };
   for (let i = 0; i < shots.length; ) {
     if (ctx.signal?.aborted) throw new Error('Cancelado');
     const saved = done.get(shots[i].id);
@@ -279,7 +352,9 @@ export async function generateScript(projectId: string, ctx: JobCtx): Promise<st
     const next = shots.slice(i, i + 3);
     const nextCh = next[0] && chOf(next[0]);
     const nextDraft = next.filter((s) => chOf(s) === ch).map((s) => s.text || shotDesc(s, notes[s.pageId])).filter(Boolean).join(' ').slice(0, 200);
-    const ahead = !next.length
+    const ahead = !next.length && part
+      ? `FIM DA PARTE ${part}: o último texto fecha o último acontecimento com tensão, SEM despedida e SEM falar com o público nem anunciar a próxima parte (o encerramento é escrito à parte)`
+      : !next.length
       ? 'FIM DO VÍDEO: o ÚLTIMO texto fecha com uma despedida empolgada, falando com o público: anuncie que este capítulo termina aqui, deixe um gancho forte e curioso para os próximos capítulos (o que pode vir, a tensão no ar) e convide para não perder a continuação (ex.: algo no tom de "e isso é só o começo... nos vemos nos próximos capítulos!", mas com palavras suas, criativas e diferentes a cada vídeo, sem soar robótico nem clichê)'
       : nextCh !== ch
         ? `próximo capítulo (${nextCh})${contexts[nextCh!] ? `: ${contexts[nextCh!].slice(0, 200)}` : ''}`
@@ -294,11 +369,12 @@ export async function generateScript(projectId: string, ctx: JobCtx): Promise<st
           system,
           // parte fixa do job primeiro (memória da série, obra, duração), o que muda por lote depois: ajuda o cache de prompt
           prompt:
-            `${memory}${p.context ? `Obra: ${p.context.slice(0, 2000)}\n` : ''}${focusNote(ch)}${contexts[ch] ? `Resumo de ${ch}: ${contexts[ch]}\n` : ''}` +
-            `${recent.length ? `Narração até aqui: "${recent.join(' ')}"\n` : prevVideo ? `Início do vídeo, CONTINUAÇÃO do anterior, que terminou assim: "${prevVideo.slice(-300)}". Abra retomando em uma ou duas frases onde a história parou (para quem não viu o anterior entender) e siga.\n` : 'Início do vídeo: abra a história me apresentando e situando quem assiste.\n'}` +
+            `${memory}${coach.prompt()}${p.context ? `Obra: ${p.context.slice(0, 2000)}\n` : ''}${focusNote(ch)}${contexts[ch] ? `Resumo de ${ch}: ${contexts[ch]}\n` : ''}` +
+            `${recent.length ? `Narração até aqui: "${recent.join(' ')}"\n` : part ? `Início da PARTE ${part}: a abertura (quem sou eu, o que houve antes e o aviso da parte) já é dita por um gancho à parte; comece direto no primeiro acontecimento destes capítulos, sem apresentação nem recapitular.\n` : prevVideo ? `Início do vídeo, CONTINUAÇÃO do anterior, que terminou assim: "${prevVideo.slice(-300)}". Abra retomando em uma ou duas frases onde a história parou (para quem não viu o anterior entender) e siga.\n` : 'Início do vídeo: abra a história me apresentando e situando quem assiste.\n'}` +
             `${ahead ? `Vem depois: ${ahead}\n` : ''}\n${desc}`,
           maxTokens: (600 + batch.length * 200) * attempt,
           temperature: 0.6,
+          tier: 'small', // escritor: Haiku no Claude (antes caía no Sonnet, ~metade do gasto do plano); o Opus revisa no fim da etapa
           signal: ctx.signal,
         });
         try {
@@ -324,7 +400,14 @@ export async function generateScript(projectId: string, ctx: JobCtx): Promise<st
       remember(got);
     }
     ctx.progress(0.45 + (i / shots.length) * 0.55, `Escrevendo (${i}/${shots.length} partes)`);
+    // marcos: 10%, 25%, 50% (o de 100% roda depois do laço, com o final do roteiro)
+    const frac = i / shots.length;
+    if (nextMark < MARKS.length - 1 && frac >= MARKS[nextMark]) {
+      while (nextMark < MARKS.length - 1 && frac >= MARKS[nextMark]) nextMark++;
+      await opusCheck(i, `${Math.round(MARKS[nextMark - 1] * 100)}%`);
+    }
   }
+  if (shots.length) await opusCheck(shots.length, '100%');
   updateProject(projectId, (cur) => {
     cur.shots.forEach((s) => texts.has(s.id) && (s.text = texts.get(s.id)!));
     // roteiro por página: a edição com IA usa para saber o que mostrar
@@ -350,6 +433,14 @@ export async function generateScript(projectId: string, ctx: JobCtx): Promise<st
     if (dropped) ctx.log(`${dropped} parte(s) sem fala removidas: toda imagem precisa de narração`);
   }
   await updateSeriesMemory(readProject(projectId) as StudioProject, llm, ctx.log);
+  if (part && !draft) {
+    try {
+      ctx.log(await generateHooks(projectId, ctx, { llm }));
+    } catch (e) {
+      if (ctx.signal?.aborted) throw e;
+      ctx.log(`Ganchos da parte não saíram (${(e as Error).message.slice(0, 140)}); use "Gerar ganchos" na tela`);
+    }
+  }
   ctx.log(llm.report());
   return `Roteiro pronto: ${texts.size} de ${shots.length} partes · ${calls} chamada(s) de roteiro${llm.claudeCalls() ? ` · ${llm.claudeCalls()} chamada(s) no Claude no job` : ''}`;
 }

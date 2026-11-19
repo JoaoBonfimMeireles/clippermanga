@@ -15,11 +15,27 @@ const TYPES: Record<string, string> = { '.jpg': 'image/jpeg', '.jpeg': 'image/jp
 const THUMB_WIDTHS = [96, 160, 240, 320, 480];
 const pendingThumbs = new Map<string, Promise<void>>();
 
+/** Pasta das miniaturas do projeto. No Windows uma pasta apagada pela metade (arquivo ainda aberto) fica "pendente" e recusa tudo (EPERM): usa outra. */
+function thumbsDir(dir: string): string {
+  for (const name of ['thumbs', 'thumbs2', 'thumbs3']) {
+    const d = path.join(dir, '.progress', name);
+    try {
+      fs.mkdirSync(d, { recursive: true });
+      fs.accessSync(d, fs.constants.W_OK);
+      fs.readdirSync(d);
+      return d;
+    } catch {
+      /* tenta a próxima */
+    }
+  }
+  return path.join(dir, '.progress', 'thumbs');
+}
+
 /** Miniatura em cache (largura fixa, altura proporcional, no máx. 4x a largura para tiras muito longas). */
 async function thumbOf(dir: string, full: string, w: number): Promise<string> {
   const st = fs.statSync(full);
   const key = createHash('sha1').update(`${path.relative(dir, full)}|${st.size}|${st.mtimeMs}|${w}`).digest('hex').slice(0, 20);
-  const out = path.join(dir, '.progress', 'thumbs', `${key}.jpg`);
+  const out = path.join(thumbsDir(dir), `${key}.jpg`);
   if (fs.existsSync(out)) return out;
   if (!pendingThumbs.has(out)) {
     const job = (async () => {
@@ -27,6 +43,26 @@ async function thumbOf(dir: string, full: string, w: number): Promise<string> {
       const tmp = `${out}.${process.pid}.tmp.jpg`;
       // corta o topo da tira (a miniatura é sempre object-cover) para não gerar imagens enormes
       await runFfmpeg(['-i', full, '-vf', `scale=${w}:-2:flags=bilinear,crop=iw:'min(ih,iw*4)':0:0`, '-frames:v', '1', '-q:v', '5', tmp]);
+      fs.renameSync(tmp, out);
+    })().finally(() => pendingThumbs.delete(out));
+    pendingThumbs.set(out, job);
+  }
+  await pendingThumbs.get(out);
+  return out;
+}
+
+/** Recorte da página (frações x0,y0,x1,y1) já na largura pedida, em cache: o modal de dúvidas baixava a tira inteira (vários MB) para cada miniatura. */
+async function cropOf(dir: string, full: string, crop: number[], w: number): Promise<string> {
+  const st = fs.statSync(full);
+  const key = createHash('sha1').update(`${path.relative(dir, full)}|${st.size}|${st.mtimeMs}|${crop.map((n) => n.toFixed(4)).join(',')}|${w}`).digest('hex').slice(0, 20);
+  const out = path.join(thumbsDir(dir), `c${key}.jpg`);
+  if (fs.existsSync(out)) return out;
+  if (!pendingThumbs.has(out)) {
+    const job = (async () => {
+      fs.mkdirSync(path.dirname(out), { recursive: true });
+      const tmp = `${out}.${process.pid}.tmp.jpg`;
+      const [x0, y0, x1, y1] = crop;
+      await runFfmpeg(['-i', full, '-vf', `crop=iw*${(x1 - x0).toFixed(5)}:ih*${(y1 - y0).toFixed(5)}:iw*${x0.toFixed(5)}:ih*${y0.toFixed(5)},scale='min(${w},iw)':-2:flags=bilinear`, '-frames:v', '1', '-q:v', '4', tmp]);
       fs.renameSync(tmp, out);
     })().finally(() => pendingThumbs.delete(out));
     pendingThumbs.set(out, job);
@@ -54,8 +90,22 @@ export async function GET(req: Request) {
   }
   if (!st?.isFile()) return new Response('Não encontrado', { status: 404 });
 
+  // recorte (&crop=x0,y0,x1,y1 em frações da página, &w=largura): só para imagens das páginas
+  let cropErr = '';
+  const crop = (url.searchParams.get('crop') ?? '').split(',').map(Number);
+  if (!isVideo && crop.length === 4 && crop.every((n) => Number.isFinite(n)) && crop[2] > crop[0] && crop[3] > crop[1] && /\.(jpe?g|png|webp)$/i.test(full)) {
+    const c = crop.map((n) => Math.min(1, Math.max(0, n)));
+    const cw = Math.min(1200, Math.max(120, Math.round(Number(url.searchParams.get('w')) || 480)));
+    try {
+      full = await cropOf(projectDir(id), full, c, cw);
+      st = fs.statSync(full);
+    } catch (e) {
+      cropErr = (e as Error).message.replace(/[^ -~]/g, ' ').slice(0, 300);
+      /* sem ffmpeg: serve a página inteira */
+    }
+  }
   // miniatura: só para imagens das páginas
-  const w = Number(url.searchParams.get('w'));
+  const w = crop.length === 4 && /[\/]thumbs\d*[\/]c[0-9a-f]+\.jpg$/.test(full) ? 0 : Number(url.searchParams.get('w'));
   if (!isVideo && w > 0 && /\.(jpe?g|png|webp)$/i.test(full)) {
     const width = THUMB_WIDTHS.find((x) => x >= w) ?? THUMB_WIDTHS[THUMB_WIDTHS.length - 1];
     try {
@@ -76,6 +126,7 @@ export async function GET(req: Request) {
     'accept-ranges': 'bytes',
     'cache-control': immutable ? 'private, max-age=31536000, immutable' : isVideo ? 'private, max-age=3600' : 'private, no-cache',
     etag,
+    ...(cropErr ? { 'x-crop-error': cropErr } : {}),
     'last-modified': st.mtime.toUTCString(),
   };
   if (url.searchParams.has('download')) headers['content-disposition'] = `attachment; filename="${encodeURIComponent(path.basename(full))}"`;

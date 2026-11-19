@@ -1,0 +1,3 @@
+# Fórmula de ocupação máxima
+Antes de entregar, calcule ocupação_max = ocupação × 1,5 ÷ ampliação e use no máximo esse valor, sem mudar o recorte. Se o resultado ficar abaixo de 30%, o recorte é uma fatia pequena demais: refaça pegando o bloco/quadro inteiro maior da tira. Nunca entregue com ampliação acima de 1,5x.
+Por quê: As 14 partes saíram borradas com 42–100% de ocupação. Em todas, aplicar a fórmula manteria o mesmo quadro em 34–57% de ocupação, sem borrão. Nos casos em que ela cai abaixo de 30% (37) ou perto disso (636), o problema é a fonte minúscula. A diferença para a proposta rejeitada: não há teto fixo de 40% nem troca por sub-cena, a ocupação só desce até o limite da resolução.

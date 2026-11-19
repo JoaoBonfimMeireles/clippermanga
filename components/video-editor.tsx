@@ -84,6 +84,20 @@ export function VideoEditor({ id }: { id: string }) {
   const [pageZoom, setPageZoom] = useState(1);
   // dúvidas da IA sobre recortes (lib/restyle.ts): abre sozinho quando chegam dúvidas novas
   const [doubtsOpen, setDoubtsOpen] = useState(false);
+  // cenas marcadas (ficam guardadas neste navegador, por projeto): dá para reusar em qualquer outra parte
+  type Mark = { part: number; v: ShotView };
+  const [marks, setMarks] = useState<Mark[]>([]);
+  const [markPreview, setMarkPreview] = useState<Mark | null>(null);
+  const marksLoaded = useRef(false);
+  useEffect(() => {
+    try { setMarks(JSON.parse(localStorage.getItem(`marks:${id}`) ?? '[]')); } catch { /* sem storage */ }
+    marksLoaded.current = true;
+  }, [id]);
+  useEffect(() => {
+    if (!marksLoaded.current) return;
+    try { localStorage.setItem(`marks:${id}`, JSON.stringify(marks)); } catch { /* sem storage */ }
+  }, [marks, id]);
+  const altRef = useRef<(dir: 1 | -1) => void>(() => {});
   const doubtKey = (p?.doubts ?? []).map((d) => d.id).join(',');
   useEffect(() => {
     if (doubtKey) setDoubtsOpen(true);
@@ -496,7 +510,24 @@ export function VideoEditor({ id }: { id: string }) {
   useEffect(() => {
     const k = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement)?.tagName;
+      if (e.key === 'Alt' && !e.repeat && !e.ctrlKey && !e.shiftKey && !e.metaKey) {
+        // Alt sozinho: vai para a próxima imagem (da fala atual, ou a 1ª da próxima parte)
+        e.preventDefault();
+        altRef.current(1);
+        return;
+      }
+      // Shift sozinho: volta (ignorado ao digitar em campos, onde Shift faz maiúscula)
+      if (e.key === 'Shift' && !e.repeat && !e.ctrlKey && !e.altKey && !e.metaKey && !['INPUT', 'TEXTAREA', 'SELECT'].includes(tag)) {
+        altRef.current(-1);
+        return;
+      }
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+      if (e.key === 'CapsLock' && !e.repeat) {
+        // âncora: pula para "Usar outra imagem aqui" (ou, se não houver vizinhas, para as cenas marcadas)
+        setTab('parte');
+        setTimeout(() => (document.getElementById('usar-outra-imagem') ?? document.getElementById('cenas-marcadas'))?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 50);
+        return;
+      }
       if (e.key === ' ' && video.current) {
         e.preventDefault();
         if (video.current.paused) video.current.play();
@@ -566,6 +597,19 @@ export function VideoEditor({ id }: { id: string }) {
       return { v: dir < 0 ? (x.extra?.length ? x.extra[x.extra.length - 1] : x) : x, label: `parte ${j + 1}` };
     }
     return null;
+  };
+  altRef.current = (dir) => {
+    if (!shot || !item) return;
+    if (dir > 0) {
+      if (viewIdx < nViews - 1) seek(item.start + (item.dur * (viewIdx + 1)) / nViews + 0.02, false);
+      else if (sel < p.shots.length - 1) goTo(sel + 1);
+    } else if (viewIdx > 0) seek(item.start + (item.dur * (viewIdx - 1)) / nViews + 0.02, false);
+    else if (sel > 0) {
+      // volta para a última imagem da parte anterior
+      const pi = items[sel - 1], n = 1 + (p.shots[sel - 1].extra?.length ?? 0);
+      setSel(sel - 1);
+      if (pi) seek(pi.start + (pi.dur * (n - 1)) / n + 0.02, false);
+    }
   };
   const applyNeighbour = (v: ShotView) => patchView({ pageId: v.pageId, focus: v.focus, fit: v.fit, rotate: v.rotate, stretch: v.stretch, zoom: v.zoom, bgBand: v.bgBand });
   // a página e o recorte mostrados à esquerda são os da imagem que está na tela (pode ser a 2ª da mesma fala)
@@ -790,6 +834,23 @@ export function VideoEditor({ id }: { id: string }) {
         <button className="btn px-2 py-0.5" onClick={dq.cancel}>cancelar</button>
       </p>
     )}
+    {markPreview && (() => {
+      const vp = pageById.get(markPreview.v.pageId);
+      return (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={() => setMarkPreview(null)}>
+          <div className="max-h-full max-w-full space-y-2 overflow-auto rounded-lg border bg-card p-3" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center justify-between gap-4 text-sm">
+              <span className="font-semibold text-red-300">📌 Cena marcada · parte {markPreview.part}</span>
+              <button className="btn px-2 py-0.5" onClick={() => setMarkPreview(null)}>Fechar</button>
+            </div>
+            {vp && <CropThumb src={pageUrl(p.id, vp)} page={vp} focus={markPreview.v.focus} scale={4} />}
+            <button className="btn-primary w-full" onClick={() => { patchView({ pageId: markPreview.v.pageId, focus: markPreview.v.focus }); setAdjusting(true); setMarkPreview(null); }}>
+              Usar na parte {sel + 1}
+            </button>
+          </div>
+        </div>
+      );
+    })()}
     {doubtsOpen && doubts.length > 0 && (
       <DoubtsModal
         p={p}
@@ -861,6 +922,12 @@ export function VideoEditor({ id }: { id: string }) {
               {chip(nextN, 'com a imagem posterior ▶', 'Partes suas que mostram a mesma imagem da parte seguinte', 'border-amber-500 text-amber-300')}
               {chip(swapped, '🖼 imagem trocada', 'Partes em que você trocou a página/imagem', 'border-purple-500 text-purple-300')}
               {chip(multi, '🎞 com várias imagens', 'Partes que mostram mais de uma imagem durante a fala', 'border-purple-500 text-purple-300')}
+              {marks.map((m, k) => (
+                <span key={k} className="flex items-center gap-1 rounded border border-red-500 bg-red-600/20 px-1.5 py-0.5 text-[11px] font-semibold text-red-300" title="Cena marcada: dá para usar em qualquer parte (aba Parte → Cenas marcadas)">
+                  <button type="button" onClick={() => setMarkPreview(m)}>📌 Marcada: parte {m.part}</button>
+                  <button type="button" title="Desmarcar" onClick={() => setMarks((all) => all.filter((x) => x !== m))}>✕</button>
+                </span>
+              ))}
             </>
           );
         })()}
@@ -978,7 +1045,7 @@ export function VideoEditor({ id }: { id: string }) {
                       <button className="btn px-2 py-0" onClick={() => zoomToFocus((curView ?? shot).focus, pg)} title="Aproxima no recorte atual">no recorte</button>
                     </div>
                     <div ref={pageBox} className="overflow-x-auto">
-                      <FocusEditor src={pageUrl(p.id, pg)} width={pg.width} height={pg.height} focus={(curView ?? shot).focus} onChange={(focus) => { setAdjusting(true); patchView({ focus }); }} zoom={pageZoom} />
+                      <FocusEditor src={pageUrl(p.id, pg)} width={pg.width} height={pg.height} focus={(curView ?? shot).focus} onChange={(focus) => { setAdjusting(true); patchView({ focus }); }} zoom={pageZoom} marks={marks.filter((m) => m.v.pageId === pg.id).map((m) => m.v.focus)} onMarkChange={(i, focus) => setMarks((all) => { const idx = all.map((m, g) => (m.v.pageId === pg.id ? g : -1)).filter((g) => g >= 0)[i]; return idx === undefined ? all : all.map((m, g) => (g === idx ? { ...m, v: { ...m.v, focus } } : m)); })} onMark={(focus) => setMarks((all) => [...all, { part: sel + 1, v: { pageId: pg.id, focus } as ShotView }])} />
                     </div>
                   </div>
                 )}
@@ -987,7 +1054,7 @@ export function VideoEditor({ id }: { id: string }) {
                     const opts = ([-1, 1] as const).map((d) => ({ d, n: neighbour(d) })).filter((x) => x.n);
                     if (!opts.length) return null;
                     return (
-                      <div className="space-y-1 rounded border p-2 text-xs">
+                      <div id="usar-outra-imagem" className="space-y-1 rounded border p-2 text-xs">
                         <p className="font-medium">Usar outra imagem aqui{nViews > 1 ? ` (na imagem ${viewIdx + 1} desta fala, a que está passando)` : ''}</p>
                         <p className="text-[11px] text-muted-foreground">Clique para trocar o que aparece neste ponto do vídeo pela imagem de antes ou pela de depois (mesmo recorte e ajustes dela).</p>
                         <div className="flex flex-wrap gap-2">
@@ -1010,6 +1077,32 @@ export function VideoEditor({ id }: { id: string }) {
                       </div>
                     );
                   })()}
+                <div id="cenas-marcadas" className="space-y-1 rounded border border-red-500/60 p-2 text-xs">
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="font-medium">📌 Cenas marcadas</p>
+                    <span className="text-[11px] text-red-400">arraste com o botão direito na página</span>
+                  </div>
+                  {marks.length === 0 ? (
+                    <p className="text-[11px] text-muted-foreground">Na página acima: botão esquerdo ajusta o recorte desta parte (branco); botão direito marca um recorte em vermelho para usar em outra parte. Alt avança para a próxima imagem/parte.</p>
+                  ) : (
+                    <div className="flex flex-wrap gap-2">
+                      {marks.map((m, k) => {
+                        const vp = pageById.get(m.v.pageId);
+                        const on = !!curView && curView.pageId === m.v.pageId && JSON.stringify(curView.focus) === JSON.stringify(m.v.focus);
+                        return (
+                          <div key={k} className={`space-y-1 rounded border-2 p-1 ${on ? 'border-green-500 bg-green-500/10' : 'border-red-500/40'}`}>
+                            <button type="button" title="Ampliar" onClick={() => setMarkPreview(m)}>
+                              {vp && <CropThumb src={pageUrl(p.id, vp)} page={vp} focus={m.v.focus} scale={0.6} />}
+                            </button>
+                            <button className="btn w-full px-2 py-0.5 text-xs" onClick={() => { patchView({ pageId: m.v.pageId, focus: m.v.focus }); setAdjusting(true); }}>
+                              Usar a parte {m.part}{on ? ' ✔' : ''}
+                            </button>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
                 <div className="space-y-1 rounded border p-2 text-xs">
                   <p className="font-medium">🎞 Imagens durante a fala ({1 + (shot.extra?.length ?? 0)})</p>
                   <p className="text-[11px] text-muted-foreground">Enquanto a voz fala esta parte, as imagens vão trocando, nesta ordem. O tempo da parte é dividido entre elas.</p>

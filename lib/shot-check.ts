@@ -24,9 +24,9 @@ const SYSTEM = `Você confere os recortes de um vídeo de resumo de mangá/webto
 Para cada imagem diga se ela serve:
 - "balloon": é só balão/caixa de texto/onomatopeia, sem desenho de personagem, cenário ou ação (um balão sobre o desenho de quem fala é ok);
 - "mismatch": o desenho não tem a ver com a frase (mostra outra coisa, outro momento ou outra pessoa);
-- "cut": corta ao meio a cabeça, o corpo ou a arma do personagem principal da cena, ou é um pedacinho de uma cena maior;
+- "cut": corta ao meio a cabeça, o corpo ou a arma de QUALQUER personagem ou criatura da cena (inclusive só o rosto ou o tronco pela metade), corta um balão ao meio na borda, ou é um pedacinho de uma cena maior. Seja rigoroso com "cut": o dono não aceita corpo cortado;
 - "small": a parte útil é minúscula ou uma faixa fina/espremida, difícil de ver;
-- "ok": serve (não seja rigoroso: frase de transição ou imagem do mesmo momento da história é ok).
+- "ok": serve (não seja rigoroso com mismatch: frase de transição ou imagem do mesmo momento da história é ok; mas NUNCA "ok" se a imagem estiver cortada).
 Responda SOMENTE JSON compacto: {"r":[{"i":1,"v":"ok"},{"i":2,"v":"balloon"}]}`;
 
 const PICK_SYSTEM = `Você escolhe a imagem certa para uma frase narrada de um vídeo de mangá. Recebe frases numeradas, cada uma com uma lista numerada de quadros (descrições). Responda SOMENTE JSON {"r":[{"i":1,"pick":3}]} com o número do quadro que melhor ilustra a frase (prefira quadros com personagem/cena/ação em vez de conversa), ou "pick":0 se nenhum serve. "i" é o número da frase.`;

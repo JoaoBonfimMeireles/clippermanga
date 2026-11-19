@@ -210,9 +210,11 @@ export async function generatePublish(projectId: string, input: PublishInput, ct
   }
   updateProject(projectId, (cur) => {
     // [capítulos] no fim de cada título (o app acrescenta, a IA não): 1 capítulo = [1]; vários = [1-2]
-    const tag = input.chapters?.trim() ? ` [${input.chapters.trim()}]` : '';
+    const tag = `${cur.part?.number ? ` - Parte ${cur.part.number}` : ''}${input.chapters?.trim() ? ` [${input.chapters.trim()}]` : ''}`;
     const cut = (t: string) => `${t.length + tag.length > 100 ? t.slice(0, 100 - tag.length).replace(/\s+\S*$/, '').trim() : t}${tag}`;
     const titles = (meta!.titles?.length ? meta!.titles : [meta!.title]).map(cut);
+    // parte de série: o link das partes anteriores entra na descrição (o gancho de abertura manda a pessoa procurar ali)
+    if (cur.part?.recapUrl?.trim() && !meta!.description.includes(cur.part.recapUrl.trim())) meta!.description = `▶ Assista às partes anteriores: ${cur.part.recapUrl.trim()}\n\n${meta!.description}`;
     cur.publish = { ...(cur.publish ?? { thumbs: [], thumbText: '', at: '' }), ...meta!, title: titles[0], titles, chapters: input.chapters?.trim() || undefined, prompt: input.prompt, refs, at: new Date().toISOString() };
   });
 

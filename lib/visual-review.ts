@@ -128,3 +128,57 @@ export async function cropSheet(projectId: string, rows: { page?: StudioPage; fo
     fs.rmSync(tmp, { recursive: true, force: true });
   }
 }
+
+export interface BeforeAfter {
+  page: StudioPage;
+  before: Rect; // recorte da IA
+  after: Rect; // recorte do usuário
+}
+
+/**
+ * Folhas de "antes e depois" para o Opus aprender COMPARANDO imagens: cada linha tem 3 quadros, da esquerda para a direita:
+ * 1) a página (trecho em volta) com o recorte da IA em VERMELHO e o do usuário em VERDE; 2) o que o recorte da IA mostrava
+ * (borda vermelha); 3) o que o recorte do usuário mostra (borda verde). Até 4 pares por folha.
+ */
+export async function beforeAfterSheets(projectId: string, rows: BeforeAfter[]): Promise<LLMImage[]> {
+  if (!visualReviewOn() || !rows.length) return [];
+  const sheets: LLMImage[] = [];
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'manga-ba-'));
+  const W = 360, H = 270;
+  const fit = `scale=${W}:${H}:force_original_aspect_ratio=decrease,pad=${W}:${H}:(ow-iw)/2:(oh-ih)/2:color=gray`;
+  try {
+    for (let s = 0; s * 4 < rows.length; s++) {
+      const chunk = rows.slice(s * 4, s * 4 + 4);
+      let made = 0;
+      for (const r of chunk) {
+        try {
+          const src = path.join(projectDir(projectId), r.page.file);
+          const pw = r.page.width, ph = r.page.height;
+          const b = cropPx(r.before, pw, ph), a = cropPx(r.after, pw, ph);
+          // trecho da página em volta dos dois recortes (a página pode ter milhares de px de altura)
+          const y0 = Math.min(b.y, a.y), y1 = Math.max(b.y + b.h, a.y + a.h), m = Math.max(Math.round(ph * 0.04), Math.round((y1 - y0) * 0.4));
+          const cy = Math.max(0, y0 - m), ch = Math.min(ph, y1 + m) - cy, chEven = ch - (ch % 2);
+          const th = Math.max(4, Math.round(pw / 120));
+          const box = (c: { x: number; y: number; w: number; h: number }, color: string) => `drawbox=x=${c.x}:y=${c.y - cy}:w=${c.w}:h=${c.h}:color=${color}:t=${th}`;
+          const n = String(made * 3 + 1).padStart(2, '0'), n2 = String(made * 3 + 2).padStart(2, '0'), n3 = String(made * 3 + 3).padStart(2, '0');
+          await runFfmpeg(['-y', '-i', src, '-vf', `crop=${pw - (pw % 2)}:${chEven}:0:${cy},${box(b, 'red')},${box(a, 'lime')},${fit}`, '-frames:v', '1', '-q:v', '4', path.join(tmp, `t${n}.jpg`)]);
+          await runFfmpeg(['-y', '-i', src, '-vf', `crop=${b.w}:${b.h}:${b.x}:${b.y},${fit},drawbox=x=0:y=0:w=iw:h=ih:color=red:t=6`, '-frames:v', '1', '-q:v', '4', path.join(tmp, `t${n2}.jpg`)]);
+          await runFfmpeg(['-y', '-i', src, '-vf', `crop=${a.w}:${a.h}:${a.x}:${a.y},${fit},drawbox=x=0:y=0:w=iw:h=ih:color=lime:t=6`, '-frames:v', '1', '-q:v', '4', path.join(tmp, `t${n3}.jpg`)]);
+          made++;
+        } catch {
+          /* par ilegível: fica fora da folha */
+        }
+      }
+      if (!made) continue;
+      const out = path.join(tmp, `sheet${s}.jpg`);
+      await runFfmpeg(['-y', '-framerate', '1', '-i', path.join(tmp, 't%02d.jpg'), '-vf', `tile=3x${made}`, '-frames:v', '1', '-q:v', '5', out]);
+      sheets.push(await jpegImage(out));
+      for (const f of fs.readdirSync(tmp)) if (f.startsWith('t')) fs.rmSync(path.join(tmp, f), { force: true });
+    }
+  } catch (e) {
+    console.warn(`[visual-review] folhas antes/depois puladas: ${(e as Error).message}`);
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+  return sheets;
+}

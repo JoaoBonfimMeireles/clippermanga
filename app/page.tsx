@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { jobEta, type StudioProject } from '@/lib/types';
 
-const JOB_NAMES: Record<string, string> = { import: 'Importar', script: 'Roteiro', edit: 'Edição', check: 'Validação', render: 'Render', context: 'Resumos', polish: 'Polir', publish: 'Publicação', subs: 'Legendas', shorts: 'Shorts', english: 'Inglês', restyle: 'Ajuste de estilo', audit: 'Auditoria do gestor' };
+const JOB_NAMES: Record<string, string> = { import: 'Importar', script: 'Roteiro', edit: 'Edição', check: 'Validação', render: 'Render', context: 'Resumos', polish: 'Polir', publish: 'Publicação', subs: 'Legendas', shorts: 'Shorts', english: 'Inglês', restyle: 'Ajuste de estilo', audit: 'Auditoria do gestor', hooks: 'Ganchos da parte', join: 'Juntar partes' };
 import type { ProjectSummary } from './api/projects/route';
 
 const DAY = 86_400_000;
@@ -26,14 +26,46 @@ export default function Home() {
   const router = useRouter();
   const [list, setList] = useState<ProjectSummary[] | null>(null);
   const [title, setTitle] = useState('');
+  const [obras, setObras] = useState<{ key: string; name: string }[]>([]);
+  // falha passageira do servidor (ocupado, arquivo sendo gravado) não derruba a tela: mantém o que já tinha e tenta de novo
+  const load = () =>
+    fetch('/api/projects')
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((l) => setList(l))
+      .catch(() => {});
+  const loadObras = () => fetch('/api/obras').then((r) => (r.ok ? r.json() : [])).then(setObras).catch(() => {});
   useEffect(() => {
-    fetch('/api/projects').then((r) => r.json()).then(setList);
-    // atualiza o andamento dos processos a cada 3 s
-    const t = setInterval(() => fetch('/api/projects').then((r) => r.json()).then(setList).catch(() => {}), 3000);
-    return () => clearInterval(t);
+    // atualiza o andamento dos processos ~3 s depois de a consulta anterior terminar (com o servidor ocupado ela passa de 3 s; sem isso as consultas empilham)
+    let stop = false;
+    let t: ReturnType<typeof setTimeout>;
+    const tick = async () => {
+      await load();
+      if (!stop) t = setTimeout(tick, 3000);
+    };
+    void tick();
+    loadObras();
+    return () => {
+      stop = true;
+      clearTimeout(t);
+    };
   }, []);
   const [busy, setBusy] = useState('');
-  const reload = () => fetch('/api/projects').then((r) => r.json()).then(setList);
+  const [sel, setSel] = useState<Set<string>>(new Set()); // partes marcadas para juntar num vídeo completo
+  const toggleSel = (id: string) => setSel((c) => { const n = new Set(c); if (n.has(id)) n.delete(id); else n.add(id); return n; });
+  const join = async (g: { name: string; items: ProjectSummary[] }) => {
+    const items = g.items.filter((x) => sel.has(x.id)); // ordem do painel (número da parte; sem número, pela ordem em que aparecem)
+    if (items.length < 2) return alert('Marque pelo menos duas partes desta obra.');
+    const label = (x: ProjectSummary) => x.partLabel || (x.part ? `Parte ${x.part}` : x.title);
+    if (!confirm(`Juntar ${items.map(label).join(' + ')} num vídeo completo?
+
+Os ganchos das partes saem; a IA escreve só uma abertura e um fechamento novos (voz só deles). O resto reaproveita os vídeos já renderizados (cada parte precisa ter sido renderizada).`)) return;
+    const last = items[items.length - 1];
+    const r = await fetch(`/api/projects/${last.id}/jobs`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ kind: 'join', ids: items.map((x) => x.id) }) });
+    if (!r.ok) return alert(await r.text());
+    setSel(new Set());
+    reload();
+  };
+  const reload = () => Promise.all([load(), loadObras()]);
   const remove = async (p: ProjectSummary) => {
     if (!confirm(`Excluir "${p.title}"?
 
@@ -80,6 +112,47 @@ Apaga tudo deste projeto do computador: páginas, vídeos, narração, progresso
     const p = (await (await fetch('/api/projects', { method: 'POST', body: JSON.stringify({ title }) })).json()) as StudioProject;
     router.push(`/p/${p.id}`);
   };
+  const renamePart = async (p: ProjectSummary) => {
+    const v = prompt('Nome da parte no painel (ex.: Parte 1 e 2). Vazio = "Parte N":', p.partLabel || (p.part ? `Parte ${p.part}` : ''));
+    if (v === null) return;
+    await patch(p, { partLabel: v.trim() });
+  };
+  const createObra = async () => {
+    const name = title.trim();
+    if (!name) return alert('Escreva o nome da obra.');
+    const r = await fetch('/api/obras', { method: 'POST', body: JSON.stringify({ name }) });
+    if (!r.ok) return alert(await r.text());
+    setTitle('');
+    reload();
+  };
+  const removeObra = async (key: string) => {
+    await fetch('/api/obras', { method: 'DELETE', body: JSON.stringify({ key }) });
+    reload();
+  };
+  const newPart = async (g: { name: string; items: ProjectSummary[] }) => {
+    const n = Math.max(0, ...g.items.map((x) => x.part)) + 1;
+    const r = await fetch('/api/projects', { method: 'POST', body: JSON.stringify({ title: `${g.name} parte ${n}`, series: g.name, part: n }) });
+    if (!r.ok) return alert(await r.text());
+    router.push(`/p/${((await r.json()) as StudioProject).id}`);
+  };
+  // projetos agrupados por obra (mesma série); obras criadas na mão aparecem mesmo sem partes
+  const groups = (() => {
+    const m = new Map<string, { key: string; name: string; items: ProjectSummary[] }>();
+    for (const o of obras) m.set(o.key, { key: o.key, name: o.name, items: [] });
+    for (const p of list ?? []) {
+      const g = m.get(p.seriesKey) ?? { key: p.seriesKey, name: p.seriesName, items: [] };
+      g.items.push(p);
+      m.set(p.seriesKey, g);
+    }
+    const when = (g: { items: ProjectSummary[] }) => g.items.map((x) => x.publishedAt).filter(Boolean).sort().at(-1) ?? null;
+    for (const g of m.values()) g.items.sort((a, b) => a.part - b.part || a.updatedAt.localeCompare(b.updatedAt));
+    // mais perto de completar 7 dias (ou já passou) no topo; sem data por último
+    return [...m.values()].sort((a, b) => {
+      const x = when(a);
+      const y = when(b);
+      return x && y ? x.localeCompare(y) : x ? -1 : y ? 1 : 0;
+    });
+  })();
   return (
     <div className="mx-auto max-w-[1200px] space-y-6">
       <div className="flex gap-2">
@@ -87,16 +160,46 @@ Apaga tudo deste projeto do computador: páginas, vídeos, narração, progresso
         <button className="btn-primary shrink-0" onClick={create}>
           Novo projeto
         </button>
+        <button className="btn shrink-0" onClick={createObra} title="Cria uma obra (série) no painel; as partes dela ficam agrupadas embaixo">
+          Criar obra
+        </button>
       </div>
-      <ul className="divide-y rounded-lg border">
-        {list === null && <li className="p-3 text-sm text-muted-foreground">Carregando…</li>}
-        {list?.length === 0 && <li className="p-3 text-sm text-muted-foreground">Nenhum projeto ainda.</li>}
-        {/* mais perto de completar 7 dias (ou já passou) no topo; sem data de publicação por último */}
-        {list
-          ?.slice()
-          .sort((a, b) => (a.publishedAt && b.publishedAt ? a.publishedAt.localeCompare(b.publishedAt) : a.publishedAt ? -1 : b.publishedAt ? 1 : 0))
-          .map((p) => (
+      {list === null && <p className="p-3 text-sm text-muted-foreground">Carregando…</p>}
+      {list?.length === 0 && !obras.length && <p className="p-3 text-sm text-muted-foreground">Nenhum projeto ainda.</p>}
+      {groups.map((g) => (
+        <section key={g.key} className="overflow-hidden rounded-lg border">
+          <div className="flex items-center justify-between gap-3 border-b bg-muted/40 px-3 py-2">
+            <h2 className="min-w-0 truncate font-medium" title="Obra">
+              {g.name} <span className="text-xs font-normal text-muted-foreground">· {g.items.length} {g.items.length === 1 ? 'parte' : 'partes'}</span>
+            </h2>
+            <span className="flex shrink-0 items-center gap-3 text-sm">
+              <button className="text-sky-400 hover:underline" disabled={!!busy} title="Cria uma nova parte desta obra (vídeo novo, com a série e o número da parte já preenchidos)" onClick={() => newPart(g)}>
+                + Parte
+              </button>
+              {g.items.filter((x) => x.joined).map((x) => (
+                <a key={x.id} className="text-emerald-400 hover:underline" href={x.joined!.url} target="_blank" rel="noreferrer" title={`${x.joined!.labels.join(' + ')} · gerado em ${new Date(x.joined!.at).toLocaleString('pt-BR')}`}>
+                  ▶ Vídeo completo ({Math.round(x.joined!.duration / 60)} min)
+                </a>
+              ))}
+              {g.items.filter((x) => sel.has(x.id)).length >= 2 && (
+                <button className="rounded bg-sky-600 px-2 py-0.5 text-white hover:bg-sky-500" disabled={!!busy} onClick={() => join(g)} title="Junta as partes marcadas, em ordem, num vídeo completo (sem os ganchos; só a abertura e o fechamento novos usam voz)">
+                  🔗 Juntar {g.items.filter((x) => sel.has(x.id)).length} partes
+                </button>
+              )}
+              {!g.items.length && (
+                <button className="text-muted-foreground hover:text-destructive" onClick={() => removeObra(g.key)}>
+                  Remover obra
+                </button>
+              )}
+            </span>
+          </div>
+          <ul className="divide-y">
+            {g.items.map((p) => (
           <li key={p.id} className={`flex items-center ${busy === p.id ? 'opacity-50' : ''}`}>
+            {g.items.length > 1 && (
+              <input type="checkbox" className="ml-3 h-4 w-4 shrink-0 cursor-pointer accent-sky-500" checked={sel.has(p.id)} disabled={!!busy} onChange={() => toggleSel(p.id)} title="Marcar para juntar com outras partes desta obra num vídeo completo" />
+            )}
+            {p.seriesKey && <span className="w-24 shrink-0 pl-3 text-xs font-medium text-sky-300" title="Parte da obra">{p.partLabel || (p.part ? `Parte ${p.part}` : '')}</span>}
             <input
               type="checkbox"
               className="ml-3 h-4 w-4 shrink-0 cursor-pointer accent-orange-500"
@@ -135,6 +238,9 @@ Apaga tudo deste projeto do computador: páginas, vídeos, narração, progresso
             <button className="px-2 py-3 text-sm text-muted-foreground hover:text-foreground" disabled={!!busy} title="Mudar o nome da obra no YouTube" onClick={() => renameYt(p)}>
               Nome YT
             </button>
+            <button className="px-2 py-3 text-sm text-muted-foreground hover:text-foreground" disabled={!!busy} title="Nome da parte no painel (ex.: Parte 1 e 2)" onClick={() => renamePart(p)}>
+              Parte
+            </button>
             <button className="px-2 py-3 text-sm text-muted-foreground hover:text-foreground" disabled={!!busy} title="Renomear projeto" onClick={() => rename(p)}>
               Renomear
             </button>
@@ -145,8 +251,10 @@ Apaga tudo deste projeto do computador: páginas, vídeos, narração, progresso
               Excluir
             </button>
           </li>
-        ))}
-      </ul>
+            ))}
+          </ul>
+        </section>
+      ))}
     </div>
   );
 }

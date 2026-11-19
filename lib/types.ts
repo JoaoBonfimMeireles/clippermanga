@@ -36,6 +36,8 @@ export interface Shot {
   /** Nota de impacto da IA (1-10): define quanto tempo o recorte fica na tela. */
   impact?: number;
   text: string;
+  /** Gancho de parte (lib/parts.ts): intro = "esta é a parte N + o que houve antes"; outro = "na próxima parte...". Saem do vídeo completo. */
+  hook?: 'intro' | 'outro';
   /** Trechos cortados da fala desta parte ([início, fim] em segundos do áudio original da fala), aplicados no render. */
   audioCuts?: [number, number][];
   /** Velocidade da parte (1 = normal; 1.5 = 50% mais rápida, voz e imagem). */
@@ -71,6 +73,16 @@ export interface TestMode {
   startedAt: string;
 }
 
+export interface PartInfo {
+  /** Número da parte (3 = "parte 3"). */
+  number: number;
+  /** Link das partes anteriores no YouTube: o gancho de abertura manda procurar na descrição e a publicação o inclui. */
+  recapUrl?: string;
+  /** Falas dos ganchos (a fonte é a parte da linha do tempo com `hook`; estes são o último texto gerado/editado). */
+  intro?: string;
+  outro?: string;
+}
+
 export interface StudioProject {
   id: string;
   title: string;
@@ -79,6 +91,12 @@ export interface StudioProject {
   narration: NarrationMode;
   /** Nome da série (obra) para a memória entre vídeos. Vazio = título sem os números de capítulo. */
   series?: string;
+  /** Este vídeo é uma PARTE de uma série (ex.: parte 3 = capítulos 16-22), com ganchos de abertura e fechamento (lib/parts.ts). */
+  part?: PartInfo;
+  /** Nome da parte no painel (ex.: "Parte 1 e 2"). Vazio = "Parte N". */
+  partLabel?: string;
+  /** Vídeo completo montado juntando todas as partes da série (sem os ganchos). Fica no projeto da última parte. */
+  joined?: { file: string; at: string; duration: number; parts: number[]; /** projetos juntados, na ordem */ ids?: string[]; /** nomes das partes no painel */ labels?: string[] };
   /** Duração-alvo do vídeo em minutos (máximo). Vazio = automático: sem teto, a IA decide pela relevância de cada capítulo. */
   targetMinutes?: number;
   /** Relevância de cada capítulo para a história (decidida pela IA no passo 1): define quanto ele é destrinchado. */
@@ -216,7 +234,7 @@ export interface PublishInfo {
 
 export interface JobInfo {
   id: string;
-  kind: 'import' | 'script' | 'edit' | 'check' | 'render' | 'context' | 'polish' | 'publish' | 'subs' | 'shorts' | 'english' | 'restyle' | 'audit' | 'test';
+  kind: 'import' | 'script' | 'edit' | 'check' | 'render' | 'context' | 'polish' | 'publish' | 'subs' | 'shorts' | 'english' | 'restyle' | 'audit' | 'test' | 'hooks' | 'join';
   projectId: string;
   status: 'running' | 'done' | 'error';
   progress: number;

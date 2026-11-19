@@ -14,7 +14,8 @@ import { extractJson } from '@clipper/editing-planner';
 import { runFfmpeg } from '@clipper/video-processing';
 import { isClaude } from './ai-meter';
 import { cleanRect } from './camera';
-import { projectDir } from './store';
+import { listProjects, projectDir } from './store';
+import { readSeries, seriesKey } from './series';
 import { skillsPrompt } from './skills';
 import { framingPrompt } from './learning';
 import type { JobCtx } from './jobs';
@@ -62,7 +63,7 @@ Para cada PÁGINA (pode vir em várias imagens, fatias de cima para baixo da mes
 - "characters": nomes (ou descrição curta, se não tiver nome) de quem aparece.
 - "panels": os quadros com conteúdo, na ordem de leitura. Cada um:
   "img": número da imagem em que ele está;
-  "box": [x0,y0,x1,y1] em frações 0..1 DESSA imagem (x da esquerda, y do topo). A caixa é O QUADRO INTEIRO, de borda a borda: toda a largura e toda a altura do quadro desenhado, com personagem INTEIRO (da cabeça aos pés quando aparece assim), arma e criatura inteiras. Essa caixa vira o recorte do vídeo: caixa pequena = imagem ampliada e sem a cena. NUNCA devolva um pedaço (rosto, mão, faixa) de dentro de um quadro maior e NUNCA corte cabeça, corpo ou arma ao meio. Tire só sarjetas, margens, marca d'água e créditos. Balão que faz parte da cena fica dentro; nunca devolva um quadro que seja só balão/caixa de texto (o texto dele vai em "dialogue"). Só divida um quadro quando a altura passa de 1,9 vezes a largura: em trechos que cobrem toda a largura, cada um com uma sub-cena completa;
+  "box": [x0,y0,x1,y1] em frações 0..1 DESSA imagem (x da esquerda, y do topo). A caixa é O QUADRO INTEIRO, de borda a borda: toda a largura e toda a altura do quadro desenhado, com personagem INTEIRO (da cabeça aos pés quando aparece assim), arma e criatura inteiras. Essa caixa vira o recorte do vídeo: caixa pequena = imagem ampliada e sem a cena. NUNCA devolva um pedaço (rosto, mão, faixa) de dentro de um quadro maior e NUNCA corte cabeça, corpo ou arma ao meio. Tire só sarjetas, margens, marca d'água e créditos. WEBTOON SEM MOLDURAS (desenho contínuo, sem bordas de quadro): NÃO invente quadros nem corte a página em pedaços; as bordas da caixa só podem ficar em faixa lisa (fundo uniforme/sarjeta), nunca no meio de personagem, cabelo, balão ou cenário. Na dúvida, devolva UM quadro com a página inteira (ou o trecho entre duas faixas lisas) em vez de cortar o desenho. Balão que faz parte da cena fica dentro; nunca devolva um quadro que seja só balão/caixa de texto (o texto dele vai em "dialogue"). Só divida um quadro quando a altura passa de 1,9 vezes a largura: em trechos que cobrem toda a largura, cada um com uma sub-cena completa;
   "focus": opcional e RARO, só em quadros de impacto 8+ [x0,y0,x1,y1] só do essencial (rosto, reação) quando ele ocupa bem menos da metade do quadro; o focus mostra o rosto/personagem INTEIRO e nunca corta cabeça, corpo ou arma;
   "what": o que o quadro mostra em até 10 palavras (quem, ação/expressão);
   "kind": "action" (luta, golpe, corrida, explosão, poder), "reaction" (rosto, surpresa, emoção), "dialogue" (conversa) ou "scene" (lugar ou personagem novo);
@@ -95,6 +96,48 @@ export function readCast(projectId: string): CharacterEntry[] {
 }
 export function writeCast(projectId: string, cast: CharacterEntry[]) {
   fs.writeFileSync(castFile(projectId), JSON.stringify(cast, null, 1));
+}
+/** Nome que só descreve (papel/aparência), não um nome próprio: não vale como "personagem conhecido" de outra parte. */
+const ROLE_WORD = /^(figura|criatura|personagem|guerreiros?|drag[aã]o|lutador|capanga|sombra|espadachim|sobretudo|corpo|crian[cç]a|rapaz|homem|mulher|noiv[ao]|cabelo|terno|mo[cç]a|fada|p[aá]ssaro|velho|ferido|presidente|chefe|observador|constela[cç][aã]o|monarca|lorde|entidade)\b/i;
+/**
+ * Uma parte nova da mesma série (ex.: capítulos 16-22 depois dos 1-15) começava com a ficha de personagens VAZIA e a leitura das
+ * páginas chamava todo mundo de "homem de roupa branca"/"Noivo"/"Moça". Agora a ficha herda, das outras partes da série:
+ *  - os nomes próprios já descobertos (com a aparência);
+ *  - os personagens da memória da série (nome + papel), mesmo sem aparência (a leitura dá o nome quando a fala/legenda confirma).
+ * O que a parte já tem na própria ficha vale mais. Devolve quantos entraram.
+ */
+export function inheritCast(p: StudioProject): number {
+  const key = seriesKey(p);
+  const own = readCast(p.id);
+  const has = (n: string) => own.some((x) => x.name.toLowerCase() === n.toLowerCase() || shortName(x.name).toLowerCase() === shortName(n).toLowerCase());
+  const seriesMem = readSeries(p);
+  const bibleText = (seriesMem?.stages ?? []).map((st) => st.bible).join('\n') + '\n' + (seriesMem?.bible ?? '');
+  let added = 0;
+  const sibs = listProjects().filter((o) => o.id !== p.id && seriesKey(o) === key).sort((a, b) => a.createdAt.localeCompare(b.createdAt));
+  for (const o of sibs) {
+    for (const c of readCast(o.id)) {
+      const name = String(c?.name ?? '').trim();
+      if (!name || GENERIC_NAME.test(name) || ROLE_WORD.test(name) || has(name)) continue;
+      // só nomes que a memória da série confirma (evita lixo de leitura, como nome de outra obra)
+      if (bibleText && !bibleText.toLowerCase().includes(shortName(name).toLowerCase())) continue;
+      own.push({ name, look: String(c.look ?? '').slice(0, 140) });
+      added++;
+    }
+  }
+  // personagens da memória da série: "- Nome: papel" (aparência desconhecida, o papel ajuda a ligar "o Noivo" a quem se casa com quem)
+  for (const m of bibleText.matchAll(/^- ([A-ZÀ-Ú][\wÀ-ú'-]+(?: [A-ZÀ-Ú][\wÀ-ú'-]+)?)(?: \([^)]*\))?: (.{10,})$/gm)) {
+    const name = m[1].trim();
+    if (ROLE_WORD.test(name) || GENERIC_NAME.test(name) || has(name) || !/^[A-ZÀ-Ú]/.test(name)) continue;
+    // só pessoas: a memória também lista termos/lugares; pessoa tem hífen no nome ou aparece na seção de personagens
+    const pos = bibleText.indexOf(m[0]);
+    const sec = bibleText.lastIndexOf('PERSONAGENS', pos);
+    const sec2 = bibleText.lastIndexOf('TERMOS', pos);
+    if (sec < 0 || sec2 > sec) continue;
+    own.push({ name, look: `(aparência ainda não vista) ${m[2].slice(0, 110)}` });
+    added++;
+  }
+  if (added) writeCast(p.id, own);
+  return added;
 }
 const GENERIC_NAME = /^(um|uma|o|a|os|as)\s|homem|mulher|rapaz|garota|menino|menina|desconhecid|protagonista|narra/i;
 /** Junta os personagens novos na ficha (mesmo nome: atualiza a aparência). Devolve quantos entraram. */
@@ -172,7 +215,7 @@ const SLICE_H = 768; // e altura máxima
 const TALL = 2.0; // altura/largura acima disso: fatia
 
 /** Propaganda/créditos da scan: nunca vira recorte (rodapé e início de capítulo). */
-export const PROMO_RE = /patreon|ko-?fi|discord|support us|apoie|scans?|scanlat|divulga[cç]|an[uú]ncio|publicidade|recrut|cr[eé]ditos|marca d.[aá]gua|watermark|bilibili|tela de suporte|logo d|banner|capa de (divulga|t[ií]tulo)|outras obras|outros t[ií]tulos/i;
+export const PROMO_RE = /patreon|ko-?fi|discord|support us|apoie|\bscans?\b|scanlat|divulga[cç]|an[uú]ncio|publicidade|recrut|cr[eé]ditos|marca d.[aá]gua|watermark|bilibili|tela de suporte|logo d|banner|capa de (divulga|t[ií]tulo)|outras obras|outros t[ií]tulos/i;
 /** Descarta quadros de propaganda; se a página inteira foi lida como divulgação, nenhum quadro fica. */
 export function stripPromo<T extends { events: string; panels: PanelNote[] }>(n: T): T {
   const page = PROMO_RE.test(n.events);
@@ -383,6 +426,8 @@ function parsePage(raw: any, parts: Part[], pageNo: number, pg: StudioPage): Pag
  * Claude, para diluir o prompt fixo). Devolve as notas de todas as páginas pedidas que ficaram prontas.
  */
 export async function ensurePageNotes(p: StudioProject, pages: StudioPage[], llm: LLMProvider, ctx: JobCtx): Promise<Record<string, PageNote>> {
+  const inherited = inheritCast(p);
+  if (inherited) ctx.log(`Ficha de personagens: +${inherited} herdado(s) das outras partes da série e da memória dela`);
   const notes = readNotes(p.id);
   const todo = pages.filter((pg) => notes[pg.id]?.file !== pg.file);
   const have = pages.length - todo.length;

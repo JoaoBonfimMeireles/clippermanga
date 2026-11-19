@@ -37,10 +37,12 @@ const envNum = (k: string): number | undefined => {
  * espera a OmniRoute voltar sem gastar (erro de limite → withQuotaWait testa de novo). Fora de um job: não usa.
  */
 const PAID_LOCKED = 'Limite: OmniRoute indisponível e você não liberou o Claude; esperando a OmniRoute voltar (nada é gasto)';
-const WAIT_MAX_MS = () => (envNum('MANGA_FREE_WAIT_MAX_S') ?? 90) * 1000;
-const RETEST_MS = () => (envNum('OMNIROUTE_RETEST_S') ?? 120) * 1000;
+const WAIT_MAX_MS = () => (envNum('MANGA_FREE_WAIT_MAX_S') ?? 15) * 1000;
+const RETEST_MS = () => (envNum('OMNIROUTE_RETEST_S') ?? 45) * 1000;
+/** Depois de cair na reserva (Claude), fica nela por este tempo em vez de tentar os grátis a cada chamada (cada tentativa falha custa ~10 s). */
+const STICKY_MS = () => (envNum('MANGA_CLAUDE_STICKY_S') ?? 180) * 1000;
 /** Rodadas de espera curta seguidas numa mesma chamada antes de aceitar a reserva. */
-const MAX_WAIT_ROUNDS = 8;
+const MAX_WAIT_ROUNDS = 2;
 
 function appProvider(): LLMProvider | null {
   try {
@@ -57,8 +59,8 @@ export const managerProvider = appProvider;
 export const isQuotaError = (e: unknown) => /limite|limit|quota|cota|429|rate|esgot|exhaust|usage/i.test((e as Error)?.message ?? '');
 
 const QUICK_RETRIES = 3;
-const QUICK_WAIT_MS = 20_000;
-const POLL_MS = 5 * 60_000;
+const QUICK_WAIT_MS = 10_000;
+const POLL_MS = 3 * 60_000;
 
 const sleep = (ms: number, signal?: AbortSignal) =>
   new Promise<void>((ok, fail) => {
@@ -132,6 +134,7 @@ function createRawLLM(opts: MangaLLMOptions): MangaLLM {
   let backup: LLMProvider | null | undefined;
   let current: LLMProvider = omni;
   let downUntil = 0; // OmniRoute fora do ar: só re-testa depois disso
+  let claudeUntil = 0; // reserva em uso: segue nela até aqui sem testar os grátis
   let paidCalls = 0;
   let notice: ((m: string) => void) | undefined;
   const usage: LLMUsage = { calls: 0, inputTokens: 0, outputTokens: 0 };
@@ -208,6 +211,7 @@ function createRawLLM(opts: MangaLLMOptions): MangaLLM {
         // o gestor é sempre o Opus (Claude), mesmo quando o trabalho foi do OmniRoute
         if (req.tier === 'manager') reason = 'gestor: sempre Opus';
         else if (process.env.MANGA_FORCE_CLAUDE === '1' || forceClaudeFlag()) reason = 'teste: só Claude (MANGA_FORCE_CLAUDE=1)';
+        else if (Date.now() < claudeUntil) reason = 'Claude preferido por ora (os modelos grátis estão falhando)';
         else if (Date.now() >= downUntil) {
           try {
             const before = { ...omni.usage };
@@ -237,7 +241,9 @@ function createRawLLM(opts: MangaLLMOptions): MangaLLM {
             }
           }
         } else reason = `OmniRoute indisponível; novo teste às ${time(downUntil)}`;
-        return useBackup(req, reason, retryIn);
+        const out = await useBackup(req, reason, retryIn);
+        if (req.tier !== 'manager' && !/^teste:|^gestor:|^Claude preferido/.test(reason)) claudeUntil = Date.now() + STICKY_MS();
+        return out;
       }
     },
   };

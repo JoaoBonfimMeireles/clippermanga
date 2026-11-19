@@ -1,35 +1,29 @@
 {
   "rules": [
-    "Nunca use rodapé, créditos ou propaganda da scan (Patreon, Discord, YakshaComics, logos, 'please consider supporting') como recorte nem como opção de dúvida.",
-    "O foco é sempre a CENA, não os balões, porque a narração já conta a história. Corte balões, caixas de texto e mensagens e use o espaço para mostrar mais da cena. Só mostre o balão quando a fala for sobre o sistema ou sobre um objeto que só aparece nele.",
-    "Padrão principal: use o QUADRO INTEIRO em largura total. O comum é x ~0.05–0.95 (ou 0.00–0.95 / 0.02–0.98), da borda de cima até a base do quadro. Troque recortes estreitos (rosto, braço, figura pequena, 20–70% de largura) pelo quadro completo. Em faixas finas (4–15% de altura), mantenha a altura e estenda para quase toda a largura.",
-    "Webtoon em tira vertical longa (ex.: Tomb Raider King): use x 0.00–1.00 (largura total, sem margem, troque 0.05–0.95 e 0.15–0.85 por 0.00–1.00) e a altura do quadro real, em geral ~5–12% da tira. Em momento marcante ou de virada (ex.: 'eu tinha voltado quinze anos'), use o quadro grande inteiro (~15–20%). Nunca use fatias de 2–3% de altura: amplie até as bordas reais do quadro (ex.: 2%→6%, 4%→20%).",
-    "A altura segue o quadro real, não um número fixo. Em quadro alto ou personagem de corpo inteiro, pegue a altura toda (~40–76%) para mostrar o corpo, e não só pernas ou metade do rosto. Em páginas normais, quadros comuns ficam em ~15–36%. Se o recorte invade balões ou o quadro de baixo, encolha a altura até a borda real (ex.: 35%→22%, 10%→4–7% na tira).",
-    "Exceção à largura total: quando o quadro original é mais estreito que a página (coluna de ~30–70% ou quadro de ~75–82% com fundo branco nas laterais, comum em webtoon), mantenha a largura dele (ex.: x 0.10–0.86, 0.08–0.90) e a altura toda, sem pegar margem vazia nem o quadro ao lado.",
-    "Closes estreitos (rosto, mão, detalhe, punho com pulseira, bichinho caído no chão) quase sempre são rejeitados. Só use close quando o quadro original já for um close ou quando a fala for sobre uma linha do sistema. Detalhe pequeno citado na fala: repita o quadro inteiro anterior, onde ele aparece no contexto.",
-    "Ajuste o recorte às bordas reais do quadro: em páginas com sarjeta, tire sobras do quadro vizinho (ex.: 1.00→0.95, y 0.00→0.03) sem cortar o próprio quadro; amplie quando o recorte corta a cena ou o corpo. Se pegar sarjeta de um lado, desloque horizontalmente para o lado de quem fala ou reage, mantendo a largura.",
-    "Falas vizinhas sobre o mesmo momento usam a MESMA imagem com o MESMO recorte (o comum é 2 a 4 falas por quadro). Repita em reação, comentário, resposta, descrição da situação em que o narrador já está (ex.: apresentação 'vou morrer hoje' + 'estou caído na masmorra'), juramento/ameaça que continua o grito anterior, pergunta seguinte da mesma conversa, pensamento, consequência, transição, presságio ou explicação abstrata.",
-    "Repita o quadro anterior quando a fala descreve algo que NÃO tem quadro próprio ou continua a conversa: risadinha de quem já estava na cena, aviso/bronca durante a mesma ação, conversa enquanto caminham, coisa imaginada ou lembrada, lista, metáfora, sentimento sobre o que acabou de aparecer, pedido simples ou comentário sobre um lugar já mostrado. A IA costuma errar puxando um quadro novo e fraco.",
-    "Coisa citada que não aparece em nenhum quadro (cadáveres lembrados, ouro pouco visível, a garota ausente): use o quadro inteiro de quem está pensando ou falando naquele momento (geralmente o primeiro da cena), sem juntar quadros.",
-    "Ao repetir a imagem, use um único recorte que funcione para todas as falas: o maior e mais completo entre elas (ex.: 31%→66%, 35%→65%). Se a fala de abertura tem um quadro próprio fraco, use o quadro da fala seguinte quando ele mostra melhor o momento.",
-    "Só troque de quadro quando a fala trouxer um momento novo, um personagem novo ou uma ação nova com quadro próprio. Siga a ordem das páginas e não adiante quadros: a IA costuma errar um quadro para frente.",
-    "Use a 'cena geral' (faixa ou bloco dos dois quadros, largura total) quando a fala vai de um quadro ao vizinho no mesmo instante e os dois se completam. Exemplos: encarar + reação dela, sorriso + quem ouve, pergunta + ameaça, surpresa + sorriso, cálculo + preço, ele no chão + criatura vindo, recusa + mão fechada de raiva, grupo cercando + provocação.",
-    "Fala com dois momentos em quadros distintos e distantes usa UM quadro inteiro, o da ação ou do sujeito principal. Escolha o impacto em vez do aviso (explosão > comando; pisão > meio sorriso; entidade avançando > desprezo lembrado). Escolha o ato descrito em vez da consequência (abraço > cara emburrada; criatura revelada > deboche). Não junte num bloco alto demais.",
-    "Quadros que se sobrepõem numa mesma ação (mão com garras + medo, faca + zumbi, queda + rosnado, chute + criatura assustada, golpe + garoto caindo no chão): use o bloco inteiro que cobre todos (~35–76% de altura em página normal; ~10–12% na tira), largura total.",
-    "Explicação geral (mundo, história, era, facções, tumbas e relíquias surgindo, reflexão) usa o bloco inteiro em largura total, e as falas seguidas reutilizam o mesmo bloco. Se o recorte for só um borrão sem sentido, use a imagem inteira.",
-    "Página que é uma única cena grande (personagem apontando arma, conversa de braços cruzados, pedido à estrela cadente, protagonista bebendo no telhado): use a página/imagem inteira (~74–100%) e mantenha nas 3–4 falas daquela conversa, em vez de recortar rostos.",
-    "Imagem comprida com cenas diferentes: recorte em blocos, um por momento, cada bloco inteiro em largura total, usados na ordem das falas.",
-    "Quadro gigante (mais de ~45% da página): corte o topo com sobras e balões e fique com a sub-cena citada inteira (~35–60%). Em caos total, luz ofuscante, paisagem distante ou ilustração de página inteira, use ~50–100% e tire só a sobra.",
-    "Ação, impacto, tiroteio, explosão e combate usam o quadro inteiro da ação com corpo, inimigo e efeito. Não use só o clarão, as marcas de tiro, o punho agarrado ou uma figura pequena.",
-    "Fala sobre o sistema (janela, notificação, missão, painel): mostre só a janela citada, enxuta (~4–12% de altura, ~45–100% de largura). Se o aviso vem junto da cena, use o bloco inteiro. Se o sistema é citado só de passagem, mostre a cena. Telas de celular citadas de passagem não ganham quadro próprio: mostre a pessoa.",
-    "Reação, emoção e diálogo (choque, raiva, alívio, medo, susto, desconfiança, riso sem graça, provocação, empolgação, alegria com comida) usam o quadro inteiro onde o personagem reage, com corpo e postura. Se a emoção é do narrador, use o quadro dele. Voz de fora, alguém que não aparece ou coisa abstrata: use o quadro da cena principal ou repita o vizinho.",
-    "Revelação de personagem, criatura ou objeto (marca no braço, poder novo, corvo surgindo), ou personagem novo: use o primeiro quadro dele, inteiro, mantido nas falas seguintes. Multidão, grupo armado ou mudança de local (delegacia, cela): use o quadro inteiro do local.",
-    "Fala do narrador sobre si mesmo, a postura, os planos ou o passado dele: use o quadro inteiro do protagonista posicionado (~20–45% em página normal; ~6–12% na tira), ou a página inteira se ela for uma cena só dele.",
-    "Zoom: 1 em ação e em cenas gerais; ~1.25 em reação/emoção, introspecção, explicação importante, súplica/comemoração e ameaça dramática.",
-    "Stretch padrão 1, inclusive em cena geral, página inteira, ação e imagem repetida (a IA erra pondo 1.05–1.35; troque por 1). Rotate sempre 0 explícito. Fit 'cover' em ação e detalhes finos.",
-    "bgBand: escolha a faixa que esconde os balões e destaca a cena. Em imagem repetida, alterne top/bottom em relação à fala anterior.",
-    "Texto narrado: fala dividida em duas partes tem a primeira terminando em vírgula e a segunda começando em minúscula. Quando a fala usa 2 ou 3 imagens, cada uma deve ser o quadro inteiro em largura total.",
-    "Dúvidas: o usuário quase sempre rejeita as opções e ajusta à mão. Proponha direto o quadro inteiro (ou a cena geral dos quadros vizinhos), já em largura total e com altura real, e NÃO pergunte, a não ser que haja dois quadros realmente equivalentes e distantes entre si."
+    "Nunca use rodapé, créditos, capa com logo da scan ou propaganda (Patreon, Discord, pedidos de apoio) como imagem nem como opção de dúvida. A abertura do capítulo usa o primeiro quadro real da história.",
+    "O foco é sempre a CENA, não os balões, porque a narração já conta a história. Prefira quadros com personagens e ação. Quadro só de balão, legenda, texto ou disco com escrita não vale sozinho, exceto quando a fala é sobre o sistema.",
+    "Falas vizinhas sobre o mesmo momento usam a MESMA imagem, de 2 a 4 falas por quadro: reação, resposta, transição, comentário, ameaça, recusa, pensamento, a mesma pessoa continuando e a conversa alternada do mesmo grupo. Frase curta que fecha o momento e o encerramento repetem o quadro anterior.",
+    "Frase de suspense ('ainda não imaginava o que estava por vir', 'será que eu ia conseguir?') ou que fala de escuridão e tela preta repete o quadro anterior ou usa a cena geral dos personagens juntos, nunca um quadro isolado.",
+    "Narração de rotina ou deslocamento do protagonista (acordar, chegar, cavalgar, pagar, comprar, sair, andar sozinho, ser chamado e entrar numa sala, apertar um dispositivo) em quadros seguidos usa a cena geral desses quadros, mantida nas 3 ou 4 falas do trecho.",
+    "Se o que a fala descreve não aparece inteiro em nenhum quadro (objeto, papel tremendo nas mãos, sensação, tecido, pessoa só narrada, multidão ausente) ou o quadro mostra outra coisa, repita a cena anterior com a pessoa que segura ou sente, nunca a página inteira.",
+    "Fala que encerra uma cena e já leva à próxima, ou que anuncia algo chegando cujo quadro é fraco, usa o quadro da fala posterior, onde as pessoas reagem ao que chegou.",
+    "Quando o quadro próprio da fala é fraco (silhueta, figura sem rosto, braço, mão ou armadura solta, bota, olho, nariz e boca, rosto suando de perto, rosto encarando) repita a imagem anterior ou use o bloco vizinho com as pessoas inteiras. Ao repetir, escolha a imagem mais completa.",
+    "Texto narrado dividido em duas partes (a primeira termina em vírgula ou reticências, a segunda começa em minúscula) usa a mesma imagem nas duas partes, normalmente a da ação principal da segunda.",
+    "Só troque de quadro quando a fala trouxer um momento novo, um personagem novo ou uma ação nova com quadro próprio. Siga a ordem das páginas. Confira o quadro exato da ação ou de quem fala, porque a IA erra um quadro para frente ou para trás.",
+    "Quando os membros de um grupo são descritos um por vez (capangas avançando, o chefe que pergunta, um que ri, outro que ameaça), use a cena do grupo inteiro e repita-a nas 2 ou 3 falas, em vez de um quadro para cada um.",
+    "Fala que cita duas pessoas ou dois momentos em quadros VIZINHOS usa a cena geral só desses quadros (quem fala + quem ouve, grito + quem fica parado, ameaça + avanço, objeto + grupo que reage). Não acrescente quadro de fumaça, balão ou outro assunto.",
+    "Use um quadro só quando a fala descreve UM personagem inteiro nele (alguém entrando correndo, quem chega) e o vizinho é fumaça, balão, fundo ou outro assunto. Pensamento do protagonista sobre alguém usa o protagonista. Xingamento sobre alguém citado antes repete o quadro dessa pessoa.",
+    "Fala com dois momentos em quadros distantes usa UM quadro: o da ação mais forte ou do assunto principal. Narrador só calado, parado ou chocado não ganha quadro próprio: repete a ação que ele está vendo.",
+    "Em luta contínua, falas seguidas de ação (golpe, chute, avanço, bloqueio, alguém agarrado, voando ou caindo, estilhaços, sangue) e o pensamento do protagonista no meio da luta repetem o quadro da ação completa por 2 a 4 falas.",
+    "Quadros que se sobrepõem numa mesma ação (golpe + queda, arma apontada + vítima, criatura avançando + alvo) viram um bloco único. Golpe narrado antes do resultado pode usar o quadro do resultado (quem caiu e reage). Efeito, dor e nova ameaça repetem o quadro da ação completa.",
+    "Lembrança, sonho, visão do passado, explicação ou reflexão do narrador (mundo, níveis, poderes, profissão, motivos, culpa, luto, decisões) sem quadro próprio usa a cena geral de quem explica e quem ouve, e as 2 ou 3 falas do mesmo raciocínio reutilizam esse bloco.",
+    "Página inteira só quando ela é uma única cena grande (conversa parada, personagem posando, paisagem, briga caótica num só quadro), mantida nas 3 ou 4 falas do trecho. Se a página tem vários quadros, use o quadro ou o bloco da fala.",
+    "Ação, impacto, explosão e combate usam o quadro inteiro, com corpo, inimigo e efeito. Feixe de luz, clarão, anéis de energia, rastro, linhas de velocidade ou punho não valem sozinhos: prefira o quadro onde o poder aparece sendo ativado por quem o usa, ou o do resultado.",
+    "Fala sobre o sistema, habilidade, poder, ficha ou documento mostra o efeito junto de quem o usa ou segura. Conteúdo lido de um papel ou tela usa a cena de quem lê, repetida nas falas que listam o conteúdo. Aviso do sistema numa ação repete o quadro da ação.",
+    "Voz de fora ou de quem não aparece: se o balão dela está num quadro vizinho de quem reage, use a cena geral dos dois; se não, repita o quadro anterior. Se a fala seguinte revela quem falou, use o quadro da seguinte.",
+    "Revelação de personagem, criatura, objeto, grupo ou poder novo usa o primeiro quadro nítido e inteiro dele, mantido nas falas que explicam o que é, no comentário e na reação imediata. Silhueta não entra sozinha. Multidão usa o grupo inteiro.",
+    "GEOMETRIA: a caixa pega o quadro inteiro de borda a borda, com cabeça, pés, arma, corpo da criatura e efeito. O erro mais frequente é a faixa baixa e fina demais: suba até a borda real superior e desça até a inferior, usando a largura toda em quadro largo.",
+    "GEOMETRIA: quadro de ação, revelação ou personagem nunca vira tira fina nem recorte só do rosto. Se o quadro é curto e o vizinho mostra o mesmo momento, a caixa abraça os dois; deixe de fora balões, legendas, pedaços de cabeça na borda e quadros de outro assunto."
   ],
   "questions": [
     {
@@ -150,37 +144,218 @@
       "answer": "é com essa forma ocupava mais espaço na tela e não estava aparecendo o rosto da da mulher somente parte do pescoço para baixo isso Ficou muito estranho então eu trouxe só o protagonista"
     },
     {
-      "id": "ea204273",
-      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
-      "title": "Tomb Raider King",
-      "part": 26,
-      "question": "Na parte 26 você desceu o recorte (y 0.30→0.35). O quadro escolhido foi o do Joo-heon empolgado, o das relíquias ou outro entre os dois?",
-      "at": "2026-11-16T04:25:48.122Z"
+      "id": "4b861122",
+      "projectId": "8b0bdb11-7807-4f4c-ade2-6eb1d9aec0ea",
+      "title": "Infinite Evolution Starting from Zero 31-50",
+      "part": 227,
+      "question": "Na parte 227 você escolheu só o quadro 5 em vez de juntar os quadros 4 e 5. O quadro 5 era o mapa do campus ou os drones? E por que ficou melhor sozinho?",
+      "at": "2026-11-17T14:54:32.919Z",
+      "answer": "o intuito disso foi para mostrar mais os personagens"
     },
     {
-      "id": "8c5f6f47",
-      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
-      "title": "Tomb Raider King",
+      "id": "17773737",
+      "projectId": "8b0bdb11-7807-4f4c-ade2-6eb1d9aec0ea",
+      "title": "Infinite Evolution Starting from Zero 31-50",
+      "part": 289,
+      "question": "Na parte 289 você preferiu o quadro da chuva e do braço ao do Brutamonte falando. Foi porque fecha a conversa com clima, ou porque o quadro dele estava fraco ou cheio de balões?",
+      "at": "2026-11-17T14:54:32.919Z",
+      "answer": "porque estava cheio de balões"
+    },
+    {
+      "id": "d4dae524",
+      "projectId": "8b0bdb11-7807-4f4c-ade2-6eb1d9aec0ea",
+      "title": "Infinite Evolution Starting from Zero 31-50",
+      "part": 82,
+      "question": "Na parte 82 (Yuyan perguntando quanto tempo o Zichen levaria) você trocou o quadro por outro mais abaixo na página; esse novo quadro mostra a Yuyan perguntando ou o protagonista, de quem ela fala?",
+      "at": "2026-11-17T15:00:47.865Z",
+      "answer": "essa série estava muito repetida repetida e essa de baixo estava mostrando mais o corpo da mulher e do homem ficou melhor para a cena"
+    },
+    {
+      "id": "d418962a",
+      "projectId": "8b0bdb11-7807-4f4c-ade2-6eb1d9aec0ea",
+      "title": "Infinite Evolution Starting from Zero 31-50",
+      "part": 276,
+      "question": "Na parte 276 (ela quase no sexto grau) você além de abrir o recorte subiu para outro trecho da página. O quadro original era o errado (mostrava outra coisa) ou só faltava pegar a personagem inteira?",
+      "at": "2026-11-17T15:10:17.883Z",
+      "answer": "tava horrível a imagem que você escolheu aí eu coloquei a cena né que você colocou só uma parte dela coloquei ela por completo ali"
+    },
+    {
+      "id": "6594e095",
+      "projectId": "05a54e12-dce5-4fcf-8536-122be27161bb",
+      "title": "I have a Mansion in the Post-Apocalyptic World parte 1",
+      "part": 3,
+      "question": "Nas partes 3 a 5 você usou um bloco alto que cobre vários quadros (táxi, motorista, protagonista). Juntou porque essas falas narram um único trajeto, ou porque cada quadro sozinho ficava pequeno demais?",
+      "at": "2026-11-17T20:56:12.871Z",
+      "answer": "essa cena que eu destaquei aí mostra exatamente o que está sendo falado a outra que estava só estava mostrando os balões sem necessidade ficou muito muito estranho"
+    },
+    {
+      "id": "c4b5aba8",
+      "projectId": "80994d98-59e4-452a-be46-7cc774b4e2c1",
+      "title": "I have a Golden Palace in the last days",
       "part": 12,
-      "question": "Na parte 12 você manteve a borda direita em 0.88 em vez de 1.00. Foi para cortar um balão ou outro quadro naquele lado?",
-      "at": "2026-11-16T04:25:48.122Z"
+      "question": "Na parte 12 (desespero, só um pacote de amendoim) você trocou de página e repetiu a imagem da parte 11. Foi porque o quadro original mostrava outra coisa ou porque a fala continua o mesmo momento da anterior?",
+      "at": "2026-11-18T01:25:21.586Z",
+      "answer": "essa cena que tá montando ele ali no segundo negócio não tinha nada a ver com o que tava sendo narrado"
     },
     {
-      "id": "32b78482",
-      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
-      "title": "Tomb Raider King",
-      "part": 61,
-      "question": "Nas partes 61, 67, 75 e 81 você estreitou o recorte (ex.: 96%→76% de largura, 6%→4% de altura), ao contrário do resto, onde alargou para 100%. Foi porque esses quadros são mais estreitos na tira (com margem branca dos lados) ou para tirar algum balão?",
-      "at": "2026-11-16T04:59:44.004Z"
+      "id": "d26ef185",
+      "projectId": "80994d98-59e4-452a-be46-7cc774b4e2c1",
+      "title": "I have a Golden Palace in the last days",
+      "part": 1,
+      "question": "Na parte 1 (abertura do capítulo) você trocou o topo da página por um quadro menor mais abaixo. Esse quadro mostra o protagonista acordando ou o mundo destruído?",
+      "at": "2026-11-18T01:25:21.586Z",
+      "answer": "essa cena que está aparecendo ali no início ela é o a introdução do Mangá é a capa né aí onde mostra a Scan então não tem nada a ver com o capítulo"
     },
     {
-      "id": "49ba8649",
-      "projectId": "a9eefe8b-4b65-467f-b18a-2864ec6d7042",
-      "title": "Tomb Raider King",
-      "part": 27,
-      "question": "Nas partes 27 a 54 e 94 a 103 você criou várias falas novas que recontam a história (masmorra, corvo, delegacia). Quer que a IA faça um resumo mais detalhado assim desde o começo, ou isso foi um ajuste só deste capítulo?",
-      "at": "2026-11-16T04:59:44.004Z"
+      "id": "a018e9e3",
+      "projectId": "8d163edf-7cbd-4ed5-8cf5-88df4e0247a7",
+      "title": "The Regressed Sword Saint's Magic Theory",
+      "part": 102,
+      "question": "Na parte 102 (discípula coberta de sangue pedindo desculpas) você fez o contrário do resto e diminuiu bastante o recorte. Foi para tirar um balão ou outro quadro que entrava embaixo, ou para focar só no rosto dela?",
+      "at": "2026-11-18T14:00:10.515Z",
+      "answer": "o intuito foi ampliar a imagem e mostrar mais a cena"
+    },
+    {
+      "id": "edc6edc5",
+      "projectId": "b8f14fc1-ad90-4780-b18e-721f47a0204c",
+      "title": "Novo mangá",
+      "part": 1336,
+      "question": "Na parte 1336 (o hotel na Itália, que não aparece) você repetiu a imagem anterior em vez de mostrar a Min-hee. Mudança de local sem quadro próprio deve sempre repetir a cena anterior?",
+      "at": "2026-11-18T14:01:02.173Z",
+      "answer": "Provavelmente porque a cena do quadro anterior ficou melhor do que a cena que a ia selecionou"
+    },
+    {
+      "id": "e21943aa",
+      "projectId": "57723357-3aee-4f1b-8911-02ceea007766",
+      "title": "solo-swordmaster 16-22",
+      "part": 442,
+      "question": "Na parte 442 nenhuma opção serviu e você repetiu a imagem anterior, mas de outra página. O quadro certo era o do Cabelo-claro sorrindo que estava na página anterior?",
+      "at": "2026-11-18T18:49:10.359Z",
+      "answer": "isso foi feito dessa forma para dar destaque a cena"
+    },
+    {
+      "id": "caa35e10",
+      "projectId": "57723357-3aee-4f1b-8911-02ceea007766",
+      "title": "solo-swordmaster 16-22",
+      "part": 103,
+      "question": "Na parte 103 (hotel à beira da falência) você escolheu um trecho mais abaixo da página. Era o homem de cabeça baixa inteiro ou outra cena que mostrava a falência?",
+      "at": "2026-11-18T18:49:10.359Z",
+      "answer": "eu editei essa parte para dar destaque a cena"
+    },
+    {
+      "id": "d177091a",
+      "projectId": "80994d98-59e4-452a-be46-7cc774b4e2c1",
+      "title": "I have a Golden Palace in the last days",
+      "part": 192,
+      "question": "Na parte 192 (abre os olhos e não é o quarto nem 2024) você trocou o topo da página pela metade de baixo. Essa metade mostra o lugar novo que ele vê ou o protagonista assustado?",
+      "at": "2026-11-18T18:51:48.436Z",
+      "answer": "Essa parte é ali estava aparecendo na a parte do nariz e parte da boca do personagem ficou muito ruim então eu tenho destaque a cena anterior onde estava aparecendo a mulher"
+    },
+    {
+      "id": "0e0d5448",
+      "projectId": "80994d98-59e4-452a-be46-7cc774b4e2c1",
+      "title": "I have a Golden Palace in the last days",
+      "part": 221,
+      "question": "Na parte 221 (chorando na mesa, Yunlan de braços cruzados) você diminuiu o bloco e subiu. Foi para tirar balões e ampliar os dois, ou para deixar de fora outro quadro que entrava embaixo?",
+      "at": "2026-11-18T18:51:48.436Z",
+      "answer": "eu cortei essa parte porque tava aparecendo só a cabeça do personagem ali embaixo então não tinha motivo para trazer isso então eu dei destaque a cena da mulher"
+    },
+    {
+      "id": "681fc72f",
+      "projectId": "80994d98-59e4-452a-be46-7cc774b4e2c1",
+      "title": "I have a Golden Palace in the last days",
+      "part": 22,
+      "question": "Na parte 22 (suor com a arma apontada) você trocou o bloco grande por uma faixa mais baixa. Essa faixa mostra o rosto dele suando ou a arma apontada para ele?",
+      "at": "2026-11-18T20:02:01.103Z",
+      "answer": "a cena acima não está a assina anterior não estava demonstrando tanto do que aquele aquele acontecimento fora que ela estava cortada"
+    },
+    {
+      "id": "39fdccfa",
+      "projectId": "80994d98-59e4-452a-be46-7cc774b4e2c1",
+      "title": "I have a Golden Palace in the last days",
+      "part": 290,
+      "question": "Na parte 290 (sistema devolve os pontos e avisa a queda) você repetiu a imagem da queda em vez da janela do sistema. Aviso do sistema durante uma ação deve sempre mostrar a ação e não a janela?",
+      "at": "2026-11-18T20:02:01.103Z",
+      "answer": "a imagem anterior não tinha nada a ver com a cena"
+    },
+    {
+      "id": "01ef79fc",
+      "projectId": "80994d98-59e4-452a-be46-7cc774b4e2c1",
+      "title": "I have a Golden Palace in the last days",
+      "part": 593,
+      "question": "Na parte 593 (notícia dos zumbis fulminados por raios, Shang ouvindo) você usou a mesma página de página inteira das partes 592 e 594. Essa página mostra os raios/zumbis ou o Shang reagindo?",
+      "at": "2026-11-18T20:02:01.103Z",
+      "answer": "a imagem anterior tava mostrando só o cabelo do personagem e não o conteúdo todo então eu trouxe ele junto com a protagonista protagonista junto com a outra protago"
+    },
+    {
+      "id": "19105ce9",
+      "projectId": "2f068130-53d2-4c02-9e7d-48f450dde8be",
+      "title": "The Crazy Villain Regains His Sanity",
+      "part": 1744,
+      "question": "Na parte 1744 você deixou o recorte mais baixo (faixa fina embaixo, largura total). Foi para tirar um balão de cima ou para mostrar o rapaz ao lado em vez do homem na sombra?",
+      "at": "2026-11-18T22:27:06.486Z",
+      "answer": "eu fiquei mais na cena em vez do balão deixando ela mais próxima"
+    },
+    {
+      "id": "604fc8ac",
+      "projectId": "2f068130-53d2-4c02-9e7d-48f450dde8be",
+      "title": "The Crazy Villain Regains His Sanity",
+      "part": 1566,
+      "question": "Nas partes 1566 e 1567 (clarão e técnica reconhecida) você usou um quadro de outra página. Era o quadro do golpe completo ou o de quem estava lá fora reconhecendo a técnica?",
+      "at": "2026-11-18T22:27:06.486Z",
+      "answer": "essa outra cena que eu ia te escolhida era tava muito ruim não tava mostrando o poder sendo ativado essa sim"
+    },
+    {
+      "id": "63a57943",
+      "projectId": "57723357-3aee-4f1b-8911-02ceea007766",
+      "title": "solo-swordmaster 16-22",
+      "part": 52,
+      "question": "Na parte 52 (eu olhando furioso) você fez o contrário do resto e reduziu o recorte a uma faixa fina no fim da página. O que essa faixa mostra: o rosto furioso do protagonista ou a explosão?",
+      "at": "2026-11-19T00:14:40.105Z",
+      "answer": "dar foco a cena"
+    },
+    {
+      "id": "9280b991",
+      "projectId": "57723357-3aee-4f1b-8911-02ceea007766",
+      "title": "solo-swordmaster 16-22",
+      "part": 106,
+      "question": "Na parte 106 (resposta em tom de relatório) você trocou de página e usou uma faixa baixa no fim dela. Essa faixa mostra quem está relatando ou o protagonista ouvindo?",
+      "at": "2026-11-19T00:14:40.105Z",
+      "answer": "dar foco a cena"
+    },
+    {
+      "id": "8950d34f",
+      "projectId": "57723357-3aee-4f1b-8911-02ceea007766",
+      "title": "solo-swordmaster 16-22",
+      "part": 234,
+      "question": "Nas partes 234 e 235 (voz dando cobertura, sorridente com presas) você trocou de página e repetiu o quadro do atacante de cabelo escuro. Os quadros próprios estavam errados/fracos ou a luta ainda era o mesmo momento?",
+      "at": "2026-11-19T00:14:40.105Z",
+      "answer": "dar foco a cena"
+    },
+    {
+      "id": "fd3ee6a3",
+      "projectId": "2f068130-53d2-4c02-9e7d-48f450dde8be",
+      "title": "The Crazy Villain Regains His Sanity",
+      "part": 51,
+      "question": "Na parte 51 (rosnando com o peito sujo de sangue) você estreitou e baixou o recorte, ao contrário do resto. Foi para tirar um balão ou o outro personagem e focar só no protagonista?",
+      "at": "2026-11-19T03:30:40.861Z"
+    },
+    {
+      "id": "fd404154",
+      "projectId": "2f068130-53d2-4c02-9e7d-48f450dde8be",
+      "title": "The Crazy Villain Regains His Sanity",
+      "part": 146,
+      "question": "Nas partes 146 e 147 (explosão de energia e de pé sobre o soldado) você trocou de página. O quadro original não mostrava a explosão ou só estava cortado?",
+      "at": "2026-11-19T03:30:40.861Z"
+    },
+    {
+      "id": "27aa6206",
+      "projectId": "2f068130-53d2-4c02-9e7d-48f450dde8be",
+      "title": "The Crazy Villain Regains His Sanity",
+      "part": 309,
+      "question": "Nas partes 309 e 310 (Da-hyun chegando com os funcionários) você diminuiu o recorte. Foi para tirar um balão ou outro quadro que entrava embaixo, ou para aproximar os personagens?",
+      "at": "2026-11-19T03:30:40.861Z"
     }
   ],
-  "updatedAt": "2026-11-16T04:59:44.004Z"
+  "updatedAt": "2026-11-19T03:30:40.862Z"
 }

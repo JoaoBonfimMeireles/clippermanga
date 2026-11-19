@@ -58,7 +58,8 @@ export function listProjects(): StudioProject[] {
 // A tela consulta o projeto o tempo todo (abrir, salvar, jobs, vídeo, narração) e cada leitura relia e fazia o
 // parse do arquivo inteiro (centenas de páginas/partes). Agora: um stat por chamada (O(1)); o parse só acontece
 // quando o arquivo muda (mtime/tamanho). Mudança feita por fora do app também é vista, porque o stat muda.
-type Cached = { key: string; raw: string; obj: StudioProject };
+// `obj` e `lite` são preguiçosos: gravar não faz parse de novo (só quem LÊ paga), e a lista do painel guarda só o resumo (parse só na primeira consulta depois de cada gravação).
+type Cached = { key: string; raw: string; obj?: StudioProject; lite?: { fn: unknown; val: unknown } };
 const g = globalThis as unknown as { __mangaProjects?: Map<string, Cached> };
 const cache = (g.__mangaProjects ??= new Map());
 const fileOf = (id: string) => path.join(projectDir(id), 'project.json');
@@ -76,8 +77,20 @@ function loadCached(id: string): Cached | null {
   const key = statKey(st);
   const hit = cache.get(f);
   if (hit?.key === key) return hit;
-  const raw = fs.readFileSync(f, 'utf8');
-  const entry = { key, raw, obj: JSON.parse(raw) as StudioProject };
+  // gravação em andamento (no Windows o rename pode cair no plano B, que escreve direto): arquivo vazio/cortado por um instante.
+  // Tenta de novo em vez de derrubar a tela com "Unexpected end of JSON input".
+  let raw = '';
+  let obj: StudioProject | undefined;
+  for (let i = 0; i < 6 && !obj; i++) {
+    try {
+      raw = fs.readFileSync(f, 'utf8');
+      obj = JSON.parse(raw) as StudioProject;
+    } catch (e) {
+      if (i === 5 || (e as NodeJS.ErrnoException).code === 'ENOENT') throw e;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 40 * (i + 1));
+    }
+  }
+  const entry: Cached = { key, raw, obj };
   cache.set(f, entry);
   return entry;
 }
@@ -85,12 +98,40 @@ function loadCached(id: string): Cached | null {
 /** Projeto para ALTERAR: cópia nova a cada chamada (sem ler o disco de novo se nada mudou). */
 export function readProject(id: string): StudioProject | null {
   const c = loadCached(id);
-  return c ? (JSON.parse(c.raw) as StudioProject) : null;
+  if (!c) return null;
+  return JSON.parse(c.raw) as StudioProject;
 }
 
 /** Projeto só para LER (objeto compartilhado do cache: não altere). Mais barato que readProject. */
 export function peekProject(id: string): StudioProject | null {
-  return loadCached(id)?.obj ?? null;
+  try {
+    const c = loadCached(id);
+    if (!c) return null;
+    return (c.obj ??= JSON.parse(c.raw) as StudioProject);
+  } catch {
+    // arquivo sendo gravado/ilegível no instante: a lista usa a última versão boa em vez de dar erro 500 na tela inicial
+    return cache.get(fileOf(id))?.obj ?? null;
+  }
+}
+
+/**
+ * Resumo de todos os projetos (só contagens/nomes) para a lista do painel. O resumo de cada projeto é calculado UMA vez por versão do arquivo
+ * e lembrado: quando um job regrava o project.json, a gravação já deixa o resumo pronto (sem reler/parsear projetos de 2 MB a cada consulta).
+ */
+export function listSummaries<T extends { updatedAt: string }>(fn: (p: StudioProject) => T): T[] {
+  if (!fs.existsSync(studioDir())) return [];
+  const out: T[] = [];
+  for (const id of fs.readdirSync(studioDir())) {
+    try {
+      const c = loadCached(id);
+      if (!c) continue;
+      if (c.lite?.fn !== fn) c.lite = { fn, val: fn((c.obj ??= JSON.parse(c.raw) as StudioProject)) };
+      out.push(c.lite.val as T);
+    } catch {
+      /* arquivo sendo gravado: some da lista só neste instante */
+    }
+  }
+  return out.sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
 /** JSON do projeto como está no disco + uma versão (para ETag/304), sem stringify de novo. */
@@ -115,7 +156,7 @@ export function writeProject(p: StudioProject): StudioProject {
   }
   // já deixa no cache o que acabou de gravar (cópia própria: quem chamou pode continuar mexendo em `p`)
   try {
-    cache.set(f, { key: statKey(fs.statSync(f)), raw, obj: JSON.parse(raw) as StudioProject });
+    cache.set(f, { key: statKey(fs.statSync(f)), raw });
   } catch {
     cache.delete(f);
   }

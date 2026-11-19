@@ -20,6 +20,7 @@ import { needsPanelCrops } from '@/lib/crop-guard';
 import { jobLLM } from '@/lib/ai-meter';
 import { updateSeriesMemory } from '@/lib/series';
 import { generateChapterContexts, generateScript } from '@/lib/script';
+import { generateHooks, joinParts } from '@/lib/parts';
 import { expandChapters, fillVar, hasVar, parseRange } from '@/lib/ranges';
 import { peekProject, projectDir, readProject, updateProject } from '@/lib/store';
 import { FULL } from '@/lib/types';
@@ -282,6 +283,16 @@ export async function POST(req: Request, { params }: Ctx) {
     if (projectJobs(id).some((j) => (j.kind === 'render' || j.kind === 'polish' || j.kind === 'restyle') && j.status === 'running')) return new Response('Já tem um render ou ajuste rodando neste projeto: espere terminar.', { status: 409 });
     const b = body as unknown as { tidyTo?: number; from?: number; to?: number };
     return Response.json(startJob('restyle', id, async (ctx) => { const r = await restyleProject(id, ctx, { tidyTo: b.tidyTo, from: b.from, to: b.to }); snapshotBaseline(id); return r; }));
+  }
+  if ((body as { kind: string }).kind === 'hooks') {
+    if (projectJobs(id).some((j) => (j.kind === 'render' || j.kind === 'script' || j.kind === 'hooks') && j.status === 'running')) return new Response('Já tem um processo rodando neste projeto: espere terminar.', { status: 409 });
+    return Response.json(startJob('hooks', id, (ctx) => generateHooks(id, ctx)));
+  }
+  if ((body as { kind: string }).kind === 'join') {
+    if (projectJobs(id).some((j) => (j.kind === 'render' || j.kind === 'join') && j.status === 'running')) return new Response('Já tem um render ou junção rodando neste projeto: espere terminar.', { status: 409 });
+    const ids = (body as { ids?: unknown }).ids;
+    const chosen = Array.isArray(ids) ? ids.filter((x): x is string => typeof x === 'string') : undefined;
+    return Response.json(startJob('join', id, (ctx, signal) => joinParts(id, ctx, signal, { ids: chosen })));
   }
   if ((body as { kind: string }).kind === 'condense') return Response.json(startJob('script' as const, id, (ctx) => condenseScript(id, ctx)));
   if (body.kind === 'script')

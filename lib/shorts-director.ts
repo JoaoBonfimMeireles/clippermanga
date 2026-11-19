@@ -120,6 +120,37 @@ export function normalizePlan(p: StudioProject, raw: RawShort[], log: (m: string
   return { items: kept, rejected };
 }
 
+/** Shorts COMPLETOS de uma resposta cortada no meio: cada objeto dentro de "shorts":[ ... ] que fechou e é JSON válido. */
+export function partialShorts(text: string): RawShort[] {
+  const at = text.search(/"shorts"\s*:\s*\[/);
+  if (at < 0) return [];
+  const body = text.slice(text.indexOf('[', at) + 1);
+  const out: RawShort[] = [];
+  let depth = 0;
+  let inStr = false;
+  let start = -1;
+  for (let i = 0; i < body.length; i++) {
+    const ch = body[i];
+    if (inStr) {
+      if (ch === '\\') i++;
+      else if (ch === '"') inStr = false;
+      continue;
+    }
+    if (ch === '"') inStr = true;
+    else if (ch === '{') {
+      if (depth++ === 0) start = i;
+    } else if (ch === '}' && --depth === 0 && start >= 0) {
+      try {
+        out.push(JSON.parse(body.slice(start, i + 1)) as RawShort);
+      } catch {
+        /* objeto inválido: pula */
+      }
+      start = -1;
+    }
+  }
+  return out;
+}
+
 const MAX_ATTEMPTS = 3;
 
 /**
@@ -159,8 +190,25 @@ export async function planShorts(p: StudioProject, ctx: JobCtx, signal: AbortSig
             ...res.rejected.slice(-8),
             `Crie ${need} short(s) NOVO(S), com começo, meio e fim, dentro de ${MIN_S}-${TARGET_MAX_S} s (até ${HARD_MAX_S}). Se o trecho bom é longo demais, escolha um recorte menor que se resolva sozinho ou use narração nova resumindo.`,
           ].join('\n');
-    const out = await llm.complete({ system: system.replace(`Planeje ${n} shorts`, `Planeje ${attempt === 1 ? n : need} shorts`), prompt: base + redo, maxTokens: 8000, temperature: 0.6 + attempt * 0.05, tier: 'small', signal } /* Haiku cria; o Opus revisa o texto (lib/review.ts) */);
-    const more = ((extractJson(out) as { shorts?: RawShort[] }).shorts ?? []).slice(0, need + 2);
+    // JSON cortado no limite de tokens (o modelo gasta parte raciocinando): aproveita os shorts que vieram inteiros ou,
+    // sem nenhum, tenta de novo com o dobro de espaço
+    let more: RawShort[] = [];
+    for (let t = 1; t <= 2; t++) {
+      const out = await llm.complete({ system: system.replace(`Planeje ${n} shorts`, `Planeje ${attempt === 1 ? n : need} shorts`), prompt: base + redo, maxTokens: 8000 * t, temperature: 0.6 + attempt * 0.05, tier: 'small', signal } /* Haiku cria; o Opus revisa o texto (lib/review.ts) */);
+      try {
+        more = ((extractJson(out) as { shorts?: RawShort[] }).shorts ?? []).slice(0, need + 2);
+        break;
+      } catch (e) {
+        const part = partialShorts(out);
+        if (part.length) {
+          ctx.log(`Plano de shorts veio cortado: aproveitei ${part.length} short(s) que vieram inteiros`);
+          more = part.slice(0, need + 2);
+          break;
+        }
+        if (t === 2 || signal.aborted) throw e;
+        ctx.log('Plano de shorts veio cortado ou inválido; tentando de novo com mais espaço');
+      }
+    }
     if (!more.length && attempt === 1) throw new Error('A IA não devolveu nenhum short; rode de novo');
     rawAll = [...rawAll, ...more];
     res = normalizePlan(p, rawAll, ctx.log);

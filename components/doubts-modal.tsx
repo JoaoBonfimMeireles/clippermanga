@@ -138,6 +138,11 @@ export function DoubtsModal({ p, busy, onClose, onDone, onGoTo, onQueue }: { p: 
     });
   // ícone da opção "Repetir o quadro anterior": escolhe repetir e abre a parte anterior no editor, como o "Ajustar eu mesmo".
   // O que você ajustar lá vale para a parte anterior e para esta (que repete a mesma imagem).
+  // número da parte HOJE (a dúvida guarda o número de quando foi criada; ganchos de abertura, partes apagadas ou juntadas deslocam a lista e levavam para a parte anterior)
+  const partNow = (d: (typeof doubts)[number]) => {
+    const i = p.shots.findIndex((s) => s.id === d.shotId);
+    return i >= 0 ? i + 1 : d.part;
+  };
   const prevPartOf = (d: (typeof doubts)[number]) => {
     const i = p.shots.findIndex((s) => s.id === d.shotId);
     for (let j = i - 1; j >= 0; j--) if (isSpoken(p, p.shots[j])) return j + 1;
@@ -244,7 +249,7 @@ export function DoubtsModal({ p, busy, onClose, onDone, onGoTo, onQueue }: { p: 
                 <span className="absolute right-2 top-2 rounded bg-green-600 px-2 py-0.5 text-xs font-semibold text-white">✔ {pick[d.id] !== undefined ? 'Escolhido' : 'Ajustado por você'}</span>
               )}
               <p className="pr-40 text-xs">
-                <b>Parte {d.part}</b> · <span className="italic">“{d.text}”</span>
+                <b>Parte {partNow(d)}</b> · <span className="italic">“{d.text}”</span>
               </p>
               {(() => {
                 const o0 = d.options[0];
@@ -297,7 +302,7 @@ export function DoubtsModal({ p, busy, onClose, onDone, onGoTo, onQueue }: { p: 
                   );
                 })}
                 {onGoTo ? (
-                  <button className="btn self-center text-xs" onClick={() => onGoTo(d.part)}>
+                  <button className="btn self-center text-xs" onClick={() => onGoTo(partNow(d))}>
                     ✋ Ajustar eu mesmo
                   </button>
                 ) : (
@@ -328,6 +333,11 @@ export function DoubtsModal({ p, busy, onClose, onDone, onGoTo, onQueue }: { p: 
   );
 }
 
+/** O servidor devolve só o pedaço da página (em cache, na largura certa) em vez da tira inteira. */
+const cropSrc = (src: string, r: { x0: number; y0: number; x1: number; y1: number }, w: number) => {
+  const px = [240, 480, 720, 1000].find((b) => b >= w * 1.5) ?? 1000; // folga para telas de alta densidade
+  return `${src}&crop=${[r.x0, r.y0, r.x1, r.y1].map((n) => n.toFixed(4)).join(',')}&w=${px}`;
+};
 /** Miniatura de um recorte da página (posiciona a página inteira atrás de uma janela). */
 /** Mostra o recorte do palpite da IA com 25% a mais para cima e para baixo (até a borda da página), com o recorte contornado. */
 function ContextThumb({ src, page, focus, scale = 1 }: { src: string; page: { width: number; height: number }; focus: { x0: number; y0: number; x1: number; y1: number }; scale?: number }) {
@@ -336,10 +346,10 @@ function ContextThumb({ src, page, focus, scale = 1 }: { src: string; page: { wi
   const x0 = Math.max(0, focus.x0), x1 = Math.min(1, focus.x1), fw = Math.max(0.01, x1 - x0);
   const ar = (fw * page.width) / ((y1 - y0) * page.height);
   const W = Math.min(990, Math.min(260, 150 * ar) * scale);
-  const iw = W / fw, ih = (iw * page.height) / page.width, H = W / ar;
+  const H = W / ar;
   return (
     <div className="relative overflow-hidden rounded bg-black" style={{ width: W, height: H }}>
-      <img src={src} alt="" loading="lazy" className="absolute max-w-none" style={{ width: iw, height: ih, left: -x0 * iw, top: -y0 * ih }} />
+      <img src={cropSrc(src, { x0, y0, x1, y1 }, W)} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full max-w-none" />
       <div className="pointer-events-none absolute border-2 border-dashed border-amber-400" style={{ left: 0, width: '100%', top: ((focus.y0 - y0) / (y1 - y0)) * H, height: (fh / (y1 - y0)) * H }} />
     </div>
   );
@@ -350,10 +360,9 @@ export function CropThumb({ src, page, focus, scale = 1 }: { src: string; page: 
   const ar = (fw * page.width) / (fh * page.height);
   const base = Math.min(260, 150 * ar);
   const W = Math.min(990, base * scale); // não passa da largura do modal
-  const iw = W / fw, ih = (iw * page.height) / page.width;
   return (
     <div className="relative overflow-hidden rounded bg-black" style={{ width: W, height: W / ar }}>
-      <img src={src} alt="" loading="lazy" className="absolute max-w-none" style={{ width: iw, height: ih, left: -focus.x0 * iw, top: -focus.y0 * ih }} />
+      <img src={cropSrc(src, focus, W)} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full max-w-none" />
     </div>
   );
 }

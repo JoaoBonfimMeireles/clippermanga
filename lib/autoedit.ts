@@ -17,6 +17,10 @@ import { autoFill, BG_BAND, cleanRect, cropPx, effSize } from './camera';
 import { clearCheckpoint, loadCheckpoint, saveCheckpoint } from './checkpoint';
 import { ensurePageNotes, type PageNote } from './page-notes';
 import { avoidAds, findPromo, type AdRange } from './promo';
+import { snapPanelEdges } from './snap-panels';
+import { reviewEditWindow } from './edit-review';
+import { makeCoach } from './coach';
+import { noteReview } from './review';
 import { NARRATOR_STYLE } from './narrator';
 import { seriesPrompt } from './series';
 import { learningPrompt } from './learning';
@@ -41,6 +45,16 @@ ESCOLHA ("panel": número do quadro na página):
 - FIDELIDADE: use SÓ os quadros das páginas recebidas, na ordem da história; nunca invente nem adiante conteúdo, e narre apenas o que está nelas. Se nenhum quadro ilustra uma fala, não force um quadro sem relação: a fala vai no "text" do recorte vizinho (a narração costura).
 - PROPAGANDA: nunca use quadro de divulgação da scan (Support Us, Discord, Ko-fi, Patreon, logo, créditos, capa/título, anúncio de outra obra, marca d'água), no início ou no rodapé.
 - Página sem nada relevante: "shots": [].
+
+LIMITES DA IMAGEM (obrigatórios: a imagem NUNCA pode ficar cortada nem impossível de ver; valem junto com as regras do app):
+- ENQUADRAMENTO: o recorte mostra a CENA COMPLETA do quadro (personagem inteiro, espada inteira, criatura inteira). NUNCA corte cabeça, corpo ou arma ao meio, nem uma cena pela metade. Quadro que só serviria cortado (a cena continua no quadro vizinho e nenhum dos dois mostra tudo) não entra: escolha outro quadro da página ou junte os quadros vizinhos da mesma cena ("panel" com os dois, quando o formato deixar).
+- "close": NÃO use se ele cortar o personagem; só quando o quadro inteiro é muito maior que o rosto e o rosto cabe inteiro.
+- TAMANHO MÍNIMO: a imagem nunca vira uma tirinha fina. Prefira quadros com altura até 1,7 vezes a largura; formato "alto" demais = escolha outro quadro que ilustre a cena.
+- (limite duro) nenhum recorte tem altura maior que 2,4 vezes a largura (formato "muito alto" ou "alto" demais = divida em recortes menores ou escolha outros quadros). Página inteira só quando ela cabe na tela (altura até 2,4 vezes a largura) e é desenho contínuo sem molduras: aí é melhor a página inteira do que um recorte que corta personagem ao meio; tira alta demais nunca vai inteira. Nas tiras altas de webtoon todo recorte é UM quadro (ou um close) com formato que caiba na tela.
+- Muitos quadros para mostrar? Escolha os principais e vá TROCANDO de imagem: cada imagem fica pelo menos ~1 segundo e já passa para a próxima, enquanto a narração continua (os recortes seguintes vêm com "text": "" e aparecem durante a mesma fala).
+- O recorte tem que ser desenho com informação (personagem, ação, cenário). NUNCA escolha quadro só preto, só branco, sarjeta ou fundo vazio, salvo quando o preto/branco é a própria cena (escuridão, clarão de poder) e a narração diz isso.
+- NÃO DÁ PARA MELHORAR? Se nenhum quadro da página mostra aquele momento inteiro e sem corte, NÃO force um recorte ruim: repita a imagem anterior ou use a imagem seguinte (o recorte vizinho fica na tela durante a fala, com o "text" no recorte que sobra) e deixe a narração costurar. Muito espremido, esticado ou minúsculo: reveja a escolha e procure outro quadro; não invente nada que não esteja na página.
+- BALÃO: se o quadro é só um balão e existe imagem da cena por perto (na página, antes ou depois), use a imagem em vez do balão. Só destaque o balão quando ele carrega a própria cena (texto que é o acontecimento: carta, tela de sistema, anúncio) e não há arte que o substitua.
 
 TIPO ("kind"): "action" (luta, golpe, corrida, explosão, poder), "reaction" (rosto, surpresa, emoção), "dialogue" (conversa), "scene" (lugar ou personagem novo; use pouco). Em geral, mantenha o do quadro.
 
@@ -527,7 +541,7 @@ export function fitBudget(shots: Shot[], maxSec: number): { shots: Shot[]; remov
 }
 
 /** Muda quando o prompt/regras da edição mudam, para não reaproveitar progresso antigo incompatível. */
-const EDIT_CK_VERSION = 'edit-v14'; // v9: recortes vêm dos quadros da leitura das páginas (page-notes), edição só com texto
+const EDIT_CK_VERSION = 'edit-v15'; // v9: recortes vêm dos quadros da leitura das páginas (page-notes), edição só com texto
 
 /** Páginas por chamada da edição (só texto): provedor grátis / Claude. */
 const EDIT_PAGES = 4;
@@ -591,6 +605,13 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
   const notes = await ensurePageNotes(p, pages, llm, sub(0, 0.5));
   ctx.log(`Edição pela IA: ${pages.length} páginas, só texto, várias páginas por chamada`);
   // propaganda da scan (Support Us, Discord, Ko-fi, anúncios): tirada dos quadros ANTES da IA escolher, medida nos pixels
+  // bordas dos quadros no meio do desenho (corpo/cabeça/balão cortados): encostadas na faixa lisa mais perto, medida nos pixels
+  let snapped = 0;
+  for (const pg of pages) {
+    const note = notes[pg.id];
+    if (note && !note.empty) snapped += await snapPanelEdges(path.join(projectDir(p.id), pg.file), pg, note);
+  }
+  if (snapped) ctx.log(`Recortes: ${snapped} borda(s) de quadro que cortavam o desenho foram encostadas na faixa lisa mais perto`);
   const adsOf = new Map<string, AdRange[]>();
   let adPages = 0;
   for (const pg of pages) {
@@ -637,6 +658,38 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
   const system = `${EDIT_SYSTEM}\n\n${fixed}`;
   let calls = 0;
   let stop = false;
+  // Opus confere os recortes ao passar de 10% e 25% das páginas (e no fim, 100%) e corrige na hora
+  const summaries = new Map<string, string | undefined>();
+  const MARKS = [0.1, 0.25];
+  const coach = makeCoach({
+    cortado: 'NÃO escolha quadro cujo recorte parte cabeça, cabelo, corpo, arma ou balão na borda; prefira o quadro vizinho que mostra a cena inteira ou o quadro maior que a contém.',
+    vazio: 'NÃO escolha quadro vazio (só branco, preto, sarjeta ou fundo sem desenho com informação).',
+  }, { stage: 'edicao', work: p.series ?? p.title });
+  let nextMark = 0;
+  let reviewedTo = 0;
+  const opusEdit = async (upTo: number, label: string, max: number) => {
+    const from = Math.max(reviewedTo, 0);
+    reviewedTo = upTo;
+    if (upTo <= from) return;
+    ctx.progress(0.5 + (upTo / pages.length) * 0.5, `Gestor (Opus): conferindo os recortes em ${label}`);
+    try {
+      const { changed, note, kinds, lessons } = await reviewEditWindow({
+        projectId, llm, pages, result, from, to: upTo, max, signal: ctx.signal,
+        refit: async (sh, pg) => {
+          const fit = softenShot(sh, pg, { w, h });
+          fit.bgBand = await pickBgBand(path.join(projectDir(p.id), pg.file), pg, fit);
+          return fit;
+        },
+      });
+      for (const id of changed) saveCheckpoint(projectId, 'edit', EDIT_CK_VERSION, id, { shots: result.get(id) ?? [], summary: summaries.get(id) });
+      coach.record(kinds, lessons);
+      noteReview('edit-crops', 'Conferência dos recortes durante a edição', 'opus', !kinds.length, kinds.slice(0, 5), String((lessons[0] as { rule?: unknown })?.rule ?? lessons[0] ?? ''));
+      ctx.log(`Gestor (Opus) conferiu os recortes em ${label}: ${note}${coach.summary() ? ` · regras para o Haiku: ${coach.summary()}` : ''}`);
+    } catch (e) {
+      if (ctx.signal?.aborted) throw e;
+      ctx.log(`Conferência do Opus em ${label} não saiu (${(e as Error).message.slice(0, 120)}); segue sem ela`);
+    }
+  };
   for (let i = 0; i < pages.length && !stop; ) {
     if (ctx.signal?.aborted) throw new Error('cancelado');
     const pg0 = pages[i];
@@ -670,7 +723,7 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
           // então o provedor guarda em cache em vez de cobrar ~6 mil tokens de novo a cada lote de páginas
           system,
           prompt:
-            `${p.chapterContexts?.[batch[0].pg.chapter] ? `Resumo do capítulo: ${p.chapterContexts[batch[0].pg.chapter]}\n` : ''}${story ? `História até aqui: ${story.slice(-1200)}\n` : ''}\n` +
+            `${coach.prompt()}${p.chapterContexts?.[batch[0].pg.chapter] ? `Resumo do capítulo: ${p.chapterContexts[batch[0].pg.chapter]}\n` : ''}${story ? `História até aqui: ${story.slice(-1200)}\n` : ''}\n` +
             batch.map(({ pg, n }) => pageBlock(pg, n, pages.length, notes[pg.id], script[pg.id])).join('\n\n'),
           maxTokens: (600 + batch.length * 700) * attempt,
           temperature: 0.5,
@@ -742,6 +795,7 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
         if (spoken.length < split.length) ctx.log(`Página ${n}: ${split.length - spoken.length} recorte(s) sem fala viraram imagens extras durante a fala vizinha`);
         result.set(pg.id, spoken);
         if (got.summary) story += ' ' + got.summary;
+        summaries.set(pg.id, got.summary);
         saveCheckpoint(projectId, 'edit', EDIT_CK_VERSION, pg.id, { shots: spoken, summary: got.summary });
         ctx.log(`Página ${n} [${llm.name}: ${llm.name === 'claude-code' ? 'haiku' : llm.model}]: ${spoken.length ? `${spoken.length} recorte(s) (${spoken.map((s) => s.kind).join(', ')})` : 'pulada (sem conteúdo relevante)'}`);
       }
@@ -756,7 +810,13 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
         stop = true;
       }
     }
+    // marcos de 10% e 25% (o de 100% roda depois do laço)
+    if (!stop && nextMark < MARKS.length && i / pages.length >= MARKS[nextMark]) {
+      while (nextMark < MARKS.length && i / pages.length >= MARKS[nextMark]) nextMark++;
+      await opusEdit(i, `${Math.round(MARKS[nextMark - 1] * 100)}%`, 8);
+    }
   }
+  if (!stop) await opusEdit(pages.length, '100%', 16);
 
   // Página que a IA não editou (falha, limite, JSON quebrado): NUNCA fica a tira inteira. Usa os quadros da leitura
   // (sem IA, texto vazio: a narração escreve depois) e, sem eles, passa a imagem antiga pela trava de legibilidade.
