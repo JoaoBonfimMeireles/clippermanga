@@ -1,0 +1,442 @@
+{
+  "at": "2026-11-17T20:37:39.526Z",
+  "shots": [
+    {
+      "id": "a1e139c9",
+      "pageId": "3f1afa47",
+      "focus": {
+        "x0": 0.02,
+        "y0": 0.02,
+        "x1": 0.98,
+        "y1": 0.39000000000000007
+      },
+      "fit": "contain",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "reaction",
+      "impact": 5,
+      "motion": "zoom-in",
+      "duration": 10,
+      "text": "Continuo refletindo sobre a nova riqueza, decido ostentar e faço o motorista notar que transformo um aluguel de 20 dólares em um carro de milhão.",
+      "bgBand": "top"
+    },
+    {
+      "id": "a64585d9",
+      "pageId": "3f1afa47",
+      "focus": {
+        "x0": 0.0737,
+        "y0": 0.65,
+        "x1": 0.97205,
+        "y1": 0.98
+      },
+      "fit": "cover",
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "dialogue",
+      "impact": 6,
+      "motion": "zoom-out",
+      "duration": 3.6,
+      "text": "Sinto-me invencível, mas a aventura ainda está apenas começando.",
+      "bgBand": "top",
+      "rotate": 0
+    },
+    {
+      "id": "4be3dcf1",
+      "pageId": "dadcc162",
+      "focus": {
+        "x0": 0.02,
+        "y0": 0.6461916461916462,
+        "x1": 0.98,
+        "y1": 1
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "reaction",
+      "impact": 6,
+      "motion": "zoom-in",
+      "duration": 5.6,
+      "text": "Chego ao destino e pago o táxi de forma extravagante, deixando o motorista surpreso.",
+      "bgBand": "bottom"
+    },
+    {
+      "id": "9f8dd257",
+      "pageId": "dadcc162",
+      "focus": {
+        "x0": 0.02,
+        "y0": 0.6461916461916462,
+        "x1": 0.98,
+        "y1": 1
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "dialogue",
+      "impact": 5,
+      "motion": "zoom-in",
+      "duration": 7.2,
+      "text": "Depois, decido que preciso de roupas que façam a diferença e sigo em busca do meu novo estilo.",
+      "bgBand": "top"
+    },
+    {
+      "id": "8fea4628",
+      "pageId": "e5907ced",
+      "focus": {
+        "x0": 0.02,
+        "y0": 0.53,
+        "x1": 0.98,
+        "y1": 0.9799999999999999
+      },
+      "fit": "contain",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "action",
+      "impact": 7,
+      "motion": "zoom-in",
+      "duration": 6,
+      "text": "Celebrando, penso em comprar roupas melhores e decido que preciso de algo que chame atenção.",
+      "bgBand": "top"
+    },
+    {
+      "id": "34955de8",
+      "pageId": "e5907ced",
+      "focus": {
+        "x0": 0.22799999999999998,
+        "y0": 0.02,
+        "x1": 0.876,
+        "y1": 0.26
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "scene",
+      "impact": 4,
+      "motion": "zoom-out",
+      "duration": 4.4,
+      "text": "Assim, sigo para a loja onde já trabalhei, pronto para surpreender.",
+      "bgBand": "top"
+    },
+    {
+      "id": "591a4759",
+      "pageId": "b5fc57e7",
+      "focus": {
+        "x0": 0.068,
+        "y0": 0.02,
+        "x1": 0.852,
+        "y1": 0.31
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "reaction",
+      "impact": 6,
+      "motion": "zoom-in",
+      "duration": 10,
+      "text": "Droga, eu queria dizer essa frase há muito tempo. Legal! Existe um ditado que diz que as roupas fazem o homem, assim como a sela faz o cavalo. Sem um bom traje, não vou chegar a lugar nenhum.",
+      "bgBand": "top"
+    },
+    {
+      "id": "b44b362f",
+      "pageId": "b5fc57e7",
+      "focus": {
+        "x0": 0.084,
+        "y0": 0.33,
+        "x1": 0.98,
+        "y1": 0.66
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "scene",
+      "impact": 5,
+      "motion": "zoom-in",
+      "duration": 8.8,
+      "text": "Comparado a ser discreto, prefiro me exibir pomposamente. Independentemente de ser para conquistar garotas ou discutir negócios, um traje elegante é essencial.",
+      "bgBand": "top"
+    },
+    {
+      "id": "a9069589",
+      "pageId": "b5fc57e7",
+      "focus": {
+        "x0": 0.16399999999999998,
+        "y0": 0.68,
+        "x1": 0.972,
+        "y1": 0.9799999999999999
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "scene",
+      "impact": 4,
+      "motion": "zoom-out",
+      "duration": 10,
+      "text": "Chego à loja onde fui demitido, agora como cliente, querendo ver a expressão dela ao me ver bem. Antes de me aproximar, preciso escolher algo que realmente chame atenção.",
+      "bgBand": "bottom"
+    },
+    {
+      "id": "56fdf8ee",
+      "pageId": "c849037a",
+      "focus": {
+        "x0": 0.04,
+        "y0": 0.013777777777777778,
+        "x1": 0.96,
+        "y1": 0.35
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "dialogue",
+      "impact": 6,
+      "motion": "zoom-in",
+      "duration": 10,
+      "text": "Haha, seu papai está de volta! Mas minha identidade desta vez é outra. Hoje sou um cliente de peso. Se é para me exibir, tem que ser onde eu trabalhava antes. Quero ver a cara daquela mulher que me demitiu ao ver como estou agora.",
+      "bgBand": "top"
+    },
+    {
+      "id": "326bfdde",
+      "pageId": "c849037a",
+      "focus": {
+        "x0": 0.04,
+        "y0": 0.65,
+        "x1": 0.96,
+        "y1": 0.99
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "reaction",
+      "impact": 6,
+      "motion": "zoom-in",
+      "duration": 10,
+      "text": "Escolho roupas caras, mas algo estranho me chama atenção; sinto que o ambiente está diferente. A vendedora percebe minha postura e fica intrigada, observando cada movimento.",
+      "bgBand": "bottom"
+    },
+    {
+      "id": "b021c7a4",
+      "pageId": "52ab0739",
+      "focus": {
+        "x0": 0.04,
+        "y0": 0.02,
+        "x1": 0.96,
+        "y1": 0.38
+      },
+      "fit": "contain",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "dialogue",
+      "impact": 5,
+      "motion": "zoom-in",
+      "duration": 8.4,
+      "text": "Estas são todas marcas extravagantes e caras. Pouca gente compra aqui, mas já que estou aqui, vou levar as mais caras!",
+      "bgBand": "top"
+    },
+    {
+      "id": "00a1f6f6",
+      "pageId": "52ab0739",
+      "focus": {
+        "x0": 0.11666666666666665,
+        "y0": 0.3798360655737705,
+        "x1": 0.9139999999999999,
+        "y1": 0.6739344262295082
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "reaction",
+      "impact": 6,
+      "motion": "zoom-in",
+      "duration": 3.4,
+      "text": "Eh? Algo não está certo por aqui...",
+      "bgBand": "bottom"
+    },
+    {
+      "id": "bd4e8568",
+      "pageId": "52ab0739",
+      "focus": {
+        "x0": 0.07066666666666667,
+        "y0": 0.67,
+        "x1": 0.9139999999999999,
+        "y1": 0.98
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "action",
+      "impact": 5,
+      "motion": "zoom-in",
+      "duration": 10,
+      "text": "Esquece, vamos focar nas roupas primeiro. Ela observa minha escolha, fica impressionada e comenta sobre a elegância que exibo, enquanto os preços brilham nas etiquetas, como se fossem estrelas na noite.",
+      "bgBand": "top"
+    },
+    {
+      "id": "b2986050",
+      "pageId": "9b1a6c8c",
+      "focus": {
+        "x0": 0.04,
+        "y0": 0.02,
+        "x1": 0.96,
+        "y1": 0.37
+      },
+      "fit": "contain",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "reaction",
+      "impact": 5,
+      "motion": "zoom-in",
+      "duration": 3.2,
+      "text": "A vendedora não tira os olhos de mim.",
+      "bgBand": "bottom"
+    },
+    {
+      "id": "ceb5efd6",
+      "pageId": "9b1a6c8c",
+      "focus": {
+        "x0": 0.04,
+        "y0": 0.64,
+        "x1": 0.96,
+        "y1": 0.9799999999999999
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "reaction",
+      "impact": 6,
+      "motion": "zoom-in",
+      "duration": 19.6,
+      "text": "Uau! Ele nem piscou ao escolher roupas acima de dez mil RMB! Tão jovem e bonito, a família dele deve ser podre de rica. Olhando minha postura, ela reflete a atmosfera de um rei nobre. Enquanto ela observa, as tags de preço piscam e a atmosfera fica carregada de expectativas. Algo inesperado acontece, deixando todos em suspense.",
+      "bgBand": "top"
+    },
+    {
+      "id": "f05d8e0e",
+      "pageId": "fcd7a76f",
+      "focus": {
+        "x0": 0.04,
+        "y0": 0.02,
+        "x1": 0.96,
+        "y1": 0.36
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "dialogue",
+      "impact": 5,
+      "motion": "zoom-in",
+      "duration": 13.7,
+      "text": "Eu pedi para levar um exemplar de cada estilo da loja, deixando a vendedora eufórica com a comissão, enquanto ela me ajudava a carregar tudo.",
+      "bgBand": "top",
+      "extra": [
+        {
+          "pageId": "fcd7a76f",
+          "focus": {
+            "x0": 0.04,
+            "y0": 0.66,
+            "x1": 0.9063333333333333,
+            "y1": 0.98
+          },
+          "fit": "cover",
+          "rotate": 0,
+          "stretch": 1,
+          "zoom": 1,
+          "motion": "zoom-in",
+          "bgBand": "bottom"
+        }
+      ]
+    },
+    {
+      "id": "65424c6b",
+      "pageId": "f994bf41",
+      "focus": {
+        "x0": 0.05533333333333333,
+        "y0": 0.02,
+        "x1": 0.8986666666666666,
+        "y1": 0.33
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "action",
+      "impact": 6,
+      "motion": "zoom-in",
+      "duration": 10,
+      "text": "No caixa, paguei com cartão e fiquei pensativo, determinado e irritado, refletindo sobre meu objetivo de humilhar a mulher que me demitiu. Para ser mais preciso, é para fazer a gerente que sempre dificultou as coisas para mim ficar mal!",
+      "bgBand": "bottom"
+    },
+    {
+      "id": "cfada1a0",
+      "pageId": "f994bf41",
+      "focus": {
+        "x0": 0.04,
+        "y0": 0.68,
+        "x1": 0.8526666666666666,
+        "y1": 0.9799999999999999
+      },
+      "fit": "cover",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "reaction",
+      "impact": 7,
+      "motion": "zoom-in",
+      "duration": 7.6,
+      "text": "Eu imaginava que tipo de expressão ela teria quando me visse agora, mas percebi que ela não estava presente.",
+      "bgBand": "bottom"
+    },
+    {
+      "id": "8cfab72e",
+      "pageId": "dddd8717",
+      "focus": {
+        "x0": 0.02,
+        "y0": 0.36,
+        "x1": 0.98,
+        "y1": 0.98
+      },
+      "fit": "contain",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "dialogue",
+      "impact": 4,
+      "motion": "zoom-in",
+      "duration": 5.2,
+      "text": "Perguntei à atendente sobre o paradeiro da gerente, enquanto ela embalava os produtos.",
+      "bgBand": "bottom"
+    },
+    {
+      "id": "8a31da0b",
+      "pageId": "dddd8717",
+      "focus": {
+        "x0": 0.02,
+        "y0": 0.36,
+        "x1": 0.98,
+        "y1": 0.98
+      },
+      "fit": "contain",
+      "rotate": 0,
+      "stretch": 1,
+      "zoom": 1,
+      "kind": "dialogue",
+      "impact": 7,
+      "motion": "zoom-in",
+      "duration": 10,
+      "text": "A atendente me olhou confusa, enquanto eu continuava irritado, pensando na minha vingança frustrada. Eu precisava encontrar aquela mulher para mostrar quem manda agora, mas ela não estava lá.",
+      "bgBand": "bottom"
+    }
+  ]
+}

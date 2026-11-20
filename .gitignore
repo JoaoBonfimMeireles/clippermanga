@@ -11,6 +11,13 @@ projetos/*
 !projetos/_revisoes.json
 !projetos/_coach.json
 !projetos/_series/
+# progresso de cada projeto (jobs.json = etapas verdes, editlog...); sem áudio/miniaturas pesados
+!projetos/[0-9a-f]*/
+projetos/[0-9a-f]*/*
+!projetos/[0-9a-f]*/.progress/
+projetos/[0-9a-f]*/.progress/tts/
+projetos/[0-9a-f]*/.progress/segs/
+projetos/[0-9a-f]*/.progress/thumbs/
 thumb-tests/
 *.mp4
 *.wav
