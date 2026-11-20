@@ -1,0 +1,986 @@
+[
+ {
+  "name": "Chefe dos Guardas",
+  "look": "Homem de cartola, máscara de médico da peste, casaco com gola de babados."
+ },
+ {
+  "name": "Aiden",
+  "look": "controla a prisão; cuida de Chifruda e é apontado como pai de Elfa"
+ },
+ {
+  "name": "Megan",
+  "look": "Cabelo preso, sorrindo à porta; ex-guarda que aceita demissão"
+ },
+ {
+  "name": "Prisioneira",
+  "look": "Mulher com chifres, presa em uma cela, fala de forma enigmática."
+ },
+ {
+  "name": "Flora",
+  "look": "rosto sério, olhar baixo, mandato curto, pessoa de confiança do Lorde Aiden"
+ },
+ {
+  "name": "Meng",
+  "look": "orelhas, olhos arregalados, questiona as aulas do Chefe"
+ },
+ {
+  "name": "Anthony",
+  "look": "grisalho, bigode, gravata borboleta, fala com seriedade"
+ },
+ {
+  "name": "Veronica",
+  "look": "licantropa de 21 anos, nova guarda montada da prisão Rose"
+ },
+ {
+  "name": "Melifilia",
+  "look": "Deusa alada e acorrentada, sorri de lado, aconselha Aiden sobre os condenados"
+ },
+ {
+  "name": "Asena",
+  "look": "Mulher de óculos redondos, assustada ao reconhecer livro proibido, usado entre presos"
+ },
+ {
+  "name": "Ja Long",
+  "look": "encapuzado, capa escura, medalhão com moeda no peito, olhos brilhantes"
+ },
+ {
+  "name": "Dailey",
+  "look": "Lacaia do Warden de chapéu de bruxa, irritada, finge doença para comer"
+ },
+ {
+  "name": "Silene",
+  "look": "Chapéu, olhos arregalados; reencontra a vila em Cidade de Prata"
+ },
+ {
+  "name": "Bruce",
+  "look": "homem sem camisa, óculos de armação, cabelo castanho espetado"
+ },
+ {
+  "name": "Prisioneira (Sujeito 13)",
+  "look": "pele cinzenta, cabelo trançado tipo tentáculos, olhos brancos brilhantes, classe B"
+ },
+ {
+  "name": "Faye",
+  "look": "mencionada por nome; aparência não identificada, pode ser a mulher com chifres (não confirmado)"
+ },
+ {
+  "name": "Súcubo",
+  "look": "Súcubo que interage com Aiden, possui necessidades e fala de forma provocativa."
+ },
+ {
+  "name": "Monstro-lobo",
+  "look": "Criatura lupina com presas expostas, protetor de Veronica."
+ },
+ {
+  "name": "Anfitrião",
+  "look": "Homem de barba que protege a casa com círculos mágicos anti-necromantes."
+ },
+ {
+  "name": "Aldeões",
+  "look": "grupo de moradores da vila, reunidos ao fundo"
+ },
+ {
+  "name": "Amiga de cabelo curto",
+  "look": "cabelo castanho curto, reage surpresa gritando Veronica"
+ },
+ {
+  "name": "Soldados de chapéu alto",
+  "look": "Uniformes cinza, chapéus altos cilíndricos, armas longas, ao lado de Megan"
+ },
+ {
+  "name": "Figuras correndo",
+  "look": "Duas pessoas de costas correndo em direção a Aiden, botas escuras"
+ },
+ {
+  "name": "Espadachim",
+  "look": "homem de colete escuro, cabelo claro curto, espada na mão, de costas"
+ },
+ {
+  "name": "Figura encapuzada",
+  "look": "capa e capuz escuros, segura frasco de vidro, sorri"
+ },
+ {
+  "name": "Aldeã de cabelo curto",
+  "look": "cabelo castanho curto, camiseta cinza, sorriso"
+ },
+ {
+  "name": "Aldeã idosa",
+  "look": "cabelo preso, chora, roupa simples"
+ },
+ {
+  "name": "Criança",
+  "look": "cabelo escuro, braços erguidos, pequena"
+ },
+ {
+  "name": "Aldeão idoso",
+  "look": "careca, roupa cinza de manga comprida, fala com emoção"
+ },
+ {
+  "name": "Aldeão de camisa escura",
+  "look": "homem de camisa escura, braço erguido, cabelo curto"
+ },
+ {
+  "name": "Figura de capa",
+  "look": "Figura de capa cinza à esquerda, com marcas de exclamação, identidade não confirmada"
+ },
+ {
+  "name": "Morador da multidão",
+  "look": "Figura de roupa clara e cabelo claro, misturada à multidão"
+ },
+ {
+  "name": "Morador de cabelo castanho",
+  "look": "Cabelo castanho curto, roupa simples, boca aberta de espanto"
+ },
+ {
+  "name": "Multidão",
+  "look": "Silhuetas anônimas de moradores pobres, sem traços individuais"
+ },
+ {
+  "name": "Aldeã",
+  "look": "Cabelo castanho na altura do queixo, segura criança no colo"
+ },
+ {
+  "name": "Aldeão",
+  "look": "Cabelo castanho, sorriso largo, camisa simples"
+ },
+ {
+  "name": "Aldeão gritão",
+  "look": "Cabelo castanho espetado, rosto franzido, boca aberta gritando"
+ },
+ {
+  "name": "Guarda central",
+  "look": "rabo de cavalo, máscara cobrindo parte do rosto, uniforme e rifle"
+ },
+ {
+  "name": "Guardas com rifle",
+  "look": "capacete cilíndrico com viseira escura, uniforme, rifle"
+ },
+ {
+  "name": "Pessoa de cartola",
+  "look": "cartola, cabelo castanho curto, de costas"
+ },
+ {
+  "name": "Filho de Anthony",
+  "look": "cabelo espetado, cavanhaque, olhos escuros, rosto sério"
+ },
+ {
+  "name": "Plateia",
+  "look": "Pessoas de costas, roupas comuns, ouvindo discurso de Anthony"
+ },
+ {
+  "name": "Grupo distante",
+  "look": "Figuras pequenas caminhando ao longe, rua de cidade"
+ },
+ {
+  "name": "Mão não identificada",
+  "look": "Mão movendo peça de tabuleiro, sem rosto visível"
+ },
+ {
+  "name": "Sujeito chorando",
+  "look": "perfil, lágrima no olho, boca aberta, fundo escuro"
+ },
+ {
+  "name": "Sujeito de perfil",
+  "look": "perfil severo, olhar duro, luz forte atrás"
+ },
+ {
+  "name": "Cozinheira",
+  "look": "cabelo castanho-avermelhado cacheado, avental vermelho, colher de pau, aponta"
+ },
+ {
+  "name": "Prisioneira de cabelo claro",
+  "look": "cabelo claro cacheado preso em coque, pijama listrado"
+ },
+ {
+  "name": "Prisioneira de pijama listrado",
+  "look": "pijama listrado, cabelo castanho longo"
+ },
+ {
+  "name": "Prisioneiro da fila",
+  "look": "prisioneiro de cabeça pálida, na fila da comida, braço erguido"
+ },
+ {
+  "name": "Sujeito 13",
+  "look": "pele cinzenta, cabelo em tentáculos, olhos brancos brilhantes"
+ },
+ {
+  "name": "Eyal",
+  "look": "Homem de cabelo escuro, corre atrás de Asena pelo livro, faz lavagem de meias"
+ },
+ {
+  "name": "Criatura gigante",
+  "look": "criatura peluda enorme, pelagem clara, presas, cena com Asena"
+ },
+ {
+  "name": "Jilala",
+  "look": "coque com laço, cabelo rosado, presas à mostra, sorriso brincalhão"
+ },
+ {
+  "name": "Criatura",
+  "look": "Cabeça escura com boca escancarada cheia de dentes, pele áspera, braços ossudos"
+ },
+ {
+  "name": "Presos de rosto redondo",
+  "look": "três figuras de rosto redondo, tom cinzento, olhos brancos, expressão de susto"
+ },
+ {
+  "name": "Visitante encapuzada",
+  "look": "capuz e capa escuros com gola alta, de costas, rosto não visível"
+ },
+ {
+  "name": "Moça de presilha",
+  "look": "cabelo castanho médio, presilha, camiseta listrada, luvas escuras"
+ },
+ {
+  "name": "Bibliotecário de elmo",
+  "look": "elmo quadrado com visor, sentado à mesa, uniforme escuro"
+ },
+ {
+  "name": "Melihima",
+  "look": "Grande Rainha-formiga, rainha-formiga gigante, cercada por garras"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "barbudo, manto, sob céu nublado"
+ },
+ {
+  "name": "Arqueira",
+  "look": "mulher alta, armadura de couro, arco e cajado, capa esvoaçante"
+ },
+ {
+  "name": "Figura em silhueta",
+  "look": "silhueta escura contra luz forte, sem traços visíveis"
+ },
+ {
+  "name": "Figura do topo",
+  "look": "cabelo castanho, cortada pela borda superior, grita 'Avancha'"
+ },
+ {
+  "name": "Philipa",
+  "look": "prisioneira provocadora que zomba das novas guardas"
+ },
+ {
+  "name": "Karmila",
+  "look": "Descendente de dragão, pergunta ao chefe quanto ele quer, ao lado de Philipa"
+ },
+ {
+  "name": "Criatura de ossos",
+  "look": "criatura grande com aspecto de ossos desgastados, no canto da paisagem"
+ },
+ {
+  "name": "Prisioneira 13",
+  "look": "pele cinzenta, cabelo trançado tipo tentáculos, olhos brancos brilhantes, pulseiras com runas"
+ },
+ {
+  "name": "Avancha",
+  "look": "sentada calada em cela escura, presa"
+ },
+ {
+  "name": "Prisioneira de cabelo escuro",
+  "look": "cabelo longo escuro ondulado, atrás das grades, sem traços claros visíveis"
+ },
+ {
+  "name": "Voz fora do quadro",
+  "look": "fala sem figura visível, balão no topo da página"
+ },
+ {
+  "name": "Encapuzado sorridente",
+  "look": "capuz escuro, sorriso malicioso, olhos brilhantes, rosto enrugado"
+ },
+ {
+  "name": "Figura de cabelo longo",
+  "look": "cabelo castanho escuro comprido, de costas, diante de mesa com papel"
+ },
+ {
+  "name": "Encapuzada idosa",
+  "look": "capuz escuro, rosto enrugado, sorriso de canto"
+ },
+ {
+  "name": "Elfa da Floresta",
+  "look": "cabelo rosado em dois coques cacheados, ornamento de laço, camiseta listrada, short"
+ },
+ {
+  "name": "Guarda de uniforme",
+  "look": "uniforme escuro, cinto com coldre, rosto fora do quadro"
+ },
+ {
+  "name": "Mary",
+  "look": "cabelo em coque com laço; pergunta o que acontece na cela"
+ },
+ {
+  "name": "Criatura pálida",
+  "look": "criatura branca alongada, movimento veloz, sem rosto visível"
+ },
+ {
+  "name": "Figura sombria",
+  "look": "silhueta escura de vestido longo, caminha até a rainha-formiga"
+ },
+ {
+  "name": "Garras sombrias",
+  "look": "mãos e garras escuras saindo da sombra"
+ },
+ {
+  "name": "Mãos na cela",
+  "look": "mãos e braço saindo de grades de cela escura"
+ },
+ {
+  "name": "Padeiro",
+  "look": "chapéu branco de cozinheiro, avental, atrás de balcão de padaria"
+ },
+ {
+  "name": "Pessoa de bota",
+  "look": "botas escuras de salto com fivela, calça escura, de pé na rua"
+ },
+ {
+  "name": "Vendedor",
+  "look": "capuz pontudo, rosto branco, sorriso, segura frasco de poção"
+ },
+ {
+  "name": "Figura de casaco escuro",
+  "look": "casaco escuro, cabelo castanho penteado para trás, de pé na sala"
+ },
+ {
+  "name": "Figura de cabelo espetado",
+  "look": "cabelo escuro espetado com brilho, envolto em luz branca"
+ },
+ {
+  "name": "Pretendente",
+  "look": "homem de chapéu-coco, bigode fino, sorriso largo, segura buquê de flores"
+ },
+ {
+  "name": "Espectador da esquerda",
+  "look": "figura escura de costas, mão grande em primeiro plano, fala com desdém"
+ },
+ {
+  "name": "Espectador da direita",
+  "look": "figura escura de casaco, mão na cabeça, fala com ironia"
+ },
+ {
+  "name": "Perseguidores",
+  "look": "silhuetas escuras encapuzadas com olhos brilhantes, na rua"
+ },
+ {
+  "name": "Gigante",
+  "look": "pé enorme de bota escura pisando os prédios; corpo não visível"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão segurando objeto escuro retangular, sem rosto visível"
+ },
+ {
+  "name": "Massa escura",
+  "look": "massa escura longa varrendo o quadro, forma indefinida"
+ },
+ {
+  "name": "Ajoelhada",
+  "look": "figura ajoelhada de chapéu escuro e casaco volumoso, segura buquê de flores"
+ },
+ {
+  "name": "Mensageiro",
+  "look": "chapéu de aba, sobretudo cinza, carta na mão, corre até a porta"
+ },
+ {
+  "name": "Médico",
+  "look": "máscara de bico de pássaro, cartola, sobretudo com botões"
+ },
+ {
+  "name": "Colega",
+  "look": "cabelo claro preso, uniforme formal, de perfil"
+ },
+ {
+  "name": "Soldada de losango",
+  "look": "chapéu alto cilíndrico com losango, uniforme cinza, boca aberta gritando"
+ },
+ {
+  "name": "Soldado da frente",
+  "look": "chapéu alto cilíndrico liso, uniforme cinza, rosto semioculto pelo chapéu"
+ },
+ {
+  "name": "Guarda da Prisão das Rosas",
+  "look": "cabelo preso em coque, ombros nus, rifle, rosas ao redor"
+ },
+ {
+  "name": "Guarda do meio",
+  "look": "capacete cilíndrico com visor escuro, uniforme cinza, cabelo escuro, fala com '……'"
+ },
+ {
+  "name": "Mão enfaixada",
+  "look": "mão com bandagem, espalmada sobre a mesa, dono não visível"
+ },
+ {
+  "name": "Conselheiro",
+  "look": "cabelo grisalho, colete escuro, de pé ao lado da mesa"
+ },
+ {
+  "name": "Moça de rabo de cavalo",
+  "look": "cabelo castanho preso em rabo de cavalo, blusa cinza, expressão preocupada"
+ },
+ {
+  "name": "Guarda-líder",
+  "look": "guarda que grita com braço erguido, cobra círculos mágicos de Isabella"
+ },
+ {
+  "name": "Figura de colarinho",
+  "look": "colarinho listrado, parte do corpo na borda esquerda, cortada, fala sobre vampiros"
+ },
+ {
+  "name": "Funcionário de perfil",
+  "look": "de perfil na borda esquerda, uniforme cinza, reclama de horas extras"
+ },
+ {
+  "name": "Operário de camisa branca",
+  "look": "camisa branca, boné, carrega entulho, de costas"
+ },
+ {
+  "name": "Operário de chapéu",
+  "look": "chapéu escuro, casaco escuro, sentado com entulho"
+ },
+ {
+  "name": "Velho de óculos",
+  "look": "cabelo grisalho, óculos redondos de aro fino, roupa escura"
+ },
+ {
+  "name": "Dama de chapéu",
+  "look": "cartola com emblema, cabelo claro ondulado preso, luvas escuras, casaco claro"
+ },
+ {
+  "name": "Prisioneira de faixas",
+  "look": "cabelo ruivo comprido, faixas na cabeça e braços, boca aberta falando"
+ },
+ {
+  "name": "Prisioneira de grade",
+  "look": "cabelo ruivo, faixas no rosto e braço, mão nas grades"
+ },
+ {
+  "name": "Figura de calças",
+  "look": "de costas, calças claras amplas, botas escuras, corredor de celas"
+ },
+ {
+  "name": "Loira",
+  "look": "cabelo loiro solto e comprido, rosto preocupado, gota de suor"
+ },
+ {
+  "name": "Prisioneira da cela",
+  "look": "cabelo claro comprido, atrás das grades, cara brava"
+ },
+ {
+  "name": "Soldada da franja",
+  "look": "cabelo castanho na altura do queixo, franja reta, uniforme cinza"
+ },
+ {
+  "name": "Prisioneira de faixa",
+  "look": "cabelo claro comprido, faixa na cabeça, pijama listrado, gritando"
+ },
+ {
+  "name": "Prisioneira da cara franzida",
+  "look": "cabelo castanho comprido, faixa na cabeça, pijama listrado, gritando"
+ },
+ {
+  "name": "Acompanhante",
+  "look": "mulher de vestido longo escuro, chapéu, cabelo preso"
+ },
+ {
+  "name": "Guarda de capacete",
+  "look": "capacete branco cilíndrico, uniforme cinza, rifle na mão"
+ },
+ {
+  "name": "Prisioneira de chifres",
+  "look": "cabelo rosado longo e ondulado, chifres, presas, atrás das grades"
+ },
+ {
+  "name": "Criatura-réptil",
+  "look": "cabeça escamosa cinza, olho brilhante, boca entreaberta"
+ },
+ {
+  "name": "Presilha",
+  "look": "cabelo escuro, de costas ou agachada, pede socorro, braços cruzados"
+ },
+ {
+  "name": "Garoto de camiseta listrada",
+  "look": "cabelo castanho espetado, camiseta listrada, shorts, em pé ao lado da árvore"
+ },
+ {
+  "name": "Espiã encapuzada",
+  "look": "capuz escuro com gola de pelo, espia de lado, rosto parcialmente oculto"
+ },
+ {
+  "name": "Cartola",
+  "look": "cartola, tapa-olho, casaco longo escuro, gravata"
+ },
+ {
+  "name": "Oficial loira",
+  "look": "cabelo loiro preso em rabo de cavalo, uniforme escuro de gola alta"
+ },
+ {
+  "name": "Prisioneira listrada",
+  "look": "cabelo castanho longo ondulado, faixa escura nos olhos, camiseta listrada"
+ },
+ {
+  "name": "Presa enfaixada",
+  "look": "cabeça e braços enfaixados, roupa clara"
+ },
+ {
+  "name": "Isabella",
+  "look": "chefe do Setor Um, cartola, uniforme escuro, sorriso confiante"
+ },
+ {
+  "name": "Guardas do pátio",
+  "look": "chapéus cilíndricos, uniformes escuros, em grupo ao fundo"
+ },
+ {
+  "name": "Silhuetas do fundo",
+  "look": "silhuetas escuras correndo, sem traços visíveis"
+ },
+ {
+  "name": "Hailey",
+  "look": "figura pequena atrás das grades, canto inferior esquerdo, sem traços visíveis"
+ },
+ {
+  "name": "Guarda da grade",
+  "look": "capacete quadrado escuro, uniforme escuro, bate nas grades"
+ },
+ {
+  "name": "Figura sob o cobertor",
+  "look": "deitada sob cobertor, só a parte de cima visível, aparência não identificada"
+ },
+ {
+  "name": "Mão do cartão",
+  "look": "mão com manga escura segurando cartão com emblema de gato e lua"
+ },
+ {
+  "name": "Prisioneira rosada",
+  "look": "cabelo rosado ondulado, faixa escura nos olhos, chifres, braço estendido"
+ },
+ {
+  "name": "Oficial",
+  "look": "Cabelo ondulado castanho-avermelhado preso, casaco abotoado, lenço no pescoço, grita ordens"
+ },
+ {
+  "name": "Prisioneira de orelhas longas",
+  "look": "Orelhas longas e claras, cabelo claro, pijama listrado, mãos juntas"
+ },
+ {
+  "name": "Figura sorridente",
+  "look": "Colarinho com botões, sorriso largo, dentes pontudos na borda esquerda"
+ },
+ {
+  "name": "Figuras de costas",
+  "look": "Torsos de costas, pijama listrado, parede de tijolos ao fundo"
+ },
+ {
+  "name": "Haley",
+  "look": "irmã espadachina, quepe, sabre na mão, de costas"
+ },
+ {
+  "name": "Guarda-cartola",
+  "look": "cartola, sorridente, anuncia liberdade ao sair do portão"
+ },
+ {
+  "name": "Guarda-visor",
+  "look": "capacete cilíndrico com visor escuro, uniforme cinza, de pé ao lado de Haley"
+ },
+ {
+  "name": "Guarda-coldre",
+  "look": "guarda de costas ao centro da praça, com coldre"
+ },
+ {
+  "name": "Guarda-capacete",
+  "look": "capacete branco cilíndrico, uniforme cinza, de costas, na cela"
+ },
+ {
+  "name": "Criatura-chifres",
+  "look": "criatura escura com chifres curvos, olho brilhante, avança com golpe rápido"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro comprido e ondulado, à direita, fala no alto da página"
+ },
+ {
+  "name": "Figura de perfil",
+  "look": "cabelo castanho curto, de perfil, roupa escura, mão no rosto, perto de grades"
+ },
+ {
+  "name": "Soldados em corrida",
+  "look": "chapéus cilíndricos brancos, uniformes cinza, correndo em grupo"
+ },
+ {
+  "name": "Colega de cabelo longo",
+  "look": "cabelo castanho-avermelhado comprido, uniforme escuro"
+ },
+ {
+  "name": "Dama de cartola",
+  "look": "cartola com emblema de rosa, casaco escuro"
+ },
+ {
+  "name": "Cavaleiro de elmo",
+  "look": "elmo branco cilíndrico, conduz cavalo da carruagem"
+ },
+ {
+  "name": "Jenny",
+  "look": "irmã espadachina, cartola, cabelo cacheado, sabre, expressão séria"
+ },
+ {
+  "name": "Floraa",
+  "look": "nome citado como peão; aparência ainda não mostrada nestas páginas"
+ },
+ {
+  "name": "Criatura de dentes",
+  "look": "criatura com boca escancarada cheia de dentes, rugindo"
+ },
+ {
+  "name": "Tiga",
+  "look": "elmo de lagarto, braço erguido, boca escancarada"
+ },
+ {
+  "name": "Corredora",
+  "look": "Cabelo claro comprido esvoaçando, braço estendido, correndo de costas"
+ },
+ {
+  "name": "Fugitivo",
+  "look": "chapéu cilíndrico, uniforme cinza, corre em pânico, em segundo plano"
+ },
+ {
+  "name": "Criatura-braço",
+  "look": "braço com garras que surge ao lado da Prisioneira"
+ },
+ {
+  "name": "Soldado listrado",
+  "look": "armadura de listras, alto, borda esquerda da sala"
+ },
+ {
+  "name": "Chapéu branco",
+  "look": "chapéu cilíndrico branco, cabelo escuro, canto inferior direito"
+ },
+ {
+  "name": "Atirador",
+  "look": "casaco escuro, rifle erguido, borda esquerda"
+ },
+ {
+  "name": "Oficial de cabelo claro",
+  "look": "cabelo claro preso, uniforme escuro com cinto, mão na cabeça"
+ },
+ {
+  "name": "Ero",
+  "look": "harpia com cabeça de pássaro, asas claras, segura caveira"
+ },
+ {
+  "name": "Marmota",
+  "look": "marmota gorda sentada sobre terra, braços erguidos, sob lua cheia"
+ },
+ {
+  "name": "Prisioneira franzida",
+  "look": "cabelo castanho comprido, faixa na cabeça, pijama listrado, gritando"
+ },
+ {
+  "name": "Prisioneira de listras",
+  "look": "cabelo castanho ondulado comprido, camiseta listrada, braço erguido na borda"
+ },
+ {
+  "name": "Prisioneira cacheada",
+  "look": "cabelo castanho ondulado, camiseta listrada, boca aberta falando"
+ },
+ {
+  "name": "Prisioneira ruiva",
+  "look": "cabelo ruivo ondulado, olhos semicerrados, fala na borda inferior direita"
+ },
+ {
+  "name": "Chifruda",
+  "look": "cabelo rosado ondulado, chifres curvos, orelhas pontudas, camiseta listrada, lendo livro"
+ },
+ {
+  "name": "Figura irritada",
+  "look": "cabelo castanho escuro, sobrancelhas franzidas, expressão raivosa; identidade incerta"
+ },
+ {
+  "name": "Guarda da esquerda",
+  "look": "silhueta de costas, uniforme escuro, rifle, atrás das grades"
+ },
+ {
+  "name": "Atirador de chapéu de aba",
+  "look": "chapéu de aba escuro, casaco escuro, arma longa na mão"
+ },
+ {
+  "name": "Atirador da direita",
+  "look": "chapéu cilíndrico escuro, casaco escuro, arma apontada"
+ },
+ {
+  "name": "Mão estendida",
+  "look": "mão pálida de dedos abertos saindo de manga escura"
+ },
+ {
+  "name": "Atacantes",
+  "look": "homens de chapéu escuro caindo em volta de Mary"
+ },
+ {
+  "name": "Prisioneira de serpentes",
+  "look": "cabelo com cobras, camiseta listrada, olhos arregalados, boca aberta"
+ },
+ {
+  "name": "Prisioneiras",
+  "look": "grupo de mulheres de pijama ou camiseta listrada, atrás da protagonista"
+ },
+ {
+  "name": "Fotógrafo",
+  "look": "uniforme escuro, sobretudo comprido, câmera antiga nas mãos"
+ },
+ {
+  "name": "Ophelia",
+  "look": "cabelo cacheado claro, camiseta listrada, suada, presas e orelhas pontudas"
+ },
+ {
+  "name": "Tigresa",
+  "look": "rosto com listras de tigre, cabelo castanho volumoso, camiseta listrada com caracteres chineses"
+ },
+ {
+  "name": "Cativa",
+  "look": "mulher amarrada com cordas, cauda longa de serpente, dentes à mostra"
+ },
+ {
+  "name": "Captor",
+  "look": "braço blindado com manopla, segura o queixo da prisioneira"
+ },
+ {
+  "name": "Figura do penhasco",
+  "look": "sentada na beira do penhasco, segura cauda de serpente"
+ },
+ {
+  "name": "Elfo",
+  "look": "orelhas pontudas, cabelo escuro, boca aberta gritando, suor"
+ },
+ {
+  "name": "Guerreira",
+  "look": "elmo espinhoso vermelho-escuro, ombreiras, segura cauda de serpente"
+ },
+ {
+  "name": "Criatura-serpente",
+  "look": "serpente gigante de corpo escamoso enrolado, cabeça fora do quadro"
+ },
+ {
+  "name": "Galo",
+  "look": "galo grande de penas brancas, crista vermelha, asas abertas"
+ },
+ {
+  "name": "Elmo-vermelho",
+  "look": "elmo vermelho com chifres, olha para cima ao lado do galo"
+ },
+ {
+  "name": "Cacheado",
+  "look": "cabelo cacheado claro, sorriso largo, dedo erguido, camiseta listrada"
+ },
+ {
+  "name": "Coroado",
+  "look": "chapéu escuro pontudo com ornamento, sorriso largo, camiseta listrada"
+ },
+ {
+  "name": "Criatura-penas",
+  "look": "criatura enorme de penas cinza-claras, corpo parcial, sai pelo buraco"
+ },
+ {
+  "name": "Figura-caixa",
+  "look": "figura pálida de roupa clara, ao lado de caixote, fundo do túnel"
+ },
+ {
+  "name": "Criatura-caída",
+  "look": "criatura escura de corpo arredondado, cai no chão com fumaça"
+ },
+ {
+  "name": "Figura listrada",
+  "look": "pijama listrado, agarrada por criatura de muitos olhos"
+ },
+ {
+  "name": "Caído",
+  "look": "chapéu cilíndrico preto, casaco escuro, deitado de bruços no chão"
+ },
+ {
+  "name": "Loira cacheada",
+  "look": "cabelo loiro cacheado, camisa listrada, boca aberta gritando, aponta"
+ },
+ {
+  "name": "Mo Yi",
+  "look": "guarda de capacete cilíndrico com viseira, braço erguido; Chefe do Setor Quatro"
+ },
+ {
+  "name": "Austin",
+  "look": "aparência não mostrada; chamado de Lorde Austin"
+ },
+ {
+  "name": "Philippa",
+  "look": "nome citado; aparência não mostrada nestas páginas; ajoelhou-se diante de Austin"
+ },
+ {
+  "name": "Figura de cabelo ondulado",
+  "look": "cabelo ondulado claro, só o topo visível, parte de baixo do quadro"
+ },
+ {
+  "name": "Figura da direita",
+  "look": "cabelo ondulado claro, borda direita da cena, não identificada"
+ },
+ {
+  "name": "Acorrentada",
+  "look": "cabelo castanho-avermelhado comprido, correntes nos braços, de costas"
+ },
+ {
+  "name": "Sorridente",
+  "look": "sorriso largo com dentes pontudos, cabelo cacheado escuro, camiseta listrada, na borda esquerda"
+ },
+ {
+  "name": "Orelhas longas",
+  "look": "orelhas longas e claras, cabelo claro, pijama listrado, mãos juntas"
+ },
+ {
+  "name": "Cacheada",
+  "look": "cabelo castanho ondulado tipo juba, orelhas, camiseta listrada, braços cruzados"
+ },
+ {
+  "name": "Trio gritando",
+  "look": "três figuras de camisa listrada, bocas abertas, gritando"
+ },
+ {
+  "name": "Senhora do avental",
+  "look": "cabelo cacheado escuro, faixa na cabeça, avental, boca franzida"
+ },
+ {
+  "name": "Garoto de uniforme",
+  "look": "cabelo castanho curto, uniforme escuro com peitoral, punhos cerrados, grita"
+ },
+ {
+  "name": "Figura de presas",
+  "look": "cabelo castanho curto bagunçado, presas, olhos arregalados, close no rosto"
+ },
+ {
+  "name": "Yena",
+  "look": "ghoul com chifres e presas, cabelo escuro, olhar fixo; ficha #0441, perigo C-"
+ },
+ {
+  "name": "Figura de capa clara",
+  "look": "cabelo claro comprido, capa clara, de costas ou de lado, parte inferior do quadro"
+ },
+ {
+  "name": "Ruiva de antenas",
+  "look": "cabelo castanho-avermelhado curto, enfeites tipo antenas na testa, sorriso de canto, roupa escura com faixas"
+ },
+ {
+  "name": "Dama de tiara",
+  "look": "cabelo claro longo, tiara com joia na testa, vestido de ombros caídos"
+ },
+ {
+  "name": "Figura de armadura e cauda",
+  "look": "armadura escura, chifres e cauda, no alto do quadro"
+ },
+ {
+  "name": "Ruiva de pinta",
+  "look": "cabelo castanho-avermelhado ondulado, pinta no rosto, colarinho listrado, expressão séria"
+ },
+ {
+  "name": "Braço com marcas",
+  "look": "braço escuro com runas brilhantes saindo de redemoinho"
+ },
+ {
+  "name": "Prisioneira ruiva de faixas",
+  "look": "cabelo ruivo comprido, faixas na cabeça e braços, boca aberta falando"
+ },
+ {
+  "name": "Capa",
+  "look": "capa escura e botas altas, saltando no ar, multidão ao redor; identidade incerta"
+ },
+ {
+  "name": "Trançada",
+  "look": "cabelo castanho-avermelhado comprido e ondulado, trança lateral, sorriso de canto, pinta sob o olho"
+ },
+ {
+  "name": "Cartolas",
+  "look": "silhuetas com cartola alta, casacos longos, contorno brilhante, fileira ao fundo"
+ },
+ {
+  "name": "Daley",
+  "look": "chibi sorridente de cabelo escuro com chapéu, no mapa"
+ },
+ {
+  "name": "Oficial ruiva",
+  "look": "cabelo ondulado castanho-avermelhado solto, casaco escuro abotoado, colarinho alto, pinta sob o olho"
+ },
+ {
+  "name": "Criatura-mão",
+  "look": "mão escura gigante com garras longas e anéis brancos brilhantes"
+ },
+ {
+  "name": "Franjuda",
+  "look": "cabelo castanho liso comprido com franja, camiseta listrada"
+ },
+ {
+  "name": "Figura-armadura",
+  "look": "armadura escura de placas com detalhes brancos, avança contra a Chifruda"
+ },
+ {
+  "name": "Dama de vestido",
+  "look": "cabelo castanho cacheado com flor branca, óculos, vestido longo escuro, luvas"
+ },
+ {
+  "name": "Vice-diretor",
+  "look": "casaco cinza com punhos de dois botões, de costas, aparece só o braço"
+ },
+ {
+  "name": "Figura caída",
+  "look": "casaco escuro, chapéu branco no chão, braço erguido, cai de costas"
+ },
+ {
+  "name": "Mãe",
+  "look": "Cabelo castanho-avermelhado ondulado, camiseta listrada, mão na cabeça da filha"
+ },
+ {
+  "name": "Wendigo",
+  "look": "criatura gigante encantada, chifres retorcidos, corpo envolto em faixas"
+ },
+ {
+  "name": "Jin Jia",
+  "look": "De costas, cabelo preso em coque, peles, armadura nos braços, segura machado ou lança"
+ },
+ {
+  "name": "Aya",
+  "look": "cabelo castanho ondulado com grampo, camiseta listrada, casaco escuro; provavelmente a Loira da ficha"
+ },
+ {
+  "name": "Casaco",
+  "look": "Casaco escuro, cabelo castanho penteado para trás, só o ombro visível"
+ },
+ {
+  "name": "Listras",
+  "look": "Cabelo castanho-avermelhado ondulado, mecha no rosto, camiseta listrada, ombro à mostra"
+ },
+ {
+  "name": "Espiã",
+  "look": "Cabelo castanho curto, rosto suado espiando de trás de porta"
+ },
+ {
+  "name": "Topo",
+  "look": "Cabelo escuro, rosto cortado pela borda superior do quadro"
+ },
+ {
+  "name": "Filha",
+  "look": "Cabelo loiro em marias-chiquinhas com franja, expressão irritada, segura coelho de pelúcia"
+ },
+ {
+  "name": "Capa-cinza",
+  "look": "capa cinza com capuz, rosto na sombra, aponta para o barril"
+ },
+ {
+  "name": "Subordinado",
+  "look": "cortado no topo da página, roupa escura, grita chamando o chefe"
+ },
+ {
+  "name": "Long",
+  "look": "Homem de terno; preso por Aiden, registrado no documento ilustrado"
+ },
+ {
+  "name": "Doug",
+  "look": "diretor financeiro de Silver City, anuncia corte de custos com caneta e papel"
+ },
+ {
+  "name": "Soldado",
+  "look": "uniforme, de costas, aponta papel à multidão no portão"
+ },
+ {
+  "name": "Presa",
+  "look": "grita 'Ha!' entre silhuetas, de lado"
+ }
+]

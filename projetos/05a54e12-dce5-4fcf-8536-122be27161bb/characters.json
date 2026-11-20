@@ -1,0 +1,70 @@
+[
+ {
+  "name": "Jiang Chen",
+  "look": "Protagonista de 23 anos, cabelo castanho espetado, moletom vermelho, formado há um ano sem emprego"
+ },
+ {
+  "name": "Sun Jiao",
+  "look": "Loira de jaqueta preta, vacinada contra o T-vírus, mochila e equipamento de deserto"
+ },
+ {
+  "name": "Montanha de Carne",
+  "look": "Monstro gigante rosado, corcunda, coberto de tentáculos e dentes; criatura de batalha"
+ },
+ {
+  "name": "Hu Lei",
+  "look": "Homem de cabelo crespo, suado e assustado, de roupas simples de refugiado"
+ },
+ {
+  "name": "Pintinho maquinista",
+  "look": "Pintinho amarelo entediado e grosseiro, maquinista de trem verde"
+ },
+ {
+  "name": "Yao-Yao Jiayu",
+  "look": "Garota de cabelo prateado e olhos verdes, tímida, talentosa em computação; usa manto verde"
+ },
+ {
+  "name": "Moicano",
+  "look": "Moicano espetado, óculos escuros, ombreiras com espinhos, roupa camuflada"
+ },
+ {
+  "name": "Atirador de fundo",
+  "look": "Atirador ao fundo com rifle, cabelo claro, visto parcialmente"
+ },
+ {
+  "name": "Zumbis",
+  "look": "corpos cinzentos, deformados e cambaleantes"
+ },
+ {
+  "name": "Atiradora de shorts",
+  "look": "mulher de shorts curtos e jaqueta, atirando de cima de um veículo"
+ },
+ {
+  "name": "Zumbi",
+  "look": "corpo cinzento deformado, olhos brancos brilhantes, dentes expostos, garras e faca"
+ },
+ {
+  "name": "Gerente",
+  "look": "homem gordo, barba no queixo, terno escuro, suado"
+ },
+ {
+  "name": "Lao Li",
+  "look": "homem de óculos, cabelo penteado para trás, terno escuro"
+ },
+ {
+  "name": "Liu",
+  "look": "Homem gordo de terno escuro, sorriso malicioso, bigode fino, gerente da loja de ouro"
+ },
+ {
+  "name": "Atendente",
+  "look": "Mulher de cabelo curto castanho, uniforme de trabalho, atendendo no balcão."
+ },
+ {
+  "name": "Motorista",
+  "look": "Homem de meia-idade, cabelo curto, dirige táxi, veste camisa simples."
+ },
+ {
+  "name": "Vendedora",
+  "look": "Mulher de cabelo castanho curto, camisa social clara e saia escura."
+ }
+]

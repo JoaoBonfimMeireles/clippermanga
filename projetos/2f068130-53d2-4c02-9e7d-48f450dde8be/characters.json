@@ -1,0 +1,2170 @@
+[
+ {
+  "name": "Moça de franja",
+  "look": "cabelo castanho escuro longo, franja reta, rosto suado e preocupado"
+ },
+ {
+  "name": "Careca",
+  "look": "Wang Joo-yeol, líder da Força-Tarefa de Vilões; careca de rosto marcado, jaqueta escura, sorriso tenso"
+ },
+ {
+  "name": "Soldado mascarado",
+  "look": "máscara escura cobrindo rosto, olhos brancos, roupa preta tática, suando"
+ },
+ {
+  "name": "Mascarado sorridente",
+  "look": "Máscara cinza de cabeça careca, sorriso largo, olhos arregalados, arma no ombro"
+ },
+ {
+  "name": "Mão enluvada",
+  "look": "Luva com padrão circular, segurando arma; dono fora do quadro"
+ },
+ {
+  "name": "Funcionários",
+  "look": "pessoas de escritório, camisas sociais, correndo ou sentadas"
+ },
+ {
+  "name": "Capanga 1",
+  "look": "homem de colete tático, cabelo castanho, punho cerrado, gritando"
+ },
+ {
+  "name": "Capanga 2",
+  "look": "homem de roupa escura em pose de chute, cabelo castanho"
+ },
+ {
+  "name": "Vilão encapuzado",
+  "look": "figura alta de manto escuro, sem rosto visível, em meio à fumaça"
+ },
+ {
+  "name": "Joon-ho",
+  "look": "protagonista, cabelo castanho escuro curto, sorriso de canto, camisa clara"
+ },
+ {
+  "name": "Mascarados",
+  "look": "homens de balaclava cinza com fuzis, grupo na porta"
+ },
+ {
+  "name": "Mascarado da frente",
+  "look": "balaclava cinza, dentes cerrados, grita com fuzil na mão"
+ },
+ {
+  "name": "Óculos",
+  "look": "cabelo escuro curto, óculos de armação fina, camisa clara, suado"
+ },
+ {
+  "name": "Homens caídos",
+  "look": "homens de roupa escura caídos no chão, ensanguentados"
+ },
+ {
+  "name": "Soldado 2",
+  "look": "máscara escura com olho branco, roupa preta tática, caído no chão"
+ },
+ {
+  "name": "Chefe",
+  "look": "cabelo castanho longo penteado para trás, sorriso largo, barba rala, regata"
+ },
+ {
+  "name": "Espadachim",
+  "look": "sobretudo longo escuro, cabelo espetado, espada em riste"
+ },
+ {
+  "name": "Figura sorridente",
+  "look": "jaqueta escura, sorriso largo, olhos arregalados, lágrimas, cabelo escuro"
+ },
+ {
+  "name": "Bloodkin",
+  "look": "Antigo demônio de sangue, terno escuro, sorriso ameaçador, cercado de corpos"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "cabelo escuro bagunçado, visto de costas, roupa escura, na base do quadro"
+ },
+ {
+  "name": "Figura caída",
+  "look": "caída no chão molhado, cabeça com padrão escuro"
+ },
+ {
+  "name": "Mão fechada",
+  "look": "punho cerrado e suado, dono fora do quadro"
+ },
+ {
+  "name": "Criatura",
+  "look": "boca enorme e escura com língua, engole o protagonista"
+ },
+ {
+  "name": "Pessoas à mesa",
+  "look": "pessoas sentadas à mesa, só braços e tronco visíveis"
+ },
+ {
+  "name": "Tapa-olho",
+  "look": "homem barbudo, tapa-olho preto, rosto e boca ensanguentados"
+ },
+ {
+  "name": "Moça ondulada",
+  "look": "cabelo castanho-avermelhado ondulado até os ombros, olhos arregalados"
+ },
+ {
+  "name": "Fazendeira",
+  "look": "chapéu de aba larga, avental, cabelo castanho ondulado, expressão nervosa"
+ },
+ {
+  "name": "Fazendeiro",
+  "look": "chapéu de aba larga, avental, barba por fazer, olhos arregalados"
+ },
+ {
+  "name": "Javali-B",
+  "look": "javali enorme, presas curvas, pelo escuro, sangue no focinho"
+ },
+ {
+  "name": "Sorridente",
+  "look": "cabelo escuro, sorriso largo, olhos arregalados, jaqueta escura"
+ },
+ {
+  "name": "Javali monstruoso",
+  "look": "javali enorme de pelo escuro, presas curvas, olhos brancos brilhantes"
+ },
+ {
+  "name": "Caído mascarado",
+  "look": "balaclava escura, roupa tática preta, caído no chão, grunhindo"
+ },
+ {
+  "name": "Figura de bota",
+  "look": "calça escura, botas de cadarço, pisa no chão molhado"
+ },
+ {
+  "name": "Funcionário",
+  "look": "homem de terno escuro, camisa social e gravata, cabelo castanho penteado para trás, mãos erguidas, rosto aterrorizado"
+ },
+ {
+  "name": "Mascarado com fuzil",
+  "look": "balaclava cinza, dentes cerrados, fuzil na mão"
+ },
+ {
+  "name": "Presidente",
+  "look": "homem de terno e gravata, cabelo castanho penteado para trás, olhos arregalados, boca aberta gritando"
+ },
+ {
+  "name": "Da-hyun",
+  "look": "cabelo grisalho penteado para trás, óculos de armação fina, rosto enrugado e sério, terno escuro"
+ },
+ {
+  "name": "Moça de cabelo longo",
+  "look": "cabelo castanho escuro longo com franja, rosto escondido, chorando de costas"
+ },
+ {
+  "name": "Figura suada",
+  "look": "cabelo escuro comprido, rosto suado, dentes à mostra, grita e aponta"
+ },
+ {
+  "name": "Fugitivo",
+  "look": "roupa escura, correndo para fora da porta"
+ },
+ {
+  "name": "Dahyun",
+  "look": "rabo de cavalo alto, franja, jaqueta preta curta, camisa branca, crachá, bandeira ao fundo"
+ },
+ {
+  "name": "Socorristas",
+  "look": "homens de capacete branco e camisa clara carregando macas com feridos"
+ },
+ {
+  "name": "Moça do rabo de cavalo",
+  "look": "cabelo castanho-claro preso em rabo de cavalo, blusa clara, segura espelho redondo, chocada"
+ },
+ {
+  "name": "Agente",
+  "look": "fala de balão sem rosto visível; cita o Escritório de Defesa Nacional"
+ },
+ {
+  "name": "Moça de moletom",
+  "look": "moletom rosa claro, cabelo longo, mão levantada, fala sobre o irmão"
+ },
+ {
+  "name": "Moça do livro",
+  "look": "cabelo castanho-avermelhado na altura dos ombros, franja, moletom cinza, lendo livro de prova"
+ },
+ {
+  "name": "Mascarado de boné",
+  "look": "boné, máscara de gás escura, lenço no pescoço, faca na mão"
+ },
+ {
+  "name": "Mascarado de máscara fendida",
+  "look": "máscara clara com fendas, cabelo claro espetado, casaco aberto"
+ },
+ {
+  "name": "Brutamontes",
+  "look": "colete tático, camiseta escura, cabelo penteado para trás, língua de fora"
+ },
+ {
+  "name": "Choi Yoonhee",
+  "look": "nome chamado pela Moça de franja; aparência não vista"
+ },
+ {
+  "name": "Moça de cabelo curto",
+  "look": "cabelo castanho ondulado até o queixo, franja, sorriso sapeca, rosto corado"
+ },
+ {
+  "name": "Olho brilhante",
+  "look": "close-up de olho branco brilhante, cabelo escuro, sombra"
+ },
+ {
+  "name": "Figura chorando",
+  "look": "perfil escuro, lágrima escorrendo, cabelo escuro, fora de foco"
+ },
+ {
+  "name": "Pessoa de short",
+  "look": "pernas, short escuro, camisa branca, mão no quadril, rosto fora do quadro"
+ },
+ {
+  "name": "Candidatos",
+  "look": "grupo de pessoas com mochilas e roupas comuns, caminhando"
+ },
+ {
+  "name": "Lutador",
+  "look": "mão de manga escura em soco e olho fixo, linhas de velocidade"
+ },
+ {
+  "name": "Atacante",
+  "look": "cabelo escuro, corpo em queda, braço estendido, chama no cabelo"
+ },
+ {
+  "name": "Anunciante",
+  "look": "voz fora do quadro; balão grande sem rosto visível"
+ },
+ {
+  "name": "Jung",
+  "look": "vice-diretor, chamado pelo sobrenome Jung; aparece só na fala da página 161"
+ },
+ {
+  "name": "Hae-chul",
+  "look": "homem de terno escuro, cabelo castanho penteado para trás, sorriso debochado, crachá no pescoço, segura bastões"
+ },
+ {
+  "name": "Examinador",
+  "look": "camisa social branca, calça escura, cabelo castanho, braço estendido"
+ },
+ {
+  "name": "Gigante de armadura",
+  "look": "armadura escura de capacete, visor com olhos brancos, muito grande"
+ },
+ {
+  "name": "Vulto",
+  "look": "silhueta escura em movimento, sem rosto nítido, cena ambígua"
+ },
+ {
+  "name": "Sardento",
+  "look": "rosto sardento, sorriso largo, olhos arregalados, jaqueta escura"
+ },
+ {
+  "name": "Cabelo espetado",
+  "look": "cabelo claro espetado, visto de lado, mão no chão, roupa escura, sombra no rosto"
+ },
+ {
+  "name": "Moça da coelhinha",
+  "look": "cabelo castanho-avermelhado comprido, orelhas de renda, laço, vestido escuro, cicatriz no rosto, cruz no pescoço"
+ },
+ {
+  "name": "Moça do vestido",
+  "look": "cabelo castanho-avermelhado comprido, vestido escuro, em pé ao fundo"
+ },
+ {
+  "name": "Mão de manga",
+  "look": "mão de manga escura segurando pescoço ou socando; dono fora do quadro"
+ },
+ {
+  "name": "Mão cerrada",
+  "look": "mão cerrada saindo de manga de terno escuro"
+ },
+ {
+  "name": "Pessoa de terno",
+  "look": "homem de terno escuro, cabelo escuro, segura celular perto da janela"
+ },
+ {
+  "name": "Joo-ho",
+  "look": "diretor do escritório, óculos, olhar sério; fixa prazo de 72 horas"
+ },
+ {
+  "name": "Wang Joo-yeol",
+  "look": "líder de equipe; aparência não vista, citado em balão"
+ },
+ {
+  "name": "Vulto de terno",
+  "look": "colarinho branco e gravata escura, sem rosto visível"
+ },
+ {
+  "name": "Voz sombria",
+  "look": "balão de grito em fundo escuro; autor não visível"
+ },
+ {
+  "name": "Pessoa fora do quadro",
+  "look": "mão pálida pressionando a cabeça do Joon-ho; dono fora do quadro"
+ },
+ {
+  "name": "Figura de cabeça grande",
+  "look": "cabeça grande cinza em primeiro plano, sem rosto nítido"
+ },
+ {
+  "name": "Ju-yeol",
+  "look": "cabelo castanho escuro arrepiado, terno escuro, olhar sério"
+ },
+ {
+  "name": "Moça do coque",
+  "look": "cabelo castanho preso em coque, blusa clara, nervosa, gesticula"
+ },
+ {
+  "name": "Figura de cabelo espetado",
+  "look": "máscara escura com fendas, olho branco brilhante, cabelo espetado"
+ },
+ {
+  "name": "Garoto da mochila",
+  "look": "cabelo claro espetado, mochila de urso, camisa clara, calça escura, de costas"
+ },
+ {
+  "name": "Moça avermelhada",
+  "look": "cabelo castanho-avermelhado na altura dos ombros, terno escuro, braços cruzados"
+ },
+ {
+  "name": "Moça de crachá",
+  "look": "cabelo castanho comprido solto, crachá no pescoço, blazer escuro, mãos juntas"
+ },
+ {
+  "name": "Vilão de capuz",
+  "look": "moletom com capuz cinza, lâmina longa na mão, pose de ataque"
+ },
+ {
+  "name": "Figura em queda",
+  "look": "figura de roupa escura voando no alto, sem rosto nítido, após soco"
+ },
+ {
+  "name": "Criança",
+  "look": "cabelo rosa-claro curto, moletom com cordões, assustada, segurada por Da-hyun"
+ },
+ {
+  "name": "Figura atingida",
+  "look": "cabelo escuro, rosto atingido por soco, cabeça virada"
+ },
+ {
+  "name": "Figura fora do quadro",
+  "look": "balão de fala sem rosto visível, diz Você tem razão"
+ },
+ {
+  "name": "Procurado",
+  "look": "homem de cabelo castanho curto espetado, cicatriz sob o olho, camiseta cinza, expressão furiosa"
+ },
+ {
+  "name": "Mão pálida",
+  "look": "mão pálida de dedos longos, dono fora do quadro"
+ },
+ {
+  "name": "Voz fora do quadro",
+  "look": "fala de fora do quadro em balão preto ou dentado, sem rosto visível"
+ },
+ {
+  "name": "Figura de casaco",
+  "look": "casaco escuro comprido, cabelo escuro, de costas ou encapuzada, energia nas mãos"
+ },
+ {
+  "name": "Ferido",
+  "look": "cabelo castanho escuro bagunçado, rosto arranhado e sangrando, jaqueta escura, caído no chão molhado"
+ },
+ {
+  "name": "Subordinado",
+  "look": "rosto pressionado no chão sob mão pálida, boca aberta, suando"
+ },
+ {
+  "name": "Seong-bin",
+  "look": "Camisa, preocupado, ouve o Chefe da rede de distribuição"
+ },
+ {
+  "name": "Jong-taek",
+  "look": "cabelo castanho comprido, barba rala, sorriso largo, camisa aberta"
+ },
+ {
+  "name": "Homens de terno",
+  "look": "homens de terno escuro atrás da mesa, rostos na borda"
+ },
+ {
+  "name": "Figura de braço grande",
+  "look": "braço musculoso em primeiro plano, fundo escuro, reage com '?!'"
+ },
+ {
+  "name": "Mão do chão",
+  "look": "mão escura de manga estendida sobre piso listrado"
+ },
+ {
+  "name": "Careca musculoso",
+  "look": "careca, camiseta cinza, braço estendido em direção à arma no chão"
+ },
+ {
+  "name": "Figura da boca",
+  "look": "dentes cerrados em close, cabelo escuro comprido, expressão de raiva"
+ },
+ {
+  "name": "Agente de gravata",
+  "look": "homem de gravata escura, boca aberta gritando, segura crachá de Choi Joonho"
+ },
+ {
+  "name": "Figura de perfil",
+  "look": "perfil pálido, casaco escuro, cabelo escuro, cena ambígua"
+ },
+ {
+  "name": "Dono do braço",
+  "look": "braço de manga de terno escuro, segura espada escura, dono fora do quadro"
+ },
+ {
+  "name": "Dono da mão pálida",
+  "look": "mão pálida de dedos longos, manga de terno escuro, fora do quadro"
+ },
+ {
+  "name": "Brigão de regata",
+  "look": "cabelo penteado para trás, brinco, regata, gritando e apontando"
+ },
+ {
+  "name": "Figura do rodapé",
+  "look": "cabelo escuro, visível só na base do quadro, fora de cena"
+ },
+ {
+  "name": "Figura de regata branca",
+  "look": "regata clara, cabelo longo, segura bastão com pregos"
+ },
+ {
+  "name": "Figura de cabelo castanho",
+  "look": "cabelo castanho bagunçado, gritando, jaqueta escura"
+ },
+ {
+  "name": "Camisa Branca",
+  "look": "cabelo castanho-escuro curto, camisa branca, de costas, segura papel"
+ },
+ {
+  "name": "Caído de terno",
+  "look": "terno escuro, de cabeça para baixo sob chuva, braço estendido"
+ },
+ {
+  "name": "Colega",
+  "look": "cabeça escura no pé do quadro, sem rosto visível; fala de precaução"
+ },
+ {
+  "name": "Voz sem rosto",
+  "look": "fora do quadro, só ombro de casaco cinza claro visto na base"
+ },
+ {
+  "name": "Figura de calça escura",
+  "look": "calça escura, meia branca, sapato preto, caído no chão"
+ },
+ {
+  "name": "Voz não identificada",
+  "look": "fora do quadro, só balões de fala"
+ },
+ {
+  "name": "Voz oculta",
+  "look": "balão preto de fala sem rosto visível, fala de dúvida"
+ },
+ {
+  "name": "Figura do olhar sombrio",
+  "look": "close-up de olhos semicerrados, cabelo escuro comprido, sombra no rosto"
+ },
+ {
+  "name": "Moça da franja",
+  "look": "cabelo longo escuro, franja reta, sentada ao fundo da mesa, saia clara"
+ },
+ {
+  "name": "Figura de terno",
+  "look": "boca sorridente em close, fumaça ao redor, fala sobre comida cara"
+ },
+ {
+  "name": "Homens de colete",
+  "look": "cinco homens com coletes claros, presos, mostrados em tela de celular"
+ },
+ {
+  "name": "Garçonete",
+  "look": "cabelo castanho preso, avental branco com laço, segura bandeja com comida"
+ },
+ {
+  "name": "Velho careca",
+  "look": "careca, barba grisalha, roupa escura, sentado à mesa comendo"
+ },
+ {
+  "name": "Careca de gravata",
+  "look": "careca, gravata escura, camisa clara, sinal na testa, rosto redondo"
+ },
+ {
+  "name": "Sentado de terno",
+  "look": "terno escuro, cabelo castanho penteado para trás, sentado à mesa baixa"
+ },
+ {
+  "name": "Velho de cabelo branco",
+  "look": "cabelo branco, roupa clara, sentado de lado à mesa"
+ },
+ {
+  "name": "Ahn Sang-su",
+  "look": "cabelo penteado para trás, óculos de armação fina, terno escuro, sorriso debochado"
+ },
+ {
+  "name": "Gyeong-u",
+  "look": "regata e braço tatuado; membro da guilda, grita com Wang"
+ },
+ {
+  "name": "Wang",
+  "look": "Careca, líder especial da Força-Tarefa contra Vilões; terno, mãos atrás, sorriso tenso"
+ },
+ {
+  "name": "Chefão de terno",
+  "look": "terno escuro, cabelo grisalho nas laterais, testa alta, punho cerrado, cara de raiva"
+ },
+ {
+  "name": "Lobo",
+  "look": "criatura peluda cinza-escura, dentes afiados à mostra, garras, suando"
+ },
+ {
+  "name": "Moça da bandeja",
+  "look": "hanbok claro, cabelo castanho longo, segura bandeja de comida, surpresa"
+ },
+ {
+  "name": "Costas",
+  "look": "figura de costas, cabelo castanho escuro bagunçado, roupa escura, fala"
+ },
+ {
+  "name": "Cabeça grande",
+  "look": "cabeça grande cinza no pé do quadro, sem rosto nítido, cabelo claro espetado"
+ },
+ {
+  "name": "Choi Joonho",
+  "look": "nome citado em balões, aparência não vista"
+ },
+ {
+  "name": "Criatura-lobo",
+  "look": "criatura peluda de cabelo espetado, garras longas, dentes à mostra, corpo musculoso"
+ },
+ {
+  "name": "Vulto do olho",
+  "look": "olho sombrio em close, sombra no rosto, sem corpo visível"
+ },
+ {
+  "name": "Choi Joon-ho",
+  "look": "protagonista, ex-vilão que voltou ao passado; cabelo escuro, sorriso sinistro"
+ },
+ {
+  "name": "Dono da garra",
+  "look": "mão com garras de aço e fogo; dono fora do quadro"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "casaco escuro com capuz, máscara, olhos brilhantes, energia nas mãos"
+ },
+ {
+  "name": "Voz anônima",
+  "look": "balões de grito sem rosto visível, fundo nevoado"
+ },
+ {
+  "name": "Figura luminosa",
+  "look": "corpo brilhante com veias, em visão de raios-X, curvado"
+ },
+ {
+  "name": "Figura distante",
+  "look": "homem escuro de pé no meio da fumaça"
+ },
+ {
+  "name": "Dono da manga",
+  "look": "mão de manga escura segurando gola; dono fora do quadro"
+ },
+ {
+  "name": "Vilão de terno",
+  "look": "terno escuro, camisa clara, sem rosto nítido, ao lado do Lobo"
+ },
+ {
+  "name": "Mão de terno",
+  "look": "mão de manga de terno escuro, dono fora do quadro, segura maço"
+ },
+ {
+  "name": "Moça de blusa clara",
+  "look": "cabelo castanho escuro longo, blusa clara, cinto, presa pelo colarinho"
+ },
+ {
+  "name": "Figura sem camisa",
+  "look": "torso nu ensanguentado, cabelo castanho espetado, caído no chão"
+ },
+ {
+  "name": "Figura de camisa aberta",
+  "look": "terno escuro, camisa aberta no peito, sem rosto visível"
+ },
+ {
+  "name": "Assistente",
+  "look": "homem de terno escuro de costas, segura pasta preta, de pé"
+ },
+ {
+  "name": "Voz",
+  "look": "fora do quadro, só balão de fala"
+ },
+ {
+  "name": "Promotor",
+  "look": "homem de terno escuro, segura pasta, rosto cortado no topo"
+ },
+ {
+  "name": "Choi",
+  "look": "cabelo escuro bagunçado, terno ou jaqueta escura, protagonista"
+ },
+ {
+  "name": "Caído da fumaça",
+  "look": "figura escura caída em meio à fumaça, braços estendidos, sem rosto nítido"
+ },
+ {
+  "name": "Joo-yeol",
+  "look": "careca, rosto marcado, jaqueta escura, sorriso tenso"
+ },
+ {
+  "name": "Figura gritando",
+  "look": "cabelo claro bagunçado e comprido, rosto em close gritando, fundo estrelado"
+ },
+ {
+  "name": "Se-hee",
+  "look": "cabelo longo, terno claro, sorridente, membro da guilda Shinseong"
+ },
+ {
+  "name": "Colegas",
+  "look": "homem de terno escuro com gravata e mulher de blazer claro, ao fundo, assustados"
+ },
+ {
+  "name": "Moça de rabo alto",
+  "look": "cabelo castanho escuro longo preso em rabo alto, headset, terno escuro, crachá, suando"
+ },
+ {
+  "name": "Repórter",
+  "look": "cabelo castanho na altura dos ombros, terno escuro, segura papel"
+ },
+ {
+  "name": "Careca pixelizado",
+  "look": "careca de rosto pixelizado, identidade incerta, ao lado do agente de boné"
+ },
+ {
+  "name": "Moça do blazer",
+  "look": "cabelo castanho-escuro longo, blazer claro, camisa escura, brincos, aponta com o dedo"
+ },
+ {
+  "name": "Ye-jin",
+  "look": "Repórter da NLB News, segura papel no telejornal, citada por Choi"
+ },
+ {
+  "name": "Lee Se-hee",
+  "look": "filha do presidente do Grupo Shinseong; aparência não vista nestas páginas"
+ },
+ {
+  "name": "Figura sentada",
+  "look": "calça escura com cinto, botas altas de cano longo, sentada em banco, rosto fora do quadro"
+ },
+ {
+  "name": "Heroína",
+  "look": "cabelo castanho-escuro longo com franja, óculos escuros, blusa ou jaqueta clara"
+ },
+ {
+  "name": "Figura de jaqueta",
+  "look": "jaqueta escura, cabelo escuro, solta energia elétrica com as mãos"
+ },
+ {
+  "name": "Dono da mão",
+  "look": "mão de manga clara, dedos longos, envolta em energia branca; dono fora do quadro"
+ },
+ {
+  "name": "Olhar sombrio",
+  "look": "cabelo escuro, olhos semicerrados em close, expressão séria"
+ },
+ {
+  "name": "Sorriso de terno",
+  "look": "terno escuro, boca sorridente em close, punho cerrado com brilho de energia"
+ },
+ {
+  "name": "Voz do alto",
+  "look": "balão com rabicho apontando para cima, sem rosto visível; fala 'What?'"
+ },
+ {
+  "name": "Figura do estilhaço",
+  "look": "silhueta escura no centro de clarão rachado, sob chuva, sem rosto nítido"
+ },
+ {
+  "name": "Moça de saia preta",
+  "look": "de costas, cabelo longo, blusa clara, saia preta com cinto"
+ },
+ {
+  "name": "Figura do olhar fixo",
+  "look": "cabelo escuro, olhos semicerrados fixos em close, expressão séria"
+ },
+ {
+  "name": "Caído de óculos",
+  "look": "terno escuro, óculos escuros, caído no chão, cabelo escuro"
+ },
+ {
+  "name": "Sentado de óculos",
+  "look": "terno escuro, óculos escuros, sentado de lado no fundo, cabelo escuro"
+ },
+ {
+  "name": "Diretor",
+  "look": "cabelo escuro penteado para trás, sobrancelha grossa, olhar cerrado, perfil; porta emblema preto de estrela"
+ },
+ {
+  "name": "Moça da espada",
+  "look": "cabelo castanho-escuro curto e ondulado com franja e fio em pé, camiseta clara, tênis, sentada com espada de madeira"
+ },
+ {
+  "name": "Cabeça escura",
+  "look": "cabelo escuro, visto de costas no pé do quadro, sem rosto visível"
+ },
+ {
+  "name": "Tigre",
+  "look": "tigre-monstro listrado branco e cinza, cauda longa, juba, boca aberta"
+ },
+ {
+  "name": "Jin-taek",
+  "look": "homem de óculos escuros, subordinado que recebe ordens de poções para Choi"
+ },
+ {
+  "name": "Voz do balão",
+  "look": "balão sem rosto visível; fala 'Não deixe escapar nada'"
+ },
+ {
+  "name": "Voz do grito",
+  "look": "balão de grito 'EEK!' sem rosto visível, fundo branco"
+ },
+ {
+  "name": "Moça da antena",
+  "look": "cabelo castanho escuro na altura do queixo, mecha em pé no topo da cabeça, suando, nervosa"
+ },
+ {
+  "name": "Oh Jong-hyup",
+  "look": "cabelo escuro bagunçado, rosto com cicatrizes, camisa escura aberta, sorriso largo"
+ },
+ {
+  "name": "Figura de olhos fechados",
+  "look": "terno escuro, cabelo escuro penteado, olhos fechados, sorriso sereno"
+ },
+ {
+  "name": "Do-hyun",
+  "look": "executor da organização Ten, fuma cigarro, chora e consola o Ajoelhado"
+ },
+ {
+  "name": "Terno ao fundo",
+  "look": "terno escuro com gravata, cabelo curto, sorriso de canto, ao fundo"
+ },
+ {
+  "name": "Careca do fundo",
+  "look": "cabeça calva e suada de costas, terno escuro, sob chuva"
+ },
+ {
+  "name": "Ajoelhado",
+  "look": "homem de jaqueta escura, ajoelhado, suando, assustado"
+ },
+ {
+  "name": "Jovem de jaqueta",
+  "look": "jovem de jaqueta escura, sentado, cabelo escuro, medo"
+ },
+ {
+  "name": "Moça da regata",
+  "look": "regata branca, cabelo longo, segura bastão com pregos"
+ },
+ {
+  "name": "Terno penteado",
+  "look": "terno escuro, cabelo penteado para trás, suado, rosto tenso de perfil"
+ },
+ {
+  "name": "Garoto da espada",
+  "look": "cabelo castanho escuro, gota de suor, espada atrás, olhar para o leitor"
+ },
+ {
+  "name": "Moça sentada de cabelo espetado",
+  "look": "cabelo castanho curto espetado com mecha em antena, sentada no chão, braços erguidos"
+ },
+ {
+  "name": "Devedor",
+  "look": "homem ajoelhado de terno escuro, cabelo curto, implorando"
+ },
+ {
+  "name": "Moça da máscara",
+  "look": "deitada com máscara de oxigênio, touca clara, olhos fechados"
+ },
+ {
+  "name": "Figura da camiseta",
+  "look": "camiseta clara, cabelo escuro curto, ajoelhado à esquerda, cortado na borda"
+ },
+ {
+  "name": "Jaqueta listrada",
+  "look": "cabelo castanho bagunçado, jaqueta escura com listras brancas"
+ },
+ {
+  "name": "Cobrador de calça escura",
+  "look": "calça escura, sapato preto, de pé, perna agarrada pelo Devedor"
+ },
+ {
+  "name": "Figura de camisa branca",
+  "look": "cabelo castanho-escuro curto, camisa branca, de costas, óculos na orelha"
+ },
+ {
+  "name": "Big Ten",
+  "look": "nome citado como credor; aparência não vista nestas páginas"
+ },
+ {
+  "name": "Figura da faca",
+  "look": "cabelo castanho bagunçado, camisa escura, segura faca erguida"
+ },
+ {
+  "name": "Jovem da camiseta",
+  "look": "camiseta cinza, ajoelhado no galpão, rosto assustado"
+ },
+ {
+  "name": "Atingido",
+  "look": "cabelo claro espetado, boca aberta gritando, levou soco no rosto"
+ },
+ {
+  "name": "Criatura de garras",
+  "look": "braços blindados cinza com garras longas, cabeça fora do quadro"
+ },
+ {
+  "name": "Figura caída de terno",
+  "look": "terno escuro, de bruços no chão molhado, braço estendido"
+ },
+ {
+  "name": "Regata",
+  "look": "regata clara, cabelo escuro curto, rosto contraído, atrás de Camisa"
+ },
+ {
+  "name": "Terno da esquerda",
+  "look": "terno escuro, colete xadrez, cabelo penteado para trás, segura bastão, suado"
+ },
+ {
+  "name": "Terno cortado",
+  "look": "terno escuro com gravata, visto só em corte, ombro e cabelo escuro"
+ },
+ {
+  "name": "Suado",
+  "look": "cabelo castanho bagunçado, rosto suado, olhos arregalados, gola de jaqueta escura"
+ },
+ {
+  "name": "Terno de costas",
+  "look": "terno escuro, cabelo escuro curto, visto de costas"
+ },
+ {
+  "name": "Visitante",
+  "look": "terno escuro e gravata, cabelo escuro penteado para trás, sorriso sereno ou largo"
+ },
+ {
+  "name": "Terno de franja",
+  "look": "terno escuro, camisa branca, gravata, cabelo escuro caindo sobre a testa"
+ },
+ {
+  "name": "Gritador",
+  "look": "fora do quadro, só balão de grito"
+ },
+ {
+  "name": "Voz do corredor",
+  "look": "fora do quadro, balão sobre corredor de hospital"
+ },
+ {
+  "name": "Voz do hospital",
+  "look": "fora do quadro, balão com 'Shinseong Hospital'"
+ },
+ {
+  "name": "Médica",
+  "look": "cabelo preso em coque, óculos, jaleco branco, segura prancheta"
+ },
+ {
+  "name": "Paciente",
+  "look": "deitado na cama, máscara de oxigênio, touca clara, olhos fechados"
+ },
+ {
+  "name": "Sério",
+  "look": "cabelo escuro, rosto sério, olhar fixo, close-up frontal"
+ },
+ {
+  "name": "Terno da proposta",
+  "look": "terno escuro, cabelo escuro curto, perfil sério, visto de costas"
+ },
+ {
+  "name": "Se-hee (Lee Se-hee)",
+  "look": "cabelo escuro em rabo de cavalo alto, blazer claro, crachá no peito, sorriso de olhos fechados"
+ },
+ {
+  "name": "Jong-soo",
+  "look": "paciente deitado com máscara de oxigênio e touca clara, olhos fechados"
+ },
+ {
+  "name": "Moça de óculos",
+  "look": "cabelo castanho comprido, óculos de armação fina, suada, dedo na boca"
+ },
+ {
+  "name": "Médico de jaleco",
+  "look": "jaleco branco, crachá preso a cordão no pescoço"
+ },
+ {
+  "name": "Terno da direita",
+  "look": "terno escuro, braços cruzados, cabelo curto espetado, barba por fazer, suado"
+ },
+ {
+  "name": "Moça ensanguentada",
+  "look": "cabelo escuro ondulado comprido, camisa clara manchada de sangue"
+ },
+ {
+  "name": "Figura caída de camisa",
+  "look": "cabelo escuro, camisa clara ensanguentada, caído no chão"
+ },
+ {
+  "name": "Terno do grupo",
+  "look": "terno escuro de costas ou de perfil, cabelo escuro, sob chuva"
+ },
+ {
+  "name": "Moça do cabelo longo",
+  "look": "cabelo castanho-escuro longo com franja, rosto escondido, de costas"
+ },
+ {
+  "name": "Yong-soo",
+  "look": "vice-prefeito de Ansan, óculos, cabelo penteado, ferido e implorando"
+ },
+ {
+  "name": "Piercing",
+  "look": "cabelo castanho espetado, piercings nas orelhas e no rosto, expressão séria, jaqueta escura"
+ },
+ {
+  "name": "Sung-ho",
+  "look": "terno escuro, rosto cortado no quadro, chuva ao fundo; mestre da guilda Big Ten, nível seis"
+ },
+ {
+  "name": "Terno da frente",
+  "look": "terno escuro, cabelo penteado para trás, rosto preocupado"
+ },
+ {
+  "name": "Terno da mão",
+  "look": "terno escuro, mão cerrada com punho de camisa clara, aparece no topo do quadro"
+ },
+ {
+  "name": "Barbudo",
+  "look": "homem musculoso sem camisa, barba e cabelo longos castanhos, faixas nos braços e cintura, sentado com carne"
+ },
+ {
+  "name": "Figura do pé",
+  "look": "sapato social preto, calça escura, pisa na poça"
+ },
+ {
+  "name": "Careca de perfil",
+  "look": "cabeça raspada, suado, perfil com sobrancelha franzida, terno escuro"
+ },
+ {
+  "name": "Caído do chão",
+  "look": "figura caída de roupa escura, cabelo escuro, no chão molhado"
+ },
+ {
+  "name": "Figura da luz",
+  "look": "jaqueta escura, cabelo escuro, solta clarão branco de golpe, sob chuva"
+ },
+ {
+  "name": "Garoto ensanguentado",
+  "look": "cabelo castanho escuro bagunçado com topete, rosto sujo de sangue, jaqueta cinza"
+ },
+ {
+  "name": "Capanga",
+  "look": "cabelo escuro curto, boca aberta, rosto assustado, atrás de Suado"
+ },
+ {
+  "name": "Voz de comando",
+  "look": "fora do quadro, só balão de grito, ordena captura"
+ },
+ {
+  "name": "Terno voando",
+  "look": "terno escuro, cabelo escuro, voando após clarão ou golpe"
+ },
+ {
+  "name": "Chorando",
+  "look": "cabelo escuro bagunçado, suado e chorando, sem óculos"
+ },
+ {
+  "name": "Voz fora",
+  "look": "fora do quadro, só balão de fala"
+ },
+ {
+  "name": "Terno da mão cerrada",
+  "look": "terno escuro, mão cerrada tremendo, chuva, cena ambígua"
+ },
+ {
+  "name": "Caído",
+  "look": "terno escuro ou roupa escura, caído no chão molhado, cabelo escuro"
+ },
+ {
+  "name": "Hyung-hee",
+  "look": "óculos, terno escuro, suada, usa o Replay para examinar cenas"
+ },
+ {
+  "name": "Comando",
+  "look": "fora do quadro, só balões de ordem sobre o grupo"
+ },
+ {
+  "name": "Figura de regata",
+  "look": "regata clara, cabelo longo, segura bastão com pregos"
+ },
+ {
+  "name": "Criatura alada",
+  "look": "criatura musculosa com asas, chifres e garras"
+ },
+ {
+  "name": "Terno sorridente",
+  "look": "óculos, cabelo penteado para trás, sorriso largo, rosto enrugado, terno escuro"
+ },
+ {
+  "name": "Figura ensanguentada",
+  "look": "roupa escura salpicada de sangue, sem rosto visível"
+ },
+ {
+  "name": "Moça de costas",
+  "look": "cabelo escuro longo, jaqueta escura, visto de costas, grita [Eraser]"
+ },
+ {
+  "name": "Figura das mãos",
+  "look": "corpo escuro, mãos em concha soltando faíscas brancas, sorriso dentado"
+ },
+ {
+  "name": "Monstro caído",
+  "look": "criatura morta com chifres, manchada de sangue, fita vermelha no corpo"
+ },
+ {
+  "name": "Médico",
+  "look": "óculos, cabelo curto, jaleco branco, segura prancheta"
+ },
+ {
+  "name": "Médico de óculos",
+  "look": "óculos, cabelo curto, jaleco branco, suado, gesticula"
+ },
+ {
+  "name": "Moça da mesa",
+  "look": "cabelo escuro longo, blusa clara, sentada à mesa com prato"
+ },
+ {
+  "name": "Figura de botas",
+  "look": "calça escura, botas escuras, pisa chão molhado"
+ },
+ {
+  "name": "Terno das mãos",
+  "look": "terno escuro e camisa branca, mãos entrelaçadas, rosto fora do quadro"
+ },
+ {
+  "name": "Careca de óculos",
+  "look": "calvo, óculos de armação fina, gravata, terno escuro, rosto franzido"
+ },
+ {
+  "name": "Espetado",
+  "look": "cabelo claro espetado tipo moicano, ombreiras com espinhos, chibi, sorriso empolgado"
+ },
+ {
+  "name": "Moça da mão no rosto",
+  "look": "cabelo castanho comprido, suada, mão no rosto, boca aberta"
+ },
+ {
+  "name": "Vilão sorridente",
+  "look": "cabeça calva, sorriso largo e dentes à mostra, figuras escuras atrás"
+ },
+ {
+  "name": "Figura sombria",
+  "look": "silhueta escura, braço estendido, cena ambígua"
+ },
+ {
+  "name": "Figura do canto",
+  "look": "cabelo escuro bagunçado, visto de cima na base do quadro"
+ },
+ {
+  "name": "Procurado central",
+  "look": "figura sombreada sem camisa, rosto apagado, fundo de meio-tom escuro"
+ },
+ {
+  "name": "Procurado de boné",
+  "look": "boné, cartucheira listrada sobre o peito, rosto apagado"
+ },
+ {
+  "name": "Procurado de óculos",
+  "look": "óculos escuros, jaqueta escura, careca, rosto apagado"
+ },
+ {
+  "name": "Interrogador",
+  "look": "terno escuro, gravata, cabelo penteado para trás, mão erguida, rosto preocupado"
+ },
+ {
+  "name": "Voz indignada",
+  "look": "fala de fora do quadro, tom indignado, sem rosto visível"
+ },
+ {
+  "name": "Terno caído",
+  "look": "terno escuro, óculos de armação fina, cabelo escuro, caído no chão molhado"
+ },
+ {
+  "name": "Figura da espada",
+  "look": "cabelo escuro, jaqueta escura, lâmina ou haste erguida, em queda"
+ },
+ {
+  "name": "Figura do cinto",
+  "look": "cabelo escuro preso, roupa escura, segura objeto na mão, flutuando"
+ },
+ {
+  "name": "Kim Young-hwan",
+  "look": "não aparece; super-humano morto em combate"
+ },
+ {
+  "name": "Young-hwan",
+  "look": "terno escuro, óculos, sorriso debochado, super-humano que usa subordinados como isca"
+ },
+ {
+  "name": "Eraser",
+  "look": "novo vilão de nível 8 ou mais, identidade desconhecida"
+ },
+ {
+  "name": "Terno grisalho",
+  "look": "cabelo grisalho penteado para trás, rosto enrugado e sério, terno escuro, mãos cruzadas no joelho"
+ },
+ {
+  "name": "Terno da mão no rosto",
+  "look": "terno escuro, cabelo curto espetado, mão no rosto, suado"
+ },
+ {
+  "name": "Lutadora de espada",
+  "look": "cabelo castanho curto espetado, top escuro, espada sobre o ombro"
+ },
+ {
+  "name": "Moça de cabelo avermelhado",
+  "look": "cabelo castanho-avermelhado na altura dos ombros, rosto tenso, olhos arregalados"
+ },
+ {
+  "name": "Terno de óculos",
+  "look": "óculos de armação fina, cabelo grisalho penteado para trás, terno escuro, sangue na mão"
+ },
+ {
+  "name": "Voz do aviso",
+  "look": "fora do quadro, só balão de aviso"
+ },
+ {
+  "name": "Figura do colarinho",
+  "look": "terno escuro e gravata, visto só do colarinho para baixo"
+ },
+ {
+  "name": "Velho grisalho",
+  "look": "cabelo grisalho penteado para trás, rosto enrugado, olhos fechados, terno escuro"
+ },
+ {
+  "name": "Serpente",
+  "look": "cabeça de serpente escamosa, presas brancas, olhos fundos; provavelmente forma do Young-hwan (Red Snake)"
+ },
+ {
+  "name": "Operadora de headset",
+  "look": "cabelo castanho-avermelhado comprido, headset, aponta com o dedo"
+ },
+ {
+  "name": "Moça do headset",
+  "look": "cabelo castanho escuro preso em rabo alto, headset, terno escuro, crachá no pescoço, suada"
+ },
+ {
+  "name": "Operadora",
+  "look": "cabelo castanho preso em rabo alto, headset com microfone, blazer escuro, camisa clara"
+ },
+ {
+  "name": "Senhor grisalho",
+  "look": "cabelo grisalho penteado para trás, óculos de armação fina, rosto sério, terno escuro"
+ },
+ {
+  "name": "Soldado de cabelo penteado",
+  "look": "cabelo escuro penteado para trás, armadura de couro, suado, rosto tenso"
+ },
+ {
+  "name": "Moça da trança",
+  "look": "cabelo castanho em trança longa, roupa clara rasgada, suada, olhar preocupado"
+ },
+ {
+  "name": "Figura do controle",
+  "look": "mão de manga escura segurando aparelho preto com antena"
+ },
+ {
+  "name": "Figura da emboscada",
+  "look": "terno escuro no topo direito, grita 'É uma emboscada!'"
+ },
+ {
+  "name": "Moça lacrimosa",
+  "look": "franja escura, olho com lágrima em close"
+ },
+ {
+  "name": "Rabo-alto",
+  "look": "cabelo castanho-escuro preso em rabo alto, terno escuro, crachá no pescoço, expressão séria"
+ },
+ {
+  "name": "Perfil-sombrio",
+  "look": "perfil pálido na sombra, casaco escuro, cabelo escuro, fala de fora do quadro"
+ },
+ {
+  "name": "Chul-hwan",
+  "look": "cabelo castanho bagunçado, rosto suado, gola de jaqueta escura; líder da equipe Bravo"
+ },
+ {
+  "name": "Terno da lança",
+  "look": "terno escuro, segura lança longa com ponta de metal"
+ },
+ {
+  "name": "Grupo de ternos",
+  "look": "vários ternos escuros caindo em fila sob linhas de movimento"
+ },
+ {
+  "name": "Moça ruiva",
+  "look": "cabelo castanho-avermelhado nos ombros, olhos arregalados, rosto tenso"
+ },
+ {
+  "name": "Terno preocupado",
+  "look": "terno escuro, cabelo penteado para trás, rosto preocupado ao fundo"
+ },
+ {
+  "name": "Sombra",
+  "look": "silhueta enorme e escura, olhos brilhantes, massa com estrias ao redor"
+ },
+ {
+  "name": "Figura da direita",
+  "look": "cabelo escuro, visto de perfil à direita, rosto parcial, sem rosto nítido"
+ },
+ {
+  "name": "Terno do bastão",
+  "look": "terno escuro, segura bastão claro, ombro e cabelo escuro no canto"
+ },
+ {
+  "name": "Grisalho de costas",
+  "look": "cabelo grisalho no topo, terno escuro, visto de costas"
+ },
+ {
+  "name": "Ouvinte",
+  "look": "fora do quadro, só balões de espanto ('GASP!', 'Y-you're that...!')"
+ },
+ {
+  "name": "Jung Da-hyun",
+  "look": "Oficial Nível 6 da Divisão de Resposta a Vilões; terno escuro, espada na mão, cabelo preso em rabo"
+ },
+ {
+  "name": "Lanceiro",
+  "look": "terno escuro, segura lança longa com ponta de metal"
+ },
+ {
+  "name": "Grupo",
+  "look": "vários ternos escuros caminhando em fila pelo túnel"
+ },
+ {
+  "name": "Ensanguentada",
+  "look": "cabelo escuro comprido, rosto manchado de sangue, caída no chão"
+ },
+ {
+  "name": "Ensanguentado",
+  "look": "cabelo escuro, camisa clara manchada de sangue, caído no chão"
+ },
+ {
+  "name": "Em queda",
+  "look": "cabelo escuro, roupa escura, caindo entre clarões de cristais"
+ },
+ {
+  "name": "Terno do túnel",
+  "look": "terno escuro, cabelo escuro curto, de costas, segurando papel na escada do túnel"
+ },
+ {
+  "name": "Figura do olho",
+  "look": "olho branco brilhante em close, sem rosto visível"
+ },
+ {
+  "name": "Rook",
+  "look": "robô blindado cinza, braço erguido em movimento"
+ },
+ {
+  "name": "Bishop",
+  "look": "capuz escuro, duas foices curvas, voando"
+ },
+ {
+  "name": "Queen",
+  "look": "puppet nível 6 nomeado na legenda, sem figura nítida"
+ },
+ {
+  "name": "Knight",
+  "look": "armadura blindada, braço com lâmina"
+ },
+ {
+  "name": "Arqueiro",
+  "look": "chapéu largo, arco e flechas nas costas"
+ },
+ {
+  "name": "Mascarado",
+  "look": "máscara escura com fendas, cabelo espetado, colete escuro, jaqueta clara"
+ },
+ {
+  "name": "Moça costurada",
+  "look": "rosto com pontos de costura na bochecha, franja reta, laço de renda na cabeça, sorriso de canto"
+ },
+ {
+  "name": "Blindado",
+  "look": "armadura pesada cinza, capacete com viseira, luvas grossas, recebe golpes"
+ },
+ {
+  "name": "Moça da renda",
+  "look": "cabelo castanho-avermelhado longo, faixa de renda com orelhas, cicatriz pontilhada no rosto, babados escuros"
+ },
+ {
+  "name": "Puppeteer",
+  "look": "cabelo longo, rosto costurado, casca capturada por Joonho, vilã com controle sobre subordinados"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão cerrada com braço escuro, segura lâmina escura, sem rosto visível"
+ },
+ {
+  "name": "Figura da lâmina",
+  "look": "cabelo escuro, roupa escura, lâmina clara na mão, sombra no fundo"
+ },
+ {
+  "name": "Terno da boca",
+  "look": "terno escuro, perfil com sorriso de canto, fundo de meio-tom escuro"
+ },
+ {
+  "name": "Berserker",
+  "look": "maluco sorridente com lâminas de luz, perseguidor de Joon-ho na vida passada"
+ },
+ {
+  "name": "Figura em movimento",
+  "look": "silhueta em golpe rápido, traços de velocidade, sem rosto visível"
+ },
+ {
+  "name": "Figura do braço",
+  "look": "braço de manga escura em golpe, lâmina em movimento, sem rosto visível"
+ },
+ {
+  "name": "Voador",
+  "look": "figura de roupa escura, botas escuras, voando após golpe de mão blindada"
+ },
+ {
+  "name": "Terno da gravata",
+  "look": "terno escuro, gravata listrada, cabelo escuro, rosto sério, carrega Puppeteer"
+ },
+ {
+  "name": "Criatura escura",
+  "look": "massa escura espinhosa no chão, sem forma nítida"
+ },
+ {
+  "name": "Voz de fora do quadro",
+  "look": "fora do quadro, só balões dentados de fala"
+ },
+ {
+  "name": "Figura do cartão",
+  "look": "mão segurando crachá de servidor público; ombro claro e camisa, fora do foco"
+ },
+ {
+  "name": "Lee Min-chul",
+  "look": "foto de crachá: cabelo castanho penteado para trás, camisa escura; Defesa Nacional"
+ },
+ {
+  "name": "Figura da luva",
+  "look": "mão de luva branca e manga escura apoiada no chão"
+ },
+ {
+  "name": "Joonho",
+  "look": "encapuzado, máscara escura, casaco escuro, mão erguida em despedida"
+ },
+ {
+  "name": "Terno do salão",
+  "look": "terno escuro, camisa clara, braço erguido ao peito, em salão com outros ternos"
+ },
+ {
+  "name": "Casaco-xadrez",
+  "look": "cabelo castanho curto penteado para trás, casaco escuro, suéter xadrez, grita de punho cerrado"
+ },
+ {
+  "name": "Olhar-cerrado",
+  "look": "close de olhos estreitos e sobrancelhas franzidas, cabelo escuro espetado"
+ },
+ {
+  "name": "Terno-esquerda",
+  "look": "cabelo escuro curto, terno escuro, rosto sério, de perfil à esquerda"
+ },
+ {
+  "name": "Terno-barba",
+  "look": "barba por fazer, cabelo escuro, terno escuro, suado"
+ },
+ {
+  "name": "Mão luminosa",
+  "look": "mão grande aberta com contorno brilhante, braço saindo pela esquerda do quadro"
+ },
+ {
+  "name": "Terno suado",
+  "look": "cabelo curto espetado, terno escuro, suado, boca aberta"
+ },
+ {
+  "name": "Terno do grito",
+  "look": "cabelo escuro penteado para trás, terno escuro, suado, gritando"
+ },
+ {
+  "name": "Terno alto",
+  "look": "terno escuro, de pé no centro da cena, visto de corpo inteiro"
+ },
+ {
+  "name": "Terno do corpo",
+  "look": "terno escuro, visto do torso para baixo, em movimento, sem rosto visível"
+ },
+ {
+  "name": "Terno-gravata",
+  "look": "cabelo escuro, terno escuro, gravata, camisa clara, rosto sério; carrega Puppeteer"
+ },
+ {
+  "name": "Velho-grisalho",
+  "look": "cabelo grisalho penteado para trás, óculos, rosto enrugado, terno escuro, olhar severo"
+ },
+ {
+  "name": "Ruiva",
+  "look": "cabelo castanho-avermelhado na altura dos ombros, terno escuro, rosto tenso, olhos arregalados"
+ },
+ {
+  "name": "Chorão",
+  "look": "cabelo escuro, jaqueta escura, lágrimas no rosto, de perfil"
+ },
+ {
+  "name": "Gigante",
+  "look": "silhueta alta de calça e botas escuras caminhando no túnel"
+ },
+ {
+  "name": "Cabelo-claro",
+  "look": "cabelo claro espetado e bagunçado, rosto cerrado, sobrancelhas tensas"
+ },
+ {
+  "name": "Calça-clara",
+  "look": "terno escuro, calça clara, observa ao lado do túnel"
+ },
+ {
+  "name": "Gravata",
+  "look": "terno escuro, gravata, cabelo penteado, rosto sério no corredor"
+ },
+ {
+  "name": "Terno-penteado",
+  "look": "terno escuro, cabelo penteado para trás, suado, rosto tenso de perfil"
+ },
+ {
+  "name": "Jovem do olhar",
+  "look": "cabelo escuro, olho fixo em close, sobrancelhas tensas"
+ },
+ {
+  "name": "Sorriso-dentado",
+  "look": "close de sorriso largo com dentes à mostra, cabelo escuro, faíscas brancas"
+ },
+ {
+  "name": "Olhos-brilhantes",
+  "look": "olhos brancos brilhantes, cabelo penteado para trás, terno escuro, mãos com energia branca"
+ },
+ {
+  "name": "Figura escura",
+  "look": "figura escura sem rosto visível, só olhos aparecem na base do quadro"
+ },
+ {
+  "name": "Voz-fora",
+  "look": "voz fora do quadro, balão de grito, sem rosto visível"
+ },
+ {
+  "name": "Moça da serpente",
+  "look": "cabelo castanho-escuro longo, franja reta, blazer escuro, colarinho claro"
+ },
+ {
+  "name": "Terno do clarão",
+  "look": "terno escuro, de cabeça para baixo entre clarões brancos"
+ },
+ {
+  "name": "Luz",
+  "look": "jaqueta escura, cabelo escuro, solta clarão branco de golpe"
+ },
+ {
+  "name": "Figura-da-mão-luz",
+  "look": "mão grande aberta com contorno brilhante, braço escuro saindo pela esquerda"
+ },
+ {
+  "name": "Voz-oculta",
+  "look": "fora do quadro, só balões dentados e de fala"
+ },
+ {
+  "name": "Terno-do-golpe",
+  "look": "terno escuro com botões, calça escura, braço estendido soltando faíscas, em queda"
+ },
+ {
+  "name": "Moça-rabo",
+  "look": "cabelo castanho em rabo de cavalo, blusa clara, em pé na cena escura"
+ },
+ {
+  "name": "Terno-papel",
+  "look": "terno escuro, cabelo escuro penteado, segura papel branco dobrado"
+ },
+ {
+  "name": "Óculos-terno",
+  "look": "terno escuro, óculos de armação fina, cabelo escuro, na plateia"
+ },
+ {
+  "name": "Figura-do-controle",
+  "look": "mão de manga escura segurando aparelho preto com antena"
+ },
+ {
+  "name": "Terno-suado",
+  "look": "cabelo curto espetado, terno escuro, suado, boca aberta"
+ },
+ {
+  "name": "Figura do impacto",
+  "look": "tronco de roupa escura atingido por 쾅, sem rosto visível"
+ },
+ {
+  "name": "Terno-da-pasta",
+  "look": "cabelo escuro, terno escuro, segura pasta de papel, corpo inteiro, corredor claro"
+ },
+ {
+  "name": "Terno-da-boca",
+  "look": "terno escuro, perfil com sorriso de canto, fundo de meio-tom escuro"
+ },
+ {
+  "name": "Terno-de-franja",
+  "look": "terno escuro, camisa branca, gravata, cabelo escuro caindo sobre a testa"
+ },
+ {
+  "name": "Terno-do-corpo",
+  "look": "terno escuro, cinto preto, visto do torso para baixo, sem rosto"
+ },
+ {
+  "name": "Terno-da-mão-no-rosto",
+  "look": "terno escuro, cabelo curto espetado, mão no rosto, suado"
+ },
+ {
+  "name": "Terno-cortado",
+  "look": "terno escuro com gravata, visto só em corte, ombro e cabelo escuro"
+ },
+ {
+  "name": "Terno-da-proposta",
+  "look": "terno escuro, cabelo escuro curto, perfil sério, visto de costas, segura papel"
+ },
+ {
+  "name": "Olhos-fechados",
+  "look": "cabelo escuro penteado, terno escuro, olhos fechados, sorriso sereno"
+ },
+ {
+  "name": "Terno-das-mãos",
+  "look": "terno escuro, camisa branca, mãos entrelaçadas, crachá no pescoço"
+ },
+ {
+  "name": "Sorriso-apontando",
+  "look": "sorriso largo com dentes à mostra, dedo apontado, terno escuro, cabelo claro"
+ },
+ {
+  "name": "Ki-chul",
+  "look": "diretor do Escritório de Cooperação Externa, meritocrata rígido, patrocina Joonho como fiador"
+ },
+ {
+  "name": "Figura-do-sorriso",
+  "look": "cabelo claro com laços escuros, cicatriz costurada na bochecha, mão no queixo, sorriso largo"
+ },
+ {
+  "name": "Terno-sentado",
+  "look": "cabelo penteado para trás, terno escuro, sentado à mesa, sorriso de canto, estala os dedos"
+ },
+ {
+  "name": "Terno-crachá",
+  "look": "terno escuro, crachá no cordão, braços cruzados, sentado relaxado"
+ },
+ {
+  "name": "Criatura de mandíbula",
+  "look": "monstro de mandíbula dentada aberta com língua, à venda na banca"
+ },
+ {
+  "name": "Criatura esquelética",
+  "look": "criatura de costelas expostas, sem carne, sobre a banca de madeira"
+ },
+ {
+  "name": "Encapuzado magro",
+  "look": "capuz e capa escuros, figura esguia, ao fundo das barracas"
+ },
+ {
+  "name": "Vendedora",
+  "look": "boné escuro, regata clara, braços cruzados atrás do balcão de armas"
+ },
+ {
+  "name": "Figura de uniforme claro",
+  "look": "roupa clara justa, braço estendido, na rua do mercado"
+ },
+ {
+  "name": "Terno-cruzado",
+  "look": "terno escuro, braços cruzados, colarinho aberto, crachá no pescoço, suado, barba por fazer"
+ },
+ {
+  "name": "Figura-do-rosto",
+  "look": "cabelo escuro, rosto em close, olhos arregalados, boca aberta"
+ },
+ {
+  "name": "Agente-de-chapéu",
+  "look": "chapéu fedora, sobretudo longo, pistola erguida, silhueta contra a lua"
+ },
+ {
+  "name": "Kyung-wook",
+  "look": "capuz e sobretudo escuros, olhos brancos em fenda, Blink Na Kyung-wook, vilão famoso"
+ },
+ {
+  "name": "Moça-franja",
+  "look": "cabelo escuro longo, franja reta, polegar para cima, rosto animado"
+ },
+ {
+  "name": "Olhar-sombrio",
+  "look": "close de olhos semicerrados, cabelo escuro comprido, sombra no rosto"
+ },
+ {
+  "name": "Musculoso",
+  "look": "homem sem camisa, braços cruzados, em mercado ao ar livre"
+ },
+ {
+  "name": "Terno-do-rosto-marcado",
+  "look": "cicatriz vertical no olho e na bochecha, suado, cabelo escuro, sobrancelhas franzidas"
+ },
+ {
+  "name": "Vendedor",
+  "look": "sem camisa, óculos de armação fina, cabelo escuro curto, sorriso largo"
+ },
+ {
+  "name": "Figura-do-casaco",
+  "look": "casaco escuro, sem rosto visível, canto inferior direito da rua do mercado"
+ },
+ {
+  "name": "Figura-do-perfil",
+  "look": "rosto pálido de perfil, olho estreito, fundo escuro de fumaça"
+ },
+ {
+  "name": "Encapuzado-mascarado",
+  "look": "capuz e máscara escuros cobrindo o rosto, olhos apertados, suado"
+ },
+ {
+  "name": "Figura-da-pergunta",
+  "look": "fora de foco na base do quadro, sem rosto visível, autora do balão de pergunta"
+ },
+ {
+  "name": "Moça-calça-preta",
+  "look": "calça e botas pretas, de pé ao lado de Terno-cruzado"
+ },
+ {
+  "name": "Terno-do-braço",
+  "look": "terno escuro, braço estendido à direita do quadro, visto de perto"
+ },
+ {
+  "name": "Blink",
+  "look": "capuz escuro, máscara com fendas, olhos brilhantes, roupa negra com cinto"
+ },
+ {
+  "name": "Figura-da-explosão",
+  "look": "figura escura no centro de explosão de luz branca, sem rosto nítido"
+ },
+ {
+  "name": "Figura-da-bota",
+  "look": "calça e sapato escuros, sem rosto visível, pisa o chão com linhas de velocidade"
+ },
+ {
+  "name": "Terno-agachado",
+  "look": "terno escuro, cabelo escuro espetado, agachado com mão erguida segurando objeto escuro"
+ },
+ {
+  "name": "Mascarado-de-capuz",
+  "look": "capuz e máscara cinza-escura, cobrindo o rosto, dentes cerrados, em luta no chão"
+ },
+ {
+  "name": "Figura-do-impacto",
+  "look": "figura escura borrada, sem rosto nítido, atravessando a cena"
+ },
+ {
+  "name": "Yeom Gi-chul",
+  "look": "diretor do Escritório de Cooperação Externa; citado nas falas, não aparece"
+ },
+ {
+  "name": "Terno-do-peito",
+  "look": "terno escuro, colarinho aberto, mão no peito, sem rosto visível"
+ },
+ {
+  "name": "Figura-da-queda",
+  "look": "silhueta escura caindo no ar com lâmina, sem rosto visível"
+ },
+ {
+  "name": "Terno-do-grito",
+  "look": "cabelo escuro penteado para trás, terno escuro, suado, gritando"
+ },
+ {
+  "name": "Figura-de-calça-escura",
+  "look": "calça e sapato escuros, segura fuzil, parte superior fora do quadro"
+ },
+ {
+  "name": "Corvo",
+  "look": "corvo-monstro negro, bico largo e dentado, olhos brancos, asas abertas"
+ },
+ {
+  "name": "Figura-caída",
+  "look": "corpo caído no chão rachado, roupa clara, sem rosto visível"
+ },
+ {
+  "name": "Figura-da-saia",
+  "look": "saia plissada escura, botas altas pretas, sem rosto visível, em pé sobre o homem"
+ },
+ {
+  "name": "Criatura-serpente",
+  "look": "corpo longo, listrado e escamoso, como serpente gigante, no chão"
+ },
+ {
+  "name": "Mascarada-loira",
+  "look": "cabelo claro em rabo alto, máscara escura com fendas nos olhos, laço escuro, roupa escura"
+ },
+ {
+  "name": "Mão-enfaixada",
+  "look": "braço enfaixado, mão firme sobre estaca de madeira"
+ },
+ {
+  "name": "Espinhudo",
+  "look": "cabelo castanho espetado, armadura com rebites e crânios, lâmina escura"
+ },
+ {
+  "name": "Moça-bandagem",
+  "look": "cabelo branco em dois coques enrolados em bandagem, cicatriz no rosto, vestido escuro, braços cruzados"
+ },
+ {
+  "name": "Mão-do-colarinho",
+  "look": "mãos agarrando o colarinho de camisa, fora de foco, na imagem da página 1"
+ },
+ {
+  "name": "Moça-cachos",
+  "look": "cabelo claro em cachos de rolo, laços escuros, cicatriz costurada no rosto, sorriso largo, colarinho escuro com babado"
+ },
+ {
+  "name": "Barbudo-de-mechas",
+  "look": "cabelo escuro comprido com mechas brancas, barba por fazer, brinco na orelha, sorriso de canto"
+ },
+ {
+  "name": "Moça-cabelo-branco",
+  "look": "cabelo branco com franja reta e coque alto, pele escura com pontos de cicatriz no rosto, colar de renda escura"
+ },
+ {
+  "name": "Figura-escura-do-ombro",
+  "look": "manga escura, cabelo escuro, só ombro e topo no canto superior direito, sem rosto visível"
+ },
+ {
+  "name": "Moça-do-celular",
+  "look": "cabelo castanho curto com mecha em ahoge, jaqueta escura com listras brancas, celular na mão, sorriso travesso"
+ },
+ {
+  "name": "Terno-da-maleta",
+  "look": "terno escuro, cabelo escuro curto, segura bastão preto e maleta metálica"
+ },
+ {
+  "name": "Examinador-de-capa",
+  "look": "capa branca longa, cabelo escuro, rosto tenso, em pé na mata, anuncia prova"
+ },
+ {
+  "name": "Terno-do-escudo",
+  "look": "terno escuro, cabelo escuro curto, segura escudo escuro, rosto sério"
+ },
+ {
+  "name": "Terno-da-fila",
+  "look": "terno escuro, cabelo escuro, empurra escudo, rosto sério"
+ },
+ {
+  "name": "Terno-da-caneca",
+  "look": "terno escuro, camisa branca, pulseira preta trançada, segura caneca branca"
+ },
+ {
+  "name": "Figura-da-torre",
+  "look": "figura escura pequena no topo de torre, sem rosto visível"
+ },
+ {
+  "name": "Velho-de-cabelo-grisalho",
+  "look": "cabelo grisalho penteado para trás, rosto enrugado, olhar para cima"
+ },
+ {
+  "name": "Velho-do-megafone",
+  "look": "cabelo grisalho penteado para trás, óculos de armação fina, rosto sério, segura megafone"
+ },
+ {
+  "name": "Terno-do-microfone",
+  "look": "terno escuro, camisa clara, segura microfone com estática"
+ },
+ {
+  "name": "Figuras-do-cerco",
+  "look": "fileira de silhuetas escuras sem rosto, formando arco na rua do porto"
+ },
+ {
+  "name": "Terno-do-megafone",
+  "look": "cabelo branco-grisalho penteado, terno escuro, segura megafone, rosto tenso"
+ },
+ {
+  "name": "Gigante-sorridente",
+  "look": "homem enorme sem camisa, colar, olhos brancos brilhantes, sorriso dentado, faixa na cintura"
+ },
+ {
+  "name": "Terno-de-costas-claro",
+  "look": "terno escuro, cabelo claro penteado para trás, visto de costas"
+ },
+ {
+  "name": "Mão-trançada",
+  "look": "mão e braço de manga escura com pulseira trançada, agarra a cabeça de alguém"
+ },
+ {
+  "name": "Jovem-do-olhar",
+  "look": "cabelo escuro, olho arregalado em close, sobrancelhas tensas"
+ },
+ {
+  "name": "Cobra-Velha",
+  "look": "velho de cabelo branco penteado para trás, óculos, terno escuro de gola alta, curvado"
+ },
+ {
+  "name": "Careca-de-terno",
+  "look": "careca, terno escuro, gola branca, de pé de lado"
+ },
+ {
+  "name": "Enfaixado-de-cabelo",
+  "look": "cabelo escuro, braços enfaixados, segura lâmina longa"
+ },
+ {
+  "name": "Figura-do-salto",
+  "look": "roupa clara justa, pulando em diagonal, perna estendida"
+ },
+ {
+  "name": "Figura-caída-escura",
+  "look": "roupa escura, sem rosto visível, caída no chão, mão estendida"
+ },
+ {
+  "name": "Terno-da-espada",
+  "look": "terno escuro, cabelo escuro penteado para trás, segura espada erguida, rosto sério"
+ },
+ {
+  "name": "Camisa-floral",
+  "look": "cabelo castanho espetado, barba curta, camisa havaiana de flores brancas, sorriso largo com dentes"
+ },
+ {
+  "name": "Figura-que-desvia",
+  "look": "figura escura de cabelo espetado, sem rosto nítido, desviando embaixo"
+ },
+ {
+  "name": "Criatura-presas",
+  "look": "criatura de presas longas e mandíbula aberta, perto do homem de camisa floral"
+ },
+ {
+  "name": "Figura-do-raio",
+  "look": "cabelo escuro espetado, camisa floral, rosto cerrado com faíscas elétricas"
+ },
+ {
+  "name": "Terno-sorridente-lateral",
+  "look": "terno escuro, rosto mascarado sorridente, visto de lado, cortado na borda direita"
+ },
+ {
+  "name": "Figura-faixa-da-cabeça",
+  "look": "faixa branca amarrada na cabeça, casaco rasgado, manchas escuras no ombro"
+ },
+ {
+  "name": "Figura-do-olho",
+  "look": "olho escuro em close, brilho branco, fumaça, sem rosto visível"
+ },
+ {
+  "name": "Figura-do-tufo-branco",
+  "look": "cabelo branco em tufo na borda superior esquerda, fora do quadro"
+ },
+ {
+  "name": "Figura-fora-do-quadro",
+  "look": "figura fora do quadro, sem rosto visível, só o balão 'Isso é...!!!' aparece"
+ },
+ {
+  "name": "Figura-dos-óculos",
+  "look": "óculos de proteção e máscara, mão na cabeça, suado, roupa escura"
+ },
+ {
+  "name": "Figura-do-pé",
+  "look": "pé calçado em sandália de tira, sobre chão rachado, sem corpo visível"
+ },
+ {
+  "name": "Figura-de-cabelo-claro",
+  "look": "cabelo claro espetado, visto só no rodapé do quadro, grita em choque"
+ },
+ {
+  "name": "Figura-da-cabeça",
+  "look": "cabeça grande cinza em primeiro plano, sem rosto nítido"
+ },
+ {
+  "name": "Figura-de-cabelo-espetado",
+  "look": "silhueta escura, cabelo espetado, olhos brancos brilhantes, máscara com fendas"
+ },
+ {
+  "name": "Figura-da-luz",
+  "look": "cabelo escuro, jaqueta escura, solta clarão branco de golpe, sob chuva"
+ },
+ {
+  "name": "Figura-do-tronco",
+  "look": "tronco de roupa escura, linhas de velocidade, sem rosto visível"
+ },
+ {
+  "name": "Figura-de-casaco",
+  "look": "casaco escuro comprido, cabelo escuro, rosto na sombra do capuz, mão estendida"
+ },
+ {
+  "name": "Figura-do-ouvido",
+  "look": "cabeça escura em close, orelha à mostra, sem rosto nítido"
+ },
+ {
+  "name": "Terno-de-camisa-aberta",
+  "look": "terno escuro, camisa aberta com sangue no peito, ajoelhado, sem rosto visível"
+ },
+ {
+  "name": "Terno-do-topo",
+  "look": "terno escuro, cabelo claro penteado, ajoelhado no alto, mão na cintura"
+ },
+ {
+  "name": "Terno-deitado",
+  "look": "terno escuro, cabelo castanho escuro, olhos fechados, deitado sobre tampa escura"
+ },
+ {
+  "name": "Terno-caído-direita",
+  "look": "terno escuro, cabelo escuro, de bruços sobre tampa escura, à direita"
+ },
+ {
+  "name": "Cabelo-castanho-de-costas",
+  "look": "cabelo castanho espetado, jaqueta escura, de costas, sangue no pescoço"
+ },
+ {
+  "name": "Head Breaker",
+  "look": "rosto de olhar raivoso, sobrancelha grossa, cabelo escuro"
+ },
+ {
+  "name": "Figura-olho-branco",
+  "look": "silhueta escura de cabelo espetado, olho branco brilhante, sem rosto nítido"
+ },
+ {
+  "name": "Figura-cabelo-longo",
+  "look": "silhueta escura à direita, cabelo comprido, olhos brancos brilhantes"
+ },
+ {
+  "name": "Figura-de-costas",
+  "look": "cabelo escuro bagunçado, visto de costas, roupa escura, cabeça agarrada"
+ },
+ {
+  "name": "Figura-das-mãos",
+  "look": "corpo escuro, mãos em concha soltando faíscas brancas, sorriso dentado"
+ },
+ {
+  "name": "Figura-do-colarinho",
+  "look": "terno escuro e gravata, visto do colarinho para cima, faíscas elétricas"
+ },
+ {
+  "name": "Moça-do-rabo",
+  "look": "cabelo castanho longo em rabo de cavalo, braços erguidos, hematomas no braço"
+ },
+ {
+  "name": "Captor-sem-rosto",
+  "look": "fala fora do quadro, sem rosto visível, ameaça com deboche"
+ },
+ {
+  "name": "Moça-da-saia",
+  "look": "saia escura de babados, botas de cano alto, pisa na poça"
+ },
+ {
+  "name": "Figura-de-cordão",
+  "look": "cabelo escuro, jaqueta escura com cordão no pescoço, expressão tensa de boca aberta"
+ },
+ {
+  "name": "Figura-do-soco",
+  "look": "figura escura de braço estendido, em golpe, sem rosto nítido"
+ },
+ {
+  "name": "Terno-correndo",
+  "look": "terno escuro de costas, cabelo escuro, correndo contra parede rachada"
+ },
+ {
+  "name": "Criança-do-tronco",
+  "look": "cabelo claro, sentada encostada na árvore, roupa escura com listras brancas nas pernas"
+ },
+ {
+  "name": "Gigante-de-costas",
+  "look": "homem musculoso de costas, cicatriz costurada nas costas, punho erguido"
+ },
+ {
+  "name": "Terno-do-queixo",
+  "look": "terno escuro, gravata escura, visto do queixo para baixo"
+ },
+ {
+  "name": "Hyeong-sik",
+  "look": "homem magro, regata, barba curta, máscara escura nos olhos, sentado em trono"
+ },
+ {
+  "name": "Terno-em-pe",
+  "look": "terno escuro, cabelo escuro, em pé na rocha com braço estendido"
+ },
+ {
+  "name": "Moça-sentada",
+  "look": "cabelo escuro, sentada na rocha ao lado do terno, mão na cabeça"
+ },
+ {
+  "name": "Mão-de-garras",
+  "look": "mão pálida de dedos longos e unhas, sem manga visível, sobre fundo de faíscas"
+ },
+ {
+  "name": "Figura-do-grito-esquerdo",
+  "look": "rosto gritando à esquerda, cabelo claro espetado, boca escancarada"
+ },
+ {
+  "name": "Figura-do-grito-direito",
+  "look": "rosto gritando à direita, cabelo escuro, pontos costurados no rosto"
+ },
+ {
+  "name": "Sorridente-da-pulseira",
+  "look": "terno escuro, cabelo escuro espetado, sorriso largo com dentes, gravata escura"
+ },
+ {
+  "name": "Figura-de-cabelo-escuro",
+  "look": "cabelo escuro, cabeça em close no canto inferior, gota de suor"
+ },
+ {
+  "name": "Terno-em-pé",
+  "look": "terno escuro, gravata, mão na cintura, cabeça fora do quadro"
+ },
+ {
+  "name": "Moça-da-lança",
+  "look": "cabelo escuro comprido, vestido escuro com fenda, segura lança, boca aberta"
+ },
+ {
+  "name": "Moça-da-gola",
+  "look": "cabelo escuro longo, gola alta preta, ombro à mostra, brincos de pérola"
+ },
+ {
+  "name": "Olho-chorando",
+  "look": "olho escuro em close com lágrima e cílios longos, sem rosto visível"
+ },
+ {
+  "name": "Mãos-no-assento",
+  "look": "mãos escuras agarrando borda de assento acolchoado, sem corpo visível"
+ },
+ {
+  "name": "Voz-que-chama",
+  "look": "voz fora do quadro gritando 'Junho!', sem rosto visível"
+ },
+ {
+  "name": "Yoon-hee",
+  "look": "não aparece nestas páginas, só citada na fala"
+ },
+ {
+  "name": "Moça-do-brinco",
+  "look": "cabelo castanho-escuro longo, brinco comprido de pérola, gola alta escura, suada e tensa"
+ },
+ {
+  "name": "Moça-do-vestido",
+  "look": "cabelo castanho-escuro longo, vestido escuro justo com cinto, braços longos"
+ },
+ {
+  "name": "Terno-do-vestido",
+  "look": "terno escuro, braço de manga comprida segurando a moça"
+ },
+ {
+  "name": "Moça-da-cama",
+  "look": "cabelo castanho curto ondulado, pijama listrado, soro no pulso, chorando"
+ },
+ {
+  "name": "Moça-do-bob",
+  "look": "cabelo castanho escuro na altura do ombro, franja, rosto corado, olha para cima"
+ },
+ {
+  "name": "Repórter-fora-do-quadro",
+  "look": "voz fora do quadro, balões de grito serrilhados, rostos borrados embaixo"
+ },
+ {
+  "name": "Recrutador-de-terno",
+  "look": "terno escuro, camisa clara, gravata escura, cabelo escuro curto com franja, sorriso de canto"
+ },
+ {
+  "name": "Terno-olhando-alto",
+  "look": "cabelo escuro curto, terno escuro com gravata, rosto sério, olha para cima ou de lado"
+ },
+ {
+  "name": "Moça-do-curativo",
+  "look": "cabelo castanho escuro longo, curativo quadrado no rosto, sorriso largo, camisa listrada"
+ },
+ {
+  "name": "Figuras-dos-pés",
+  "look": "dois pares de pés sobre entulho; um de calça escura, outro com tornozelo enfaixado"
+ },
+ {
+  "name": "Figura-das-pernas",
+  "look": "calças escuras e sapatos sociais, só pernas visíveis"
+ },
+ {
+  "name": "Terno-da-porta",
+  "look": "terno escuro, silhueta em contraluz na porta arqueada"
+ },
+ {
+  "name": "Figuras-do-chão",
+  "look": "duas figuras escuras agachadas, roupa escura com detalhes claros"
+ },
+ {
+  "name": "Figura-de-manga-manchada",
+  "look": "manga escura com manchas, corrente de contas claras"
+ },
+ {
+  "name": "Silhueta-da-porta",
+  "look": "silhueta escura de terno, cabelo curto, em contraluz na porta, sem rosto visível"
+ },
+ {
+  "name": "Terno-do-colete",
+  "look": "terno escuro, colete com botões, braço erguido, fala 'Fim de semana.'"
+ },
+ {
+  "name": "Figura-do-ombro",
+  "look": "ombro escuro em primeiro plano, balão de '?' sem rosto visível"
+ },
+ {
+  "name": "Young-tan",
+  "look": "terno escuro, cabelo escuro curto espetado, segura cartão com selo; provável Terno-da-maleta"
+ },
+ {
+  "name": "Figura-do-alto",
+  "look": "fala de cima do quadro, sem rosto visível"
+ },
+ {
+  "name": "Voz-do-telefone",
+  "look": "voz ao telefone, sem rosto visível"
+ },
+ {
+  "name": "Figura-do-primeiro-plano",
+  "look": "silhueta escura de cabelo escuro em primeiro plano à esquerda, de lado, sem rosto nítido"
+ },
+ {
+  "name": "Voz-de-cima",
+  "look": "fala de cima do quadro, balão de contorno liso com rabicho para cima, sem rosto visível"
+ },
+ {
+  "name": "Voz-de-fora",
+  "look": "voz fora do quadro, sem rosto visível; pede ajuda para usar algo"
+ },
+ {
+  "name": "Jung Dahyun",
+  "look": "caçadora de nível 6, rabo de cavalo, espada, crachá, blazer escuro; colega de Joon-ho"
+ },
+ {
+  "name": "Lim Hae-chul",
+  "look": "oficial sênior, nível 4, terno e crachá, cabelo penteado para trás, supervisor do exame"
+ },
+ {
+  "name": "Wang Ju-yeol",
+  "look": "Terno e gravata, sorriso de canto, funcionário da força-tarefa, veterano"
+ },
+ {
+  "name": "Jang Jong-taek",
+  "look": "Gray Dog Enforcer, sorridente, sentado à mesa com cartas espalhadas"
+ },
+ {
+  "name": "Sang-su",
+  "look": "óculos e sorriso confiante; Mestre de Guilda da Lista Negra, nível 6"
+ },
+ {
+  "name": "Jong-hyup",
+  "look": "antigo amigo de Choi nos dias de Bloodkin, forçado a virar vilão"
+ },
+ {
+  "name": "Koo Sung-ho",
+  "look": "terno escuro, nível seis, mestre da guilda Ten, sob chuva"
+ },
+ {
+  "name": "Oh Jong-soo",
+  "look": "irmão mais novo de Jong-hyup, paciente internado no quarto VVIP"
+ },
+ {
+  "name": "Lee Chul-hwan",
+  "look": "líder da equipe Bravo, nível 5, servidor civil, suado e irritado"
+ },
+ {
+  "name": "Na Kyung-wook",
+  "look": "Blink; encapuzado e mascarado, sobretudo, dom de teletransporte"
+ },
+ {
+  "name": "Perita",
+  "look": "(aparência ainda não vista) não aceitou o dinheiro pelo coração."
+ }
+]

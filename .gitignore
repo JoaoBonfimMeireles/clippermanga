@@ -14,6 +14,10 @@ projetos/*
 # progresso de cada projeto (jobs.json = etapas verdes, editlog...); sem áudio/miniaturas pesados
 !projetos/[0-9a-f]*/
 projetos/[0-9a-f]*/*
+!projetos/[0-9a-f]*/project.json
+!projetos/[0-9a-f]*/characters.json
+!projetos/[0-9a-f]*/page-hashes.json
+!projetos/[0-9a-f]*/page-notes.json
 !projetos/[0-9a-f]*/.progress/
 projetos/[0-9a-f]*/.progress/tts/
 projetos/[0-9a-f]*/.progress/segs/

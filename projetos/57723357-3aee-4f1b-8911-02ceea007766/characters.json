@@ -1,0 +1,1150 @@
+[
+ {
+  "name": "Limon",
+  "look": "caminha com Qingwei numa rua noturna iluminada"
+ },
+ {
+  "name": "Qingwei",
+  "look": "coque com grampo branco, brincos com borla, chora, descendente do Divino Senhor Dragão Negro"
+ },
+ {
+  "name": "Criatura de garras",
+  "look": "criatura escura de garras longas e curvas, surge na penumbra"
+ },
+ {
+  "name": "Figura de sobretudo preto",
+  "look": "Sobretudo preto, cabelo escuro, cai em cena escura com destroços"
+ },
+ {
+  "name": "Figura de cabelo escuro",
+  "look": "cabelo escuro, cabeça na base do quadro, cena escura com destroços"
+ },
+ {
+  "name": "Espadachim de preto",
+  "look": "cabelo castanho-escuro, roupa preta justa, espada com rastro de luz"
+ },
+ {
+  "name": "Portador da espada",
+  "look": "mão em punho sobre bainha escura, manga e roupa claras"
+ },
+ {
+  "name": "Figura de casaco escuro",
+  "look": "silhueta de casaco longo escuro, quadro borrado, rosto não visível"
+ },
+ {
+  "name": "Figura do casaco",
+  "look": "casaco longo escuro, parte inferior visível, rosto fora do quadro, golpeia"
+ },
+ {
+  "name": "Lee Cheon-gi",
+  "look": "aparência ainda não vista; citado nas falas como alvo da dívida de sangue"
+ },
+ {
+  "name": "Sobretudo",
+  "look": "de pé entre corpos caídos, espada na mão, cabeça baixa"
+ },
+ {
+  "name": "Armadura de chifres",
+  "look": "elmo com chifres, luvas de placas espinhosas, aura escura"
+ },
+ {
+  "name": "Dragão de chamas",
+  "look": "criatura de dragão envolta em chamas, olhos brilhantes"
+ },
+ {
+  "name": "Clérigo",
+  "look": "barba grisalha, manto escuro com cruz no peito, expressão séria"
+ },
+ {
+  "name": "Lutador",
+  "look": "cabelo escuro, faixa na testa, rosto tenso, punho cerrado"
+ },
+ {
+  "name": "Velho de óculos",
+  "look": "cabelo grisalho, óculos de armação fina, rosto suado em close-up"
+ },
+ {
+  "name": "Figura cabelo escuro",
+  "look": "cabelo escuro preso para trás, parte superior da cabeça na base da cena escura"
+ },
+ {
+  "name": "Figura sorridente",
+  "look": "sorriso em close, losango na testa, gola alta de babados escuros"
+ },
+ {
+  "name": "Figura de vestido escuro",
+  "look": "barra de vestido longo escuro com padrões claros, pés não visíveis"
+ },
+ {
+  "name": "Figura de casaco com dragões",
+  "look": "casaco preto longo com tatuagens de dragão nas mangas, perna erguida, filmado de baixo"
+ },
+ {
+  "name": "Grupo sombreado",
+  "look": "silhuetas escuras reunidas, uma com mão erguida, sem rostos visíveis"
+ },
+ {
+  "name": "Figura de perfil",
+  "look": "silhueta curvada de perfil, lâmina clara diagonal, sem rosto visível"
+ },
+ {
+  "name": "Figura de cabelo preso",
+  "look": "cabelo escuro preso para trás, olhos fechados, rosto contraído, roupa escura, cercada de estilhaços"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão em gesto de magia diante de disco com dragão, sem rosto visível"
+ },
+ {
+  "name": "Figura do casaco com dragões",
+  "look": "casaco preto longo com tatuagens de dragão nas mangas, filmado de baixo"
+ },
+ {
+  "name": "Figura do casaco de forro claro",
+  "look": "silhueta de casaco longo escuro com forro claro, lâmina branca, rosto não visível"
+ },
+ {
+  "name": "Figura de olhos brancos",
+  "look": "silhueta escura de cabelo arrepiado com olhos brancos brilhantes"
+ },
+ {
+  "name": "Silhueta de casaco",
+  "look": "silhueta enorme de casaco escuro na lateral esquerda, contraluz"
+ },
+ {
+  "name": "Figura do grampo",
+  "look": "cabelo longo escuro com grampo branco, de costas"
+ },
+ {
+  "name": "Figura do brinco",
+  "look": "rosto de perfil, cabelo escuro, brinco longo ornamentado, gola de babados escuros"
+ },
+ {
+  "name": "Figura do casaco claro",
+  "look": "silhueta de casaco longo escuro com forro claro, lâmina branca, rosto não visível"
+ },
+ {
+  "name": "Espectadores",
+  "look": "rostos sorridentes sombreados, sentados em fileira escura"
+ },
+ {
+  "name": "Figura do forro claro",
+  "look": "casaco longo escuro com forro claro, lâmina clara na mão, rosto oculto"
+ },
+ {
+  "name": "Figura de forro claro",
+  "look": "casaco longo escuro com forro claro, lâmina branca, rosto não visível"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro, cabeça baixa, olhos fechados, roupa escura, curvada"
+ },
+ {
+  "name": "Figura de óculos",
+  "look": "cabelo escuro penteado para trás, óculos finos, terno escuro"
+ },
+ {
+  "name": "Figura de terno",
+  "look": "calça escura e sapatos sociais de cadarço, rosto não visível, de pé"
+ },
+ {
+  "name": "Casaco de Dragões",
+  "look": "casaco preto longo com dragões bordados nas mangas, filmado de baixo, rosto oculto"
+ },
+ {
+  "name": "Na-kyeong",
+  "look": "não desenhado nesta página; citado como morto"
+ },
+ {
+  "name": "Voz fora de quadro",
+  "look": "balão sem rabicho visível, sem rosto visível"
+ },
+ {
+  "name": "Figura de presas",
+  "look": "boca aberta com presas à mostra, grita, colarinho alto escuro"
+ },
+ {
+  "name": "Figura de faixa escura",
+  "look": "faixa ou chapéu escuro na cabeça, rosto pálido e tenso, roupa escura com bordado de nuvens"
+ },
+ {
+  "name": "Olho",
+  "look": "close-up de olho e cabelo curto escuro, sem rosto inteiro"
+ },
+ {
+  "name": "Sorridente",
+  "look": "sorriso com presa à mostra, fala de origem ambígua"
+ },
+ {
+  "name": "Figura sem rosto",
+  "look": "mão enluvada segurando roupa, casaco escuro, sem rosto visível"
+ },
+ {
+  "name": "Hyeon-gun",
+  "look": "close-up, cabelo claro espetado, gola alta escura, olhar sério"
+ },
+ {
+  "name": "Figura chorando",
+  "look": "rosto de perfil, cabelo escuro, lágrimas, cena escura"
+ },
+ {
+  "name": "Figura sombreada",
+  "look": "silhueta escura de casaco longo, rosto cortado, borda clara, fala de cima"
+ },
+ {
+  "name": "Figura do terno claro",
+  "look": "Cabelo escuro penteado para trás, terno claro, gravata escura, rosto visível"
+ },
+ {
+  "name": "Figura caída",
+  "look": "corpo de roupa escura caído entre destroços, cabelo escuro longo, rosto oculto"
+ },
+ {
+  "name": "Figura de gola alta",
+  "look": "casaco escuro com gola alta, rosto oculto fora do quadro"
+ },
+ {
+  "name": "Ajoelhado",
+  "look": "cabelo escuro, casaco escuro, ajoelhado de costas, olha aviso flutuante"
+ },
+ {
+  "name": "Terno claro",
+  "look": "cabelo escuro penteado para trás, terno claro, gravata escura, rosto marcado"
+ },
+ {
+  "name": "Presas",
+  "look": "boca aberta com presas à mostra, grita culpando o plano"
+ },
+ {
+  "name": "Voz",
+  "look": "cabelo claro bagunçado, cabeça baixa, cena de azulejos escuros"
+ },
+ {
+  "name": "Criatura escamosa",
+  "look": "cabeça escamosa, olho reptiliano brilhante, presas abertas"
+ },
+ {
+  "name": "Serpente",
+  "look": "serpente escamosa, presas abertas, olho reptiliano, olho gigante acima"
+ },
+ {
+  "name": "Figura gritando",
+  "look": "cabelo escuro, boca aberta gritando, rosto de perfil, cena escura"
+ },
+ {
+  "name": "Caído",
+  "look": "corpo de roupa escura caído entre destroços, cena escura com estilhaços"
+ },
+ {
+  "name": "Seo Yong-chan",
+  "look": "citado em balão, ainda não desenhado nesta página"
+ },
+ {
+  "name": "Figura da lâmina",
+  "look": "casaco longo escuro com forro claro, lâmina branca na mão, rosto oculto"
+ },
+ {
+  "name": "Olhos Brancos",
+  "look": "silhueta escura de cabelo arrepiado com olhos brancos brilhantes"
+ },
+ {
+  "name": "Entidade",
+  "look": "rosto em close, sorriso de dentes à mostra, cabelo ou capuz escuro, olhar cerrado"
+ },
+ {
+  "name": "Figura das botas",
+  "look": "pernas de calça escura e botas longas, pisando em chão rachado"
+ },
+ {
+  "name": "Mão de garras",
+  "look": "mão pálida de dedos longos e afiados, energia branca em volta"
+ },
+ {
+  "name": "Figura alada",
+  "look": "criatura alada de penas claras, caindo em destroços"
+ },
+ {
+  "name": "Criatura de armadura",
+  "look": "armadura escura com elmo e placas, fissuras com brilho branco"
+ },
+ {
+  "name": "Figura de camisa branca",
+  "look": "cabelo escuro, camisa clara, arremessado para trás em cena escura"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "cabelo escuro curto, casaco escuro de gola alta, visto de costas"
+ },
+ {
+  "name": "Rosto sombreado",
+  "look": "perfil em close-up, cabelo escuro com brilho claro, gola alta escura, olhar baixo"
+ },
+ {
+  "name": "Figura borrada",
+  "look": "silhueta de manga escura desfocada em movimento, rosto não visível, entre destroços"
+ },
+ {
+  "name": "Casaco de forro claro",
+  "look": "casaco longo escuro com forro claro, rosto na penumbra, pergunta por quê"
+ },
+ {
+  "name": "Moça de franja",
+  "look": "cabelo escuro curto com franja, pinta sob o olho, olhos arregalados"
+ },
+ {
+  "name": "Criatura de disco",
+  "look": "disco escuro de borda irregular com olho vertical branco no centro"
+ },
+ {
+  "name": "Camisa branca",
+  "look": "cabelo escuro, camisa clara, arremessado para trás em cena escura"
+ },
+ {
+  "name": "Alado",
+  "look": "cabelo escuro penteado, terno escuro, asas brancas, grita de braço estendido"
+ },
+ {
+  "name": "Mão gigante",
+  "look": "mão branca gigante com garras longas e finas"
+ },
+ {
+  "name": "Lâmina",
+  "look": "figura de sobretudo escuro com lâmina clara na mão, rosto oculto"
+ },
+ {
+  "name": "Park Hyeon-gun",
+  "look": "cabelo espetado, olhar sério, presas à mostra, casaco rasgado, empunha espada de luz"
+ },
+ {
+  "name": "Figura de casaco longo",
+  "look": "silhueta de casaco longo escuro, rosto oculto, em penumbra e fumaça"
+ },
+ {
+  "name": "Gritador",
+  "look": "boca aberta gritando, dentes à mostra, barba por fazer, camisa escura, lâmina serrilhada"
+ },
+ {
+  "name": "Mão",
+  "look": "mão enluvada, dedos abertos, destroços ao redor"
+ },
+ {
+  "name": "Silhueta",
+  "look": "silhueta escura de casaco longo caindo, sem rosto visível"
+ },
+ {
+  "name": "Sombra",
+  "look": "silhueta enorme de casaco longo escuro à direita, sem rosto visível, na penumbra"
+ },
+ {
+  "name": "Figura de casaco",
+  "look": "casaco longo escuro com forro claro, lâmina branca, rosto oculto"
+ },
+ {
+  "name": "Figura do ombro",
+  "look": "silhueta escura de casaco longo, ombro e borda clara, sem rosto visível"
+ },
+ {
+  "name": "Chorão",
+  "look": "cabelo escuro, olhos marejados, cabeça baixa, responde que o objetivo mudou"
+ },
+ {
+  "name": "Ferido",
+  "look": "rosto pálido, cabelo escuro com mechas claras, chora e grita sob a chuva, recebe contrato"
+ },
+ {
+  "name": "Topo",
+  "look": "topo de cabeça de cabelo escuro na base do quadro"
+ },
+ {
+  "name": "Figura casaco claro",
+  "look": "casaco longo escuro com forro claro, lâmina branca, rosto não visível"
+ },
+ {
+  "name": "Figura do primeiro plano",
+  "look": "cabelo escuro curto, de costas, casaco escuro, primeiro plano à esquerda"
+ },
+ {
+  "name": "Figura do topo",
+  "look": "ombro e cabelo escuro no topo, sem rosto visível, fala de cima"
+ },
+ {
+  "name": "Rosto de cabelo escuro",
+  "look": "close-up de rosto de cabelo escuro, olhar baixo e triste, fundo cinza"
+ },
+ {
+  "name": "Corpo caído",
+  "look": "corpo de roupa escura caído no chão, amparado por Sobretudo"
+ },
+ {
+  "name": "Casaco escuro",
+  "look": "casaco longo escuro à esquerda, rosto oculto, borda de bordado escuro"
+ },
+ {
+  "name": "Punho",
+  "look": "braço de manga escura à direita, punho cerrado"
+ },
+ {
+  "name": "Figura de coques",
+  "look": "cabelo em dois coques laterais, armadura escura, segura lança longa"
+ },
+ {
+  "name": "Guardião de ombreira",
+  "look": "ombreira com emblema de sol, de costas, manto escuro"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "manto longo claro, capuz com ornamento pontudo, lança de ponta ornamentada"
+ },
+ {
+  "name": "Perfil sombrio",
+  "look": "perfil em close-up, cabelo escuro, gola alta escura, boca entreaberta"
+ },
+ {
+  "name": "Voz da TV",
+  "look": "balão com rabicho apontando para TV antiga no escuro; sem rosto"
+ },
+ {
+  "name": "Figura do casaco longo",
+  "look": "casaco longo escuro, rosto oculto, pasta na mão, na penumbra"
+ },
+ {
+  "name": "Figura da base",
+  "look": "ombros de casaco escuro na base do quadro, fala de cima, origem ambígua"
+ },
+ {
+  "name": "Oponente",
+  "look": "cabelo claro espetado, torso nu, em pleno golpe contra Hyeon-gun"
+ },
+ {
+  "name": "Anciã",
+  "look": "cabelo preso em coque com enfeites brancos, roupa escura, segura cajado, idosa"
+ },
+ {
+  "name": "Sword Lord",
+  "look": "homem de manto escuro, visto só de ombro e braço, rosto fora do quadro"
+ },
+ {
+  "name": "Gi-neung",
+  "look": "chefe do clã Wang; ainda não aparece desenhado nesta página"
+ },
+ {
+  "name": "Agente de coque",
+  "look": "cabelo em coque, óculos escuros, terno escuro, ao lado do Agente"
+ },
+ {
+  "name": "Agente do meio",
+  "look": "homem de cabelo penteado para trás, óculos escuros, terno escuro, rosto sério"
+ },
+ {
+  "name": "Agente da frente",
+  "look": "cabelo escuro penteado, óculos escuros, terno escuro, perto da câmera"
+ },
+ {
+  "name": "Moça de boné",
+  "look": "cabelo escuro longo preso sob boné preto de aba, camiseta clara"
+ },
+ {
+  "name": "Criança pequena",
+  "look": "criança pequena de braços erguidos, à direita, ao fundo"
+ },
+ {
+  "name": "Figura de camisa clara",
+  "look": "de costas, camisa clara de manga curta, cabelo escuro, ao lado da moça de boné"
+ },
+ {
+  "name": "Criança de cabelo curto",
+  "look": "cabelo castanho bagunçado, sorriso largo, braço erguido"
+ },
+ {
+  "name": "Garoto de cabelo espetado",
+  "look": "cabelo escuro espetado, olhos arregalados, boca aberta"
+ },
+ {
+  "name": "Agentes caídos",
+  "look": "corpos de terno escuro empilhados no chão"
+ },
+ {
+  "name": "Figura da sandália",
+  "look": "pé calçado em sandália clara sobre pavimento rachado, sem rosto visível"
+ },
+ {
+  "name": "Figura do cabelo longo",
+  "look": "cabelo longo escuro com mechas brancas, de costas, à esquerda do quadro"
+ },
+ {
+  "name": "Moça de cabelo longo",
+  "look": "cabelo escuro longo, de costas, shorts e camiseta clara, na entrada do circo"
+ },
+ {
+  "name": "Figura do perfil",
+  "look": "perfil angular, boca fechada, sob balão de reticências, cabelo não visível"
+ },
+ {
+  "name": "Criança de cabelo castanho",
+  "look": "cabelo castanho bagunçado, sorriso largo, braço erguido"
+ },
+ {
+  "name": "Pássaro",
+  "look": "criatura de penas escuras, corpo redondo, topete, cordas presas ao corpo"
+ },
+ {
+  "name": "Figura de terno escuro",
+  "look": "terno escuro, cabelo claro penteado para trás, olha para cima em cena escura"
+ },
+ {
+  "name": "Fada",
+  "look": "cabelo cacheado claro, orelhas pontudas, asas translúcidas, vestido esvoaçante"
+ },
+ {
+  "name": "Figura de manga escura",
+  "look": "manga escura no topo do quadro, sem rosto visível"
+ },
+ {
+  "name": "Sword",
+  "look": "cabelo espetado, gola alta escura, espada, olhar sério; líder de equipe"
+ },
+ {
+  "name": "Casaco longo",
+  "look": "casaco longo escuro, pasta na mão, rosto oculto, andando entre TVs com chiado"
+ },
+ {
+  "name": "Figura do braço",
+  "look": "braço de manga escura avançando da direita, rosto fora do quadro"
+ },
+ {
+  "name": "Figura da aura branca",
+  "look": "silhueta entre árvores envolta em fumaça brilhante branca, rosto não visível"
+ },
+ {
+  "name": "Velho de barba",
+  "look": "cabelo grisalho penteado, bigode e barba longa, casaco escuro bordado"
+ },
+ {
+  "name": "Mão sombria",
+  "look": "mão escura estendida da direita em meio a fumaça"
+ },
+ {
+  "name": "Criatura de presas",
+  "look": "criatura escura de boca aberta com presas, olhos brilhantes, sem rosto humano"
+ },
+ {
+  "name": "Criatura de olhos brancos",
+  "look": "silhueta escura de cabelo arrepiado com olhos brancos brilhantes"
+ },
+ {
+  "name": "Criatura",
+  "look": "olho branco gigante com tentáculos escuros, sem corpo visível"
+ },
+ {
+  "name": "Voz sombria",
+  "look": "balão escuro com contorno brilhante, sem rosto visível"
+ },
+ {
+  "name": "Voz do topo",
+  "look": "ombro e cabelo escuro no canto superior, sem rosto visível"
+ },
+ {
+  "name": "Sombra de golpe",
+  "look": "silhueta escura borrada em movimento, linhas de velocidade"
+ },
+ {
+  "name": "Figura de corte",
+  "look": "figura escura embaixo do quadro, cercada por efeitos sonoros grandes"
+ },
+ {
+  "name": "Figura do casaco escuro",
+  "look": "casaco longo escuro, mão enluvada segurando roupa, rosto oculto"
+ },
+ {
+  "name": "Jeong-soo",
+  "look": "óculos, expressão séria, fala em cena escura"
+ },
+ {
+  "name": "Yu Na-gyeong",
+  "look": "cabelo castanho-escuro curto na altura do queixo, roupa esportiva clara com zíper, bochechas beliscadas"
+ },
+ {
+  "name": "Yowin",
+  "look": "terno escuro, sorrindo ao lado de Mulher do bob, mão no peito"
+ },
+ {
+  "name": "Diretor Kim",
+  "look": "(aparência ainda não vista) chamou Limon de relíquia, caiu no chão (cap. 7), ficou apavorado e ferido no pescoço (cap. 8). Disse que só o "
+ },
+ {
+  "name": "Mira",
+  "look": "(aparência ainda não vista) berrou de braço estendido e garras escuras à mostra durante a invasão."
+ },
+ {
+  "name": "Princesa",
+  "look": "brincos longos, cabelo escuro, aparece ao lado do protagonista observando, sem nome revelado"
+ },
+ {
+  "name": "Voz não identificada",
+  "look": "balão de fala sem rosto visível, origem fora do quadro ou na penumbra"
+ },
+ {
+  "name": "Rosto de cabelo claro",
+  "look": "cabelo claro espetado, gola alta escura, olhar sério, close-up"
+ },
+ {
+  "name": "Espadachim",
+  "look": "cabelo escuro espetado, casaco escuro, espada branca brilhante na mão"
+ },
+ {
+  "name": "Sombra do casaco",
+  "look": "silhueta de casaco longo escuro, rosto não visível, arrastando-se pelo chão"
+ },
+ {
+  "name": "Noivo",
+  "look": "casaco com espada, abraça Qingwei, segura sua mão"
+ },
+ {
+  "name": "Noiva",
+  "look": "perfil, olhos fechados, sorriso leve, ao lado do Noivo"
+ },
+ {
+  "name": "Atacante de casaco",
+  "look": "cabelo escuro bagunçado, casaco escuro, segura bastão, olhos arregalados"
+ },
+ {
+  "name": "Coque caído",
+  "look": "cabelo preso em coque, caído no chão, roupa escura"
+ },
+ {
+  "name": "Li Qingwei",
+  "look": "ainda não visto nesta página; nome dito em fala de voz não identificada"
+ },
+ {
+  "name": "Figura não identificada",
+  "look": "silhueta de cabelo escuro, de costas, na base do quadro, grita em balão espiculado"
+ },
+ {
+  "name": "Figura de calça escura",
+  "look": "pernas de calça escura e sapatos, de pé sobre piso de tábuas"
+ },
+ {
+  "name": "Figura blindada",
+  "look": "armadura escura com chifres, punho blindado cerrado"
+ },
+ {
+  "name": "Casaco Claro",
+  "look": "casaco longo escuro com forro e lapelas claras, rosto na penumbra"
+ },
+ {
+  "name": "Figura do fundo",
+  "look": "balão de fala sem rosto visível, vindo de fora do quadro, origem ambígua"
+ },
+ {
+  "name": "Figura da perna",
+  "look": "perna de calça escura e sapato, em chão com respingos e garras"
+ },
+ {
+  "name": "Figura de robe",
+  "look": "robe escuro longo, pernas em meio a destroços, rosto não visível"
+ },
+ {
+  "name": "Figura da arma",
+  "look": "casaco longo escuro com forro claro, arma de cabo trançado com borla, rosto oculto"
+ },
+ {
+  "name": "Figura de vestido",
+  "look": "barra de vestido longo escuro com padrões claros, sapatos escuros, rosto fora do quadro"
+ },
+ {
+  "name": "Mão luminosa",
+  "look": "mão nua estendida com brilho branco, saindo de manga escura"
+ },
+ {
+  "name": "Interlocutor",
+  "look": "fora do quadro, balão de cima, origem ambígua, sem rosto visível"
+ },
+ {
+  "name": "Sombra de olhos brancos",
+  "look": "silhueta escura de cabelo arrepiado com olhos brancos brilhantes"
+ },
+ {
+  "name": "Silhueta da esquerda",
+  "look": "silhueta enorme de casaco escuro de costas, rosto não visível, na lateral esquerda"
+ },
+ {
+  "name": "Silhueta da direita",
+  "look": "silhueta escura de cabelo curto de costas, perfil, rosto não visível"
+ },
+ {
+  "name": "Silhueta do casaco",
+  "look": "silhueta enorme de casaco longo escuro na lateral esquerda, em contraluz"
+ },
+ {
+  "name": "Voz de fora",
+  "look": "balão de fala sem rosto visível, origem fora do quadro"
+ },
+ {
+  "name": "Figura de costas gola alta",
+  "look": "cabelo escuro curto, casaco escuro de gola alta, de costas, cena escura com sol"
+ },
+ {
+  "name": "Cabelo claro",
+  "look": "cabelo claro espetado, jaqueta escura com emblema nas costas, de costas"
+ },
+ {
+  "name": "Conselheiro da mesa",
+  "look": "figuras sentadas atrás de mesa escura, penumbra, roupas escuras"
+ },
+ {
+  "name": "Silhueta esquerda",
+  "look": "silhueta enorme de casaco escuro, lateral esquerda, sem rosto visível"
+ },
+ {
+  "name": "Silhueta direita",
+  "look": "silhueta escura de cabelo curto, perfil, lateral direita, sem rosto visível"
+ },
+ {
+  "name": "Dama do grampo",
+  "look": "cabelo escuro preso em coque com grampo branco, vestido escuro longo, segura lâmina"
+ },
+ {
+  "name": "Cabelo-claro",
+  "look": "cabelo claro curto, sem camisa, musculoso, suado, empunha lâmina longa"
+ },
+ {
+  "name": "Figura do casaco de garras",
+  "look": "casaco longo escuro, lâminas finas como garras na barra, rosto oculto"
+ },
+ {
+  "name": "Casaco do emblema",
+  "look": "casaco longo escuro com emblema de espada em círculo nas costas, de costas"
+ },
+ {
+  "name": "Suplicante",
+  "look": "mãos apoiadas sobre mesa escura, rosto não visível, fala de baixo"
+ },
+ {
+  "name": "Faixa",
+  "look": "faixa escura na cabeça, rosto pálido e tenso, roupa escura com nuvens bordadas"
+ },
+ {
+  "name": "Enluvado",
+  "look": "mão enluvada segurando o pulso de Faixa, sem rosto visível"
+ },
+ {
+  "name": "Gola bordada",
+  "look": "roupa escura com bordado de nós chineses, pingente em losango, fala de fora do rosto"
+ },
+ {
+  "name": "Casaco dragão",
+  "look": "casaco escuro com bordado de dragão, borla, manga cobrindo o rosto"
+ },
+ {
+  "name": "Voz de baixo",
+  "look": "balão com rabicho para baixo, origem fora do quadro, sem rosto visível"
+ },
+ {
+  "name": "Mão de manga escura",
+  "look": "mão pálida estendida saindo de manga escura, brilho claro"
+ },
+ {
+  "name": "Mão do casaco",
+  "look": "mão nua saindo de manga de casaco escuro, à direita"
+ },
+ {
+  "name": "Mão da espada",
+  "look": "mão de manga escura empunhando espada de cabo trançado, rosto fora do quadro"
+ },
+ {
+  "name": "Cortador",
+  "look": "manga de casaco escuro, empunha lâmina, de pé na chuva, rosto fora do quadro"
+ },
+ {
+  "name": "Figura sombria",
+  "look": "silhueta escura de perfil, dentes afiados, balão branco no topo"
+ },
+ {
+  "name": "Diretor",
+  "look": "cabelo escuro penteado para trás, suado, dentes cerrados, terno escuro"
+ },
+ {
+  "name": "Figura da gola escura",
+  "look": "silhueta de gola alta escura no topo do quadro, rosto não visível"
+ },
+ {
+  "name": "Voz escura",
+  "look": "balão escuro oval com contorno claro, sem rosto visível, origem ambígua"
+ },
+ {
+  "name": "Figura de casaco com padrões",
+  "look": "casaco longo escuro com padrões claros, gotas caindo, rosto não visível"
+ },
+ {
+  "name": "Terno-claro",
+  "look": "terno claro, gravata escura, à esquerda, em faixa de pedestre"
+ },
+ {
+  "name": "Criatura-dragão",
+  "look": "criatura de escamas escuras, garras longas, olhos brilhantes, sob chuva"
+ },
+ {
+  "name": "Pernas escuras",
+  "look": "calça escura e sapatos, de pé sobre chão rachado, rosto fora do quadro"
+ },
+ {
+  "name": "Atacante sombrio",
+  "look": "cabelo escuro, roupa escura, investe com braço estendido e corpo inteiro"
+ },
+ {
+  "name": "Olhos-brancos",
+  "look": "silhueta escura de cabelo arrepiado com olhos brancos brilhantes"
+ },
+ {
+  "name": "Criatura alada",
+  "look": "criatura alada de penas claras, corpo redondo, presa por cordas"
+ },
+ {
+  "name": "Alada",
+  "look": "figura alada de penas claras, sob círculos de magia"
+ },
+ {
+  "name": "Criatura escura",
+  "look": "contorno escuro e espinhoso, borda branca, gotas de suor"
+ },
+ {
+  "name": "Casaco de costas",
+  "look": "casaco longo escuro com forro claro, cabelo escuro curto, de costas, diante de destroços"
+ },
+ {
+  "name": "Figura no ar",
+  "look": "figura pequena suspensa entre destroços, lâmina clara, cena escura"
+ },
+ {
+  "name": "Pernas do casaco",
+  "look": "calça escura, sapatos claros, casaco longo com forro claro, sobre destroços"
+ },
+ {
+  "name": "Figura do canto",
+  "look": "cabelo escuro, cena escura com estilhaços, rosto não visível"
+ },
+ {
+  "name": "Criatura blindada",
+  "look": "corpo musculoso escuro, chifres, braços abertos, peito com placas claras"
+ },
+ {
+  "name": "Figura da mão no cabelo",
+  "look": "deitada no chão, mão agarrando o cabelo escuro, rosto oculto"
+ },
+ {
+  "name": "Voz de cima",
+  "look": "balão espiculado de grito, vindo de fora do quadro, de cima"
+ },
+ {
+  "name": "Criatura do olho",
+  "look": "olho branco gigante com tentáculos escuros, sem corpo visível"
+ },
+ {
+  "name": "Figura do olho",
+  "look": "olho escuro em close, íris cinza clara, sobrancelha escura, fala 'Marque minhas palavras'"
+ },
+ {
+  "name": "Figura do punho",
+  "look": "punho ou mão cerrada em meio a poeira, sem rosto visível, efeitos sonoros"
+ },
+ {
+  "name": "Alado de terno",
+  "look": "homem de terno escuro com asas de penas brancas, salta no ar"
+ },
+ {
+  "name": "Silhueta escura",
+  "look": "casaco escuro em primeiro plano, quase todo na penumbra"
+ },
+ {
+  "name": "Figura do queixo",
+  "look": "rosto cortado, lábios cerrados e queixo visíveis, gola escura, abaixo do balão"
+ },
+ {
+  "name": "Criatura de chifres",
+  "look": "criatura escura de chifres e presas, sorriso ameaçador, envolta em luz branca"
+ },
+ {
+  "name": "Criatura-disco",
+  "look": "disco escuro de borda irregular com tentáculos e luz branca no centro"
+ },
+ {
+  "name": "Figura de cabelo longo",
+  "look": "cabelo longo escuro, casaco escuro, cai em diagonal com braço estendido"
+ },
+ {
+  "name": "Voz oculta",
+  "look": "balão espiculado de grito, origem fora do quadro"
+ },
+ {
+  "name": "Figura das pernas",
+  "look": "calça escura e sapatos, de pé sobre chão de destroços"
+ },
+ {
+  "name": "Mão estendida",
+  "look": "mão nua de dedos abertos em primeiro plano, saindo de manga escura, cercada de estilhaços"
+ },
+ {
+  "name": "Figura do casaco de costas",
+  "look": "casaco longo escuro com forro claro, visto de costas, três linhas marcadas nas costas"
+ },
+ {
+  "name": "Silhueta do casaco longo",
+  "look": "silhueta escura de casaco longo na penumbra, rosto não visível"
+ },
+ {
+  "name": "Jovem de cabelo escuro",
+  "look": "cabelo escuro espetado, rosto tenso, mão cobrindo a boca"
+ },
+ {
+  "name": "Vulto de casaco",
+  "look": "casaco longo escuro com forro claro, rosto na penumbra"
+ },
+ {
+  "name": "Figura do cabelo escuro",
+  "look": "cabelo escuro, aparece na base do quadro perto do disco, sem rosto visível"
+ },
+ {
+  "name": "Mão não identificada",
+  "look": "mão pálida de dedos cerrados em penumbra, sem rosto visível"
+ },
+ {
+  "name": "Criatura-olho",
+  "look": "olho branco brilhante gigante, tentáculos escuros, movimento borrado"
+ },
+ {
+  "name": "Rosto",
+  "look": "rosto de homem de cabelo escuro penteado para o lado, olhar baixo, close"
+ },
+ {
+  "name": "Figura de sapatos",
+  "look": "sapatos e calça escuros, de pé sobre chão rachado, rosto fora do quadro"
+ },
+ {
+  "name": "Mãos entrelaçadas",
+  "look": "duas mãos apertadas uma na outra, mangas escuras, sem rosto visível"
+ },
+ {
+  "name": "Dama do brinco",
+  "look": "cabelo escuro longo, brinco longo com borla, gola alta bordada, sentada de mãos postas"
+ },
+ {
+  "name": "Rosto de perfil",
+  "look": "perfil em close, cabelo escuro com brilho claro, gola alta escura, boca franzida"
+ },
+ {
+  "name": "Coques",
+  "look": "cabelo em dois coques laterais, armadura escura, segura lança longa"
+ },
+ {
+  "name": "Casaco-emblema",
+  "look": "casaco longo escuro com emblema em círculo, ombro com brasão claro, rosto na penumbra"
+ },
+ {
+  "name": "Figura-capuz",
+  "look": "figura alta encapuzada, rosto na sombra, segura lança ou tridente"
+ },
+ {
+  "name": "Mão-escura",
+  "look": "mão de manga escura agarrando algo, sem rosto visível"
+ },
+ {
+  "name": "Rosto-sombreado",
+  "look": "perfil de rosto, cabelo escuro com brilho claro, gola alta escura, olhar baixo"
+ },
+ {
+  "name": "Casaco borrado",
+  "look": "casaco longo escuro, desfocado em penumbra, rosto oculto"
+ },
+ {
+  "name": "Mão anelada",
+  "look": "mão pálida com anéis e correntes finas, saindo de manga escura, diante de círculo mágico"
+ },
+ {
+  "name": "Voz do monitor",
+  "look": "fala sem rosto visível, balão com rabicho para a TV central, sala escura com TVs antigas"
+ },
+ {
+  "name": "Coque",
+  "look": "cabelo em coque, abatido, caído na penumbra"
+ },
+ {
+  "name": "Na-gyeong",
+  "look": "morta, citada na narração; não aparece visualmente"
+ },
+ {
+  "name": "Agente",
+  "look": "terno escuro, cabelo penteado, olhar sério, membro da Infinity Guild"
+ },
+ {
+  "name": "Park",
+  "look": "contratante cujo corpo físico se dissipa; aparece apenas na narração"
+ },
+ {
+  "name": "Serpente que Conecta as Pontas",
+  "look": "constelação escamosa de presas abertas e olho reptiliano, envolta em luz"
+ },
+ {
+  "name": "Lutador de cabelo claro",
+  "look": "cabelo claro curto e espetado, sem camisa, curvado no golpe, em primeiro plano"
+ },
+ {
+  "name": "Lutador do alto",
+  "look": "cabelo claro, sem camisa, saltando no alto do quadro em golpe"
+ },
+ {
+  "name": "Figura do sobretudo",
+  "look": "sobretudo preto longo com forro claro na manga e gola, cabelo escuro, de pé entre TVs antigas"
+ },
+ {
+  "name": "Figura de baixo",
+  "look": "ombros de casaco escuro na base do quadro, fala de baixo, rosto não visível"
+ },
+ {
+  "name": "Figuras de olhos brancos",
+  "look": "silhuetas escuras nas laterais, com olhos brancos brilhantes"
+ },
+ {
+  "name": "Wang Gi-neung",
+  "look": "cabelo escuro curto, sobretudo escuro, perfil com olhos fechados"
+ },
+ {
+  "name": "Dama-grampo",
+  "look": "cabelo escuro preso em coque com grampo branco, vestido escuro longo, rosto corado"
+ },
+ {
+  "name": "Dama-brinco",
+  "look": "cabelo escuro longo, brinco longo com borla, gola de babados escuros, sorriso"
+ },
+ {
+  "name": "Garoto sorridente",
+  "look": "cabelo escuro espetado, sorriso largo de olhos fechados, punho erguido"
+ },
+ {
+  "name": "Garoto caindo",
+  "look": "cabelo escuro espetado, rolando no chão, sorriso aberto"
+ },
+ {
+  "name": "Homens de terno caídos",
+  "look": "ternos escuros, deitados em pilha no chão"
+ },
+ {
+  "name": "Loiro de óculos",
+  "look": "cabelo claro curto, camisa aberta, óculos escuros pendurados no colarinho, suado"
+ },
+ {
+  "name": "Figura-sandália",
+  "look": "pé de sandália clara em chão rachado; possivelmente a moça de boné"
+ },
+ {
+  "name": "Perfil-angular",
+  "look": "perfil angular, boca fechada, sob balão de reticências, cabelo não visível"
+ },
+ {
+  "name": "Casaco-escuro",
+  "look": "casaco longo escuro de gola alta, pescoço pálido, rosto fora do quadro"
+ },
+ {
+  "name": "Garoto de cabelo claro",
+  "look": "cabelo claro curto, de costas, camisa clara e calça escura, ao lado da moça"
+ },
+ {
+  "name": "Figura-de-costas",
+  "look": "homem de costas, camisa escura de manga curta, calça e sapatos escuros, sobre círculos mágicos"
+ },
+ {
+  "name": "Moça-boné",
+  "look": "cabelo escuro longo, boné escuro, come algodão-doce corada"
+ },
+ {
+  "name": "Mão-espiral",
+  "look": "mão pálida de dedos longos em espiral de magia"
+ },
+ {
+  "name": "Loiro",
+  "look": "cabelo claro curto, camisa aberta, óculos escuros pendurados no colarinho, suado"
+ },
+ {
+  "name": "Figura do terno",
+  "look": "terno claro, gravata escura, sem rosto visível"
+ },
+ {
+  "name": "Velho",
+  "look": "homem idoso de bigode e barba grisalha, casaco escuro bordado, bandeirinhas ao fundo"
+ },
+ {
+  "name": "Casaco-bordado",
+  "look": "casaco longo escuro com bordado claro e faixa na cintura, rosto fora do quadro"
+ },
+ {
+  "name": "Figura luminosa",
+  "look": "silhueta branca brilhante envolta em fumaça, entre árvores escuras"
+ },
+ {
+  "name": "Mestre",
+  "look": "homem de fraque escuro, cabelo claro penteado para trás, gesto de mão, circo"
+ },
+ {
+  "name": "Criatura-presas",
+  "look": "criatura escura de boca aberta com presas, olhos brilhantes, sem rosto humano"
+ },
+ {
+  "name": "Silhueta-escura",
+  "look": "silhueta escura de casaco longo entre portas de madeira, sem rosto visível"
+ },
+ {
+  "name": "Mão escura",
+  "look": "mão de dedos longos e escuros com garras, saindo da fumaça"
+ },
+ {
+  "name": "Criatura grande",
+  "look": "criatura escura de boca cheia de presas, olhos brilhantes, ataca de cima"
+ },
+ {
+  "name": "Criatura pequena",
+  "look": "criatura escura menor, presas e olhos brancos brilhantes, abaixo da grande"
+ },
+ {
+  "name": "Criatura-escura",
+  "look": "silhueta escura espinhosa, borda clara, borrada"
+ },
+ {
+  "name": "Figura-sombria",
+  "look": "silhueta escura de perfil, parte inferior do quadro, borrada"
+ },
+ {
+  "name": "Atacante-sombrio",
+  "look": "figura escura curvada em golpe, destroços ao redor"
+ },
+ {
+  "name": "Figura-da-lâmina",
+  "look": "casaco longo escuro com forro claro, lâmina branca na mão, rosto oculto"
+ },
+ {
+  "name": "Figura com lâmina",
+  "look": "silhueta escura de casaco longo, lâmina clara diagonal, borrada, rosto não visível"
+ },
+ {
+  "name": "Sombra do chão",
+  "look": "ombros e cabelo escuro na base do quadro, sem rosto visível, efeito sonoro forte"
+ },
+ {
+  "name": "Guerreiro de casaco",
+  "look": "casaco longo escuro, mão pálida, entre destroços"
+ },
+ {
+  "name": "Corredor",
+  "look": "cabelo escuro, de costas, casaco escuro, corre entre raios brancos"
+ },
+ {
+  "name": "Criatura-fofa",
+  "look": "bola de pelo escura de orelhas pontudas, peito branco felpudo, cauda curta"
+ },
+ {
+  "name": "Figura-pé",
+  "look": "perna pálida descalça caindo do topo, sem rosto visível"
+ },
+ {
+  "name": "Fugitivo",
+  "look": "roupa escura, correndo, mãos no rosto, perto de uma porta"
+ }
+]

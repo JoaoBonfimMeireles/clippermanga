@@ -1,0 +1,2742 @@
+[
+ {
+  "name": "Berge",
+  "look": "Demônio protagonista, sobretudo escuro, cabelo escuro bagunçado, sorriso convencido"
+ },
+ {
+  "name": "Jovem de máscara brilhante",
+  "look": "cabelo castanho espetado, máscara escura com olhos brancos brilhantes, segura cajado escuro"
+ },
+ {
+  "name": "Figura Chifre",
+  "look": "chifres escuros blindados, luz branca ao redor, parte inferior do quadro"
+ },
+ {
+  "name": "Figura Capa Longa",
+  "look": "alta, capa longa escura com gola, de costas, ao centro"
+ },
+ {
+  "name": "Figura Asas",
+  "look": "asa escura de demônio com garras, visível só em close"
+ },
+ {
+  "name": "Figura Gola",
+  "look": "cabelo curto castanho, gola ou coleira clara, de costas"
+ },
+ {
+  "name": "Figura Militar",
+  "look": "casaco militar escuro com ombreiras, cabelo comprido preso, de costas"
+ },
+ {
+  "name": "Figura Loira",
+  "look": "cabelo loiro volumoso, pensamentos em balão de nuvem com flores"
+ },
+ {
+  "name": "Figura Enfaixada",
+  "look": "Figura com braços e pernas enfaixados, casaco longo, caída na escada."
+ },
+ {
+  "name": "Figura Cabelo Escuro",
+  "look": "cabelo escuro, rosto sério, cabeça na borda inferior"
+ },
+ {
+  "name": "Lanceira",
+  "look": "Mulher de cabelo claro preso, armadura clara, segura lança longa"
+ },
+ {
+  "name": "Mago encapuzado",
+  "look": "Figura de manto escuro com capuz, segura livro aberto"
+ },
+ {
+  "name": "Guerreiro de camisa branca",
+  "look": "Homem de camisa clara, empunha espada no centro do grupo"
+ },
+ {
+  "name": "Espadachim de roupa escura",
+  "look": "Homem de roupa escura à direita, com espada na mão"
+ },
+ {
+  "name": "Herói de armadura branca",
+  "look": "Herói de armadura branca e clara, virado de cabeça para baixo"
+ },
+ {
+  "name": "Demônio de presas",
+  "look": "boca escancarada, presas, chifres, silhueta escura"
+ },
+ {
+  "name": "Bruxa do chapéu",
+  "look": "chapéu de bruxa de abas largas, capa escura"
+ },
+ {
+  "name": "Cavaleiro de elmo chifrudo",
+  "look": "armadura negra, elmo com chifres, máscara fechada"
+ },
+ {
+  "name": "Herói mascarado",
+  "look": "cabelo claro, máscara escura no rosto, arco e aljava nas costas"
+ },
+ {
+  "name": "Herói de capa",
+  "look": "capa escura longa, cabelo escuro, à esquerda do grupo"
+ },
+ {
+  "name": "Criatura de escamas",
+  "look": "escamas, asa, cabeça pálida em primeiro plano"
+ },
+ {
+  "name": "Personagem de cabelo escuro",
+  "look": "cabelo escuro e revolto cobrindo a testa, olho aberto e tenso"
+ },
+ {
+  "name": "Herói de cabelo espetado",
+  "look": "cabelo castanho espetado, armadura escura, cenho franzido, arma longa"
+ },
+ {
+  "name": "Demônio de chifres",
+  "look": "chifres curvos e grandes, cabelo escuro, roupa escura"
+ },
+ {
+  "name": "Figura caída",
+  "look": "sobretudo escuro, cabelo escuro, caída ou sentada no chão, cabeça baixa"
+ },
+ {
+  "name": "Goblin de chifre",
+  "look": "cabelo escuro comprido, chifre escuro, boca escancarada com dentes à mostra"
+ },
+ {
+  "name": "Ferido",
+  "look": "cabelo escuro longo e revolto cobrindo a testa, rosto tenso e ferido"
+ },
+ {
+  "name": "Cabelo Escuro",
+  "look": "cabelo escuro longo e bagunçado, cabeça baixa, rosto oculto"
+ },
+ {
+  "name": "Figura Mão",
+  "look": "mão longa de dedos ósseos e garras, sem rosto visível"
+ },
+ {
+  "name": "Herói Espetado",
+  "look": "cabelo escuro bagunçado, armadura escura, rosto sério, atrás de Hillen"
+ },
+ {
+  "name": "Figura Chifrada",
+  "look": "Cabelo escuro, chifres curvos, sorriso confiante, orbe brilhante na mão"
+ },
+ {
+  "name": "Capa Longa",
+  "look": "alta, capa longa escura com gola de pele, de pé diante do trono"
+ },
+ {
+  "name": "Militar",
+  "look": "cabelo comprido preso, casaco militar com ombreiras e faixa, visto de costas"
+ },
+ {
+  "name": "Figura Chapéu",
+  "look": "chapéu de abas largas, cabelo escuro espetado, expressão constrangida, sobretudo escuro"
+ },
+ {
+  "name": "Herói Sombra",
+  "look": "silhueta escura com espada em punho, no salão"
+ },
+ {
+  "name": "Herói da espada",
+  "look": "empunha espada, mão enluvada, fora do quadro, à direita"
+ },
+ {
+  "name": "Demônio de garras",
+  "look": "garras longas, olho pálido e brilhante na sombra"
+ },
+ {
+  "name": "Personagem de Olho",
+  "look": "olho aberto e tenso em close, cabelo escuro cobrindo a testa"
+ },
+ {
+  "name": "Figura de Armadura",
+  "look": "armadura clara parcial, caindo perto da beirada de buraco escuro"
+ },
+ {
+  "name": "Herói Branco",
+  "look": "cabelo castanho, armadura clara e branca, capa, caindo de cabeça para baixo"
+ },
+ {
+  "name": "Capuz Escuro",
+  "look": "capa escura com capuz, boca aberta, centro-direita"
+ },
+ {
+  "name": "Capuz Longo",
+  "look": "cabelo escuro longo sob capuz, capa escura, à direita do quadro"
+ },
+ {
+  "name": "Multidão",
+  "look": "várias silhuetas pequenas e borradas correndo em massa, sem rosto visível"
+ },
+ {
+  "name": "Figura Encapuzada",
+  "look": "manto escuro com capuz, em grupo ao fundo do salão"
+ },
+ {
+  "name": "Figura da Esfera",
+  "look": "cabelo castanho claro bagunçado, rosto aberto sorrindo, dentro de orbe brilhante"
+ },
+ {
+  "name": "Personagem do Olho",
+  "look": "cabelo escuro cobrindo a testa, olho aberto e tenso em close"
+ },
+ {
+  "name": "Voz não identificada",
+  "look": "sem aparência visível; falas gritadas em balões de explosão"
+ },
+ {
+  "name": "Figura Carneiro",
+  "look": "cabelo cacheado claro, chifres de carneiro enrolados, uniforme escuro com detalhes"
+ },
+ {
+  "name": "Presidente",
+  "look": "homem de orelhas pontudas, barba curta, cabelo claro penteado para trás, sobretudo escuro"
+ },
+ {
+  "name": "Figura de cabelo espetado",
+  "look": "cabelo castanho espetado, roupa escura, braços erguidos, boca aberta, parte de baixo do quadro"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "de costas, ombro e nuca escuros, rosto não visível"
+ },
+ {
+  "name": "Demônio pequeno",
+  "look": "criatura pequena de chifres e cauda, jaqueta escura"
+ },
+ {
+  "name": "Anunciante",
+  "look": "voz oficial fora do quadro, balão hexagonal"
+ },
+ {
+  "name": "Formandos",
+  "look": "multidão de formandos de capa escura alinhados no salão"
+ },
+ {
+  "name": "Figura Espetada",
+  "look": "cabelo escuro espetado, casaco escuro, de costas, no grupo"
+ },
+ {
+  "name": "Figura Uniforme",
+  "look": "cabelo escuro curto, uniforme escuro, no centro do grupo de oficiais, balão '...?'"
+ },
+ {
+  "name": "Figura Gravata",
+  "look": "cabelo castanho espetado, gravata-borboleta, camisa clara, amordaçado"
+ },
+ {
+  "name": "Voz Fora do Quadro",
+  "look": "balão oval sem aparência visível"
+ },
+ {
+  "name": "Figura Dentes",
+  "look": "cabelo escuro espetado, dentes cerrados, rosto furioso, close com luz branca"
+ },
+ {
+  "name": "Voz Recusa",
+  "look": "fala sem personagem visível, balão 'I refuse' sobre fundo branco"
+ },
+ {
+  "name": "Figuras Fileira",
+  "look": "fileira de figuras mascaradas, chifres, uniformes escuros, ao fundo do salão"
+ },
+ {
+  "name": "Figura Central",
+  "look": "armadura clara com ombreiras, cabelo castanho espetado, rosto tenso, parte inferior do quadro"
+ },
+ {
+  "name": "Figura Cabelo Longo",
+  "look": "cabelo longo ondulado, visto de costas"
+ },
+ {
+  "name": "Figura Cabelo Claro",
+  "look": "cabelo claro, na borda inferior, sem rosto visível"
+ },
+ {
+  "name": "Gritador de óculos",
+  "look": "cabelo escuro espetado, óculos redondos, presas, grita de boca aberta"
+ },
+ {
+  "name": "Gritador de presas",
+  "look": "cabelo claro preso, presas à mostra, boca aberta gritando"
+ },
+ {
+  "name": "Elfa de Óculos",
+  "look": "orelhas pontudas, óculos redondos, cabelo escuro longo e revolto, olhar tenso"
+ },
+ {
+  "name": "Loira ao Lado",
+  "look": "cabelo loiro volumoso, visto de lado e de costas"
+ },
+ {
+  "name": "Velho Sorridente",
+  "look": "rosto enrugado, sorriso largo com dentes, cabelo curto grisalho, capa de gola de pelo"
+ },
+ {
+  "name": "Elfo Barbudo",
+  "look": "orelhas pontudas, barba castanha, cabelo escuro bagunçado, olhos fechados em êxtase"
+ },
+ {
+  "name": "Elfa de Colar",
+  "look": "cabelo claro, orelhas pontudas, colar de pérolas, sorriso"
+ },
+ {
+  "name": "Chifrudo ao Fundo",
+  "look": "chifres, barba, sorriso, segura uma planta"
+ },
+ {
+  "name": "Capa Escura",
+  "look": "capa escura longa, cabelo escuro, à esquerda, mão estendida"
+ },
+ {
+  "name": "Arkaine",
+  "look": "arquiduque que mandou vigiar Berge; citado pela Besta de crina branca"
+ },
+ {
+  "name": "Oficial Castanha",
+  "look": "cabelo castanho ondulado, uniforme militar escuro, boca aberta chocada"
+ },
+ {
+  "name": "Figura da Chama",
+  "look": "uniforme militar escuro, chama no lugar da cabeça"
+ },
+ {
+  "name": "Figura do balcão",
+  "look": "chapéu, sobretudo escuro, no balcão superior"
+ },
+ {
+  "name": "Encapuzados",
+  "look": "mantos escuros com capuz, em grupo ao fundo do salão"
+ },
+ {
+  "name": "Figura Ornada",
+  "look": "cabelo claro ornado, óculos, roupa escura e elegante"
+ },
+ {
+  "name": "Figura Orelhuda",
+  "look": "orelhas pontudas, máscara escura com olhos brancos brilhantes, cabelo claro"
+ },
+ {
+  "name": "Figura Triângulo",
+  "look": "máscara escura com marcas triangulares brancas, cabelo castanho, gravata"
+ },
+ {
+  "name": "Figura Mascarada",
+  "look": "máscara escura com marcas brancas, roupa escura, de pé na entrada da caverna"
+ },
+ {
+  "name": "Figura Olho",
+  "look": "cabelo escuro revolto cobrindo um olho, sobretudo escuro, segura taça de vinho"
+ },
+ {
+  "name": "Arein",
+  "look": "citado nas falas; sem aparência nestas páginas"
+ },
+ {
+  "name": "Criatura Garras",
+  "look": "garras claras surgindo na explosão de luz"
+ },
+ {
+  "name": "Figura Costas Longa",
+  "look": "cabelo escuro longo, orelhas pontudas, de costas, primeiro plano"
+ },
+ {
+  "name": "Elfa Tiara",
+  "look": "cabelo loiro volumoso, tiara pontuda, orelhas pontudas, gola de pele"
+ },
+ {
+  "name": "Elfa Escura",
+  "look": "cabelo escuro longo, orelhas pontudas, de costas, primeiro plano à esquerda"
+ },
+ {
+  "name": "Capa Longa Riso",
+  "look": "figura alta de sobretudo escuro com emblema, cabelo escuro, de lado, rindo"
+ },
+ {
+  "name": "Formado Terceiro",
+  "look": "cabeça espetada pálida, presas à mostra, uniforme claro, punho cerrado"
+ },
+ {
+  "name": "Lucky Gordon",
+  "look": "formando de primeiro lugar, citado na fala, não aparece nas imagens"
+ },
+ {
+  "name": "Elfo Armadura",
+  "look": "cabelo claro, elmo, armadura escura com ombreiras"
+ },
+ {
+  "name": "Figura Chifrada Clara",
+  "look": "cabelo claro espetado, chifre pequeno, olhos arregalados"
+ },
+ {
+  "name": "Vulto",
+  "look": "silhueta parcial escura embaixo à direita, em meio a linhas de velocidade"
+ },
+ {
+  "name": "Gordon",
+  "look": "Rei Demônio sorridente de olhos fechados; mãos postas, monóculo, tom provocador"
+ },
+ {
+  "name": "Tenente",
+  "look": "cabelo claro penteado, sobretudo escuro longo, ao lado do Rei Demônio"
+ },
+ {
+  "name": "Oficial de costas",
+  "look": "uniforme escuro com cinto e ombreiras, de costas, balão acima"
+ },
+ {
+  "name": "Sobretudo Escuro",
+  "look": "cabelo escuro penteado para trás, sobretudo escuro de gola ornada, bota pesada"
+ },
+ {
+  "name": "Figura Pernas Altas",
+  "look": "pernas longas de calça escura e botas, parte de um corpo gigante fora do quadro"
+ },
+ {
+  "name": "Figura Topo",
+  "look": "figura escura no topo do salão, sem rosto nítido, fala 'E isso?!'"
+ },
+ {
+  "name": "Mão Sombria",
+  "look": "mão escura de dedos longos com brilho, sem rosto visível"
+ },
+ {
+  "name": "Espetado",
+  "look": "cabelo escuro espetado, rosto suado e assustado, cabeça coberta por substância branca"
+ },
+ {
+  "name": "Olho Tenso",
+  "look": "cabelo escuro longo e revolto, um olho tenso visível, roupa escura e clara"
+ },
+ {
+  "name": "Figura do trono",
+  "look": "sentada de costas no trono, cabelo escuro, sobretudo escuro"
+ },
+ {
+  "name": "Prisioneira",
+  "look": "cabelo claro longo com ahoge, camisa clara, fita escura no pescoço"
+ },
+ {
+  "name": "Figura Casaco Militar",
+  "look": "de costas, cabelo escuro, casaco militar com galões e luvas, dá ordens"
+ },
+ {
+  "name": "Figura Porta",
+  "look": "cabelo escuro, sobretudo escuro, brilho branco ao redor, entrando pela porta gótica"
+ },
+ {
+  "name": "Voz",
+  "look": "fala sem personagem visível, balões de fala em fundo escuro e branco"
+ },
+ {
+  "name": "Rosto Escuro",
+  "look": "cabelo escuro bagunçado, rosto de perfil em close, boca aberta, sombra forte"
+ },
+ {
+  "name": "Figura Cinto",
+  "look": "torso de sobretudo escuro com cinto largo, bordas brancas brilhando; rosto não visível"
+ },
+ {
+  "name": "Cabeça Baixa",
+  "look": "cabelo escuro bagunçado, cabeça baixa, reage com '?!'"
+ },
+ {
+  "name": "Criada",
+  "look": "cabelo escuro preso em coque, vestido escuro com avental branco"
+ },
+ {
+  "name": "Cabelo Claro",
+  "look": "cabelo claro espetado, de perfil, olho pálido visível"
+ },
+ {
+  "name": "Lobo Gigante",
+  "look": "lobo gigante escuro, presas à mostra, olho brilhante, pelagem espessa"
+ },
+ {
+  "name": "Figura Sombria",
+  "look": "silhueta escura com garras de sombra e esfera negra, sem rosto visível"
+ },
+ {
+  "name": "Draxen",
+  "look": "Demônio das Feras, lobisomem; ossos amarrados no rosto, olho brilhante, presas à mostra"
+ },
+ {
+  "name": "Criatura Dentes",
+  "look": "focinho com dentes enormes, olho brilhante, garras ósseas"
+ },
+ {
+  "name": "Caído",
+  "look": "sobretudo escuro longo, caído na cratera, ensanguentado, sem rosto visível"
+ },
+ {
+  "name": "Figura de Bota",
+  "look": "perna de calça escura e bota pesada, parte do corpo na borda direita"
+ },
+ {
+  "name": "Fera",
+  "look": "criatura lobo gigante, presas à mostra, olho brilhante, pelagem clara e escura"
+ },
+ {
+  "name": "Guarda",
+  "look": "cabelo escuro, sobretudo escuro com gola, atrás das grades"
+ },
+ {
+  "name": "Besta Branca",
+  "look": "criatura escura de crina branca, presas, boca aberta, garras"
+ },
+ {
+  "name": "Figura Golpeada",
+  "look": "figura caída atingida por mesas, sem rosto visível"
+ },
+ {
+  "name": "Mão de Garras",
+  "look": "mão longa de dedos ósseos e garras rompendo pedra"
+ },
+ {
+  "name": "Elfo Cabelo Longo",
+  "look": "orelhas pontudas, cabelo escuro longo, sobretudo escuro de gola clara, segura bandeja"
+ },
+ {
+  "name": "Figura chibi",
+  "look": "cabeça redonda de contorno, dois olhos pretos, sem detalhes, cortada no topo"
+ },
+ {
+  "name": "Mensageiro",
+  "look": "cabelo escuro comprido, orelhas pontudas, casaco escuro com faixa branca, boca aberta gritando"
+ },
+ {
+  "name": "Figura Campo",
+  "look": "figura de casaco escuro andando entre flores, de perfil, sem rosto visível"
+ },
+ {
+  "name": "Ernan",
+  "look": "cabelo claro longo, boina preta, capa escura; bruxa cercada de criaturas-nuvem"
+ },
+ {
+  "name": "Slime",
+  "look": "slime translúcido cinza-claro com pontos escuros, sem rosto"
+ },
+ {
+  "name": "Elena",
+  "look": "não aparece nestas páginas; citada por Loira como quem Berge confundiu com ela"
+ },
+ {
+  "name": "Relíquia Gelatinosa",
+  "look": "criatura gelatinosa transparente de olhinhos pretos, flutuando nas mãos da garota"
+ },
+ {
+  "name": "Princesa",
+  "look": "cabelo claro longo com mecha alta, laço escuro no pescoço, blusa clara, avental"
+ },
+ {
+  "name": "Elmo Chifrudo",
+  "look": "armadura escura, elmo com chifres, braços erguidos, centro"
+ },
+ {
+  "name": "Uniforme Espetado",
+  "look": "cabelo castanho espetado, uniforme escuro de gola alta, boca entreaberta, painel de aviso ao lado"
+ },
+ {
+  "name": "Rei",
+  "look": "coroa dourada, cabelo espetado, barba, expressão furiosa; sentado no trono"
+ },
+ {
+  "name": "Cortesãos",
+  "look": "multidão de nobres de capa escura ao redor do trono"
+ },
+ {
+  "name": "Oficial Penteado",
+  "look": "cabelo escuro penteado para trás, sorriso com dentes à mostra, gola de pele, olhos pálidos"
+ },
+ {
+  "name": "Oficial Suado",
+  "look": "cabelo longo castanho escuro, suado, olhos fechados, roupa escura de gola clara"
+ },
+ {
+  "name": "Velho Cacheado",
+  "look": "cabelo branco cacheado volumoso, barba branca, chapéu listrado escuro, manto escuro, mãos ossudas"
+ },
+ {
+  "name": "Figura Bota",
+  "look": "Perna de calça escura e bota pesada de couro, descendo escada de pedra."
+ },
+ {
+  "name": "Figura Óculos",
+  "look": "cabelo escuro longo, óculos redondos, olhos brancos brilhantes, sobretudo escuro com broche"
+ },
+ {
+  "name": "Figura da mesa",
+  "look": "cabelo claro preso, ombreiras, roupa escura elegante, lendo livro à mesa"
+ },
+ {
+  "name": "Soldados",
+  "look": "grupo de soldados de armadura escura, rostos fora de foco, falas em balões"
+ },
+ {
+  "name": "Figura Coroada",
+  "look": "lobo coroado de espinhos, armadura com espinhos, olho brilhante, dentes à mostra"
+ },
+ {
+  "name": "Gigante",
+  "look": "perna blindada escura gigante, fora do quadro, na floresta"
+ },
+ {
+  "name": "Capitão",
+  "look": "cabelo castanho espetado, deitado no chão da taverna, rosto erguido"
+ },
+ {
+  "name": "Rabicho",
+  "look": "cabelo castanho espetado com mechas laterais presas, olhos entediados, rosto de perfil"
+ },
+ {
+  "name": "Cacheado",
+  "look": "cabelo cacheado castanho claro, faixa na testa, capa escura, olhar desconfiado"
+ },
+ {
+  "name": "Mão Demoníaca",
+  "look": "mãos longas e ossudas com garras segurando orbe de energia brilhante, sem rosto visível"
+ },
+ {
+  "name": "Sombra",
+  "look": "silhueta escura em primeiro plano, cabelo escuro, olho brilhante, perfil"
+ },
+ {
+  "name": "Figura Sentada",
+  "look": "sentada no chão, pernas dobradas, cabeça baixa, silhueta escura"
+ },
+ {
+  "name": "Cliente Gritando",
+  "look": "cabelo castanho espetado, boca aberta, caneca erguida, roupa escura"
+ },
+ {
+  "name": "Cliente Caneca",
+  "look": "cabelo escuro, capa escura com debrum branco, segura caneca"
+ },
+ {
+  "name": "Bigode",
+  "look": "cabelo castanho penteado para trás, bigode, boca aberta gritando, rosto de lado"
+ },
+ {
+  "name": "Demônio",
+  "look": "silhueta gigante escura com garras e asas, ocupa o alto do quadro"
+ },
+ {
+  "name": "Figura Careca",
+  "look": "cabeça pálida careca, ombreiras de armadura, casaco escuro"
+ },
+ {
+  "name": "Figura Gorro",
+  "look": "gorro escuro, casaco escuro com cachecol, sorriso largo, espada"
+ },
+ {
+  "name": "Figura Saltadora",
+  "look": "cabelo escuro comprido, boca aberta gritando, casaco escuro, arma, saltando"
+ },
+ {
+  "name": "Figura Cabelo Castanho",
+  "look": "cabelo castanho, capa escura, à direita embaixo, perto de explosão"
+ },
+ {
+  "name": "Figura Olhos Brancos",
+  "look": "olhos brancos brilhantes, cabelo claro bagunçado, rosto escuro"
+ },
+ {
+  "name": "Figura Dentes Cerrados",
+  "look": "cabelo escuro, dentes cerrados, rosto em explosão branca"
+ },
+ {
+  "name": "Figura Caindo Sobretudo",
+  "look": "sobretudo escuro, braços e pernas abertos, caindo no clarão"
+ },
+ {
+  "name": "Figura Careta",
+  "look": "cabelo escuro, sobretudo escuro, rosto contorcido de dor"
+ },
+ {
+  "name": "Figura Cabeça Baixa",
+  "look": "cabelo escuro bagunçado, olhar tenso, sobretudo escuro, rosto sério"
+ },
+ {
+  "name": "Figura Mãos Brancas",
+  "look": "mãos claras e tensas no canto inferior, fundo escuro"
+ },
+ {
+  "name": "Figura Suada",
+  "look": "cabelo escuro, rosto suado, boca aberta gritando, sobretudo escuro"
+ },
+ {
+  "name": "Figura Pulso",
+  "look": "casaco escuro com manga clara, braço estendido segurando alguém"
+ },
+ {
+  "name": "Bruxa",
+  "look": "chapéu pontudo de abas largas, cabelo castanho escuro com franja reta, capa escura"
+ },
+ {
+  "name": "Figura de capa",
+  "look": "capa escura longa em close, ornamento branco, sem rosto visível"
+ },
+ {
+  "name": "Figura enroscada",
+  "look": "duas figuras caídas no chão, pernas para cima, casacos escuros"
+ },
+ {
+  "name": "Negociante",
+  "look": "cabelo claro penteado, óculos redondos, sobretudo claro de gola alta, sorriso"
+ },
+ {
+  "name": "Prisioneiros",
+  "look": "dois homens presos em gaiola, roupas rasgadas, mãos nas grades"
+ },
+ {
+  "name": "Demônio das Garras",
+  "look": "garras longas e ossudas, olho pálido brilhante na sombra"
+ },
+ {
+  "name": "Guia",
+  "look": "Cabelo castanho claro, gola de pele, capa escura, braço estendido apontando."
+ },
+ {
+  "name": "Mascarado",
+  "look": "manto escuro com capuz, máscara escura com marcas brancas"
+ },
+ {
+  "name": "Elfo Acorrentado",
+  "look": "cabelo castanho-avermelhado trançado, orelhas pontudas, preso por correntes, furioso"
+ },
+ {
+  "name": "Comprador",
+  "look": "cabelo escuro curto, sobretudo escuro de gola alta, olhar sério"
+ },
+ {
+  "name": "Herói",
+  "look": "cabelo castanho ondulado, armadura clara com ombreiras, mão no peito, olhar sério"
+ },
+ {
+  "name": "Cinto",
+  "look": "cabelo claro em trança, sobretudo escuro com cinto largo e fivela, espada, rosto não visível"
+ },
+ {
+  "name": "Mago",
+  "look": "cabelo escuro espetado, sobretudo escuro de gola alta, livro com círculo mágico, sorriso com dentes à mostra"
+ },
+ {
+  "name": "Elfo Trança",
+  "look": "cabelo castanho em trança longa, orelhas pontudas, capa escura"
+ },
+ {
+  "name": "Granada",
+  "look": "sorriso largo, acompanha Hillan na chegada à floresta nevada"
+ },
+ {
+  "name": "Monstros",
+  "look": "criaturas chifrudas e peludas de olhos brilhantes nas montanhas nevadas"
+ },
+ {
+  "name": "Elfo Trançado",
+  "look": "orelhas pontudas, trança castanho-avermelhada longa, sorriso de canto, suado"
+ },
+ {
+  "name": "Elfo Ajoelhado",
+  "look": "cabelo escuro longo, orelhas pontudas, capa escura, ajoelhado"
+ },
+ {
+  "name": "Figura de Coque",
+  "look": "cabelo preso em coque, de costas, segura objeto redondo ornamentado"
+ },
+ {
+  "name": "Elfo Espetado",
+  "look": "cabelo escuro espetado, orelhas pontudas, rosto atingido, olhar espantado"
+ },
+ {
+  "name": "Subordinado",
+  "look": "figura fora do quadro na borda inferior, sem rosto visível; fala em balões de grito"
+ },
+ {
+  "name": "Figura Sobretudo",
+  "look": "sobretudo escuro, cabelo escuro, de costas, num salão de pedra"
+ },
+ {
+  "name": "Barbudo",
+  "look": "barba e cabelo castanho-avermelhados revoltos, gola de pele escura, rosto irritado"
+ },
+ {
+  "name": "Gorro",
+  "look": "cabelo escuro, gorro na cabeça, curativo na testa, de lado"
+ },
+ {
+  "name": "Careca",
+  "look": "cabeça careca pálida, regata clara, curativo na cabeça"
+ },
+ {
+  "name": "Brutamontes",
+  "look": "careca enorme e musculoso, de camisa clara, mais alto do grupo"
+ },
+ {
+  "name": "Elfa Trança",
+  "look": "cabelo claro em trança, orelhas pontudas, gola peluda escura, olhos fechados"
+ },
+ {
+  "name": "Mercenário Cicatriz",
+  "look": "cabelo castanho espetado, curativo na bochecha, casaco escuro, primeiro plano"
+ },
+ {
+  "name": "Careca Cicatriz",
+  "look": "careca com curativo na testa, rosto fechado, roupa escura de gola alta"
+ },
+ {
+  "name": "Hillan Kargil",
+  "look": "aparência não mostrada nestas páginas; citado como um dos mais fracos"
+ },
+ {
+  "name": "Flor-espírito",
+  "look": "flor escura de pétalas serrilhadas, chamas brancas no centro, folhas grandes"
+ },
+ {
+  "name": "Criatura Crânios",
+  "look": "criatura escura de crânios brancos, garras, corpo curvo em forma de foice"
+ },
+ {
+  "name": "Loira",
+  "look": "cabelo loiro volumoso, olhos arregalados, suada, gritando"
+ },
+ {
+  "name": "Criatura-nuvem",
+  "look": "criatura branca fofa de olhos pretos, pairando perto do rosto"
+ },
+ {
+  "name": "Figura borrada",
+  "look": "silhueta escura borrada em movimento, sem rosto nítido"
+ },
+ {
+  "name": "Criatura de olho brilhante",
+  "look": "asas escuras e olho brilhante no meio de penas"
+ },
+ {
+  "name": "Criatura de dentes",
+  "look": "dentes enormes e garras escuras, fundo branco"
+ },
+ {
+  "name": "Orc Machado",
+  "look": "trança, pelagem clara, machado grande, boca aberta gritando"
+ },
+ {
+  "name": "Orc Presas",
+  "look": "focinho escancarado, presas, olhos brilhantes, pelagem branca"
+ },
+ {
+  "name": "Criatura das sombras",
+  "look": "massa escura de tentáculos e espinhos saindo da sombra"
+ },
+ {
+  "name": "Demônio das asas",
+  "look": "asas escuras com garras e espinhos"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro, olho arregalado em close, cílios longos"
+ },
+ {
+  "name": "Demônio Alado",
+  "look": "cabelo escuro, chifres pequenos, asas escuras de demônio, capa longa escura, de costas"
+ },
+ {
+  "name": "Criatura Espinhos",
+  "look": "massa escura de espinhos serrilhados girando, mão escura no topo"
+ },
+ {
+  "name": "Criatura Chama",
+  "look": "fantasma de chama branca com rosto furioso, flutuando ao lado da Loira"
+ },
+ {
+  "name": "Gritador",
+  "look": "ombros nus, cabelo escuro curto, punho erguido, gritando"
+ },
+ {
+  "name": "Chifrudo",
+  "look": "cabelo escuro comprido e bagunçado, chifres, orelhas pontudas, dentes à mostra, gritando"
+ },
+ {
+  "name": "Figura Alada",
+  "look": "asas escuras de demônio, capa longa escura, caindo entre nuvens"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "manto escuro com capuz, olhos brancos brilhantes, ao fundo à esquerda"
+ },
+ {
+  "name": "Elmo",
+  "look": "armadura escura com chifres, garras escuras, ameaça matar um suspeito de espionagem"
+ },
+ {
+  "name": "Óculos",
+  "look": "cabelo escuro longo, óculos redondos, orelhas pontudas, sobretudo escuro com broche"
+ },
+ {
+  "name": "Cabelo Longo",
+  "look": "cabelo escuro longo e bagunçado, de perfil, à esquerda"
+ },
+ {
+  "name": "Loger",
+  "look": "não mostrado nestas páginas; ferreiro que fez a espada antes de ser sequestrado"
+ },
+ {
+  "name": "Figura Grande",
+  "look": "silhueta enorme de armadura escura arranhada, clarão de lâmina à direita"
+ },
+ {
+  "name": "Anão",
+  "look": "baixo, óculos de proteção na testa, bigode grande, braços erguidos, sorriso"
+ },
+ {
+  "name": "Elfo Óculos",
+  "look": "cabelo escuro comprido, óculos redondos, sobretudo escuro, espada erguida"
+ },
+ {
+  "name": "Roger Fridri",
+  "look": "óculos de metal grandes, cabelo escuro espetado, rosto de ave, boca aberta gritando"
+ },
+ {
+  "name": "Figura Sorridente",
+  "look": "silhuetas de cabelo escuro espetado, sorriso com dentes à mostra, olhos brancos"
+ },
+ {
+  "name": "Guerreiro do Martelo",
+  "look": "cabelo escuro volumoso, boca aberta, martelo grande brilhante, salta no ar"
+ },
+ {
+  "name": "Anão Barbudo",
+  "look": "Barba grisalha, elmo e ombreiras de armadura clara, rosto de idoso"
+ },
+ {
+  "name": "Anão Trança",
+  "look": "trança longa na barba, elmo, de costas, cabelo claro encaracolado sob elmo"
+ },
+ {
+  "name": "Roger",
+  "look": "herói anão e ferreiro, óculos de metal, cabelo felpudo, sempre assustado"
+ },
+ {
+  "name": "Figura Garra",
+  "look": "cabelo escuro espetado, capa escura, mão de garras estendida"
+ },
+ {
+  "name": "Figura Goggles",
+  "look": "óculos de metal grandes, cabelo escuro felpudo, em primeiro plano embaixo"
+ },
+ {
+  "name": "Figura Capa Escura",
+  "look": "capa escura longa no alto da cena, cabelo escuro"
+ },
+ {
+  "name": "Figura Caída Espetada",
+  "look": "cabelo escuro espetado, casaco escuro, caído no chão escuro"
+ },
+ {
+  "name": "Figura Costas",
+  "look": "cabelo espetado escuro, casaco escuro longo, de costas"
+ },
+ {
+  "name": "Figura Séria",
+  "look": "cabelo escuro preso, rosto sério, roupa escura com gola, à esquerda"
+ },
+ {
+  "name": "Queda Escura",
+  "look": "figura escura caindo no centro do impacto branco"
+ },
+ {
+  "name": "Casaco Escuro",
+  "look": "cabelo escuro, casaco escuro longo, golpeia objeto de madeira"
+ },
+ {
+  "name": "Olho Escuro",
+  "look": "cabelo escuro revolto cobrindo um olho, gola alta escura, olhar tenso"
+ },
+ {
+  "name": "Figura da Esquerda",
+  "look": "criatura de olhos grandes, presas, cabelo escuro, rosto furioso"
+ },
+ {
+  "name": "Vigia",
+  "look": "de costas, cabelo escuro curto, debruçado no parapeito"
+ },
+ {
+  "name": "Caído de camisa clara",
+  "look": "camisa clara, cabelo escuro, agachado perto da parede"
+ },
+ {
+  "name": "Perseguidor",
+  "look": "sobretudo escuro longo, de pé, de costas"
+ },
+ {
+  "name": "Anões guerreiros",
+  "look": "anões com elmo de chifres, barba, machados longos, de costas, em formação"
+ },
+ {
+  "name": "Enfaixado",
+  "look": "braços e pernas enfaixados, casaco longo escuro, caído"
+ },
+ {
+  "name": "Louise",
+  "look": "Segunda princesa do Reino Anão, luvas blindadas, espada elétrica, excepcionalmente forte"
+ },
+ {
+  "name": "Mão gigante",
+  "look": "mão escura de dedos ósseos e garras longas, vinda do alto"
+ },
+ {
+  "name": "Figura Capuz",
+  "look": "capuz escuro, de costas, parte inferior do quadro, rosto não visível"
+ },
+ {
+  "name": "Figura Lanterna",
+  "look": "sobretudo escuro, de costas, segura lanterna no corredor"
+ },
+ {
+  "name": "Figura Mão na Cabeça",
+  "look": "cabelo escuro, mãos na cabeça, roupa escura"
+ },
+ {
+  "name": "Grupo ao fundo",
+  "look": "figuras borradas no fundo, faixas listradas, sem rosto visível"
+ },
+ {
+  "name": "Capa Alta",
+  "look": "capa escura longa, de costas, alta, capuz"
+ },
+ {
+  "name": "Súdito",
+  "look": "cabelo escuro bagunçado, casaco claro, ajoelhado em reverência"
+ },
+ {
+  "name": "Criatura Peluda",
+  "look": "criatura de pelo claro e grosso, cabeça baixa, na terra"
+ },
+ {
+  "name": "Rei Lobo",
+  "look": "lobo coroado, pelagem escura, dentes à mostra, capa escura com gola de pele"
+ },
+ {
+  "name": "Conselheiro",
+  "look": "Cabelo claro, roupa escura, sentado em cadeira ornamentada à esquerda da mesa"
+ },
+ {
+  "name": "Berje",
+  "look": "cabelo claro curto e bagunçado, olhos fechados sorrindo, em arco mágico"
+ },
+ {
+  "name": "Óculos Claros",
+  "look": "cabelo claro penteado para trás, óculos redondos, sorriso com presas, sobretudo claro"
+ },
+ {
+  "name": "Figura Ombro",
+  "look": "ombro escuro e braço claro na borda inferior, sem rosto visível"
+ },
+ {
+  "name": "Demônio Olho",
+  "look": "chifres curvos, olho único central brilhante, dentes à mostra, armadura escura, gritando"
+ },
+ {
+  "name": "Figura Atingida",
+  "look": "figura escura caída na escada, rosto não visível"
+ },
+ {
+  "name": "Figura Gola de Pele",
+  "look": "cabelo escuro bagunçado, sobretudo com gola de pele, expressão séria"
+ },
+ {
+  "name": "Ugar",
+  "look": "Demônio da Indestrutibilidade, titã; chifres, presas, rosto ameaçador"
+ },
+ {
+  "name": "Jason",
+  "look": "citado nas falas; aparência não mostrada nestas páginas"
+ },
+ {
+  "name": "Reina",
+  "look": "Demônio do Inverno, demônio do gelo; coroa de gelo, gola de pele branca, olhar sério"
+ },
+ {
+  "name": "Figura Peluda",
+  "look": "cabelo castanho-avermelhado revolto, gola peluda escura, rosto sério ou gritando"
+ },
+ {
+  "name": "Aide da Besta",
+  "look": "cabelo castanho curto com franja cobrindo os olhos, orelhas de gato, uniforme escuro de gola alta"
+ },
+ {
+  "name": "Aide da Mentira",
+  "look": "cabelo ondulado volumoso, chifres enrolados, olhos escuros grandes, colar escuro"
+ },
+ {
+  "name": "Olhos Brancos",
+  "look": "sobretudo escuro, cabelo escuro, olhos brancos brilhantes em close"
+ },
+ {
+  "name": "Figura de cima",
+  "look": "cabelo escuro, parte superior do quadro, sem rosto nítido"
+ },
+ {
+  "name": "Séria de óculos",
+  "look": "cabelo escuro preso em rabo, óculos finos, perfil sério, roupa escura com gola"
+ },
+ {
+  "name": "Trono",
+  "look": "cabelo claro, terno escuro, sentado no trono ao fundo do salão"
+ },
+ {
+  "name": "Elfa",
+  "look": "cabelo escuro longo, orelhas pontudas, de costas"
+ },
+ {
+  "name": "Elfa Cabelo Preso",
+  "look": "orelhas pontudas, cabelo escuro preso, roupa escura"
+ },
+ {
+  "name": "Sentado do Trono",
+  "look": "de costas, cabelo escuro, orelha pontuda, sentado no trono"
+ },
+ {
+  "name": "Elfo Olho",
+  "look": "cabelo escuro revolto cobrindo um olho, orelhas pontudas, sobretudo escuro de gola alta"
+ },
+ {
+  "name": "Oficial Uniforme",
+  "look": "cabelo escuro curto, uniforme militar escuro com bordado no peito"
+ },
+ {
+  "name": "Subordinados",
+  "look": "Três homens de cabelo escuro, uniformes militares escuros com gola alta."
+ },
+ {
+  "name": "Hillan",
+  "look": "Ausente da reunião, citado como possível espião; aparência não mostrada"
+ },
+ {
+  "name": "Oficial",
+  "look": "Oficial de costas: uniforme escuro com cinto e ombreiras, de costas. Oficial Penteado: cabelo escuro penteado para trás, sorriso com dentes "
+ },
+ {
+  "name": "Ceniel",
+  "look": "Elfo que desertou para reino humano e criou o Pó de Ceniel"
+ },
+ {
+  "name": "Elfo Rabo",
+  "look": "cabelo claro preso em rabo, orelhas pontudas, sobretudo escuro, rosto tenso"
+ },
+ {
+  "name": "Elfo Guerreiro",
+  "look": "cabelo longo trançado, orelhas pontudas, gola escura, ombreira"
+ },
+ {
+  "name": "Sentado no Trono",
+  "look": "cabelo escuro espetado, sobretudo escuro com detalhes claros, sentado no trono"
+ },
+ {
+  "name": "Figura de Roupa Clara",
+  "look": "roupa clara com fita escura no pescoço, de perfil à esquerda"
+ },
+ {
+  "name": "Elmo Espada",
+  "look": "elmo escuro com chifres, ombreiras, espada erguida"
+ },
+ {
+  "name": "Figura Centro",
+  "look": "cabelo escuro, casaco escuro longo, de pé no centro"
+ },
+ {
+  "name": "Cavaleiro Central",
+  "look": "armadura clara brilhante, de costas, no centro da fila"
+ },
+ {
+  "name": "Princesa de Elmo",
+  "look": "elmo de fendas verticais, cabelo claro, ombreiras e peitoral de armadura escura"
+ },
+ {
+  "name": "Cavaleiro Prateado",
+  "look": "armadura clara ajoelhado, elmo fechado, lança caída ao lado"
+ },
+ {
+  "name": "Figura Olhar",
+  "look": "cabelo escuro, olho arregalado em close, sobrancelha grossa"
+ },
+ {
+  "name": "Cavaleiro Armadura Clara",
+  "look": "armadura prateada com ombreiras, cabelo escuro bagunçado, rosto sério"
+ },
+ {
+  "name": "Cavaleiro Chifrudo",
+  "look": "armadura negra, elmo com chifres, ombreiras"
+ },
+ {
+  "name": "Figura Assustada",
+  "look": "cabelo escuro bagunçado, chifres pequenos, olhos arregalados, expressão assustada"
+ },
+ {
+  "name": "Cavaleiro Caído",
+  "look": "armadura escura suja de sangue, caído no chão"
+ },
+ {
+  "name": "Figura Agachada",
+  "look": "agachada atrás do carrinho, calça escura e botas"
+ },
+ {
+  "name": "Chifrada Clara",
+  "look": "cabelo claro bagunçado, olhos arregalados, suada, expressão assustada"
+ },
+ {
+  "name": "Cavaleiro Armadura",
+  "look": "armadura clara com peitoral pontudo, sem rosto visível"
+ },
+ {
+  "name": "Figura da Carta",
+  "look": "cabelo escuro espetado, silhueta em carta de retrato, sem rosto nítido"
+ },
+ {
+  "name": "Hilen Kagil",
+  "look": "mencionado na narração, sem aparência visível"
+ },
+ {
+  "name": "Figura Armadura Castanha",
+  "look": "cabelo castanho ondulado, armadura de gola alta, perfil sério"
+ },
+ {
+  "name": "Figura Cabelo Claro Prisão",
+  "look": "cabelo longo claro, roupa clara com detalhes escuros, na masmorra"
+ },
+ {
+  "name": "Figura do salão",
+  "look": "silhueta fora do quadro, fala no salão real; identidade não mostrada"
+ },
+ {
+  "name": "Guerreiro de armadura",
+  "look": "armadura clara com ombreiras, cabelo escuro bagunçado, rosto sério"
+ },
+ {
+  "name": "Figura Cabeça Clara",
+  "look": "cabeça de cabelo claro na borda inferior, parcial, fala sobre a Torre"
+ },
+ {
+  "name": "Figura Canto Inferior",
+  "look": "figura de cabelo escuro no canto inferior direito, cabeça e ombro parciais"
+ },
+ {
+  "name": "Armadura Castanha",
+  "look": "cabelo castanho ondulado, armadura de gola alta, rosto surpreso"
+ },
+ {
+  "name": "Cavaleira Loira",
+  "look": "cabelo claro curto, armadura clara com ombreiras, segura espada"
+ },
+ {
+  "name": "Anão de óculos",
+  "look": "cabelo e barba escuros volumosos, óculos de metal grandes, gola clara"
+ },
+ {
+  "name": "Krutu",
+  "look": "chefe da tribo orc Peul, lobo-homem de presas, trança e gola de pele"
+ },
+ {
+  "name": "Orcs",
+  "look": "orcs de pele escura e capas de pele, em grupo ao fundo na neve"
+ },
+ {
+  "name": "Mago Chapéu",
+  "look": "chapéu pontudo largo, rosto oculto, olhos brancos brilhantes"
+ },
+ {
+  "name": "Mago Manto Longo",
+  "look": "manto escuro longo, de pé à esquerda, mão com anel de luz"
+ },
+ {
+  "name": "Lojista",
+  "look": "boné escuro, cachimbo na boca, camisa clara, barba"
+ },
+ {
+  "name": "Vendedor",
+  "look": "boné escuro, bigode fino, cavanhaque, sorriso sinistro, dedo apontado"
+ },
+ {
+  "name": "Nobre",
+  "look": "cabelo escuro, casaco escuro longo, gola alta, rosto sério, segura frasco"
+ },
+ {
+  "name": "Figura Escura",
+  "look": "cabeça escura, cabelo escuro bagunçado, sem rosto nítido, reação de medo"
+ },
+ {
+  "name": "Figura Gola Botões",
+  "look": "de costas, cabeça escura, gola clara com botões, avança sobre Lojista"
+ },
+ {
+  "name": "Mago Sorridente",
+  "look": "cabelo escuro espetado, sorriso com dentes à mostra, suado, mãos no rosto"
+ },
+ {
+  "name": "Guarda anão",
+  "look": "elmo com gola de pele, armadura escura, de costas, ao lado de Louise"
+ },
+ {
+  "name": "Figura Clarão",
+  "look": "cabeça escura contra clarão branco, figuras caídas embaixo na fumaça"
+ },
+ {
+  "name": "Voz Fora",
+  "look": "fala de fora do quadro, sem aparência visível"
+ },
+ {
+  "name": "Figura Fala Externa",
+  "look": "voz fora do quadro, sem aparência visível"
+ },
+ {
+  "name": "Besta Invocada",
+  "look": "criatura branca de presas, coroa de espinhos, coração brilhante no peito"
+ },
+ {
+  "name": "Figura Presa",
+  "look": "cabelo escuro espetado, preso dentro da besta, rosto parcial"
+ },
+ {
+  "name": "Cavaleiro Elmo",
+  "look": "armadura clara com elmo fechado, rebites, sem rosto visível"
+ },
+ {
+  "name": "Draxen Doldof",
+  "look": "Rei Demônio das Bestas, juba branca espessa, mandíbula com presas abertas"
+ },
+ {
+  "name": "Lobo Escuro",
+  "look": "lobo escuro de garras afiadas e focinho aberto, avança"
+ },
+ {
+  "name": "Subordinado de Óculos",
+  "look": "cabelo escuro longo, óculos, sobretudo escuro com gola clara, sorriso aberto"
+ },
+ {
+  "name": "Kaede",
+  "look": "Heroína furiosa, tiara ornamentada brilhante, magia de energia nas mãos"
+ },
+ {
+  "name": "Espadachim",
+  "look": "cabelo escuro comprido, espada longa, expressão séria"
+ },
+ {
+  "name": "Acompanhante",
+  "look": "cabelo escuro longo, terno escuro de gola alta, de pé à esquerda"
+ },
+ {
+  "name": "Figura Topete",
+  "look": "cabelo claro com mecha curvada no alto, olhos arregalados, borda inferior"
+ },
+ {
+  "name": "Aman",
+  "look": "homem de cabelo escuro, sobretudo escuro, no centro do grupo encapuzado"
+ },
+ {
+  "name": "Luise Werft",
+  "look": "cabelo castanho ondulado, armadura de gola alta, perfil sério; aparece em projeção"
+ },
+ {
+  "name": "Jetoson",
+  "look": "homem de gorro, chora e treme, vigarista que enganou Luise"
+ },
+ {
+  "name": "Figura Chorando",
+  "look": "mãos entrelaçadas trêmulas, olhos fechados, lágrimas, rosto escondido"
+ },
+ {
+  "name": "Figura Escura Direita",
+  "look": "sobretudo escuro, de perfil ou de costas, à direita, ao lado do Herói Ruivo"
+ },
+ {
+  "name": "Luise",
+  "look": "cabelo castanho-avermelhado preso em rabo, tiara prateada, armadura com ombreiras"
+ },
+ {
+  "name": "Fugitivo Capuz",
+  "look": "capuz escuro, roupa escura, corre à esquerda"
+ },
+ {
+  "name": "Fugitivo Cabelo Claro",
+  "look": "cabelo claro, roupa escura, corre no segundo lugar"
+ },
+ {
+  "name": "Fugitivo Espetado",
+  "look": "cabelo escuro espetado, casaco escuro, corre no terceiro lugar"
+ },
+ {
+  "name": "Fugitivo Gola de Pele",
+  "look": "sobretudo escuro longo, gola de pele, corre à direita"
+ },
+ {
+  "name": "Figura Mão Ossuda",
+  "look": "mão longa de dedos ósseos e garras, sem rosto visível"
+ },
+ {
+  "name": "Vice-capitão",
+  "look": "cabelo castanho espetado, uniforme escuro de gola alta, suado, expressão tensa"
+ },
+ {
+  "name": "Princesa Anã",
+  "look": "cabelo claro-rosado em dois coques, tiara ornada, armadura clara, sorriso confiante"
+ },
+ {
+  "name": "Cavaleiro Peitoral",
+  "look": "armadura clara com peitoral pontudo, sem rosto visível"
+ },
+ {
+  "name": "Elfa Trançada",
+  "look": "cabelo castanho-avermelhado trançado, casaco escuro de gola alta, segura cajado com orbe"
+ },
+ {
+  "name": "Soldado",
+  "look": "elmo e armadura escura, visto de cima, na floresta"
+ },
+ {
+  "name": "Figura Cabelo Claro Borda",
+  "look": "cabelo claro, na borda inferior, sem rosto visível"
+ },
+ {
+  "name": "Blindado",
+  "look": "pernas de armadura escura com placas e botas grossas, de pé sobre Luise"
+ },
+ {
+  "name": "Lanceiro",
+  "look": "cabelo castanho comprido, peitoral com faixas, capa escura, segura lança erguida"
+ },
+ {
+  "name": "Figura Olho Claro",
+  "look": "olho claro em close, cílios longos, cabelo claro, expressão furiosa"
+ },
+ {
+  "name": "Soldado Lança",
+  "look": "elmo e armadura escura, lança, correndo no canto superior direito da floresta"
+ },
+ {
+  "name": "Max",
+  "look": "Preso em trevas demoníacas, cinto ornado, sandálias; ligado à princesa"
+ },
+ {
+  "name": "Voz misteriosa",
+  "look": "voz fora do quadro, sem aparência visível"
+ },
+ {
+  "name": "Figura de cabelo claro ornado",
+  "look": "cabelo claro com enfeite prateado, visto de baixo, sem rosto nítido"
+ },
+ {
+  "name": "Figura Braço Escuro",
+  "look": "braço de manga escura segurando cabo longo, capa escura"
+ },
+ {
+  "name": "Cavaleiro Escudo",
+  "look": "armadura clara, escudo grande, formação de escudos, elmo fechado"
+ },
+ {
+  "name": "Comandante",
+  "look": "cabelo castanho espetado, uniforme escuro de gola alta, boca aberta gritando"
+ },
+ {
+  "name": "Vulto Escuro",
+  "look": "silhueta escura de sobretudo na floresta, rosto não visível"
+ },
+ {
+  "name": "Testeira",
+  "look": "cabelo longo ondulado acinzentado, testeira ornamentada cobrindo um olho, expressão furiosa"
+ },
+ {
+  "name": "Figura Capa Voadora",
+  "look": "figura de capa escura voando no alto, cabelo escuro, braços abertos"
+ },
+ {
+  "name": "Figura Faixa",
+  "look": "cabelo escuro, faixa na testa, rosto furioso, suado, gritando"
+ },
+ {
+  "name": "Figura Faixa Grega",
+  "look": "capa escura, braço com faixa de padrão grego"
+ },
+ {
+  "name": "Figura Lágrimas",
+  "look": "cabelo castanho-claro com franja, olho arregalado, lágrimas"
+ },
+ {
+  "name": "Príncipe Ormuth",
+  "look": "não aparece nestas imagens; alvo da ameaça na fala"
+ },
+ {
+  "name": "Combatente Lança",
+  "look": "lutador com lança, cabelo escuro, na floresta"
+ },
+ {
+  "name": "Figura Lâmina",
+  "look": "cabelo escuro, lâmina ou braço erguido, rosto não visível"
+ },
+ {
+  "name": "Figura Gritando",
+  "look": "cabelo claro espetado, boca aberta gritando, suado, olhar furioso, close"
+ },
+ {
+  "name": "Olho Claro",
+  "look": "olho claro em close, cílios longos, cabelo claro, furioso"
+ },
+ {
+  "name": "Figura Tronco",
+  "look": "cabeça envolta em fumaça, armadura clara, machado sobre tronco"
+ },
+ {
+  "name": "Criatura",
+  "look": "rosto de fera de pelagem branca eriçada, presas, focinho preto; máscara óssea com olhos em espiral"
+ },
+ {
+  "name": "Figura Cabelo Claro Ornado",
+  "look": "cabelo claro longo com enfeite prateado no ombro, visto de baixo, sem rosto nítido"
+ },
+ {
+  "name": "Lobo",
+  "look": "lobo de pelagem clara, presas à mostra, rosnando, fala sobre a princesa"
+ },
+ {
+  "name": "Figura de garras",
+  "look": "braço ou perna escura com garras longas, sobretudo ou armadura escura"
+ },
+ {
+  "name": "Criaturas caídas",
+  "look": "criaturas peludas de cabeça pontuda caídas no chão rachado"
+ },
+ {
+  "name": "Silhueta Sombria",
+  "look": "silhueta escura de cabeça redonda, sem rosto, fundo escuro, fala grande"
+ },
+ {
+  "name": "Figura Borda Esquerda",
+  "look": "ombro e armadura clara na borda inferior esquerda, sem rosto visível"
+ },
+ {
+  "name": "Criatura do Olho Espiral",
+  "look": "criatura de pele escura, olho brilhante com espiral, presas enormes"
+ },
+ {
+  "name": "Vulto Armado",
+  "look": "braço de manga clara segurando lança longa, visto de baixo"
+ },
+ {
+  "name": "Operários",
+  "look": "criaturas baixas de capuz e gola de pelo, elmo, trabalhando com pá e carrinho"
+ },
+ {
+  "name": "Criatura lobo",
+  "look": "lobo escuro de pelo espesso, presas, garras, pose agressiva"
+ },
+ {
+  "name": "Figura da besta",
+  "look": "cabelo escuro espetado, preso na besta, rosto parcial, olho visível"
+ },
+ {
+  "name": "Criatura de presas",
+  "look": "focinho aberto, dentes enormes e serrilhados, fundo escuro"
+ },
+ {
+  "name": "Figura dos ossos",
+  "look": "de costas, coroa de ossos, cabelo escuro espetado, luz intensa ao redor"
+ },
+ {
+  "name": "Figura Lança",
+  "look": "máscara escura, segura lança erguida, na entrada da caverna"
+ },
+ {
+  "name": "Figura do carrinho",
+  "look": "dentro de carrinho de mina no túnel, parte do corpo visível"
+ },
+ {
+  "name": "Criatura Sombra",
+  "look": "massa escura com garras, sombra embaixo no abismo"
+ },
+ {
+  "name": "Lobisomem",
+  "look": "criatura-lobo de pelagem clara eriçada, presas, ombreiras de armadura escura com espinhos"
+ },
+ {
+  "name": "Criatura Fera",
+  "look": "fera de pelagem branca eriçada, presas, focinho aberto, olho brilhante"
+ },
+ {
+  "name": "Orc Líder",
+  "look": "orc ajoelhado, cabelo e barba brancos trançados, capa de pele branca"
+ },
+ {
+  "name": "Orc da Esquerda",
+  "look": "orc de pelagem escura, focinho, braço estendido com garras"
+ },
+ {
+  "name": "Guerreiros de Ormus",
+  "look": "armadura escura, faixas na testa, lanças, em grupo"
+ },
+ {
+  "name": "Criatura Tigre",
+  "look": "fera listrada, olhos brilhantes, presas, garras; avança"
+ },
+ {
+  "name": "Criatura Olho Branco",
+  "look": "criatura escura de presas enormes e olho branco brilhante"
+ },
+ {
+  "name": "Fênix",
+  "look": "ave em chamas, cabeça brilhante de fogo branco, corpo escuro, asas"
+ },
+ {
+  "name": "Criatura Escamas",
+  "look": "escamas escuras, garras longas, olho brilhante"
+ },
+ {
+  "name": "Figura Runa",
+  "look": "cabelo escuro, braço em luz branca, runas brilhantes ao redor"
+ },
+ {
+  "name": "Draxon",
+  "look": "rival citado na narração; não aparece nestas imagens"
+ },
+ {
+  "name": "Caçador",
+  "look": "cabelo escuro penteado para trás, camisa escura, segura lança de cristal"
+ },
+ {
+  "name": "Tigre",
+  "look": "tigre listrado com três olhos escuros na testa, presas grandes, pelagem cinza"
+ },
+ {
+  "name": "Figura Cabelo Branco",
+  "look": "cabelo branco bagunçado, mão estendida, ao lado de Berge"
+ },
+ {
+  "name": "Criatura Alada",
+  "look": "asas de demônio escuras, corpo caído, garras"
+ },
+ {
+  "name": "Criatura Fênix",
+  "look": "fênix branca de asas abertas, penas em leque"
+ },
+ {
+  "name": "Orc Lanceiro",
+  "look": "orc de pelagem marrom, lança na mão, de pé à direita"
+ },
+ {
+  "name": "Orc Companheiro",
+  "look": "orc de pelagem marrom, de pé à esquerda, braços soltos"
+ },
+ {
+  "name": "Ursos",
+  "look": "ursos peludos escuros, em pé e agachados numa caverna"
+ },
+ {
+  "name": "Peludo",
+  "look": "Cabelo castanho-avermelhado revolto, barba, gola de pele escura, sobretudo"
+ },
+ {
+  "name": "Figura Cabelo Revolto",
+  "look": "cabelo escuro revolto, sobretudo escuro, borrada, parte baixa da cena"
+ },
+ {
+  "name": "Criaturas da floresta",
+  "look": "silhuetas de coelho e criaturas de orelhas pontudas, canto inferior"
+ },
+ {
+  "name": "Cervo",
+  "look": "silhueta de cervo com galhada, canto direito"
+ },
+ {
+  "name": "Animais da floresta",
+  "look": "cervo, esquilos, pássaro, raposa, ouriço, coelhos"
+ },
+ {
+  "name": "Pássaro",
+  "look": "pássaro pequeno cinza-claro de asas abertas, sobre rochedo"
+ },
+ {
+  "name": "Criatura de olhos brilhantes",
+  "look": "criatura escura e armadurada, olhos redondos brilhantes, sobre pilha de moedas"
+ },
+ {
+  "name": "Rozel",
+  "look": "cabelo castanho-claro em trança longa, armadura escura com ombreiras, reclinada, comandante"
+ },
+ {
+  "name": "Balraf",
+  "look": "citado na narração como herói de 10 estrelas; aparência não mostrada"
+ },
+ {
+  "name": "Guerreiro Anão",
+  "look": "barba grande, elmo com plumas, armadura escura, ajoelhado de cabeça baixa"
+ },
+ {
+  "name": "Herói Loiro",
+  "look": "cabelo loiro longo ondulado, ombreiras claras, grita"
+ },
+ {
+  "name": "Heroína Cabelo Longo",
+  "look": "cabelo escuro longo cobrindo um olho, armadura escura"
+ },
+ {
+  "name": "Herói Espetado Frente",
+  "look": "cabelo escuro espetado, peitoral escuro, braço estendido, gritando"
+ },
+ {
+  "name": "Herói Sorridente",
+  "look": "cabelo claro penteado, sorriso, capa escura"
+ },
+ {
+  "name": "Heróis Encapuzados",
+  "look": "grupo de capuzes escuros no fundo do salão"
+ },
+ {
+  "name": "Guardas",
+  "look": "armadura escura, lança alta, de pé nas laterais do trono"
+ },
+ {
+  "name": "Rosto Furioso",
+  "look": "rosto em close, dentes cerrados, cabelo escuro, expressão de raiva"
+ },
+ {
+  "name": "Figura Ajoelhada",
+  "look": "capa escura, ajoelhada no chão de pedra, cabeça baixa"
+ },
+ {
+  "name": "Voz Externa",
+  "look": "fala de fora do quadro, sem aparência visível"
+ },
+ {
+  "name": "Hillen Cargill",
+  "look": "cabelo castanho ondulado bagunçado, ombreiras claras pontudas, suado e assustado"
+ },
+ {
+  "name": "Figura Floresta",
+  "look": "figura de armadura escura de pé na floresta, vista de longe"
+ },
+ {
+  "name": "Criatura Cervo",
+  "look": "criatura de chifres ramificados, pelo escuro, olhos grandes, perto de Berge"
+ },
+ {
+  "name": "Criatura Coelho",
+  "look": "coelho branco de orelhas longas, ao lado de Hillen Cargill"
+ },
+ {
+  "name": "Figura de perfil",
+  "look": "perfil no canto superior, veste clara, em movimento"
+ },
+ {
+  "name": "Figura Manga Branca",
+  "look": "braço de manga clara com espada, sobretudo escuro, fundo luminoso"
+ },
+ {
+  "name": "Figura Asas Brancas",
+  "look": "grandes asas emplumadas claras, cortadas por lâminas escuras"
+ },
+ {
+  "name": "Figura Espetada Clara",
+  "look": "cabelo escuro espetado, camisa clara, empunha arma luminosa"
+ },
+ {
+  "name": "Figura da janela",
+  "look": "cabelo longo escuro, terno escuro, pingente em losango, visto numa janela"
+ },
+ {
+  "name": "Criatura Chifrada",
+  "look": "cabeça chifrada, placas espinhosas, olhos brilhantes, pele escura"
+ },
+ {
+  "name": "Orc Armadurado",
+  "look": "orc enorme, armadura escura com espinhos nos ombros"
+ },
+ {
+  "name": "Figura Camisa Clara",
+  "look": "cabelo escuro espetado, camisa clara, caído no chão, grita 'Não!'"
+ },
+ {
+  "name": "Goblin Chifrudo",
+  "look": "criatura chifruda, orelhas pontudas, dentes à mostra, ombreira de armadura escura"
+ },
+ {
+  "name": "Figura Manto Claro",
+  "look": "cabelo claro, manto longo claro, curvada ao lado do lobo"
+ },
+ {
+  "name": "Berze Deyas",
+  "look": "herói atrasado citado; aparência não mostrada nestas imagens"
+ },
+ {
+  "name": "Jason Kokmundo",
+  "look": "herói atrasado citado; aparência não mostrada nestas imagens"
+ },
+ {
+  "name": "Camisa Branca",
+  "look": "cabelo escuro, camisa clara, caído no chão entre rochas"
+ },
+ {
+  "name": "Elfo de Óculos",
+  "look": "cabelo escuro longo, orelhas pontudas, óculos redondos, olhos brancos brilhantes, sobretudo escuro"
+ },
+ {
+  "name": "Figura Fumaça",
+  "look": "silhueta escura envolta em fumaça, cercada por hexágonos brancos brilhantes"
+ },
+ {
+  "name": "Guerreira Ruiva",
+  "look": "cabelo longo castanho-avermelhado, armadura clara, centro do grupo; possivelmente Rozel"
+ },
+ {
+  "name": "Figura não identificada",
+  "look": "sem aparência visível, falas nas bolhas do alto"
+ },
+ {
+  "name": "Herói Castanho",
+  "look": "cabelo castanho ondulado, armadura clara com ombreiras, discursa de pé"
+ },
+ {
+  "name": "Heroína Ruiva",
+  "look": "cabelo ruivo-castanho longo ondulado, roupa escura de gola alta, sorriso irônico"
+ },
+ {
+  "name": "Elfa Orelhuda",
+  "look": "orelhas pontudas, cabelo claro comprido, boca aberta"
+ },
+ {
+  "name": "Herói Ondulado",
+  "look": "cabelo castanho ondulado, faixa na testa, capa escura, sorriso de olhos semicerrados"
+ },
+ {
+  "name": "Figura Portal",
+  "look": "duas silhuetas escuras saindo de portal de luz branca, em pé"
+ },
+ {
+  "name": "Figura Sobretudo Claro",
+  "look": "sobretudo longo claro, cabelo claro, de costas"
+ },
+ {
+  "name": "Berze",
+  "look": "cabelo escuro curto, uniforme escuro de gola alta com botões"
+ },
+ {
+  "name": "Figura Sobretudo Escuro",
+  "look": "sobretudo escuro com colarinho branco, cabelo escuro, de costas"
+ },
+ {
+  "name": "Figura Cabelo Cacheado",
+  "look": "cabelo escuro cacheado comprido, de costas, à esquerda"
+ },
+ {
+  "name": "Criatura Branca",
+  "look": "fera de pelagem branca eriçada, focinho preto, presas, máscara óssea com olhos em espiral"
+ },
+ {
+  "name": "Figura Fala Oculta",
+  "look": "falas em balões sem aparência visível"
+ },
+ {
+  "name": "Jayson",
+  "look": "cabelo branco bagunçado, tapa-olho, sobretudo claro; Rei Demônio da Mentira, distinto de Jason Kokmundo"
+ },
+ {
+  "name": "Ornada",
+  "look": "cabelo claro longo, boina escura com laço, óculos de gato pretos, roupa escura"
+ },
+ {
+  "name": "Orc Dentuço",
+  "look": "orc de focinho, presas, olho amarelo, pelagem escura"
+ },
+ {
+  "name": "Figura da reunião",
+  "look": "sem aparência visível, fala em balão oval no salão escuro"
+ },
+ {
+  "name": "Reina Soldein",
+  "look": "mulher de cabelo loiro ondulado longo, tiara pontuda, gola de pele clara, vestido branco"
+ },
+ {
+  "name": "Ugar Belvek",
+  "look": "orc armadurado, espinhos nos ombros, presas, olho único"
+ },
+ {
+  "name": "Herói Capa",
+  "look": "cabelo escuro, capa escura longa, empunha espada, à esquerda"
+ },
+ {
+  "name": "Chapéu Chicote",
+  "look": "chapéu de abas largas, segura corrente, à direita"
+ },
+ {
+  "name": "Herói Lança",
+  "look": "cabelo escuro espetado, sobretudo escuro, segura bastão longo"
+ },
+ {
+  "name": "Criatura Presas",
+  "look": "criatura de focinho aberto, presas enormes, luz branca"
+ },
+ {
+  "name": "Lobo Coroado",
+  "look": "lobo escuro com coroa de espinhos, presas, segura chave em chamas"
+ },
+ {
+  "name": "Loger Fridrich",
+  "look": "óculos de metal grandes, cabelo escuro felpudo, sobretudo escuro; chefe do primeiro andar"
+ },
+ {
+  "name": "Figura Explosão",
+  "look": "de braços abertos, gritando, em explosão branca, sobretudo escuro"
+ },
+ {
+  "name": "Figura Caindo",
+  "look": "caindo de braços abertos ou de cabeça para baixo, casaco ou calça escura e botas, no clarão"
+ },
+ {
+  "name": "Kaede Jespine",
+  "look": "chefe do segundo andar; aparência não mostrada nestas imagens"
+ },
+ {
+  "name": "Figura Salto",
+  "look": "cabelo escuro, sobretudo escuro, saltando com arma, luz branca"
+ },
+ {
+  "name": "Herói Cabelo Espetado",
+  "look": "cabelo claro espetado, cenho franzido, armadura escura, empunha espada longa"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão de luva escura com brilho branco, rachando vidro"
+ },
+ {
+  "name": "Figura de pernas brancas",
+  "look": "pernas de calça escura com contorno branco, capa escura comprida"
+ },
+ {
+  "name": "Figura fora do quadro",
+  "look": "voz de fora do quadro, sem aparência visível"
+ },
+ {
+  "name": "Figura da explosão",
+  "look": "silhueta escura com cabelo espetado em clarão branco"
+ },
+ {
+  "name": "Sorridente",
+  "look": "cabelo escuro espetado, sorriso com dentes à mostra, uniforme escuro de gola alta"
+ },
+ {
+  "name": "Invocadora",
+  "look": "cabelo claro com fio curvado no alto, laço escuro no pescoço, blusa clara, saia escura"
+ },
+ {
+  "name": "Elfo dos Óculos",
+  "look": "cabelo escuro comprido, óculos redondos, orelhas pontudas, sobretudo escuro com losango no peito"
+ },
+ {
+  "name": "Figura do canhão",
+  "look": "armadura escura lançada do canhão em explosão branca"
+ },
+ {
+  "name": "Gosmas",
+  "look": "criaturas gelatinosas fofas, olhos e bocas pretas simples, uma com fumaça"
+ },
+ {
+  "name": "Ernan Hilderan",
+  "look": "nome citado em fala, sem aparência visível nestas páginas"
+ },
+ {
+  "name": "Nairuniel",
+  "look": "cabelo claro ondulado comprido, armadura clara, vestido longo em camadas, correntes ao fundo"
+ },
+ {
+  "name": "Figura de baixo",
+  "look": "cabeça parcial na borda inferior, boca aberta, sem rosto nítido"
+ },
+ {
+  "name": "Berge Deyas",
+  "look": "Protagonista, Rei Demônio, cabelo escuro, armadura escura, chifres"
+ },
+ {
+  "name": "Arkaine Blarimph",
+  "look": "Arquiduque do Reino Demônio, chifres brilhantes, presas à mostra"
+ },
+ {
+  "name": "Gordon Dyrik",
+  "look": "Melhor formando da Academia Demoníaca, óculos, sorriso confiante"
+ },
+ {
+  "name": "Lucky",
+  "look": "Formando da guilda; recusa a missão de ir a Ergest"
+ },
+ {
+  "name": "Elfodo",
+  "look": "Elfo que se opõe a Hillen, orelhas pontudas, trança, expressão irritada"
+ },
+ {
+  "name": "Relíquia",
+  "look": "Criatura gelatinosa fofa de olhos pretos, flutua perto de Ernan e Berge"
+ },
+ {
+  "name": "Draxen Doloof",
+  "look": "lobisomem de ossos amarrados no rosto, olho brilhante, presas; Rei Demônio das Feras"
+ },
+ {
+  "name": "Aide",
+  "look": "Mago da Torre que invoca espíritos, tosse pela falta de mana"
+ },
+ {
+  "name": "Kaede Zespine",
+  "look": "9ª princesa imperial de Zespine, sequestrada, caída com slime ao lado"
+ },
+ {
+  "name": "Louise Werft",
+  "look": "Princesa punk de Werft, elmo, tranças, armadura com ombreiras rebitadas, empunha lança ou espada"
+ },
+ {
+  "name": "Elfada",
+  "look": "elfa mencionada em fala, pergunta o que Figura fará"
+ },
+ {
+  "name": "Irmão Tigre",
+  "look": "Tigre de três olhos que ataca de cabeça para baixo e pula na lava"
+ },
+ {
+  "name": "Voz oculta",
+  "look": "balão preto com névoa, sem figura visível"
+ },
+ {
+  "name": "Rosto Trincado",
+  "look": "rosto branco rachado, boca negra aberta, riso em close"
+ },
+ {
+  "name": "Anão Óculos",
+  "look": "cabelo e barba escuros volumosos, óculos de metal grandes, braços abertos"
+ },
+ {
+  "name": "Chapéu Sobretudo",
+  "look": "chapéu de abas largas, sobretudo escuro, cabelo escuro, de pé à direita"
+ },
+ {
+  "name": "Figura Mãos",
+  "look": "mãos de manga clara agarrando borda, anel no dedo, tremendo"
+ },
+ {
+  "name": "Figura Cabelo Espetado",
+  "look": "cabelo castanho espetado, roupa escura, boca aberta gritando, braços erguidos"
+ },
+ {
+  "name": "Figura Trança",
+  "look": "cabelo castanho em trança longa, orelhas pontudas, armadura escura, de perfil"
+ },
+ {
+  "name": "Feiticeira",
+  "look": "chapéu pontudo, cabelo castanho longo, segura cajado"
+ },
+ {
+  "name": "Comerciante",
+  "look": "sobretudo escuro de costas, cinto transversal, na loja"
+ },
+ {
+  "name": "Figura Elmo",
+  "look": "elmo de metal, olhos arregalados, bochechas grandes, boca aberta"
+ },
+ {
+  "name": "Silhuetas Heróis",
+  "look": "silhuetas escuras com lanças e armaduras, de pé no fundo"
+ },
+ {
+  "name": "Mão Ossuda",
+  "look": "mão longa de dedos ósseos e garras, sem rosto visível"
+ },
+ {
+  "name": "Caindo",
+  "look": "de cabeça para baixo, calça escura e botas, caindo no clarão branco"
+ },
+ {
+  "name": "Figura Gema",
+  "look": "armadura clara com gema no peito, mãos enluvadas entrelaçadas, capa escura"
+ },
+ {
+  "name": "Silhueta escura",
+  "look": "silhueta escura em queda, braços abertos, diante de grades"
+ },
+ {
+  "name": "Figura de sobretudo",
+  "look": "sobretudo escuro, braços e pernas abertos, caindo na neve"
+ },
+ {
+  "name": "Maga de Cabelo Claro",
+  "look": "cabelo claro comprido, blusa e expressão séria, invoca fogo, água e pedra"
+ },
+ {
+  "name": "Heróis de armadura",
+  "look": "elmos e armaduras prateadas, de pé em grupo, sombras ao fundo"
+ },
+ {
+  "name": "Hyacinth",
+  "look": "flor-espírito de gelo/água, cristais brancos, contaminada por energia demoníaca"
+ },
+ {
+  "name": "Vulto de capa",
+  "look": "capa escura longa, de pé no salão de pedra, sem rosto visível"
+ },
+ {
+  "name": "Criatura de garras",
+  "look": "pé escuro de garras longas e nuas, sobre a neve, sem rosto visível"
+ },
+ {
+  "name": "Soldados de Cabelo Espetado",
+  "look": "várias figuras pequenas de cabelo escuro espetado e casaco, na neve"
+ },
+ {
+  "name": "Orc",
+  "look": "rosto de orc, presas, olhos escuros, duas tranças grossas, pelo nos ombros"
+ },
+ {
+  "name": "Criatura Garra",
+  "look": "mão gigante peluda com garras, parte de braço de armadura escura, sem rosto visível"
+ },
+ {
+  "name": "Figura Ambígua",
+  "look": "fala de balão oval no alto, sem aparência visível"
+ },
+ {
+  "name": "Capa de Pele",
+  "look": "capa escura de gola de pele, de costas, em primeiro plano, cabelo não visível"
+ },
+ {
+  "name": "Tribo do Gelo Azul",
+  "look": "lobos-homem de pelagem clara e gola de pele, em grupo na neve"
+ },
+ {
+  "name": "Orc Peludo",
+  "look": "orc de pelagem branca, gola de pele, focinho e presas, segura baú"
+ },
+ {
+  "name": "Criatura Chifruda",
+  "look": "caveira com chifres e presas, boca aberta, dentes cerrados"
+ },
+ {
+  "name": "Criaturas-nuvem",
+  "look": "nuvens brancas com olhos e bocas furiosas, flutuando"
+ },
+ {
+  "name": "Guerreiro Blindado",
+  "look": "figura corpulenta de armadura escura, entre tubos metálicos"
+ },
+ {
+  "name": "Criatura Sombria",
+  "look": "massa escura com garras, em batalha, sem rosto nítido"
+ },
+ {
+  "name": "Elfo ao fundo",
+  "look": "orelhas pontudas, cabelo castanho comprido, expressão séria, capa escura"
+ },
+ {
+  "name": "Figura Rabo Claro",
+  "look": "cabelo claro longo preso em rabo, ombreiras de armadura, de costas"
+ },
+ {
+  "name": "Lorde Castelão",
+  "look": "homem idoso, cabelo e barba brancos, capa escura de gola de pele"
+ },
+ {
+  "name": "Figuras nos tronos",
+  "look": "figuras sentadas em tronos no salão de mármore, sem rosto visível"
+ },
+ {
+  "name": "Multidão do salão",
+  "look": "figuras de capa escura de costas, braços erguidos, diante do trono"
+ },
+ {
+  "name": "Mão da Taça",
+  "look": "mão de luva clara segurando taça e derramando vinho escuro"
+ },
+ {
+  "name": "Hillen",
+  "look": "Herói capitão do grupo, cabelo castanho bagunçado, faixa na testa, suado"
+ },
+ {
+  "name": "Ancião de Pele",
+  "look": "cabelo e barba brancos, sorriso largo, sobretudo com gola de pele"
+ },
+ {
+  "name": "Herói Coroado",
+  "look": "cabelo escuro espetado, adorno na testa, capa escura, sorriso confiante"
+ },
+ {
+  "name": "Jovem Castanho",
+  "look": "cabelo castanho, gola alta clara, expressão contida"
+ },
+ {
+  "name": "Elfo da Trança",
+  "look": "orelhas pontudas, trança castanho-avermelhada longa, sobretudo escuro de gola"
+ },
+ {
+  "name": "Viajante",
+  "look": "sobretudo escuro, cabelo claro curto, segura objeto brilhante na sacada"
+ },
+ {
+  "name": "Killen",
+  "look": "cabelo castanho ondulado, armadura clara com ombreiras, taça de vinho, sorriso"
+ },
+ {
+  "name": "Figura Perfil",
+  "look": "cabelo escuro, perfil sério, boca fechada, gola escura"
+ },
+ {
+  "name": "Lorde Granada",
+  "look": "não aparece nestas páginas; citado na fala de Herói Ondulado"
+ },
+ {
+  "name": "Coque Armadura",
+  "look": "cabelo escuro preso em coque, armadura clara, sorriso largo"
+ },
+ {
+  "name": "Capa Castanha",
+  "look": "cabelo castanho bagunçado, capa escura com gola, sorriso aberto"
+ },
+ {
+  "name": "Figura Armadura Esfera",
+  "look": "armadura clara, braço estendido segurando a orbe, rosto fora do quadro"
+ },
+ {
+  "name": "Figura Balcão Esquerda",
+  "look": "de costas, cabelo escuro, capa escura com ombreiras, no balcão"
+ },
+ {
+  "name": "Figura Balcão Direita",
+  "look": "de costas, cabelo castanho escuro, sobretudo escuro com gola, no balcão"
+ },
+ {
+  "name": "Ghoul",
+  "look": "criatura esquelética de pele rasgada, dentes à mostra, garras longas"
+ },
+ {
+  "name": "Guerreiro Elmo",
+  "look": "elmo com espetos, ombreiras e peitoral espinhados, cabelo escuro, sorriso largo, bastão no ombro"
+ },
+ {
+  "name": "Herói Barbudo",
+  "look": "corpulento, barba grande, cabelo castanho, caneca na mão, sorriso"
+ },
+ {
+  "name": "Criatura Galhada",
+  "look": "criatura de galhos retorcidos, garras longas, presas, rosto grotesco"
+ },
+ {
+  "name": "Lorde Wharton",
+  "look": "aparência não mostrada nestas páginas; citado na fala de Hillen"
+ },
+ {
+  "name": "Figura Gritando Castanha",
+  "look": "cabelo castanho bagunçado, boca aberta gritando, suado"
+ },
+ {
+  "name": "Criatura Esquelética",
+  "look": "crânio branco com chifres ósseos, presas, garras longas"
+ },
+ {
+  "name": "Gigante de Gelo",
+  "look": "gigante esquelético de chifres de caveira, costelas expostas, garras ósseas, na neve"
+ },
+ {
+  "name": "Criatura Espinhosa",
+  "look": "criatura escura de espinhos e armadura, garras, sem rosto nítido"
+ },
+ {
+  "name": "Figura Espada",
+  "look": "cabelo escuro espetado, capa escura com capuz, espada brilhante, em clarão"
+ },
+ {
+  "name": "Figura Cabelo Escuro Borda",
+  "look": "cabelo escuro, na borda inferior, sem rosto visível"
+ },
+ {
+  "name": "Silhueta de olhos brancos",
+  "look": "silhueta escura, olhos brancos brilhantes, em clarão com raios"
+ },
+ {
+  "name": "Figura Ofegante",
+  "look": "cabelo escuro bagunçado, sobretudo escuro, curvado ofegante na neve"
+ },
+ {
+  "name": "Figura Capa Clara",
+  "look": "cabelo claro, capa escura, luvas, segura espada cravada na neve"
+ },
+ {
+  "name": "Figura ao fundo",
+  "look": "parte inferior do quadro, sem rosto visível, fala em balões no alto"
+ },
+ {
+  "name": "Herói Ruivo",
+  "look": "cabelo castanho-avermelhado, rosto surpreso e suado, armadura clara com ombreiras"
+ },
+ {
+  "name": "Armadura Clara",
+  "look": "armadura clara com ombreira, fala de fora do quadro, rosto não visível"
+ },
+ {
+  "name": "Voz Gritando",
+  "look": "balão serrado gritando, sem rosto visível"
+ },
+ {
+  "name": "Figura Torre",
+  "look": "silhueta escura, cabelo escuro, na beira inferior do monte"
+ },
+ {
+  "name": "Figura Ombro Escuro",
+  "look": "ombro escuro e braço claro na borda superior, sem rosto visível"
+ },
+ {
+  "name": "Figura Cacheada",
+  "look": "cabelo escuro cacheado comprido, capa escura, de costas, à esquerda"
+ },
+ {
+  "name": "Figura Castanha",
+  "look": "cabelo castanho, de costas, no meio do grupo"
+ },
+ {
+  "name": "Elfo Gritando",
+  "look": "cabelo castanho-avermelhado trançado, orelhas pontudas, boca aberta gritando, suado"
+ },
+ {
+  "name": "Cavaleiro da Capa",
+  "look": "alto, capa escura longa, armadura clara, cabelo castanho preso"
+ },
+ {
+  "name": "Cavaleiro Agachado",
+  "look": "agachado na neve, boné escuro, armadura escura com ombreiras"
+ },
+ {
+  "name": "Guerreiro Grisalho",
+  "look": "cabelo grisalho, armadura escura, correndo na neve"
+ },
+ {
+  "name": "Cavaleiro Grisalho",
+  "look": "cabelo grisalho, armadura clara com ombreiras, inclinado de lado"
+ },
+ {
+  "name": "Soldado Esquerdo",
+  "look": "cabelo escuro, armadura escura, atrás à esquerda, boca aberta"
+ },
+ {
+  "name": "Elfo da Direita",
+  "look": "cabelo castanho longo, cachecol escuro, expressão séria, à direita"
+ },
+ {
+  "name": "Voz ao fundo",
+  "look": "fala de balão oval no quadro inferior, sem rosto visível"
+ },
+ {
+  "name": "Voz dos Soldados",
+  "look": "balões sem rosto visível, soldados fora do quadro, céu nublado"
+ },
+ {
+  "name": "Soldado do Cachecol",
+  "look": "cabelo castanho curto, cachecol avermelhado, armadura clara, olhar sério"
+ },
+ {
+  "name": "Herói Furioso",
+  "look": "cabelo castanho curto, armadura clara, rosto irritado, no portão"
+ },
+ {
+  "name": "Soldado Elmo",
+  "look": "cabelo escuro, armadura com elmo, rosto tenso, à esquerda"
+ },
+ {
+  "name": "Soldado Óculos",
+  "look": "cabelo castanho, óculos, rosto sério, atrás no centro"
+ },
+ {
+  "name": "Herói Espada",
+  "look": "sobretudo escuro, segurando espada, pernas no portão"
+ },
+ {
+  "name": "Caídos",
+  "look": "figuras de casaco escuro caídas no vórtice de fumaça"
+ },
+ {
+  "name": "Guerreiro Brilhante",
+  "look": "armadura clara com ombreiras, cabelo escuro bagunçado, espada, aura branca"
+ },
+ {
+  "name": "Figura Sobretudo Torre",
+  "look": "sobretudo escuro longo, cabelo escuro, de costas, no salão da torre"
+ },
+ {
+  "name": "Figura Armadura Peitoral",
+  "look": "peitoral de armadura escura com cinto, sem rosto visível"
+ },
+ {
+  "name": "Figura Armadura Ombreira",
+  "look": "armadura clara com ombreira grande, à esquerda, falando"
+ },
+ {
+  "name": "Figura Capa Pontuda",
+  "look": "cabelo escuro espetado, capa escura, rosto irritado, à direita"
+ },
+ {
+  "name": "Guerreiro Espada",
+  "look": "armadura clara com ombreiras, cabelo castanho ondulado bagunçado, espada, rosto sério"
+ },
+ {
+  "name": "Elfo da Capa",
+  "look": "orelhas pontudas, trança castanho-avermelhada longa, sobretudo escuro de gola, expressão furiosa"
+ },
+ {
+  "name": "Figura Inferior",
+  "look": "cabeça de cabelo escuro na borda inferior, fala sobre a torre"
+ },
+ {
+  "name": "Bruxa de Boina",
+  "look": "cabelo branco longo, boina preta, capa escura, de pé sobre tronco"
+ },
+ {
+  "name": "Figura Furiosa",
+  "look": "cabelo escuro espetado, rosto furioso, dentes à mostra, gritando"
+ },
+ {
+  "name": "Figura Atacante",
+  "look": "silhueta escura entre relâmpagos, ataca pelas costas, fala fora de foco"
+ },
+ {
+  "name": "Figura Brilhante",
+  "look": "pequena figura de roupa escura envolta em luz branca, na floresta"
+ },
+ {
+  "name": "Figura Armadura Escura",
+  "look": "armadura escura, espada brilhante, golpeia de cima"
+ },
+ {
+  "name": "Figura Raios",
+  "look": "armadura clara no ombro, calça escura com cinto, raios elétricos na mão erguida"
+ },
+ {
+  "name": "Herói Armadura Branca",
+  "look": "armadura clara e branca com ombreiras, espada na mão, de pé na grama"
+ },
+ {
+  "name": "Armadura escura",
+  "look": "armadura escura, mão de garras escura estendida, grita"
+ },
+ {
+  "name": "Caído Espetado",
+  "look": "cabelo escuro espetado, casaco escuro, caído no chão em meio a raios brancos"
+ },
+ {
+  "name": "Gritador Castanho",
+  "look": "cabelo castanho bagunçado, boca aberta gritando, suado, caído no chão"
+ },
+ {
+  "name": "Dragão",
+  "look": "criatura de sombra, olhos brancos brilhantes, presas e espinhos na cabeça"
+ },
+ {
+  "name": "Figura de boné",
+  "look": "cabelo escuro, boné preto, sobretudo escuro, estende a mão"
+ },
+ {
+  "name": "Silhuetas das Dez Estrelas",
+  "look": "silhuetas escuras com estrelas brilhantes ligadas por linhas"
+ },
+ {
+  "name": "Guerreiro Olho Brilhante",
+  "look": "cabelo castanho ondulado cobrindo um olho, olho branco brilhante, armadura clara com ombreiras"
+ },
+ {
+  "name": "Figura Cabeça Espetada",
+  "look": "cabeça de cabelo claro espetado, sem rosto visível, na parte inferior do quadro"
+ },
+ {
+  "name": "Elfo Velho",
+  "look": "orelhas pontudas, trança castanha longa, rosto envelhecido, sobretudo escuro de gola"
+ },
+ {
+  "name": "Mago Orbe",
+  "look": "cabelo escuro, sobretudo escuro de gola alta, segura orbe brilhante"
+ },
+ {
+  "name": "Caído Cabelo Escuro",
+  "look": "cabelo escuro espetado, caído de bruços no chão"
+ },
+ {
+  "name": "Rei Demônio",
+  "look": "cabelo escuro bagunçado, sobretudo escuro de gola alta, expressão séria"
+ },
+ {
+  "name": "Figura da Bota",
+  "look": "só uma bota escura no alto do quadro, fora de cena"
+ },
+ {
+  "name": "Soldado do Elmo",
+  "look": "elmo metálico, rosto pequeno, na parte inferior direita, fala ao rei"
+ },
+ {
+  "name": "Warton",
+  "look": "Herói de armadura clara com ombreiras, capa escura, de costas na sacada"
+ },
+ {
+  "name": "Voz do salão",
+  "look": "balão de fala sobre o salão, sem rosto visível"
+ },
+ {
+  "name": "Carcereiro",
+  "look": "uniforme escuro de gola alta, cabelo escuro, de pé atrás das grades"
+ },
+ {
+  "name": "Loiro Gola de Pele",
+  "look": "cabelo loiro espetado, gola de pele escura, boca aberta"
+ },
+ {
+  "name": "Careca Ombreiras",
+  "look": "cabeça careca, ombreiras de armadura, casaco escuro, expressão séria"
+ },
+ {
+  "name": "Loiro Franja",
+  "look": "cabelo loiro-claro franjudo, rosto baixo, canto inferior esquerdo"
+ },
+ {
+  "name": "Prisioneiro",
+  "look": "cabelo escuro espetado, camisa clara, acorrentado, de costas"
+ },
+ {
+  "name": "Caído Bruços",
+  "look": "cabelo escuro espetado, casaco escuro, caído de bruços no chão"
+ },
+ {
+  "name": "Ajoelhado",
+  "look": "de costas, roupa rasgada, ajoelhado na grama"
+ },
+ {
+  "name": "Figura de camisa clara",
+  "look": "camisa clara rasgada, caída de bruços, sem rosto visível"
+ },
+ {
+  "name": "Figura Curvada",
+  "look": "sobretudo escuro, cabelo escuro bagunçado, curvada à frente"
+ },
+ {
+  "name": "Figura de cabelo escuro",
+  "look": "cabelo escuro, na borda inferior, sem rosto visível"
+ },
+ {
+  "name": "Lobo da esquerda",
+  "look": "lobo escuro sentado à mesa, pelagem espessa"
+ },
+ {
+  "name": "Lobo da direita",
+  "look": "criatura grande de cabelo espetado escuro, sentada à direita da mesa"
+ },
+ {
+  "name": "Figura sentada à direita",
+  "look": "sentada à mesa, vista de costas, silhueta escura"
+ },
+ {
+  "name": "Figura Orbe",
+  "look": "mão enluvada escura segurando orbe branco brilhante, rosto não visível"
+ },
+ {
+  "name": "Elemental de chama",
+  "look": "bola de fogo branca com rosto sorridente, flutua"
+ },
+ {
+  "name": "Elemental de bolha",
+  "look": "bola branca translúcida com rosto sorridente, flutua"
+ },
+ {
+  "name": "Figura Loira Bandeja",
+  "look": "cabelo loiro-claro longo com mecha em antena, vestido escuro, segura bandeja de doces"
+ },
+ {
+  "name": "Figura Cabelo Ondulado Escuro",
+  "look": "cabelo escuro ondulado bagunçado, roupa escura, gesticula com a mão"
+ },
+ {
+  "name": "Figura Pernas Nuas",
+  "look": "pernas musculosas nuas, pés descalços, voando no clarão branco"
+ },
+ {
+  "name": "Figura Enluvada",
+  "look": "luvas escuras, cabelo escuro, rosto parcial, em close"
+ },
+ {
+  "name": "Figura Sorridente Clara",
+  "look": "cabelo claro bagunçado, cobre um olho, sorriso largo, mãos cruzadas, gola escura"
+ },
+ {
+  "name": "Chibi Barbudo",
+  "look": "desenho chibi, cabelo escuro espetado, bigode grosso, olhos arregalados, suado"
+ },
+ {
+  "name": "Criatura Bolinha",
+  "look": "criatura redonda cinza, rosto simples de olhos apertados, flutua"
+ },
+ {
+  "name": "Figura Olho Fenda",
+  "look": "olho de pupila vertical, cabelo escuro revolto sobre a testa, brilho branco"
+ },
+ {
+  "name": "Cavaleiro Ombreiras",
+  "look": "armadura escura com ombreiras pontudas, em pé sobre os sacos no salão"
+ },
+ {
+  "name": "Figura Corredora",
+  "look": "pequena figura de roupa escura correndo à direita com bolsa, no salão"
+ },
+ {
+  "name": "Voz da mesa",
+  "look": "fala de balão sem figura visível, sobre a mesa redonda do salão"
+ },
+ {
+  "name": "Cabeça Clara",
+  "look": "cabeça de cabelo claro na borda inferior, rosto parcial, sob a mesa"
+ },
+ {
+  "name": "Sentado Cadeira",
+  "look": "cabelo escuro, sentado em cadeira, visto de cima"
+ },
+ {
+  "name": "Figura Olho Fendido",
+  "look": "olho escuro de pupila fina, cabelo escuro bagunçado, em close"
+ },
+ {
+  "name": "Loiro Óculos",
+  "look": "cabelo loiro, óculos, sorriso sinistro, sobretudo escuro de gola"
+ },
+ {
+  "name": "Criatura do Baú",
+  "look": "pequena criatura pálida com orbe brilhante, junto a baú de moedas"
+ },
+ {
+  "name": "Garoto Loiro",
+  "look": "cabelo loiro espetado, chorando de olhos fechados, rosto baixo"
+ },
+ {
+  "name": "Voz Sombria",
+  "look": "balão pontiagudo ou oval, sem rosto visível"
+ },
+ {
+  "name": "Marionete",
+  "look": "sobretudo escuro, cabelo escuro, pendurado por fios brancos"
+ },
+ {
+  "name": "Cavaleiros Negros",
+  "look": "silhuetas escuras de elmo e manto, multidão atrás do Demônio"
+ },
+ {
+  "name": "Guerreiro Ondulado",
+  "look": "cabelo castanho ondulado bagunçado, sorriso de canto, close no rosto"
+ },
+ {
+  "name": "Castanho de Gola",
+  "look": "cabelo curto castanho, gola ou coleira clara, de costas"
+ },
+ {
+  "name": "Loira da Bandeja",
+  "look": "cabelo loiro longo com mecha em antena, vestido escuro com fita no pescoço, segura bandeja de doces"
+ },
+ {
+  "name": "Elemental Bolha",
+  "look": "bola branca translúcida com rosto sorridente, flutua"
+ },
+ {
+  "name": "Vulto da Frente",
+  "look": "cabelo escuro, de costas, primeiro plano à esquerda, sem rosto visível"
+ },
+ {
+  "name": "Cabeça Escura Inferior",
+  "look": "cabelo escuro, cabeça na borda inferior, sem rosto visível"
+ },
+ {
+  "name": "Sorridente da Esfera",
+  "look": "cabelo escuro espetado, sorriso com dentes à mostra, orbe brilhante na mão"
+ },
+ {
+  "name": "Castanho Gritando",
+  "look": "cabelo castanho bagunçado, boca aberta gritando, suado"
+ },
+ {
+  "name": "Sorridente Escuro",
+  "look": "cabelo escuro, sorriso largo com dentes à mostra, sobretudo escuro"
+ },
+ {
+  "name": "Portador do Orbe",
+  "look": "mão enluvada escura segurando orbe brilhante com filamentos"
+ },
+ {
+  "name": "Elfo do Rabo",
+  "look": "cabelo castanho preso em rabo, orelhas pontudas, capa escura com ombreira"
+ },
+ {
+  "name": "Subordinado Choroso",
+  "look": "cabelo castanho bagunçado, suado, chorando, boca aberta gritando"
+ },
+ {
+  "name": "Cavaleira Bob",
+  "look": "cabelo claro curto tipo chanel, armadura cinza-prateada com ombreiras, mão no peito"
+ },
+ {
+  "name": "Cavaleiro esquerdo",
+  "look": "elmo de placas e ombreiras, armadura escura, em pé à esquerda"
+ },
+ {
+  "name": "Cavaleiro direito",
+  "look": "elmo com frestas e ombreiras, armadura escura, em pé à direita"
+ },
+ {
+  "name": "Corredora",
+  "look": "pequena figura de roupa escura correndo com bolsa"
+ },
+ {
+  "name": "Armadura Branca",
+  "look": "armadura clara e branca com ombreiras, cabelo castanho, cabeça brilhante"
+ },
+ {
+  "name": "Orelhuda",
+  "look": "orelhas pontudas, cabelo escuro, de perfil à esquerda"
+ },
+ {
+  "name": "Ossuda",
+  "look": "cabelo claro com tiara ornada, dois coques, boca aberta gritando, aponta"
+ },
+ {
+  "name": "Capa",
+  "look": "Homem de capa que acorda Berge na cela e cobra a dívida de ouro"
+ },
+ {
+  "name": "Berge Deias",
+  "look": "Demônio das Chamas, dragão demoníaco; chifres, sobretudo escuro, capa com gola de pele"
+ },
+ {
+  "name": "Jason Cochmund",
+  "look": "Demônio da Mentira, raça desconhecida; sorriso largo, braços abertos, cabelo escuro"
+ },
+ {
+  "name": "Figura Rabos Gêmeos",
+  "look": "cabelo claro em dois rabos, ombreiras de armadura, saia escura, de costas"
+ },
+ {
+  "name": "Criatura Rochosa",
+  "look": "corpo de pedra angulosa e escura com brilho claro, caída no chão"
+ },
+ {
+  "name": "Figura Vista de Cima",
+  "look": "cabelo claro ondulado, ombreira branca, saia escura, botas, vista de cima; provável Kaede, não confirmado"
+ },
+ {
+  "name": "Chapéu",
+  "look": "chapéu de abas largas, cabelo escuro espetado, gola de pele, expressão constrangida"
+ },
+ {
+  "name": "Figura Rabo",
+  "look": "cabelo em rabo de cavalo, roupa escura e clara, mãos na cintura"
+ },
+ {
+  "name": "Figura Blindada",
+  "look": "mão blindada de metal sobre o rosto, dentes cerrados, luz branca"
+ },
+ {
+  "name": "Figura Gigante",
+  "look": "figura enorme de roupa rosada com ornamento dourado, visível só em parte"
+ }
+]

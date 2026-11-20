@@ -1,0 +1,934 @@
+[
+ {
+  "name": "Hanhan",
+  "look": "Garota acompanhante do protagonista, cabelo claro, veste roupas casuais"
+ },
+ {
+  "name": "Xiao Chen",
+  "look": "cabelo castanho espetado com topete, jaqueta escura, mala de rodinhas"
+ },
+ {
+  "name": "Lin Zichen",
+  "look": "nome citado na fala; aparência ainda não vista"
+ },
+ {
+  "name": "Coach Guo",
+  "look": "Cabelo raspado estilo militar, moletom, segura lata de bebida"
+ },
+ {
+  "name": "Kai",
+  "look": "cabelo castanho penteado, jaqueta escura, braços cruzados"
+ },
+ {
+  "name": "Shen Qinghan",
+  "look": "cabelo castanho-avermelhado ondulado comprido, jaqueta clara aberta, top claro decotado, calça escura justa"
+ },
+ {
+  "name": "Chen Feng",
+  "look": "cabelo raspado, jaqueta clara de gola alta, short escuro, relógio no pulso"
+ },
+ {
+  "name": "Yuxi",
+  "look": "cabelo liso comprido com franja, uniforme escolar, laço no pescoço"
+ },
+ {
+  "name": "Yijia",
+  "look": "Garota de cabelo castanho curto na altura do queixo, uniforme escolar."
+ },
+ {
+  "name": "Chuxin",
+  "look": "Garota de cabelo castanho-claro em duas marias-chiquinhas enroladas, blazer escuro."
+ },
+ {
+  "name": "He Yu",
+  "look": "cabelo escuro curto, roupa de artes marciais chinesa clara, sapatos sociais pretos"
+ },
+ {
+  "name": "Lu Gang",
+  "look": "cabelo castanho-claro comprido penteado para trás, jaqueta escura, gritando"
+ },
+ {
+  "name": "Wang Shujie",
+  "look": "cabelo curto escuro, jaqueta escura, boca aberta gritando"
+ },
+ {
+  "name": "Cai",
+  "look": "professor de óculos, camisa escura, segura prancheta"
+ },
+ {
+  "name": "Nanguan",
+  "look": "dupla citada na narração que observa o duelo; aparência não mostrada"
+ },
+ {
+  "name": "Lu Wei",
+  "look": "agasalho escuro com listras brancas; é chamado para lutar com Zichen"
+ },
+ {
+  "name": "Han",
+  "look": "cabelo longo castanho em rabo alto, camisa clara, shorts escuros"
+ },
+ {
+  "name": "Yuntong",
+  "look": "Garota de cabelo claro preso em rabo de cavalo alto, jaqueta esportiva."
+ },
+ {
+  "name": "Wu Tiancheng",
+  "look": "Não aparece nesta página; citado por Han como atleta do primeiro ano"
+ },
+ {
+  "name": "Deus-Rato",
+  "look": "criatura escura de olhos brilhantes, dentes e garras; chamada de Lord Rat God"
+ },
+ {
+  "name": "Deus Rato",
+  "look": "criatura sombria no escuro, olhos brilhantes, pelos eriçados"
+ },
+ {
+  "name": "Qi Yue",
+  "look": "Jaqueta escura; aluno entre os cinco primeiros da turma 3 do 2º ano, derrotado por Zichen"
+ },
+ {
+  "name": "Wanxin",
+  "look": "mãe; cabelo castanho-claro comprido e ondulado, blusa clara, decote"
+ },
+ {
+  "name": "Yansheng",
+  "look": "pai; óculos, cabelo escuro curto, barba, camisa polo clara"
+ },
+ {
+  "name": "Zhang Wanxin",
+  "look": "mulher de cabelo castanho longo, camisa clara, romancista de ficção masculina"
+ },
+ {
+  "name": "Xu Meng",
+  "look": "Cabelo castanho-escuro comprido, óculos, blusa rosa de manga bufante"
+ },
+ {
+  "name": "Qinghan",
+  "look": "Jovem de capuz, discípula do Pavilhão Tianren"
+ },
+ {
+  "name": "Bai Xue",
+  "look": "cabelo comprido castanho-claro com faixa na cabeça; uniforme escolar"
+ },
+ {
+  "name": "Guan Chun",
+  "look": "cabelo escuro curto, camisa clara com botões, chorando e suando"
+ },
+ {
+  "name": "Miss Strawberry",
+  "look": "professora do jardim de infância, cabelo longo escuro, óculos, vestido longo com botões"
+ },
+ {
+  "name": "Sheng",
+  "look": "não aparece nestas páginas; citado como 'Boss Sheng' pela mulher ruiva"
+ },
+ {
+  "name": "Cao Mei",
+  "look": "mulher de óculos, cabelo castanho comprido, blusa clara; refém"
+ },
+ {
+  "name": "Heroína de armadura",
+  "look": "Armadura com elmo de antenas, cabelo claro; voa em alta velocidade"
+ },
+ {
+  "name": "Diretora do Shanhai High",
+  "look": "Mulher de blazer e saia lápis, autoridade escolar"
+ },
+ {
+  "name": "Dongzhi (Yuan Dongzhi)",
+  "look": "cabelo preso em coque, chifres de cervo, blusa branca de ombro à mostra, meia-calça escura, salto alto"
+ },
+ {
+  "name": "Yuan",
+  "look": "chifres brancos, cabelo claro preso em coque, brinco comprido, expressão séria; não é a Principal de dois rabos altos"
+ },
+ {
+  "name": "Junping (Hong Junping)",
+  "look": "cabelo castanho penteado para trás, jaqueta escura, camiseta branca de decote em V"
+ },
+ {
+  "name": "Bai",
+  "look": "aparência não mostrada; diretor da Shanhai High"
+ },
+ {
+  "name": "Luo Ganxue",
+  "look": "veterana citada; aparência não mostrada nestas páginas"
+ },
+ {
+  "name": "Tia Xin",
+  "look": "mulher de cabelo castanho comprido e ondulado, blusa clara, mão no rosto"
+ },
+ {
+  "name": "Líder barbudo",
+  "look": "homem barbudo de cabelo preso, roupa preta longa, à frente de artistas de branco"
+ },
+ {
+  "name": "Dean Liu",
+  "look": "não visível nesta página; nome citado na fala"
+ },
+ {
+  "name": "Chuanwu",
+  "look": "barbudo de coque, óculos, manga larga, segura celular"
+ },
+ {
+  "name": "Besta",
+  "look": "lobo monstruoso com chifres, juba espinhosa e presas à mostra"
+ },
+ {
+  "name": "Guerreira",
+  "look": "Mulher guerreira, frequentemente presa por vinhas, aliada de Zichen"
+ },
+ {
+  "name": "Ye",
+  "look": "Personagem principal, cabelo eriçado, usa energia para proteger Xiaochen"
+ },
+ {
+  "name": "Brutamonte da camiseta escura",
+  "look": "camiseta escura, calça escura, corpo forte"
+ },
+ {
+  "name": "Colega de Hanhan",
+  "look": "cabelo claro em rabos altos e coque, uniforme escolar de paletó e saia xadrez, sorriso aberto"
+ },
+ {
+  "name": "Jaqueta Vermelha",
+  "look": "cabelo castanho espetado, jaqueta vermelha, aponta para Yong"
+ },
+ {
+  "name": "Pessoa de cabelo escuro",
+  "look": "de costas, cabelo escuro, parte inferior do quadro"
+ },
+ {
+  "name": "Amigo",
+  "look": "Cabelo escuro penteado para trás, rosto de perfil, boca aberta, jaqueta escura"
+ },
+ {
+  "name": "Sorridente",
+  "look": "Cabelo curto, gola alta escura, sorriso largo com dentes à mostra"
+ },
+ {
+  "name": "Veterana",
+  "look": "Cabelo castanho-avermelhado longo, regata escura, braços cruzados, rosto sério"
+ },
+ {
+  "name": "Song Yuyan",
+  "look": "cabelo loiro ondulado comprido, bodysuit escuro com recorte no peito; mentora"
+ },
+ {
+  "name": "Pai de Xiao",
+  "look": "homem de óculos, cabelo castanho espetado, jaqueta escura"
+ },
+ {
+  "name": "Chifre",
+  "look": "Estudante de perfil que pensa, comenta a mensagem e deseja boa sorte a Zichen"
+ },
+ {
+  "name": "Alunos",
+  "look": "plateia de calouros de uniforme escuro, sentados"
+ },
+ {
+  "name": "Calouros",
+  "look": "Grupo de alunos novatos, uniformes claros, em fila ou sob pressão"
+ },
+ {
+  "name": "Li Moyu",
+  "look": "citado na fala; aparência ainda não vista"
+ },
+ {
+  "name": "Aluno suado",
+  "look": "cabelo castanho curto, suado, boca aberta, camisa escura"
+ },
+ {
+  "name": "Aluna de bob",
+  "look": "cabelo castanho na altura do queixo, olhos fechados, gritando"
+ },
+ {
+  "name": "Ma Xiwei",
+  "look": "citada na fala como uma das duas mais fortes; aparência ainda não vista"
+ },
+ {
+  "name": "Grupo no corredor",
+  "look": "Vários homens e mulheres de roupas escuras e claras, andando juntos."
+ },
+ {
+  "name": "Macaco",
+  "look": "pele escura, cabelo espetado, corpo musculoso, calça branca, garras pretas"
+ },
+ {
+  "name": "Chifrudo",
+  "look": "elmo escuro com chifres e armadura, sorriso largo com dentes"
+ },
+ {
+  "name": "Agasalho",
+  "look": "cabelo escuro curto, agasalho escuro, muito musculoso, gritando"
+ },
+ {
+  "name": "Yan",
+  "look": "Membro do Pavilhão Tianren, colega de Dean"
+ },
+ {
+  "name": "Alada",
+  "look": "mulher de asas negras e chifres, roupa escura rasgada, cabelo escuro preso"
+ },
+ {
+  "name": "Ciborgue",
+  "look": "armadura branca de mecha, cabelo claro em rabo alto, olhar firme"
+ },
+ {
+  "name": "Mecânico",
+  "look": "armadura escura de corpo inteiro, visor, equipamento nas costas"
+ },
+ {
+  "name": "Estudante mecânico",
+  "look": "armadura escura justa, capacete com visor, braço mecânico erguido, arma nas costas"
+ },
+ {
+  "name": "Catwoman",
+  "look": "cabelo castanho-avermelhado comprido, óculos, suéter listrado escuro, saia escura com cinta na coxa"
+ },
+ {
+  "name": "Sênior espetado",
+  "look": "cabelo castanho espetado, jaqueta escura, sorriso confiante"
+ },
+ {
+  "name": "Cheirador",
+  "look": "cabelo castanho espetado, jaqueta escura, fareja e rastreia pelo cheiro"
+ },
+ {
+  "name": "Ruiva",
+  "look": "cabelo castanho-avermelhado ondulado comprido, sorriso, vestido escuro estilo qipao"
+ },
+ {
+  "name": "Raposa",
+  "look": "orelhas de raposa, cabelo longo castanho escuro, suéter de gola alta, shorts escuros, meia-calça"
+ },
+ {
+  "name": "Rosto marcado",
+  "look": "rosto com marcas escuras e olhos brancos, em close, envolto em névoa de energia"
+ },
+ {
+  "name": "Lesma morta-viva",
+  "look": "lesma gigante de carapaça espinhosa, manchas brancas de ferimento, antenas oculares"
+ },
+ {
+  "name": "Ave de garras",
+  "look": "ave gigante de penas claras, garras pretas longas, voando"
+ },
+ {
+  "name": "Mestre",
+  "look": "barbudo de coque, óculos escuros, manga larga; chamado de Liu nesta página"
+ },
+ {
+  "name": "Diretor He",
+  "look": "não aparece nesta página; responsável pelo sistema de missões"
+ },
+ {
+  "name": "Mangusta de Veneno Miríade",
+  "look": "mangusta gigante escura caída no chão, corpo com manchas e escamas"
+ },
+ {
+  "name": "Máscara",
+  "look": "boné e máscara escura, camiseta clara, de pé na rua"
+ },
+ {
+  "name": "Xiaochen",
+  "look": "Jovem protegido por Ye, frequentemente em perigo"
+ },
+ {
+  "name": "Contrabandista",
+  "look": "homens de roupa escura com fuzis, atirando"
+ },
+ {
+  "name": "Orelhas de Coelho",
+  "look": "cabelo claro em rabo alto com tufos de orelha, decote, jaqueta"
+ },
+ {
+  "name": "Ziqi",
+  "look": "Cabelo longo castanho-avermelhado ondulado, moletom escuro com capuz, top claro, decote"
+ },
+ {
+  "name": "Amiga",
+  "look": "cabelo escuro médio, top escuro, mão no rosto"
+ },
+ {
+  "name": "Huang Jiamin",
+  "look": "Veterana intimidada por Huang, irmã de Jiarui, implora por não ser agredida"
+ },
+ {
+  "name": "Calouro",
+  "look": "de costas, cabelo escuro, parte inferior do quadro"
+ },
+ {
+  "name": "Jiarui",
+  "look": "homem musculoso, cabelo castanho curto bagunçado, camiseta branca, bermuda escura"
+ },
+ {
+  "name": "Adversário",
+  "look": "fala de fora do quadro, roupa escura de tecido grosso, fora de foco"
+ },
+ {
+  "name": "Gao Mu",
+  "look": "não aparece nesta página; citado como derrotado por um soco de Zichen"
+ },
+ {
+  "name": "Mutante de punhos",
+  "look": "mutante musculoso de cabelo espetado, punhos fortes, pele escura, rosnando"
+ },
+ {
+  "name": "Blindado",
+  "look": "armadura escura de mecha, voando entre criaturas pálidas"
+ },
+ {
+  "name": "Zhao",
+  "look": "cara fechada, olhar furioso, marca sobre o olho; grita ao fundo na luta"
+ },
+ {
+  "name": "Gigante Espinhoso",
+  "look": "gigante musculoso, espinhos escuros nos ombros e braços, cabeça com chifres, sorriso dentado"
+ },
+ {
+  "name": "Bigodudo",
+  "look": "bigode, cabelo castanho curto, camuflagem, boca aberta gritando"
+ },
+ {
+  "name": "Yueyiying",
+  "look": "Vestido branco, apoiada em poste entre raízes, expressão séria"
+ },
+ {
+  "name": "Examinador",
+  "look": "aparece numa tela dizendo 'Se cuida...' à Figura"
+ },
+ {
+  "name": "Robô guarda",
+  "look": "robô cinza blindado, canhões nos braços, sinal de alerta"
+ },
+ {
+  "name": "Shishi",
+  "look": "armadura branca justa, cabelo ruivo-rosado preso, braço mecânico escuro"
+ },
+ {
+  "name": "Chifruda",
+  "look": "cabelo castanho claro em rabo alto, chifres, jaleco branco com losango no peito, decote"
+ },
+ {
+  "name": "Gatinha",
+  "look": "Personagem que cerca Asas junto com Lutador e Jaqueta"
+ },
+ {
+  "name": "Asas",
+  "look": "Protagonista com chifres, cercado por redemoinhos de energia; chama o Mestre e recebe ordens da Figura."
+ },
+ {
+  "name": "Mascarada",
+  "look": "irritada, cai entre fumaça com braços abertos; fala rispidamente"
+ },
+ {
+  "name": "Presa",
+  "look": "cabelo escuro comprido, de cabeça para baixo presa entre espinhos"
+ },
+ {
+  "name": "Garra",
+  "look": "cabelo claro espetado, roupa escura rasgada, garra branca no ombro"
+ },
+ {
+  "name": "Chapéu",
+  "look": "chapéu escuro, terno escuro, mãos juntas no peito, de pé num galho"
+ },
+ {
+  "name": "Olhos fixos",
+  "look": "olhos grandes e fixos, cabelo claro espetado, close-up"
+ },
+ {
+  "name": "Mestra",
+  "look": "mulher de orelhas de raposa e nove caudas longas, sentada em plataforma"
+ },
+ {
+  "name": "Nono Ancião",
+  "look": "citado na fala, aparência não vista"
+ },
+ {
+  "name": "Calça preta",
+  "look": "cintura para baixo, calça preta justa, top cortado, sem rosto visível"
+ },
+ {
+  "name": "Principal Yuan",
+  "look": "Não aparece em cena; citado na ligação como autoridade"
+ },
+ {
+  "name": "Armadura",
+  "look": "armadura escura gigante, brilho de luz intensa ao redor"
+ },
+ {
+  "name": "Lutador rasgado",
+  "look": "cabelo escuro espetado, jaqueta escura rasgada, olhos fechados, punho cerrado"
+ },
+ {
+  "name": "Criatura de muitos braços",
+  "look": "massa escura de vários braços espinhados, abrindo-se ao redor do Blindado"
+ },
+ {
+  "name": "Voadora",
+  "look": "silhueta escura com asas, voando sobre névoa"
+ },
+ {
+  "name": "Dupla de lutadores",
+  "look": "duas silhuetas escuras pequenas, à esquerda, em turbulência branca"
+ },
+ {
+  "name": "Caída",
+  "look": "cabelo claro, roupa escura rasgada, caída de bruços na água"
+ },
+ {
+  "name": "Han Han",
+  "look": "cabelo claro longo preso em rabo alto com enfeite de asa, top claro, sorriso"
+ },
+ {
+  "name": "Oficial de quepe",
+  "look": "Quepe militar escuro, estrela no colarinho, cabelo claro preso, luvas escuras, sentada de pernas cruzadas"
+ },
+ {
+  "name": "Criatura pálida",
+  "look": "mãos longas e pálidas, agarrada por figura de camuflagem"
+ },
+ {
+  "name": "Criatura caída",
+  "look": "criatura de cabelo longo, tentáculos e espinhos, caída no chão; identidade não confirmada"
+ },
+ {
+  "name": "Oficial",
+  "look": "mulher de quepe com estrela, capa escura, cordão trançado no peito, xícara na mão"
+ },
+ {
+  "name": "Acompanhante",
+  "look": "de costas, moletom escuro, cabeça clara, puxa mala"
+ },
+ {
+  "name": "Esquilo",
+  "look": "criatura mutante parecida com esquilo, orelhas grandes, canto inferior direito da última fatia"
+ },
+ {
+  "name": "Zichen",
+  "look": "Protagonista, cabelo escuro, jaqueta, frequentemente visto com pulseira brilhante"
+ },
+ {
+  "name": "Mãe",
+  "look": "cabelo castanho longo ondulado, blusa clara decotada, saia escura"
+ },
+ {
+  "name": "Pai",
+  "look": "homem de óculos, cabelo castanho espetado, barba, camiseta cinza"
+ },
+ {
+  "name": "Principal",
+  "look": "mulher de cabelo preso em dois rabos altos, roupa escura, sentada atrás da mesa"
+ },
+ {
+  "name": "Garoto de olhos estrelados",
+  "look": "cabelo castanho espetado, olhos com estrelas, sorriso largo"
+ },
+ {
+  "name": "Rato dimensional",
+  "look": "criatura musculosa de pelo claro, garras longas, dentes à mostra"
+ },
+ {
+  "name": "Raposa Prateada",
+  "look": "orelhas de raposa, cabelo claro, manto de pelos brancos, mão estendida entre cacos de vidro"
+ },
+ {
+  "name": "Liu Chuanwu",
+  "look": "contato no celular com avatar de barbudo de coque e óculos; não desenhado em cena"
+ },
+ {
+  "name": "Loira de rabos altos",
+  "look": "cabelo loiro em dois rabos altos, de costas, roupa clara e shorts escuros"
+ },
+ {
+  "name": "Cabelo claro",
+  "look": "cabelo loiro-claro comprido com franja, olhos fechados, suando"
+ },
+ {
+  "name": "Espetado",
+  "look": "cabelo escuro espetado, de perfil, em close"
+ },
+ {
+  "name": "Fora do quadro",
+  "look": "voz de quem segura o celular, sem aparência visível"
+ },
+ {
+  "name": "Personagem de camisa branca",
+  "look": "cabelo escuro, manga de camisa branca, visto de cima, parte superior do quadro"
+ },
+ {
+  "name": "Rosada",
+  "look": "cabelo rosa comprido, deitada na cama, sorriso"
+ },
+ {
+  "name": "Loira",
+  "look": "Cabelo loiro comprido, top vermelho, na borda direita"
+ },
+ {
+  "name": "Yuyan",
+  "look": "Yan, mulher que trabalha no instituto, de cabelos escuros"
+ },
+ {
+  "name": "Mergulhador",
+  "look": "roupa de mergulho escura, cilindro de oxigênio nas costas, nadando em recife"
+ },
+ {
+  "name": "Colega de mesa",
+  "look": "cabelo escuro comprido, blusa clara, de perfil na borda esquerda"
+ },
+ {
+  "name": "Cabelo escuro",
+  "look": "cabelo escuro comprido, cortado na base do quadro, fala de fora de foco"
+ },
+ {
+  "name": "Perfil",
+  "look": "cabelo castanho, jaqueta escura, de perfil no canto esquerdo"
+ },
+ {
+  "name": "Zhang",
+  "look": "casaco escuro com botões, luvas escuras, mexe em tela de perfil"
+ },
+ {
+  "name": "Vice-governador",
+  "look": "Ning, barbudo, cabelo claro espetado, casaco branco de gola escura"
+ },
+ {
+  "name": "Lin",
+  "look": "cabelo castanho espetado, moletom branco com capuz sob jaqueta escura, segura celular"
+ },
+ {
+  "name": "Luo Qianxue",
+  "look": "19 anos na lista; aparência não desenhada nesta página"
+ },
+ {
+  "name": "Paciente",
+  "look": "cabelo claro em dois rabos com enfeites de chifre, vestido branco, deitada na maca"
+ },
+ {
+  "name": "Curiosa",
+  "look": "cabelo claro longo em rabo alto com enfeites de chifre, top branco cropped, saia escura"
+ },
+ {
+  "name": "Baixue",
+  "look": "citada na fala; transferida e desaparecida; aparência não vista"
+ },
+ {
+  "name": "Qingmo",
+  "look": "mulher de cabelo preto longo, vestes brancas esvoaçantes, de costas"
+ },
+ {
+  "name": "Discípulos",
+  "look": "vários discípulos de túnica branca e preta, sentados em meditação ou de costas, cabelos presos"
+ },
+ {
+  "name": "Sobretudo",
+  "look": "homem de sobretudo longo escuro, cabelo escuro, de costas"
+ },
+ {
+  "name": "Terno",
+  "look": "mulher de terno escuro, rabo de cavalo claro, andando"
+ },
+ {
+  "name": "Shen",
+  "look": "cabelo claro com tufos de orelha de coelho, decote, roupa justa de mecha"
+ },
+ {
+  "name": "Dean",
+  "look": "Homem barbudo de coque, roupa escura de manga larga, suando"
+ },
+ {
+  "name": "Haidong",
+  "look": "homem de jaqueta branca de gola alta, faixa escura na manga, calça escura, cabelo curto"
+ },
+ {
+  "name": "Cabelo longo",
+  "look": "pessoa de cabelo castanho longo, jaqueta escura, rosto parcialmente visível"
+ },
+ {
+  "name": "Pompadour",
+  "look": "cabelo penteado para trás, rosto sério, jaqueta clara de gola alta"
+ },
+ {
+  "name": "Criatura-lobo",
+  "look": "criatura de cabeça de lobo, pelagem escura, dentes afiados, olhos brilhantes"
+ },
+ {
+  "name": "Criatura chifruda",
+  "look": "criatura musculosa escura, chifres curvos, dentes à mostra, garras"
+ },
+ {
+  "name": "Criatura de presas",
+  "look": "cabeça com presas e olhos brancos brilhantes, peito musculoso, cercada de borboletas"
+ },
+ {
+  "name": "Alado",
+  "look": "cabelo claro espetado, asas negras enormes, olhar sério"
+ },
+ {
+  "name": "Figura de chifres",
+  "look": "cabelo claro pontudo como chifres, visto de baixo, fora de foco"
+ },
+ {
+  "name": "Camisa Branca",
+  "look": "cabelo escuro, camisa branca de manga comprida, calça escura"
+ },
+ {
+  "name": "Garçonete",
+  "look": "cabelo escuro, orelhas de raposa, uniforme escuro com avental branco"
+ },
+ {
+  "name": "Zhou Xuehong",
+  "look": "nome citado na fala do nível Avançado; aparência não vista nesta página"
+ },
+ {
+  "name": "Multidão",
+  "look": "grupo de estudantes de camisa e jaqueta escura, de pé, espantados"
+ },
+ {
+  "name": "Figura caída",
+  "look": "figura de cabelo escuro caída no chão, sem rosto visível"
+ },
+ {
+  "name": "Presidente",
+  "look": "cabelo castanho espetado, jaqueta escura aberta, moletom branco com capuz, shorts escuros"
+ },
+ {
+  "name": "Li Yi",
+  "look": "gênio de Jingda; não desenhado nesta página"
+ },
+ {
+  "name": "Loira de top vermelho",
+  "look": "cabelo loiro comprido, top vermelho, na borda direita"
+ },
+ {
+  "name": "Estudante",
+  "look": "estudantes de roupas casuais atrás de Shishi, rostos borrados, fala de fora do quadro"
+ },
+ {
+  "name": "Serpente",
+  "look": "criatura-serpente escura, olhos brilhantes, presas, escamas espinhadas"
+ },
+ {
+  "name": "Grupo",
+  "look": "Veteranos de pé juntos, falando em tom de avaliação, em grupo"
+ },
+ {
+  "name": "Veterano",
+  "look": "Homem musculoso sem camisa, casaco claro aberto, cabelo escuro"
+ },
+ {
+  "name": "Espadachim",
+  "look": "cabelo castanho espetado, regata branca sem mangas, espada grande no ombro"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "cabelo escuro espetado, camiseta branca, calça preta, visto de costas"
+ },
+ {
+  "name": "Figura em sombra",
+  "look": "silhueta escura pequena no ar entre helicópteros, sem traço visível"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro comprido, saia escura, botas altas, de costas à esquerda"
+ },
+ {
+  "name": "Casaco Branco",
+  "look": "cabelo claro comprido, sobretudo branco de gola escura, bengala, de costas ou perfil"
+ },
+ {
+  "name": "Rabo preto",
+  "look": "cabelo preto comprido em rabo alto, top preto com gola ornamentada, decote"
+ },
+ {
+  "name": "Soldados",
+  "look": "soldados de uniforme camuflado e capacete, de pé diante das criaturas"
+ },
+ {
+  "name": "Criaturas espinhadas",
+  "look": "criaturas enormes com espinhos, garras longas e dentes à mostra"
+ },
+ {
+  "name": "Subordinado",
+  "look": "figura escura de ombros largos, cabeça grande e lisa, de costas ou na borda"
+ },
+ {
+  "name": "Brutamontes",
+  "look": "criatura calva musculosa, olhos brilhantes, dentes à mostra, pele acinzentada"
+ },
+ {
+  "name": "Figura no pódio",
+  "look": "homem de terno escuro atrás de pódio branco, pequeno, no palco"
+ },
+ {
+  "name": "Barbudo",
+  "look": "homem barbudo de coque, casaco escuro com gola de pele; é o Diretor"
+ },
+ {
+  "name": "Monstro de chifres",
+  "look": "criatura gigante de chifres, mandíbula espinhosa, braços com garras"
+ },
+ {
+  "name": "Multidão de homens-animal",
+  "look": "grupo de homens com orelhas e caudas de animal, espalhados no chão"
+ },
+ {
+  "name": "Muzhi",
+  "look": "cabelo claro espetado, barba, manto escuro, mãos de luz estendidas"
+ },
+ {
+  "name": "Criatura alada",
+  "look": "criatura escura de asas, presas e boca aberta"
+ },
+ {
+  "name": "Trio de viajantes",
+  "look": "três figuras escuras pequenas de pé diante do caixão de bronze"
+ },
+ {
+  "name": "Cabelo Solto",
+  "look": "cabelo claro comprido, olho semicerrado, close no rosto"
+ },
+ {
+  "name": "Figura de óculos",
+  "look": "mulher de óculos, cabelo escuro comprido, calça escura, de lado"
+ },
+ {
+  "name": "Mestra do Pavilhão",
+  "look": "cabelo branco longo, roupa branca com nuvens bordadas, sentada de pernas cruzadas"
+ },
+ {
+  "name": "Criatura espinhada",
+  "look": "criatura escura de espinhos afiados, garras e chifres, entre as rochas"
+ },
+ {
+  "name": "Manto",
+  "look": "figura de manto escuro, cortada na borda direita, sem rosto visível"
+ },
+ {
+  "name": "Figura do comprimido",
+  "look": "punho fechado com comprimido, braço em primeiro plano, sem rosto visível"
+ },
+ {
+  "name": "Oitavo Ancião",
+  "look": "figura de manto escuro e máscara, sentada no trono à cabeceira"
+ },
+ {
+  "name": "Conselheiro",
+  "look": "homem de terno escuro e óculos escuros, sentado à mesa comprida"
+ },
+ {
+  "name": "Conselheiro blindado",
+  "look": "figura de armadura escura e luvas, sentada à mesa comprida"
+ },
+ {
+  "name": "Caída de cabelo escuro",
+  "look": "figura caída no chão de cabelo escuro comprido, rosto de frente para baixo"
+ },
+ {
+  "name": "Loira caída",
+  "look": "cabelo claro em rabos altos, de bruços no chão, meia-calça clara"
+ },
+ {
+  "name": "Mascarado",
+  "look": "homem de manto escuro longo, máscara cobrindo o rosto, gola alta"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "figura encapuzada de manto escuro, máscara cobrindo o rosto, sorriso tenso"
+ },
+ {
+  "name": "Cultivador Flutuante",
+  "look": "cabelo claro preso no alto, túnica branca e preta, flutua em lótus"
+ },
+ {
+  "name": "Cultivador Marcial",
+  "look": "cabelo escuro preso em coque, túnica branca com faixa preta, faixas nas mãos e pés"
+ },
+ {
+  "name": "Recepcionista",
+  "look": "cabelo escuro comprido com franja, blusa clara, de pé na porta do escritório"
+ },
+ {
+  "name": "Agentes",
+  "look": "homens de terno escuro, máscara escura cobrindo os olhos, gravata"
+ },
+ {
+  "name": "Cabelo claro reto",
+  "look": "cabelo claro reto e comprido, de costas, diante de monitor"
+ },
+ {
+  "name": "Armadurados",
+  "look": "figuras voadoras de armadura escura e capacete, sem rosto visível"
+ },
+ {
+  "name": "Criatura-fera",
+  "look": "criatura de pelo claro e grosso, cabeça de fera, dentes e garras à mostra"
+ },
+ {
+  "name": "Criatura-espinho",
+  "look": "criatura escura coberta de espinhos, mandíbula aberta, em primeiro plano"
+ },
+ {
+  "name": "Xiaohui",
+  "look": "oitava anciã do Culto da Planta Divina; não desenhada nesta página"
+ },
+ {
+  "name": "Viajante",
+  "look": "figura pequena de cabelo claro e roupa escura, em ilha flutuante"
+ },
+ {
+  "name": "Fera de presas",
+  "look": "criatura com mandíbula cheia de presas, olhos claros, pelagem escura"
+ },
+ {
+  "name": "Ancião de cabelo branco",
+  "look": "homem idoso de cabelo branco, roupa escura, de pé na borda direita"
+ },
+ {
+  "name": "Yuanbai",
+  "look": "cabelo claro espetado, asas grandes de penas, roupa clara; Vice-Lorde da Cidade Nº 1"
+ },
+ {
+  "name": "Demônio",
+  "look": "chifres, capa escura de gola alta, calça clara, braços cruzados"
+ },
+ {
+  "name": "Mascarados",
+  "look": "grupo de homens com máscara escura, colar de contas, mantos escuros"
+ },
+ {
+  "name": "Trio de capas",
+  "look": "três homens de capa escura e boné, de pé no ar, mãos abertas"
+ },
+ {
+  "name": "Cabelo claro de costas",
+  "look": "cabelo claro, visto de costas, na borda esquerda"
+ },
+ {
+  "name": "Nono",
+  "look": "Membro da Seita da Planta Divina, usa chapéu e manipula vinhas espinhosas"
+ },
+ {
+  "name": "Xiao",
+  "look": "Jovem aliado de Zichen, frequentemente em perigo"
+ },
+ {
+  "name": "Dongzhi",
+  "look": "Personagem feminina, chifres, cauda e armadura escamosa"
+ },
+ {
+  "name": "Lutador",
+  "look": "Personagem de combate, olhos fechados, punho cerrado"
+ },
+ {
+  "name": "Yao Heling",
+  "look": "Personagem citado como fonte de reagentes, não aparece visualmente."
+ },
+ {
+  "name": "Vice-governadora",
+  "look": "Mulher de agasalho, autoridade que avalia gênios"
+ }
+]

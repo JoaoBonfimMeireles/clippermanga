@@ -1,0 +1,770 @@
+[
+ {
+  "name": "Garoto de cabelo espetado",
+  "look": "cabelo castanho espetado, camisa clara, expressão confusa"
+ },
+ {
+  "name": "Xiao Chen",
+  "look": "cabelo castanho espetado escuro, capuz branco sob jaqueta escura"
+ },
+ {
+  "name": "Tia Xin",
+  "look": "mulher de cabelo castanho comprido e ondulado, blusa clara, mão no rosto"
+ },
+ {
+  "name": "Hanhan",
+  "look": "colega de Xiao, cabelo com rabos claros, apartamento luxuoso"
+ },
+ {
+  "name": "Mãe de Hanhan",
+  "look": "cabelo castanho-avermelhado comprido, blusa escura, casaco claro aberto, sorriso de olhos fechados"
+ },
+ {
+  "name": "Yuan Dongzhi",
+  "look": "mulher de vestes claras sobre rochas no mar; controla ondas, segundo legenda"
+ },
+ {
+  "name": "Bai Xue",
+  "look": "irmã sênior de Hanhan; apenas citada, aparência ainda não vista"
+ },
+ {
+  "name": "Lin Zichen",
+  "look": "cabelo castanho espetado, capuz branco sob jaqueta escura"
+ },
+ {
+  "name": "Líder barbudo",
+  "look": "homem barbudo de cabelo preso, roupa preta longa, à frente de artistas de branco"
+ },
+ {
+  "name": "Tiancheng",
+  "look": "homem de asas negras gigantes cobertas de penas"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "cabelo castanho espetado, visto de costas, jaqueta escura de gola alta"
+ },
+ {
+  "name": "Figura alada",
+  "look": "asas negras enormes, voa sobre cerca"
+ },
+ {
+  "name": "Dean Liu",
+  "look": "não visível nesta página; nome citado na fala"
+ },
+ {
+  "name": "Figura inferior",
+  "look": "Cabelo escuro, visível só na borda inferior da imagem 3"
+ },
+ {
+  "name": "Figura espetada",
+  "look": "cabelo espetado escuro, de perfil, img 6, identidade incerta"
+ },
+ {
+  "name": "Lutador",
+  "look": "peito nu, cabelo castanho espetado, rosto com marcas"
+ },
+ {
+  "name": "Criatura",
+  "look": "pernas e garras escuras de criatura não humana"
+ },
+ {
+  "name": "Figura não identificada",
+  "look": "falante fora do quadro, aparece só como balões na imagem 8"
+ },
+ {
+  "name": "Chuanwu",
+  "look": "barba, coque no alto, roupa escura de manga larga; Xin o chama de Dean"
+ },
+ {
+  "name": "Discípulos",
+  "look": "homens de camisa e calça brancas com faixa escura, em grupo"
+ },
+ {
+  "name": "Armadura mecânica",
+  "look": "armadura cinza metálica e capacete com chifre"
+ },
+ {
+  "name": "Besta",
+  "look": "lobo monstruoso com chifres, juba espinhosa e presas à mostra"
+ },
+ {
+  "name": "Figura meditando",
+  "look": "cabeça sem cabelo com marca circular, sentada em lótus em aura branca"
+ },
+ {
+  "name": "Líder",
+  "look": "barbudo, cabelo preso em coque, roupa preta longa; é Liu Chuanwu, ex-primogênito da família Liu"
+ },
+ {
+  "name": "Xusheng",
+  "look": "menino de cabelo castanho espetado e blusa vermelha; foto apagada no card de relações"
+ },
+ {
+  "name": "Xiaoyi",
+  "look": "menina de cabelo escuro preso e blusa vermelha; foto apagada no card de relações"
+ },
+ {
+  "name": "Guerreira",
+  "look": "Filha de Dean, orelhas de gato, luta com garras e chutes; fusionou genes do Gato da Noite Sombria"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão de luva branca, manga escura com punho branco, sem rosto visível"
+ },
+ {
+  "name": "Figura escura",
+  "look": "silhueta escura com garras, identidade incerta"
+ },
+ {
+  "name": "Perna de treino",
+  "look": "calça escura, tornozeleira preta com faixa branca, pé descalço"
+ },
+ {
+  "name": "Figura sem rosto",
+  "look": "ombros de jaqueta escura, rosto fora do quadro"
+ },
+ {
+  "name": "Yuyan",
+  "look": "Cabelo preso em rabo de cavalo, fala sobre o fracasso em evoluir; treina na academia"
+ },
+ {
+  "name": "Tia Meng",
+  "look": "voz fora do quadro, de corredor; aparência não vista"
+ },
+ {
+  "name": "Figura da sacola",
+  "look": "de costas, camiseta clara, bermuda escura, sacola plástica branca na mão"
+ },
+ {
+  "name": "Figura da cama",
+  "look": "cabelo claro comprido, deitada sob lençol ao lado de Garoto"
+ },
+ {
+  "name": "Figura da direita",
+  "look": "cabelo escuro espetado, rosto de perfil à direita, expressão de desprezo"
+ },
+ {
+  "name": "Ye",
+  "look": "cabelo castanho claro, jaqueta escura sobre camisa clara"
+ },
+ {
+  "name": "Figura de chinelo",
+  "look": "pernas de calça clara e chinelo branco, sem rosto visível"
+ },
+ {
+  "name": "Wanxin",
+  "look": "citada na fala, aparência ainda não vista"
+ },
+ {
+  "name": "Desafiante",
+  "look": "cabelo escuro comprido, sobretudo preto longo, camisa branca, barba por fazer, punhos erguidos"
+ },
+ {
+  "name": "Figura de calça escura",
+  "look": "pernas de calça escura com listra branca, botas pretas"
+ },
+ {
+  "name": "Ma Zhenhe",
+  "look": "não visível nesta página; citado na fala como calmo e sereno, mas raivoso perto de Liu"
+ },
+ {
+  "name": "Dean Ma",
+  "look": "ainda não visto, citado na fala"
+ },
+ {
+  "name": "Brutamonte da camiseta escura",
+  "look": "camiseta escura, calça escura, corpo forte"
+ },
+ {
+  "name": "Brutamonte da camiseta clara",
+  "look": "camiseta clara, calça escura, cabelo curto"
+ },
+ {
+  "name": "Figura do sobretudo escuro",
+  "look": "sobretudo escuro longo, só pernas visíveis, sem rosto"
+ },
+ {
+  "name": "Figura do celular",
+  "look": "camiseta branca, segura celular, sem rosto visível"
+ },
+ {
+  "name": "Figura da jaqueta clara",
+  "look": "jaqueta clara sobre top escuro, decote, polegar erguido"
+ },
+ {
+  "name": "Figura de óculos",
+  "look": "cabelo castanho espetado, óculos, jaqueta escura, mão erguida"
+ },
+ {
+  "name": "Figura encapuzada",
+  "look": "capuz, rosto baixo, de perfil, no corredor"
+ },
+ {
+  "name": "Figura com chifres",
+  "look": "elmo escuro com chifres e armadura, pose de batalha com raios nos braços"
+ },
+ {
+  "name": "Enfermeira",
+  "look": "uniforme branco, touca de enfermeira com cruz, laço no pescoço"
+ },
+ {
+  "name": "Colega de Hanhan",
+  "look": "cabelo claro em rabos altos e coque, uniforme escolar de paletó e saia xadrez, sorriso aberto"
+ },
+ {
+  "name": "Voz de fora",
+  "look": "fala de fora do quadro, aparência não vista"
+ },
+ {
+  "name": "Heyu",
+  "look": "citado na fala; aparência ainda não vista"
+ },
+ {
+  "name": "Chuxin",
+  "look": "citada na fala; aparência ainda não vista"
+ },
+ {
+  "name": "Chu Xin",
+  "look": "citada na fala, quer ir à praia; aparência ainda não vista"
+ },
+ {
+  "name": "Figura do altar",
+  "look": "de costas, roupa escura, no centro do altar circular de cristal"
+ },
+ {
+  "name": "Médico da máscara",
+  "look": "Chapéu-coco escuro, máscara de bico de pássaro com olhos circulares, terno escuro, luva branca"
+ },
+ {
+  "name": "Figura do cabelo claro",
+  "look": "cabelo claro na borda esquerda, fala de quem está fora do quadro na img 14"
+ },
+ {
+  "name": "He Yu",
+  "look": "homem de cabelo curto, camisa polo clara, sorriso largo, rosto corado, dirige o carro"
+ },
+ {
+  "name": "Costas",
+  "look": "cabelo castanho espetado, visto de costas, capuz escuro"
+ },
+ {
+  "name": "Jiaxin",
+  "look": "citada na fala; aparência ainda não identificada nesta página"
+ },
+ {
+  "name": "Loira",
+  "look": "cabelo loiro na altura do ombro, blusa clara decotada, sentada no bar"
+ },
+ {
+  "name": "Yong",
+  "look": "homem de jaqueta escura, mão sobre a mulher loira"
+ },
+ {
+  "name": "Jaqueta Vermelha",
+  "look": "cabelo castanho espetado, jaqueta vermelha, aponta para Yong"
+ },
+ {
+  "name": "Chifrada",
+  "look": "Mulher de chifres que dá ordens aos socorristas; aparece de costas"
+ },
+ {
+  "name": "Sentada",
+  "look": "mulher sentada de pernas cruzadas, salto branco, meia escura"
+ },
+ {
+  "name": "Óculos",
+  "look": "cabelo castanho espetado, óculos, jaqueta escura, mão erguida"
+ },
+ {
+  "name": "Careca",
+  "look": "cabeça raspada, camisa polo clara com botões, sorriso largo"
+ },
+ {
+  "name": "Figura de baixo",
+  "look": "cabeça e ombro na borda inferior, cabelo escuro"
+ },
+ {
+  "name": "Pessoa de cabelo escuro",
+  "look": "de costas, cabelo escuro, parte inferior do quadro"
+ },
+ {
+  "name": "Jovens",
+  "look": "grupo de jovens na praia, roupas casuais"
+ },
+ {
+  "name": "Amigo",
+  "look": "Cabelo escuro penteado para trás, rosto de perfil, boca aberta, jaqueta escura"
+ },
+ {
+  "name": "Colega",
+  "look": "Cabelo escuro visto de trás, no canto direito dos quadros de conversa"
+ },
+ {
+  "name": "Sorridente",
+  "look": "Cabelo curto, gola alta escura, sorriso largo com dentes à mostra"
+ },
+ {
+  "name": "Guarda",
+  "look": "Armadura cinza, capacete com visor, rifle, maior em tamanho"
+ },
+ {
+  "name": "Guarda menor",
+  "look": "Armadura cinza, capacete com visor, rifle, menor que o outro guarda"
+ },
+ {
+  "name": "Figura do tablet",
+  "look": "terno ou jaqueta escura, mão segurando tablet, sem rosto visível"
+ },
+ {
+  "name": "Veterana",
+  "look": "cabelo loiro-claro comprido e franja, vestido preto decotado, sorriso"
+ },
+ {
+  "name": "Song Yuyan",
+  "look": "cabelo loiro ondulado comprido, bodysuit escuro com recorte no peito; mentora"
+ },
+ {
+  "name": "Figura do chute",
+  "look": "cabelo escuro em rabo de cavalo, top escuro, perna erguida em chute"
+ },
+ {
+  "name": "Barbudo",
+  "look": "homem barbudo de coque e robe escuro; chamado de Dean por Zichen"
+ },
+ {
+  "name": "Figura de cima",
+  "look": "ombro escuro com gola clara, visto só no topo da imagem 3, sem rosto visível"
+ },
+ {
+  "name": "Pai de Xiao",
+  "look": "homem de óculos, cabelo castanho espetado, jaqueta escura"
+ },
+ {
+  "name": "Atendente",
+  "look": "mulher de cabelo castanho na altura dos ombros, blusa clara, sorriso tímido"
+ },
+ {
+  "name": "Rabo Claro",
+  "look": "cabelo claro preso em rabo longo com laço, top esportivo, de costas"
+ },
+ {
+  "name": "Colete",
+  "look": "Aliado de Zichen na arena, braços cruzados ao lado da grade; defende a força como único critério"
+ },
+ {
+  "name": "Chifre",
+  "look": "Estudante de perfil que pensa, comenta a mensagem e deseja boa sorte a Zichen"
+ },
+ {
+  "name": "Motociclista",
+  "look": "Pessoa de capacete em moto que pergunta a Zichen se ele é Zichen"
+ },
+ {
+  "name": "Figura de cabelo castanho",
+  "look": "cabelo castanho comprido, visto de costas, à esquerda do quadro"
+ },
+ {
+  "name": "Figura da esquerda",
+  "look": "figura de cabelo escuro na borda esquerda da img 12, sem rosto visível"
+ },
+ {
+  "name": "Shen Qinghan",
+  "look": "cabelo claro em dois rabos altos com laços brancos, top decotado, jaqueta escura aberta"
+ },
+ {
+  "name": "Apresentador",
+  "look": "homem de óculos, terno escuro, microfone na mão"
+ },
+ {
+  "name": "Alunos",
+  "look": "plateia de calouros de uniforme escuro, sentados"
+ },
+ {
+  "name": "Zichen",
+  "look": "Protagonista de jaqueta e moletom brancos, bermuda escura; lutador calmo e implacável"
+ },
+ {
+  "name": "Orador",
+  "look": "Cabelo castanho escuro espetado, segura microfone, gola alta clara, expressão séria"
+ },
+ {
+  "name": "Calouros",
+  "look": "Grupo de alunos novatos, uniformes claros, em fila ou sob pressão"
+ },
+ {
+  "name": "Gola Branca",
+  "look": "Gola branca sobre jaqueta escura, cabelo longo claro à esquerda"
+ },
+ {
+  "name": "Li Moyu",
+  "look": "citado na fala; aparência ainda não vista"
+ },
+ {
+  "name": "Li Yijin",
+  "look": "citado na fala como gênio de Kyoto; aparência ainda não vista"
+ },
+ {
+  "name": "Figura de jaqueta escura",
+  "look": "ombro de jaqueta escura, rosto fora do quadro"
+ },
+ {
+  "name": "Figura da porta",
+  "look": "calça clara e tênis escuro, entra pela porta"
+ },
+ {
+  "name": "Criatura de armadura escura",
+  "look": "criatura de garras e armadura escura, segura caixa com 金"
+ },
+ {
+  "name": "Plateia",
+  "look": "grupo de espectadores sentados e em pé"
+ },
+ {
+  "name": "Zhou Xuehong",
+  "look": "cabelo escuro curto, suéter cinza; depois jaqueta branca de gola alta, microfone"
+ },
+ {
+  "name": "Aluno suado",
+  "look": "cabelo castanho curto, suado, boca aberta, camisa escura"
+ },
+ {
+  "name": "Aluna de bob",
+  "look": "cabelo castanho na altura do queixo, olhos fechados, gritando"
+ },
+ {
+  "name": "Aluno ao fundo",
+  "look": "cabelo escuro, aparece de relance no canto, sem rosto nítido"
+ },
+ {
+  "name": "Caído",
+  "look": "cabelo escuro, camisa branca, calça escura, caído de bruços no chão"
+ },
+ {
+  "name": "Agarrado",
+  "look": "cabelo escuro penteado para trás, boca aberta, mão no rosto, camiseta clara"
+ },
+ {
+  "name": "Marcado",
+  "look": "cabelo escuro espetado, marcas no rosto, camiseta branca, correndo com raiva"
+ },
+ {
+  "name": "Ma Xiwei",
+  "look": "citada na fala como uma das duas mais fortes; aparência ainda não vista"
+ },
+ {
+  "name": "Jaqueta escura",
+  "look": "Cabelo castanho, jaqueta escura, sobrancelhas franzidas, dentes cerrados."
+ },
+ {
+  "name": "Garoto de jaqueta branca",
+  "look": "Cabelo escuro espetado, jaqueta esportiva branca com zíper, fala com Dean."
+ },
+ {
+  "name": "Andarilho",
+  "look": "Homem de terno escuro andando entre carteiras, rosto fora do quadro."
+ },
+ {
+  "name": "Grupo no corredor",
+  "look": "Vários homens e mulheres de roupas escuras e claras, andando juntos."
+ },
+ {
+  "name": "Xiwei",
+  "look": "orelhas de gato, cabelo castanho escuro na altura do queixo, moletom com capuz (foto)"
+ },
+ {
+  "name": "Zhou",
+  "look": "não visível nesta página; presidente da união estudantil"
+ },
+ {
+  "name": "Careca de terno",
+  "look": "cabeça raspada, terno escuro, gravata clara"
+ },
+ {
+  "name": "Figura alta de legging",
+  "look": "legging preta, casaco claro, tênis brancos; rosto fora do quadro"
+ },
+ {
+  "name": "Figura da escada",
+  "look": "homens de terno na escada, rostos não identificáveis"
+ },
+ {
+  "name": "Figura da borda",
+  "look": "cabelo escuro visto só na borda inferior da imagem 4, sem rosto"
+ },
+ {
+  "name": "Yuan",
+  "look": "diretor, alvo da aposta; aparência ainda não identificada"
+ },
+ {
+  "name": "Espectador",
+  "look": "cabelo castanho claro espetado, rosto de perfil, parte inferior do quadro"
+ },
+ {
+  "name": "Yongjian",
+  "look": "cabelo castanho espetado, jaqueta clara aberta, shorts escuros, braços abertos"
+ },
+ {
+  "name": "Figura de calça clara",
+  "look": "calça clara, tênis escuro, pernas em passo com onda de choque"
+ },
+ {
+  "name": "Figura de chifres",
+  "look": "elmo ou cabelo com chifres, fala fora do quadro na imagem 13"
+ },
+ {
+  "name": "Chefe",
+  "look": "figura em sombra na borda inferior, identidade oculta; dá a ordem da missão"
+ },
+ {
+  "name": "Figura central",
+  "look": "de pé no centro, silhueta escura, cercada de corpos caídos"
+ },
+ {
+  "name": "Figura de presas",
+  "look": "boca aberta com presas, rosto fora do quadro"
+ },
+ {
+  "name": "Moyu",
+  "look": "homem musculoso sem camisa, cabelo escuro espetado, calça branca larga, cinto escuro"
+ },
+ {
+  "name": "Macaco",
+  "look": "pele escura, cabelo espetado, corpo musculoso, calça branca, garras pretas"
+ },
+ {
+  "name": "Yu",
+  "look": "cabelo castanho espetado, colete escuro sem manga, corpo muito musculoso"
+ },
+ {
+  "name": "Espetado",
+  "look": "cabelo espetado escuro, olhos brancos brilhando, identidade incerta"
+ },
+ {
+  "name": "Chifrudo",
+  "look": "elmo escuro com chifres e armadura, sorriso largo com dentes"
+ },
+ {
+  "name": "Ruivo",
+  "look": "cabelo ruivo curto, marca em X no rosto, gritando"
+ },
+ {
+  "name": "Espectadora",
+  "look": "cabelo castanho comprido, jaqueta escura, mão no rosto"
+ },
+ {
+  "name": "Socorrista",
+  "look": "uniforme branco, ao fundo, com pressa de socorrer"
+ },
+ {
+  "name": "Brutamontes",
+  "look": "cabelo claro espetado, corpo musculoso, dentes afiados, sorriso largo"
+ },
+ {
+  "name": "Elmo",
+  "look": "elmo escuro com chifres e armadura, pose de batalha"
+ },
+ {
+  "name": "Derrotado",
+  "look": "cabelo castanho avermelhado espetado, sem camisa, marcas de golpe no rosto e no peito"
+ },
+ {
+  "name": "Gritão",
+  "look": "cabelo castanho espetado, jaqueta escura, boca aberta gritando, aponta"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro curto, jaqueta clara, de costas no centro da multidão"
+ },
+ {
+  "name": "Lutador de jaqueta clara",
+  "look": "cabelo castanho espetado, jaqueta clara, chutando; rosto pouco visível"
+ },
+ {
+  "name": "Óculos listrado",
+  "look": "cabelo castanho comprido penteado para trás, óculos de lentes listradas, barba, jaqueta escura"
+ },
+ {
+  "name": "Agasalho",
+  "look": "cabelo escuro curto, agasalho escuro, muito musculoso, gritando"
+ },
+ {
+  "name": "Ajudante",
+  "look": "cabelo claro bagunçado, agasalho escuro, segura o braço do Agasalho"
+ },
+ {
+  "name": "Falante da borda",
+  "look": "cabelo escuro, visível só na borda inferior do quadro"
+ },
+ {
+  "name": "Yan",
+  "look": "cabelo escuro comprido em rabo de cavalo alto, top escuro"
+ },
+ {
+  "name": "Liu Chuanwu",
+  "look": "aparência ainda não vista; citado como pesquisador"
+ },
+ {
+  "name": "Figura da jaqueta",
+  "look": "ombros de jaqueta escura sobre camisa clara, mãos nos livros, rosto fora do quadro"
+ },
+ {
+  "name": "Figura das botas",
+  "look": "botas brancas e calça escura entre pilhas de livros, rosto fora do quadro"
+ },
+ {
+  "name": "Alada",
+  "look": "armadura prateada, asas mecânicas, capacete com visor, voando"
+ },
+ {
+  "name": "Figura pequena",
+  "look": "figura minúscula andando no piso da arena, de longe"
+ },
+ {
+  "name": "Figura da cauda",
+  "look": "cauda longa, cabelo em rabo de cavalo, de costas, identidade incerta"
+ },
+ {
+  "name": "Figura de paletó",
+  "look": "Paletó escuro, camisa branca, mãos nos bolsos, rosto fora do quadro"
+ },
+ {
+  "name": "Oficial",
+  "look": "uniforme escuro com estrela no ombro, óculos escuros, boné"
+ },
+ {
+  "name": "Ciborgue",
+  "look": "armadura branca de mecha, cabelo claro em rabo alto, olhar firme"
+ },
+ {
+  "name": "Mecânico",
+  "look": "armadura escura de corpo inteiro, visor, equipamento nas costas"
+ },
+ {
+  "name": "Transeunte",
+  "look": "pessoas da rua que comentam o olhar de Zichen; sem detalhes para reconhecer"
+ },
+ {
+  "name": "Estudante mecânico",
+  "look": "armadura escura justa, capacete com visor, braço mecânico erguido, arma nas costas"
+ },
+ {
+  "name": "Segunda Senhorita",
+  "look": "cabelo loiro preso em coque com chifres, camisa clara, sentada de costas"
+ },
+ {
+  "name": "Gan Xue",
+  "look": "cabelo longo claro, casaco branco, aparece no monitor"
+ },
+ {
+  "name": "Loiro de jaqueta escura",
+  "look": "cabelo claro comprido, jaqueta escura"
+ },
+ {
+  "name": "Catwoman",
+  "look": "cabelo castanho-avermelhado comprido, óculos, suéter listrado escuro, saia escura com cinta na coxa"
+ },
+ {
+  "name": "Sênior espetado",
+  "look": "cabelo castanho espetado, jaqueta escura, sorriso confiante"
+ },
+ {
+  "name": "Caçadora",
+  "look": "cabelo comprido, suéter canelado, cinto branco, saia de couro, orelhas pontudas, garras"
+ },
+ {
+  "name": "Voz fora do quadro",
+  "look": "vozes de caçadores fora do quadro, identidade não visível"
+ },
+ {
+  "name": "Cheirador",
+  "look": "cabelo castanho espetado, jaqueta escura, fareja e rastreia pelo cheiro"
+ },
+ {
+  "name": "Morena",
+  "look": "cabelo castanho-escuro comprido, top escuro decotado, segura um doce"
+ },
+ {
+  "name": "Ruiva",
+  "look": "cabelo castanho-avermelhado ondulado comprido, sorriso, vestido escuro estilo qipao"
+ },
+ {
+  "name": "Raposa",
+  "look": "orelhas de raposa, cabelo longo castanho escuro, suéter de gola alta, shorts escuros, meia-calça"
+ },
+ {
+  "name": "Fugitivos",
+  "look": "grupo correndo no corredor, roupas claras e escuras"
+ },
+ {
+  "name": "Figura de camisa clara",
+  "look": "camisa clara com cinto, de perfil, ao lado da encapuzada"
+ },
+ {
+  "name": "Figura de cabelo longo",
+  "look": "cabelo longo escuro, correndo na fumaça, de costas"
+ },
+ {
+  "name": "Figura do punho",
+  "look": "rosto de olho arregalado e dentes cerrados, punho branco brilhante em primeiro plano"
+ },
+ {
+  "name": "Paletó",
+  "look": "homem de paletó escuro, camisa branca, agachado segurando cristal, rosto fora do quadro"
+ },
+ {
+  "name": "Rosto marcado",
+  "look": "rosto com marcas escuras e olhos brancos, em close, envolto em névoa de energia"
+ },
+ {
+  "name": "Lesma morta-viva",
+  "look": "lesma gigante de carapaça espinhosa, manchas brancas de ferimento, antenas oculares"
+ },
+ {
+  "name": "Ave de garras",
+  "look": "ave gigante de penas claras, garras pretas longas, voando"
+ },
+ {
+  "name": "Acompanhante",
+  "look": "cabelo castanho em rabos laterais, top claro, saia escura, meia-calça branca"
+ },
+ {
+  "name": "Dean",
+  "look": "jovem guiado pela Figura para dentro do prédio do Pavilhão Tianren"
+ },
+ {
+  "name": "Wu Tiancheng",
+  "look": "homem de asas negras; dizimou sozinho o culto do Deus Rato; voa sobre a floresta"
+ },
+ {
+  "name": "Xiao",
+  "look": "pesquisa o Líder no celular, olhos arregalados, gota de suor"
+ },
+ {
+  "name": "Xin",
+  "look": "Colega de quarto de Xiao; de óculos, incentiva Xiao no corredor; reclama de Chuanwu"
+ },
+ {
+  "name": "Meng",
+  "look": "Colega de quarto que avisa de fora do quadro sobre a sacola da mãe de Xiao"
+ },
+ {
+  "name": "Zhenhe",
+  "look": "visto de costas saindo da sala"
+ },
+ {
+  "name": "Song",
+  "look": "veterana e mentora, pesquisadora-chefe do Pavilhão Tianren, guia Zichen"
+ },
+ {
+  "name": "Armadura",
+  "look": "guarda de armadura e capacete na entrada do campus interno"
+ },
+ {
+  "name": "Rabo",
+  "look": "cabelo claro em rabo; provoca Xiao no auditório"
+ },
+ {
+  "name": "Shen",
+  "look": "Integrante da Turma dos Gênios; carregada no colo por Zichen na arena"
+ }
+]

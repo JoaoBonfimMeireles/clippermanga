@@ -1,0 +1,1690 @@
+[
+ {
+  "name": "Personagem de cabelo preso",
+  "look": "Cabelo escuro preso para trás, rosto ferido com manchas escuras, roupa escura"
+ },
+ {
+  "name": "Tae-gyu",
+  "look": "cabelo escuro espetado e bagunçado, camisa clara, protagonista"
+ },
+ {
+  "name": "Jovem no chão",
+  "look": "sentado no chão, roupa clara, cabeça baixa, expressão aflita"
+ },
+ {
+  "name": "Jovem de moletom",
+  "look": "moletom claro com capuz, cabelo escuro curto, sentado de costas no corredor"
+ },
+ {
+  "name": "Jovem de cabelo escuro",
+  "look": "cabelo escuro bagunçado, rosto em sombra, olhar sério, visto de perfil"
+ },
+ {
+  "name": "Careca de regata",
+  "look": "careca, musculoso, regata preta, tatuagem no braço, expressão ameaçadora"
+ },
+ {
+  "name": "Pessoa ao longe",
+  "look": "pessoa pequena no canto superior esquerdo, gritando, rosto não nítido"
+ },
+ {
+  "name": "Moça de franja",
+  "look": "cabelo preto liso com franja reta, cabelo preso em tranças enroladas, colete escuro com laço no pescoço"
+ },
+ {
+  "name": "Velho do chapéu",
+  "look": "velho de chapéu fedora, rosto magro, bigode e barba rala, terno xadrez, sorriso sarcástico"
+ },
+ {
+  "name": "Personagem ferido",
+  "look": "rosto ferido com manchas escuras, gritando, dentes à mostra"
+ },
+ {
+  "name": "Velho de chapéu",
+  "look": "chapéu de aba larga, cabelo grisalho preso em rabo de cavalo, sorriso largo, terno xadrez e bengala"
+ },
+ {
+  "name": "Ator de gravata-borboleta",
+  "look": "homem de cabelo escuro penteado, gravata-borboleta, sorrindo perto do microfone"
+ },
+ {
+  "name": "Velho do gat",
+  "look": "velho de gat tradicional, barba, roupa escura de estilo antigo"
+ },
+ {
+  "name": "Militar de boina",
+  "look": "militar de uniforme camuflado, boina escura, fazendo continência"
+ },
+ {
+  "name": "Lutador de vulto",
+  "look": "figura de cabeça escura, postura de soco, brilho e linhas de velocidade"
+ },
+ {
+  "name": "Figura de preto",
+  "look": "roupa preta de gola alta, sem rosto visível"
+ },
+ {
+  "name": "Kwang-seon",
+  "look": "cabelo escuro bagunçado, camisa xadrez, suado, prancheta na mão"
+ },
+ {
+  "name": "Moça de cabelo longo",
+  "look": "cabelo castanho escuro longo, olhar sério, mão no queixo, blusa escura"
+ },
+ {
+  "name": "Passageiro",
+  "look": "pessoa de trem não identificada, comentando sobre Kwang-seon"
+ },
+ {
+  "name": "Personagem do olho",
+  "look": "olho arregalado com reflexo, rosto não aparece"
+ },
+ {
+  "name": "Personagem de livro",
+  "look": "queixo visível, segura livro aberto, fumaça saindo, estante ao fundo"
+ },
+ {
+  "name": "Figura de cabeça escura",
+  "look": "cabeça escura desfocada atrás de Taegyu, segura um bastão na sombra"
+ },
+ {
+  "name": "Jovem ajoelhado no palco",
+  "look": "casaco escuro, ajoelhado, mão erguida para o homem de terno"
+ },
+ {
+  "name": "Jovem de colete",
+  "look": "cabelo escuro penteado, colete escuro, camisa clara, de costas"
+ },
+ {
+  "name": "Moça de rabo de cavalo",
+  "look": "cabelo castanho preso em rabo de cavalo, mãos no rosto, chorando, suéter claro"
+ },
+ {
+  "name": "Jovem de cabelo claro",
+  "look": "cabelo escuro com mechas brancas espetadas, de costas, olhar sério"
+ },
+ {
+  "name": "Atendente",
+  "look": "cabelo escuro bagunçado, camiseta preta, sorriso largo, segura bebidas"
+ },
+ {
+  "name": "Funcionário de crachá",
+  "look": "homem de camisa escura, crachá pendurado no pescoço, ajoelhado, expressão aflita"
+ },
+ {
+  "name": "Ferido de rosto manchado",
+  "look": "rosto ferido com manchas escuras, boca aberta, dentes à mostra"
+ },
+ {
+  "name": "Dono do olho",
+  "look": "olho arregalado com reflexo, cabelo escuro comprido caindo sobre o rosto"
+ },
+ {
+  "name": "Ferido",
+  "look": "rosto de perfil com marcas escuras na bochecha, boca fechada"
+ },
+ {
+  "name": "Jovem Escuro",
+  "look": "cabelo escuro bagunçado, de perfil, à direita da tira"
+ },
+ {
+  "name": "Pessoa de casaco",
+  "look": "ombro e costas de casaco escuro no topo do quadro, fora de enquadramento, grita sobre a faixa de ônibus"
+ },
+ {
+  "name": "Pessoa de pé",
+  "look": "braços de manga escura apoiados sobre Tae-gyu, rosto fora do quadro"
+ },
+ {
+  "name": "Noiva",
+  "look": "vestido branco longo, buquê de flores, véu, ao centro do grupo"
+ },
+ {
+  "name": "Velho da fedora",
+  "look": "chapéu fedora, bigode e barba rala, terno xadrez, bengala, rosto magro"
+ },
+ {
+  "name": "Jovem de cabelo curto",
+  "look": "cabelo castanho curto, barba rala, sobrancelha franzida, dentes cerrados"
+ },
+ {
+  "name": "Pessoas no saguão",
+  "look": "multidão de roupas escuras e claras em saguão com flores pretas"
+ },
+ {
+  "name": "Líder da equipe",
+  "look": "remetente de mensagem, avatar genérico branco, aparece só em texto"
+ },
+ {
+  "name": "Kim Jung-hoon",
+  "look": "aparência não visível nesta página, só balão com nome"
+ },
+ {
+  "name": "Lee Jin-hyung",
+  "look": "aparência não visível nesta página, só balão com nome"
+ },
+ {
+  "name": "Jovem de paletó",
+  "look": "terno escuro, camisa escura, mãos entrelaçadas diante do peito"
+ },
+ {
+  "name": "Jovem de suéter escuro",
+  "look": "cabelo escuro, perfil, suéter ou camisa escura de gola, sorriso de canto"
+ },
+ {
+  "name": "Jovem do celular",
+  "look": "cabelo castanho escuro bagunçado, camisa clara de colarinho, celular na orelha"
+ },
+ {
+  "name": "Amigo de terno",
+  "look": "cabelo escuro penteado, terno escuro, camisa clara, repreende os outros"
+ },
+ {
+  "name": "Sorridente de cabelo bagunçado",
+  "look": "homem de cabelo escuro bagunçado, terno escuro, sorriso aberto com dentes à mostra"
+ },
+ {
+  "name": "Tio",
+  "look": "barba rala, gola alta cinza, jaqueta escura, rosto carrancudo"
+ },
+ {
+  "name": "Pessoa de costas",
+  "look": "de costas, cabelo escuro penteado, terno escuro, colarinho claro"
+ },
+ {
+  "name": "Barbudo de terno",
+  "look": "homem de gola alta ou terno preto, cabelo escuro penteado para trás, barba rala, rosto carrancudo"
+ },
+ {
+  "name": "Kwak Chun-sik",
+  "look": "terno preto, gravata, sorriso largo, braço erguido; nome gritado"
+ },
+ {
+  "name": "Jovem caído",
+  "look": "cabelo escuro bagunçado, camisa clara, caído no chão entre papéis"
+ },
+ {
+  "name": "Kim Tae-gyu",
+  "look": "não visível nesta página; apresenta-se como amigo de Chun-sik da faculdade"
+ },
+ {
+  "name": "Mãe de Chun-sik",
+  "look": "coque castanho preso, vestido branco tradicional, fita escura no peito"
+ },
+ {
+  "name": "Chun-sik",
+  "look": "noivo; terno com gravata-borboleta e flor na lapela, suado e aflito, cabelo penteado"
+ },
+ {
+  "name": "Jovem ferido",
+  "look": "cabelo escuro, rosto machucado, líquido escorrendo da boca, visto de perto"
+ },
+ {
+  "name": "Moça de coque",
+  "look": "cabelo escuro preso em coque com grampo, rosto de perfil"
+ },
+ {
+  "name": "Jovem de suor",
+  "look": "cabelo escuro, terno escuro, suor, boca aberta à esquerda"
+ },
+ {
+  "name": "Jovem de terno",
+  "look": "cabelo escuro penteado, terno escuro, gravata escura, camisa branca"
+ },
+ {
+  "name": "Pessoa de manga escura",
+  "look": "manga de paletó escuro segurando o peito de Chun-sik, rosto fora do quadro"
+ },
+ {
+  "name": "Noivo",
+  "look": "cabelo escuro penteado para trás, terno preto, gravata-borboleta, sorriso de canto"
+ },
+ {
+  "name": "Celebrante",
+  "look": "homem de terno escuro, cabelo escuro curto, atrás do púlpito"
+ },
+ {
+  "name": "Jovem suado",
+  "look": "cabelo escuro bagunçado, rosto suado, sobrancelhas tensas, close"
+ },
+ {
+  "name": "Figura de casaco",
+  "look": "casaco escuro de gola alta, perfil pálido com boca marcada, ao fundo do saguão"
+ },
+ {
+  "name": "Moça ondulada",
+  "look": "cabelo castanho-avermelhado longo e ondulado, blusa clara, de costas e de frente"
+ },
+ {
+  "name": "Convidados",
+  "look": "sombras de cabelos e ombros escuros de convidados de costas, em primeiro plano"
+ },
+ {
+  "name": "Convidado de gravata-borboleta",
+  "look": "cabelo castanho penteado para trás, terno escuro, gravata-borboleta, boca aberta falando"
+ },
+ {
+  "name": "Figura de capuz",
+  "look": "capuz claro cobrindo a cabeça, rosto baixo, à esquerda, meio oculto"
+ },
+ {
+  "name": "Figura de boca aberta",
+  "look": "boca escura aberta com dentes à mostra, rosto pálido de perfil"
+ },
+ {
+  "name": "Mestra de cerimônia",
+  "look": "mulher de terno escuro, cabelo castanho preso, segura microfone, ao fundo"
+ },
+ {
+  "name": "Jovem de camisa branca",
+  "look": "cabelo castanho curto, gargantilha escura, camisa branca, olhar sério"
+ },
+ {
+  "name": "Jovem de jaqueta listrada",
+  "look": "cabelo escuro, jaqueta escura com punhos listrados brancos, sentado na cama"
+ },
+ {
+  "name": "Jovem de camiseta branca",
+  "look": "camiseta branca larga, abraçado pelo ombro, sorriso"
+ },
+ {
+  "name": "Jeonggyu",
+  "look": "só citado em fala; aparência não visível nestas páginas"
+ },
+ {
+  "name": "Pessoa do olho",
+  "look": "olho arregalado com reflexo, suor na têmpora, rosto não aparece"
+ },
+ {
+  "name": "Jovem do sofá",
+  "look": "deitado no sofá, jaqueta escura, calça clara, braço sobre o rosto"
+ },
+ {
+  "name": "Convidado de camisa branca",
+  "look": "cabelo escuro penteado para trás, camisa branca, olha para a direita"
+ },
+ {
+  "name": "Convidado de terno",
+  "look": "terno escuro, curvado em reverência, cabelo escuro penteado"
+ },
+ {
+  "name": "Noiva de hanbok",
+  "look": "coque preso, hanbok branco com estampa floral, de pé ao lado do noivo"
+ },
+ {
+  "name": "Noivo de hanbok",
+  "look": "hanbok claro e calça escura, de pé ao lado da noiva"
+ },
+ {
+  "name": "Jovem de hanbok",
+  "look": "cabelo claro espetado, roupa tradicional clara, suor, boca aberta, surpreso"
+ },
+ {
+  "name": "Figura de manga escura",
+  "look": "manga de jaqueta escura, mão agarrando a gola, rosto fora do quadro"
+ },
+ {
+  "name": "Figura de jaqueta",
+  "look": "jaqueta escura sobre camisa cinza, de costas, rosto fora do quadro"
+ },
+ {
+  "name": "Anfitrião de hanbok",
+  "look": "cabelo escuro penteado para o lado, hanbok claro com gola cruzada, sorriso de olhos fechados"
+ },
+ {
+  "name": "In-ho",
+  "look": "cabelo escuro curto espetado, jaqueta escura, barba rala; é o roteirista"
+ },
+ {
+  "name": "Pai de Chun-sik",
+  "look": "homem de hanbok branco, faixa escura na cintura, sorriso largo, braço erguido, cabelo escuro curto"
+ },
+ {
+  "name": "Jovem de cabelo bagunçado",
+  "look": "cabelo escuro bagunçado, visto de cima de costas, sem rosto nítido"
+ },
+ {
+  "name": "Jovem de gravata",
+  "look": "cabelo escuro penteado para trás, terno escuro, gravata, sorriso largo com dentes à mostra, segura celular"
+ },
+ {
+  "name": "Jovem espetado",
+  "look": "Cabelo escuro curto e espetado, sorriso de canto, rosto de perfil ou três quartos"
+ },
+ {
+  "name": "Jovem gritando",
+  "look": "cabelo escuro espetado, boca aberta gritando, lágrimas, jaqueta clara aberta"
+ },
+ {
+  "name": "Voz ao telefone",
+  "look": "só fala ao celular; aparência não visível nestas páginas"
+ },
+ {
+  "name": "Gwang-seon",
+  "look": "ator do filme na TV; cabelo castanho espetado, camisa escura de gola"
+ },
+ {
+  "name": "Jovem listrado",
+  "look": "cabelo castanho espetado, barba rala, jaqueta escura com listras claras, sorriso largo"
+ },
+ {
+  "name": "Jovem irritado",
+  "look": "cabelo escuro curto bagunçado, camisa clara de colarinho, gesticula com a mão no peito"
+ },
+ {
+  "name": "Figura de boca tensa",
+  "look": "close de nariz e boca com lábios apertados, rosto fora de foco; identidade incerta"
+ },
+ {
+  "name": "Jovem de cabelo encaracolado",
+  "look": "cabelo castanho encaracolado, olha para os prédios, de perfil à esquerda"
+ },
+ {
+  "name": "Jovem de perfil",
+  "look": "cabelo escuro bagunçado, de perfil, olhar baixo, fundo cinza"
+ },
+ {
+  "name": "Jovem de cabelo espetado",
+  "look": "cabelo escuro espetado, visto de cima ou de costas, grita"
+ },
+ {
+  "name": "Barbudo gritando",
+  "look": "barba rala, cabelo escuro curto, boca aberta gritando, segura papéis, camiseta escura"
+ },
+ {
+  "name": "Pessoa fora do quadro",
+  "look": "mão com manga clara e anel, rosto fora do quadro"
+ },
+ {
+  "name": "Garçom",
+  "look": "colete escuro sobre camisa branca, gravata escura, segura papéis"
+ },
+ {
+  "name": "Sentado de costas",
+  "look": "de costas, cabelo escuro bagunçado, camisa escura, sentado à mesa de restaurante"
+ },
+ {
+  "name": "Kim Hwan",
+  "look": "não visível nestas páginas; citado como 'aquele idiota'"
+ },
+ {
+  "name": "Do Yoon-seop",
+  "look": "não visível nestas páginas; citado na narração"
+ },
+ {
+  "name": "Jaqueta",
+  "look": "cabelo castanho bagunçado, jaqueta escura, de perfil à mesa de bar"
+ },
+ {
+  "name": "Colete",
+  "look": "Colarinho de tricô, come à mesa, pergunta sobre a YKB"
+ },
+ {
+  "name": "Brinco",
+  "look": "cabelo castanho espetado, brinco preto na orelha, olhar de canto"
+ },
+ {
+  "name": "Costas",
+  "look": "Cabelo escuro, de costas ou de perfil, cabeça baixa, sonha ser o protagonista"
+ },
+ {
+  "name": "Listrado",
+  "look": "cabelo castanho espetado, jaqueta escura com listras claras nos ombros ou colarinho, barba rala"
+ },
+ {
+  "name": "Jovem de suéter",
+  "look": "suéter escuro, andando atrás"
+ },
+ {
+  "name": "Jovem de óculos",
+  "look": "cabelo escuro bagunçado, óculos redondos, sorriso de canto, close no rosto"
+ },
+ {
+  "name": "Dae-bak",
+  "look": "cabelo escuro bagunçado, caído no chão, cabeça baixa"
+ },
+ {
+  "name": "Yoon-seop",
+  "look": "Cabelo penteado para trás, brinco, camisa de colarinho; CEO da agência, ganancioso"
+ },
+ {
+  "name": "Hwan",
+  "look": "Ator citado como Hwan-i e Hwan; aparência não visível, derrotado por novato"
+ },
+ {
+  "name": "Figura de casaco escuro",
+  "look": "casaco escuro de tecido grosso, braço estendido com mão aberta, sem rosto visível"
+ },
+ {
+  "name": "Jovem de colar",
+  "look": "cabelo castanho curto, colar preto com fivela, olhar sério"
+ },
+ {
+  "name": "Multidão",
+  "look": "jovens de braços erguidos e mãos dadas, rostos escurecidos"
+ },
+ {
+  "name": "Cheol-geun",
+  "look": "cabelo castanho escuro ondulado, óculos redondos, suéter listrado, mão no queixo"
+ },
+ {
+  "name": "Figura escura",
+  "look": "silhueta escura, olhos brilhantes, roupa escura, sem rosto nítido"
+ },
+ {
+  "name": "Jovem de cabelo longo",
+  "look": "cabelo escuro comprido e bagunçado, casaco escuro, de frente ou de costas"
+ },
+ {
+  "name": "Jovem de xadrez",
+  "look": "cabelo castanho encaracolado, óculos redondos, jaqueta xadrez"
+ },
+ {
+  "name": "Jovem de casaco escuro",
+  "look": "cabelo escuro bagunçado, casaco escuro, visto de costas entre cadeiras"
+ },
+ {
+  "name": "Jovem de tênis",
+  "look": "calça escura larga, tênis com tiras de velcro, visto só da canela para baixo"
+ },
+ {
+  "name": "Barbudo de camiseta",
+  "look": "barba rala, cabelo escuro curto, boca aberta, camiseta cinza"
+ },
+ {
+  "name": "Careca",
+  "look": "cabeça raspada, rosto de perfil sério, terno escuro, sem cabelo"
+ },
+ {
+  "name": "Jovem de jaqueta escura",
+  "look": "cabelo escuro curto, jaqueta escura, expressão séria, visto de lado"
+ },
+ {
+  "name": "Jovem de casaco claro",
+  "look": "casaco claro sobre camisa escura, cabelo escuro, reage com \"O quê?\""
+ },
+ {
+  "name": "Jovem caído no balcão",
+  "look": "roupa escura, caído sobre o balcão"
+ },
+ {
+  "name": "Jovem do fone",
+  "look": "cabelo escuro curto, jaqueta ou terno escuro, fone de ouvido na orelha"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "capuz claro cobrindo a cabeça, óculos escuros redondos, sorriso de canto"
+ },
+ {
+  "name": "Passageira",
+  "look": "cabelo escuro comprido, roupa clara, sentada à esquerda no banco de trás"
+ },
+ {
+  "name": "Velho sorridente",
+  "look": "chapéu escuro, rosto enrugado, sorriso dentuço, fumaça ao redor"
+ },
+ {
+  "name": "Ji Chul-geun",
+  "look": "não visível nestas páginas; diretor citado como de 'Gray City'"
+ },
+ {
+  "name": "Figura do banco da frente",
+  "look": "cabelo escuro, jaqueta clara, sentado de costas no banco do carro"
+ },
+ {
+  "name": "Jovem de aviador",
+  "look": "cabelo escuro comprido, óculos de aviador escuros nas mãos"
+ },
+ {
+  "name": "Moça de cabelo castanho",
+  "look": "cabelo castanho na altura do queixo, roupa escura, olha para baixo"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "casaco escuro, de costas, cabelo escuro, sem rosto visível"
+ },
+ {
+  "name": "Figura sorridente",
+  "look": "close de boca sorridente, camisa branca de colarinho; na página 2, casaco escuro com aura escura"
+ },
+ {
+  "name": "Motorista",
+  "look": "cabelo castanho espetado, rosto tenso, camisa listrada de gola alta, cinto de segurança"
+ },
+ {
+  "name": "Figura de costas com mão erguida",
+  "look": "de costas no banco de trás, mão erguida com punho de malha canelada"
+ },
+ {
+  "name": "Pessoa de manga listrada fora do quadro",
+  "look": "manga de jaqueta cinza com listras, rosto fora do quadro"
+ },
+ {
+  "name": "Figura de capuz com óculos",
+  "look": "capuz claro, óculos redondos, curativo no nariz, sorriso, mãos entrelaçadas"
+ },
+ {
+  "name": "Jovem de moletom escuro",
+  "look": "Cabelo escuro, moletom escuro com capuz, segura papéis no centro do corredor"
+ },
+ {
+  "name": "Jovem de jaqueta cinza",
+  "look": "Jaqueta cinza com bolso, calça escura, entrega papel ao colega"
+ },
+ {
+  "name": "Jovem de suéter claro",
+  "look": "cabelo escuro curto, suéter claro de gola, olhar aflito, segura papéis"
+ },
+ {
+  "name": "Figura de calça clara",
+  "look": "jaqueta escura, calça clara com pregas, mão fechada, rosto fora do quadro"
+ },
+ {
+  "name": "Jovem do crachá",
+  "look": "cabelo castanho curto, moletom escuro, crachá branco no cordão"
+ },
+ {
+  "name": "Espetado",
+  "look": "cabelo escuro espetado, visto de cima, parte inferior do quadro"
+ },
+ {
+  "name": "Camisa clara",
+  "look": "cabelo escuro, camisa clara, segura papel, expressão preocupada"
+ },
+ {
+  "name": "Blazer",
+  "look": "cabelo escuro, suéter escuro sob blazer, segura papel, olhar tenso"
+ },
+ {
+  "name": "Assistente",
+  "look": "cabelo castanho curto, jaqueta escura, de costas, mãos estendidas"
+ },
+ {
+  "name": "Gerente",
+  "look": "calça escura e sapatos pretos, manda ficar quieto"
+ },
+ {
+  "name": "Jovem sombrio",
+  "look": "cabelo escuro bagunçado visto de cima, sem rosto visível"
+ },
+ {
+  "name": "Moça do banco",
+  "look": "cabelo preso, roupa clara, sentada na ponta do banco"
+ },
+ {
+  "name": "Careca do banco",
+  "look": "cabeça raspada, camisa clara, boca aberta à direita"
+ },
+ {
+  "name": "Jovem de casaco",
+  "look": "casaco escuro, andando à esquerda"
+ },
+ {
+  "name": "Jovem de jaqueta",
+  "look": "cabelo escuro curto, jaqueta escura, sentado no sofá de frente para Yoonseop"
+ },
+ {
+  "name": "Jovem de camisa",
+  "look": "camisa branca, andando à direita"
+ },
+ {
+  "name": "Jovem risonho",
+  "look": "cabelo castanho curto e espetado, barba rala, sorriso de canto, moletom claro ou jaqueta escura"
+ },
+ {
+  "name": "Jovem de caneta",
+  "look": "cabelo escuro curto, camisa clara de colarinho, cara fechada, escreve com caneta"
+ },
+ {
+  "name": "Figura fora do quadro",
+  "look": "rosto e corpo fora do quadro; só a risada aparece"
+ },
+ {
+  "name": "Kwak In-ho",
+  "look": "citado na legenda; não aparece nestas páginas"
+ },
+ {
+  "name": "Moletom",
+  "look": "de costas, moletom claro com capuz, calça escura"
+ },
+ {
+  "name": "Xadrez",
+  "look": "cabelo castanho bagunçado, camisa xadrez, bochechas coradas"
+ },
+ {
+  "name": "Jovem Barba",
+  "look": "cabelo escuro curto, barba rala, rosto suado, olhar tenso, de três quartos"
+ },
+ {
+  "name": "Jovem Olhar",
+  "look": "cabelo escuro bagunçado, olhar tenso, rosto em close"
+ },
+ {
+  "name": "Jovem Sombra",
+  "look": "cabelo escuro bagunçado, visto de baixo ou de cima, rosto na sombra, fala gritada"
+ },
+ {
+  "name": "Jovem Terno",
+  "look": "cabelo escuro, terno escuro com padronagem, celular no ouvido"
+ },
+ {
+  "name": "Jovem de rosto sombrio",
+  "look": "cabelo escuro, olhar sombrio, close do rosto, sobrancelhas tensas"
+ },
+ {
+  "name": "Grupo de candidatos",
+  "look": "três ou quatro jovens de costas caminhando pelo salão"
+ },
+ {
+  "name": "Jung In-gyu",
+  "look": "não visível nestas páginas; legenda 'No. 2' apresenta o nome"
+ },
+ {
+  "name": "Careca de camisa",
+  "look": "cabeça raspada, camisa clara de botões, expressão séria"
+ },
+ {
+  "name": "Kim Su-ho",
+  "look": "cabelo escuro bagunçado, rosto marcado, casaco escuro, ergue um martelo"
+ },
+ {
+  "name": "Examinador",
+  "look": "suéter cinza de tricô, crachá no cordão, caneta na mão, rosto fora do quadro"
+ },
+ {
+  "name": "Il-soo",
+  "look": "cabelo escuro bagunçado, roupa clara, caído de bruços no chão"
+ },
+ {
+  "name": "Jovem do rabo",
+  "look": "cabelo castanho preso num rabo, jaqueta escura, calça escura, tênis claro"
+ },
+ {
+  "name": "Candidatos sentados",
+  "look": "cinco candidatos sentados à mesa de audição, com papéis e canetas"
+ },
+ {
+  "name": "Candidato 85",
+  "look": "cabelo escuro bagunçado, casaco escuro com estampa nas mangas, de costas"
+ },
+ {
+  "name": "Diretor",
+  "look": "homem de blazer escuro, camisa clara de colarinho aberto, caneta na mão, gesticula"
+ },
+ {
+  "name": "Figura Sombria",
+  "look": "cabelo escuro bagunçado, rosto na sombra, olho brilhante em close; identidade incerta"
+ },
+ {
+  "name": "Olhar Tenso",
+  "look": "cabelo escuro bagunçado, olho arregalado, expressão tensa, close no rosto"
+ },
+ {
+  "name": "Moletom Claro",
+  "look": "cabelo castanho espetado, moletom claro com capuz, sorriso largo, rosto marcado"
+ },
+ {
+  "name": "Óculos Redondos",
+  "look": "cabelo castanho ondulado, óculos redondos, sorriso, segura caneta"
+ },
+ {
+  "name": "Óculos",
+  "look": "cabelo escuro bagunçado, óculos de armação fina, suéter escuro com gola"
+ },
+ {
+  "name": "Figura de cima",
+  "look": "silhueta cortada no topo do quadro, roupa escura, fora de foco"
+ },
+ {
+  "name": "Figura Olhos Brilhantes",
+  "look": "silhueta escura de cabelo bagunçado, rosto na sombra, olhos brilhantes"
+ },
+ {
+  "name": "Sombra",
+  "look": "silhueta escura de cabelo espetado, olhos brilhantes na sombra"
+ },
+ {
+  "name": "Jaqueta Cinza",
+  "look": "cabelo escuro, jaqueta cinza, de perfil à esquerda"
+ },
+ {
+  "name": "Vulto",
+  "look": "vulto escuro de ombros, cabelo espetado no topo, sombreado"
+ },
+ {
+  "name": "Voz fora do quadro",
+  "look": "voz sem corpo visível; desafia Taegyu sobre ousadia"
+ },
+ {
+  "name": "Jovem de rosto suado",
+  "look": "cabelo castanho curto, rosto suado, boca aberta, olhar assustado"
+ },
+ {
+  "name": "Moça de cabelo claro",
+  "look": "cabelo claro na altura do queixo, franja caindo sobre a testa, expressão séria, rosto em destaque"
+ },
+ {
+  "name": "Tapa-olho",
+  "look": "cabelo escuro curto, tapa-olho com curativo, aponta a própria têmpora"
+ },
+ {
+  "name": "Fumante",
+  "look": "óculos quadrados com placa escura, sorriso largo, cigarro na mão"
+ },
+ {
+  "name": "Jovem de olhar fechado",
+  "look": "cabelo escuro, olhos semicerrados, rosto de perfil, objeto fino na orelha"
+ },
+ {
+  "name": "Jovem loiro",
+  "look": "cabelo loiro claro, suéter escuro, sentado de joelhos dobrados, expressão surpresa"
+ },
+ {
+  "name": "Jovem Topo",
+  "look": "cabelo escuro bagunçado visto de cima, sem rosto visível"
+ },
+ {
+  "name": "Jovem Perfil",
+  "look": "cabelo escuro curto, barba rala, moletom com capuz, de perfil, suado"
+ },
+ {
+  "name": "Jovem Ombro",
+  "look": "ombro de jaqueta escura com listras claras, rosto fora do quadro"
+ },
+ {
+  "name": "Jovem de moletom claro",
+  "look": "cabelo castanho escuro, moletom claro com capuz, sentado de costas"
+ },
+ {
+  "name": "Jang",
+  "look": "Chefe da YKB, superior do Jovem; cobrado pelo recado não repassado (pág. 434-436)"
+ },
+ {
+  "name": "Moça de óculos",
+  "look": "cabelo castanho escuro, óculos de armação escura, xale ou casaco claro sobre os ombros"
+ },
+ {
+  "name": "Colega de cabelo claro",
+  "look": "cabelo castanho claro, menor, ao lado de Tae-gyu na audição"
+ },
+ {
+  "name": "Suéter Cinza",
+  "look": "cabelo escuro bagunçado, suéter cinza de gola V sobre camisa listrada, suor"
+ },
+ {
+  "name": "Terno Penteado",
+  "look": "cabelo escuro penteado para trás, terno escuro, gravata, sorriso no corredor"
+ },
+ {
+  "name": "Óculos de Crachá",
+  "look": "cabelo castanho ondulado, óculos redondos, crachá no cordão, cardigã xadrez"
+ },
+ {
+  "name": "Ouvinte Tenso",
+  "look": "cabelo escuro bagunçado, olho arregalado, expressão tensa, close no rosto"
+ },
+ {
+  "name": "Jovem de camisa escura",
+  "look": "cabelo escuro bagunçado, camisa escura de colarinho, cinto, rosto tenso"
+ },
+ {
+  "name": "Jovem sério",
+  "look": "cabelo escuro curto, rosto sério, de cabeça baixa, visto de três quartos"
+ },
+ {
+  "name": "Jovem de terno estampado",
+  "look": "terno escuro com estampa floral nas mangas e na calça"
+ },
+ {
+  "name": "Jovem de moletom cinza",
+  "look": "moletom cinza claro grande com capuz, cabelo escuro, rosto coberto pela mão"
+ },
+ {
+  "name": "Figura de primeiro plano",
+  "look": "cabelo escuro bagunçado visto de lado, rosto fora do quadro, olho semicerrado"
+ },
+ {
+  "name": "Do Gwang-seon",
+  "look": "citado em fala; não aparece nestas páginas"
+ },
+ {
+  "name": "Jovem de terno escuro",
+  "look": "cabelo escuro bagunçado, terno escuro, camisa escura, sapatos pretos, de pé num salão vazio"
+ },
+ {
+  "name": "Jovem de costas",
+  "look": "cabelo escuro bagunçado, visto de costas e de baixo, ombro escuro, ao lado do protagonista no espelho"
+ },
+ {
+  "name": "Sombrio",
+  "look": "cabelo escuro bagunçado, camisa preta estampada, rosto sério"
+ },
+ {
+  "name": "Risonho",
+  "look": "cabelo castanho escuro curto, óculos escuros de aviador, sorriso de canto, camisa estampada"
+ },
+ {
+  "name": "Crachá",
+  "look": "De braços abertos no corredor, conversa com no bolso"
+ },
+ {
+  "name": "Terno Estampado",
+  "look": "terno escuro com estampa floral nas mangas e calça, segura a gola do outro, grita"
+ },
+ {
+  "name": "Daebak",
+  "look": "um dos dois Oh Daebaks; aparência ainda ambígua na briga"
+ },
+ {
+  "name": "Figura de casaco claro",
+  "look": "casaco claro comprido, luvas escuras, cabelo castanho, em luta sobre a maleta"
+ },
+ {
+  "name": "PD",
+  "look": "cabelo castanho bagunçado, óculos redondos, blazer cinza, crachá no cordão"
+ },
+ {
+  "name": "Aviador",
+  "look": "candidato de capuz e óculos, sorridente, mão no queixo, no teste de Oh Daebak"
+ },
+ {
+  "name": "Jovem Lágrimas",
+  "look": "cabelo escuro bagunçado, lágrimas, sorriso chorando, preso pela gola"
+ },
+ {
+  "name": "Jovem sorridente",
+  "look": "cabelo castanho, sorriso largo com dentes, mão na orelha, camisa escura de gola alta"
+ },
+ {
+  "name": "Jovem de jaqueta floral",
+  "look": "peito nu com marcas de traço, jaqueta escura de padronagem floral"
+ },
+ {
+  "name": "Espadachim",
+  "look": "armadura escura com ornamentos, espada longa na mão, de pé no centro"
+ },
+ {
+  "name": "Figura de manto",
+  "look": "manto branco esvoaçante, mão erguida, rosto fora de foco"
+ },
+ {
+  "name": "Jovem barbudo",
+  "look": "cabelo escuro curto, barba rala, dentes cerrados, sobrancelha franzida"
+ },
+ {
+  "name": "Jovem de boné",
+  "look": "boné escuro, cabelo castanho comprido, suor, boca aberta, camisa escura"
+ },
+ {
+  "name": "Coal",
+  "look": "silhueta de cabelo espetado e olhos brilhantes na sombra, candidato derrotado no teste"
+ },
+ {
+  "name": "Cinegrafista",
+  "look": "boné escuro, barba rala, segura câmera pequena no tripé, olhar assustado"
+ },
+ {
+  "name": "Silhueta",
+  "look": "forma escura alongada, sem rosto nítido, cercada de cristais estilhaçados"
+ },
+ {
+  "name": "Figura Cortada",
+  "look": "corpo sem cabeça no quadro, moletom cinza claro, calça escura, tênis claros"
+ },
+ {
+  "name": "Rosto Suado",
+  "look": "cabelo castanho curto, rosto suado, boca aberta, olhar assustado"
+ },
+ {
+  "name": "Ji Cheol-geun",
+  "look": "cabelo castanho bagunçado, óculos redondos, suéter escuro, sorriso de canto"
+ },
+ {
+  "name": "Voz off",
+  "look": "voz sem corpo visível, fora do quadro"
+ },
+ {
+  "name": "Jovem sentado",
+  "look": "cabelo escuro bagunçado, roupa escura, sentado de costas à mesa, rosto semi-oculto"
+ },
+ {
+  "name": "Jovem de brinco",
+  "look": "cabelo castanho penteado para trás, brinco na orelha, camisa clara de colarinho, de perfil"
+ },
+ {
+  "name": "Kwang-woo",
+  "look": "cabelo castanho curto, camisa branca, sentado, olhar sério"
+ },
+ {
+  "name": "Perfil Sombrio",
+  "look": "perfil angular de rosto escuro, boca entreaberta, sombra no rosto"
+ },
+ {
+  "name": "Mão Erguida",
+  "look": "de costas, cabelo castanho curto, camisa clara, mão erguida no banco de trás"
+ },
+ {
+  "name": "Musculoso",
+  "look": "homem forte, cabelo escuro curto penteado, moletom escuro, sorriso, sentado no sofá"
+ },
+ {
+  "name": "Camisa Branca",
+  "look": "cabelo escuro penteado para trás, camisa branca de colarinho, celular no bolso, fone no ouvido"
+ },
+ {
+  "name": "Perfil Escuro",
+  "look": "cabelo escuro curto espetado, de perfil, roupa escura, expressão séria"
+ },
+ {
+  "name": "Figura de paletó escuro",
+  "look": "paletó escuro, ombro e peito, rosto fora do quadro"
+ },
+ {
+  "name": "Figura do vídeo",
+  "look": "terno escuro, visto na tela do vídeo, fala 'Olá'"
+ },
+ {
+  "name": "Jovem de calça escura",
+  "look": "calça escura larga, camiseta escura solta, visto do peito para baixo"
+ },
+ {
+  "name": "Jovem do Dedo",
+  "look": "cabelo escuro, dedo indicador sobre a boca, sobrancelhas escuras, rosto em close"
+ },
+ {
+  "name": "Kwak Inho",
+  "look": "não visível nestas páginas; citado na legenda"
+ },
+ {
+  "name": "Espadachim de cabelo longo",
+  "look": "cabelo escuro longo esvoaçante, manto escuro, faixas nas mãos, segura espada na neve"
+ },
+ {
+  "name": "Inho",
+  "look": "cabelo escuro espetado, moletom escuro com capuz, sorriso largo, rosto marcado, forte"
+ },
+ {
+  "name": "Taegyu",
+  "look": "cabelo escuro bagunçado, rosto chorando sob a chuva, casaco escuro"
+ },
+ {
+  "name": "Do Yoonseop",
+  "look": "não visível nestas páginas; citado na legenda"
+ },
+ {
+  "name": "Figura Mãos",
+  "look": "mão erguida na frente, boca e queixo em close, mangas claras"
+ },
+ {
+  "name": "Kim Youngbae",
+  "look": "não visível; vice-diretor de Ash-Gray City"
+ },
+ {
+  "name": "Figura de baixo",
+  "look": "cabelo escuro espetado, visto de cima, parte inferior do quadro"
+ },
+ {
+  "name": "Yonghu",
+  "look": "Jang Yonghu, diretor da YKB Entertainment; cabelo escuro penteado, blazer escuro, camisa clara de colarinho"
+ },
+ {
+  "name": "Perfil Suado",
+  "look": "cabelo escuro curto, rosto de perfil suado, boca aberta, traço tenso"
+ },
+ {
+  "name": "Moça da audição",
+  "look": "cabelo castanho na altura dos ombros, suéter claro com estampa no peito, sentada entre candidatos"
+ },
+ {
+  "name": "Figura da mão do carimbo",
+  "look": "mão masculina segurando carimbo escuro, mangas escuras, linhas de velocidade"
+ },
+ {
+  "name": "Figura da boca aberta",
+  "look": "close da boca aberta com dentes à mostra, rosto pálido de perfil, suspira"
+ },
+ {
+  "name": "Figura do topo",
+  "look": "parte escura de figura no topo do quadro, sem rosto visível"
+ },
+ {
+  "name": "Yoonseop",
+  "look": "cabelo castanho penteado para trás, brinco na orelha, camisa clara de colarinho"
+ },
+ {
+  "name": "Moça da porta",
+  "look": "cabelo escuro longo, espia pela porta entreaberta, olhos arregalados, gota de suor"
+ },
+ {
+  "name": "Figura de mão no rosto",
+  "look": "mão cobrindo o rosto, paletó ou casaco escuro, rosto encoberto"
+ },
+ {
+  "name": "Jovem olhar intenso",
+  "look": "cabelo escuro bagunçado, sobrancelhas tensas, olhar fixo, rosto em sombra"
+ },
+ {
+  "name": "Figura olhar baixo",
+  "look": "olho em sombra, olhando para baixo, sem rosto completo"
+ },
+ {
+  "name": "Figura olhar lateral",
+  "look": "olho sério de lado, sobrancelha franzida, em close"
+ },
+ {
+  "name": "Figura de ombro escuro",
+  "look": "ombro e cabelo escuro de figura de costas, mesa com café ao fundo"
+ },
+ {
+  "name": "Jovem tenso",
+  "look": "cabelo castanho espetado, rosto tenso, dentes cerrados, moletom escuro"
+ },
+ {
+  "name": "Jovem do brinco",
+  "look": "cabelo castanho penteado para trás, brinco na orelha, camisa clara de colarinho"
+ },
+ {
+  "name": "Figura de gola listrada",
+  "look": "casaco escuro, gola de suéter listrada clara, rosto de perfil com dentes à mostra"
+ },
+ {
+  "name": "Paletó Escuro",
+  "look": "paletó escuro, ombro e peito, rosto fora do quadro"
+ },
+ {
+  "name": "Jovem de camisa de bolso",
+  "look": "camisa clara com bolso no peito, colarinho, braço estendido apontando"
+ },
+ {
+  "name": "Suéter escuro",
+  "look": "cabelo escuro bagunçado, suéter escuro de gola, de costas; possivelmente Taegyu"
+ },
+ {
+  "name": "Sócio de camisa",
+  "look": "cabelo escuro penteado, camisa branca com bolso, de pé à direita"
+ },
+ {
+  "name": "Gola Listrada",
+  "look": "casaco escuro, gola de suéter listrada clara, perfil com dentes à mostra"
+ },
+ {
+  "name": "Daeil",
+  "look": "citado na fala como quem faz oferta; não visível nestas páginas"
+ },
+ {
+  "name": "Figura de camisa branca",
+  "look": "de costas, camisa branca, sentado do outro lado da mesa"
+ },
+ {
+  "name": "Escritor do carro",
+  "look": "cabelo castanho espetado, rosto barbado, jaqueta escura, sentado no carro"
+ },
+ {
+  "name": "Han Ju-hyeok",
+  "look": "líder de Gray City, citado na fala; não aparece nestas páginas"
+ },
+ {
+  "name": "Moça de crachá",
+  "look": "cabelo castanho na altura dos ombros, suéter claro com gola, crachá no cordão"
+ },
+ {
+  "name": "Franja",
+  "look": "Cabelo com franja, cabeça baixa, fala com voz baixa no corredor"
+ },
+ {
+  "name": "Cochicho",
+  "look": "cabelo escuro, visto de trás, primeiro plano à direita"
+ },
+ {
+  "name": "Jovem Floral",
+  "look": "cabelo escuro bagunçado, jaqueta escura de padronagem floral, ajoelhado chorando"
+ },
+ {
+  "name": "Jovem Casaco Escuro",
+  "look": "cabelo escuro curto, casaco escuro sobre camisa clara, gritando"
+ },
+ {
+  "name": "Jovem Casaco Claro",
+  "look": "cabelo escuro de franja reta, casaco claro comprido, colete escuro, gesticulando"
+ },
+ {
+  "name": "Boca Aberta",
+  "look": "close de boca aberta com dentes à mostra, rosto fora do quadro"
+ },
+ {
+  "name": "Perfil Sorridente",
+  "look": "perfil pálido, sorriso aberto com dentes à mostra, cabelo bagunçado"
+ },
+ {
+  "name": "Jaqueta Raglan",
+  "look": "cabelo escuro bagunçado, jaqueta raglan escura com mangas claras, de costas"
+ },
+ {
+  "name": "Colete Cinza",
+  "look": "cabelo escuro, colete de tricô cinza sobre camisa clara, de frente"
+ },
+ {
+  "name": "Ju-hyeok",
+  "look": "ator obcecado pela noite de Tae-gyu, dentes cerrados, suado"
+ },
+ {
+  "name": "Jovem de franja",
+  "look": "cabelo escuro curto em franja reta, jaqueta clara aberta, cara assustada"
+ },
+ {
+  "name": "Jovem penteado",
+  "look": "cabelo escuro com topete, terno escuro, camisa clara, boca aberta"
+ },
+ {
+  "name": "Jovem de jaqueta clara",
+  "look": "cabelo escuro, jaqueta clara sobre camisa clara, de costas"
+ },
+ {
+  "name": "Casaco Claro",
+  "look": "casaco claro comprido, suéter escuro, cabelo escuro curto, de pé no corredor"
+ },
+ {
+  "name": "Tenso",
+  "look": "Cabelo suado, dentes cerrados, envergonhado, camisa escura, bate na parede"
+ },
+ {
+  "name": "Estampado",
+  "look": "terno escuro com estampa floral nas mangas e calça, rosto de frente"
+ },
+ {
+  "name": "Jovem Colete",
+  "look": "cabelo escuro penteado, colete escuro, casaco claro, suor"
+ },
+ {
+  "name": "Jovem Dedo Erguido",
+  "look": "cabelo escuro, dedo indicador erguido, visto de cima na parte inferior"
+ },
+ {
+  "name": "Jovem Costas Escuras",
+  "look": "cabelo escuro, jaqueta escura de gola alta, de costas"
+ },
+ {
+  "name": "Jovem Costas Cabelo Curto",
+  "look": "cabelo escuro curto, de costas, camisa clara"
+ },
+ {
+  "name": "Jovem Costas Cinza",
+  "look": "jaqueta cinza, de costas, cabelo escuro penteado"
+ },
+ {
+  "name": "Moça de rabo",
+  "look": "cabelo castanho escuro preso em rabo de cavalo, franja, sorriso aberto, visto de trás e de frente"
+ },
+ {
+  "name": "Jovem Suor",
+  "look": "cabelo escuro curto, perfil suado, boca aberta gritando"
+ },
+ {
+  "name": "Jovem Olhos",
+  "look": "cabelo escuro penteado para trás, sobrancelhas tensas, suor, olhar fixo, camisa escura"
+ },
+ {
+  "name": "Jovem Ombro Escuro",
+  "look": "cabelo escuro, ombro de casaco escuro, visto de perto no escuro"
+ },
+ {
+  "name": "Terno Suado",
+  "look": "cabelo escuro penteado para trás, terno escuro, rosto suado, sobrancelhas franzidas"
+ },
+ {
+  "name": "Colega de franja",
+  "look": "cabelo escuro com franja reta, colete escuro sobre camisa clara, rosto aflito"
+ },
+ {
+  "name": "Dae-ho",
+  "look": "aparece de braços cruzados ao lado de Gi-beom e Moça"
+ },
+ {
+  "name": "Seok-tae",
+  "look": "colega do grupo, sorridente, ao lado de Dae-ho"
+ },
+ {
+  "name": "Gi-beom",
+  "look": "colega do set, sorridente, elogia improviso de Tae-gyu"
+ },
+ {
+  "name": "Yong-su",
+  "look": "colega do set, de pé com copo, participa do brinde"
+ },
+ {
+  "name": "Gorro",
+  "look": "diretor sorridente, bêbado, convida Tae-gyu para Hollywood"
+ },
+ {
+  "name": "Irritado",
+  "look": "sobrancelhas grossas, rosto suado, expressão furiosa, olhar fixo"
+ },
+ {
+  "name": "Seong-cheol",
+  "look": "Diretor de fotografia nervoso, entrou no Grey City ontem"
+ },
+ {
+  "name": "Jovem de gorro",
+  "look": "gorro de tricô cinza, rosto aflito, boca aberta, sobrancelhas tensas"
+ },
+ {
+  "name": "Choi Seong-cheol",
+  "look": "ombro e costas de camisa escura, sem rosto visível nestas páginas"
+ },
+ {
+  "name": "Boné",
+  "look": "boné escuro, cabelo castanho, suor, camisa escura, boca aberta"
+ },
+ {
+  "name": "Jovem de gola alta",
+  "look": "cabelo escuro penteado para trás, casaco escuro de gola alta, sorriso de canto"
+ },
+ {
+  "name": "Jovem de suéter cinza",
+  "look": "suéter cinza de gola V sobre camisa clara, visto do ombro"
+ },
+ {
+  "name": "Jovem nervoso",
+  "look": "cabelo escuro, camisa escura, visto de baixo, diz que está nervoso"
+ },
+ {
+  "name": "Figura da manga",
+  "look": "manga de jaqueta escura, mão agarrando a gola, rosto fora do quadro"
+ },
+ {
+  "name": "Jovem da mesa",
+  "look": "sentado na cabeceira da mesa em U, iluminado, cabelo escuro"
+ },
+ {
+  "name": "Jovem do canto",
+  "look": "sentado no canto inferior esquerdo da mesa, iluminado, camisa escura"
+ },
+ {
+  "name": "Terno",
+  "look": "cabelo escuro penteado, terno escuro, rosto tenso, dentes cerrados"
+ },
+ {
+  "name": "Kwak",
+  "look": "Chamado aos gritos na festa; sorridente, braço erguido, aparência pouco visível"
+ },
+ {
+  "name": "Figura de sombra",
+  "look": "silhuetas escuras borradas, sem rosto visível"
+ },
+ {
+  "name": "Kang-hyeok",
+  "look": "Personagem de Grey City, ameaça Taegyu, cabeça vista de cima na sombra"
+ },
+ {
+  "name": "Barbudo suado",
+  "look": "cabelo castanho curto, barba rala, rosto suado, olhos fechados, de perfil"
+ },
+ {
+  "name": "Ator da esquerda",
+  "look": "calça escura com cinto, parado de frente para o outro"
+ },
+ {
+  "name": "Ator da direita",
+  "look": "camisa clara, punhos cerrados, de frente"
+ },
+ {
+  "name": "Kang Hyeok",
+  "look": "nome citado na narração; aparência não visível nestas páginas"
+ },
+ {
+  "name": "Chefe",
+  "look": "cabelo grisalho penteado para trás, bigode e cavanhaque, jaqueta xadrez clara, sorriso de canto"
+ },
+ {
+  "name": "Costas Escuras",
+  "look": "cabelo escuro, jaqueta escura de gola alta, mangas arregaçadas, de costas"
+ },
+ {
+  "name": "Velho",
+  "look": "cabelo grisalho penteado para trás, barba grisalha, jaqueta clara com gola, sentado no sofá"
+ },
+ {
+  "name": "Joo-hyuk",
+  "look": "Han Joo-hyuk, ator famoso; cabelo escuro com topete, sorriso leve, camisa escura"
+ },
+ {
+  "name": "Figura de camisa clara",
+  "look": "de costas ao fundo, camisa clara, perto da porta, visto na memória"
+ },
+ {
+  "name": "Terno Coletiva",
+  "look": "homem de terno escuro e gravata, com microfones à frente"
+ },
+ {
+  "name": "Esposa",
+  "look": "cabelo castanho escuro preso em rabo de cavalo, blusa clara, saia longa escura, de costas"
+ },
+ {
+  "name": "Garoto",
+  "look": "cabelo escuro, suéter escuro, calça jeans, de costas ao lado da esposa"
+ },
+ {
+  "name": "Jovem do meio",
+  "look": "cabelo escuro curto, de perfil, rosto sério, sem gola"
+ },
+ {
+  "name": "Moça loira",
+  "look": "cabelo loiro ou castanho-claro comprido ondulado, camisa ou jaqueta clara"
+ },
+ {
+  "name": "Mãos",
+  "look": "mãos masculinas entrelaçadas sobre a mesa, manga escura, dono não visível"
+ },
+ {
+  "name": "Jovem de camisa clara",
+  "look": "camisa branca, de costas andando à direita"
+ },
+ {
+  "name": "Jaqueta Escura",
+  "look": "ombro de jaqueta escura, visto de cima, sem rosto visível"
+ },
+ {
+  "name": "Jaqueta Listrada",
+  "look": "cabelo castanho espetado, barba rala, jaqueta escura com mangas listradas, sorriso largo"
+ },
+ {
+  "name": "Casaco Escuro",
+  "look": "cabelo escuro curto, casaco escuro sobre camisa clara, de pé à esquerda"
+ },
+ {
+  "name": "Escuro de costas",
+  "look": "cabelo escuro bagunçado, visto de costas ou de perfil, camisa escura"
+ },
+ {
+  "name": "Jovem Cabelo Escuro",
+  "look": "cabelo escuro bagunçado, visto de baixo, só a cabeça no quadro"
+ },
+ {
+  "name": "Jovem Suéter Cinza",
+  "look": "cabelo castanho escuro com franja, suéter cinza sobre camisa de gola, boca aberta"
+ },
+ {
+  "name": "Punhos",
+  "look": "cabelo escuro penteado, camisa escura de gola alta, punhos cerrados"
+ },
+ {
+  "name": "Longo",
+  "look": "cabelo castanho comprido repicado, jaqueta escura, de perfil"
+ },
+ {
+  "name": "Calça",
+  "look": "calça escura, sapatos pretos, de pé ao fundo, visto de baixo"
+ },
+ {
+  "name": "Pensativo",
+  "look": "cabelo escuro, camisa escura, mão no queixo, expressão tensa"
+ },
+ {
+  "name": "Mão no bolso",
+  "look": "cabelo escuro, camisa escura, de pé à direita, mão no bolso"
+ },
+ {
+  "name": "Olhar",
+  "look": "cabelo escuro bagunçado, sobrancelha grossa, olhar tenso em close"
+ },
+ {
+  "name": "Jovem apontando",
+  "look": "cabelo escuro penteado, dedo indicador erguido, de perfil à esquerda"
+ },
+ {
+  "name": "Jovem ouvinte",
+  "look": "cabelo castanho penteado, olhar atento, de perfil à direita, mesa de bar"
+ },
+ {
+  "name": "Bebedores",
+  "look": "homens bêbados em mesa de bar, jaquetas e camisas escuras e claras, copos na mão"
+ },
+ {
+  "name": "Julie",
+  "look": "cabelo loiro ondulado comprido, camisa clara, saia escura, acena"
+ },
+ {
+  "name": "Choi",
+  "look": "cabelo claro, rosto visível sorrindo; em outra cena suéter escuro"
+ },
+ {
+  "name": "Raglan",
+  "look": "cabelo escuro bagunçado, jaqueta raglan escura com mangas claras, de costas"
+ },
+ {
+  "name": "Jovem chorando",
+  "look": "cabelo castanho claro espetado e bagunçado, rosto chorando, sem gola"
+ },
+ {
+  "name": "Moça da ponte",
+  "look": "cabelo castanho longo solto, blusa clara, saia escura, segura um livro"
+ },
+ {
+  "name": "Terno Sorridente",
+  "look": "cabelo escuro penteado para trás, terno escuro, gravata escura, sorriso de olhos fechados"
+ },
+ {
+  "name": "Moça da foto",
+  "look": "cabelo castanho ondulado comprido, blusa clara, faz sinal de paz na foto"
+ },
+ {
+  "name": "Atriz",
+  "look": "cabelo loiro ondulado comprido, óculos escuros, vestido claro de ombro à mostra"
+ },
+ {
+  "name": "Cabeça Escura",
+  "look": "cabelo escuro bagunçado, visto de baixo, só a cabeça no quadro, gritando brinde"
+ },
+ {
+  "name": "Jovem do perfil",
+  "look": "cabelo escuro bagunçado, de perfil, suado, camisa escura, dentes cerrados"
+ },
+ {
+  "name": "Jovem confuso",
+  "look": "cabelo escuro bagunçado, camisa escura de colarinho, olhos fechados, cercado de interrogações"
+ },
+ {
+  "name": "Amigo da esquerda",
+  "look": "cabelo escuro, terno escuro, rindo de boca aberta"
+ },
+ {
+  "name": "Amigo da direita",
+  "look": "cabelo escuro, sorriso de olhos fechados, jaqueta escura, atrás de Colete"
+ },
+ {
+  "name": "Figura de raio",
+  "look": "silhueta humana envolta em raio branco, fundo preto"
+ },
+ {
+  "name": "Jovem do primeiro plano",
+  "look": "cabelo escuro espetado, rosto de frente em primeiro plano, olhar arregalado, bochechas coradas"
+ },
+ {
+  "name": "Moça de bob",
+  "look": "cabelo escuro chanel tipo bob, vestido sem mangas estampado, gola alta"
+ },
+ {
+  "name": "Ji PD",
+  "look": "não visível nestas páginas; citado por Yoon-ju como PD do set"
+ },
+ {
+  "name": "Yoon-ju",
+  "look": "cabelo castanho escuro chanfrado na altura do queixo, blazer claro"
+ },
+ {
+  "name": "Gerente Gray City",
+  "look": "close de olhos e sobrancelhas grossas; gerente geral de Gray City, jaqueta clara"
+ },
+ {
+  "name": "Nam",
+  "look": "cabelo castanho bagunçado comprido, óculos redondos, barba rala"
+ },
+ {
+  "name": "Hwang In-guk",
+  "look": "terno escuro, gravata escura, camisa clara, cabelo penteado, de pé ao fundo"
+ },
+ {
+  "name": "Chefe de Conteúdo",
+  "look": "cabelo escuro penteado para trás, terno escuro, gravata, copo na mão"
+ },
+ {
+  "name": "Figura de rosto em close",
+  "look": "cabelo escuro, rosto na sombra, olhar fixo, identidade incerta"
+ },
+ {
+  "name": "Terno da Direita",
+  "look": "terno escuro, cabelo escuro, mão na cabeça, de pé à direita"
+ },
+ {
+  "name": "Moça do Jantar",
+  "look": "cabelo escuro na altura dos ombros, blazer claro, sorri de olhos fechados"
+ },
+ {
+  "name": "Seon-hyeong",
+  "look": "roteirista, citado em notícia; aparência não mostrada"
+ },
+ {
+  "name": "Kyung-ho",
+  "look": "cabelo castanho espetado bagunçado, terno escuro, camisa escura, cara séria"
+ },
+ {
+  "name": "Moça ao fundo",
+  "look": "cabelo castanho escuro comprido, blusa clara, mão no rosto, sorriso aberto"
+ },
+ {
+  "name": "Moça do vestido",
+  "look": "cabelo escuro na altura dos ombros, vestido escuro sem alças, sorriso largo, mãos juntas"
+ },
+ {
+  "name": "Figura caída de cabelo longo",
+  "look": "cabelo escuro longo e espalhado, caída no chão, rosto oculto"
+ },
+ {
+  "name": "Moça de gola alta",
+  "look": "cabelo castanho encaracolado, mole sob o olho, suéter de gola alta cinza"
+ },
+ {
+  "name": "Moça de regata",
+  "look": "cabelo castanho escuro chanfrado na altura dos ombros, regata escura sem mangas, sorriso largo"
+ },
+ {
+  "name": "Yoo A-ri",
+  "look": "cabelo escuro chanel tipo bob, brinco, blusa escura de gola alta sem mangas"
+ },
+ {
+  "name": "Min-hee",
+  "look": "cabelo escuro comprido ou chanfrado, vestido escuro sem mangas de gola alta, brinco"
+ },
+ {
+  "name": "Jovem surpreso",
+  "look": "cabelo escuro penteado para trás, camisa clara de colarinho, suor, boca aberta"
+ },
+ {
+  "name": "Jovem de olhar assustado",
+  "look": "cabelo castanho penteado, sobrancelhas erguidas, rosto suado, olhar assustado"
+ },
+ {
+  "name": "Jovem do cordão",
+  "look": "cabelo escuro curto, camisa clara de colarinho, cordão de crachá no pescoço"
+ },
+ {
+  "name": "Jovem do notebook",
+  "look": "mão e manga escura sobre notebook, identidade incerta"
+ },
+ {
+  "name": "Óculos Escuros",
+  "look": "cabelo escuro curto, óculos escuros, terno ou jaqueta escura, rosto suado"
+ },
+ {
+  "name": "Terno Braços Cruzados",
+  "look": "cabelo escuro penteado, terno escuro, braços cruzados, de pé à direita"
+ },
+ {
+  "name": "Park",
+  "look": "cabelo escuro curto, sentado de costas, camisa clara, sapatos pretos; repórter"
+ },
+ {
+  "name": "Ari",
+  "look": "cabelo castanho preso para trás, chorando, lágrimas, de perfil"
+ },
+ {
+  "name": "Jovem encaracolado",
+  "look": "cabelo castanho encaracolado, sorriso largo com dentes, pescoço e ombro, de perfil"
+ },
+ {
+  "name": "Jovem da chuva",
+  "look": "cabelo escuro bagunçado, cabeça baixa, de costas na chuva, casaco escuro"
+ },
+ {
+  "name": "Jovem de ombro escuro",
+  "look": "cabelo escuro, ombro de casaco escuro, em primeiro plano, de costas"
+ },
+ {
+  "name": "Lee Tae-gyu",
+  "look": "Protagonista de trinta anos, cabelo escuro bagunçado, terno, rosto sério, sem emoções"
+ },
+ {
+  "name": "Do Kwang-seon",
+  "look": "Ator premiado de smoking, sorriso largo ao microfone, segura troféu"
+ },
+ {
+  "name": "Jung-hoon",
+  "look": "Convidado falso confirmado no bico de casamento; aparência não visível"
+ },
+ {
+  "name": "Jin-hyung",
+  "look": "Convidado falso confirmado no bico de casamento; aparência não visível"
+ },
+ {
+  "name": "Gwak In-ho",
+  "look": "antigo roteirista de dramas de sucesso; homem de jaqueta clara, olhar atento"
+ },
+ {
+  "name": "Chul-geun",
+  "look": "diretor de 'Gray City'; citado nas páginas, aparência não visível"
+ },
+ {
+  "name": "Oh Dae-bak",
+  "look": "personagem psicopata do projeto de Gray City que Hwan quer interpretar; aparência não visível"
+ },
+ {
+  "name": "Jung Il-soo",
+  "look": "Candidato No. 12, caído no chão, questiona por que fazem aquilo"
+ },
+ {
+  "name": "Su-ho",
+  "look": "Candidato No. 8, cabelo bagunçado, ergue martelo com olhar frio"
+ },
+ {
+  "name": "Barbudo",
+  "look": "homem barbudo que sorri, mostra um cartão e oferece comida à vontade por uma hora"
+ },
+ {
+  "name": "Jang Yonghu",
+  "look": "Diretor da YKB Entertainment; fala ao celular, ligou para Tae-gyu após a audição"
+ },
+ {
+  "name": "Kim Gwang-woo",
+  "look": "Irmão de sangue e amigo de Yoon-seop; cabelo castanho curto, olhar sério, de perfil, sentado"
+ },
+ {
+  "name": "Han Joo-hyuk",
+  "look": "ator, cabelo escuro penteado, rosto sério; antigo viciado em jogo, alvo de desafio de Taegyu"
+ },
+ {
+  "name": "Gola",
+  "look": "Sorri com dentes à mostra, faz comentários de bom trabalho"
+ },
+ {
+  "name": "Oh Dae-ho",
+  "look": "colega do set, sorridente, segura copo, chama o grupo para beber"
+ },
+ {
+  "name": "Jovem de camisa estampada",
+  "look": "cabelo escuro bagunçado, camisa escura estampada, sorriso de canto"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão pálida com dedos abertos, manga escura, rosto fora do quadro"
+ }
+]
