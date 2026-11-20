@@ -15,12 +15,12 @@
     ],
     "workers": {
       "claude-code/haiku": {
-        "calls": 6723,
+        "calls": 10043,
         "reviewed": 120,
         "redone": 72
       },
       "omniroute/haiku": {
-        "calls": 165,
+        "calls": 227,
         "reviewed": 0,
         "redone": 0
       }
@@ -209,43 +209,43 @@
         ]
       }
     ],
-    "updatedAt": "2026-11-19T17:40:37.120Z"
+    "updatedAt": "2026-11-20T15:44:30.446Z"
   },
   "6d9f8ef9bd": {
     "label": "Você revisa descrições em texto de páginas de mangá (já lidas por outr",
     "lessons": [],
     "workers": {
       "omniroute/haiku": {
-        "calls": 110,
+        "calls": 115,
         "reviewed": 0,
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 299,
+        "calls": 457,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T17:41:32.507Z"
+    "updatedAt": "2026-11-20T15:45:02.368Z"
   },
   "22f602ae1c": {
     "label": "Você é o PROTAGONISTA desta história de mangá/quadrinho e resume o cap",
     "lessons": [],
     "workers": {
       "omniroute/haiku": {
-        "calls": 117,
+        "calls": 124,
         "reviewed": 0,
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 307,
+        "calls": 443,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T17:45:35.416Z"
+    "updatedAt": "2026-11-20T15:47:40.245Z"
   },
   "a9216d5c4f": {
     "label": "Você é o protagonista desta história e narra o vídeo em primeira pesso",
@@ -262,318 +262,313 @@
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 433,
+        "calls": 943,
         "reviewed": 0,
         "redone": 0
       },
       "omniroute/haiku": {
-        "calls": 202,
+        "calls": 233,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T18:42:19.910Z"
+    "updatedAt": "2026-11-20T19:46:12.374Z"
   },
   "9e9bc46e3a": {
     "label": "Você mantém a MEMÓRIA de uma série de vídeos narrados de mangá (narrad",
     "lessons": [],
     "workers": {
       "omniroute/haiku": {
-        "calls": 5,
+        "calls": 6,
         "reviewed": 0,
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 20,
+        "calls": 27,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T18:43:38.386Z"
+    "updatedAt": "2026-11-20T19:47:30.079Z"
   },
   "stage-roteiro": {
     "label": "Revisão final: roteiro",
     "lessons": [
-      "O protagonista é o narrador: escreva sempre 'eu', 'me', 'comigo' e nunca cite o próprio nome dele (An/Zuan) em terceira pessoa, nem como 'um homem'.",
-      "Nunca use rótulos da descrição do quadro ('Figura', 'Gritador', 'Capa Riso') como nome; identifique o personagem e use o nome dele ou uma descrição natural.",
-      "An é o próprio protagonista (Zu An, o 'eu' da narração); quando a descrição citar An, narre como 'eu', nunca como outra pessoa ou mulher.",
-      "Rótulos da descrição do quadro ('Bota', 'Agressor', 'Algoz', 'Homem do tapa-olho') não são nomes: escreva em minúscula e, se o personagem já foi identificado antes, use o nome dele.",
-      "A elfa comprada se chama Granada e é mulher: nunca escreva 'Elfodo', 'um elfo' nem use pronome masculino para ela. Ela é a espiã do plano.",
-      "Não use rótulos visuais da descrição ('Chibi', 'legenda', 'cavanhaque') como nome; use o nome do personagem e conte o fato, não o quadro.",
-      "Sempre use o nome do personagem. Se ele ainda não foi apresentado, descreva-o uma vez e depois use o nome assim que aparecer, sem rótulos como 'a Moça' ou 'figura de X'. Cada trecho deve ligar logicam",
-      "Não use rótulos da descrição do quadro ('Coque', 'Capa', 'Herói Frente', 'Figura') como nome próprio, e só use 'eu' para o próprio narrador.",
-      "Em diálogos entre outros personagens, não use 'eu' nem 'me' na fala deles; deixe claro quem fala com quem (ex.: Kaede falando com o herói).",
-      "Mantenha um único tempo verbal na narração (passado). Sempre nomeie quem fala ou age. Se o personagem ainda não tem nome, dê uma identificação concreta e consistente (ex.: 'o capitão da guarda'). Ao p"
+      "Use sempre o nome do personagem. Se ainda não foi revelado, escolha um rótulo pela função (ex.: 'um colega da turma') e mantenha o mesmo até o nome aparecer. Mantenha a primeira pessoa e o passado do ",
+      "O colega de lança/espada se chama Langis (nunca Rangis), e o veterano que luta com Zeke nesta cena é o Rick: use os nomes, não 'Castanho'.",
+      "Fixe uma grafia única para cada personagem e use o nome sempre que ele for conhecido, sem rótulos como 'o Garoto' ou 'o Rival'. Narre o que acontece e o que significa, não o que aparece no quadro. Man",
+      "Chame a personagem principal sempre pelo nome (Renée), nunca de 'encapuzada', 'jovem' ou 'santa'; Vera é o narrador, então use 'eu/me', não 'o Cavaleiro'.",
+      "Sempre nomeie o personagem quando ele for identificável (nada de 'uma figura', 'o garoto', 'um dos presentes'). Mantenha uma lista fixa de nomes de pessoas e lugares e confira-a antes de escrever. Nas",
+      "Se o quadro mostra o próprio protagonista (camisa, pingente, aura), narre em primeira pessoa. Não o transforme em 'um vulto' ou 'um jogador', ainda mais quando ele está sozinho.",
+      "Narre sempre em primeira pessoa: nunca cite o próprio narrador (Zhou Yi) pelo nome ou em terceira pessoa, e não descreva efeitos do quadro (linhas de movimento, borrão); conte a ação.",
+      "A garota de laço que lutou com o Zhou é a Ran: nunca a chame de 'Guerreira'. A cordilheira se chama sempre 'Montanhas Tempestade'.",
+      "Não use rótulos da descrição do quadro (Figura, Cabelo, Criatura, Presas) como se fossem nomes. Use o nome do personagem, ou 'ele/ela' se o nome não estiver na ficha.",
+      "Fixe um único ponto de vista do início ao fim. Use sempre o nome do personagem, incluindo o protagonista, e evite apelidos ou rótulos como 'a figura', 'um garoto' ou 'a criatura'. Em cenas de ação, di"
     ],
     "workers": {
       "opus": {
-        "calls": 64,
-        "reviewed": 64,
-        "redone": 62
+        "calls": 105,
+        "reviewed": 105,
+        "redone": 103
       }
     },
     "recent": [
       {
-        "at": "2026-11-19T14:15:31.452Z",
+        "at": "2026-11-20T09:59:43.405Z",
         "worker": "opus",
         "ok": false,
         "issues": [
+          "portugues",
+          "grafia_nome",
           "nome_generico",
-          "nome_generico",
-          "so_descreve",
           "nome_generico",
           "contradicao"
         ]
       },
       {
-        "at": "2026-11-19T15:59:24.353Z",
+        "at": "2026-11-20T10:01:57.240Z",
         "worker": "opus",
         "ok": false,
         "issues": [
-          "contradicao",
-          "contradicao",
-          "contradicao",
-          "cortado",
-          "contradicao"
-        ]
-      },
-      {
-        "at": "2026-11-19T16:02:15.001Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "contradicao",
-          "contradicao",
-          "contradicao",
+          "outro",
           "contradicao",
           "so_descreve"
         ]
       },
       {
-        "at": "2026-11-19T16:02:27.310Z",
+        "at": "2026-11-20T10:03:46.574Z",
         "worker": "opus",
         "ok": false,
         "issues": [
           "cortado",
           "contradicao",
+          "contradicao"
+        ]
+      },
+      {
+        "at": "2026-11-20T10:06:18.867Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "contradicao",
+          "cortado",
+          "portugues",
+          "contradicao",
+          "contradicao"
+        ]
+      },
+      {
+        "at": "2026-11-20T10:10:15.489Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "contradicao",
+          "nome_generico",
           "nome_generico",
           "nome_generico",
           "nome_generico"
         ]
       },
       {
-        "at": "2026-11-19T16:03:36.164Z",
+        "at": "2026-11-20T10:11:05.835Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "grafia_nome",
+          "contradicao",
+          "outro",
+          "grafia_nome",
+          "contradicao"
+        ]
+      },
+      {
+        "at": "2026-11-20T10:13:40.311Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "so_descreve",
+          "nome_generico",
+          "nome_generico"
+        ]
+      },
+      {
+        "at": "2026-11-20T14:22:56.623Z",
         "worker": "opus",
         "ok": false,
         "issues": [
           "continuidade",
+          "continuidade",
+          "continuidade",
+          "continuidade",
+          "continuidade"
+        ]
+      },
+      {
+        "at": "2026-11-20T14:23:49.038Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Personagens genéricos onde caberia nome ou papel claro: 'dois homens de terno olhavam uma pintura gigante', 'Um homem avisou', 'a mulher da pintura explicou' (pág. 747-748); 'Alguém de fora chamou o L",
+          "Quebra da primeira pessoa com narração impessoal: 'A narração falou sobre amor, tragédia e vingança' (pág. 85) descreve o quadro em vez de contar a história.",
+          "Tempo verbal oscila entre capítulos: presente nos cap. 3 e 19 ('A multidão aplaude', 'Runas e feixes de luz tomam o céu') e passado nos demais ('Brinquei', 'Leon distribuiu'). Falta um padrão único.",
+          "Frases confusas: 'perguntou se ainda não tinha todos eles' (pág. 417) não faz sentido para o espectador; 'Alguém de fora chamou o Leon e o Thompson para melhorar tudo' (pág. 499) é vaga.",
+          "Possível contradição de perspectiva: 'Ella abriu mão de tudo para trazer todos nós a este mundo' (pág. 666) coloca o narrador entre os heróis trazidos, mas em outros trechos ele é quem controla o 'jog"
+        ]
+      },
+      {
+        "at": "2026-11-20T14:27:59.310Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "grafia_nome",
+          "cortado",
+          "grafia_nome",
+          "nome_generico"
+        ]
+      },
+      {
+        "at": "2026-11-20T14:28:47.515Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Apelidos genéricos tirados da aparência no lugar de nomes: 'Moletom comemorou' (pág. 107), 'A garota de cabelo longo observava' (pág. 159), 'O Brinco zombou, e o Cacheado disse' e 'o Atacante se ofere",
+          "'o Qiangsheng mandou o garoto não pensar em sair dali' (pág. 160): 'o garoto' não identifica quem é. Pode ser o próprio narrador ou outro aluno.",
+          "Ponto de vista quebrado: a história é narrada em primeira pessoa, mas aparecem 'decidida a não deixar o filho passar fome' (pág. 211), que deveria ser 'me deixar', e 'fez Lingsheng perceber' (pág. 315",
+          "Tempo verbal oscila: 'Eu ergo minha espada... me preparo' (pág. 1) está no presente, e o restante do roteiro está no passado.",
+          "Descrição de quadro vazando para a narração: 'ela ficou de costas para ele, de avental' (pág. 212), 'a poeira subiu do chão rachado' (pág. 316) e 'sentada ao meu lado no sofá' (pág. 472)."
+        ]
+      },
+      {
+        "at": "2026-11-20T14:31:20.283Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
           "contradicao",
-          "so_descreve",
+          "grafia_nome",
+          "grafia_nome",
+          "nome_generico",
+          "nome_generico"
+        ]
+      },
+      {
+        "at": "2026-11-20T14:32:01.265Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Nome inconsistente: 'a Lika' (cap. 7, pág. 268) vira 'a Laika' (cap. 14, págs. 497-498). É preciso escolher uma grafia e usá-la no projeto todo.",
+          "Rótulos genéricos com maiúscula, parecendo placeholder: 'o Garoto ao lado' (pág. 217), 'O Rival gritou furioso' (pág. 268), 'O Oficial então avisou' (pág. 606).",
+          "Excesso de 'um dos garotos' / 'os garotos' / 'uma garota' sem nome: págs. 375, 498, 551, 605 e 163 ('As crianças riram de um colega'). Os colegas recorrentes merecem nome.",
+          "Descrição literal de painel em vez de narração: 'Uma bota preta surgiu no chão, alguém gritou atenção' (pág. 110) e 'apontei para o queixo e declarei: isso é o melhor!' (pág. 269), que fica sem sentid",
+          "Frases confusas: 'Balza perguntou se era eu, achando tudo muito interessante' (pág. 323) e 'Rangis não entendeu a palavra lança' (pág. 162)."
+        ]
+      },
+      {
+        "at": "2026-11-20T14:34:18.572Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "continuidade",
+          "nome_generico",
+          "nome_generico",
           "nome_generico",
           "contradicao"
         ]
       },
       {
-        "at": "2026-11-19T16:04:18.720Z",
+        "at": "2026-11-20T14:35:01.125Z",
         "worker": "opus",
         "ok": false,
         "issues": [
-          "nome_generico",
-          "contradicao",
-          "nome_generico",
-          "nome_generico",
-          "nome_generico"
+          "Personagens genéricos em vez do nome: 'o garoto gritou de braço estendido' e 'um jovem se encolheu' (pág. 225-226), 'Um dos presentes' (pág. 119), 'uma silhueta já esperava' (pág. 548), 'uma mulher de",
+          "'Uma figura' aparece em momentos-chave: 'Uma figura foi lançada para o alto' (pág. 335) e 'Uma figura se culpava no chão, dizendo que devia ter protegido a Santa' (pág. 991). Quem se culpa por não pro",
+          "'a Jovem arregalou os olhos' (pág. 1097): descrição genérica escrita com maiúscula, como se fosse nome próprio.",
+          "Nomes suspeitos de tradução literal ou erro de leitura: 'o Sombrio disse que catadores vivem só para hoje' (pág. 118) e 'Rabo respondeu' (pág. 1202). Precisam ser checados contra a obra.",
+          "Possível troca de nome: 'o cansaço da jornada ainda mantinha a Clara dormindo' (pág. 990). No resto do roteiro a Santa que força o poder divino é a Renée, então 'Clara' pode ser erro ou personagem não"
         ]
       },
       {
-        "at": "2026-11-19T16:17:38.284Z",
+        "at": "2026-11-20T15:51:40.078Z",
         "worker": "opus",
         "ok": false,
         "issues": [
           "outro",
-          "outro",
-          "nome_generico",
-          "cortado",
+          "contradicao",
+          "grafia_nome",
+          "portugues",
           "portugues"
         ]
       },
       {
-        "at": "2026-11-19T16:18:26.028Z",
+        "at": "2026-11-20T19:24:59.455Z",
         "worker": "opus",
         "ok": false,
         "issues": [
-          "Personagens sem nome, identificados só por descrição: 'O homem de boina' (pág. 80-81), 'O homem de gravata' (pág. 241), 'Uma moça de trança' e 'a elfa' (pág. 728), 'a criatura de coleira' (pág. 888), ",
-          "Rótulos genéricos escritos em maiúscula como se fossem nomes próprios: 'o Aldeão' (pág. 403), 'o Bigodudo' (pág. 404), 'o Trovador' (pág. 160), 'o Coelho' (pág. 159). Parecem apelidos inventados pelo ",
-          "Falas sem autor: 'alguém zombava de mim lá de cima. Outra voz mandou ele calar a boca' (pág. 241) e 'uma voz sombria desafiou ele' (pág. 81). O espectador não sabe quem fala.",
-          "Quebra de continuidade: a pág. 728 está no meio da explicação da elfa sobre a profecia do espírito, e a pág. 729 pula direto para 'Quando finalmente cheguei à clínica, ela já estava vazia desde a manh",
-          "Contradição: na pág. 403 'o monstro tinha sido capturado', mas na pág. 404 o grupo ainda sai à noite com tochas e cães atrás de um rugido. Falta explicar se é outra criatura ou se a captura falhou."
+          "so_descreve",
+          "contradicao",
+          "portugues",
+          "cortado",
+          "cortado"
         ]
       },
       {
-        "at": "2026-11-19T16:26:53.888Z",
+        "at": "2026-11-20T19:32:37.232Z",
         "worker": "opus",
         "ok": false,
         "issues": [
+          "nome_generico",
           "contradicao",
-          "continuidade",
+          "nome_generico",
+          "portugues",
+          "nome_generico"
+        ]
+      },
+      {
+        "at": "2026-11-20T19:46:45.729Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "nome_generico",
+          "nome_generico",
           "nome_generico",
           "portugues"
         ]
       },
       {
-        "at": "2026-11-19T16:27:19.271Z",
+        "at": "2026-11-20T19:47:49.547Z",
         "worker": "opus",
         "ok": false,
         "issues": [
-          "Apelidos visuais no lugar de nomes, piorando a partir do cap. 13: 'Piercings zombou', 'Espada atacou com a katana', 'o homem de cabelo espetado', 'O Samurai ergueu a katana', 'o Armadurado' (cap. 2)",
-          "Cap. 18 descreve a cena só com rótulos genéricos, sem nenhum nome: 'Um sujeito disse...', 'o homem de sobrancelha grossa', 'o homem de robe o xingou', 'a figura cinzenta perguntou'",
-          "Cap. 17: 'a espada do Sang' parece nome truncado ou inconsistente (Sang-ah?). Logo depois vem 'O garoto deitado descansava', personagem sem nome e salto brusco da explosão para a cena de descanso",
-          "Cap. 9: 'uma criatura veio direto para a Sang-ah, e um raio branco a atingiu' é ambíguo, não dá para saber se o raio atingiu a criatura ou a Sang-ah",
-          "Cap. 1: 'a Terra virou um inferno' seguido de 'Eu tomava um banho quente, sorrindo e chorando de alívio' quebra a continuidade, porque falta marcar que é um flashback ou antes da revelação, e o tempo "
-        ]
-      },
-      {
-        "at": "2026-11-19T17:48:10.900Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "nome_generico",
-          "contradicao",
-          "continuidade",
-          "continuidade",
-          "continuidade"
-        ]
-      },
-      {
-        "at": "2026-11-19T17:49:24.796Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "so_descreve",
-          "nome_generico",
-          "contradicao",
-          "continuidade",
-          "contradicao"
-        ]
-      },
-      {
-        "at": "2026-11-19T17:50:44.978Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "contradicao",
-          "contradicao",
-          "contradicao",
-          "contradicao",
-          "continuidade"
-        ]
-      },
-      {
-        "at": "2026-11-19T17:56:18.833Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "portugues",
-          "portugues",
-          "contradicao",
-          "contradicao",
-          "nome_generico"
-        ]
-      },
-      {
-        "at": "2026-11-19T17:58:18.199Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "nome_generico",
-          "nome_generico",
-          "nome_generico",
-          "nome_generico",
-          "nome_generico"
-        ]
-      },
-      {
-        "at": "2026-11-19T18:09:28.553Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "grafia_nome",
-          "contradicao",
-          "contradicao",
-          "so_descreve",
-          "nome_generico"
-        ]
-      },
-      {
-        "at": "2026-11-19T18:10:14.768Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Rótulos genéricos no lugar de nomes, recorrentes: 'uma mulher acordou assustada na cama' (pág. 2, provavelmente a própria esposa/princesa), 'A figura de tranças' (pág. 145), 'a figura de asas de morce",
-          "'A Moça' com maiúscula vira nome próprio (págs. 275, 311, 346, 347). É uma personagem recorrente e precisa do nome real.",
-          "Quebra de continuidade no Cap. 2: 'uma carruagem disparou pela mata' (pág. 36), e logo depois 'Perguntei por que não podia usar o portão principal' (pág. 37). A cena salta sem ligação.",
-          "Narrador confuso no Cap. 8: 'o cunhado pagou vinte taéis' (pág. 182) em terceira pessoa, seguido de 'Eu, aos prantos, admiti' (pág. 183). Não fica claro se o cunhado é o protagonista nem quem está cho",
-          "Repetição e enchimento no Cap. 5: 'golpe direto no rosto que me mandou direto para o chão', e as págs. 107 e 109 descrevem o mesmo impacto duas vezes."
-        ]
-      },
-      {
-        "at": "2026-11-19T18:13:53.070Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "nome_generico",
-          "continuidade",
-          "grafia_nome",
-          "grafia_nome",
-          "nome_generico"
-        ]
-      },
-      {
-        "at": "2026-11-19T18:42:51.042Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "nome_generico",
-          "contradicao",
-          "contradicao",
-          "cortado",
-          "continuidade"
-        ]
-      },
-      {
-        "at": "2026-11-19T18:43:54.902Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Mistura de presente e passado no mesmo trecho, quebrando a narração que no resto está no passado: cap. 4, pág. 217-218 'Eu fecho a cara... eu grito' → 'Foi nesse momento que o sistema apitou, indicand",
-          "Personagens chamados por rótulo genérico e sem nome, padrão que cresce a partir do cap. 14: 'Um negociante', 'um jovem, chorando' (pág. 876-877), 'outra figura', 'A figura desceu a escada' (pág. 986-9",
-          "Referente vago: cap. 15, pág. 986 'Depois, ele disse que a subjugação seria simples', sem dizer quem é 'ele'",
-          "Salto de continuidade: cap. 10, pág. 660-661 'Um ghoul atacou de perto...' → 'Os sobreviventes caíram num desfiladeiro', sem dizer o que aconteceu com o ataque nem quem são os sobreviventes",
-          "Frases de tradução literal ou confusas: 'os padrões tinham sido ofendidos' (pág. 110); 'Os heróis desistiram por não conseguirem achar a Torre, dizia aquela voz revoltada' (pág. 768), em que a atribui"
+          "Ponto de vista inconsistente: no Cap. 1 a narração é em terceira pessoa ('o Jogador debochou do Careca'), mas a partir do Cap. 2 passa a ser em primeira pessoa ('Um vórtice de cubos me levou...'). O p",
+          "Rótulos genéricos ou apelidos no lugar de nomes: 'o Careca' (Cap. 1), 'o outro combatente' (Cap. 6), 'O colega ao lado' (Cap. 9), 'um garoto' (Cap. 13), 'a criatura' e 'a figura' (Cap. 16), 'o Chifrud",
+          "Cena confusa no Cap. 13: 'um garoto ergueu a voz invocando a Punição da Luz' e, em seguida, 'Os raios acertaram meu braço e minha perna'. Não fica claro se o garoto é o narrador ou um inimigo, nem por",
+          "Ação descrita como legenda de quadro, sem sujeito claro: 'Uma lâmina de luz desceu várias vezes sobre o chão rachado' (Cap. 6) e 'lâminas escuras começaram a soltar energia ao redor' (Cap. 16).",
+          "Referência obscura no Cap. 9: 'me desafiou para o 001' não explica o que é 001 (arena, ranking, sala?)."
         ]
       }
     ],
-    "updatedAt": "2026-11-19T18:43:54.902Z"
+    "updatedAt": "2026-11-20T19:47:49.547Z"
   },
   "73c4b62ef1": {
     "label": "Você é editor de vídeo de um canal brasileiro de resumos narrados de m",
     "lessons": [],
     "workers": {
       "omniroute/haiku": {
-        "calls": 463,
+        "calls": 475,
         "reviewed": 0,
         "redone": 0
       },
       "claude-code/haiku": {
-        "calls": 959,
+        "calls": 1616,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T03:47:31.951Z"
+    "updatedAt": "2026-11-20T20:05:29.932Z"
   },
   "d8a18df68b": {
     "label": "Você escolhe os recortes de imagem de um vídeo de resumo de manhwa/web",
@@ -596,85 +591,25 @@
   "stage-leitura": {
     "label": "Revisão final: leitura das páginas",
     "lessons": [
-      "Mantenha um único nome para cada personagem do início ao fim. Se o nome ainda não apareceu, use uma descrição fixa e específica (ex.: 'a mulher de cabelo prateado') e nunca troque 'protagonista' por '",
-      "Sempre use o nome do personagem quando ele já apareceu na obra, com a grafia fixa (ex.: sempre 'Tae-gyu'). Nunca use 'Jovem' ou rótulos visuais para dois personagens na mesma página. Confira se a fala",
-      "Fixe um nome único para cada personagem recorrente (de preferência o nome próprio, como Sword) e use sempre o mesmo. Nunca use posição ou trecho de descrição ('de cima', 'escura', 'de fora') como nome",
-      "Sempre use o nome próprio do personagem. Se ele ainda não foi nomeado, use um apelido fixo e consistente, nunca 'Zumbi', 'Ombro' ou 'Figura'. Traduza todas as falas. Em quadro ambíguo, use as páginas ",
-      "Assim que um personagem for identificado (Oscar, Isabelle, o pai, os irmãos), use sempre o mesmo nome, inclusive nas atribuições de fala. Nunca transforme uma descrição de roupa ('Camisa') em nome. Us",
       "Use sempre o nome próprio do personagem quando ele já foi apresentado, com grafia única (ex.: Da-hyun, Joon-ho). Se não souber quem é, descreva em português natural ('um homem de terno', 'uma voz fora",
       "Fixe uma única grafia para cada nome (ex.: 'Ji-tae'; dragãs sempre pelo mesmo nome) e use o nome sempre que o personagem já tiver aparecido. Nunca use 'Moça', 'Figura', 'de fora' ou 'não identificada'",
       "Nunca use traço físico, roupa ou parte do corpo como nome ('Brinco', 'Cabelo', 'Costas'). Identifique o personagem pelo nome da obra quando ele já tiver aparecido e mantenha o mesmo nome em todas as p",
       "Use sempre o mesmo nome próprio para cada personagem desde a primeira vez que ele for identificado. Nunca troque o protagonista por 'Espadachim', 'Figura' ou 'Protagonista'. Rótulo visual só serve até",
-      "Use sempre o mesmo nome para o mesmo personagem em toda a obra. Se o nome ainda não apareceu, crie um apelido descritivo e mantenha-o até a revelação; não invente um rótulo novo a cada página. Ignore "
+      "Use sempre o mesmo nome para o mesmo personagem em toda a obra. Se o nome ainda não apareceu, crie um apelido descritivo e mantenha-o até a revelação; não invente um rótulo novo a cada página. Ignore ",
+      "Sempre nomeie quem aparece e quem fala, usando o nome dado na obra (ou um título fixo, como 'Rei Goblin'), e mantenha esse rótulo igual em todas as páginas. Nunca use 'Criatura', 'Figura' ou 'Não iden",
+      "Defina no início um nome canônico para cada personagem recorrente (ex.: protagonista = Hyunmin) e use sempre esse nome, mesmo quando a obra usar título ou sobrenome. Evite rótulos de aparência quando ",
+      "Use sempre o nome do personagem quando ele já foi apresentado, principalmente o Yi; nunca transforme 'fora de quadro' em personagem. Confira quem age na cena pelo contexto do capítulo anterior, traduz",
+      "Use sempre o nome próprio do personagem assim que ele for conhecido, com grafia única em toda a obra (ex.: Seong-un). Não invente apelidos visuais ('Franjudo', 'Sobretudo'). Quando não souber quem fal",
+      "Identifique cada personagem pelo nome já estabelecido, sempre com a mesma grafia (escolha Lika ou Laika, e Zeke). Nunca use 'fora do quadro', 'Figura', 'Colega' ou 'Vozes' como sujeito quando o contex"
     ],
     "workers": {
       "opus": {
-        "calls": 22,
-        "reviewed": 22,
-        "redone": 22
+        "calls": 27,
+        "reviewed": 27,
+        "redone": 27
       }
     },
     "recent": [
-      {
-        "at": "2026-11-16T03:19:13.871Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Conteúdo duplicado em sequência: as págs. 3–10 e 13–20 narram as mesmas cenas com as mesmas falas. É o caso de 'Se eu fosse falar de onde tudo deu errado...' (pág. 3 e pág. 13), 'Uma nova lei tomou co",
-          "Duplicação também no Capítulo 2: a pág. 24 repete a pág. 31 ('Acho que isso é uma vantagem pra mim. / Calma, tia.'), a pág. 25 repete a pág. 32 (janelas de jogo e 'Espião (Rank F)') e a pág. 26 repete",
-          "O nome da relíquia muda de página para página: 'Relíquia do Arcaísta' (pág. 3), 'Relíquia do Arqueólogo' (pág. 13), 'relíquia arcaica' (pág. 25) e 'relíquia do Archaist' (pág. 33). Da mesma forma, apa",
-          "Alternância entre 'tumbas' (pág. 3) e 'túmulos' (pág. 13) para o mesmo conceito.",
-          "A natureza da entidade é contraditória: 'entidade dracônica' (pág. 7), corvo (pág. 8) e serpente que fala como 'Relíquia' (pág. 16). Falta deixar claro quem é a cobra e quem é a relíquia-corvo que o s"
-        ]
-      },
-      {
-        "at": "2026-11-16T07:59:53.590Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Falas truncadas de forma sistemática, provavelmente por limite de caracteres: 'Narração: Joo-heon, 38 ano' (cap.1), 'não, preciso saber o m' (cap.5), 'Tem certeza que é se' (cap.7), 'a habilidade mais",
-          "Personagens identificados pela aparência em vez do nome: 'Homem de jaqueta', 'Homem de sobretudo', 'Homem de suéter' (cap.7), 'Homem do chapéu' (cap.12), 'Homem de terno sem rosto', 'Interlocutor', 'H",
-          "Mesmo personagem com nomes diferentes: 'Yuka' no cap.12 e 'Sasaki' no cap.13, aparentemente a mesma usuária do guia do futuro; o pássaro aparece como 'corvo' e como 'Crow' no mesmo trecho (cap.11, pág",
-          "Atribuições feitas por palpite: 'provavelmente Dong-hyun, pelo suéter escuro' (cap.9, pág.217), três falas marcadas '(provável)' na pág.246 e 'Linda (provável)' no cap.6. Dong-hyun já tinha aparecido ",
-          "Descrição visual usada como se fosse identidade: no cap.7 o 'Homem de sobretudo' chama 'Joo-heon!', mas no cap.14 quem está de sobretudo é o próprio Joo-heon, e no cap.8 ele aparece 'de cachecol'. Ide"
-        ]
-      },
-      {
-        "at": "2026-11-16T13:59:31.513Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Frases e descrições cortadas no meio, padrão recorrente: pág. 81 'Veronica: Quando e'; pág. 107 'segredos ainda mais sombri' e 'Tudo isso é'; pág. 160 'A identidade da'; pág. 186 'conviver com '; pág.",
-          "Rótulos genéricos onde provavelmente há personagem conhecido: pág. 254 'Cartola, de costas no corredor' quase certamente é o Aiden, descrito antes 'de chapéu alto' (pág. 201). Também 'Figura clara' ch",
-          "'Chefe' é ambíguo: na pág. 1 parece um líder de guardas genérico, e na pág. 147 Meng chama de 'Chefe' alguém que pode ser o próprio Aiden (carcereiro). Precisa de identificação consistente.",
-          "Atribuição de fala incoerente na pág. 27: Aiden diz 'Bem-vindo, Anthony' e logo depois a 'Narração' pergunta 'Anthony? O que o traz aqui?'. Parece ser a fala ou o pensamento de outro personagem atribu",
-          "Gênero inconsistente na pág. 186: a descrição diz 'Duas soldadas', mas uma das falas é atribuída a 'Soldado'."
-        ]
-      },
-      {
-        "at": "2026-11-17T01:45:45.662Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Personagens chamados por rótulos de aparência em vez de nome: 'Cabelo', 'Figura', 'Sobretudo', 'Terno', 'Casaco', 'Noiva', 'Portador', 'Sorridente', 'Silhueta', 'Armadura', 'Caído', 'Presas', 'Moça' (",
-          "O rótulo 'Cabelo' vira protagonista de diálogos importantes (cap. 17, pág. 51: 'De que adiantou me enterrar...') sem nunca ser identificado.",
-          "Protagonista inconsistente: aparece como 'Espadachim' (cap. 16), 'Sobretudo' (caps. 17-20) e 'Hyeon-gun' (cap. 19 em diante). No cap. 19, pág. 150, 'Sobretudo' e 'Hyeon-gun' aparecem na mesma cena e n",
-          "O título do protagonista varia sem critério: 'Lorde da Espada' (pág. 39 e 200), 'Senhor da Espada' (pág. 63), 'Mestre da Espada' (pág. 212) e 'Sword' (pág. 274).",
-          "Frase sem sentido: 'Cabelo, de Cabelo claro, recebe a pergunta' (cap. 16, pág. 13)."
-        ]
-      },
-      {
-        "at": "2026-11-17T06:05:49.226Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Protagonista com nome inconsistente: 'Xiao' (cap. 31, 34, 35, 38, 41) e 'Zichen' (cap. 33, 36, 43-48). No cap. 37 Hanhan promete casar com 'Zichen', mas nos cap. 35 e 38 ela dorme com 'Xiao'. É precis",
-          "Rótulos de falante quebrados no cap. 40, pág. 84: 'de Xiao e Xin conversam', 'de Xiao: Xiao e Hanhan sempre foram bons garotos', 'de fora:'. Parece 'Pai/Mãe de Xiao' cortado.",
-          "Falas de personagem atribuídas à Narração: cap. 46, pág. 141, 'Narração: Mas tenho uma condição...' (é a Figura falando); cap. 38, pág. 70, 'Narração: já defini a coordenada biológica aqui' (fala em p",
-          "Excesso de rótulos genéricos ou visuais para personagens recorrentes: Figura, Guerreira, Líder, Homem de óculos, Armadura, Rabo, Amigo, Marcado, Brutamonte, Punho, Sorridente, Caído, Manga Escura, Aga",
-          "'Dean' tratado como nome próprio (cap. 37, pág. 56: 'surpreso com a visita de Dean'; cap. 44). É provável que seja o cargo 'diretor/reitor' mal traduzido, já que no cap. 33 o Líder se apresenta como d"
-        ]
-      },
       {
         "at": "2026-11-17T18:05:27.167Z",
         "worker": "opus",
@@ -854,16 +789,76 @@
           "Pág. 548, atribuição contraditória. O resumo diz 'Tae-joon acusa o Presidente… de ter pegado a muda', mas quem pegou foi Joo-heon, e ele reage 'Maldito... ele é rápido'. A fala 'Quero ter uma pequena ",
           "Pág. 224 com 'quadros: 0': 'Página de divulgação da scan, sem história, misturada à cena'. A descrição visual virou fala ('Narração: Joo-heon, de cabelo escuro, está encostado na parede'), o que é um "
         ]
+      },
+      {
+        "at": "2026-11-20T01:22:42.561Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Rótulos genéricos no lugar de nomes, em toda a obra: 'Criatura' (pág. 74, 98, 171, 295, 344), 'Garoto' e 'Colegas' (pág. 196), 'Pai' e 'Filha' (pág. 393), 'Homem do colar' (pág. 368), 'Grupo' (pág. 12",
+          "Pág. 295: 'Figura observa ao fundo, e Figura, Figura e Figura reagem no salão' é inutilizável. Não diz quem são, e 'Pisada de Guerra!' fica sem autor.",
+          "Pág. 417: a descrição diz que 'Joo-heon avisa o grupo', mas as falas de aviso estão atribuídas a 'Mago'. Não fica claro se Mago e Joo-heon são a mesma pessoa. O nome coreano numa obra com nomes chines",
+          "'Maga' é usado para personagens aparentemente diferentes: a aventureira assustada (pág. 122) e quem fala com Shiming ao telefone sobre Pengfei (pág. 220). Ela deveria ter nome.",
+          "Pág. 344: o inimigo fala ('Meu machado sedento...') e mesmo assim só é chamado de 'Criatura'. Um inimigo com fala provavelmente tem nome ou título."
+        ]
+      },
+      {
+        "at": "2026-11-20T09:27:57.493Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Protagonista com nomes inconsistentes: 'Hyunmin' (pág. 40, 121, 836), 'Manager' (pág. 319, 360, 439, 558), 'Protagonista' (pág. 479) e 'Oh' (pág. 598, 717, 797, 876). Tudo indica que é a mesma pessoa ",
+          "Mesma personagem com grafias diferentes: 'Mina Kim' (pág. 797) e 'Minah' (pág. 876). O mesmo ocorre com 'Kimpro' e 'Kim Pro' (pág. 479).",
+          "Rótulos genéricos ou de aparência usados como nome: 'Figura' (pág. 80, 678), 'Enfaixado' (pág. 200), 'homem de cabelo comprido' (pág. 240), 'Mulher amarrada' (pág. 678), 'Mulher de cabelo longo' (pág.",
+          "Inglês não traduzido e comentário técnico na descrição: 'o balão de 'If so' aponta para baixo' (pág. 160).",
+          "Atribuição de fala incoerente: na pág. 439 a descrição diz que 'Manager pensa', mas a fala aparece como 'Narração'. Na pág. 400, 'Sem mim, este território...' está como Narração, mas parece fala de um"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:52:20.156Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "\"Fora\" (fora de quadro) é tratado como personagem: \"a Fora pergunta o que aconteceu com Yi\" (cap. 4, p.160), \"Fora: Abra a porta, agora!\" (cap. 6, p.239), \"Figura, de Fora, reage\" (cap. 14, p.528).",
+          "Uso excessivo de rótulos genéricos ou visuais no lugar de nomes: \"Figura\" (caps. 1, 4, 5, 6, 7, 13, 17), \"Homem sombrio\" ao lado de Belphegor (cap. 1, p.54), \"Garoto\", \"Cabelo\", \"Regata\", \"Óculos\", \"G",
+          "Protagonista sem nome em cenas onde é claramente ele: \"Jovem pede à Mãe\" enquanto a fala é \"Yi: Mãe...\" (cap. 5, p.186); \"Garoto de pé no meio da cena\" após abater três monstros (cap. 19, p.606); \"Fig",
+          "Ação provavelmente atribuída à pessoa errada: \"Lingsheng corta com a lâmina e abate o Lobo\" (cap. 8, p.318), sendo que no capítulo anterior Lingsheng estava preso na cela e quem entra na floresta é Yi",
+          "Inconsistência interna: lobos-demônio \"de elemento nuvem\" (cap. 7, p.291) viram \"presas de lobo da neve\" (cap. 8, p.318)."
+        ]
+      },
+      {
+        "at": "2026-11-20T19:31:26.101Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Rótulos visuais no lugar de nomes, inconsistentes entre trechos: 'Homem de sobretudo' (pág. 60, 99), 'Sobretudo' (pág. 392), 'Figura' (pág. 197, 294, 372), 'Franjudo', 'Gola', 'Sorridente', 'Uniforme'",
+          "Nome inconsistente: 'Seong-un' (pág. 314) vs 'Seong-eun' (pág. 431).",
+          "Pág. 99: 'Aprendiz' chama alguém de 'mestre', mas o leitor não identifica quem é o mestre nem quem é o aprendiz, e Jio já é conhecido.",
+          "Pág. 197: 'Figura' observa os itens, mas a narração diz 'Ele... humanoide altamente inteligente'. O personagem deveria ser nomeado.",
+          "Atribuição de fala suspeita na pág. 118: a 'Criatura' oferece 'objetos, contratos ou condições do seu gosto', fala que soa como continuação da oferta de Bisabeol."
+        ]
+      },
+      {
+        "at": "2026-11-20T19:55:07.195Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Nome da heroína inconsistente: 'Lika' (cap. 6, 8, 10, 11) vs 'Laika' / 'Lady Laika' (cap. 9, 14, 20). Precisa de uma grafia única.",
+          "Protagonista alterna entre 'Zeke' e 'Sieg' (cap. 18: 'Loiro defende Sieg (Zeke)'). Padronizar um só nome.",
+          "Rótulo técnico tratado como personagem: 'Uma fora do quadro avisa sobre o perigo' (cap. 12), 'fora do quadro diz que não importa se é nobre ou plebeu' (cap. 11), 'fora do quadro critica o egoísmo' (ca",
+          "Rótulos genéricos no lugar de nomes já conhecidos. Cap. 6: 'elogio da Figura', mas a fala é atribuída a Lika. Cap. 11: falas de Rangis rotuladas como 'Plebeu'. Cap. 13: a mesma pessoa aparece como 'Ad",
+          "Rótulos vagos e duplicados: 'Oficial vê o emblema... com o Oficial ao lado' (cap. 2), 'com Colega e Colega ao lado' (cap. 20), 'Sorridente', 'Livreiro', 'Loiro', 'Mulher de coque' (cap. 17-18), 'Rival"
+        ]
       }
     ],
-    "updatedAt": "2026-11-19T04:23:46.643Z"
+    "updatedAt": "2026-11-20T19:55:07.195Z"
   },
   "687aac4053": {
     "label": "Você confere os recortes de um vídeo de resumo de mangá/webtoon. Receb",
     "lessons": [],
     "workers": {
       "claude-code/haiku": {
-        "calls": 3592,
+        "calls": 4780,
         "reviewed": 0,
         "redone": 0
       },
@@ -874,14 +869,14 @@
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T14:17:30.889Z"
+    "updatedAt": "2026-11-20T20:05:32.697Z"
   },
   "b1d24372b0": {
     "label": "Você escolhe a imagem certa para uma frase narrada de um vídeo de mang",
     "lessons": [],
     "workers": {
       "claude-code/haiku": {
-        "calls": 158,
+        "calls": 200,
         "reviewed": 0,
         "redone": 0
       },
@@ -892,14 +887,14 @@
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T14:07:04.540Z"
+    "updatedAt": "2026-11-20T20:03:42.124Z"
   },
   "161d1fb8b8": {
     "label": "Você cria o material de publicação de um vídeo do YouTube que resume/n",
     "lessons": [],
     "workers": {
       "claude-code": {
-        "calls": 14,
+        "calls": 15,
         "reviewed": 0,
         "redone": 0
       },
@@ -910,100 +905,43 @@
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-18T21:37:40.238Z"
+    "updatedAt": "2026-11-20T14:59:38.631Z"
   },
   "ce933839b3": {
     "label": "Você é o Diretor de Shorts de um canal de YouTube que narra mangás/man",
     "lessons": [],
     "workers": {
       "claude-code/haiku": {
-        "calls": 8,
+        "calls": 9,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T00:38:16.326Z"
+    "updatedAt": "2026-11-20T15:00:48.810Z"
   },
   "visual-short": {
     "label": "Revisão visual dos shorts (quadros)",
     "lessons": [
-      "Cubra todo o áudio com painéis até o último segundo, sem nenhum quadro preto no final. Dê zoom em cada painel até preencher a tela vertical e nunca use uma tira com dois painéis ou com marca d'água do",
-      "Abra com o painel de ação mais forte (aqui, a queda de cabeça para baixo) em tela cheia. Recorte cada painel de modo que nenhum balão fique cortado na borda, e dê zoom até o personagem ocupar a tela.",
-      "Nunca repita o mesmo painel em quadros seguidos: divida-o em zooms diferentes (rosto de um candidato, balão, mesa). Dê zoom em cada painel até preencher a tela vertical, sem faixa borrada, margem cinz",
-      "Nunca repita o mesmo painel em quadros seguidos: divida a fala longa em zooms diferentes (rosto, suco, olho tapado). Amplie cada painel até preencher a tela vertical, sem faixa preta nem pedaço de pai",
-      "Abra com o close de rosto mais forte (aqui, o olho ao telefone) em tela cheia, nunca com caixa de texto. Amplie cada painel até preencher a vertical, sem faixa borrada nem preta, nunca repita o mesmo ",
       "Abra com o painel de ação do título (aqui, a faca no tanque com o jato d'água) em zoom de tela cheia. Se a fala for longa, divida o painel em zooms diferentes (faca, jato, rosto) em vez de repeti-lo, ",
       "Abra com o painel que a primeira frase narra (aqui, a arma na cabeça) em tela cheia. Nunca repita o mesmo painel em três quadros seguidos: divida-o em zooms diferentes (olho, bico, balão inteiro), sem",
       "Nunca repita o mesmo painel em quadros seguidos: se a fala for longa, divida o painel em zooms diferentes (cabeça voando, mão, rosto, braço sangrando). Recorte acima de balões vazios ou cortados, tire",
       "Cubra o áudio até o último segundo sem tela preta. Nunca repita o mesmo painel em seguida: divida-o em zooms diferentes. Amplie cada painel até preencher a vertical, sem faixa borrada, balão cortado o",
-      "Cubra todo o áudio com painéis até o último segundo, sem tela preta. Abra com o rosto mais expressivo em tela cheia, nunca com balão em outro idioma cortado. Nunca repita o mesmo painel em seguida: di"
+      "Cubra todo o áudio com painéis até o último segundo, sem tela preta. Abra com o rosto mais expressivo em tela cheia, nunca com balão em outro idioma cortado. Nunca repita o mesmo painel em seguida: di",
+      "Cubra todo o áudio com painéis até o último segundo, sem quadro preto. Abra com o close do rosto do protagonista humilhado, nunca com vista aérea. Amplie cada painel até preencher a tela, sem balão co",
+      "Abra com o painel de ação ou rosto mais forte em tela cheia, nunca com janela de texto do sistema. Nunca repita o mesmo painel em seguida: divida-o em zooms diferentes (olhos brilhando, boca gritando,",
+      "Nunca repita o mesmo painel em quadros seguidos: divida-o em zooms diferentes (rochas, fogo, impacto). Amplie cada painel até preencher a vertical, sem faixa borrada nem margem branca, e recorte o últ",
+      "Abra com o close de rosto em tela cheia, recortando abaixo de balões vazios ou cortados. Nunca repita o mesmo painel em seguida: divida-o em zooms diferentes (olhos, energia, boca). Amplie também as j",
+      "Cada trecho da narração precisa de um painel próprio (anúncio, cafeteria, tumba). Nunca deixe um painel de diálogo cobrir mais de um quadro: troque de painel ou divida-o em zooms diferentes, sempre em"
     ],
     "workers": {
       "opus": {
-        "calls": 33,
-        "reviewed": 33,
-        "redone": 33
+        "calls": 38,
+        "reviewed": 38,
+        "redone": 38
       }
     },
     "recent": [
-      {
-        "at": "2026-11-16T02:10:14.650Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Quadro 1 abre com o velho parado no meio da tela, entre faixas borradas, com balões cortados no topo e na borda direita ('ANSHA...', 'USING GOLD' sem o início). O gancho não prende.",
-          "Os 6 quadros deixam o painel horizontal solto no centro, com borrão em cima e embaixo, em vez de dar zoom até preencher a tela vertical.",
-          "Balões cortados na borda: quadro 3 ('HOWEVER YOUR GOLD DO...'), quadros 4 e 5 (texto do lado esquerdo cortado) e quadro 6 ('WOULD DEFINIT...').",
-          "Quadros 4 e 5 usam a mesma tira de dois painéis empilhados, em seguida, quase sem diferença de enquadramento.",
-          "O quadro 6 fecha num close fraco do velho, solto entre faixas escuras e com balão cortado. Não mostra o protagonista nem a tensão do cliffhanger ('alguém na minha cola')."
-        ]
-      },
-      {
-        "at": "2026-11-17T15:15:34.573Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Quadro 1: faixa escura borrada no topo e faixa borrada embaixo; o painel não preenche a tela vertical",
-          "Quadro 2: margem branca no topo e faixa borrada embaixo, com a onomatopeia grande ocupando o espaço do rosto",
-          "Quadro 4: faixa borrada na base, abaixo do balão",
-          "Quadro 5: faixa borrada no topo; a narração fala em 'caverna cheia de cristais', mas a imagem mostra uma parede rachada",
-          "Quadro 6: o balão diz que a pressão biológica está ficando 'weaker and weaker', mas a narração diz que 'começou a subir'"
-        ]
-      },
-      {
-        "at": "2026-11-17T15:16:29.897Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Quadro 5 repete o mesmo painel da rachadura do quadro 4, só escurecido (fade), e gasta tempo sem imagem nova",
-          "Quadro 6 é tela totalmente preta: o short termina num vazio, sem rosto, ação nem cliffhanger visual",
-          "Quadro 4 tem a onomatopeia vermelha cortada na borda de cima",
-          "Quadro 1 tem uma cabeça com chifres cortada na borda de baixo, que vira ruído no gancho",
-          "Quadro 2 é um plano aberto do altar com a figura minúscula no centro, sem zoom, e a 'figura misteriosa' e a 'besta chifrada' da narração não aparecem"
-        ]
-      },
-      {
-        "at": "2026-11-17T15:17:14.836Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Quadro 2: o painel do ringue não preenche a tela vertical, com faixas pretas em cima e embaixo. O personagem fica minúsculo no meio do ringue branco.",
-          "A narração cita 'uma mulher de coque', 'garras brancas' e 'na tela do tablet', mas nenhum desses elementos aparece. O quadro 4 mostra o barbudo perfurado por penas/espinhos pretos, sem mulher nem garr",
-          "A narração situa o voo 'sobre a floresta' junto das penas (quadro 3), mas a floresta só aparece no quadro 5. Imagem e fala ficam dessincronizadas.",
-          "O balão do quadro 6 está em inglês num canal brasileiro. Ele combina com a fala, mas destoa do resto."
-        ]
-      },
-      {
-        "at": "2026-11-17T15:18:02.083Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "Quadros 2 e 3 mostram exatamente o mesmo painel (o chute com '砰!'), então a tela fica parada sem novidade",
-          "Quadro 4 (Barbudo entre Elmo e Careca) é um painel horizontal solto no meio da tela, com faixas borradas em cima e embaixo, sem zoom para preencher a tela vertical",
-          "Quadro 1 tem uma faixa escura no topo e a onomatopeia '碰!!' cortada na borda esquerda, o que enfraquece o gancho"
-        ]
-      },
       {
         "at": "2026-11-17T15:18:46.760Z",
         "worker": "opus",
@@ -1182,9 +1120,69 @@
           "Quadro 4: faixas grandes borradas e pixeladas em cima e embaixo; o close do olho fica pequeno numa faixa estreita no meio da tela",
           "Quadros 5 e 6: tela preta, sem imagem cobrindo o final do áudio; o short termina sem nenhum impacto"
         ]
+      },
+      {
+        "at": "2026-11-20T15:01:33.527Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Quadros 5 e 6 totalmente pretos: o áudio não está coberto até o fim e o final fica sem impacto",
+          "O quadro 1 abre com uma vista aérea distante do campo, sem rosto nem ação, e o balão de baixo está cortado ('CHANGE FAILED' pela metade)",
+          "O quadro 2 é um plano geral com personagens minúsculos, balão cortado no topo e marca d'água visível",
+          "O quadro 3 junta dois painéis numa tira, com margem branca e balões soltos embaixo",
+          "O quadro 4 tem o balão cortado no topo, marcas d'água 'TOON.com' e 'DRAKECOMIC' bem visíveis e uma faixa escura embaixo"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:02:07.690Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Quadro 1 abre com a janela de texto 'Meredia's Gift' em vez de rosto ou ação, sem gancho visual",
+          "Quadro 1 não preenche a tela: tem faixa borrada com texto repetido no topo e margem cinza/branca embaixo",
+          "Quadros 3 e 4 mostram exatamente o mesmo painel (rosto com relâmpagos e 'Loading...'), imagem repetida em seguida",
+          "Quadros 3 e 4 têm um balão de fala vazio cortado na borda superior",
+          "Quadro 6 tem marcas d'água ('TOON.com', 'DRAKECOMI') visíveis no topo"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:02:47.341Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Quadros 2 e 3 mostram exatamente o mesmo painel (rochas flamejantes com a onomatopeia), sem nenhum zoom diferente.",
+          "Quadros 2 e 3 têm faixa borrada e margem branca no topo, e o painel não preenche a tela vertical.",
+          "Quadro 4 está pequeno no meio da tela, com faixas borradas em cima e embaixo e margem branca ao redor do painel.",
+          "Quadro 6 tem o balão final cortado na base ('...NOW'), e há outro pedaço de balão cortado no topo.",
+          "O final fecha com um balão truncado, o que enfraquece o desfecho de 'estamos quites'."
+        ]
+      },
+      {
+        "at": "2026-11-20T15:03:20.724Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Quadros 1 e 2 repetem o mesmo painel (rosto com energia) sem zoom diferente",
+          "Quadros 1 e 2: painel pequeno, com faixa borrada no topo e faixa cinza vazia embaixo",
+          "Quadros 1 e 2: balão de fala branco cortado no topo, sobre a cabeça do personagem",
+          "O gancho do quadro 1 perde força porque o rosto ocupa só metade da tela",
+          "Quadro 4: janela do sistema solta no meio da tela, com faixas escuras e borradas em cima e embaixo"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:04:04.174Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "Quadros 2, 3, 4, 5 e 6 mostram o mesmo painel da Jiang com a mesma fala, sem variação de zoom, por cerca de 20 s",
+          "Quadro 1: painel do velho com joinha não preenche a vertical, com faixas borradas em cima e embaixo; o balão 'YOU'RE FINALLY BACK' está cortado na esquerda",
+          "Quadros 2 a 6: balão vazio cortado no topo e balão de fala inferior cortado na lateral direita (quadros 3 e 6)",
+          "A imagem não combina com o título nem com a narração: não aparece o anúncio do torneio, a cafeteria, a tumba real nem a recompensa",
+          "O final termina fraco, no mesmo painel parado de diálogo, sem impacto"
+        ]
       }
     ],
-    "updatedAt": "2026-11-19T00:49:37.468Z"
+    "updatedAt": "2026-11-20T15:04:04.174Z"
   },
   "e3fb837b56": {
     "label": "Você reescreve frases narradas ruins de um vídeo de resumo de mangá/we",
@@ -1204,7 +1202,7 @@
     "lessons": [],
     "workers": {
       "claude-code": {
-        "calls": 10,
+        "calls": 13,
         "reviewed": 0,
         "redone": 0
       },
@@ -1215,25 +1213,25 @@
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T00:30:26.942Z"
+    "updatedAt": "2026-11-20T19:47:34.416Z"
   },
   "f0ce5b70be": {
     "label": "Você escolhe a imagem de cada fala de um vídeo de resumo de manhwa/web",
     "lessons": [],
     "workers": {
       "claude-code/haiku": {
-        "calls": 5422,
+        "calls": 7968,
         "reviewed": 0,
         "redone": 0
       },
       "omniroute/haiku": {
-        "calls": 485,
+        "calls": 976,
         "reviewed": 0,
         "redone": 0
       }
     },
     "recent": [],
-    "updatedAt": "2026-11-19T04:16:31.736Z"
+    "updatedAt": "2026-11-20T19:54:08.032Z"
   },
   "55b2e9c024": {
     "label": "Você encurta a narração de um vídeo de resumo de mangá/manhwa, em port",
@@ -1256,27 +1254,27 @@
   "edit-crops": {
     "label": "Conferência dos recortes durante a edição",
     "lessons": [
-      "Quando o quadro tem balão grande em cima, inclua também o personagem que fala abaixo dele com o rosto inteiro, não só o topo da cabeça.",
-      "Inclua uma margem acima de cabeças e de textos de título; não comece o recorte rente ao topo do cabelo ou de letras.",
-      "Quando a narração descreve uma ação (pisar, golpear), o recorte deve mostrar o corpo inteiro de quem age, não só as pernas ou a vítima.",
-      "Nunca termine o recorte no meio de um balão de fala; inclua o balão inteiro ou deixe-o de fora.",
-      "Não comece o recorte no meio de um balão de fala; inclua o balão inteiro ou corte abaixo dele.",
-      "Evite quadros que sejam quase só fundo branco com onomatopeia; se o personagem aparece só na borda, inclua o quadro seguinte para mostrar o corpo ou o rosto inteiro.",
-      "Comece o recorte na borda superior do quadro, para que nenhum balão ou cabeça de personagem fique partido no topo.",
-      "Antes de fechar o recorte, confira se nenhum balão de fala ou cabeça encosta na borda; se encostar, estenda o recorte até incluir tudo.",
-      "Não termine o recorte com um balão de fala surgindo na borda: inclua o balão inteiro ou corte antes dele.",
-      "Quando a narração cita personagens aparecendo ou em pé, escolha o quadro que mostra corpo e rosto, não só pernas ou pés."
+      "Evite recortes em que a cabeça ou o rosto do personagem fiquem partidos na borda; inclua o rosto inteiro mesmo que o quadro fique mais alto.",
+      "Inclua o balão de fala inteiro no recorte; se ele começa acima do quadro, suba o corte até o topo do balão.",
+      "Não termine o recorte no meio de um balão ou texto; estenda até incluir a frase inteira.",
+      "Always include the whole speech balloon that matches the narration; never cut it at the crop edge.",
+      "Evite quadros em que o personagem aparece de costas com a cabeça saindo pela borda de cima; inclua a cabeça inteira ou escolha outro quadro.",
+      "Quando a narração cita a ação de um personagem, o recorte deve mostrar o corpo dele inteiro, não só o balão ou a onomatopeia acima.",
+      "Evite quadros só de fundo (brilho, céu, efeito de luz) sem personagem ou ação; escolha o quadro com o rosto ou a cena citada na narração.",
+      "Ao recortar um personagem, inclua a cabeça e o rosto inteiros; nunca termine o recorte no meio do rosto ou no pescoço.",
+      "Nunca termine o recorte no meio de um balão de fala; inclua o balão inteiro ou corte antes dele.",
+      "Avoid crops that join the end of one panel with the start of the next across the gutter; pick a single complete panel."
     ],
     "workers": {
       "opus": {
-        "calls": 24,
-        "reviewed": 24,
-        "redone": 21
+        "calls": 48,
+        "reviewed": 48,
+        "redone": 45
       }
     },
     "recent": [
       {
-        "at": "2026-11-18T13:31:34.422Z",
+        "at": "2026-11-20T01:03:54.127Z",
         "worker": "opus",
         "ok": false,
         "issues": [
@@ -1288,7 +1286,161 @@
         ]
       },
       {
-        "at": "2026-11-18T13:43:13.329Z",
+        "at": "2026-11-20T04:58:09.114Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T05:18:52.826Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T05:52:57.934Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T06:53:19.500Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado",
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T14:37:04.534Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T14:45:38.696Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:14:28.343Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:17:26.268Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:19:28.121Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:22:42.137Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:24:30.971Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:27:32.788Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:28:38.303Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:38:37.671Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:40:14.847Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T15:43:24.423Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "vazio",
+          "cortado",
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T19:21:20.585Z",
+        "worker": "opus",
+        "ok": false,
+        "issues": [
+          "cortado",
+          "cortado",
+          "cortado"
+        ]
+      },
+      {
+        "at": "2026-11-20T19:41:43.439Z",
         "worker": "opus",
         "ok": false,
         "issues": [
@@ -1300,173 +1452,16 @@
         ]
       },
       {
-        "at": "2026-11-18T13:56:39.640Z",
+        "at": "2026-11-20T19:57:08.457Z",
         "worker": "opus",
         "ok": false,
         "issues": [
           "cortado",
-          "cortado",
-          "cortado",
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T14:18:22.580Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado",
-          "cortado",
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T15:26:18.051Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T15:28:49.432Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T15:32:05.471Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T15:34:49.718Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado",
-          "cortado",
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T18:40:27.643Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T19:01:18.699Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T22:27:47.385Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-18T22:41:40.850Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado",
-          "cortado",
-          "vazio"
-        ]
-      },
-      {
-        "at": "2026-11-18T22:55:49.813Z",
-        "worker": "opus",
-        "ok": true,
-        "issues": []
-      },
-      {
-        "at": "2026-11-18T23:44:40.236Z",
-        "worker": "opus",
-        "ok": true,
-        "issues": []
-      },
-      {
-        "at": "2026-11-19T00:01:43.019Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-19T00:50:06.943Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado",
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-19T01:26:34.311Z",
-        "worker": "opus",
-        "ok": true,
-        "issues": []
-      },
-      {
-        "at": "2026-11-19T01:45:39.292Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado",
-          "cortado",
-          "cortado",
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-19T01:54:01.307Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
-          "cortado"
-        ]
-      },
-      {
-        "at": "2026-11-19T03:48:00.771Z",
-        "worker": "opus",
-        "ok": false,
-        "issues": [
           "cortado"
         ]
       }
     ],
-    "updatedAt": "2026-11-19T03:48:00.771Z"
+    "updatedAt": "2026-11-20T19:57:08.457Z"
   },
   "14d3bc15eb": {
     "label": "Um vídeo narrado de mangá vai CONTINUAR com novos capítulos. Recebe as",

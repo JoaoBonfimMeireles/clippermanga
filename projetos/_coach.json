@@ -2,12 +2,12 @@
   "edicao": {
     "kinds": {
       "cortado": {
-        "hits": 11,
-        "at": 1795060080767
+        "hits": 26,
+        "at": 1795204628454
       },
       "vazio": {
         "hits": 2,
-        "at": 1795060080767
+        "at": 1795204628454
       }
     },
     "works": {
@@ -17,7 +17,7 @@
       },
       "": {
         "lessons": [],
-        "at": 1795049406939
+        "at": 1795204628454
       },
       "Kidnapped Dragons": {
         "lessons": [],
@@ -34,59 +34,59 @@
     },
     "global": {
       "lessons": [
-        "Comece o recorte na borda superior do quadro, para que nenhum balão ou cabeça de personagem fique partido no topo.",
-        "Evite recortes cuja metade seja só linhas de velocidade ou efeito sonoro; priorize o trecho com os personagens.",
-        "Nunca termine o recorte no meio de um rosto: inclua a cabeça inteira, dos cabelos ao queixo, do personagem que reage à fala.",
-        "Quando um balão fica acima ou abaixo do rosto de quem fala, estenda o recorte até cobrir os dois por completo.",
-        "Não termine o recorte com um balão de fala surgindo na borda: inclua o balão inteiro ou corte antes dele.",
-        "Quando a narração cita personagens aparecendo ou em pé, escolha o quadro que mostra corpo e rosto, não só pernas ou pés.",
-        "Não termine o recorte no meio de um balão de fala; inclua o balão inteiro ou corte antes dele.",
-        "Avoid panels whose speech balloon runs past the side edge of the panel; prefer panels where the whole balloon fits inside the width."
+        "Não termine o recorte no meio de um balão ou texto; estenda até incluir a frase inteira.",
+        "Se os rostos aparecem só até os olhos na borda, estenda o recorte até mostrar a cabeça inteira.",
+        "Nunca termine o recorte no meio de um balão de fala; inclua o balão inteiro ou corte antes dele.",
+        "Evite recortes em que os personagens aparecem só como topo de cabeça na borda inferior; desça até mostrar os rostos.",
+        "Evite quadros que são quase só balões de fala ou texto sobre fundo liso; escolha o quadro com o personagem ou a ação da narração.",
+        "Garanta que o rosto inteiro (testa ao queixo) e os balões fiquem dentro do recorte, sem cortar na borda.",
+        "Avoid crops that join the end of one panel with the start of the next across the gutter; pick a single complete panel.",
+        "Make sure every speech balloon at the edge of the crop is fully visible; if it is cut, extend the crop to include the whole balloon."
       ],
-      "at": 1795060080767
+      "at": 1795204628454
     }
   },
   "roteiro": {
     "kinds": {
       "portugues": {
-        "hits": 15,
-        "at": 1795113771036
+        "hits": 26,
+        "at": 1795204005725
       },
       "nome_generico": {
-        "hits": 19,
-        "at": 1795113771036
+        "hits": 31,
+        "at": 1795204005725
       },
       "so_descreve": {
-        "hits": 9,
-        "at": 1795113771036
+        "hits": 19,
+        "at": 1795204005725
       },
       "contradicao": {
-        "hits": 26,
-        "at": 1795113771036
+        "hits": 41,
+        "at": 1795204005725
       },
       "continuidade": {
-        "hits": 11,
-        "at": 1795113771036
+        "hits": 20,
+        "at": 1795204005725
       },
       "grafia_nome": {
-        "hits": 10,
-        "at": 1795113771036
+        "hits": 12,
+        "at": 1795204005725
       },
       "cortado": {
-        "hits": 11,
-        "at": 1795113771036
+        "hits": 21,
+        "at": 1795204005725
       }
     },
     "works": {
       "": {
         "lessons": [
-          "O narrador 'eu' é o Yu; Chan-seok é outro personagem (o do olho de relógio). Nunca escreva 'eu, Chan-seok'.",
-          "Gordon é o assistente de óculos que carrega as maletas e entra em pânico com as regras; Berge (narrador, cabelo espetado) é quem rejeita os padrões. Escreva sempre 'Berge', nunca 'Berje'.",
-          "A elfa comprada se chama Granada e é mulher: nunca escreva 'Elfodo', 'um elfo' nem use pronome masculino para ela. Ela é a espiã do plano.",
-          "O líder dos heróis se chama Hillen (nunca Killen) e o elfo de trança é Granada; prefira esses nomes a 'o herói' ou 'o elfo'.",
-          "Nairuniel é feminina (use 'ela', 'surpresa', 'a'), e quem a invocou foi a Ernan, não o Berge."
+          "Chame a personagem principal sempre pelo nome (Renée), nunca de 'encapuzada', 'jovem' ou 'santa'; Vera é o narrador, então use 'eu/me', não 'o Cavaleiro'.",
+          "As três classes oferecidas a Zhou são Mago, Sacerdote e Cavaleiro. Use sempre esses nomes, no masculino, e chame o monstro do teste de Rabby Ancestral.",
+          "O chefe é o Rei dos Minotauros: chame-o por esse nome, nunca de 'Criatura-crânio' ou 'a criatura'.",
+          "A garota de laço que lutou com o Zhou é a Ran: nunca a chame de 'Guerreira'. A cordilheira se chama sempre 'Montanhas Tempestade'.",
+          "O garoto de cabelo e presas, com chamas de dragão, é o Shen, que é homem. Ele luta contra o Zhou no chão, não no ar."
         ],
-        "at": 1795113771036
+        "at": 1795204005725
       },
       "Kidnapped Dragons": {
         "lessons": [
@@ -116,16 +116,16 @@
     },
     "global": {
       "lessons": [
-        "Antes de escrever, confira o que as partes vizinhas já disseram (aceitou/recusou, ferido/curado, posição no ranking) e não contradiga; se a imagem não sustenta um fato, não o invente.",
-        "Nunca copie rótulos de quadro com hífen (Garoto-lança, Castanho, Mulher-da-espada) nem escreva 'a narração', 'a pessoa fora do quadro' ou 'balão'; use o nome ou uma descrição natural.",
-        "Não afirme como fato o que a parte seguinte trata como suspeita ou dúvida. Mantenha o mesmo grau de certeza entre partes vizinhas.",
-        "Depois de apresentar um personagem por um rótulo (ex.: 'homem de hanbok'), continue usando o mesmo rótulo ou o nome. Não troque por outra descrição.",
-        "Nunca use rótulos da descrição do quadro ('Figura', 'Gritador', 'Capa Riso') como nome; identifique o personagem e use o nome dele ou uma descrição natural.",
-        "Nunca atribua uma fala a 'uma voz', 'um mago' ou 'alguém' quando o quadro e o contexto indicam o personagem; use o nome dele ou a primeira pessoa se for o narrador.",
-        "Não use rótulos da descrição do quadro ('Coque', 'Capa', 'Herói Frente', 'Figura') como nome próprio, e só use 'eu' para o próprio narrador.",
-        "Em diálogos entre outros personagens, não use 'eu' nem 'me' na fala deles; deixe claro quem fala com quem (ex.: Kaede falando com o herói)."
+        "Quando o narrador conta a história de outro personagem, escreva os pensamentos e as falas desse personagem na terceira pessoa (ela/ele). Não passe para 'eu'.",
+        "Nunca use rótulos de quadro ('Close', 'figura', 'agressor') como nome. Use o nome do personagem ou conte a ação, sem só descrever o painel.",
+        "Nunca chame de 'alguém', 'um homem', 'uma mulher' ou 'um desconhecido' quem dá para identificar pela cena; nunca use 'Chibi' como nome; não deixe palavras em inglês no texto.",
+        "Não transforme detalhe do quadro (de costas, floresta, banco) em ação ou sujeito da frase; conte quem fala e o que acontece na história.",
+        "Se o quadro mostra o próprio protagonista (camisa, pingente, aura), narre em primeira pessoa. Não o transforme em 'um vulto' ou 'um jogador', ainda mais quando ele está sozinho.",
+        "Narre sempre em primeira pessoa: nunca cite o próprio narrador (Zhou Yi) pelo nome ou em terceira pessoa, e não descreva efeitos do quadro (linhas de movimento, borrão); conte a ação.",
+        "Não repita no começo de um capítulo falas já narradas no fim do anterior, e confira quem fala ou age antes de usar a primeira pessoa.",
+        "Não use rótulos da descrição do quadro (Figura, Cabelo, Criatura, Presas) como se fossem nomes. Use o nome do personagem, ou 'ele/ela' se o nome não estiver na ficha."
       ],
-      "at": 1795113771036
+      "at": 1795204005725
     }
   }
 }

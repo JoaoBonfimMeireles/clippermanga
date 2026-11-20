@@ -135,7 +135,31 @@ function persist(projectId: string, now = false) {
   if (!pending.has(projectId)) pending.set(projectId, setTimeout(write, 1000));
 }
 
-export function startJob(kind: JobInfo['kind'], projectId: string, run: (ctx: JobCtx, signal: AbortSignal) => Promise<string | void>): JobInfo {
+/** Passos que o modo automático emenda (o render só passa para o inglês se o projeto pede). */
+const AUTO_NEXT: Record<string, string | undefined> = { script: 'edit', edit: 'check', check: 'render', render: 'english' };
+
+/** Modo automático no servidor: o passo terminou bem e o projeto está com `auto` → pede o próximo pela própria rota (mesmas travas). */
+function chainNext(job: JobInfo, tries = 0): void {
+  const p = peekProject(job.projectId);
+  const next = AUTO_NEXT[job.kind];
+  if (!p?.auto || !next || (job.kind === 'render' && !p.englishAudio)) return;
+  const port = process.env.PORT || '3100';
+  fetch(`http://127.0.0.1:${port}/api/projects/${job.projectId}/jobs`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ kind: next }) })
+    .then(async (r) => {
+      if (r.ok) {
+        console.log(`[manga:auto] ${job.projectId}: ${job.kind} → ${next}`);
+        return;
+      }
+      // outro processo ainda terminando: tenta de novo; recusa de verdade (ex.: falta validar) para a cadeia
+      if (r.status === 409 && tries < 20) return void setTimeout(() => chainNext(job, tries + 1), 3000);
+      console.error(`[manga:auto] ${job.projectId}: não consegui iniciar ${next}: ${await r.text().catch(() => r.status)}`);
+    })
+    .catch(() => {
+      if (tries < 5) setTimeout(() => chainNext(job, tries + 1), 3000);
+    });
+}
+
+export function startJob(kind: JobInfo['kind'], projectId: string, run: (ctx: JobCtx, signal: AbortSignal) => Promise<string | void>, opts: { chain?: boolean } = {}): JobInfo {
   const ac = new AbortController();
   const job: JobInfo = { id: randomUUID(), kind, projectId, status: 'running', progress: 0, message: 'Começando…', logs: [], startedAt: Date.now() };
   jobs.set(job.id, job);
@@ -213,6 +237,7 @@ export function startJob(kind: JobInfo['kind'], projectId: string, run: (ctx: Jo
       Object.assign(job, { status: 'done', progress: 1, message: m || 'Pronto', endedAt: Date.now() });
       push(`✔ ${m || 'Pronto'}`);
       persist(projectId, true);
+      if (opts.chain) setTimeout(() => chainNext(job), 1500);
     })
     .catch((e: Error) => {
       sampleQuota();

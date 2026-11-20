@@ -1,0 +1,1274 @@
+[
+ {
+  "name": "Bai Chen",
+  "look": "Protagonista órfão, espadachim exorcista, cicatriz no rosto, comportamento discreto"
+ },
+ {
+  "name": "Gu Yuyan",
+  "look": "Jovem de cabelos longos, armadura de combate, talento Rank A."
+ },
+ {
+  "name": "Examinador",
+  "look": "homem de manto claro segurando papel, chama os candidatos"
+ },
+ {
+  "name": "Skeleton Soldier",
+  "look": "Esqueleto inimigo nível 1, usa armadura simples e empunha uma espada longa."
+ },
+ {
+  "name": "Colegas de orfanato",
+  "look": "Dois jovens, um rapaz e uma moça, que treinaram com Chen na infância."
+ },
+ {
+  "name": "Criatura chifruda",
+  "look": "criatura escura de chifres e garras grandes, boca aberta, envolta em explosão"
+ },
+ {
+  "name": "Xiaoming",
+  "look": "aluno que muda de classe com sucesso e vira Mago"
+ },
+ {
+  "name": "Zheng Tianyu",
+  "look": "estudante da City F No. 7; morto na troca de classe"
+ },
+ {
+  "name": "Zhang Xiaofang",
+  "look": "estudante da City F No. 7; morta na troca de classe"
+ },
+ {
+  "name": "Qin Zheng",
+  "look": "guerreiro de armadura escura, cabelo curto, talento Rank A"
+ },
+ {
+  "name": "Li Shiming",
+  "look": "armadura escura, talento Rank B, cabelo curto"
+ },
+ {
+  "name": "Liu Ben",
+  "look": "capa escura e armadura, talento Rank A, cabelo castanho"
+ },
+ {
+  "name": "Wu Tiantian",
+  "look": "mulher de armadura com cabelo loiro, talento Rank B"
+ },
+ {
+  "name": "Zhen Ni",
+  "look": "guerreira de armadura clara, talento Rank A"
+ },
+ {
+  "name": "Li Yuan",
+  "look": "homem de armadura com lança e barba, talento Rank C"
+ },
+ {
+  "name": "Meredia",
+  "look": "deusa que concede dom; aparência não mostrada nestas páginas"
+ },
+ {
+  "name": "Chen",
+  "look": "protagonista, espada, suado, postura séria"
+ },
+ {
+  "name": "Pai de Chen",
+  "look": "Homem de cabelo preto; carrega Chen criança nos ombros; guerreiro ferido na invasão"
+ },
+ {
+  "name": "Mãe de Chen",
+  "look": "Mulher de cabelo longo escuro, roupa clara; caída ao chão na invasão"
+ },
+ {
+  "name": "Orc",
+  "look": "Monstro gigante com garras e cauda de tentáculo, invade a cidade"
+ },
+ {
+  "name": "Monstro chifrudo",
+  "look": "gigante musculoso de chifres grandes, pele escura, empunha lâmina longa"
+ },
+ {
+  "name": "Criatura aracnídea",
+  "look": "inseto aracnídeo escuro, muitas patas longas, carapaça com chifres"
+ },
+ {
+  "name": "Serpente",
+  "look": "serpente longa e escura, cabeça com chifres, caída no chão"
+ },
+ {
+  "name": "Figura de terno",
+  "look": "terno escuro, cabelo escuro, de pé ao fundo do corredor"
+ },
+ {
+  "name": "Criança do orfanato",
+  "look": "Criança de cabelo escuro, parte do grupo do orfanato, chorando"
+ },
+ {
+  "name": "Guerreiro de armadura",
+  "look": "armadura escura, cabelo escuro curto, boca aberta gritando"
+ },
+ {
+  "name": "Monstro sombrio",
+  "look": "criatura escura de garras longas, corpo sombrio e irregular"
+ },
+ {
+  "name": "Maga de chapéu",
+  "look": "chapéu de bruxa escuro e largo, cabelo escuro, capa escura, segura objeto junto ao peito"
+ },
+ {
+  "name": "Guerreiro de armadura escura",
+  "look": "visto de costas, armadura escura com ombreiras e gola alta, cabelo curto"
+ },
+ {
+  "name": "Treant",
+  "look": "criatura de madeira, tronco escuro com galhos retorcidos e rosto de árvore; nível 2"
+ },
+ {
+  "name": "Criatura Lv2",
+  "look": "criatura chifruda de placas ósseas, olhos brilhantes, pernas longas, Lv2"
+ },
+ {
+  "name": "Li Hu",
+  "look": "Espadachim Berserker; cabelo preso para trás, armadura escura com capa esfarrapada e chamas"
+ },
+ {
+  "name": "Aluno de cabelo espetado",
+  "look": "cabelo claro espetado, armadura clara, ao lado de Chen"
+ },
+ {
+  "name": "Criatura em chamas",
+  "look": "criatura escura envolta em chamas, corpo irregular, garras, barra Lv10"
+ },
+ {
+  "name": "Criatura caída",
+  "look": "criatura escura caída no chão, olhos brancos brilhantes, presas e garras"
+ },
+ {
+  "name": "Criatura sombria",
+  "look": "criatura escura de chifres curvos, garras longas, olhos brilhantes, salta na catedral"
+ },
+ {
+  "name": "Criatura flamejante",
+  "look": "criatura envolta em chamas, corpo irregular, garras, barra Lv10"
+ },
+ {
+  "name": "Figura em chamas",
+  "look": "figura de manto com chifres, envolta em chamas, braço estendido"
+ },
+ {
+  "name": "Figura pálida",
+  "look": "capuz escuro, rosto pálido, um olho escuro, boca cheia de dentes, grita"
+ },
+ {
+  "name": "Lorde Buck",
+  "look": "citado nas falas como Grande Lorde; não aparece nestas páginas"
+ },
+ {
+  "name": "Monstro de garras",
+  "look": "criatura escura de garras longas e corpo flamejante, barra Lv10, empunha foice"
+ },
+ {
+  "name": "Vassalo de Buck",
+  "look": "criatura sombria de silhueta irregular, fala em balão preto, parte inferior do quadro"
+ },
+ {
+  "name": "Criatura olhos brilhantes",
+  "look": "rosto escuro em close, olhos brilhantes, expressão furiosa, bordas de pelo claro"
+ },
+ {
+  "name": "Fantasma",
+  "look": "figura sombria de manto esfarrapado, corpo irregular"
+ },
+ {
+  "name": "Criatura pálida",
+  "look": "rosto pálido, cabelo espetado, boca cheia de presas, gritando"
+ },
+ {
+  "name": "Criatura morta-viva",
+  "look": "rosto de caveira em chamas, olhos brilhantes, corpo sombrio encapuzado"
+ },
+ {
+  "name": "Guerreiro de armadura clara",
+  "look": "armadura clara, cabelo curto escuro, de perfil"
+ },
+ {
+  "name": "Guerreiro claro",
+  "look": "armadura clara com ombreiras, cabelo curto claro, visto de costas"
+ },
+ {
+  "name": "Figura sorridente",
+  "look": "cabelo escuro bagunçado, cicatriz na testa, sorriso malicioso, capa escura"
+ },
+ {
+  "name": "Criatura de chamas",
+  "look": "silhueta humanoide de fogo, mão erguida, barra Lv1"
+ },
+ {
+  "name": "Guerreira clara",
+  "look": "armadura clara de gola alta, cabelo escuro longo com franja, segura documento"
+ },
+ {
+  "name": "Guerreiro escuro",
+  "look": "armadura escura, figura alta, lâmina longa e curva"
+ },
+ {
+  "name": "Figura de braço erguido",
+  "look": "cabelo escuro, ombro nu, bracelete no braço, boca aberta gritando"
+ },
+ {
+  "name": "Criatura Lv10",
+  "look": "demônio escuro em chamas, garras longas, chifres, barra Lv10, empunha lâmina"
+ },
+ {
+  "name": "Criatura óssea",
+  "look": "criatura escura de braços ósseos longos e manto, caída no chão"
+ },
+ {
+  "name": "Qin Ke",
+  "look": "nome revelado em fala; aparência não visível nestas páginas"
+ },
+ {
+  "name": "Fu Pengfei",
+  "look": "nome citado em fala; aparência não mostrada nestas páginas"
+ },
+ {
+  "name": "Guerreira de cabelo claro",
+  "look": "cabelo claro preso, armadura clara, expressão de luta"
+ },
+ {
+  "name": "Figura caída",
+  "look": "cabelo escuro espetado, caída no chão, rosto machucado"
+ },
+ {
+  "name": "Figura escura",
+  "look": "armadura escura com peitoral e cinto, capa escura, visto de perto"
+ },
+ {
+  "name": "Guerreiro de costas",
+  "look": "armadura clara com ombreiras, cabelo curto claro, visto de costas"
+ },
+ {
+  "name": "Guerreiro de capa",
+  "look": "armadura escura com capa, cabelo curto escuro, correndo"
+ },
+ {
+  "name": "Colega de cabelo preso",
+  "look": "cabelo castanho preso, roupa escura, sentada no sofá com celular"
+ },
+ {
+  "name": "Guerreiro do martelo",
+  "look": "cabelo castanho, segura martelo grande de cabo longo"
+ },
+ {
+  "name": "Guerreiro do capacete",
+  "look": "armadura escura, capacete fechado, espada na mão"
+ },
+ {
+  "name": "Guerreiro de óculos",
+  "look": "óculos, cabelo castanho curto, armadura escura, grita"
+ },
+ {
+  "name": "Guerreiro de machado",
+  "look": "sem camisa, cabelo preso em rabo, machado nas costas"
+ },
+ {
+  "name": "Guerreiro calvo",
+  "look": "cabeça raspada, armadura clara, cicatriz em X no rosto"
+ },
+ {
+  "name": "Criatura armadurada",
+  "look": "criatura escura de elmo e armadura chifrudos, caindo entre rochas"
+ },
+ {
+  "name": "Criatura de garras",
+  "look": "criatura escura de chifres curvos, garras longas, olhos brilhantes, rastro de chamas"
+ },
+ {
+  "name": "Guerreiro caído",
+  "look": "armadura escura com elmo, caído no chão, espada cravada ao lado"
+ },
+ {
+  "name": "Guerreira de rabo",
+  "look": "armadura clara, cabelo longo preso em rabo, correndo no centro"
+ },
+ {
+  "name": "Guerreiro do orbe",
+  "look": "armadura clara com ombreiras, cabelo curto, segura orbe brilhante"
+ },
+ {
+  "name": "Guerreira sentada",
+  "look": "armadura clara com capa escura, cabelo escuro preso, sentada no chão, suada"
+ },
+ {
+  "name": "Figura borrada",
+  "look": "corpo escuro borrado em disparada, cabelo escuro, sem rosto visível"
+ },
+ {
+  "name": "Colega de turma",
+  "look": "Grupo de alunos de espadachim atrás de Chen; armaduras claras e escuras; admiram Chen"
+ },
+ {
+  "name": "Rival sorridente",
+  "look": "cabelo escuro bagunçado, cicatriz na testa, sorriso malicioso, capa escura"
+ },
+ {
+  "name": "Monstro escuro",
+  "look": "criatura escura de chifres, garras longas e escudo, em batalha com Chen"
+ },
+ {
+  "name": "Caída de ombro nu",
+  "look": "cabelo escuro, ombro nu, bracelete no braço, caída no chão, boca aberta"
+ },
+ {
+  "name": "Qin Mingfei",
+  "look": "quepe de losango, bigode grosso, sobretudo escuro longo com cinto"
+ },
+ {
+  "name": "Oficial de farda",
+  "look": "boné de oficial, sobretudo escuro, luvas escuras, grita com a boca aberta"
+ },
+ {
+  "name": "Oficial",
+  "look": "uniforme escuro, quepe, bigode grosso, rosto zangado"
+ },
+ {
+  "name": "Figura de capa",
+  "look": "armadura escura, capa escura, cabelo claro curto, de pé no centro"
+ },
+ {
+  "name": "Soldados",
+  "look": "combatentes em armadura, multidão no campo de batalha"
+ },
+ {
+  "name": "Sorridente",
+  "look": "cabelo escuro bagunçado, cicatriz na testa, sorriso malicioso, capa escura com corrente"
+ },
+ {
+  "name": "Colega de asas",
+  "look": "cabelo escuro curto, sorriso, asa escura atrás, luvas de armadura"
+ },
+ {
+  "name": "Corredor",
+  "look": "pernas e pés de sandália correndo pela parede de pedra, manga escura"
+ },
+ {
+  "name": "Cuidadora",
+  "look": "mulher de cabelo escuro preso, blusa marrom, saia escura, sorriso, correndo"
+ },
+ {
+  "name": "Garoto",
+  "look": "cabelo escuro, camiseta cinza rasgada, shorts escuros; fala com Chen"
+ },
+ {
+  "name": "Figura de cabelo branco",
+  "look": "cabelo branco, avental claro, carrega sacolas ao lado de Chen"
+ },
+ {
+  "name": "Diretor",
+  "look": "homem idoso, bigode grisalho, cabelo castanho-acinzentado penteado para trás, rosto marcado, camisa com remendo"
+ },
+ {
+  "name": "Dono da loja",
+  "look": "homem barbudo, avental branco, cabelo castanho, atrás do balcão"
+ },
+ {
+  "name": "Atendente",
+  "look": "de costas, camisa clara, sentado atrás da mesa"
+ },
+ {
+  "name": "Assistente",
+  "look": "cabelo claro, colete escuro, de pé no balcão"
+ },
+ {
+  "name": "Comerciante",
+  "look": "homem barbudo de cabelo castanho, avental, sorridente, dono da loja de espadas"
+ },
+ {
+  "name": "Velho",
+  "look": "velho de bigode, lenço na cabeça, colete marrom, segura espada"
+ },
+ {
+  "name": "Figura de botas",
+  "look": "botas pretas de salto alto, pé em chute, sem rosto visível"
+ },
+ {
+  "name": "Mago de chapéu",
+  "look": "chapéu de aba larga, óculos redondos, capa escura"
+ },
+ {
+  "name": "Jiang Ran",
+  "look": "cabelo preto longo, casaco branco com capuz cropped, shorts pretos, faixa preta na cintura"
+ },
+ {
+  "name": "Wang Yufei",
+  "look": "não aparece nestas páginas; acusado de atacar colegas de equipe"
+ },
+ {
+  "name": "Yang",
+  "look": "Arqueiro que conjura flechas flamejantes, aliado do grupo de Chen"
+ },
+ {
+  "name": "Cavaleiro Negro",
+  "look": "armadura escura, caído no piso de madeira, espada clara ao lado"
+ },
+ {
+  "name": "Criatura de lança",
+  "look": "criatura escura atingida por golpe, lança longa, ao fundo"
+ },
+ {
+  "name": "Goblin",
+  "look": "pequeno, pele verde, orelhas pontudas, dentes à mostra, armadura de faixa na testa"
+ },
+ {
+  "name": "Goblins",
+  "look": "criaturas pequenas com armas, afundando na areia movediça"
+ },
+ {
+  "name": "Chefe goblin",
+  "look": "Goblin musculoso de nível 10, chifres, colar de caveira, empunha lâmina enorme"
+ },
+ {
+  "name": "Criatura musculosa",
+  "look": "criatura de corpo musculoso, orelhas pontudas, presas, empunha espada grande"
+ },
+ {
+  "name": "Ogro",
+  "look": "criatura chifruda de rosto grotesco, presas, caveira no cinto, barra Lv10"
+ },
+ {
+  "name": "Guerreiro peitoral",
+  "look": "armadura escura com peitoral trabalhado e ombreiras, lâmina brilhante"
+ },
+ {
+  "name": "Guerreira de cabelo escuro solto",
+  "look": "armadura prateada, cabelo escuro longo solto, escudo e espada, expressão séria"
+ },
+ {
+  "name": "Demônio Lv10",
+  "look": "demônio escuro em chamas, garras longas, chifres, barra Lv10, empunha lâmina"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "figura de manto escuro, crânio chifrudo no peito, rosto oculto"
+ },
+ {
+  "name": "Wei",
+  "look": "sacerdote que ergue cajado brilhante e invoca bênçãos do deus da guerra"
+ },
+ {
+  "name": "Yufei",
+  "look": "Colega que acha o vídeo de Chen falso; indignado com o novato"
+ },
+ {
+  "name": "Loiro",
+  "look": "cabelo claro penteado para trás, sobretudo escuro, colar com pingente"
+ },
+ {
+  "name": "Liu Yang",
+  "look": "citado nas falas como melhor aluno da 7ª escola; não aparece nestas páginas"
+ },
+ {
+  "name": "Figura de manto",
+  "look": "manto escuro com cinto de gema, perna em armadura clara"
+ },
+ {
+  "name": "Loiro de capa",
+  "look": "cabelo claro curto, armadura escura com capa escura, carrancudo"
+ },
+ {
+  "name": "Mago do cajado",
+  "look": "chapéu pontudo com chifres, sobretudo escuro, segura cajado, de costas"
+ },
+ {
+  "name": "Guerreiro de ombreiras chifradas",
+  "look": "cabelo claro curto, capa escura, ombreiras com chifres"
+ },
+ {
+  "name": "Aluno de cabelo castanho",
+  "look": "cabelo castanho curto, rosto surpreso, olhar atento para a espada"
+ },
+ {
+  "name": "Dono do cajado",
+  "look": "mão erguendo cajado com cristal brilhante, manga clara, fora do quadro"
+ },
+ {
+  "name": "Guerreiro do rifle",
+  "look": "cabelo escuro curto, armadura escura, segura rifle"
+ },
+ {
+  "name": "Encapuzadas",
+  "look": "três figuras femininas de manto ou vestido escuro com capuz, fendas laterais no vestido"
+ },
+ {
+  "name": "Cabelo Claro",
+  "look": "cabelo claro, sobretudo escuro comprido, de pé ao lado de Jiang"
+ },
+ {
+  "name": "Criatura escura",
+  "look": "figura escura espinhosa, aparece ao lado do protagonista no salto"
+ },
+ {
+  "name": "Guerreira prateada",
+  "look": "armadura prateada, cabelo escuro longo solto, escudo e espada"
+ },
+ {
+  "name": "Guerreira de cabelo longo",
+  "look": "cabelo escuro longo solto, armadura clara com emblema branco"
+ },
+ {
+  "name": "Figura encapuzada",
+  "look": "capa escura com capuz, de pé, visto de longe"
+ },
+ {
+  "name": "Guerreiro de cajado",
+  "look": "segura cajado com brilho, capa escura, ao lado do mago"
+ },
+ {
+  "name": "Silhuetas femininas",
+  "look": "silhuetas femininas borradas, sem rosto visível, sobre chão rachado"
+ },
+ {
+  "name": "Freira caída",
+  "look": "freira de capuz, máscara com dentes, cruz no peito, barra Lv7"
+ },
+ {
+  "name": "Guerreiro corredor",
+  "look": "figura pequena de armadura clara, corre sob luz branca na cratera"
+ },
+ {
+  "name": "Guerreira sombria",
+  "look": "cabelo escuro longo solto, armadura escura, salta com espada"
+ },
+ {
+  "name": "Guerreira de cabelo solto",
+  "look": "armadura clara, cabelo escuro longo solto, espada na mão, cai no chão"
+ },
+ {
+  "name": "Encapuzada de venda",
+  "look": "capuz escuro, venda cobrindo os olhos, vestido escuro, avança de lado"
+ },
+ {
+  "name": "Encapuzada",
+  "look": "mulher de manto escuro com capuz, boca aberta, cabelo escuro, caída no chão"
+ },
+ {
+  "name": "Monstra encapuzada",
+  "look": "capuz escuro, rosto de caveira com presas, decote, corpo feminino"
+ },
+ {
+  "name": "Guerreira de cabelo escuro",
+  "look": "cabelo escuro comprido, armadura clara, espada, de pé no grupo"
+ },
+ {
+  "name": "Lutador de armadura escura",
+  "look": "armadura escura com peitoral e cinto, capa escura"
+ },
+ {
+  "name": "Criatura mascarada",
+  "look": "rosto pálido com faixa, boca aberta com dentes afiados, cabelo escuro, capa escura"
+ },
+ {
+  "name": "Curandeiro",
+  "look": "cabelo castanho, casaco escuro, segura cajado com orbe brilhante"
+ },
+ {
+  "name": "Guerreiro do escudo",
+  "look": "armadura escura, elmo, escudo grande, espada longa"
+ },
+ {
+  "name": "Mago demônio",
+  "look": "figura escura de chifres com cajado de orbe, em catedral em ruínas"
+ },
+ {
+  "name": "Figura de moletom",
+  "look": "moletom claro com capuz, cabelo escuro, rosto suado, ao fundo"
+ },
+ {
+  "name": "Figura de túnica",
+  "look": "túnica clara, cabelo claro, visto de cima, em movimento"
+ },
+ {
+  "name": "Figura de sobretudo",
+  "look": "sobretudo escuro comprido, cabelo escuro, visto de cima"
+ },
+ {
+  "name": "Guerreiro de cabelo claro",
+  "look": "cabelo claro espetado, cabeça baixa, grita pedindo desculpas"
+ },
+ {
+  "name": "Figura de cabelo escuro",
+  "look": "cabelo escuro, lâmina curva clara, corre pela catedral"
+ },
+ {
+  "name": "Guerreira da espada",
+  "look": "cabelo escuro longo solto, armadura clara, salta com espada"
+ },
+ {
+  "name": "Ferido",
+  "look": "cabelo escuro, rosto ensanguentado, suado, tosse (identidade ambígua)"
+ },
+ {
+  "name": "Guerreira do escudo",
+  "look": "cabelo escuro longo solto, armadura prateada, escudo e espada, expressão séria"
+ },
+ {
+  "name": "Guerreiro do peitoral",
+  "look": "cabelo escuro curto, armadura escura de peitoral trabalhado, grita"
+ },
+ {
+  "name": "Senhor Demônio",
+  "look": "elmo espinhado com chifres, olhos brancos brilhantes, garras e armadura escura"
+ },
+ {
+  "name": "Guerreira da Luz",
+  "look": "cabelo escuro longo solto, armadura escura, empunha lança de luz sagrada"
+ },
+ {
+  "name": "Criatura Elmo",
+  "look": "criatura escura de elmo e armadura chifrudos, machado grande, olhos brilhantes"
+ },
+ {
+  "name": "Figura de grampo",
+  "look": "cabelo escuro com grampo branco, rosto baixo, parte inferior do quadro"
+ },
+ {
+  "name": "Demônio de armadura",
+  "look": "criatura de elmo e armadura escura com chifres e espinhos, olhos brilhantes"
+ },
+ {
+  "name": "Criatura chifruda de elmo",
+  "look": "criatura escura de elmo e armadura chifrudos, placas, olhos brilhantes"
+ },
+ {
+  "name": "Criatura espinhosa",
+  "look": "armadura clara espinhada, elmo com chifres, lâmina enorme"
+ },
+ {
+  "name": "Guerreiro de lâmina",
+  "look": "armadura escura com lâmina enorme e curva"
+ },
+ {
+  "name": "Figura fora do quadro",
+  "look": "invisível; só balão e lança de luz aparecem"
+ },
+ {
+  "name": "Lorde armadurado",
+  "look": "elmo chifrudo com espinhos, armadura escura, capa escura"
+ },
+ {
+  "name": "Figura saltadora",
+  "look": "figura de capa escura saltando, braço estendido"
+ },
+ {
+  "name": "Subalterno",
+  "look": "figura de manto com chifres, envolta em chamas, braço estendido"
+ },
+ {
+  "name": "Lorde Caído",
+  "look": "armadura escura com elmo chifrudo rachado, caído no chão"
+ },
+ {
+  "name": "Elmo Chifrudo",
+  "look": "armadura escura de elmo com chifres, grita, avança"
+ },
+ {
+  "name": "Criatura de cinco olhos",
+  "look": "criatura escura de vários olhos pálidos e boca cheia de dentes"
+ },
+ {
+  "name": "Gritador",
+  "look": "cabelo escuro curto, armadura escura com ombreiras, boca aberta gritando"
+ },
+ {
+  "name": "Chapeleiro",
+  "look": "chapéu de aba larga, capa escura, puxa o Gritador"
+ },
+ {
+  "name": "Cajado",
+  "look": "cabelo escuro comprido, segura cajado, à esquerda do quadro"
+ },
+ {
+  "name": "Sasha",
+  "look": "Mencionada como seguidora de Meridia, chamou Chen de lacaio"
+ },
+ {
+  "name": "Guerreira de franja",
+  "look": "franja, cabelo escuro comprido, armadura clara de gola alta"
+ },
+ {
+  "name": "Mago do círculo",
+  "look": "manto escuro, círculo mágico brilhante, segura cajado"
+ },
+ {
+  "name": "Espadachim",
+  "look": "cabelo escuro, armadura clara, salta com espada de lâmina clara"
+ },
+ {
+  "name": "Grupo de manto",
+  "look": "três figuras de manto escuro caminhando por piso rachado"
+ },
+ {
+  "name": "Guerreira de cabelo curto",
+  "look": "cabelo escuro curto, roupa escura, empunha espada brilhante"
+ },
+ {
+  "name": "Figura de auréola",
+  "look": "cabelo escuro, auréola acima da cabeça, bebe de garrafa, luvas de armadura"
+ },
+ {
+  "name": "Demônio de asas",
+  "look": "figura escura de asas espinhosas e garras, em queda"
+ },
+ {
+  "name": "Guerreira de costas",
+  "look": "cabelo escuro solto, ombreiras com espinhos, capa escura, visto de costas"
+ },
+ {
+  "name": "Demônio",
+  "look": "criatura escura de chifres e garras, em chamas, nível 20 em masmorra nível 10"
+ },
+ {
+  "name": "Mago do chapéu",
+  "look": "chapéu de aba larga, gravata, capa escura, sorriso fechado"
+ },
+ {
+  "name": "Escudeira",
+  "look": "armadura prateada, cabelo escuro longo solto, escudo redondo e espada"
+ },
+ {
+  "name": "Guerreira Prata",
+  "look": "armadura prateada, cabelo escuro longo solto, empunha espada"
+ },
+ {
+  "name": "Bebedor",
+  "look": "cabelo escuro, rosto suado, bebe de garrafa, luvas de armadura"
+ },
+ {
+  "name": "Silhueta escura",
+  "look": "silhueta escura borrada, sem traços visíveis"
+ },
+ {
+  "name": "Guerreira atingida",
+  "look": "cabelo longo, rosto ensanguentado, olhos fechados, lâmina curva por baixo"
+ },
+ {
+  "name": "Criatura escavadora",
+  "look": "criatura de garras longas saindo de buraco no chão"
+ },
+ {
+  "name": "Armadurado",
+  "look": "armadura escura com elmo chifrudo, espinhos, lâmina; identidade ambígua"
+ },
+ {
+  "name": "Anjo",
+  "look": "ser celestial de armadura clara ornamentada, luz branca, desfazendo-se em partículas"
+ },
+ {
+  "name": "Meridia",
+  "look": "citada como Lady Meridia; não aparece nestas páginas"
+ },
+ {
+  "name": "Vilão de cabelo claro",
+  "look": "cabelo claro penteado para trás, sobretudo escuro de gola alta com capa, sorriso de dentes à mostra"
+ },
+ {
+  "name": "Guerreira de armadura clara",
+  "look": "armadura clara, cabelo escuro longo, empunha espada"
+ },
+ {
+  "name": "Reign",
+  "look": "anjo alado que empunha espada de luz e concede bênçãos"
+ },
+ {
+  "name": "Guerreira Central",
+  "look": "armadura clara, cabelo escuro longo, agachada no chão rachado"
+ },
+ {
+  "name": "Guerreira da Franja",
+  "look": "franja, cabelo escuro comprido, gola alta clara, auréola acima da cabeça"
+ },
+ {
+  "name": "Sacerdote",
+  "look": "cabelo castanho, gola preta com cruz, cajado, sorridente, mão com luz"
+ },
+ {
+  "name": "Guerreiro do Manto",
+  "look": "manto escuro, de lado à esquerda, mão com luz branca"
+ },
+ {
+  "name": "Demônio chifrudo",
+  "look": "criatura escura de chifres e olhos brilhantes, armadura escura"
+ },
+ {
+  "name": "Loiro do colar",
+  "look": "cabelo castanho claro bagunçado, sobretudo escuro, colar com pingente, rosto suado"
+ },
+ {
+  "name": "Figura machucada",
+  "look": "rosto pálido e machucado, de perfil, sem nome visível"
+ },
+ {
+  "name": "Falante fora do quadro",
+  "look": "invisível; só o balão aparece"
+ },
+ {
+  "name": "Jiang",
+  "look": "Filha do prefeito de F City, guerreira forte, coordena combate com Chen"
+ },
+ {
+  "name": "Guerreira de prata",
+  "look": "armadura prateada, cabelo escuro longo solto, de pé no escritório"
+ },
+ {
+  "name": "Prefeito",
+  "look": "cabelo loiro penteado para trás, terno escuro, gravata"
+ },
+ {
+  "name": "Guerreira da mesa",
+  "look": "cabelo escuro longo, armadura escura com tiras, debruçada sobre a mesa"
+ },
+ {
+  "name": "Mago de sobretudo",
+  "look": "sobretudo escuro, cabelo escuro, segura cajado com brilho"
+ },
+ {
+  "name": "Relatora",
+  "look": "cabelo castanho preso em coque ou rabo, terno escuro, segura pasta"
+ },
+ {
+  "name": "Rayne",
+  "look": "Mencionada como seguidora de Meridia, mandou lembranças à deusa"
+ },
+ {
+  "name": "Pai",
+  "look": "homem de terno, cabelo castanho penteado para trás, gravata escura"
+ },
+ {
+  "name": "Deitado",
+  "look": "cabelo escuro, roupa escura, deitado sobre pedras à noite"
+ },
+ {
+  "name": "Filha",
+  "look": "cabelo escuro longo solto, armadura com ombreiras, clara ou escura conforme a cena"
+ },
+ {
+  "name": "Subordinado",
+  "look": "homem de terno, cabelo preso em rabo de cavalo, de pé"
+ },
+ {
+  "name": "Joo-heon",
+  "look": "cabelo escuro, suado, tosse, fala prática"
+ },
+ {
+  "name": "Figura sentada",
+  "look": "homem pequeno sentado numa pedra, Desfiladeiro Wilderness"
+ },
+ {
+  "name": "Criatura gigante",
+  "look": "massa escura enorme de garras e chifres, avança sobre Chen"
+ },
+ {
+  "name": "Figura voando",
+  "look": "corpo escuro arremessado pela explosão, canto superior direito"
+ },
+ {
+  "name": "Pengfei",
+  "look": "Guerreiro de escudo e espada, aliado que avança com Ke na rocha"
+ },
+ {
+  "name": "Ke",
+  "look": "Mago de chapéu largo e cajado, conjura Multi Fireball em sequência"
+ },
+ {
+  "name": "Figura rachada",
+  "look": "corpo partido em cristais, cabelo claro espetado, rosto aberto"
+ },
+ {
+  "name": "Figura de bota escura",
+  "look": "bota escura pesada pisando chão rachado; só o pé aparece"
+ },
+ {
+  "name": "Guerreiro da gola",
+  "look": "cabelo castanho curto, gola alta escura, grita de braço erguido"
+ },
+ {
+  "name": "Guerreiro de cabelo escuro espetado",
+  "look": "cabelo escuro espetado, armadura clara, boca aberta"
+ },
+ {
+  "name": "Ogro chefe",
+  "look": "criatura enorme de chifres, boca aberta rugindo, empunha arma, à frente do bando"
+ },
+ {
+  "name": "Guerreiro Gritador",
+  "look": "cabelo escuro curto, armadura escura com ombreiras, boca aberta gritando"
+ },
+ {
+  "name": "Guerreiro da Lâmina",
+  "look": "armadura escura, figura alta, lâmina longa e curva"
+ },
+ {
+  "name": "Criatura Ferida",
+  "look": "criatura escura de garras longas, atingida por golpes, gritando"
+ },
+ {
+  "name": "criatura de tapa-olho",
+  "look": "criatura com tapa-olho, presas enormes, cabeça com espinhos, rosnando"
+ },
+ {
+  "name": "combatentes ao fundo",
+  "look": "soldados pequenos em terreno chuvoso, explosões brancas ao redor"
+ },
+ {
+  "name": "Guardião",
+  "look": "cabelo escuro, armadura escura de gola alta com ornamento dourado, sério, segura poção de mana"
+ },
+ {
+  "name": "Figura de armadura escura",
+  "look": "armadura escura com bracelete, cabelo escuro, segura orbe ou caixa"
+ },
+ {
+  "name": "Figura do primeiro plano",
+  "look": "cabelo escuro, rosto aberto gritando, primeiro plano à esquerda"
+ },
+ {
+  "name": "Figura da explosão",
+  "look": "figura de costas, capa escura, em meio à explosão branca"
+ },
+ {
+  "name": "Figura de chapéu",
+  "look": "chapéu de aba larga, capa escura, pequena, ao centro"
+ },
+ {
+  "name": "Guerreiro do ombro",
+  "look": "cabelo escuro curto, armadura escura com ombreiras, lâmina ou espada apoiada no ombro"
+ },
+ {
+  "name": "Guerreiro de elmo",
+  "look": "armadura escura com elmo, empunha lâmina curva, golpeia em alta velocidade"
+ },
+ {
+  "name": "Espadachim de sobretudo",
+  "look": "sobretudo escuro com ombros blindados, espada de lâmina brilhante"
+ },
+ {
+  "name": "Ancião",
+  "look": "careca, trança longa no queixo, manto escuro, de perfil olhando para cima"
+ },
+ {
+  "name": "Criatura barbuda",
+  "look": "figura de manto esfarrapado, barba branca longa, cajado, rosto rugindo"
+ },
+ {
+  "name": "Ancião calvo",
+  "look": "cabeça calva, barba branca longa, manto escuro rasgado, cajado em algumas cenas"
+ },
+ {
+  "name": "Criatura hexagonal",
+  "look": "criatura escura de placas hexagonais, garras longas, envolta em chamas"
+ },
+ {
+  "name": "Javali",
+  "look": "javali de presas enormes, pelagem escura, caído no chão"
+ },
+ {
+  "name": "Criatura clara",
+  "look": "armadura clara espinhada, elmo com chifres, lâmina enorme"
+ },
+ {
+  "name": "Porco-javali",
+  "look": "porco peludo de chifres pequenos, listras no lombo, boca aberta grunhindo"
+ },
+ {
+  "name": "Cavaleiro",
+  "look": "cavaleiro de roupa escura montado em cavalo claro, no alto do penhasco"
+ },
+ {
+  "name": "Goblin de faixa",
+  "look": "goblin armadurado de faixa na testa, orelhas pontudas, barra Lv15"
+ },
+ {
+  "name": "Cavaleiro-lobo",
+  "look": "figura com espada montada em lobo branco de presas enormes, barra Lv10"
+ },
+ {
+  "name": "Óculos",
+  "look": "cabelo escuro curto, óculos, armadura escura com ombreiras, grita"
+ },
+ {
+  "name": "Guerreiros de armadura",
+  "look": "armadura escura de placas, pernas vistas de baixo"
+ },
+ {
+  "name": "Guerreiro Espetado",
+  "look": "cabelo escuro espetado, rosto suado, armadura escura, fala ao lado de Chen"
+ },
+ {
+  "name": "Criatura de cabelo espetado",
+  "look": "criatura de cabelo escuro espetado, chifres pálidos na testa, sorriso feroz"
+ },
+ {
+  "name": "Criatura arremessada",
+  "look": "corpo escuro arremessado pela explosão, sem rosto visível"
+ },
+ {
+  "name": "Inimigo de cabelo escuro",
+  "look": "cabelo escuro espetado, atingido por golpes de Chen, cai em destroços"
+ },
+ {
+  "name": "Lobo",
+  "look": "pelagem branca, cauda longa e felpuda, corre de costas uivando"
+ },
+ {
+  "name": "Aranha",
+  "look": "aranha escura gigante de muitas patas, carapaça com chifres, barra Lv20"
+ },
+ {
+  "name": "Barbudo",
+  "look": "figura de barba longa, manto esfarrapado, rosto rugindo, olhos brilhantes, cajado"
+ },
+ {
+  "name": "Criatura de presas",
+  "look": "criatura de presas enormes, saltando atrás do ancião"
+ },
+ {
+  "name": "Guerreiros de escudo",
+  "look": "soldados de elmo e escudo redondo, em grupo ao redor de Chen"
+ },
+ {
+  "name": "Criatura da explosão",
+  "look": "criatura escura de chifres e garras, gritando na explosão de fogo"
+ },
+ {
+  "name": "Guerreiro de braço erguido",
+  "look": "guerreiro escuro de braço erguido, cabelo curto, grita"
+ },
+ {
+  "name": "Criatura voadora",
+  "look": "criatura escura de chifres, voa para cima ao lado de Chen"
+ },
+ {
+  "name": "Guerreiro do manto claro",
+  "look": "armadura clara, manto ou capa clara, de costas, correndo"
+ },
+ {
+  "name": "Beastman perseguidor",
+  "look": "cabelo branco, orelhas de animal, ombreiras, adaga na mão"
+ },
+ {
+  "name": "Criatura espinhada",
+  "look": "armadura clara espinhada, elmo com chifres, lâmina enorme, à esquerda"
+ },
+ {
+  "name": "Figura de bico",
+  "look": "máscara de bico, capuz escuro, recebe golpe no braço"
+ },
+ {
+  "name": "Ancião barbudo",
+  "look": "careca, barba branca longa, manto esfarrapado, rosto rugindo"
+ },
+ {
+  "name": "Xamã",
+  "look": "cabelo em chamas, olhos brilhantes, empunha bastão, dentes afiados"
+ },
+ {
+  "name": "Aranha gigante",
+  "look": "aranha escura de muitas patas longas, corpo redondo com pintas"
+ },
+ {
+  "name": "Companheiro",
+  "look": "cabelo escuro, rosto aberto, correndo ao fundo, armadura escura"
+ },
+ {
+  "name": "Criaturas da horda",
+  "look": "criaturas pálidas em bando, chifres e presas, empunhando lanças"
+ },
+ {
+  "name": "Inimigo de cabelo claro",
+  "look": "cabelo claro espetado, rosto contraído, voa atingido por golpe de Chen"
+ },
+ {
+  "name": "Figura arremessada",
+  "look": "armadura escura, sem rosto visível, arremessada no ar sobre a cratera"
+ },
+ {
+  "name": "Goblin-chefe",
+  "look": "goblin de orelhas pontudas, chifres, colar de caveiras, capa escura, Lv23, dentes à mostra"
+ },
+ {
+  "name": "Criatura de elmo",
+  "look": "criatura escura de elmo e armadura chifrudos, olhos brilhantes, em close"
+ },
+ {
+  "name": "Figura gritando",
+  "look": "figura escura em queda, cabelo escuro, boca aberta gritando"
+ },
+ {
+  "name": "Criatura calva",
+  "look": "criatura calva de presas enormes, boca aberta rugindo"
+ },
+ {
+  "name": "Criatura uivante",
+  "look": "criatura de chifres e presas, uiva com boca aberta"
+ },
+ {
+  "name": "Gigante",
+  "look": "criatura escura enorme, pés descalços de dedos largos, pisa o chão"
+ },
+ {
+  "name": "Criatura da batalha",
+  "look": "criatura escura atingida por cortes de espada em sequência, entre estilhaços e chamas"
+ },
+ {
+  "name": "Criatura lanceira",
+  "look": "criatura escura de elmo chifrudo, empunha lança longa, ao lado de Chen no ar"
+ },
+ {
+  "name": "Demônio em chamas",
+  "look": "demônio escuro de chifres e garras, envolto em chamas, barra Lv10"
+ },
+ {
+  "name": "Monstro de presas",
+  "look": "rosto de presas enormes, chifres, olho rachado, capa escura"
+ },
+ {
+  "name": "Comandante espinhado",
+  "look": "armadura clara espinhada, elmo com chifres, lâmina enorme"
+ },
+ {
+  "name": "Figura tracejada",
+  "look": "silhueta com contorno pontilhado sob lâmina, cena ambígua"
+ },
+ {
+  "name": "Figura em queda",
+  "look": "figura escura em queda, cabelo escuro, boca aberta gritando"
+ },
+ {
+  "name": "Exército ao fundo",
+  "look": "massa de combatentes armados em fila no topo do desfiladeiro"
+ },
+ {
+  "name": "Espetado",
+  "look": "cabelo escuro espetado, armadura escura, rosto suado, ao lado de Chen"
+ },
+ {
+  "name": "Criatura elétrica",
+  "look": "criatura escura de ombro blindado envolta em raios brancos"
+ },
+ {
+  "name": "Vulto gritando",
+  "look": "rosto pálido e machucado, boca aberta gritando, em destroços"
+ },
+ {
+  "name": "Criatura da clava",
+  "look": "criatura de chifres, empunha clava enorme, à esquerda"
+ },
+ {
+  "name": "Criatura alada",
+  "look": "criatura escura de chifres e patas longas, sobre rochedo"
+ },
+ {
+  "name": "Maga",
+  "look": "chapéu de bruxa escuro e capa, segura frascos de poção, cabelo escuro preso"
+ },
+ {
+  "name": "Qin",
+  "look": "boné escuro, bigode fino, sobretudo escuro, segura carta lacrada"
+ },
+ {
+  "name": "Oficial de bigode",
+  "look": "boné com emblema, bigode fino, sobretudo escuro, gravata"
+ },
+ {
+  "name": "Locke",
+  "look": "líder orc da vanguarda, alvo número um, não aparece nestas páginas"
+ },
+ {
+  "name": "Grandalhão",
+  "look": "homem musculoso, cabelo escuro espetado, armadura escura com capa clara, sorriso largo"
+ },
+ {
+  "name": "Oficial de quepe",
+  "look": "homem de quepe, bigode, sobretudo escuro, gravata, sorriso largo, faz joinha"
+ },
+ {
+  "name": "Espada vampírica",
+  "look": "espada longa de lâmina escura, cabo com chamas, fala sozinha"
+ },
+ {
+  "name": "Dono da oficina",
+  "look": "cabelo branco espetado, faixa na testa, bigode, cachimbo, suspensórios"
+ },
+ {
+  "name": "Ferreiro",
+  "look": "idoso de cabelo branco espetado, barba branca, avental e braços grossos, na oficina"
+ },
+ {
+  "name": "Yuyan",
+  "look": "colega de turma, aluno de combate corpo a corpo, defende Chen"
+ },
+ {
+  "name": "Yuan",
+  "look": "aluno Rank C, debochado, zomba de Chen"
+ },
+ {
+  "name": "Zhen",
+  "look": "aluno Rank A, observa Yuan em silêncio"
+ },
+ {
+  "name": "Zheng",
+  "look": "aluno Rank A, morre na troca de classe fracassada"
+ },
+ {
+  "name": "Zhang",
+  "look": "aluno, morre na troca de classe fracassada"
+ },
+ {
+  "name": "Ben",
+  "look": "aluno Rank A, na fila do exame"
+ },
+ {
+  "name": "Shiming",
+  "look": "aluno Rank B, na fila do exame"
+ },
+ {
+  "name": "Tiantian",
+  "look": "aluno Rank B, na fila do exame"
+ },
+ {
+  "name": "Hu",
+  "look": "Instrutor de combate prático, Espadachim Berserker, armadura, espada grande, capa escura"
+ },
+ {
+  "name": "Caída",
+  "look": "Personagem no chão, boca aberta, olhando para cima, em destroços"
+ },
+ {
+  "name": "Mingfei",
+  "look": "sargento-mor de bigode, quepe, sobretudo escuro; impressionado com Chen e pede treinamento especial"
+ },
+ {
+  "name": "Wang",
+  "look": "Riquinho do esquadrão que quer inserir o primo para ganhar EXP"
+ },
+ {
+  "name": "Mago",
+  "look": "cajado brilhante, capa escura, fala animada"
+ },
+ {
+  "name": "Lutador",
+  "look": "observa em silêncio, postura firme"
+ },
+ {
+  "name": "Guerreiro",
+  "look": "cabelo escuro curto, armadura escura, lâmina no ombro"
+ },
+ {
+  "name": "Seo Joo-heon",
+  "look": "Armadura escura, espada, rosto suado e sério; líder do grupo que comanda Chen e Ke"
+ },
+ {
+  "name": "Criatura Espetada",
+  "look": "criatura de cabelo claro espetado, boca aberta gritando, pele escura; cai no chão"
+ },
+ {
+  "name": "Guerreiro de cabelo castanho",
+  "look": "cabelo castanho, armadura escura, rosto suado, olhos fechados"
+ }
+]

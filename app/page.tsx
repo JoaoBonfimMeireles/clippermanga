@@ -49,6 +49,17 @@ export default function Home() {
       clearTimeout(t);
     };
   }, []);
+  // filtro da lista: todos | não publicados | etapa 1..4 (próximo passo a fazer) | finalizados (os 4 passos prontos)
+  const [filter, setFilter] = useState('all');
+  useEffect(() => { try { setFilter(localStorage.getItem('home-filter') || 'all'); } catch {} }, []);
+  const pickFilter = (f: string) => { setFilter(f); try { localStorage.setItem('home-filter', f); } catch {} };
+  const passes = (p: ProjectSummary) => filter === 'all' || (filter === 'unpublished' ? !p.publishedAt : filter === 'done' ? p.steps >= 4 : p.steps < 4 && p.steps + 1 === Number(filter));
+  // filtro por data da última edição: qualquer | hoje | ontem | 7 dias | 30 dias
+  const [when_, setWhen] = useState('any');
+  useEffect(() => { try { setWhen(localStorage.getItem('home-when') || 'any'); } catch {} }, []);
+  const pickWhen = (f: string) => { setWhen(f); try { localStorage.setItem('home-when', f); } catch {} };
+  const daysAgo = (iso: string) => Math.round((startOfDay(new Date()) - startOfDay(new Date(iso))) / DAY);
+  const inWhen = (p: ProjectSummary) => when_ === 'any' || (when_ === 'today' ? daysAgo(p.updatedAt) <= 0 : when_ === 'yesterday' ? daysAgo(p.updatedAt) === 1 : daysAgo(p.updatedAt) <= Number(when_));
   const [busy, setBusy] = useState('');
   const [sel, setSel] = useState<Set<string>>(new Set()); // partes marcadas para juntar num vídeo completo
   const toggleSel = (id: string) => setSel((c) => { const n = new Set(c); if (n.has(id)) n.delete(id); else n.add(id); return n; });
@@ -139,15 +150,17 @@ Apaga tudo deste projeto do computador: páginas, vídeos, narração, progresso
   const groups = (() => {
     const m = new Map<string, { key: string; name: string; items: ProjectSummary[] }>();
     for (const o of obras) m.set(o.key, { key: o.key, name: o.name, items: [] });
-    for (const p of list ?? []) {
+    for (const p of (list ?? []).filter((p) => passes(p) && inWhen(p))) {
       const g = m.get(p.seriesKey) ?? { key: p.seriesKey, name: p.seriesName, items: [] };
       g.items.push(p);
       m.set(p.seriesKey, g);
     }
     const when = (g: { items: ProjectSummary[] }) => g.items.map((x) => x.publishedAt).filter(Boolean).sort().at(-1) ?? null;
-    for (const g of m.values()) g.items.sort((a, b) => a.part - b.part || a.updatedAt.localeCompare(b.updatedAt));
-    // mais perto de completar 7 dias (ou já passou) no topo; sem data por último
-    return [...m.values()].sort((a, b) => {
+    for (const g of m.values()) g.items.sort((a, b) => a.steps - b.steps || a.part - b.part || a.updatedAt.localeCompare(b.updatedAt)); // quem tem mais passos faltando fica no topo
+    // obras com mais passos faltando no topo (pelo item mais atrasado); empate: mais perto de completar 7 dias da publicação; sem data por último
+    const least = (g: { items: ProjectSummary[] }) => Math.min(4, ...g.items.map((x) => x.steps));
+    return [...m.values()].filter((g) => (filter === 'all' && when_ === 'any') || g.items.length).sort((a, b) => {
+      if (least(a) !== least(b)) return least(a) - least(b);
       const x = when(a);
       const y = when(b);
       return x && y ? x.localeCompare(y) : x ? -1 : y ? 1 : 0;
@@ -163,6 +176,22 @@ Apaga tudo deste projeto do computador: páginas, vídeos, narração, progresso
         <button className="btn shrink-0" onClick={createObra} title="Cria uma obra (série) no painel; as partes dela ficam agrupadas embaixo">
           Criar obra
         </button>
+      </div>
+      <div className="flex flex-wrap items-center gap-2 text-sm">
+        <span className="text-muted-foreground">Mostrar:</span>
+        {([['all', 'Todos'], ['unpublished', 'Todos menos os já publicados'], ['1', 'Etapa 1'], ['2', 'Etapa 2'], ['3', 'Etapa 3'], ['4', 'Etapa 4'], ['done', '✓ Finalizados']] as const).map(([k, label]) => (
+          <button key={k} className={filter === k ? 'btn-primary px-2 py-0.5' : 'btn px-2 py-0.5'} onClick={() => pickFilter(k)}>
+            {label}
+          </button>
+        ))}
+      </div>
+      <div className="flex flex-wrap items-center gap-2 text-sm">
+        <span className="text-muted-foreground">Última edição:</span>
+        {([['any', 'Qualquer data'], ['today', 'Hoje'], ['yesterday', 'Ontem'], ['7', 'Últimos 7 dias'], ['30', 'Últimos 30 dias']] as const).map(([k, label]) => (
+          <button key={k} className={when_ === k ? 'btn-primary px-2 py-0.5' : 'btn px-2 py-0.5'} onClick={() => pickWhen(k)}>
+            {label}
+          </button>
+        ))}
       </div>
       {list === null && <p className="p-3 text-sm text-muted-foreground">Carregando…</p>}
       {list?.length === 0 && !obras.length && <p className="p-3 text-sm text-muted-foreground">Nenhum projeto ainda.</p>}
@@ -208,12 +237,14 @@ Apaga tudo deste projeto do computador: páginas, vídeos, narração, progresso
               title={p.publishedAt ? 'Publiquei um vídeo novo hoje (reinicia os 7 dias)' : 'Marcar como publicado hoje'}
               onChange={() => setPublished(p)}
             />
+            <span className={`ml-3 flex size-6 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white ${p.steps >= 4 ? 'bg-green-600' : 'bg-blue-600'}`} title={p.steps >= 4 ? 'Todas as etapas prontas' : `Etapa ${p.steps + 1} de 4 (${p.steps} pronta${p.steps === 1 ? '' : 's'})`}>{p.steps >= 4 ? '✓' : p.steps + 1}</span>
             <Link href={`/p/${p.id}`} className="flex min-w-0 flex-1 items-center justify-between gap-3 p-3 hover:bg-muted">
               <span className="min-w-0">
                 <span className="block truncate">{p.title}</span>
                 <span className={`block truncate text-xs ${p.ytTitle ? 'text-muted-foreground' : 'text-muted-foreground/60'}`} title="Nome no YouTube">
                   {p.ytTitle || 'Sem título do YouTube ainda'}
                 </span>
+                <span className="block truncate text-xs text-muted-foreground" title={new Date(p.updatedAt).toLocaleString('pt-BR')}>Última edição: {daysAgo(p.updatedAt) <= 0 ? 'hoje' : daysAgo(p.updatedAt) === 1 ? 'ontem' : `${new Date(p.updatedAt).toLocaleDateString('pt-BR')} (há ${daysAgo(p.updatedAt)} dias)`} às {new Date(p.updatedAt).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}</span>
                 {p.publishedAt && <PublishedInfo at={p.publishedAt} />}
                 {p.job && (
                   <span className="mt-0.5 flex items-center gap-2 text-xs text-sky-400">

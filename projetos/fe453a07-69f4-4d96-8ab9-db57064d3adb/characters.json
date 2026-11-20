@@ -1,0 +1,1966 @@
+[
+ {
+  "name": "Criatura de crânio alada",
+  "look": "crânio com chifres, asas de osso e membrana brancas"
+ },
+ {
+  "name": "Figura sombria chifruda",
+  "look": "manto escuro, chifres curvos, de costas, lado direito"
+ },
+ {
+  "name": "Demoninho alado",
+  "look": "pequeno, asas de morcego, garras"
+ },
+ {
+  "name": "Cavaleiro de elmo",
+  "look": "armadura prateada com elmo ornamentado, borrado em alta velocidade"
+ },
+ {
+  "name": "Guerreiro de cabeça em chamas",
+  "look": "cabeça flamejante, olhos brilhantes, armadura escura"
+ },
+ {
+  "name": "Criatura chifruda de crina branca",
+  "look": "crina branca, chifres, focinho com dentes"
+ },
+ {
+  "name": "Criatura musculosa",
+  "look": "corpo musculoso de costas, chifres curvos, presas"
+ },
+ {
+  "name": "Cavaleiro de armadura",
+  "look": "armadura prateada, espada erguida, capa escura, lutando contra monstros"
+ },
+ {
+  "name": "Zhou Yi",
+  "look": "protagonista, Cavaleiro Sagrado com Proteção do Anjo Sagrado; ataca com luz branca"
+ },
+ {
+  "name": "Mago instrutor",
+  "look": "cabelo castanho repartido sobre um olho, brinco, casaco com gola, cajado, Nível 24"
+ },
+ {
+  "name": "Figura de capa escura",
+  "look": "capa escura comprida, braços erguidos em luz branca, rosto não visível"
+ },
+ {
+  "name": "Jogador sorridente",
+  "look": "capacete de RV com visor em katakana, sorriso largo com presas"
+ },
+ {
+  "name": "Jogador de punho",
+  "look": "capacete de RV prateado, roupa preta com listras brancas, punho cerrado"
+ },
+ {
+  "name": "Jogador ao fundo",
+  "look": "capacete de RV visto de lado ao fundo, braço erguido"
+ },
+ {
+  "name": "Lutador de lança",
+  "look": "armadura futurista metálica, cabelo longo, empunha lança com lâmina"
+ },
+ {
+  "name": "Cavaleiro de elmo chifrudo",
+  "look": "armadura escura espinhosa, máscara de caveira com chifres e presas"
+ },
+ {
+  "name": "Caveira gigante",
+  "look": "caveira em chamas, dentes afiados, órbitas escuras"
+ },
+ {
+  "name": "Goblin de armadura",
+  "look": "criatura esverdeada, dentes à mostra, armadura de couro e metal"
+ },
+ {
+  "name": "Monstro de chifres",
+  "look": "criatura com chifres longos e dentes serrilhados"
+ },
+ {
+  "name": "Monstro-dragão",
+  "look": "cabeça de dragão com chifres e dentes, corpo escuro"
+ },
+ {
+  "name": "Monstro-boca",
+  "look": "boca gigante cheia de dentes surgindo do céu sobre a rua"
+ },
+ {
+  "name": "Zhou Yun",
+  "look": "irmã de Zhou Yi, paciente hospitalizada, cabelo escuro, tapa-olho e presilha"
+ },
+ {
+  "name": "Sacerdote de touca branca",
+  "look": "homem de touca branca e óculos ao lado da cama"
+ },
+ {
+  "name": "Parentes",
+  "look": "grupo de adultos de rostos apagados; homem de suéter, mulher de colar, homem de terno"
+ },
+ {
+  "name": "Figura de capa",
+  "look": "capa escura comprida, cabelo claro longo, de costas, correndo"
+ },
+ {
+  "name": "Grupo de estudantes",
+  "look": "cinco pessoas de uniforme escolar em movimento; uma de rabo de cavalo"
+ },
+ {
+  "name": "Careca",
+  "look": "cabeça raspada, camiseta escura, punho cerrado perto do rosto"
+ },
+ {
+  "name": "Li Xiang Yang",
+  "look": "professor da turma cinco; camisa social de manga curta, calça escura, segura prancheta"
+ },
+ {
+  "name": "Zheng Cheng",
+  "look": "aluno citado pelo professor; não aparece identificado no quadro"
+ },
+ {
+  "name": "Zhou",
+  "look": "cabelo castanho desgrenhado, camisa escura, sorriso confiante; protagonista"
+ },
+ {
+  "name": "Sacerdote",
+  "look": "homem de touca branca e óculos ao lado da cama"
+ },
+ {
+  "name": "Mago",
+  "look": "cabelo castanho repartido sobre um olho, brinco, casaco com gola, cajado, Nível 24"
+ },
+ {
+  "name": "Xiang Yang",
+  "look": "Professor da turma cinco, camisa social de manga curta, calça escura, segura prancheta"
+ },
+ {
+  "name": "Barbudo",
+  "look": "barba curta, corpo musculoso, braços cruzados, faixas brancas no peito"
+ },
+ {
+  "name": "Anjo alado",
+  "look": "figura alada de asas brancas abertas, em coluna de luz"
+ },
+ {
+  "name": "Figura de camisa preta",
+  "look": "camisa escura, pingente de espada prateado, sem rosto visível"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "ombro e cabelo escuro de costas, à direita"
+ },
+ {
+  "name": "Multidão",
+  "look": "silhuetas de espectadores em pé no alto da arena"
+ },
+ {
+  "name": "Grupo de espectadores",
+  "look": "quatro pessoas de costas; uma de cabelo loiro longo, um garoto de bolsa a tiracolo"
+ },
+ {
+  "name": "Anjo",
+  "look": "mulher alada, auréola, cabelo claro longo, trança, máscara num olho, pés descalços"
+ },
+ {
+  "name": "Zheng",
+  "look": "colega de classe, invocador, se junta ao grupo na prova final"
+ },
+ {
+  "name": "Garoto espetado",
+  "look": "cabelo castanho escuro espetado, luva sem dedos, suando, olhar tenso"
+ },
+ {
+  "name": "Garoto de moletom",
+  "look": "cabelo escuro, moletom branco com capuz, expressão séria, mão na cabeça"
+ },
+ {
+  "name": "Garoto de óculos",
+  "look": "óculos quadrados, cabelo escuro, boca aberta, à direita da cena de chamas"
+ },
+ {
+  "name": "Figura de sobretudo escuro",
+  "look": "sobretudo escuro comprido, de pé na praça"
+ },
+ {
+  "name": "Bruxa de chapéu",
+  "look": "chapéu pontudo, vestido claro, segura cajado com ponta ornamentada"
+ },
+ {
+  "name": "Aluno de camiseta",
+  "look": "camiseta escura, cabelo castanho curto, segura prancheta"
+ },
+ {
+  "name": "Luo Heng",
+  "look": "careca, bigode grosso, rosto enrugado; diretor da academia"
+ },
+ {
+  "name": "Alunos",
+  "look": "fileiras de uniforme escuro no pátio"
+ },
+ {
+  "name": "Aluno",
+  "look": "estudante de uniforme escuro na multidão"
+ },
+ {
+  "name": "Cavaleiro prateado",
+  "look": "armadura prateada lisa, elmo fechado, espada, capa escura"
+ },
+ {
+  "name": "Maga de chapéu",
+  "look": "chapéu largo, livro aberto, corpete escuro com cinto, braço estendido"
+ },
+ {
+  "name": "Figura de martelo",
+  "look": "armadura escura, martelo de pedra erguido, sem rosto visível"
+ },
+ {
+  "name": "Figura encapuzada",
+  "look": "capuz pontudo escuro, armadura escura, lâmina em alta velocidade"
+ },
+ {
+  "name": "Mago de chapéu pontudo",
+  "look": "chapéu pontudo escuro, cajado, manto escuro, rosto na sombra"
+ },
+ {
+  "name": "Cavaleiro sagrado",
+  "look": "armadura prateada, elmo alado, asas brancas, capa escura, segura bastão"
+ },
+ {
+  "name": "Voz fora do quadro",
+  "look": "fala em balão de grito, sem figura visível; dono da voz não aparece"
+ },
+ {
+  "name": "Figura não identificada",
+  "look": "silhueta escura sem rosto visível, espalhada pelas cenas"
+ },
+ {
+  "name": "Maga da Luz",
+  "look": "chapéu de bruxa de aba larga, cabelo loiro ondulado, sorriso, cajado"
+ },
+ {
+  "name": "Sacerdote encapuzado",
+  "look": "capuz branco com faixa nos olhos, livro aberto, manto claro com zíper"
+ },
+ {
+  "name": "Figura de armadura clara",
+  "look": "armadura clara, espada longa, sem rosto visível"
+ },
+ {
+  "name": "Figura de elmo",
+  "look": "elmo ornamentado prateado, sem rosto visível"
+ },
+ {
+  "name": "Criatura de crina branca",
+  "look": "crina branca, chifres, focinho com dentes, garras"
+ },
+ {
+  "name": "Criatura espetada",
+  "look": "cabelo espetado, corpo musculoso, garras longas, agachada para atacar"
+ },
+ {
+  "name": "Criatura sombria",
+  "look": "rosto escuro de presas e olhos brancos brilhantes, chamas no topo"
+ },
+ {
+  "name": "Criatura de garra blindada",
+  "look": "garra blindada com espinhos brancos, em meio a destroços"
+ },
+ {
+  "name": "Enfermeira",
+  "look": "Touca branca, jaleco branco, cabelo castanho-avermelhado preso, prancheta ou tablet"
+ },
+ {
+  "name": "Yun",
+  "look": "irmã de Zhou, cabelo escuro, em cama de hospital"
+ },
+ {
+  "name": "Figura de casaco",
+  "look": "casaco cinza com botões, de costas, à direita da cama"
+ },
+ {
+  "name": "Zhan",
+  "look": "secretário, amigo do irmão de Yun, se apresenta com cartão"
+ },
+ {
+  "name": "Óculos",
+  "look": "cabelo claro, óculos, casaco cinza, expressão séria"
+ },
+ {
+  "name": "Figura de calça preta",
+  "look": "calça preta e tênis chutando, sem rosto visível"
+ },
+ {
+  "name": "Zhao",
+  "look": "voz ao telefone, sem figura visível; secretário do governo"
+ },
+ {
+  "name": "Segurança",
+  "look": "óculos escuros, terno escuro, cabelo curto escuro, cenho franzido"
+ },
+ {
+  "name": "Garoto de jaqueta",
+  "look": "cabelo castanho curto, jaqueta cinza, boca aberta"
+ },
+ {
+  "name": "Yi",
+  "look": "cabelo castanho espetado, camiseta escura, bandagem no braço, pingente em cruz"
+ },
+ {
+  "name": "Tian Fu",
+  "look": "careca, rosto marcado, camisa social clara"
+ },
+ {
+  "name": "Li Bing",
+  "look": "óculos quadrados, cabelo castanho espetado, jaqueta com capuz"
+ },
+ {
+  "name": "Zhu Yu",
+  "look": "cabelo castanho longo ondulado, camisa clara, saia escura"
+ },
+ {
+  "name": "Yu Yuan",
+  "look": "cabelo curto escuro, camisa social, gravata, braços cruzados"
+ },
+ {
+  "name": "Barbudo de terno",
+  "look": "barba e careca, terno escuro, expressão furiosa, aponta"
+ },
+ {
+  "name": "Garoto de gravata",
+  "look": "camisa social branca, gravata, cabelo escuro curto"
+ },
+ {
+  "name": "Voz não identificada",
+  "look": "fala de fora do quadro, dona da voz não aparece"
+ },
+ {
+  "name": "Figura de braços cruzados",
+  "look": "de braços cruzados, badge Mo Du, cabelo espetado, olhos brilhantes"
+ },
+ {
+  "name": "Figura de orelhas pontudas",
+  "look": "perfil com orelhas pontudas, cabelo curto escuro"
+ },
+ {
+  "name": "Figura de cabelo curto",
+  "look": "homem de cabelo curto, braço erguido, parte inferior do quadro"
+ },
+ {
+  "name": "Garoto de cabelo claro",
+  "look": "cabelo castanho claro espetado, expressão séria"
+ },
+ {
+  "name": "Garoto de gola V",
+  "look": "cabelo espetado escuro, camiseta cinza de gola V, mão aberta"
+ },
+ {
+  "name": "Garoto de camiseta escura",
+  "look": "cabelo castanho curto, camiseta escura, de pé à direita"
+ },
+ {
+  "name": "Garoto de camisa escura",
+  "look": "cabelo castanho espetado, camisa escura com colarinho branco"
+ },
+ {
+  "name": "Garoto de camiseta clara",
+  "look": "cabelo castanho espetado, camiseta clara, mão com aura brilhante"
+ },
+ {
+  "name": "Aluno suado",
+  "look": "cabelo castanho curto penteado, rosto suado, boca aberta, camisa escura"
+ },
+ {
+  "name": "Garoto de camisa clara",
+  "look": "cabelo castanho claro espetado, camisa clara de mangas dobradas, boca aberta"
+ },
+ {
+  "name": "Qiang",
+  "look": "guerreiro com espada entre folhagens; Classe 1, sozinho"
+ },
+ {
+  "name": "Qing",
+  "look": "roupa escura, espada curva, enfrenta criaturas de olhos brilhantes"
+ },
+ {
+  "name": "Fei",
+  "look": "mago elemental com cajado; grupo de três na Classe 1"
+ },
+ {
+  "name": "Su",
+  "look": "encapuzado, observa ao fundo, sem rosto visível"
+ },
+ {
+  "name": "Jian",
+  "look": "segura arma longa; grupo de três na Classe 1"
+ },
+ {
+  "name": "Garoto de cabelo espetado",
+  "look": "cabelo castanho espetado, sentado no colo da guerreira de cabelo longo"
+ },
+ {
+  "name": "Colega de camiseta clara",
+  "look": "cabelo castanho curto, camiseta clara, fala na plateia"
+ },
+ {
+  "name": "Colega de jaqueta marrom",
+  "look": "cabelo castanho avermelhado, jaqueta marrom, aponta com o dedo"
+ },
+ {
+  "name": "Monstro-gato",
+  "look": "crina branca desgrenhada, focinho com dentes, garras afiadas, corpo musculoso"
+ },
+ {
+  "name": "Criatura-gato",
+  "look": "Humanoide com orelhas de gato, corpo musculoso, pelagem escura, garras longas"
+ },
+ {
+  "name": "Criatura de crânio",
+  "look": "crânio chifrudo, dentes brancos, placas nas costelas, garras"
+ },
+ {
+  "name": "Criatura blindada",
+  "look": "crista branca e espinhos, em meio a rachaduras e clarão"
+ },
+ {
+  "name": "Voz",
+  "look": "fala de fora do quadro, sem figura visível"
+ },
+ {
+  "name": "Sorridente",
+  "look": "cabelo castanho claro espetado, jaqueta cinza, sorriso aberto"
+ },
+ {
+  "name": "Carrancudo",
+  "look": "cabelo castanho espetado, sobrancelhas franzidas, cara séria, camiseta escura"
+ },
+ {
+  "name": "Gritão",
+  "look": "cabelo curto escuro, camisa escura de gola aberta, boca bem aberta"
+ },
+ {
+  "name": "Cruzado",
+  "look": "cabelo curto castanho, camisa clara, jaqueta escura, braços cruzados"
+ },
+ {
+  "name": "Capuz",
+  "look": "capa escura com capuz, cabelo castanho longo, de costas à porta"
+ },
+ {
+  "name": "Surpreso",
+  "look": "cabelo castanho curto, camiseta escura, boca aberta, sobrancelhas erguidas"
+ },
+ {
+  "name": "Minotauro",
+  "look": "Rei dos Minotauros, nível 16, grau ouro, crina branca, chifres, armadura prateada"
+ },
+ {
+  "name": "Gato de Luz",
+  "look": "gato de crina branca com dentes, nível 12, grau bronze"
+ },
+ {
+  "name": "Gato de Fogo",
+  "look": "gato de crina branca com olho grande na testa, nível 13, bronze"
+ },
+ {
+  "name": "Gato Sombrio",
+  "look": "monstro felino de crina escura, nível 11, grau bronze"
+ },
+ {
+  "name": "Figura de chifres",
+  "look": "cabeça com chifres e máscara escura, peito nu, cinto, braços erguidos"
+ },
+ {
+  "name": "Figura calça preta",
+  "look": "calça preta e botas, aparece só da cintura para baixo, perna chutando"
+ },
+ {
+  "name": "Lanceiro",
+  "look": "segura lança longa, visto de baixo, cabelo castanho"
+ },
+ {
+  "name": "Figura de ataque",
+  "look": "figura central de olho brilhante, golpe em X, cena ambígua"
+ },
+ {
+  "name": "Figura de queda",
+  "look": "figura escura de cabeça para baixo, calça escura, em energia branca"
+ },
+ {
+  "name": "Figura de lâmina",
+  "look": "armadura clara, lâmina vertical longa, sem rosto visível"
+ },
+ {
+  "name": "Garoto de suéter cinza",
+  "look": "cabelo escuro, suéter cinza, de pé, gesticulando com o braço erguido"
+ },
+ {
+  "name": "Jiang Fei Fei",
+  "look": "cabelo castanho em trança, vestido claro, sorriso, língua de fora"
+ },
+ {
+  "name": "Figura de armadura",
+  "look": "armadura escura vista de cima, sem rosto visível"
+ },
+ {
+  "name": "Figura de lança",
+  "look": "cabelo escuro, casaco escuro comprido, segura lança longa"
+ },
+ {
+  "name": "Criatura chifruda",
+  "look": "criatura de chifres e presas, boca escancarada, rachaduras no chão"
+ },
+ {
+  "name": "Criatura caída",
+  "look": "criatura escura volumosa caída, chifres, garras brancas"
+ },
+ {
+  "name": "Luo",
+  "look": "correndo entre clarões com outras duas figuras, aparece junto de Chui"
+ },
+ {
+  "name": "Voz de fora",
+  "look": "fala de fora do quadro, sem figura visível"
+ },
+ {
+  "name": "Figura de perfil",
+  "look": "cabelo longo escuro, perfil, olhos claros, orelha visível"
+ },
+ {
+  "name": "Criatura de chifres",
+  "look": "chifres e presas, garras longas, corpo musculoso, boca aberta"
+ },
+ {
+  "name": "Sobretudo escuro",
+  "look": "sobretudo escuro comprido, mão enfaixada, segura o homem caído"
+ },
+ {
+  "name": "Staff de boné",
+  "look": "boné com logo HM, headset no microfone, boca aberta gritando"
+ },
+ {
+  "name": "Criatura de garra",
+  "look": "garra blindada com espinhos brancos, em meio a destroços"
+ },
+ {
+  "name": "Figura escura",
+  "look": "armadura escura, centro de explosão branca, sem rosto visível"
+ },
+ {
+  "name": "Jogadores",
+  "look": "Mãos de vários jogadores erguidas, sem rosto visível"
+ },
+ {
+  "name": "Aparição do sistema",
+  "look": "ser alado de penas brancas, halo luminoso acima da cabeça, asas enormes"
+ },
+ {
+  "name": "Garoto de camiseta",
+  "look": "cabelo castanho curto, camiseta escura estampada, em pé sobre o círculo mágico"
+ },
+ {
+  "name": "Cavaleiro Elmo",
+  "look": "armadura prateada, elmo ornamentado alado, espada longa, salta em alta velocidade"
+ },
+ {
+  "name": "Figura Borrada",
+  "look": "vulto escuro borrado, sem rosto visível, balões acima"
+ },
+ {
+  "name": "Figura Capa",
+  "look": "capa escura comprida, cabelo claro brilhante, apoiada em bastão, sobre névoa"
+ },
+ {
+  "name": "Mãos sombrias",
+  "look": "mãos escuras e alongadas saindo da sombra"
+ },
+ {
+  "name": "Garoto de bandagem",
+  "look": "cabelo castanho espetado, camiseta escura, bandagem no braço, calça cinza"
+ },
+ {
+  "name": "Torcedor de costas",
+  "look": "de costas, cabelo espetado escuro, braço erguido, camisa clara"
+ },
+ {
+  "name": "Colega de rabo de cavalo",
+  "look": "cabelo preso em rabo de cavalo, arquibancada, mão no peito"
+ },
+ {
+  "name": "Torcedor de cabelo espetado",
+  "look": "cabelo castanho espetado, camiseta cinza, sorriso, na frente do grupo"
+ },
+ {
+  "name": "Barbudo de manto",
+  "look": "careca, barba, manto escuro com padronagem clara, rosto sério"
+ },
+ {
+  "name": "Figura deitada",
+  "look": "corpo deitado no chão cristalino, roupa clara, máscara ou visor"
+ },
+ {
+  "name": "Criatura alada",
+  "look": "crânio com chifres, asas de osso e membrana brancas"
+ },
+ {
+  "name": "Xiao Yun",
+  "look": "não aparece desenhada; citada como salva"
+ },
+ {
+  "name": "Dragão",
+  "look": "corpo longo de dragão branco, escamas, em meio ao gelo"
+ },
+ {
+  "name": "Criatura de runas",
+  "look": "criatura enorme com chifres, asas e correntes de runas brilhantes"
+ },
+ {
+  "name": "Figura de olho brilhante",
+  "look": "olho brilhante com runa mágica, close-up, rosto não visível"
+ },
+ {
+  "name": "Criatura-fera",
+  "look": "mandíbula aberta, dentes afiados, chifres, crânio branco, olhos brilhantes"
+ },
+ {
+  "name": "Capa",
+  "look": "capa escura comprida, cabelo longo, bastão, faixa com cruz branca, sorriso"
+ },
+ {
+  "name": "Chui",
+  "look": "cabelo branco prateado longo, capuz e vestido escuro, bastão com ponta escura"
+ },
+ {
+  "name": "Noivo",
+  "look": "terno escuro, cabelo castanho escuro, mão dada com a noiva"
+ },
+ {
+  "name": "Noiva",
+  "look": "véu branco com flores, orelhas de gato, cabelo longo castanho"
+ },
+ {
+  "name": "Freira",
+  "look": "capuz escuro, faixa na testa com cruz, fala de perfil"
+ },
+ {
+  "name": "Apresentadora",
+  "look": "cabelo castanho na altura do queixo, terno escuro, camisa clara, sorriso"
+ },
+ {
+  "name": "Sorriso Dentado",
+  "look": "cabelo escuro comprido, brinco na orelha, sorriso com dentes à mostra, fumaça ao redor"
+ },
+ {
+  "name": "Figura de pé",
+  "look": "pernas escuras de pé na parte inferior de cena escura, sem rosto visível"
+ },
+ {
+  "name": "Criatura branca",
+  "look": "criatura de crina branca com garras, em meio a chão cristalino e luz"
+ },
+ {
+  "name": "Figura sentada",
+  "look": "sentada em cadeira giratória, calça escura, braço apoiado no joelho, sem rosto visível"
+ },
+ {
+  "name": "Recrutador",
+  "look": "cabelo escuro curto, camisa social clara, sorriso, segura um cartão"
+ },
+ {
+  "name": "Colega de sorriso",
+  "look": "cabelo castanho, sorriso largo de boca aberta"
+ },
+ {
+  "name": "Figura de vestido claro",
+  "look": "vestido claro, salto alto, caindo no tubo de luz"
+ },
+ {
+  "name": "Zhao Tian Fu",
+  "look": "não aparece nas páginas; citado na fala como demitido da universidade"
+ },
+ {
+  "name": "Su Mei",
+  "look": "Cabelo preto em rabo de cavalo alto, camisa branca, roupa escura justa, braçadeiras pretas"
+ },
+ {
+  "name": "Sun",
+  "look": "lutador da arena, cai de cabeça para baixo perto da Figura"
+ },
+ {
+  "name": "Camiseta escura",
+  "look": "cabelo castanho curto, camiseta escura, de pé, celular no cinto"
+ },
+ {
+  "name": "Figuras de pés",
+  "look": "três pares de pés e pernas, tênis e salto com laço, chão rachado"
+ },
+ {
+  "name": "Figura do celular",
+  "look": "braço e celular erguidos, rosto fora do quadro"
+ },
+ {
+  "name": "Robô",
+  "look": "robô cinza de metal, de pé à direita"
+ },
+ {
+  "name": "Figura de terno escuro",
+  "look": "terno escuro, parte inferior do quadro, de pé"
+ },
+ {
+  "name": "Guerreira",
+  "look": "cabelo longo claro com laço, casaco branco de gola alta; no chat se chama Jiang Chu Ran"
+ },
+ {
+  "name": "Lobo de crina",
+  "look": "criatura branca de crina e focinho com dentes, à esquerda da praça"
+ },
+ {
+  "name": "Brutamontes",
+  "look": "humanoide musculoso de ombros largos e garras, à direita da praça"
+ },
+ {
+  "name": "Criatura de asas",
+  "look": "criatura escura de asas, envolta em chamas e correntes"
+ },
+ {
+  "name": "Garoto da camiseta clara",
+  "look": "cabelo castanho escuro espetado, camiseta clara com faixa escura, em pé no centro"
+ },
+ {
+  "name": "Figura sombria",
+  "look": "silhueta de capa escura, de pé sobre nuvens"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro longo, ombros, de perfil, fala em primeiro plano"
+ },
+ {
+  "name": "Zhen",
+  "look": "calça escura e sapatos, caído no chão sob fumaça"
+ },
+ {
+  "name": "Colega jaqueta marrom",
+  "look": "cabelo castanho avermelhado, jaqueta marrom, aponta com o dedo"
+ },
+ {
+  "name": "Garoto do pingente",
+  "look": "cabelo castanho espetado, camiseta escura listrada, pingente de cruz no pescoço"
+ },
+ {
+  "name": "Garoto de cabelo escuro",
+  "look": "cabelo escuro curto, de perfil, canto inferior esquerdo"
+ },
+ {
+  "name": "Garoto de camisa branca",
+  "look": "cabelo castanho claro espetado, camisa branca de mangas dobradas, braço erguido"
+ },
+ {
+  "name": "Wang Li",
+  "look": "pernas de calça escura, de pé, nome na legenda do quadro"
+ },
+ {
+  "name": "Figura de dentes cerrados",
+  "look": "boca cerrada com dentes à mostra, suor escorrendo, close no queixo"
+ },
+ {
+  "name": "Cabelo Claro",
+  "look": "cabelo claro longo, capa escura comprida, de perfil, olhar sério"
+ },
+ {
+  "name": "Camisa Escura",
+  "look": "cabelo castanho, camisa escura com colarinho branco, gritando de longe"
+ },
+ {
+  "name": "Camiseta Clara",
+  "look": "cabelo castanho curto, camiseta clara, boca aberta, braços cruzados"
+ },
+ {
+  "name": "Colega Bob",
+  "look": "cabelo castanho avermelhado na altura do queixo, blusa clara"
+ },
+ {
+  "name": "Shen Ling Feng",
+  "look": "não aparece nestas páginas; citado como 002 e Berserker nível 14"
+ },
+ {
+  "name": "Garoto Gola V",
+  "look": "cabelo castanho escuro espetado, camiseta cinza de gola V, grita de boca aberta"
+ },
+ {
+  "name": "Figura de jaqueta escura",
+  "look": "de costas, jaqueta escura, perto de pagode ao fundo"
+ },
+ {
+  "name": "Figura de braço erguido",
+  "look": "braço erguido com punho, rosto fora do quadro, à direita"
+ },
+ {
+  "name": "Figura Pingente",
+  "look": "cabelo castanho espetado, camisa escura, pingente de espada prateado, olhos fechados"
+ },
+ {
+  "name": "Liu Jing",
+  "look": "citado no ranking (038), não aparece nas páginas"
+ },
+ {
+  "name": "Garoto de costas",
+  "look": "de costas, cabelo castanho escuro espetado, camiseta escura, braço erguido"
+ },
+ {
+  "name": "Garoto de olho brilhante",
+  "look": "cabelo castanho, olho com marca brilhante em close-up, expressão séria"
+ },
+ {
+  "name": "Garoto de camiseta cinza",
+  "look": "cabelo claro, camiseta cinza, gesticula com a mão aberta"
+ },
+ {
+  "name": "Rival de perfil",
+  "look": "cabelo escuro espetado, olhar afiado, sorriso de canto, perfil"
+ },
+ {
+  "name": "Torcedores",
+  "look": "multidão de silhuetas de costas, em pé atrás da arena"
+ },
+ {
+  "name": "Desafiante",
+  "look": "sobretudo escuro de costas; em close, cabelo castanho escuro espetado, sorriso confiante"
+ },
+ {
+  "name": "Colega sorridente",
+  "look": "cabelo castanho claro na altura do queixo, sorriso largo, na plateia"
+ },
+ {
+  "name": "Colega de cabelo claro",
+  "look": "cabelo castanho claro espetado, bochecha corada, boca aberta, na plateia"
+ },
+ {
+  "name": "Figura de cabelo castanho",
+  "look": "cabelo castanho espetado, casaco escuro, visto de perfil"
+ },
+ {
+  "name": "Colega de óculos",
+  "look": "cabelo castanho, óculos, jaqueta clara, braços cruzados"
+ },
+ {
+  "name": "Colega de capuz",
+  "look": "cabelo castanho claro, capuz cinza, sorriso aberto"
+ },
+ {
+  "name": "Colega de capuz da direita",
+  "look": "cabelo castanho, capuz escuro, sorriso"
+ },
+ {
+  "name": "Dong Sheng",
+  "look": "cabelo castanho preso em coque, jaqueta cinza clara, calça clara, capitão do clube Aurora"
+ },
+ {
+  "name": "Colega de franja",
+  "look": "cabelo castanho na altura do queixo, franja reta, olhar sério"
+ },
+ {
+  "name": "Lutador de armadura",
+  "look": "braço blindado pálido com luva, punho de energia, sem rosto visível"
+ },
+ {
+  "name": "Atacante borrado",
+  "look": "vulto escuro borrado no alto, lâmina de luz, movimento rápido"
+ },
+ {
+  "name": "Armadura do martelo",
+  "look": "armadura escura, luvas escuras, martelo de pedra com runa, rosto oculto"
+ },
+ {
+  "name": "Figura de punho",
+  "look": "silhueta escura com manga e luva, punho envolto em chamas"
+ },
+ {
+  "name": "Figura agachada",
+  "look": "figura escura agachada na parte inferior, rosto oculto"
+ },
+ {
+  "name": "Garoto de cabelo castanho",
+  "look": "cabelo castanho espetado, olhos arregalados, boca aberta gritando, camisa clara"
+ },
+ {
+  "name": "Martelo",
+  "look": "armadura escura, martelo de pedra erguido, sem rosto visível"
+ },
+ {
+  "name": "Figura de rosto claro",
+  "look": "close do rosto, cabelo claro curto, olhos claros, sem nome"
+ },
+ {
+  "name": "Garoto da runa",
+  "look": "cabelo castanho escuro, olho com marca brilhante em close-up, expressão séria"
+ },
+ {
+  "name": "Garoto do teclado",
+  "look": "cabelo escuro espetado, camiseta escura, pingente de cruz, sorriso aberto, mão com energia sobre teclado"
+ },
+ {
+  "name": "Figura de capa branca",
+  "look": "capuz e capa brancos longos, cinto, luvas escuras, montada no Lobo"
+ },
+ {
+  "name": "Atacante",
+  "look": "vulto de cabelo claro, de perfil, braço erguido liberando energia"
+ },
+ {
+  "name": "Garoto da bandagem",
+  "look": "cabelo castanho espetado, camiseta escura com faixa clara, bandagem no braço, calça cinza, aura de chamas brancas"
+ },
+ {
+  "name": "Pingente",
+  "look": "Personagem ao lado de Maga na luz branca; sorri."
+ },
+ {
+  "name": "Sombra",
+  "look": "figura escura sem rosto visível, sob sombra diagonal"
+ },
+ {
+  "name": "Xiao",
+  "look": "invoca orbes flutuantes, salta sobre círculo mágico, habilidade de velocidade"
+ },
+ {
+  "name": "Criatura de olhos brancos",
+  "look": "chifres escuros, olhos brancos brilhantes, boca cheia de presas"
+ },
+ {
+  "name": "Criaturas chifradas",
+  "look": "humanoides escuros de chifres, máscara com dentes, garras, correndo em grupo"
+ },
+ {
+  "name": "Figura de sobretudo",
+  "look": "sobretudo escuro, de costas, perna no círculo mágico"
+ },
+ {
+  "name": "Qing Lian",
+  "look": "cabelo castanho escuro comprido solto, roupa escura, espada curva, pose de ataque"
+ },
+ {
+  "name": "Tian Run",
+  "look": "óculos redondos, boné, camisa escura, invoca com círculo de luz branca"
+ },
+ {
+  "name": "Dan",
+  "look": "Artilheira que dispara arma pesada da caminhonete contra criaturas"
+ },
+ {
+  "name": "Criatura da garra",
+  "look": "criatura escura, garras brancas curvas, sem rosto visível"
+ },
+ {
+  "name": "Figura de chapéu",
+  "look": "chapéu pontudo de aba larga, gritando, dentro do carro"
+ },
+ {
+  "name": "Criatura chifruda escura",
+  "look": "criatura de chifres e presas, corpo escuro, garras longas, boca aberta, ofegante"
+ },
+ {
+  "name": "Figura de trança",
+  "look": "cabelo longo trançado escuro, de costas ou de perfil, roupa escura"
+ },
+ {
+  "name": "Demônios",
+  "look": "criaturas blindadas borradas, membros longos, presas e garras, no alto"
+ },
+ {
+  "name": "Figura de braço estendido",
+  "look": "ao lado da Figura de chapéu, braço estendido ao vidro"
+ },
+ {
+  "name": "Figura escura do impacto",
+  "look": "silhueta escura no centro de explosão de raios brancos, sem rosto visível"
+ },
+ {
+  "name": "Figura de espada",
+  "look": "cabelo longo, roupa escura, espada na mão, na praça"
+ },
+ {
+  "name": "Figura correndo",
+  "look": "figura pequena de roupa clara, cabelo escuro, correndo entre destroços"
+ },
+ {
+  "name": "Guerreiras",
+  "look": "quatro mulheres de armadura justa e capas, cabelos escuros e claros"
+ },
+ {
+  "name": "Gigante",
+  "look": "perna e pé gigantes brancos com aspecto de armadura, à direita"
+ },
+ {
+  "name": "Loira",
+  "look": "Mulher loira que segura minigun, aparece com Garoto nas páginas 402 e 430"
+ },
+ {
+  "name": "Sentada",
+  "look": "sentada abraçando os joelhos, chapéu, roupa clara"
+ },
+ {
+  "name": "Ruiva",
+  "look": "cabelo ruivo-castanho, roupa escura, sentada à direita"
+ },
+ {
+  "name": "Figura de capa de pele",
+  "look": "capa de pele clara no ombro, à esquerda, sem rosto visível"
+ },
+ {
+  "name": "Mascarado",
+  "look": "cabelo claro espetado, peito nu musculoso, cinto com máscara de caveira"
+ },
+ {
+  "name": "Figura do impacto",
+  "look": "silhueta escura no centro de explosão branca, cabelo escuro, sem rosto visível"
+ },
+ {
+  "name": "Figura do golpe",
+  "look": "silhueta escura em movimento, membro borrado entre faíscas e energia branca, sem rosto visível"
+ },
+ {
+  "name": "Figura de cabelo claro caída",
+  "look": "cabelo claro, roupa clara, caída no chão"
+ },
+ {
+  "name": "Figura de cabelo escuro caída",
+  "look": "cabelo escuro espalhado no chão, gola clara, caída de costas, parte inferior do quadro"
+ },
+ {
+  "name": "Figura de corpete",
+  "look": "torso com corpete branco e cinto, sem rosto visível"
+ },
+ {
+  "name": "Figura de armadura prateada",
+  "look": "armadura escura com ornamentos prateados, garras escuras, golpe com raios"
+ },
+ {
+  "name": "Capuz branco",
+  "look": "capuz e capa claros, gesticula com a mão, rosto semioculto"
+ },
+ {
+  "name": "Guerreira de armadura",
+  "look": "armadura justa escura, cabelo escuro preso, sentada à esquerda"
+ },
+ {
+  "name": "Garoto de casaco vermelho",
+  "look": "casaco marrom-avermelhado, sentado à esquerda, de costas"
+ },
+ {
+  "name": "Rosto Claro",
+  "look": "cabelo claro curto, olhos claros, sorriso de canto, marca luminosa na testa"
+ },
+ {
+  "name": "Criatura Espinhosa",
+  "look": "criatura escura de espinhos, núcleo brilhante no centro, garras e cauda fina"
+ },
+ {
+  "name": "Chu Ran",
+  "look": "nome dito em balão; aparência ainda não vista nesta página"
+ },
+ {
+  "name": "Figura de brilho",
+  "look": "peito nu musculoso, cabeça com brilho branco, em meio a raios"
+ },
+ {
+  "name": "Criatura em chamas",
+  "look": "Cabeça chifruda envolta em fogo branco, boca aberta com presas, olhos brancos"
+ },
+ {
+  "name": "Criatura de garras",
+  "look": "Mão escura de garras longas e unhas cinzentas, avançando em meio à luz"
+ },
+ {
+  "name": "Cavaleiro",
+  "look": "Armadura prateada com elmo ornamentado, usa lâminas de luz e habilidades de área; nome próprio não identificado"
+ },
+ {
+  "name": "Jiang Chu Ran",
+  "look": "Cabelo longo claro com laço, casaco branco de gola alta; chamada Guerreira"
+ },
+ {
+  "name": "Criaturas blindadas",
+  "look": "criaturas escuras e blindadas, esferas brancas brilhantes, máscaras e espinhos brancos"
+ },
+ {
+  "name": "Criatura de presas",
+  "look": "criatura de chifres e presas escancaradas, cabeça com brilho branco, chamas brancas"
+ },
+ {
+  "name": "Figura capa escura",
+  "look": "capa escura comprida, ombreiras com espinhos, figura de pé em energia escura"
+ },
+ {
+  "name": "Garoto tenso",
+  "look": "cabelo castanho escuro espetado, luva sem dedos, suando, olhar tenso"
+ },
+ {
+  "name": "Encapuzada",
+  "look": "Figura encapuzada que manda o grupo seguir em frente e aparece atrás do Garoto"
+ },
+ {
+  "name": "Elfa",
+  "look": "Elfa que acompanha Garoto e Encapuzada, tensa diante de Zhou"
+ },
+ {
+  "name": "Figura escura ao fundo",
+  "look": "vulto escuro atrás do cano da minigun, sem rosto visível"
+ },
+ {
+  "name": "Figura de calça clara",
+  "look": "calça e botas brancas, salto alto escuro, perna em chute, sem rosto visível"
+ },
+ {
+  "name": "Trança",
+  "look": "cabelo escuro longo trançado, roupa escura, de costas"
+ },
+ {
+  "name": "Lobo",
+  "look": "lobo branco enorme, focinho aberto, olhos afiados e marca de chama na testa"
+ },
+ {
+  "name": "Chifrudo",
+  "look": "armadura escura, chifres curvos, ombreiras, braço enfaixado, sentado à direita"
+ },
+ {
+  "name": "Lobo branco",
+  "look": "criatura branca grande, pelagem longa, cauda farta, anda ao lado do grupo"
+ },
+ {
+  "name": "Chapéu",
+  "look": "chapéu branco de aba larga, capa clara, de costas à esquerda"
+ },
+ {
+  "name": "Vestido escuro",
+  "look": "vestido escuro longo, cabelo castanho preso, de costas"
+ },
+ {
+  "name": "Xu Yu Zhou",
+  "look": "major do Corpo do Dragão de Neve; armadura prateada gigante, visto de perna e ombro"
+ },
+ {
+  "name": "Soldados",
+  "look": "armaduras escuras e brilhantes, espadas, em fileira"
+ },
+ {
+  "name": "Figura caída",
+  "look": "figura caída no chão ao lado de espada, em meio a energia branca"
+ },
+ {
+  "name": "Silhuetas",
+  "look": "duas silhuetas escuras de pé numa arena cercada de blocos"
+ },
+ {
+  "name": "Figura chifruda",
+  "look": "chifres, capa clara e escura ao vento, em pleno ar, rosto não nítido"
+ },
+ {
+  "name": "Figura da porta",
+  "look": "Silhueta escura de capa comprida, entra no arco de pedra, sem rosto visível"
+ },
+ {
+  "name": "Criatura de olho brilhante",
+  "look": "Criatura de crânio com chifres, olho brilhante com runa, costelas com inscrições"
+ },
+ {
+  "name": "Figura de comando",
+  "look": "silhueta fora do quadro, balão com rabicho apontando para cima, sem rosto visível"
+ },
+ {
+  "name": "Cavaleiros",
+  "look": "armadura clara e prateada, elmo fechado, marcham em fileira"
+ },
+ {
+  "name": "Comandante",
+  "look": "Cabelo castanho curto, perfil sério, roupa escura com gola"
+ },
+ {
+  "name": "Garoto de armadura",
+  "look": "cabelo castanho curto, armadura prateada com ombreira, perfil sério"
+ },
+ {
+  "name": "Garoto de armadura ao fundo",
+  "look": "Cabelo castanho curto, armadura clara, atrás do primeiro, olhar à frente"
+ },
+ {
+  "name": "Garoto da caixa",
+  "look": "Cabelo escuro, curvado sobre caixas de núcleos, camisa escura"
+ },
+ {
+  "name": "Logística",
+  "look": "Cabelo castanho espetado, casaco marrom-avermelhado com emblema, segura saco de núcleos"
+ },
+ {
+  "name": "Magos encapuzados",
+  "look": "Capas escuras com capuz, cajados, em fileiras, brilho branco"
+ },
+ {
+  "name": "Figura de botas blindadas",
+  "look": "botas blindadas cinzas de bico afiado, de pé ou avançando, sem rosto visível"
+ },
+ {
+  "name": "Figura de coque claro",
+  "look": "cabelo claro preso em coque, de costas, no alto à direita"
+ },
+ {
+  "name": "Ourimas",
+  "look": "Filho demoníaco venerado pelos demônios; invocado nas páginas 514 a 516"
+ },
+ {
+  "name": "Guerreira do olho",
+  "look": "cabelo castanho na altura dos ombros, ornamento de olho na testa, ombreiras de armadura"
+ },
+ {
+  "name": "Dragão branco",
+  "look": "corpo longo branco, escamas, chifres, em meio ao gelo"
+ },
+ {
+  "name": "Figura de camisa clara",
+  "look": "camisa clara, capa escura, lâmina ou perna em golpe, sem rosto visível"
+ },
+ {
+  "name": "Figura de capa clara",
+  "look": "capa clara comprida, espada, em meio a estilhaços e fumaça"
+ },
+ {
+  "name": "Figura de presas",
+  "look": "cabelo escuro espetado, presas à mostra, olhar feroz, à direita"
+ },
+ {
+  "name": "Figura pequena",
+  "look": "roupa clara, cabelo escuro espetado, caída entre poeira e chamas"
+ },
+ {
+  "name": "Criatura gigante",
+  "look": "criatura escura gigante de corpo blindado, membros enormes, vista de perto"
+ },
+ {
+  "name": "Bob",
+  "look": "Aluno que pergunta por Zhou; boca aberta, surpreso."
+ },
+ {
+  "name": "Figura escura inferior",
+  "look": "silhueta escura no chão, sem rosto visível, fala ameaçadora"
+ },
+ {
+  "name": "Armadura prateada",
+  "look": "armadura escura com ornamentos prateados, chifres, golpe com raios"
+ },
+ {
+  "name": "Espadachim",
+  "look": "cabelo castanho longo solto, roupa escura justa, espada, suando"
+ },
+ {
+  "name": "Criatura escura",
+  "look": "criatura escura de presas e garras brancas, olhos brilhantes"
+ },
+ {
+  "name": "Figura da explosão",
+  "look": "mão de garras brancas saindo de explosão de luz; dona da fala 'Morra!'"
+ },
+ {
+  "name": "Demônio lendário",
+  "look": "forma escura de espirais e chamas, lâmina branca no centro, espinhos e garras"
+ },
+ {
+  "name": "Criatura de elmo ósseo",
+  "look": "crânio chifrudo com presas abertas, placas brancas nas costelas, garras"
+ },
+ {
+  "name": "Guerreiro da espada",
+  "look": "botas blindadas escuras com garras, espada longa ornamentada, avança sobre chão rachado"
+ },
+ {
+  "name": "Criaturas chifrudas",
+  "look": "guerreiros chifrudos com presas, rugindo em grupo"
+ },
+ {
+  "name": "Figura de asas",
+  "look": "figura alada pequena segurando cajado, canto inferior direito"
+ },
+ {
+  "name": "Criatura de crina",
+  "look": "crina branca desgrenhada, chifres, focinho com dentes"
+ },
+ {
+  "name": "Criatura chifruda de capa",
+  "look": "criatura de chifres e capa escura, de costas, à esquerda"
+ },
+ {
+  "name": "Cabelo Castanho",
+  "look": "cabelo castanho espetado, sobrancelhas franzidas, olhar sério e fechado"
+ },
+ {
+  "name": "Criatura da névoa",
+  "look": "criatura de chifres e presas, garras longas, em névoa branca"
+ },
+ {
+  "name": "Silhueta do impacto",
+  "look": "silhueta escura no centro de explosão branca, cabelo escuro"
+ },
+ {
+  "name": "Criatura do olho",
+  "look": "criatura escura de chifres, boca cheia de dentes, olho brilhante no centro"
+ },
+ {
+  "name": "Figura do olho",
+  "look": "silhueta escura de pé, olho brilhante, cercada de energia escura"
+ },
+ {
+  "name": "Demônio chifrudo",
+  "look": "chifres curtos, olhos brancos brilhantes, boca com presas, pele escura"
+ },
+ {
+  "name": "Demônio de presas",
+  "look": "chifres, presas longas, olhos brilhantes, corpo escuro"
+ },
+ {
+  "name": "Demônio armado",
+  "look": "corpo blindado com espinhos brancos, boca larga com dentes"
+ },
+ {
+  "name": "Demônio de garras",
+  "look": "criatura escura de chifres, garras brancas curvas"
+ },
+ {
+  "name": "Cavaleiro-caveira",
+  "look": "elmo ornamentado de caveira, olhos brancos brilhantes, manto escuro"
+ },
+ {
+  "name": "Demônio de chifres brancos",
+  "look": "chifres brancos enrolados, sombra escura, surge na escuridão"
+ },
+ {
+  "name": "Sacerdote do pergaminho",
+  "look": "capuz e máscara de caveira, manto escuro, segura pergaminho luminoso"
+ },
+ {
+  "name": "Sacerdote do livro",
+  "look": "máscara de caveira, manto rasgado, segura livro aberto e crânio"
+ },
+ {
+  "name": "Sacerdote do cajado",
+  "look": "máscara de caveira ornamentada, manto longo, segura cajado brilhante"
+ },
+ {
+  "name": "Criaturas sombrias",
+  "look": "mãos e garras escuras, bocas com dentes, em círculo ao redor"
+ },
+ {
+  "name": "Figura de bastão",
+  "look": "capa escura comprida, cabelo claro, bastão, em névoa"
+ },
+ {
+  "name": "Figura de armadura escura",
+  "look": "armadura escura com ombros largos, em primeiro plano à esquerda"
+ },
+ {
+  "name": "Criatura chifruda de presas",
+  "look": "corpo escuro de chifres e presas, boca aberta, garras longas"
+ },
+ {
+  "name": "Cavaleiro de armadura clara",
+  "look": "armadura clara ou prateada, capa escura, lutando, sem rosto visível"
+ },
+ {
+  "name": "Criatura de crânio espinhoso",
+  "look": "crânio pálido com espinhos brancos, boca de presas, cabeça alta"
+ },
+ {
+  "name": "Criatura alada branca",
+  "look": "ser de penas brancas translúcidas, asas enormes, braços abertos"
+ },
+ {
+  "name": "Figura coroada",
+  "look": "capa longa escura, coroa cristalina, sobre raízes e mãos sombrias"
+ },
+ {
+  "name": "Batak",
+  "look": "Ordena trazer poções e armas; grita de dentes à mostra, braço enfaixado."
+ },
+ {
+  "name": "Eric",
+  "look": "Guerreiro de armadura escura que empunha arma brilhante; oferece sacrifício a Ourimas"
+ },
+ {
+  "name": "Cavaleiro de elmo alado",
+  "look": "armadura prateada, elmo alado, espada longa, capa escura"
+ },
+ {
+  "name": "Criatura pálida",
+  "look": "silhueta clara de boca aberta com presas, braços erguidos, em chamas"
+ },
+ {
+  "name": "Criatura de três olhos",
+  "look": "cabeça chifruda com três olhos, presas, peito musculoso, em chamas e raios"
+ },
+ {
+  "name": "Figura de roupa clara",
+  "look": "roupa clara longa com laço, no alto da cena, em luz branca"
+ },
+ {
+  "name": "Raskin",
+  "look": "Demônio de chifres e ombreiras; jura sacrificar tudo a Ourimas diante de lâminas brancas"
+ },
+ {
+  "name": "Figura de cabelo espetado",
+  "look": "cabelo espetado, parte inferior do quadro, perto de faixa branca"
+ },
+ {
+  "name": "Criatura de chamas",
+  "look": "demônio com chifres e presas, corpo em fogo branco, garras brancas"
+ },
+ {
+  "name": "Demônio de Chamas",
+  "look": "forma de espirais e chamas brancas, chifres, presas, garras escuras"
+ },
+ {
+  "name": "Filho das Chamas",
+  "look": "chifres, presas, olhos brancos brilhantes, orbe branco no peito, pele escura, aura de fogo"
+ },
+ {
+  "name": "Silhueta do Orbe",
+  "look": "silhueta escura com orbe brilhante, envolta em redemoinho de sombra e luz"
+ },
+ {
+  "name": "Mago de chapéu",
+  "look": "chapéu pontudo de aba larga, óculos, roupa clara"
+ },
+ {
+  "name": "Maga de capa",
+  "look": "capa escura comprida, cabelo claro longo, segura bastão"
+ },
+ {
+  "name": "Figura de coque",
+  "look": "cabelo preso em coque, de perfil, fala de canto, sem rosto nítido"
+ },
+ {
+  "name": "Figura de energia branca",
+  "look": "brilho branco no alto do quadro, rosto fora de vista"
+ },
+ {
+  "name": "Criatura da garra branca",
+  "look": "garra blindada com espinhos brancos, em meio a destroços"
+ },
+ {
+  "name": "Figura caída de roupa escura",
+  "look": "caída no chão, roupa escura, sem rosto visível, em energia branca"
+ },
+ {
+  "name": "Figura caída de roupa clara",
+  "look": "roupa clara longa, cabelo espalhado, deitada em cratera de pedra"
+ },
+ {
+  "name": "Criatura de espinhos brancos",
+  "look": "criatura escura com chifres, espinhos brancos, envolta em chamas"
+ },
+ {
+  "name": "Figura de capa descendo",
+  "look": "capa escura comprida, cai numa fenda de luz branca"
+ },
+ {
+  "name": "Figura de olhos fechados",
+  "look": "rosto suado de olhos fechados, cabelo castanho, perto do peito de outra figura"
+ },
+ {
+  "name": "Figura de mãos",
+  "look": "mãos com unhas, segurando pulso, em close"
+ },
+ {
+  "name": "Figura da base",
+  "look": "parte inferior do quadro, tecido escuro com marcas de gotas, sem rosto visível"
+ },
+ {
+  "name": "Anjo sagrado",
+  "look": "figura feminina alada, asas brancas enormes, cabelo claro longo"
+ },
+ {
+  "name": "Wang Liang",
+  "look": "vice-capitão do Corpo do Dragão de Neve, mago; calça e sapatos sociais escuros"
+ },
+ {
+  "name": "Figura do sofá",
+  "look": "cabelo castanho curto, camisa escura, braços abertos recostado no sofá"
+ },
+ {
+  "name": "Wang",
+  "look": "mago de fogo; grupo de quatro na Classe 2"
+ },
+ {
+  "name": "Figura de camisa escura",
+  "look": "camisa escura, de costas, cabelo curto, à esquerda"
+ },
+ {
+  "name": "Garoto listrado",
+  "look": "cabelo castanho curto espetado, camisa escura com faixa clara, boca aberta"
+ },
+ {
+  "name": "Figura de manto ornamentado",
+  "look": "manto bordado com padrões ornamentados, à esquerda do quadro"
+ },
+ {
+  "name": "Figura de botas brancas",
+  "look": "botas brancas e calça escura, no alto à direita, dentro do carro"
+ },
+ {
+  "name": "Figura de manto listrado",
+  "look": "manto listrado com orelhas pontudas, à direita, de pé"
+ },
+ {
+  "name": "Figura da mesa",
+  "look": "figura escura sentada à mesa, casaco escuro, vista de lado"
+ },
+ {
+  "name": "Figura da mão branca",
+  "look": "figura com braço estendido em luz branca, perto da mesa"
+ },
+ {
+  "name": "Anunciador",
+  "look": "criatura metálica branca com elmo de chifres, flutuando, fala pelo alto-falante"
+ },
+ {
+  "name": "Figura do alto",
+  "look": "silhueta escura no alto, sem rosto visível, fala ameaçadora"
+ },
+ {
+  "name": "Figura de manto branco",
+  "look": "manto branco, mãos brilhando em luz branca, braços abertos"
+ },
+ {
+  "name": "Wang Hui",
+  "look": "cabelo claro longo preso em coque com faixa, manto claro; reitor da Universidade Su Kang"
+ },
+ {
+  "name": "Rong Qi",
+  "look": "capuz escuro, barba grisalha, cajado com esfera no topo"
+ },
+ {
+  "name": "Chou Huayang",
+  "look": "cabelo castanho longo solto, braços cruzados, espada nas costas, armadura escura"
+ },
+ {
+  "name": "Zhang Ling",
+  "look": "homem gordo de colete de malha, bigode, sorriso de olhos fechados"
+ },
+ {
+  "name": "Wu Keqi",
+  "look": "mulher de cabelo claro preso, óculos, casaco escuro"
+ },
+ {
+  "name": "Wu Mang",
+  "look": "cabelo castanho escuro espetado, túnica clara, boca aberta gritando"
+ },
+ {
+  "name": "Jiang Churan",
+  "look": "aparência não identificada nestas páginas; nome aparece na janela do sistema"
+ },
+ {
+  "name": "Senador Zhang",
+  "look": "citado na fala; aparência não visível nestas páginas"
+ },
+ {
+  "name": "Capitão Xu",
+  "look": "citado na fala; aparência não visível; talvez a figura sentada à mesa"
+ },
+ {
+  "name": "Figura de véu",
+  "look": "véu ornamentado com padrão, orelhas pontudas, olhos fechados, joia no peito"
+ },
+ {
+  "name": "Figura sentada à mesa",
+  "look": "cabelo longo preso, roupa listrada, sentada à mesa de vidro"
+ },
+ {
+  "name": "Figura de emblema",
+  "look": "camiseta escura com emblema no peito, calça escura, braço erguido"
+ },
+ {
+  "name": "Garoto sorridente",
+  "look": "cabelo castanho, camisa escura, mão no queixo, sorrindo"
+ },
+ {
+  "name": "Cavaleiro de ombreiras",
+  "look": "armadura clara com ombreiras, ao lado esquerdo da cena"
+ },
+ {
+  "name": "Garoto de faixas",
+  "look": "cabelo castanho espetado, faixas nos punhos, sorriso largo"
+ },
+ {
+  "name": "Figura da pistola",
+  "look": "cabelo castanho curto, segura pistola, olhar sério"
+ },
+ {
+  "name": "Guerreira de capuz",
+  "look": "cabelo castanho preso, capuz, ombreira, olhar fechado"
+ },
+ {
+  "name": "Figura do cajado",
+  "look": "segura cajado com luva escura, roupa escura"
+ },
+ {
+  "name": "Urso Guerreiro",
+  "look": "urso branco de boca aberta rugindo, nível 17, janela Bear Warrior"
+ },
+ {
+  "name": "Urso Rastreador",
+  "look": "urso branco rugindo com dentes à mostra, nível 17, janela Bear Tracker"
+ },
+ {
+  "name": "Urso Ursa",
+  "look": "urso branco de boca aberta, nível 18, janela Bear Ursa"
+ },
+ {
+  "name": "Capa clara",
+  "look": "manto claro comprido, sem rosto visível, em movimento entre estilhaços"
+ },
+ {
+  "name": "Garoto do centro",
+  "look": "cabelo castanho espetado, camisa escura, olha para a esquerda"
+ },
+ {
+  "name": "Garoto da direita",
+  "look": "cabelo castanho espetado, roupa escura de gola, alto, perfil"
+ },
+ {
+  "name": "Garoto de trás",
+  "look": "cabelo castanho, atrás do grupo, perfil"
+ },
+ {
+  "name": "Garoto da esquerda",
+  "look": "parcialmente cortado, cabelo castanho, perfil à esquerda"
+ },
+ {
+  "name": "Presas",
+  "look": "cabelo escuro espetado, presas à mostra, sorriso feroz, envolto em fogo"
+ },
+ {
+  "name": "Observador",
+  "look": "cabelo escuro, de pé na parte inferior do quadro, visto de longe"
+ },
+ {
+  "name": "Dono das Botas",
+  "look": "botas blindadas cinzas de bico afiado, sem rosto visível"
+ },
+ {
+  "name": "Cabelo Longo",
+  "look": "cabelo escuro longo, rosto de perfil, roupa escura, expressão séria"
+ },
+ {
+  "name": "Ancião",
+  "look": "barba longa grisalha, capuz escuro, capa ornamentada"
+ },
+ {
+  "name": "Cabelo Preto",
+  "look": "cabelo preto comprido, jaqueta esportiva clara com listras brancas, sorriso"
+ },
+ {
+  "name": "Figura de vestido escuro",
+  "look": "mulher de cabelo escuro e vestido escuro, ao fundo"
+ },
+ {
+  "name": "Figura de manga clara",
+  "look": "manga clara larga e faixa, no alto da cena"
+ },
+ {
+  "name": "Figura do ritual",
+  "look": "silhueta escura sem rosto visível, em cena de ossos e fumaça"
+ },
+ {
+  "name": "Esqueleto no trono",
+  "look": "esqueleto sentado em trono de pedra, lua cheia atrás, emblema no peito"
+ },
+ {
+  "name": "Maga",
+  "look": "cabelo claro longo, óculos, xale escuro, braços cruzados"
+ },
+ {
+  "name": "urso branco",
+  "look": "urso gigante de pelo branco, boca aberta rugindo, dentes à mostra"
+ },
+ {
+  "name": "Figura do grito",
+  "look": "vulto borrado em alta velocidade, grita 'Diretor!!', sem rosto visível"
+ },
+ {
+  "name": "Criatura-esqueleto",
+  "look": "crânio chifrudo, costelas e ossos brancos envoltos em névoa branca"
+ },
+ {
+  "name": "Figura do rosto",
+  "look": "close do olho e rosto, cabelo castanho escuro na altura das orelhas, olhar sério"
+ },
+ {
+  "name": "Urso negro",
+  "look": "urso negro com olhos brancos brilhantes, presas, névoa branca"
+ },
+ {
+  "name": "Criatura-garra blindada",
+  "look": "garra blindada com espinhos brancos em meio a destroços"
+ },
+ {
+  "name": "Urso fantasma",
+  "look": "urso fantasma escuro, olhos brancos brilhantes, nível 19, névoa e chamas brancas"
+ },
+ {
+  "name": "Figura de calça escura",
+  "look": "calça escura e botas, perna em chute, sem rosto visível"
+ },
+ {
+  "name": "Criatura sorridente",
+  "look": "rosto escuro, sorriso largo com presas, gema branca na testa, luz branca"
+ },
+ {
+  "name": "Figura de manto escuro",
+  "look": "manto escuro longo com faixa clara na cintura, cabelo longo, punho cerrado, rosto oculto"
+ },
+ {
+  "name": "Figura de cabelo escuro",
+  "look": "cabelo escuro longo, rosto oculto, sobre fundo escuro"
+ },
+ {
+  "name": "Figura da capa escura",
+  "look": "capa escura comprida, braço estendido em energia branca, sem rosto visível"
+ },
+ {
+  "name": "Figura da mão estendida",
+  "look": "cabelo claro, capa escura, mão estendida em luz branca"
+ },
+ {
+  "name": "Criatura serpentina",
+  "look": "criatura de chifres e corpo longo, sobre telhados"
+ },
+ {
+  "name": "Mão gigante",
+  "look": "mão enorme de dedos longos, em energia branca"
+ },
+ {
+  "name": "Barbudo caído",
+  "look": "barba ruiva curta, faixas brancas nos braços, camisa clara, caído no chão"
+ },
+ {
+  "name": "Figura de cabelo longo de costas",
+  "look": "cabelo longo escuro, jaqueta escura com listra clara, de costas, canto inferior esquerdo"
+ },
+ {
+  "name": "Figura de calça de treino",
+  "look": "calça escura de treino com listra branca lateral, tênis, de pé à esquerda"
+ },
+ {
+  "name": "Shen Lingfeng",
+  "look": "nome citado na fala; aparência não visível nestas páginas"
+ },
+ {
+  "name": "Figura do pilar",
+  "look": "figura escura no topo de pilar, chamas no cabelo, sobre dragão"
+ },
+ {
+  "name": "Dragão do pilar",
+  "look": "dragão enrolado no pilar, chifres, cauda com espinhos"
+ },
+ {
+  "name": "Garoto à direita",
+  "look": "cabelo castanho espetado, mão na cabeça, olhando para cima"
+ },
+ {
+  "name": "Garoto da camisa listrada",
+  "look": "cabelo castanho espetado, camisa escura com faixa clara"
+ },
+ {
+  "name": "Guerreira de rabo de cavalo",
+  "look": "cabelo claro preso em rabo de cavalo, roupa clara com ombreira"
+ },
+ {
+  "name": "Guerreira de braços cruzados",
+  "look": "cabelo escuro comprido, braços cruzados, musculosa, camisa clara"
+ },
+ {
+  "name": "Figura da espada",
+  "look": "segura espada enorme, cabelo escuro preso, roupa escura"
+ },
+ {
+  "name": "Figura de jaqueta listrada",
+  "look": "jaqueta escura com faixa clara, cabelo escuro preso, segura escudo"
+ },
+ {
+  "name": "Figura da mão com garras",
+  "look": "mão com garras e unhas, em soco de fogo, parte inferior direita"
+ },
+ {
+  "name": "Figura do chute",
+  "look": "calça escura, botas, perna em chute, no alto à esquerda"
+ },
+ {
+  "name": "Figura de ombro escuro",
+  "look": "jaqueta escura, ombro em primeiro plano, à direita do Garoto"
+ },
+ {
+  "name": "Manto escuro",
+  "look": "manto escuro longo com faixa clara na cintura, cabelo longo, rosto oculto"
+ },
+ {
+  "name": "Figura do vórtice",
+  "look": "figura central pálida envolta em redemoinho de luz branca"
+ },
+ {
+  "name": "Criatura de espinhos",
+  "look": "criatura escura com chifres e espinhos brancos, em chamas"
+ },
+ {
+  "name": "Figura contra luz",
+  "look": "camiseta escura, estojo na mão, contra explosão branca, rosto pouco visível"
+ },
+ {
+  "name": "Figura central",
+  "look": "silhueta escura sem rosto visível, no centro de anéis hexagonais de luz branca"
+ },
+ {
+  "name": "Figura de chamas",
+  "look": "Homem gritando, rosto com chamas brancas no cabelo e na aura, boca aberta"
+ },
+ {
+  "name": "Figura de armadura rachada",
+  "look": "Armadura escura com padrão de rachaduras e espinhos, capa escura, movimento rápido"
+ },
+ {
+  "name": "Figura do clarão",
+  "look": "Rosto de perfil, cabelo escuro borrado, iluminado por luz branca de impacto"
+ },
+ {
+  "name": "Inimigo de dentes à mostra",
+  "look": "cabelo claro desgrenhado, dentes cerrados à mostra, suor, chamas brancas atrás"
+ },
+ {
+  "name": "Figura dos talismãs",
+  "look": "pernas com bandagens e talismãs brancos, em movimento"
+ },
+ {
+  "name": "Jiang",
+  "look": "cabelo escuro preso em coque com laço, roupa clara de mangas largas, talismãs"
+ },
+ {
+  "name": "Figura de fora do quadro",
+  "look": "fora do quadro, balão com rabicho apontando para baixo"
+ },
+ {
+  "name": "Figura das chamas",
+  "look": "fora do quadro, balão aponta para as chamas, sem rosto visível"
+ },
+ {
+  "name": "Garoto de colarinho",
+  "look": "cabelo castanho espetado, camisa escura com colarinho branco"
+ },
+ {
+  "name": "Garoto de ombreira",
+  "look": "cabelo castanho espetado, armadura com ombreira, de costas"
+ },
+ {
+  "name": "Garoto de olhar afiado",
+  "look": "cabelo castanho espetado, olhar afiado, rosto de perfil"
+ },
+ {
+  "name": "Guerreiro de ombros",
+  "look": "armadura escura de ombros largos, em primeiro plano"
+ },
+ {
+  "name": "Heng",
+  "look": "Instrutor sério da Academia Segunda, de perfil, alerta sobre o primeiro despertar"
+ },
+ {
+  "name": "Xiang",
+  "look": "Professor com prancheta e óculos-visor, conduz a chamada da cerimônia"
+ },
+ {
+  "name": "Zhou Tian",
+  "look": "Careca, camisa, aura intensa; recruta da Universidade Rong Yang, aparece como Tian"
+ },
+ {
+  "name": "Zhan Tao",
+  "look": "Diretor de Educação; reage em choque ao lado do Barbudo"
+ },
+ {
+  "name": "Yu",
+  "look": "cabelo ondulado, sacerdote de cura, conjura círculo mágico contra o frio, irmã de Yi"
+ },
+ {
+  "name": "Zhang Wei",
+  "look": "arqueiro; grupo de quatro na Classe 2"
+ },
+ {
+  "name": "Zhao Tian Hong",
+  "look": "espadachim; grupo de quatro na Classe 2"
+ },
+ {
+  "name": "Yong Er Lang",
+  "look": "mestre de poções; grupo de quatro na Classe 2"
+ },
+ {
+  "name": "Chui Lie Na",
+  "look": "sacerdote despertada de nível 35, capuz e capa escura, cajado, secundária da cidade de Qing Yun"
+ },
+ {
+  "name": "Mei",
+  "look": "professora de recrutamento da Universidade Su Kang, valoriza a força"
+ },
+ {
+  "name": "Dong",
+  "look": "capitão do clube Aurora, mãos no bolso, conversa com Mei"
+ },
+ {
+  "name": "Yu Zhou",
+  "look": "major do Corpo do Dragão de Neve, nível 51, terceiro despertar; recebe o relatório de Zhou"
+ },
+ {
+  "name": "Wangang",
+  "look": "Vice-capitão do Corpo do Dragão de Neve, mago; aparece de calça e sapatos escuros"
+ },
+ {
+  "name": "Yang",
+  "look": "Senador citado pela Mulher da serpente; recebe ordens para avisar as legiões e guardar as fendas médias"
+ },
+ {
+  "name": "Rong",
+  "look": "Diretor da Casa de Armamentos; cajado erguido, capuz e rosto sério."
+ },
+ {
+  "name": "Chou",
+  "look": "Diretor da Casa Elemental; braços cruzados, espada nas costas."
+ },
+ {
+  "name": "Keqi",
+  "look": "Casa Logística; usa óculos, ao lado de Chou."
+ },
+ {
+  "name": "Mang",
+  "look": "Diretor da Casa da Guerra; cabelo curto espetado, grita e discursa."
+ },
+ {
+  "name": "Wu",
+  "look": "Mestre citado pelo Barbudo; quer falar com Zhou."
+ },
+ {
+  "name": "Armadura clara",
+  "look": "armadura clara, luz branca sagrada, sem rosto visível"
+ },
+ {
+  "name": "Capa de pele",
+  "look": "capa de pele clara no ombro, de costas, à esquerda"
+ },
+ {
+  "name": "Guerreira de rabo",
+  "look": "cabelo preso em rabo, olhos fechados, armadura justa e capa"
+ },
+ {
+  "name": "Guerreira de coques",
+  "look": "cabelo preso em coques, armadura justa, no alto à direita"
+ },
+ {
+  "name": "Guerreira de cabelo longo",
+  "look": "cabelo escuro longo, armadura justa, sentada no círculo de luz"
+ },
+ {
+  "name": "Irmã",
+  "look": "(aparência ainda não vista) aparece como Yun (resumos dos caps. 2, 3 e 7), Xiao (narração) e Yu (cap. 7). Adoeceu; tem linhagem congelante"
+ },
+ {
+  "name": "Diretor Zhan",
+  "look": "(aparência ainda não vista) quase engasgou ao ver as façanhas de Zhou (cap. 4)."
+ }
+]

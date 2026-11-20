@@ -45,14 +45,14 @@
     "voice": "fish-animado-dark",
     "name": "Animado Dark",
     "provider": "fishaudio",
-    "requests": 28048,
-    "ok": 28027,
-    "fail": 21,
+    "requests": 30283,
+    "ok": 30260,
+    "fail": 23,
     "quotaHits": 0,
-    "chars": 3222759,
-    "audioSec": 162713.55367232763,
-    "ms": 108665964,
-    "lastAt": "2026-11-19T15:14:12.691Z",
+    "chars": 3439095,
+    "audioSec": 173536.81304732518,
+    "ms": 115668233,
+    "lastAt": "2026-11-20T20:05:37.257Z",
     "days": {
       "2026-11-05": {
         "requests": 661,
@@ -136,6 +136,12 @@
         "requests": 2088,
         "chars": 206363,
         "audioSec": 10238.663770833322,
+        "fail": 2
+      },
+      "2026-11-20": {
+        "requests": 2235,
+        "chars": 216336,
+        "audioSec": 10823.25937499999,
         "fail": 2
       }
     },

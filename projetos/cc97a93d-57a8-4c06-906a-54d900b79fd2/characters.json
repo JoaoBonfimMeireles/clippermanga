@@ -1,0 +1,1790 @@
+[
+ {
+  "name": "Hyunmin Oh",
+  "look": "Homem de 33 anos, cabelo escuro, veste terno e gravata."
+ },
+ {
+  "name": "Oh",
+  "look": "funcionário de camisa branca, cabelo castanho escuro penteado, rosto suado"
+ },
+ {
+  "name": "Goblins",
+  "look": "grupo de goblins calvos sem camisa, orelhas pontudas, gritando em coro"
+ },
+ {
+  "name": "Figura no topo da muralha",
+  "look": "figura pequena de cabelo escuro no alto da torre de vigia"
+ },
+ {
+  "name": "Figura de dentes cerrados",
+  "look": "rosto suado, dentes cerrados, boca aberta, pele clara, close"
+ },
+ {
+  "name": "Figura ambígua",
+  "look": "pescoço e orelha pontuda em close, sem rosto visível"
+ },
+ {
+  "name": "Figura enfaixada",
+  "look": "punho pálido enfaixado com tecido claro, segura lança longa, pés descalços"
+ },
+ {
+  "name": "Criatura de presas",
+  "look": "criatura cinzenta de boca escancarada com presas"
+ },
+ {
+  "name": "Goblin de lenço",
+  "look": "goblin calvo de pele clara, lenço amarrado ao pescoço, orelhas pontudas"
+ },
+ {
+  "name": "Figura do olho",
+  "look": "olho escuro arregalado, sobrancelha grossa, cabelo escuro solto no topo"
+ },
+ {
+  "name": "Goblin de dentes cerrados",
+  "look": "goblin calvo de pele clara suada, dentes cerrados"
+ },
+ {
+  "name": "Goblin bebê",
+  "look": "pequeno, calvo, orelhas pontudas, olhos arregalados, segura bastão"
+ },
+ {
+  "name": "Hyunmin",
+  "look": "Homem sorridente de calça escura que faz reverência e se apresenta a Mulher de camisa clara"
+ },
+ {
+  "name": "Figura do olhar",
+  "look": "cabelo escuro, olho arregalado e suado, sobrancelha grossa, close"
+ },
+ {
+  "name": "Goblin do queixo",
+  "look": "orelha pontuda, queixo e boca abertos em close, sem rosto visível"
+ },
+ {
+  "name": "Goblin careca",
+  "look": "goblin calvo de pele clara, segura bebê pelo braço, rosto em careta"
+ },
+ {
+  "name": "Goblin musculoso",
+  "look": "sem camisa, peitoral definido, orelhas pontudas"
+ },
+ {
+  "name": "Goblin de olhos fechados",
+  "look": "goblin calvo de pele cinzenta, rosto de perfil, olhos fechados, sorriso, orelha longa"
+ },
+ {
+  "name": "Figura de terno",
+  "look": "homem de terno escuro, visto de baixo, sem rosto visível"
+ },
+ {
+  "name": "Figura do rosto",
+  "look": "rosto pálido em close, olhos semicerrados, suado, cabelo castanho comprido"
+ },
+ {
+  "name": "Multidão de silhuetas",
+  "look": "silhuetas escuras de chapéu em fila na base do corredor, sem rosto visível"
+ },
+ {
+  "name": "Figura escura",
+  "look": "roupa escura, costas e ombro cortados, sob chamas"
+ },
+ {
+  "name": "Goblin de barriga",
+  "look": "torso pálido, barriga volumosa, caído de costas, tanga rasgada"
+ },
+ {
+  "name": "Goblin gigante",
+  "look": "goblin enorme de pele clara, pé gigantesco, grita 'Saiam da frente!'"
+ },
+ {
+  "name": "Figura sorridente",
+  "look": "homem pálido de terno escuro, sorriso largo com presas"
+ },
+ {
+  "name": "Figura escura de terno",
+  "look": "homem de terno escuro, visto de baixo, braço erguido, sem rosto visível"
+ },
+ {
+  "name": "Figura solitária",
+  "look": "figura pequena de cabelo escuro, corre com tocha na torre de vigia"
+ },
+ {
+  "name": "Goblin fardado",
+  "look": "goblin de boné e farda camuflados, orelhas pontudas, olhos brancos, shorts rasgados"
+ },
+ {
+  "name": "Dono do olho",
+  "look": "olho escuro arregalado em close, sobrancelha grossa, sem rosto inteiro"
+ },
+ {
+  "name": "Goblin peludo",
+  "look": "criatura escura peluda, orelha pontuda, em close, perto de Hyunmin"
+ },
+ {
+  "name": "Goblin de trás",
+  "look": "calvo, orelhas pontudas, boca aberta gritando, atrás dos outros"
+ },
+ {
+  "name": "Figura do canto",
+  "look": "cabeça de cabelo castanho cortada no canto inferior esquerdo, fora do quadro"
+ },
+ {
+  "name": "Goblin gritante",
+  "look": "goblin calvo, pele cinzenta, boca aberta com presas, puxa corda"
+ },
+ {
+  "name": "Goblin de braço erguido",
+  "look": "calvo, pele cinzenta, braço erguido, gritando, correndo"
+ },
+ {
+  "name": "Goblin do punho",
+  "look": "goblin calvo, pele clara suada, punho cerrado junto ao rosto, dentes à mostra"
+ },
+ {
+  "name": "Goblin do rosto grande",
+  "look": "careca de primeiro plano, boca aberta com presas, orelhas pontudas, suado"
+ },
+ {
+  "name": "Palestrante",
+  "look": "homem de terno escuro segurando microfone, rosto fora do quadro"
+ },
+ {
+  "name": "Soldados em formação",
+  "look": "soldados com escudos redondos e capacetes, em fileira fechada, lanças"
+ },
+ {
+  "name": "Goblin suado",
+  "look": "goblin calvo de pele clara suada, dentes cerrados, segura tocha"
+ },
+ {
+  "name": "Goblins da fila",
+  "look": "calvos sem camisa, tanga rasgada, orelhas pontudas, lanças, em fila"
+ },
+ {
+  "name": "Goblin de lança",
+  "look": "goblin calvo sem camisa, lança na mão, boca aberta gritando"
+ },
+ {
+  "name": "Goblin da lança",
+  "look": "goblin calvo de pele clara, sentado, lança na mão, mão no queixo"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro e espetado, visto de baixo, canto inferior"
+ },
+ {
+  "name": "Goblin de Pernas",
+  "look": "pernas e pés pálidos descalços em corrida, poeira no chão"
+ },
+ {
+  "name": "Figura dos dentes",
+  "look": "close de boca e pescoço suados, dentes cerrados, pele clara"
+ },
+ {
+  "name": "Goblin Dentes",
+  "look": "goblin calvo, pele clara suada, dentes cerrados, rosto tenso"
+ },
+ {
+  "name": "Goblin Trás",
+  "look": "goblin calvo ao fundo, orelhas pontudas, olhos arregalados, boca aberta"
+ },
+ {
+  "name": "Figura gritante",
+  "look": "boca escancarada e dentes à mostra em close, pescoço, sem rosto visível"
+ },
+ {
+  "name": "Figura descalça",
+  "look": "pé descalço pálido em corrida, poeira no chão; sem rosto visível"
+ },
+ {
+  "name": "Dentes cerrados",
+  "look": "Rosto suado de dentes cerrados, pele clara, boca aberta, close"
+ },
+ {
+  "name": "Cabelo claro",
+  "look": "cabelo claro espetado, visto de baixo, na base do quadro"
+ },
+ {
+  "name": "Sorridente",
+  "look": "Cabelo escuro, pele pálida, sorriso largo com dentes à mostra, close"
+ },
+ {
+  "name": "Figura inferior",
+  "look": "cabelo escuro cortado na base da imagem, fala sobre pontos dos goblins"
+ },
+ {
+  "name": "Goblin de braços abertos",
+  "look": "calvo, pele clara, braços abertos na beira do penhasco, rosto tenso"
+ },
+ {
+  "name": "Goblin do grito",
+  "look": "calvo de pele clara, boca escancarada com presas, primeiro plano"
+ },
+ {
+  "name": "Goblin do aviso",
+  "look": "calvo, pele clara, rosto irritado, dentes à mostra"
+ },
+ {
+  "name": "Goblin do clube",
+  "look": "calvo, pele clara, segura clava de espinhos, grita de braço erguido"
+ },
+ {
+  "name": "Goblin dentes cerrados",
+  "look": "calvo, pele clara suada, dentes cerrados, puxa corda à direita"
+ },
+ {
+  "name": "Goblin atingido",
+  "look": "goblin de pele cinzenta, braço atingido por lâmina"
+ },
+ {
+  "name": "Goblin central",
+  "look": "goblin calvo de pele clara, boca aberta, braço estendido na multidão"
+ },
+ {
+  "name": "Goblin da pedra",
+  "look": "goblin calvo, orelhas pontudas, arremessa pedra"
+ },
+ {
+  "name": "Goblin caído",
+  "look": "goblin de orelhas pontudas caindo de cabeça para baixo, roupa rasgada, pele clara"
+ },
+ {
+  "name": "Criatura pálida",
+  "look": "criatura enorme de pele pálida, atingida por lâmina, sob céu nublado"
+ },
+ {
+  "name": "Figura de cabelo escuro",
+  "look": "cabelo escuro, fora do quadro, visto de baixo, fala de espanto"
+ },
+ {
+  "name": "Goblin Sangrento",
+  "look": "calvo, pele clara suada, boca aberta de raiva, agarra companheiro"
+ },
+ {
+  "name": "Goblin Pequeno",
+  "look": "goblin calvo redondinho de pele clara, marca na testa, orelhas pontudas, sorriso aberto, colado às costas de Oh"
+ },
+ {
+  "name": "Goblin Perfil",
+  "look": "goblin de perfil em close, pele cinzenta, orelha pontuda, sobrancelha franzida"
+ },
+ {
+  "name": "Goblin rastejante",
+  "look": "goblin calvo rastejando na grama, orelhas pontudas, pele cinzenta, curvado"
+ },
+ {
+  "name": "Goblin do fundo",
+  "look": "goblin calvo ao fundo, orelhas pontudas, rosto de perfil, boca aberta"
+ },
+ {
+  "name": "Enfaixado",
+  "look": "goblin com braços enfaixados em faixas brancas, cerra o punho"
+ },
+ {
+  "name": "Silhueta",
+  "look": "figura escura de cabelo espetado, vista de perfil sobre penhasco"
+ },
+ {
+  "name": "Goblin do braço",
+  "look": "goblin de braço estendido no chão, dedos cerrados, pele cinzenta"
+ },
+ {
+  "name": "Figura caída",
+  "look": "figura caída no chão de madeira, pele clara, sem rosto visível"
+ },
+ {
+  "name": "Figura dos olhos brilhantes",
+  "look": "cabelo castanho esvoaçante, olhos brilhando, rosto tenso em close"
+ },
+ {
+  "name": "Goblin calvo de olhos arregalados",
+  "look": "calvo, pele clara suada, olhos arregalados, boca aberta, orelhas pontudas"
+ },
+ {
+  "name": "Goblin de barriga pálida",
+  "look": "torso pálido, barriga volumosa, caído de costas"
+ },
+ {
+  "name": "Criatura de garras",
+  "look": "criatura pálida de costas, garras longas, marcas escuras no corpo, em close"
+ },
+ {
+  "name": "Goblin lanceiro",
+  "look": "goblin calvo sem camisa, pele cinzenta, suado, segura lança, olhar assustado"
+ },
+ {
+  "name": "Goblin do chão",
+  "look": "goblin pálido de barriga volumosa, caído de bruços no chão"
+ },
+ {
+  "name": "Goblin que pisa",
+  "look": "pé descalço pálido sobre pedra, sem rosto visível"
+ },
+ {
+  "name": "Goblin que cai",
+  "look": "pernas nuas, tanga, braços abertos, girando no ar"
+ },
+ {
+  "name": "Goblin que segura",
+  "look": "goblin calvo, pele pálida, braço estendido agarrando companheiro ou roupa"
+ },
+ {
+  "name": "Goblin do canto",
+  "look": "goblin agachado no canto inferior, orelhas pontudas, rosto assustado"
+ },
+ {
+  "name": "Goblin fora do quadro",
+  "look": "voz de goblin fora do quadro, avisa sobre as aranhas"
+ },
+ {
+  "name": "Goblin Tenso",
+  "look": "goblin calvo, pele clara suada, dentes cerrados, segura bastão amarrado, orelhas pontudas"
+ },
+ {
+  "name": "Figura de cabelo comprido",
+  "look": "cabelo castanho volumoso e ondulado, brinco na orelha, sorriso suado"
+ },
+ {
+  "name": "Ombros nus",
+  "look": "ombros nus, cabelo castanho bagunçado, tira de couro com argola"
+ },
+ {
+  "name": "Criatura dentuda",
+  "look": "boca escancarada com presas, pele cinzenta, rosnando, sem rosto"
+ },
+ {
+  "name": "Goblin de lâmina",
+  "look": "braço pálido e grande segurando lâmina curva erguida, vindo de cima"
+ },
+ {
+  "name": "Goblin atingido pela pedra",
+  "look": "goblin de pele cinzenta, dentes cerrados, pedra atingindo a testa"
+ },
+ {
+  "name": "Goblin de peito ferido",
+  "look": "goblin de torso nu, lâmina atravessando o peito, pele cinzenta"
+ },
+ {
+  "name": "Goblin sentado",
+  "look": "goblin calvo, pele cinzenta, sentado no chão, grimaça, pernas dobradas"
+ },
+ {
+  "name": "Multidão de goblins",
+  "look": "goblins calvos sem camisa, orelhas pontudas, em pé em fileiras"
+ },
+ {
+  "name": "Criatura da mão",
+  "look": "mão pálida de garras longas e dedos finos, vinda de baixo"
+ },
+ {
+  "name": "Goblin ferido",
+  "look": "goblin cinzento, lâmina atravessando a orelha, sangue no rosto, olhos arregalados"
+ },
+ {
+  "name": "Atacante escuro",
+  "look": "roupa escura, golpeia de lado, corpo cortado no quadro"
+ },
+ {
+  "name": "Criatura peluda",
+  "look": "criatura de pelo claro, boca aberta com dentes, perto do Manager"
+ },
+ {
+  "name": "Goblin da fila",
+  "look": "calvo sem camisa, tanga, segura lança, atrás no grupo, orelhas pontudas"
+ },
+ {
+  "name": "Caído",
+  "look": "cabelo escuro comprido, ombros nus, sangue, deitado sob pedras"
+ },
+ {
+  "name": "Goblin caindo",
+  "look": "goblin de pernas nuas, tanga rasgada, braços abertos no ar, unhas longas"
+ },
+ {
+  "name": "Manager Oh",
+  "look": "protagonista de camisa branca e calça escura, cabelo penteado, usa tocha e estilingue"
+ },
+ {
+  "name": "Goblins mortos",
+  "look": "goblins calvos de orelhas pontudas, pele cinzenta, caídos no chão"
+ },
+ {
+  "name": "Goblins amarrados",
+  "look": "goblins calvos de pele cinzenta, tronco amarrado com faixas"
+ },
+ {
+  "name": "Goblin ajoelhado",
+  "look": "goblin calvo de pele clara, orelhas pontudas, ajoelhado, rosto sério"
+ },
+ {
+  "name": "Goblins em pé",
+  "look": "goblins calvos sem camisa, orelhas pontudas, em pé ao redor"
+ },
+ {
+  "name": "Goblin amarrado",
+  "look": "goblin calvo, pele cinzenta, tronco amarrado com faixas"
+ },
+ {
+  "name": "Goblin da direita",
+  "look": "calvo, pele clara suada, dentes cerrados, rosto tenso"
+ },
+ {
+  "name": "Goblin de óculos",
+  "look": "calvo, pele clara, óculos, olhos redondos arregalados, boca aberta gritando"
+ },
+ {
+  "name": "Goblin Calvo",
+  "look": "calvo, pele clara, orelhas pontudas, empunha lâmina em golpe"
+ },
+ {
+  "name": "Goblin Sorridente",
+  "look": "goblin calvo de pele clara, olhos fechados, sorriso, orelha longa, segura lâmina"
+ },
+ {
+  "name": "Gritante",
+  "look": "dá grito KIEK!, corpo cinza agarrando roupa escura, sem rosto visível"
+ },
+ {
+  "name": "Figura castanha",
+  "look": "cabelo castanho longo e ondulado, de costas, ombro nu com pelo claro"
+ },
+ {
+  "name": "Goblin Rosto Suado",
+  "look": "calvo, pele clara suada, dentes cerrados em close, olhos apertados"
+ },
+ {
+  "name": "Goblin do olhar",
+  "look": "goblin calvo de pele clara, sobrancelha grossa, testa franzida, dentes cerrados"
+ },
+ {
+  "name": "Goblin de presas",
+  "look": "goblin cinzento, boca escancarada com presas, suor, close em perfil"
+ },
+ {
+  "name": "Goblin dos dentes",
+  "look": "calvo, pele clara suada, dentes cerrados, rosto tenso"
+ },
+ {
+  "name": "Goblin Dentuço",
+  "look": "Goblin de pele clara, dentes cerrados e afiados, suor, olhar de lado"
+ },
+ {
+  "name": "Goblin gritador",
+  "look": "calvo, pele clara, boca escancarada com presas, corpo de lado"
+ },
+ {
+  "name": "Goblin da frente",
+  "look": "calvo, pele clara, olhos arregalados, boca aberta, orelhas pontudas"
+ },
+ {
+  "name": "Goblin cinzento",
+  "look": "goblin cinzento calvo, orelha pontuda, caído no chão, rosto tenso"
+ },
+ {
+  "name": "Goblin da orelha",
+  "look": "goblin de orelha pontuda em primeiro plano, pele cinza, rosto cortado"
+ },
+ {
+  "name": "Goblin dos olhos arregalados",
+  "look": "calvo, pele clara suada, olhos muito arregalados, boca entreaberta, orelhas pontudas"
+ },
+ {
+  "name": "Goblin Olhar Arregalado",
+  "look": "Goblin calvo atrás do grupo, pele clara, olhos arregalados, boca aberta"
+ },
+ {
+  "name": "Cabeças do chão",
+  "look": "Cabeças pálidas emergindo de manchas escuras de poeira no chão, sem rosto visível"
+ },
+ {
+  "name": "Goblin que aponta",
+  "look": "goblin calvo, pele clara suada, dentes à mostra, braço erguido apontando com garras"
+ },
+ {
+  "name": "Goblin de olhos arregalados",
+  "look": "calvo de pele clara, olhos arregalados, boca aberta, atrás do grupo"
+ },
+ {
+  "name": "Figura de cabelo castanho",
+  "look": "cabelo castanho bagunçado, visto de costas, nuca e ombro"
+ },
+ {
+  "name": "Goblins caídos",
+  "look": "goblins calvos de pele cinzenta caídos no chão"
+ },
+ {
+  "name": "Goblin suplicante",
+  "look": "goblin calvo, pele cinzenta, mão erguida, lágrimas, olhos arregalados"
+ },
+ {
+  "name": "Goblin de mão no chão",
+  "look": "calvo, pele clara, rosto franzido, mão espalmada no chão"
+ },
+ {
+  "name": "Figura presa",
+  "look": "cabelo escuro, roupa escura, segurada pelo Goblin gritante"
+ },
+ {
+  "name": "Goblin Olhos Arregalados",
+  "look": "calvo, pele clara, olhos arregalados, boca aberta, orelhas pontudas"
+ },
+ {
+  "name": "Goblin Agachado",
+  "look": "goblin cinzento agachado no canto, orelhas pontudas, mão na cabeça, rosto assustado"
+ },
+ {
+  "name": "Goblin Mão no Rosto",
+  "look": "goblin calvo, pele clara suada, mão cobrindo o rosto, dentes cerrados"
+ },
+ {
+  "name": "Goblin do braço aberto",
+  "look": "pequeno, calvo, pele clara, braço erguido, gesticulando na multidão"
+ },
+ {
+  "name": "Goblin calvo do meio",
+  "look": "calvo, pele cinzenta, orelhas pontudas, testa franzida, no centro da multidão"
+ },
+ {
+  "name": "Goblin curvado",
+  "look": "goblin calvo curvado de costas, pele clara, orelhas pontudas, tanga"
+ },
+ {
+  "name": "Figura dos ombros",
+  "look": "ombros escuros cortados na base do quadro, sem rosto visível"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão pálida de dedos cerrados em golpe diagonal, sem rosto visível"
+ },
+ {
+  "name": "Goblin fugitivo",
+  "look": "goblins calvos, pele clara, orelhas pontudas, correndo pelo desfiladeiro"
+ },
+ {
+  "name": "Goblins em pânico",
+  "look": "goblins calvos, orelhas pontudas, olhos arregalados, atrás de Hyunmin"
+ },
+ {
+  "name": "Figura suada",
+  "look": "rosto pálido suado, olhos apertados, boca tensa, close de perfil"
+ },
+ {
+  "name": "Aranhas gigantes",
+  "look": "aranhas enormes de corpo escuro e olhos brilhantes, entre árvores da floresta"
+ },
+ {
+  "name": "Criatura de chifres",
+  "look": "criatura escura vista de costas, dois chifres pontudos, mata ao fundo"
+ },
+ {
+  "name": "Criatura aranha",
+  "look": "criatura aranhosa com muitos olhos brilhantes e pernas com garras longas"
+ },
+ {
+  "name": "Goblins da clareira",
+  "look": "goblins calvos sem camisa, orelhas pontudas, em pé ao redor de Manager Oh"
+ },
+ {
+  "name": "Goblin do penhasco",
+  "look": "calvo, pele clara, orelha pontuda, espia de trás de rocha com rosto franzido"
+ },
+ {
+  "name": "Goblin alto",
+  "look": "goblin musculoso sem camisa, tanga rasgada, mãos na cintura, em pé"
+ },
+ {
+  "name": "Goblin do meio",
+  "look": "calvo, pele cinzenta, orelhas pontudas, braço estendido para a direita"
+ },
+ {
+  "name": "Goblin de costas",
+  "look": "calvo de pele clara, orelha pontuda, visto de costas, ombro suado"
+ },
+ {
+  "name": "Goblins em fuga",
+  "look": "calvos sem camisa, tanga, orelhas pontudas, correndo para a caverna"
+ },
+ {
+  "name": "Goblin frontal",
+  "look": "goblin calvo sem camisa, tanga, olhos arregalados, boca aberta, orelhas pontudas, rosto assustado"
+ },
+ {
+  "name": "Goblin da esquerda",
+  "look": "calvo, pele clara, presas à mostra, close"
+ },
+ {
+  "name": "Goblins do grupo",
+  "look": "goblins calvos sem camisa, tanga, orelhas pontudas, em pé atrás, pele clara"
+ },
+ {
+  "name": "Goblin de boca aberta",
+  "look": "goblin calvo, pele pálida, olhos arregalados, boca escancarada gritando, primeiro plano"
+ },
+ {
+  "name": "Goblin mastigando",
+  "look": "calvo, pele cinzenta, presas à mostra, mastiga algo com as mãos"
+ },
+ {
+  "name": "Goblin preocupado",
+  "look": "calvo, pele clara, tanga, olhar de lado apreensivo, segura lança"
+ },
+ {
+  "name": "Goblin assustado",
+  "look": "goblin calvo pequeno, pele clara, orelhas pontudas, olhos arregalados, à esquerda do grupo"
+ },
+ {
+  "name": "Goblin raivoso",
+  "look": "calvo, pele cinzenta, rosto furioso de perfil à esquerda"
+ },
+ {
+  "name": "Goblin corredor",
+  "look": "pernas pálidas e pés com sandálias de pelo, correndo"
+ },
+ {
+  "name": "Criatura escura",
+  "look": "silhueta escura de contornos borrados, à direita, em impacto"
+ },
+ {
+  "name": "Goblin da mão no rosto",
+  "look": "goblin calvo, pele clara suada, mão cobrindo o rosto, dentes cerrados"
+ },
+ {
+  "name": "Goblins da multidão",
+  "look": "goblins calvos de pele clara, sem camisa, orelhas pontudas, em grupo apertado"
+ },
+ {
+  "name": "Líder goblin",
+  "look": "goblin de orelhas pontudas, mão na cabeça, rosto de perfil suado"
+ },
+ {
+  "name": "Goblin chutador",
+  "look": "pernas de pele cinzenta com tanga, chutando bola no alto do quadro"
+ },
+ {
+  "name": "Goblins da chuva",
+  "look": "goblins de costas em primeiro plano, orelhas pontudas, sob chuva"
+ },
+ {
+  "name": "Goblin da mão",
+  "look": "mão cinzenta de dedos longos e garras no alto do quadro"
+ },
+ {
+  "name": "Figura sem camisa",
+  "look": "torso nu e ombro musculoso, pele pálida, cena escura sob chuva"
+ },
+ {
+  "name": "Irmão mais velho",
+  "look": "goblin careca de rosto grande, boca aberta chorando, presas, orelhas pontudas"
+ },
+ {
+  "name": "Figura de joelhos",
+  "look": "pernas ajoelhadas, roupa rasgada, faixa na cintura, sem rosto visível"
+ },
+ {
+  "name": "Goblin Costas",
+  "look": "calvo de costas, orelhas pontudas, pele clara, primeiro plano"
+ },
+ {
+  "name": "Goblin Ao Lado",
+  "look": "goblin calvo de costas à direita, ombro largo, orelha pontuda, primeiro plano"
+ },
+ {
+  "name": "Goblin Orelha",
+  "look": "goblin de pele cinzenta, orelha pontuda grande em close, mão perto do rosto"
+ },
+ {
+  "name": "Kimpro",
+  "look": "goblin bebê careca, orelhas pontudas, tanga; nome completo Kim Prometheus"
+ },
+ {
+  "name": "Figura de pernas",
+  "look": "pernas de calça escura e sapato, chutando, brilho branco"
+ },
+ {
+  "name": "Goblin da Fogueira",
+  "look": "calvo, pele pálida, ao lado de fogueira brilhante, boca aberta"
+ },
+ {
+  "name": "Agressor",
+  "look": "braço pálido erguido com lâmina, sob chuva, sem rosto visível"
+ },
+ {
+  "name": "Aranha gigante",
+  "look": "aranha enorme de couraça escura, olhos brilhantes e presas"
+ },
+ {
+  "name": "Goblins da patrulha",
+  "look": "goblins calvos sem camisa, tanga, orelhas pontudas, seguram lanças, à esquerda"
+ },
+ {
+  "name": "Goblin da tocha",
+  "look": "calvo, pele clara, sem camisa, orelhas pontudas, segura tocha acesa"
+ },
+ {
+  "name": "Aranhas",
+  "look": "multidão de aranhas escuras de olhos brilhantes e presas"
+ },
+ {
+  "name": "Figura de roupa escura",
+  "look": "roupa escura, pele pálida, luta com aranha, rosto não visível"
+ },
+ {
+  "name": "Mão de garras",
+  "look": "mão pálida de garras longas e dedos finos, vinda da lateral"
+ },
+ {
+  "name": "Goblin do olho",
+  "look": "rosto pálido em close, olho arregalado, sobrancelha grossa"
+ },
+ {
+  "name": "Goblin da vara",
+  "look": "goblin calvo de torso pálido nu, barriga, segura vara com chama, sem rosto visível"
+ },
+ {
+  "name": "Figura luminosa",
+  "look": "figura envolta em brilho branco, sem rosto visível, atingida por lâmina curva"
+ },
+ {
+  "name": "Criatura dos olhos",
+  "look": "olhos brilhantes grandes e escuros em close, sem rosto visível"
+ },
+ {
+  "name": "Figura parcial",
+  "look": "corpo cortado na borda, roupa rasgada, sob chuva, sem rosto"
+ },
+ {
+  "name": "Criatura da palma",
+  "look": "pata escura enorme, palma com quatro almofadas, unhas, vinda de baixo"
+ },
+ {
+  "name": "Goblin do impacto",
+  "look": "goblin de costas, orelha pontuda, pele clara, atingido por clarão, sem camisa"
+ },
+ {
+  "name": "Criatura arredondada",
+  "look": "massa clara arredondada coberta de pontos, talo no topo"
+ },
+ {
+  "name": "Goblin da carranca",
+  "look": "goblin cinzento, calvo, de cara fechada, olhos fechados, sob chuva"
+ },
+ {
+  "name": "Cabeça com laço",
+  "look": "cabeça calva pálida com laço, emergindo na chuva perto do chão"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "cabelo castanho longo, de costas, roupa rasgada, ombros largos"
+ },
+ {
+  "name": "Goblin risonho",
+  "look": "calvo, pele clara, dentes à mostra, rindo de boca aberta, ao centro"
+ },
+ {
+  "name": "Criatura do casulo",
+  "look": "criatura escura com manchas brancas dentro de casulo translúcido no chão"
+ },
+ {
+  "name": "Lobo",
+  "look": "lobo branco de cauda felpuda, uiva, carrega mochila"
+ },
+ {
+  "name": "Goblin do braço erguido",
+  "look": "goblin calvo de braços altos, pele cinzenta, gritando, orelhas pontudas"
+ },
+ {
+  "name": "Goblin gritador esquerdo",
+  "look": "goblin calvo, pele clara, mãos nas bochechas, boca escancarada gritando"
+ },
+ {
+  "name": "Goblin gritador direito",
+  "look": "goblin calvo, pele clara, mãos nas bochechas, boca escancarada gritando"
+ },
+ {
+  "name": "Goblin ao chão",
+  "look": "goblin de identidade ambígua, rosto baixo na base do quadro, voz de lamento"
+ },
+ {
+  "name": "Goblin do salto",
+  "look": "goblin de pernas nuas, tanga rasgada, braços abertos, unhas longas"
+ },
+ {
+  "name": "Filhote",
+  "look": "filhote pequeno de pelo claro, dorme no colo de Manager"
+ },
+ {
+  "name": "Goblin da briga",
+  "look": "calvo, pele clara, orelhas pontudas, grita de braço estendido"
+ },
+ {
+  "name": "Criatura clara",
+  "look": "criatura pequena e peluda clara, orelhas e focinho, atingida no focinho por lâmina"
+ },
+ {
+  "name": "Goblin da árvore",
+  "look": "goblin calvo de pele clara, orelhas pontudas, pulando entre galhos"
+ },
+ {
+  "name": "Goblin de braços",
+  "look": "bebê careca, tanga, braços erguidos, sentado na floresta"
+ },
+ {
+  "name": "Goblin chorão",
+  "look": "bebê goblin calvo e redondo, chorando, lágrimas, orelhas pontudas"
+ },
+ {
+  "name": "Goblin do olho pálido",
+  "look": "rosto pálido em close, olho arregalado, sobrancelha grossa"
+ },
+ {
+  "name": "Criatura sombria",
+  "look": "criatura escura de pescoço e ombro, sob faixas brancas"
+ },
+ {
+  "name": "Goblin do topo",
+  "look": "goblin calvo de orelhas pontudas, carrega saco nas costas, parte superior da cena"
+ },
+ {
+  "name": "Goblin de sacos",
+  "look": "goblin calvo sem camisa, orelhas pontudas, sentado ao lado dos sacos, olhar assustado"
+ },
+ {
+  "name": "Goblins da coleta",
+  "look": "goblins calvos sem camisa, tanga, orelhas pontudas, pedem perdão"
+ },
+ {
+  "name": "Goblin Presas",
+  "look": "calvo de pele clara, boca escancarada com presas, orelhas pontudas, em close"
+ },
+ {
+  "name": "Torso nu",
+  "look": "torso pálido, roupa escura rasgada na gola, sem rosto visível"
+ },
+ {
+  "name": "Goblin pulador",
+  "look": "goblin de pele cinzenta, braços erguidos com fruto, pulando, gritando"
+ },
+ {
+  "name": "Goblin do saco",
+  "look": "goblin curvado com saco de frutas, pernas nuas, pele clara"
+ },
+ {
+  "name": "Figura de olhar sério",
+  "look": "rosto de perfil, sobrancelha grossa, cabelo escuro, olhar sério"
+ },
+ {
+  "name": "Goblin pisador",
+  "look": "pé descalço pálido pisando pedra, sem rosto visível"
+ },
+ {
+  "name": "Figura da sacola",
+  "look": "mão pálida segurando sacola de frutas espinhosas, sem rosto visível"
+ },
+ {
+  "name": "Figura torso",
+  "look": "torso pálido em close, sem rosto, golpe borrado no alto"
+ },
+ {
+  "name": "Criatura à direita",
+  "look": "forma grande arredondada clara, sem rosto visível, fora de foco"
+ },
+ {
+  "name": "Goblin prisioneiro",
+  "look": "goblin calvo de pele clara, orelhas pontudas grandes, gritando dentro de esfera espinhosa"
+ },
+ {
+  "name": "Goblin do orbe",
+  "look": "goblin calvo de pele pálida, olho arregalado e sobrancelha grossa, dentro do orbe espinhoso"
+ },
+ {
+  "name": "Goblin da patrulha",
+  "look": "goblin calvo sem camisa, tanga, orelhas pontudas, segura lança"
+ },
+ {
+  "name": "Goblin mãe",
+  "look": "goblin calva de rosto envelhecido, orelhas pontudas, vestido rasgado de alças, segura cajado, chorando"
+ },
+ {
+  "name": "Goblin nervoso",
+  "look": "calvo, pele clara suada, boca aberta gritando, rosto de perfil"
+ },
+ {
+  "name": "Goblin do soco",
+  "look": "rosto pálido de olho franzido, orelha pontuda no topo, atingido por punhos de pedra"
+ },
+ {
+  "name": "Goblin súdito",
+  "look": "goblin calvo de pele clara, fora do quadro, fala 'Senhor?'"
+ },
+ {
+  "name": "Criatura da teia",
+  "look": "silhueta escura de garras longas com brilho claro, sob luz branca"
+ },
+ {
+  "name": "Figura do grito",
+  "look": "cabelo escuro bagunçado, rosto suado de perfil, boca aberta gritando WHY"
+ },
+ {
+  "name": "Mão de unhas longas",
+  "look": "mão pálida de dedos e unhas longas, braço com manga clara, sem rosto visível"
+ },
+ {
+  "name": "Figura de lábios fechados",
+  "look": "rosto cinzento em close, lábios fechados, sem cabelo visível"
+ },
+ {
+  "name": "Goblin Desconfiado",
+  "look": "calvo, pele clara, olhar torto e desconfiado"
+ },
+ {
+  "name": "Goblin Gritão",
+  "look": "goblin calvo de pele clara, boca escancarada gritando, ombro largo"
+ },
+ {
+  "name": "Goblin Medroso",
+  "look": "goblin calvo de pele clara, mãos juntas, boca aberta de medo"
+ },
+ {
+  "name": "Goblin Pensativo",
+  "look": "goblin calvo de pele clara, mão no queixo, olhar de lado, suado"
+ },
+ {
+  "name": "Goblin Espantado",
+  "look": "goblin calvo de pele clara, olhos muito arregalados, boca aberta, orelha pontuda"
+ },
+ {
+  "name": "Goblin Atrás",
+  "look": "calvo ao fundo, olhos arregalados, boca aberta gritando"
+ },
+ {
+  "name": "Mão de dedos longos",
+  "look": "mão pálida de dedos e unhas longas, descendo sobre a figura, sem rosto"
+ },
+ {
+  "name": "Torso pálido",
+  "look": "torso nu pálido, roupa escura rasgada na gola, sem rosto"
+ },
+ {
+  "name": "Goblin das costas",
+  "look": "calvo, pele clara, orelhas pontudas, visto de costas em primeiro plano"
+ },
+ {
+  "name": "Goblins de mãos erguidas",
+  "look": "goblins calvos de pele clara, mãos com garras erguidas ao céu"
+ },
+ {
+  "name": "Criatura cinzenta",
+  "look": "criatura peluda cinzenta de presas e pelo espesso, grande"
+ },
+ {
+  "name": "Patrulha goblin",
+  "look": "goblins calvos com lanças em fila, orelhas pontudas, marchando"
+ },
+ {
+  "name": "Figura Alta",
+  "look": "pernas grandes e pálidas, tanga rasgada, em pé acima dos goblins"
+ },
+ {
+  "name": "Goblin Mirim",
+  "look": "goblin calvo sem camisa, tanga, punho cerrado, pernas trêmulas, fala 'Senhor'"
+ },
+ {
+  "name": "Goblin Pernas",
+  "look": "goblin calvo de costas, pele clara, orelhas pontudas, segura bastão, pernas trêmulas"
+ },
+ {
+  "name": "Criatura gigante",
+  "look": "gigante pálido de rosto de perfil, orelha grande, sob céu nublado"
+ },
+ {
+  "name": "Fluffy",
+  "look": "goblin de rosto enrugado, batizado por Manager"
+ },
+ {
+  "name": "Choco",
+  "look": "goblin de cara séria, batizado por Manager"
+ },
+ {
+  "name": "Cookie",
+  "look": "goblin irritado de olhos arregalados, batizado por Manager"
+ },
+ {
+  "name": "Fen",
+  "look": "Companheiro de Oh que rosna ao seu lado e acompanha o grupo nas cenas"
+ },
+ {
+  "name": "Gaebul",
+  "look": "Cão que late furioso ao lado de Oh, no galpão de madeira"
+ },
+ {
+  "name": "Touro",
+  "look": "criatura de chifres brancos, pelo escuro, olhos brilhantes; às vezes vista de costas"
+ },
+ {
+  "name": "Besta",
+  "look": "criatura chifruda de corpo musculoso, pelo cinza, em pé no deserto sob o sol"
+ },
+ {
+  "name": "Figura do punho",
+  "look": "punho pálido cerrado com manga clara, sem rosto visível"
+ },
+ {
+  "name": "Figura do pé",
+  "look": "pé calçado claro pisando areia, sem rosto"
+ },
+ {
+  "name": "Criatura ambígua",
+  "look": "forma clara angular sob luz branca, sem rosto visível"
+ },
+ {
+  "name": "Goblin Pálido",
+  "look": "goblin calvo de pele clara, boca aberta gritando, orelhas pontudas, fala no balão superior"
+ },
+ {
+  "name": "Figura torcida",
+  "look": "corpo torcido em queda, sem rosto visível, linhas de movimento"
+ },
+ {
+  "name": "Goblin Mediano",
+  "look": "goblin calvo sem camisa, pele clara, de cintura coberta por tecido"
+ },
+ {
+  "name": "Goblin Enorme",
+  "look": "goblin calvo musculoso, boca escancarada, segura pau, à direita"
+ },
+ {
+  "name": "Goblin lançador",
+  "look": "goblin calvo, pele clara, braço erguido arremessando pedra"
+ },
+ {
+  "name": "Criatura do chão",
+  "look": "criatura pálida e suja de poeira, atingida por pedras"
+ },
+ {
+  "name": "Goblin gritador ferido",
+  "look": "goblin calvo, pele clara, boca escancarada com presas, torso sujo de sangue"
+ },
+ {
+  "name": "Criatura rosnante",
+  "look": "criatura de presas e mandíbula aberta, fumaça escura, sob sombra"
+ },
+ {
+  "name": "Figuras ao fundo",
+  "look": "figuras pequenas numa moita, sem traços nítidos, ao pé do quadro"
+ },
+ {
+  "name": "Goblin Fiel",
+  "look": "goblin calvo de cabeça arredondada, pele clara, sem camisa, chorando e falando 'Senhor'"
+ },
+ {
+  "name": "Goblin do acampamento",
+  "look": "goblins calvos de pele clara agachados perto da fogueira e das tendas"
+ },
+ {
+  "name": "Goblin Cabeludo",
+  "look": "cabeça pálida com tufo de cabelo espetado no topo, orelha pontuda, fala no balão"
+ },
+ {
+  "name": "Criatura chifruda",
+  "look": "criatura de chifres grandes e curvos, corpo escuro, atrás de Manager Oh"
+ },
+ {
+  "name": "Goblin Vitorioso",
+  "look": "calvo de pele clara, boca aberta gritando, orelhas pontudas, ao lado de Oh"
+ },
+ {
+  "name": "Goblin Ao Fundo",
+  "look": "calvo, pele clara, orelha pontuda, atrás de Oh, rosto de perfil"
+ },
+ {
+  "name": "Figura do fruto",
+  "look": "figura caída de roupa rasgada segurando bolsa espinhosa de frutas"
+ },
+ {
+  "name": "Mão pálida",
+  "look": "mão pálida de dedos longos e garras, agarrando o chão"
+ },
+ {
+  "name": "Goblin Bandana",
+  "look": "calvo, pele clara, lenço amarrado na cabeça, segura machado"
+ },
+ {
+  "name": "Goblin Faixa",
+  "look": "calvo, faixa cruzando o peito, lâminas nas luvas, agachado"
+ },
+ {
+  "name": "Goblin Olhos Brilhantes",
+  "look": "goblin calvo pele clara, olhos brancos brilhantes com raios, presas"
+ },
+ {
+  "name": "Goblin Furioso",
+  "look": "calvo, pele cinzenta, rosto furioso de perfil, olhos brilhantes"
+ },
+ {
+  "name": "Criatura Sombra",
+  "look": "silhueta escura enorme, peluda, rosnando, olho branco brilhante, sob névoa"
+ },
+ {
+  "name": "Chefe orc",
+  "look": "orc musculoso sentado no trono, presas, colar de caveira, lança"
+ },
+ {
+  "name": "Goblin dos sacos",
+  "look": "goblin calvo sem camisa, orelhas pontudas, ao lado dos sacos, olhar assustado"
+ },
+ {
+  "name": "Orc da clava",
+  "look": "orc musculoso de presas, torso ferido, segura clava"
+ },
+ {
+  "name": "Figura de coque",
+  "look": "cabelo claro preso em coque, agachada de costas"
+ },
+ {
+  "name": "Goblin Mochileiro",
+  "look": "goblin pálido curvado, pacote nas costas, pernas nuas, correndo"
+ },
+ {
+  "name": "Goblins Lanceiros",
+  "look": "goblins calvos sem camisa, orelhas pontudas, lanças, correndo ao fundo"
+ },
+ {
+  "name": "Goblin Primeiro Plano",
+  "look": "goblin calvo de costas, orelha pontuda, ombro largo, braços erguidos"
+ },
+ {
+  "name": "Goblin Capitão",
+  "look": "presas grandes, cabelo castanho-avermelhado comprido, olho brilhante, rosto de perfil"
+ },
+ {
+  "name": "Goblin do bigode",
+  "look": "bigode fino, lenço amarrado ao pescoço, torso musculoso, pele cinzenta"
+ },
+ {
+  "name": "Figura de roupa clara",
+  "look": "roupa clara, visto do alto, caído com lança"
+ },
+ {
+  "name": "Criatura rachada",
+  "look": "massa pálida arredondada com rachaduras escuras, sob sombra"
+ },
+ {
+  "name": "Goblin Coque",
+  "look": "goblin calvo de coque no alto da cabeça, ajoelhado, dentes à mostra, punho cerrado"
+ },
+ {
+  "name": "Goblin do crânio",
+  "look": "máscara de caveira sobre a cabeça, barba clara, lâminas nas laterais"
+ },
+ {
+  "name": "Goblin Vigia",
+  "look": "calvo, pele cinzenta, rosto grande de perfil, olho semicerrado, nariz largo"
+ },
+ {
+  "name": "Goblin Companheiro",
+  "look": "calvo, pele cinzenta, olho arregalado, canto inferior esquerdo"
+ },
+ {
+  "name": "Figura Espetada",
+  "look": "cabelo claro espetado, visto de baixo, canto esquerdo"
+ },
+ {
+  "name": "Goblin Caveira",
+  "look": "goblin grande de cabelo longo preso, presas, caveira pendurada, sorriso largo"
+ },
+ {
+  "name": "Goblin Berrante",
+  "look": "goblin de cabelo preso para trás, barba, boca escancarada gritando"
+ },
+ {
+  "name": "Goblin Inferior",
+  "look": "goblin calvo de pele clara, boca aberta gritando, na base à esquerda"
+ },
+ {
+  "name": "Figura Deitada",
+  "look": "cabelo castanho escuro comprido, deitada num tronco, pulso com pelo claro"
+ },
+ {
+  "name": "Goblin Ausente",
+  "look": "goblin fora do quadro, voz que anuncia a caça do boi de chifre negro"
+ },
+ {
+  "name": "Punho",
+  "look": "punho pálido cerrado apontando para o leitor, céu nublado ao fundo"
+ },
+ {
+  "name": "Colarinho",
+  "look": "pescoço, colarinho claro e boca tensa em close, rosto parcial"
+ },
+ {
+  "name": "Kim Mina",
+  "look": "líder oponente, território Orcs Presa Grossa; ainda não aparece nas páginas"
+ },
+ {
+  "name": "Goblin voador",
+  "look": "goblin de pernas nuas, tanga, braços abertos, girando no ar"
+ },
+ {
+  "name": "Goblin Patrulha",
+  "look": "goblin calvo sem camisa, pele clara, orelhas pontudas, segura lança, grita ordem"
+ },
+ {
+  "name": "Goblin Vara",
+  "look": "goblin calvo de pele clara, segura bastão, dentes cerrados, à esquerda"
+ },
+ {
+  "name": "Figura Agachada",
+  "look": "figura agachada de costas, roupa clara enrolada, pés descalços, cabelo claro"
+ },
+ {
+  "name": "Figura à esquerda",
+  "look": "visto de costas na borda esquerda, camisa xadrez; identidade incerta"
+ },
+ {
+  "name": "Criatura Poeirenta",
+  "look": "criatura pálida suja de poeira, atingida por pedras"
+ },
+ {
+  "name": "Goblins Sorridentes",
+  "look": "calvos, pele clara, mãos cobrindo o rosto ou no peito, sorriso forçado"
+ },
+ {
+  "name": "Goblins das costas",
+  "look": "goblins calvos de orelhas pontudas, de costas em primeiro plano"
+ },
+ {
+  "name": "Vulto de cabelo longo",
+  "look": "cabelo castanho longo e ondulado, camisa clara, rosto suado e assustado"
+ },
+ {
+  "name": "Goblin Rosnador",
+  "look": "calvo de pele cinzenta, presas à mostra, rosto cerrado em close"
+ },
+ {
+  "name": "Goblins da fileira",
+  "look": "quatro goblins de rostos variados, pele cinzenta, orelhas pontudas, em fileira"
+ },
+ {
+  "name": "Líder orc",
+  "look": "líder dos Orcs Presa Grossa, grita de dentro da multidão; aparência pouco visível"
+ },
+ {
+  "name": "Orc enfaixado",
+  "look": "orc sem camisa, faixas brancas nos braços e cintura, presas, martelo de pedra"
+ },
+ {
+  "name": "Orcs Presa Grossa",
+  "look": "multidão de orcs musculosos de presas, com martelos e machados, marchando"
+ },
+ {
+  "name": "Criatura borrada",
+  "look": "criatura escura de presas e garras, borrada em movimento, sob o caos"
+ },
+ {
+  "name": "Figura dentes cerrados",
+  "look": "close de perfil suado, dentes cerrados, pele cinzenta, sem cabelo visível"
+ },
+ {
+  "name": "Figura de perna pálida",
+  "look": "perna pálida dobrada, botas com pelo claro, sem rosto visível"
+ },
+ {
+  "name": "Goblins Estilingue",
+  "look": "calvos de pele cinzenta, orelhas pontudas, seguram estilingues"
+ },
+ {
+  "name": "Goblins da investida",
+  "look": "goblins calvos de pele clara, orelhas pontudas, gritando em grupo"
+ },
+ {
+  "name": "Goblin do bastão",
+  "look": "goblin calvo de pele clara sem camisa, segura bastão, à esquerda do quadro"
+ },
+ {
+  "name": "Capitão goblin",
+  "look": "cabelo longo castanho-avermelhado, presas grandes, olhos brilhantes, rosto feroz em close"
+ },
+ {
+  "name": "Orc Clava",
+  "look": "orc de presas, colar de caveira, clava de madeira erguida, grita"
+ },
+ {
+  "name": "Figura do ombro",
+  "look": "ombro e braço em hachura, close, sem rosto visível"
+ },
+ {
+  "name": "Figura do torso",
+  "look": "torso pálido e ombro com pelo claro, close, sem rosto"
+ },
+ {
+  "name": "Figura de calça",
+  "look": "pernas de calça escura em movimento, sem rosto visível"
+ },
+ {
+  "name": "Figura de orelha pontuda",
+  "look": "cabelo longo escuro, orelha pontuda, perfil olhando para cima, close"
+ },
+ {
+  "name": "Criatura espinhosa",
+  "look": "contornos espinhosos e garras, à esquerda do quadro, tons de cinza"
+ },
+ {
+  "name": "Goblin Protesto",
+  "look": "goblin calvo de pele clara, boca aberta, atrás de Oh"
+ },
+ {
+  "name": "Punho pálido",
+  "look": "punho pálido de dedos fechados em golpe, sem rosto visível"
+ },
+ {
+  "name": "Goblin Esquerda",
+  "look": "goblin calvo de pele clara, boca entreaberta, na borda esquerda"
+ },
+ {
+  "name": "Figura borrada",
+  "look": "figura escura de cabelo volumoso, borrada em movimento"
+ },
+ {
+  "name": "Figura Cabeluda",
+  "look": "cabelo escuro espetado no topo, cabeça de perfil, sem rosto nítido"
+ },
+ {
+  "name": "Orc de presas",
+  "look": "orc de rosto em close, presas grandes, sorriso torto, pele cinzenta"
+ },
+ {
+  "name": "Guerreiro de armadura",
+  "look": "figura de armadura, cabelo escuro, em pé no alto da duna"
+ },
+ {
+  "name": "Figura do impacto",
+  "look": "capa esvoaçante, cabelo castanho avermelhado, em golpe"
+ },
+ {
+  "name": "Figura da queda",
+  "look": "pernas e pés calçados em queda, linhas de movimento, identidade incerta"
+ },
+ {
+  "name": "Figura da borda",
+  "look": "corpo parcial na borda esquerda, roupa escura rasgada, sob chuva, sem rosto"
+ },
+ {
+  "name": "Lutador espetado",
+  "look": "cabelo claro espetado, faixas de pelo nos pulsos, segura bastão"
+ },
+ {
+  "name": "Figura de capa",
+  "look": "figura de capa escura com braço erguido e luva, em borrão de golpe"
+ },
+ {
+  "name": "Monstro",
+  "look": "criatura clara peluda de garras longas, presas e corpo musculoso"
+ },
+ {
+  "name": "Figura da lâmina",
+  "look": "silhueta escura com lâmina afiada brilhante, sem rosto visível"
+ },
+ {
+  "name": "Figura de presas",
+  "look": "rosto pálido em close, dentes à mostra, boca aberta, suado"
+ },
+ {
+  "name": "Braço luminoso",
+  "look": "braço pálido de veias brilhantes, mão aberta, sem rosto"
+ },
+ {
+  "name": "Figura atingida",
+  "look": "figura de cabelo escuro espetado, rosto de perfil, luz no rosto"
+ },
+ {
+  "name": "Figura caindo",
+  "look": "figura de roupa escura caindo em diagonal, sem rosto visível"
+ },
+ {
+  "name": "Clava",
+  "look": "Orc de presas feridas, ergue clava, rosto furioso com mancha escura"
+ },
+ {
+  "name": "Goblin do martelo",
+  "look": "pés pálidos com pelo, sandálias, segura martelo de pedra em haste"
+ },
+ {
+  "name": "Atirador",
+  "look": "não visível; só aparece na fala do balão de cima, pontaria de elite"
+ },
+ {
+  "name": "Orc Caveira",
+  "look": "orc de presas, colar de caveira, clava de madeira, pelo claro nas botas"
+ },
+ {
+  "name": "Orc de cabelo longo",
+  "look": "cabelo castanho longo e desgrenhado, costas largas, roupa rasgada, pele clara"
+ },
+ {
+  "name": "Figura do deserto",
+  "look": "figura pequena na areia, vista do alto, sem traços nítidos"
+ },
+ {
+  "name": "Figura do bastão",
+  "look": "braço de manga clara segurando bastão, poeira de impacto"
+ },
+ {
+  "name": "Orc de colar",
+  "look": "orc de presas grandes, colar de caveira, pele cinza, sangue no rosto"
+ },
+ {
+  "name": "Criatura do olho",
+  "look": "criatura escura com olho brilhante grande, rachaduras no corpo"
+ },
+ {
+  "name": "Orc sombrio",
+  "look": "silhueta escura de presas à mostra, orelhas pontudas, olhos brancos brilhantes"
+ },
+ {
+  "name": "Figura sombria",
+  "look": "silhueta escura de capa ou roupa escura, cabeça de contorno claro, sem rosto visível"
+ },
+ {
+  "name": "Goblin Estilingue",
+  "look": "goblin calvo de pele cinzenta, roupa rasgada, segura estilingue"
+ },
+ {
+  "name": "Figura de lança",
+  "look": "cabelo escuro, roupa escura, segura lança estendida sobre a areia"
+ },
+ {
+  "name": "Orc Colar",
+  "look": "orc de presas grandes, colar de caveira, pele cinza, sangue no rosto"
+ },
+ {
+  "name": "Figura das mãos",
+  "look": "mãos pálidas agarrando tronco escuro, sem rosto visível"
+ },
+ {
+  "name": "Ensanguentado",
+  "look": "homem de cabelo escuro espetado, rosto sujo de sangue, olhos semicerrados, close"
+ },
+ {
+  "name": "Sombra do alto",
+  "look": "figura escura borrada no alto, sem rosto nítido, sombra no canto superior"
+ },
+ {
+  "name": "Goblin prostrado",
+  "look": "goblin de pele clara deitado de bruços no chão, ao lado da lança"
+ },
+ {
+  "name": "Orc caído",
+  "look": "orc de cabelo castanho longo, ferido no peito, caído no chão"
+ },
+ {
+  "name": "Figura das botas",
+  "look": "pernas de calça escura e botas de couro em movimento, sem rosto"
+ },
+ {
+  "name": "Corpo amarrado",
+  "look": "corpo pálido amarrado com faixas, deitado na areia"
+ },
+ {
+  "name": "Figura Ofegante",
+  "look": "rosto de perfil suado, ofegante, boca aberta, pele escura"
+ },
+ {
+  "name": "Goblin Canhão",
+  "look": "calvo, pele cinzenta, orelhas pontudas, segura tubo pequeno à esquerda"
+ },
+ {
+  "name": "Goblin Grande",
+  "look": "calvo musculoso de costas, orelhas pontudas, ergue tubo com as duas mãos"
+ },
+ {
+  "name": "Figura amarrada",
+  "look": "corpo pálido amarrado por cordas grossas, cabeça baixa"
+ },
+ {
+  "name": "Punho de manga escura",
+  "look": "punho cerrado em golpe, manga escura, linhas de velocidade"
+ },
+ {
+  "name": "Criatura do impacto",
+  "look": "criatura peluda clara de garras e presas, em golpe contra criatura escura"
+ },
+ {
+  "name": "Figura de cabeça para baixo",
+  "look": "cabelo claro, de cabeça para baixo, braço erguido, presa por cordas"
+ },
+ {
+  "name": "Criatura de cauda",
+  "look": "criatura escura de cauda longa, presas, prende a figura"
+ },
+ {
+  "name": "Figura do rosto suado",
+  "look": "cabelo castanho longo, rosto suado, olhos apertados, boca aberta"
+ },
+ {
+  "name": "Figura da mão trêmula",
+  "look": "mão pálida de manga clara, dedos trêmulos, estendida"
+ },
+ {
+  "name": "Figura dos sapatos",
+  "look": "pés calçados em sapato escuro, pernas pálidas, presos por cordas"
+ },
+ {
+  "name": "Figura de bruços",
+  "look": "cabelo castanho longo, deitada de bruços, roupa escura"
+ },
+ {
+  "name": "Figura de cabelo longo ondulado",
+  "look": "cabelo castanho claro longo e ondulado, rosto suado e assustado, camisa clara"
+ },
+ {
+  "name": "Figura de pernas no chão",
+  "look": "pernas pálidas de calça ou shorts escuros e calçado escuro, caída no chão de madeira"
+ },
+ {
+  "name": "Criatura pálida corcunda",
+  "look": "criatura pálida de corpo corcunda e barriga volumosa, no chão, cercada de ossadas"
+ },
+ {
+  "name": "Figura de cabelo longo",
+  "look": "cabelo castanho longo e ondulado, rosto suado e chorando, de perfil ou deitada"
+ },
+ {
+  "name": "Figura da perna",
+  "look": "perna pálida em movimento brusco, sem rosto visível"
+ },
+ {
+  "name": "Figura não identificada",
+  "look": "braço pálido com líquido branco escorrendo, sem rosto visível"
+ },
+ {
+  "name": "Figura do cabelo esvoaçante",
+  "look": "cabelo e tecido claros esvoaçantes em close, sem rosto visível"
+ },
+ {
+  "name": "Minah",
+  "look": "cabelo castanho longo ondulado, jaleco branco, óculos, Diretora de Pesquisa de Armas"
+ },
+ {
+  "name": "Mão do fruto",
+  "look": "mão pálida segurando fruto espinhoso arredondado"
+ },
+ {
+  "name": "Mão agressora",
+  "look": "mão pálida de manga clara puxando cabelo castanho, dona não visível"
+ },
+ {
+  "name": "Cabeça escura",
+  "look": "cabeça de cabelo escuro espetado, vista de cima, sob golpe"
+ },
+ {
+  "name": "Goblin Conselheiro",
+  "look": "calvo, pele cinzenta, orelhas pontudas, cigarro na mão, cara franzida"
+ },
+ {
+  "name": "Mina",
+  "look": "cabelo castanho longo e ondulado, hematoma no braço, camisa clara, chora"
+ },
+ {
+  "name": "Colega",
+  "look": "cabelo castanho longo e ondulado, camisa clara, rosto suado e preocupado"
+ },
+ {
+  "name": "Lorde rival",
+  "look": "mulher de cabelo castanho longo e liso, sorriso largo, lorde adversário que se rende"
+ },
+ {
+  "name": "Goblin Ajudante",
+  "look": "goblin calvo, pele clara, orelhas pontudas, agachado ao lado de Oh"
+ },
+ {
+  "name": "Goblin Porta-voz",
+  "look": "calvo, pele clara, rosto de perfil em close, presas à mostra, orelha pontuda grande"
+ },
+ {
+  "name": "Figura de gola alta",
+  "look": "gola alta branca, tórax visto de perto, sem rosto"
+ },
+ {
+  "name": "Goblin de tanga",
+  "look": "calvo sem camisa, tanga, punho cerrado, à direita"
+ },
+ {
+  "name": "Goblin de rosto cinzento",
+  "look": "rosto cinzento enorme em close, sorriso fino, sem cabelo"
+ },
+ {
+  "name": "Goblin saltador",
+  "look": "calvo, pele cinzenta, salta no ar com lança, sem camisa"
+ },
+ {
+  "name": "Figura do sorriso",
+  "look": "homem de cabelo escuro curto, orelha à mostra, sorriso de canto, camisa clara, close"
+ },
+ {
+  "name": "Goblin Animado",
+  "look": "goblin calvo, pele clara, orelhas pontudas, tufo no topo, mãos juntas, sorriso animado"
+ },
+ {
+  "name": "Figura em sombra",
+  "look": "mão pálida e perfil escuro em sombra, sem rosto nítido"
+ },
+ {
+  "name": "Goblin Caricato",
+  "look": "calvo, pele clara sem camisa, punho cerrado, manda silêncio"
+ },
+ {
+  "name": "Goblin Baixo",
+  "look": "goblin pequeno calvo, rosto franzido, na parte de baixo do quadro"
+ },
+ {
+  "name": "Goblin Exausto",
+  "look": "goblin calvo de pele clara, olhos inchados e arregalados, boca aberta com presas"
+ },
+ {
+  "name": "Goblin Carrancudo",
+  "look": "goblin calvo de pele clara, cara fechada, atrás do Goblin Pequeno"
+ },
+ {
+  "name": "Goblin Escrivão",
+  "look": "goblin com caderno nas mãos, símbolo na barriga, tanga"
+ },
+ {
+  "name": "Figura do rifle",
+  "look": "homem de roupa clara segurando rifle, ao lado da Mulher de cabelo longo"
+ },
+ {
+  "name": "Goblins do acampamento",
+  "look": "goblins calvos de pele clara agachados perto de tendas e fogueira"
+ },
+ {
+  "name": "Figura da escada",
+  "look": "figura pequena de cabelo escuro subindo a escada da torre à direita"
+ },
+ {
+  "name": "Goblin da mão estendida",
+  "look": "calvo, pele clara, orelhas pontudas, estende a mão ao lado de Minah"
+ },
+ {
+  "name": "Goblin de cima",
+  "look": "calvo, pele cinzenta, rosto grande em close, orelhas pontudas"
+ },
+ {
+  "name": "Goblin de baixo",
+  "look": "calvo, pele cinzenta, rosto sério atrás do Goblin de cima"
+ },
+ {
+  "name": "Voz fora do quadro",
+  "look": "fala de quem está fora do quadro, identidade incerta"
+ },
+ {
+  "name": "Goblin irritado",
+  "look": "goblin calvo de pele clara, rosto suado e franzido, olhos apertados, em close"
+ },
+ {
+  "name": "Goblin do cordão",
+  "look": "braço pálido com cordão amarrado, segurando madeira, sem rosto visível"
+ },
+ {
+  "name": "Goblin do porrete",
+  "look": "mão pálida de dedos cerrados segurando porrete de madeira, sem rosto visível"
+ },
+ {
+  "name": "Goblins da torre",
+  "look": "dois goblins calvos de pele clara em torres de vigia de madeira, com tochas e lanças"
+ },
+ {
+  "name": "Criaturas em massa",
+  "look": "criaturas escuras amontoadas, de muitas patas, avançando pela floresta"
+ },
+ {
+  "name": "Goblins da muralha",
+  "look": "goblins calvos de orelhas pontudas no alto da torre, pele clara"
+ },
+ {
+  "name": "Goblin de garras",
+  "look": "mão cinzenta de garras longas em golpe, sem rosto visível"
+ },
+ {
+  "name": "Figura da torre",
+  "look": "figura pequena de cabelo escuro no alto da torre de vigia à esquerda"
+ },
+ {
+  "name": "Goblins fugitivos",
+  "look": "goblins calvos de pele clara, orelhas pontudas, correndo pelo desfiladeiro"
+ },
+ {
+  "name": "Goblin Mergulhador",
+  "look": "goblin calvo de pele clara, torso nu, braço estendido, caindo"
+ },
+ {
+  "name": "Pé descalço",
+  "look": "pé descalço pálido com dedos, aparece em movimento, sem rosto"
+ },
+ {
+  "name": "Goblin Teimoso",
+  "look": "goblin calvo de pele cinzenta, dentes cerrados, orelhas pontudas, grita"
+ },
+ {
+  "name": "Arqueiro",
+  "look": "não visível; arco e flecha disparados de fora do quadro"
+ },
+ {
+  "name": "Prisioneiro",
+  "look": "pés e pernas pálidos amarrados com cordas, roupa rasgada, descalço"
+ },
+ {
+  "name": "Figura clara",
+  "look": "figura de roupa clara, pele pálida, ao lado de Oh na fumaça"
+ },
+ {
+  "name": "Goblin de rosto franzido",
+  "look": "goblin calvo de pele cinzenta, orelhas pontudas, sobrancelha franzida, suado, em close"
+ },
+ {
+  "name": "Kim Prometheus",
+  "look": "bebê goblin calvo de pele clara e orelhas pontudas, sentado assustado na mata"
+ },
+ {
+  "name": "Irmão",
+  "look": "irmão de Manager no acampamento, chora e soluça diante da tocha"
+ },
+ {
+  "name": "Presa Grossa",
+  "look": "Orc de presas grandes que grita e encara o grupo do alto de uma colina"
+ },
+ {
+  "name": "Vulto",
+  "look": "figura de cabelo escuro longo, de costas ou em sombra, prisioneira que os orcs não podem ferir"
+ },
+ {
+  "name": "Oh Hyunmin",
+  "look": "protagonista, camisa social branca, cabelo escuro, suado, pensativo"
+ },
+ {
+  "name": "Inimigo",
+  "look": "voz fora do quadro, propõe duelo um contra um; aparência não visível"
+ },
+ {
+  "name": "Goblin Tombado",
+  "look": "calvo caído de costas, pele clara, rosto em careta"
+ },
+ {
+  "name": "Goblin Rangedor",
+  "look": "calvo, pele clara, dentes cerrados, rosto suado"
+ },
+ {
+  "name": "Goblin Mordedor",
+  "look": "calvo, pele clara, perfil, boca aberta com presas"
+ },
+ {
+  "name": "Figura da base",
+  "look": "cabelo escuro curto, canto inferior, grita em balão"
+ },
+ {
+  "name": "Goblin do Nariz",
+  "look": "calvo, pele cinzenta, orelhas pontudas, cheira o dedo no nariz, sobrancelha franzida"
+ },
+ {
+  "name": "Figura do golpe",
+  "look": "braço ou perna pálida, manga escura, em movimento brusco, sem rosto visível"
+ }
+]

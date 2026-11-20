@@ -111,7 +111,7 @@ export async function POST(req: Request, { params }: Ctx) {
         const okChapters: string[] = [];
         const lockBefore = readProject(id)?.lockedPages;
         const before = new Set((readProject(id)?.pages ?? []).map((pg) => pg.id));
-        updateProject(id, lockRendered); // o que já foi renderizado fica protegido; só os capítulos novos serão trabalhados
+        updateProject(id, (cur) => { lockRendered(cur); if (body.url?.trim()) cur.lastImportUrl = body.url.trim(); }); // o que já foi renderizado fica protegido; o link fica salvo já no começo (se o processo for interrompido, não se perde)
         // por modelo original: os modelos aprendidos com as correções do usuário, na ordem
         const learned = new Map<string, string[]>();
         for (const [i, c] of list.entries()) {
@@ -236,7 +236,7 @@ export async function POST(req: Request, { params }: Ctx) {
         // aqui o placar era sempre 100 (você ainda não tinha corrigido nada) e gastava uma chamada de Opus com imagem
         snapshotBaseline(id); // modo teste: guarda o que a IA propôs, para comparar com o que o dono ajustar
         return r;
-      }),
+      }, { chain: true }),
     );
   // "Teste finalizado": o gestor aprende com o que o dono ajustou nos capítulos do teste e libera o resto do lote
   if ((body as { kind: string }).kind === 'finalizeTest') {
@@ -276,7 +276,7 @@ export async function POST(req: Request, { params }: Ctx) {
         await auditProject(id, ctx, signal, 'check').then((m) => ctx.log(m)).catch((e) => ctx.log(`Auditoria do gestor falhou: ${(e as Error).message.slice(0, 160)}`));
         snapshotBaseline(id);
         return r;
-      }),
+      }, { chain: true }),
     );
   }
   if ((body as { kind: string }).kind === 'restyle') {
@@ -302,7 +302,7 @@ export async function POST(req: Request, { params }: Ctx) {
         const r = await generateScript(id, ctx);
         await reviewStage(id, 'roteiro', ctx).then((m) => ctx.log(m)).catch((e) => ctx.log(`Revisão final do gestor falhou: ${(e as Error).message.slice(0, 160)}`));
         return r;
-      }),
+      }, { chain: true }),
     );
   if (body.kind === 'polish') return Response.json(startJob('polish', id, (ctx, signal) => polishProject(id, body.prompt ?? '', ctx, signal, { from: body.from, to: body.to })));
   if (body.kind === 'shorts') {
@@ -336,7 +336,7 @@ export async function POST(req: Request, { params }: Ctx) {
         recordSnapshot(id, 'render');
         await learnFromEdits(id, ctx, signal).catch((e) => ctx.log(`Aprendizado falhou: ${(e as Error).message.slice(0, 160)}`));
         return r;
-      }),
+      }, { chain: true }),
     );
   return new Response('Tipo inválido', { status: 400 });
 }

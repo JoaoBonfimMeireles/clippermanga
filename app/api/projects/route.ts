@@ -1,4 +1,5 @@
 import { projectJobs } from '@/lib/jobs';
+import { stepsDone } from '@/lib/stage';
 import { seriesKey } from '@/lib/series';
 import type { StudioProject } from '@/lib/types';
 import { createProject, duplicateProject, listSummaries, updateProject } from '@/lib/store';
@@ -6,9 +7,9 @@ import { createProject, duplicateProject, listSummaries, updateProject } from '@
 export const dynamic = 'force-dynamic';
 
 /** A lista da tela inicial só precisa do nome e das contagens (o projeto inteiro tem roteiro, partes, legendas...). */
-export type ProjectSummary = { id: string; title: string; updatedAt: string; pages: number; shots: number; ytTitle: string; ytTitleIsCustom: boolean; seriesKey: string; seriesName: string; part: number; partLabel: string; publishedAt: string | null; prevPublishedAt: string | null; joined: { url: string; duration: number; labels: string[]; at: string } | null; job: { kind: string; progress: number; message: string; startedAt?: number } | null };
+export type ProjectSummary = { id: string; title: string; updatedAt: string; pages: number; shots: number; ytTitle: string; ytTitleIsCustom: boolean; seriesKey: string; seriesName: string; part: number; partLabel: string; publishedAt: string | null; steps: number; prevPublishedAt: string | null; joined: { url: string; duration: number; labels: string[]; at: string } | null; job: { kind: string; progress: number; message: string; startedAt?: number } | null };
 
-const summarize = (p: StudioProject): Omit<ProjectSummary, 'job'> => ({
+const summarize = (p: StudioProject): Omit<ProjectSummary, 'job' | 'steps'> => ({
   id: p.id,
   title: p.title,
   updatedAt: p.updatedAt,
@@ -29,6 +30,7 @@ export function GET() {
   return Response.json(
     listSummaries(summarize).map((s): ProjectSummary => ({
       ...s,
+      steps: stepsDone(projectJobs(s.id)),
       job: (() => {
         const j = projectJobs(s.id).filter((x) => x.status === 'running').at(-1);
         return j ? { kind: j.kind, progress: j.progress, message: j.message, startedAt: j.startedAt } : null;

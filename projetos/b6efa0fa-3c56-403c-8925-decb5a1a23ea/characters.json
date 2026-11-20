@@ -1,0 +1,1282 @@
+[
+ {
+  "name": "Belphegor",
+  "look": "Rei Demônio de classe SSS, chamas negras, máscara de crânio, mão monstruosa"
+ },
+ {
+  "name": "Lucian",
+  "look": "Companheiro de Yi no Corpo Divino, de capa e jaqueta; manipula gravidade; traidor"
+ },
+ {
+  "name": "Bai Yi",
+  "look": "protagonista, cabelo espetado, sobretudo longo escuro, empunha a lâmina Hunwu"
+ },
+ {
+  "name": "Ling Yue",
+  "look": "Cabelo escuro, uniforme de combate, assassina de raio classe L."
+ },
+ {
+  "name": "Personagem menor",
+  "look": "Criança ou jovem de baixa estatura, cabelo claro, veste roupas casuais com uma mochila."
+ },
+ {
+  "name": "Han Xiaoling",
+  "look": "Maga da Divisão Divina, cabelo curto com mechas claras, veste uniforme de maga."
+ },
+ {
+  "name": "Teammate",
+  "look": "Mulher de cabelo escuro preso em rabo de cavalo."
+ },
+ {
+  "name": "Jovem",
+  "look": "cabelo claro com ahoge, uniforme escolar com gola e listras nos punhos, calça xadrez"
+ },
+ {
+  "name": "Figura de cabelo enrolado",
+  "look": "cabelo escuro enrolado em tiras longas, rosto marcado e sombreado, olhar de desprezo"
+ },
+ {
+  "name": "Figura sombria",
+  "look": "silhueta fraca em fundo escuro, sem rosto visível"
+ },
+ {
+  "name": "Figura de rosto pálido",
+  "look": "rosto pálido, olho escuro, mão enluvada de preto, braço brilhante"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "capa escura com capuz, espada longa, de pé no salão"
+ },
+ {
+  "name": "Figura de tiras",
+  "look": "cabelo enrolado em tiras, manto escuro, olhos brilhantes e sorriso largo"
+ },
+ {
+  "name": "Figura caída",
+  "look": "roupa escura com gola, caído no chão, sem rosto visível"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro, em meio a blocos quebrados, penumbra"
+ },
+ {
+  "name": "Figura acorrentada",
+  "look": "correntes quebrando, roupa escura, braço preso"
+ },
+ {
+  "name": "Figura em silhueta",
+  "look": "silhueta escura entre outras, sem traço visível"
+ },
+ {
+  "name": "Personagem de cabelo claro",
+  "look": "cabelo claro desgrenhado com topete, visto de costas, gola escura"
+ },
+ {
+  "name": "Figura de mãos erguidas",
+  "look": "mão grande erguida, manga escura com listras, calça xadrez, fundo sombrio"
+ },
+ {
+  "name": "Figura alta",
+  "look": "camisa clara com gola em zigue-zague, braço longo, parte de cima cortada"
+ },
+ {
+  "name": "Figura de capuz",
+  "look": "Capuz escuro, rosto na sombra, lâmina curta na mão"
+ },
+ {
+  "name": "Equipe da guilda",
+  "look": "Silhuetas de guerreiros e feras, sem traços visíveis, cenário com brilho"
+ },
+ {
+  "name": "Huang",
+  "look": "Professora de cabelo comprido, camisa clara; orienta a turma"
+ },
+ {
+  "name": "Colega de capuz",
+  "look": "figura de capuz, rosto apagado, sentada numa carteira da sala"
+ },
+ {
+  "name": "Colega de jaqueta",
+  "look": "cabelo escuro, jaqueta escura, visto de lado no canto direito"
+ },
+ {
+  "name": "Yi",
+  "look": "cabelo claro espetado com ahoge, jaqueta escura, calça xadrez, tênis"
+ },
+ {
+  "name": "Professora",
+  "look": "Mulher de cabelo escuro comprido, camisa branca de colarinho, sorriso; mostra eletricidade na mão"
+ },
+ {
+  "name": "Alunos",
+  "look": "Grupo sentado em carteiras, uniforme escolar"
+ },
+ {
+  "name": "figura de espada longa",
+  "look": "Visível só pela lâmina longa e pernas escuras; sem rosto mostrado."
+ },
+ {
+  "name": "Figura de capa escura",
+  "look": "capa escura, sem rosto visível, parte do corpo cortada no quadro"
+ },
+ {
+  "name": "Figura encapuzada",
+  "look": "capuz negro cobrindo o rosto, brilho nos olhos, ombro com brilho"
+ },
+ {
+  "name": "Garoto de cabelo claro",
+  "look": "cabelo claro espetado, sorriso debochado, jaqueta escura, brinco na orelha"
+ },
+ {
+  "name": "Colega de óculos",
+  "look": "óculos de armação escura, cabelo castanho, camiseta clara com suspensórios"
+ },
+ {
+  "name": "Sorridente",
+  "look": "cabelo escuro espetado, brinco na orelha, sorriso largo, olhos semicerrados, jaqueta escura"
+ },
+ {
+  "name": "Rosto Pálido",
+  "look": "rosto pálido, cabelo claro, olho escuro, sombra no rosto, olhar furioso"
+ },
+ {
+  "name": "Qiangsheng",
+  "look": "autoridade que aplica o Cânon Divino, ordena prisão de despertos violentos"
+ },
+ {
+  "name": "Garoto de óculos",
+  "look": "cabelo castanho curto, óculos de armação grossa, camisa clara"
+ },
+ {
+  "name": "Silhueta",
+  "look": "silhueta escura sem traços, à esquerda do grupo"
+ },
+ {
+  "name": "Seguidor de calça xadrez",
+  "look": "calça xadrez, mangas escuras listradas, mãos grandes erguidas"
+ },
+ {
+  "name": "Figura de casaco escuro",
+  "look": "roupa escura, gola de casaco agarrada por mão, rosto fora do quadro"
+ },
+ {
+  "name": "Figura fora do quadro",
+  "look": "pernas de calça escura, fala 'Não' de fora do quadro"
+ },
+ {
+  "name": "Aluno de braço erguido",
+  "look": "silhueta de estudante com braço erguido, uniforme escolar"
+ },
+ {
+  "name": "Hong Qiangsheng",
+  "look": "cabelo claro espetado, chamas brancas ao redor, camisa escura aberta, grita"
+ },
+ {
+  "name": "Sorridente de cabelo claro",
+  "look": "cabelo branco espetado, sorriso largo, expressão zombeteira"
+ },
+ {
+  "name": "Yi Jovem",
+  "look": "cabelo claro espetado com ahoge, curativo no rosto, olhar furioso"
+ },
+ {
+  "name": "Criatura luminosa",
+  "look": "forma luminosa de contornos afiados, surge no despertar rank S de Yi"
+ },
+ {
+  "name": "Voz fora do quadro",
+  "look": "voz de fora do quadro; fala de sacrifício pelo irmão"
+ },
+ {
+  "name": "Figura de olhar escuro",
+  "look": "olho escuro em close, cabelo escuro, sombra no rosto, fala sobre os deuses"
+ },
+ {
+  "name": "Colega de regata",
+  "look": "cabelo escuro comprido, regata escura com letras, copo na mão"
+ },
+ {
+  "name": "Colega de cabelo comprido",
+  "look": "cabelo escuro comprido e espetado, regata escura com letras, copo na mão"
+ },
+ {
+  "name": "Moletom",
+  "look": "cabelo castanho espetado, moletom cinza com capuz, braços cruzados"
+ },
+ {
+  "name": "Figura do rosto coberto",
+  "look": "mão cobrindo o rosto, casaco escuro com respingos"
+ },
+ {
+  "name": "Figura de casaco",
+  "look": "casaco escuro com gola de malha, cordão com chave, respingos de sangue"
+ },
+ {
+  "name": "Figura do punho",
+  "look": "punho erguido em alta velocidade, sem rosto visível"
+ },
+ {
+  "name": "Figura de braçadeira",
+  "look": "uniforme escolar escuro, braçadeira preta no braço, mão erguida, cabeça em chamas"
+ },
+ {
+  "name": "Criatura escura",
+  "look": "criatura escura de garras enormes em primeiro plano, iluminada por raios"
+ },
+ {
+  "name": "Figura de garra",
+  "look": "braço escuro de manga longa listrada, mão de garras longas, sem rosto visível"
+ },
+ {
+  "name": "Figura de cabelo escuro",
+  "look": "cabelo escuro, parte da cabeça sob o balão da imagem 1"
+ },
+ {
+  "name": "Criaturas",
+  "look": "bestas escuras caídas no chão do pátio"
+ },
+ {
+  "name": "Espadachim",
+  "look": "camisa clara, calça escura, empunha espada longa"
+ },
+ {
+  "name": "Colega de cabelo castanho",
+  "look": "cabelo castanho espetado, jaqueta escura, boca aberta gritando"
+ },
+ {
+  "name": "Colega de moletom",
+  "look": "cabelo escuro espetado, moletom escuro, expressão furiosa"
+ },
+ {
+  "name": "Colega de calça escura",
+  "look": "silhuetas de pé com calça escura e tênis, sem rosto visível"
+ },
+ {
+  "name": "Espadachim de capa",
+  "look": "cabelo claro, capa escura esvoaçante, lâmina brilhante, visto de perfil"
+ },
+ {
+  "name": "Figura de chapéu",
+  "look": "chapéu escuro, bota de cano alto, em movimento rápido, sem rosto visível"
+ },
+ {
+  "name": "Figura de rosto ferido",
+  "look": "rosto rachado e sangrando, escuro, em close"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "jaqueta escura, de costas, segura objeto fino claro no braço erguido"
+ },
+ {
+  "name": "Figura de jaqueta escura",
+  "look": "jaqueta escura, braço estendido com mão aberta para baixo"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão estendida de cima, manga escura, segura objeto pequeno"
+ },
+ {
+  "name": "Figura de rosto em close",
+  "look": "rosto em close, cabelo escuro com mecha clara, olhar sério"
+ },
+ {
+  "name": "Colegas de fundo",
+  "look": "grupo de colegas de roupas escuras ao fundo, sem rostos visíveis"
+ },
+ {
+  "name": "Chi Yin",
+  "look": "usuário de elemento flora; nomeado nas falas, não aparece nestas páginas"
+ },
+ {
+  "name": "Colega de grampo",
+  "look": "cabelo claro na altura do queixo, grampo em X, uniforme de mangas bufantes"
+ },
+ {
+  "name": "Colega de suspensórios",
+  "look": "suspensórios escuros, calça escura, mão erguida com marcas de impacto"
+ },
+ {
+  "name": "Liang",
+  "look": "Diretor de ensino fundamental, óculos, terno escuro, cabelo penteado"
+ },
+ {
+  "name": "Colega castanho",
+  "look": "cabelo castanho espetado, jaqueta escura, boca cerrada, segura lâmina"
+ },
+ {
+  "name": "Aluno de cabelo escuro",
+  "look": "cabelo escuro, camisa escura, visto de canto e de perfil"
+ },
+ {
+  "name": "Figura de terno",
+  "look": "vulto de terno escuro de pé na mata, cabeça virada para a esquerda"
+ },
+ {
+  "name": "Figura de jaqueta",
+  "look": "de costas, cabelo escuro curto, jaqueta escura com gola"
+ },
+ {
+  "name": "Pai de Yi",
+  "look": "homem de camisa escura, cabelo castanho penteado para trás, barba por fazer"
+ },
+ {
+  "name": "Mãe",
+  "look": "braço de manga escura, rosto fora do quadro; chamada 'Mom' por Yi"
+ },
+ {
+  "name": "Hong",
+  "look": "cabelo espetado, aplica golpes críticos, grita ordens nas batalhas"
+ },
+ {
+  "name": "Figura de boca em close",
+  "look": "boca fechada num sorriso contido, queixo e roupa escura, rosto em close"
+ },
+ {
+  "name": "Pai",
+  "look": "homem de camisa escura, cabelo castanho penteado para trás, barba por fazer, sorriso largo"
+ },
+ {
+  "name": "Figura de chinelo",
+  "look": "visto só dos pés: calça escura e chinelo de dedo, adulto que fala sobre sacrifício"
+ },
+ {
+  "name": "Bai Lingsheng",
+  "look": "Janela de status: nível 26, classe C, Guerreiro Elétrico; sem aparência visível"
+ },
+ {
+  "name": "Figura de camiseta",
+  "look": "camiseta cinza, ajoelhada, amparando a Mãe caída"
+ },
+ {
+  "name": "Agressor de calça escura",
+  "look": "calça escura e tênis, visto só da perna, pisa no aluno caído"
+ },
+ {
+  "name": "Figura de calça escura",
+  "look": "calça escura, em movimento rápido, rosto fora do quadro"
+ },
+ {
+  "name": "Figura caindo",
+  "look": "figura caindo de boca aberta, sob objeto escuro alongado"
+ },
+ {
+  "name": "Figura de casaco longo",
+  "look": "casaco longo escuro, correndo com sacola na mão, rosto fora do quadro"
+ },
+ {
+  "name": "Prisioneiro",
+  "look": "camisa cinza com 013 no peito, mãos algemadas, sentado"
+ },
+ {
+  "name": "Figura escura",
+  "look": "roupa escura, de costas ou sem rosto visível, fala no primeiro plano"
+ },
+ {
+  "name": "Figura de sandália",
+  "look": "pés de sandália grossa, calça escura, sem rosto visível"
+ },
+ {
+  "name": "Criatura emaranhada",
+  "look": "massa de tiras de luz clara emaranhadas, sem rosto visível"
+ },
+ {
+  "name": "Figura do balão",
+  "look": "silhueta fora do quadro, fala de cima da página, sem rosto visível"
+ },
+ {
+  "name": "Figura cabisbaixa",
+  "look": "sentada de cabeça baixa, camisa escura, pés descalços, braços nos joelhos"
+ },
+ {
+  "name": "Figura de máscara",
+  "look": "sentada, braços cruzados, rosto coberto por máscara branca, cabelo escuro"
+ },
+ {
+  "name": "Figura escamosa",
+  "look": "Pele escamosa de criatura, olho e boca em close, contornos duros"
+ },
+ {
+  "name": "Figura escura lateral",
+  "look": "ombro e manga escuros no canto superior esquerdo, rosto fora do quadro"
+ },
+ {
+  "name": "Figura olhos escuros",
+  "look": "olhos escuros brilhantes em close, cabelo escuro bagunçado, sombra no rosto"
+ },
+ {
+  "name": "Figura de cabelo claro ensanguentada",
+  "look": "cabelo claro espetado e ensanguentado, visto de trás, linhas de velocidade"
+ },
+ {
+  "name": "Garoto de uniforme ensanguentado",
+  "look": "cabelo escuro espetado, camisa branca e gravata escura, sangue, chorando"
+ },
+ {
+  "name": "Figura lançada",
+  "look": "corpo jogado, roupa escura, cabelo claro, atingido por lâmina"
+ },
+ {
+  "name": "Atacante de lâmina",
+  "look": "corpo borrado, braço erguido com lâmina brilhante, explosão de luz"
+ },
+ {
+  "name": "Figura de passos",
+  "look": "só pernas e pés de calça escura, sangue no piso"
+ },
+ {
+  "name": "Olhar Escuro",
+  "look": "olho brilhante em close, cabelo escuro, sombra no rosto, raios ao redor"
+ },
+ {
+  "name": "Figura ajoelhada",
+  "look": "roupa escura, ajoelhado no chão de uma sala, cabelo escuro"
+ },
+ {
+  "name": "Figura de barba por fazer",
+  "look": "homem de barba por fazer, camisa escura rasgada e manchada de sangue"
+ },
+ {
+  "name": "Barbudo",
+  "look": "cabelo castanho bagunçado, barba curta, sorriso, camisa de preso"
+ },
+ {
+  "name": "Ruyun",
+  "look": "Mãe de Yi; de avental, assustada, chora abraçada a travesseiro"
+ },
+ {
+  "name": "Figura do fundo",
+  "look": "silhueta escura fora do quadro, fala sobre alguém parecido com Snow"
+ },
+ {
+  "name": "Figura ensanguentada",
+  "look": "camisa clara manchada de sangue, calça escura listrada, visto de baixo"
+ },
+ {
+  "name": "Garoto ensanguentado",
+  "look": "cabelo escuro espetado, camisa branca, gravata escura, sangue no rosto, chorando"
+ },
+ {
+  "name": "Figura da cadeira",
+  "look": "braço peludo segurando cadeira, manga escura"
+ },
+ {
+  "name": "Figura de calça xadrez",
+  "look": "calça xadrez, sendo abraçada por trás pela Mãe"
+ },
+ {
+  "name": "Cabelo Enrolado",
+  "look": "cabelo escuro enrolado em tiras longas, rosto marcado e sombreado, olhar de desprezo"
+ },
+ {
+  "name": "Ang",
+  "look": "Vice-capitão do Inspetorado; braços cruzados, suspensórios"
+ },
+ {
+  "name": "Jinwu",
+  "look": "inspetor de camisa e suspensórios, fala de suborno na cela"
+ },
+ {
+  "name": "Policial",
+  "look": "uniforme escuro, cabelo escuro curto, mostra cartaz de procurado"
+ },
+ {
+  "name": "Snow",
+  "look": "procurado pelo Inspetorado, cartaz de procurado sobre a mesa"
+ },
+ {
+  "name": "Figura do topo",
+  "look": "ombro e manga escuros no alto, fora do quadro, fala sobre os 15 dias"
+ },
+ {
+  "name": "Inspetor de manga escura",
+  "look": "manga escura, braço apoiado no balcão ou na mesa, sem rosto visível"
+ },
+ {
+  "name": "Criatura chifruda",
+  "look": "criatura de chifres e corpo musculoso, sai de portal girante, rosto com traços de ferimento"
+ },
+ {
+  "name": "Armado de lança",
+  "look": "figura armada com lança, ao redor do portal, sombreada"
+ },
+ {
+  "name": "Figura da lâmina",
+  "look": "Jaqueta escura sobre camisa clara, lâmina curva brilhante na mão"
+ },
+ {
+  "name": "Figura do cajado",
+  "look": "capa clara, bastão de ponta escura, grita"
+ },
+ {
+  "name": "Figura da foice",
+  "look": "chibi de capa escura com lâmina curva grande, sorriso fechado"
+ },
+ {
+  "name": "Fera",
+  "look": "criatura de pelo branco, boca aberta com presas, brilho ao redor"
+ },
+ {
+  "name": "Sombra",
+  "look": "silhueta escura em fumaça, lâmina brilhante, sem rosto visível"
+ },
+ {
+  "name": "Figura pálida",
+  "look": "rosto pálido, olhar sério, casaco escuro, em close"
+ },
+ {
+  "name": "Lobo Sanguinário",
+  "look": "lobo escuro de presas à mostra, rótulo Bloodthirsty Forest Wolf, nível 2"
+ },
+ {
+  "name": "Lobos",
+  "look": "lobos demoníacos nível 2, pelo escuro, olhos brilhantes, presas à mostra"
+ },
+ {
+  "name": "Rei lobo",
+  "look": "lobo grande de pelagem escura, rótulo Bloodthirsty Wolf King, nível 4"
+ },
+ {
+  "name": "Besta demoníaca",
+  "look": "fera escura de cabeça grande, boca aberta com presas, rótulo Demonic Beast"
+ },
+ {
+  "name": "Lingsheng",
+  "look": "de costas diante de criaturas, lâmina curva, sorriso em combate, cabelo escuro"
+ },
+ {
+  "name": "Lobo",
+  "look": "lobo de pelo escuro, presas, brilho branco no peito e focinho"
+ },
+ {
+  "name": "Lobo-rei",
+  "look": "lobo cinza de pelo eriçado, boca aberta com presas, rugindo"
+ },
+ {
+  "name": "Garoto de gravata",
+  "look": "cabelo claro espetado, camisa clara, gravata escura, jaqueta escura, olhar sério"
+ },
+ {
+  "name": "Lobo da floresta",
+  "look": "lobo escuro de presas à mostra, corpo borrado em movimento rápido"
+ },
+ {
+  "name": "Figura de olhos escuros",
+  "look": "olho escuro brilhante em close, sombra no rosto"
+ },
+ {
+  "name": "Terno",
+  "look": "homem de terno escuro e gravata escura, rosto fora do quadro"
+ },
+ {
+  "name": "Xadrez",
+  "look": "calça xadrez e pernas de pé, sem rosto visível"
+ },
+ {
+  "name": "Cloud Scale",
+  "look": "dragão de escamas escuras, cabeça alongada, olho branco brilhante"
+ },
+ {
+  "name": "Figura de bota",
+  "look": "bota escura de cano alto em chute rápido, linhas de velocidade"
+ },
+ {
+  "name": "Píton das Nuvens",
+  "look": "fera escura de cabeça grande, presas, rótulo Cloud Python nível 4"
+ },
+ {
+  "name": "Urso-da-tundra",
+  "look": "fera enorme de pelo escuro e espinhoso, presas, boca aberta, brilho ao redor"
+ },
+ {
+  "name": "Píton-das-nuvens",
+  "look": "cobra gigante de cabeça escura e espinhosa, presas longas, olho brilhante"
+ },
+ {
+  "name": "Urso",
+  "look": "urso grande de garras e pelo escuro, aparece nas laterais da cena"
+ },
+ {
+  "name": "Criatura dragão",
+  "look": "cabeça de dragão com presas abertas, à direita do quadro"
+ },
+ {
+  "name": "Figura de boca",
+  "look": "boca fechada em close, roupa escura, fala de fora do quadro"
+ },
+ {
+  "name": "Urso da tundra despertado",
+  "look": "urso de pelo claro, garras longas, nível B (gigante) tipo nuvem"
+ },
+ {
+  "name": "Criatura de cristais",
+  "look": "criatura escura de presas à mostra, cercada de cristais afiados"
+ },
+ {
+  "name": "Besta sombria",
+  "look": "forma escura de boca aberta, gotejando, contornos borrados, sob o balão"
+ },
+ {
+  "name": "Criatura arredondada",
+  "look": "criatura arredondada cinza-clara, marcas escuras, sem rosto visível"
+ },
+ {
+  "name": "Figura da capa",
+  "look": "capa e roupa escuras, empunha adaga, vórtice de luz ao redor"
+ },
+ {
+  "name": "Criatura das garras",
+  "look": "garra escura de criatura, unhas longas, rasgo de luz branca"
+ },
+ {
+  "name": "Mago das Nuvens",
+  "look": "velho de barba e cabelo brancos, cajado com nuvens, capa escura; nível 11 rank D"
+ },
+ {
+  "name": "Macaco da esquerda",
+  "look": "macaco de pelo claro na borda esquerda"
+ },
+ {
+  "name": "Macaco da direita",
+  "look": "macaco de pelo claro, garra grande à direita"
+ },
+ {
+  "name": "Figura do braço escuro",
+  "look": "braço de manga escura no canto da cena, rosto fora do quadro"
+ },
+ {
+  "name": "Fera congelada",
+  "look": "fera coberta de gelo à esquerda, juba e presas"
+ },
+ {
+  "name": "Figura escura no topo",
+  "look": "pequena figura de capa escura no alto da cena"
+ },
+ {
+  "name": "Criatura borrada",
+  "look": "massa escura borrada com partículas brancas"
+ },
+ {
+  "name": "Figura escura de salto",
+  "look": "silhueta escura pulando de cima sobre Yi, borrada em movimento"
+ },
+ {
+  "name": "Figura girando",
+  "look": "silhueta escura em giro rápido, sem rosto visível, linhas de velocidade"
+ },
+ {
+  "name": "Figura de rosto ensanguentado",
+  "look": "rosto em perfil, cabelo escuro, marcas escuras de sangue na bochecha"
+ },
+ {
+  "name": "Mago-demônio",
+  "look": "mago-demônio de cajado curvo, cauda longa, manto esfarrapado, nível 11"
+ },
+ {
+  "name": "Lobo-sanguinário",
+  "look": "lobo escuro de presas à mostra, nível 2, rótulo Bloodthirsty Forest Wolf"
+ },
+ {
+  "name": "Macaco-demônio",
+  "look": "símios escuros nível 10, agachados, vice-comandantes da Floresta Azul"
+ },
+ {
+  "name": "Horda de criaturas",
+  "look": "silhuetas escuras com chifres, olhos brilhantes e lanças ao alto"
+ },
+ {
+  "name": "Criatura negra",
+  "look": "criatura escura de garras longas e unhas compridas, cercada de raios"
+ },
+ {
+  "name": "Figura da tigela",
+  "look": "mão de homem segurando tigela de bebida, fala sem rosto visível"
+ },
+ {
+  "name": "Braços Abertos",
+  "look": "cabelo escuro preso em rabo, brinco, sorriso de olhos fechados, braços abertos"
+ },
+ {
+  "name": "Garoto Sorridente",
+  "look": "cabelo claro espetado, sorriso malicioso, mão ao rosto, jaqueta escura"
+ },
+ {
+  "name": "Colega fora do quadro",
+  "look": "voz de fora do quadro, pede ajuda com dados na parede"
+ },
+ {
+  "name": "Figura do livro",
+  "look": "casaco escuro, segura livro aberto, rosto de olhos fechados ao lado"
+ },
+ {
+  "name": "Cabelo claro",
+  "look": "cabelo claro, rosto visível, olhar para cima, em penumbra"
+ },
+ {
+  "name": "Figura escura do topo",
+  "look": "pequena figura de capa escura no alto da cena, sem rosto visível"
+ },
+ {
+  "name": "Figura do impacto",
+  "look": "silhueta escura de capa e cabelo escuro, perto do clarão"
+ },
+ {
+  "name": "Figura fumaça",
+  "look": "figuras esfumaçadas em silhueta, sem rosto visível"
+ },
+ {
+  "name": "Figura sombreada",
+  "look": "Figura sombreada em chão escuro, sem rosto visível"
+ },
+ {
+  "name": "Caído",
+  "look": "corpo caído na chuva, punho cerrado no chão molhado, roupa escura"
+ },
+ {
+  "name": "Besta de presas",
+  "look": "criatura escura de boca aberta com presas, olhos brilhantes, lâminas ao redor"
+ },
+ {
+  "name": "Atacante",
+  "look": "corpo borrado, lâmina brilhante erguida, explosão de luz"
+ },
+ {
+  "name": "Figura do ataque",
+  "look": "cabelo claro em tiras, rosto feroz, mão escura, fumaça"
+ },
+ {
+  "name": "Criatura do impacto",
+  "look": "massa escura borrada, linhas verticais de movimento, faixa clara ao fundo"
+ },
+ {
+  "name": "figuras no pavilhão",
+  "look": "figuras dentro do santuário nevado, sem traço visível"
+ },
+ {
+  "name": "figura sentada no fundo",
+  "look": "sentada num banco entre tochas, cauda longa curvada"
+ },
+ {
+  "name": "Garoto ferido",
+  "look": "cabelo escuro espetado, camisa branca, gravata escura, sangue no rosto, chorando"
+ },
+ {
+  "name": "Criatura da fumaça",
+  "look": "criatura escura de garras longas, envolta em fumaça branca, sem rosto visível"
+ },
+ {
+  "name": "Criatura da sala",
+  "look": "criatura de cauda longa sentada num banco, sala escura com velas"
+ },
+ {
+  "name": "Figura do canto",
+  "look": "figura à esquerda do quadro, cabelo escuro, só parte do rosto visível"
+ },
+ {
+  "name": "Figura de olhos brilhantes",
+  "look": "olho branco brilhante em close, cabelo claro, neve caindo"
+ },
+ {
+  "name": "Atacante da lâmina",
+  "look": "jaqueta escura sobre camisa clara, espada curva brilhante, cabeça fora do quadro"
+ },
+ {
+  "name": "Figura borrada",
+  "look": "silhueta escura borrada em movimento rápido, sem rosto visível"
+ },
+ {
+  "name": "Figura sobre a fera",
+  "look": "figura de roupa escura de pé sobre a fera branca, na neve"
+ },
+ {
+  "name": "Figura cortada",
+  "look": "cabelo escuro espetado, quadro cortado na borda inferior"
+ },
+ {
+  "name": "Figura pequena",
+  "look": "figura pequena no centro da clareira, identidade incerta"
+ },
+ {
+  "name": "Vulto",
+  "look": "figura de capa escura sobre barra, borrada em movimento, sem rosto visível"
+ },
+ {
+  "name": "Macaco esquerdo",
+  "look": "macaco demoníaco de pelo claro, corpo musculoso, nível 10 rank E"
+ },
+ {
+  "name": "Macaco direito",
+  "look": "macaco demoníaco de pelo claro, garras longas, nível 10 rank E"
+ },
+ {
+  "name": "Garoto da gravata",
+  "look": "cabelo claro espetado, camisa clara, gravata escura, olhar sério"
+ },
+ {
+  "name": "Fera esquerda",
+  "look": "fera de pelo branco, presas, brilho ao redor, à esquerda do choque"
+ },
+ {
+  "name": "Fera direita",
+  "look": "fera de pelo branco, presas, de frente para a Fera esquerda"
+ },
+ {
+  "name": "Figura do sofá",
+  "look": "figura sentada no sofá, visto de cima, de cabeça baixa, sem rosto visível"
+ },
+ {
+  "name": "Subordinado de terno",
+  "look": "terno escuro, gravata, sorriso, rosto visível"
+ },
+ {
+  "name": "Capanga do cajado",
+  "look": "terno escuro, cajado de ponta curva"
+ },
+ {
+  "name": "Capanga da espada",
+  "look": "terno escuro, espada longa ao alto"
+ },
+ {
+  "name": "Figura das pernas",
+  "look": "pernas de calça escura e tênis, jaqueta escura caída, de pé sobre Caído"
+ },
+ {
+  "name": "Caveira",
+  "look": "rosto de caveira pálida, cabelo trançado preso, capa escura, agachado"
+ },
+ {
+  "name": "Instrutor",
+  "look": "boné escuro, blusa preta de gola alta, braço estendido apontando"
+ },
+ {
+  "name": "Garoto do capuz",
+  "look": "moletom escuro com capuz, punhos cerrados, visto de costas"
+ },
+ {
+  "name": "Garoto de ombreira",
+  "look": "cabelo escuro espetado, jaqueta com ombreira, boca aberta falando"
+ },
+ {
+  "name": "Garoto de sardas",
+  "look": "cabelo castanho com franja reta, sardas, moletom escuro com capuz"
+ },
+ {
+  "name": "Garoto de capuz",
+  "look": "franja reta, sardas, capuz escuro"
+ },
+ {
+  "name": "Professor",
+  "look": "boné preto, jaqueta escura de gola alta, segura papel, dá o anúncio"
+ },
+ {
+  "name": "Amigo ansioso",
+  "look": "gota de suor na testa, boca aberta em espanto, visto de lado à esquerda"
+ },
+ {
+  "name": "Encapuzado da espada",
+  "look": "capa escura com capuz, espada envolta em chamas"
+ },
+ {
+  "name": "Mago de cajado",
+  "look": "capa escura, cajado com cristal brilhante, rosto apagado"
+ },
+ {
+  "name": "Cantor do livro",
+  "look": "casaco escuro, segura livro aberto, rosto apagado"
+ },
+ {
+  "name": "Garoto do cabelo cortado",
+  "look": "cabelo de franja reta até a sobrancelha, jaqueta escura com capuz, rosto assustado"
+ },
+ {
+  "name": "Garoto da jaqueta listrada",
+  "look": "jaqueta listrada, de costas, andando pelo corredor"
+ },
+ {
+  "name": "Figura central",
+  "look": "homem de jaqueta escura de pé no centro da quadra, rosto visível"
+ },
+ {
+  "name": "Jovens ajoelhados",
+  "look": "grupo de jovens de capuz ajoelhados em fileira na quadra"
+ },
+ {
+  "name": "Garoto da mochila",
+  "look": "cabelo escuro, mochila nas costas, empurra bicicleta, visto de costas"
+ },
+ {
+  "name": "Garoto do meio",
+  "look": "cabelo claro espetado, camisa clara, mochila, sorriso"
+ },
+ {
+  "name": "Sardas",
+  "look": "cabelo castanho com franja, sardas no rosto, moletom escuro, boca aberta"
+ },
+ {
+  "name": "Óculos",
+  "look": "cabelo escuro, óculos de armação, camiseta branca, macacão jeans"
+ },
+ {
+  "name": "Fora do quadro",
+  "look": "cabeça de cabelo escuro espetado na borda, fala sem rosto visível"
+ },
+ {
+  "name": "Amigo",
+  "look": "cabelo claro espetado, gota de suor, boca aberta de espanto, camisa clara"
+ },
+ {
+  "name": "Brinco",
+  "look": "cabelo claro espetado, jaqueta escura, brinco na orelha, sorriso debochado"
+ },
+ {
+  "name": "Colega de costas",
+  "look": "cabelo escuro, visto de costas, mochila, roupa escura"
+ },
+ {
+  "name": "Guarda",
+  "look": "chapéu de aba, uniforme escuro, chaveiro preso à cintura"
+ },
+ {
+  "name": "Presidiários",
+  "look": "uniformes claros com números, cabeça raspada, em fila"
+ },
+ {
+  "name": "Servente",
+  "look": "uniforme escuro, entrega bandeja pela janela do refeitório"
+ },
+ {
+  "name": "Oficial",
+  "look": "cabelo escuro, uniforme escuro com bolsos, sorriso"
+ },
+ {
+  "name": "Garoto de moletom",
+  "look": "cabelo castanho curto, moletom escuro, boca aberta gritando"
+ },
+ {
+  "name": "Figura da pista",
+  "look": "figura pequena perto de árvore na pista de atletismo, pouco visível"
+ },
+ {
+  "name": "Figura de regata",
+  "look": "de costas, regata escura, ombros musculosos, cabelo escuro; sem rosto visível"
+ },
+ {
+  "name": "Specs",
+  "look": "óculos de armação fina, cabelo castanho com topete, camisa clara"
+ },
+ {
+  "name": "Garoto de suspensórios",
+  "look": "cabelo escuro curto, camiseta clara, suspensórios escuros, sorriso"
+ },
+ {
+  "name": "Médico",
+  "look": "jaleco branco, óculos de armação fina, cabelo castanho penteado, aponta com o dedo"
+ },
+ {
+  "name": "Garoto da enfermaria",
+  "look": "cabelo escuro espetado, camisa clara, sentado diante do monitor"
+ },
+ {
+  "name": "Garoto dos óculos",
+  "look": "cabelo escuro espetado, óculos, jaqueta escura, expressão firme"
+ },
+ {
+  "name": "Garoto das sardas",
+  "look": "cabelo castanho com franja reta, sardas, moletom escuro com capuz"
+ },
+ {
+  "name": "Figura do braço",
+  "look": "braço de manga escura com pulseira clara, aperta o pescoço de Brinco, rosto fora do quadro"
+ },
+ {
+  "name": "Sentado",
+  "look": "cabelo escuro curto, camiseta escura, sentado no chão, cenho franzido"
+ },
+ {
+  "name": "Cadeirante",
+  "look": "cabelo castanho preso, perna engessada, sentada em cadeira de rodas"
+ },
+ {
+  "name": "Regata",
+  "look": "cabelo curto, regata escura, corrente no pescoço, braços cruzados"
+ },
+ {
+  "name": "Garoto de costas",
+  "look": "cabelo castanho espetado, visto de costas, jaqueta escura, no centro do selo"
+ },
+ {
+  "name": "Olhar",
+  "look": "olhos arregalados, cabelo escuro espetado, gota de suor na testa"
+ },
+ {
+  "name": "Estrangulador",
+  "look": "braço de manga escura com faixa preta no pulso, sem rosto visível"
+ },
+ {
+  "name": "Gravata",
+  "look": "cabelo claro espetado, camisa clara, gravata escura, olhar sério"
+ },
+ {
+  "name": "Braço",
+  "look": "braço de manga escura com pulso faixado, mão de garras longas, vindo de cima, rosto fora do quadro"
+ },
+ {
+  "name": "Figura do chute",
+  "look": "só pé de sapato preto e meia listrada, chutando o chão"
+ },
+ {
+  "name": "Garoto de cabelo cacheado",
+  "look": "cabelo castanho cacheado, rosto suado, boca tapada pela mão de outro"
+ },
+ {
+  "name": "Garoto de jaqueta escura",
+  "look": "cabelo claro espetado com topete, jaqueta escura, segura a boca de outro garoto"
+ },
+ {
+  "name": "Rival",
+  "look": "cabelo escuro espetado, boca aberta gritando, jaqueta com ombreira"
+ },
+ {
+  "name": "Plateia",
+  "look": "alunos de moletom e agasalho escuro, de costas, em fileiras"
+ },
+ {
+  "name": "Garoto de cabelo espetado",
+  "look": "cabelo escuro espetado, cara fechada, de pé na fila de veteranos"
+ },
+ {
+  "name": "Garoto do livro",
+  "look": "cabelo escuro, livro aberto nas mãos, boca aberta cantando"
+ },
+ {
+  "name": "Garoto do arco",
+  "look": "cabelo escuro curto, moletom escuro, arma de haste, expressão brava"
+ },
+ {
+  "name": "Garoto da lança",
+  "look": "cabelo escuro, moletom escuro com capuz, lança longa, boca aberta"
+ },
+ {
+  "name": "Figura do olho",
+  "look": "olho em close, cabelo escuro espetado, rosto parcial"
+ },
+ {
+  "name": "Garoto da esquerda",
+  "look": "cabelo escuro, jaqueta escura, olha para o centro do grupo"
+ },
+ {
+  "name": "Aluno de calça xadrez",
+  "look": "calça xadrez escura, parte de cima cortada no quadro"
+ },
+ {
+  "name": "Aluno de braçadeira",
+  "look": "braçadeira preta no pulso, mão erguida, uniforme escuro"
+ },
+ {
+  "name": "Diretor",
+  "look": "terno escuro, cabelo penteado para trás, camisa clara, mãos nos bolsos"
+ },
+ {
+  "name": "Garoto do casaco",
+  "look": "cabelo claro espetado com tufo, jaqueta escura de gola clara, calça xadrez, tênis claro; protagonista"
+ },
+ {
+  "name": "Colega de camisa escura",
+  "look": "camisa escura, cabelo escuro, boca aberta de espanto"
+ },
+ {
+  "name": "Figura de tênis",
+  "look": "calça escura e tênis em movimento rápido, rosto fora do quadro"
+ },
+ {
+  "name": "Cacheado",
+  "look": "cabelo castanho cacheado, perfil, jaqueta escura, sorriso de olhos fechados"
+ },
+ {
+  "name": "Ziling",
+  "look": "citado em fala; não aparece nestas páginas"
+ },
+ {
+  "name": "Colega da esquerda",
+  "look": "cabelo escuro, jaqueta escura, mãos nos bolsos, expressão de canto"
+ },
+ {
+  "name": "Garoto da corrida",
+  "look": "cabelo castanho espetado, jaqueta escura, corre de costas e vulto borrado à esquerda"
+ },
+ {
+  "name": "Figura de cabelo espetado",
+  "look": "cabelo escuro espetado, capa escura, rosto de perfil"
+ },
+ {
+  "name": "Garoto da calça xadrez",
+  "look": "cabelo escuro espetado, jaqueta escura, calça xadrez, aura brilhante"
+ },
+ {
+  "name": "Garoto da camisa clara",
+  "look": "camisa clara, calça escura, andando na trilha"
+ },
+ {
+  "name": "Alunos da fila",
+  "look": "uniformes escuros, em pé enfileirados diante de armários"
+ },
+ {
+  "name": "Silhuetas",
+  "look": "silhuetas escuras de pessoas dentro de quadros brancos"
+ },
+ {
+  "name": "Sentado de boné",
+  "look": "boné escuro, de costas, sentado em cadeira"
+ },
+ {
+  "name": "Sentado de cabelo claro",
+  "look": "cabelo claro, de costas, sentado em cadeira giratória"
+ },
+ {
+  "name": "Subordinado",
+  "look": "terno escuro, gravata, cabelo castanho preso, celular na mão; agora é o vice-capitão do Ultimate Campus"
+ },
+ {
+  "name": "Figura da fala",
+  "look": "cabelo escuro, visto só parcialmente no canto inferior direito, falando"
+ },
+ {
+  "name": "Sentada",
+  "look": "cabelo escuro preso em rabo, roupa escura, sentada num banco"
+ },
+ {
+  "name": "Morcego de chamas",
+  "look": "morcego monstro com asas em chamas, presas e olhos brilhantes; classe F"
+ },
+ {
+  "name": "Gato violento",
+  "look": "gato monstro de presas à mostra, parte inferior esquerda; classe F"
+ },
+ {
+  "name": "Garoto do tamborim",
+  "look": "cabelo escuro, de costas, segura pandeiro sobre a cabeça, assustado"
+ },
+ {
+  "name": "Presa feroz",
+  "look": "fera de presas, pelo escuro, olhos brilhantes; classe F"
+ },
+ {
+  "name": "Furão estelar",
+  "look": "furão com padrão de constelação no corpo, boca aberta; classe G (E)"
+ },
+ {
+  "name": "Garoto assustado",
+  "look": "cabelo escuro, moletom escuro, rosto chorando, sentado à esquerda"
+ },
+ {
+  "name": "Garoto da mão brilhante",
+  "look": "cabelo escuro cobrindo um olho, moletom escuro, mão com brilho"
+ },
+ {
+  "name": "Garoto de camisa clara",
+  "look": "cabelo escuro, camisa clara, estende a mão com brilho"
+ },
+ {
+  "name": "Penteado",
+  "look": "cabelo escuro penteado para trás, brinco na orelha, terno escuro"
+ },
+ {
+  "name": "Criatura da esquerda",
+  "look": "criatura de cabeça espinhosa, olhos negros, dentes afiados, folhas-espinho nas laterais"
+ },
+ {
+  "name": "Criatura da direita",
+  "look": "criatura de cabeça espinhosa com três olhos, dentes afiados, folhas-espinho, corpo grande atrás"
+ },
+ {
+  "name": "Figura do brinco",
+  "look": "cabelo escuro curto, dois brincos na orelha, cenho franzido, expressão séria"
+ },
+ {
+  "name": "Figura do casaco",
+  "look": "casaco escuro de gola alta, ombros largos, olhos brilhantes, visto de cima"
+ },
+ {
+  "name": "Figura do capuz",
+  "look": "moletom escuro com capuz, de pé na floresta, exclamando"
+ },
+ {
+  "name": "Garoto que aponta",
+  "look": "cabelo escuro espetado, camisa clara, dedo erguido, boca aberta falando"
+ },
+ {
+  "name": "Garoto de braços cruzados",
+  "look": "cabelo castanho espetado, camisa clara, braços cruzados, cara brava"
+ },
+ {
+  "name": "Monstro de três olhos",
+  "look": "criatura escura, três olhos brilhantes, presas, marca de 3 na testa"
+ },
+ {
+  "name": "Star Bug",
+  "look": "inseto gigante cinza, carapaça com marca de oito na cabeça, patas e espinhos longos"
+ },
+ {
+  "name": "Monstro de presas",
+  "look": "criatura escura com mandíbula cheia de presas e marca brilhante na cabeça"
+ },
+ {
+  "name": "Fera de presas",
+  "look": "monstro de presas enormes e boca escancarada, pelagem escura"
+ },
+ {
+  "name": "Besta de carapaça",
+  "look": "besta escura de carapaça e presas recurvadas"
+ },
+ {
+  "name": "Figura branca",
+  "look": "figura branca suspensa no ar perto de faixa de luz, sem rosto visível"
+ },
+ {
+  "name": "Armadura",
+  "look": "armadura clara com brilho, entre espinhos na floresta"
+ },
+ {
+  "name": "Criatura de espinhos",
+  "look": "cabeça espinhosa, olhos e dentes afiados, cipós de espinhos"
+ },
+ {
+  "name": "Figura da espada",
+  "look": "braço de manga escura empunhando espada de lâmina brilhante"
+ },
+ {
+  "name": "Criatura da caverna",
+  "look": "cabeça saindo de caverna escura, contorno brilhante, detalhes ocultos"
+ },
+ {
+  "name": "Leão de juba dupla",
+  "look": "leão de duas cabeças, juba escura, presas à mostra, olhos brilhantes; nível 11, classe D"
+ },
+ {
+  "name": "Ling",
+  "look": "Assassina de raio do Corpo Divino, luta com espada; companheira de Yi"
+ },
+ {
+  "name": "Xiaoling",
+  "look": "Maga da Divisão Divina, conjura Mundo Glacial"
+ },
+ {
+  "name": "Yin",
+  "look": "Presidente da turma, cabelo longo, braços cruzados, expressão séria"
+ },
+ {
+  "name": "Li Ang",
+  "look": "vice-capitão do Inspetorado, conduz a prisão de Lingsheng"
+ },
+ {
+  "name": "Fora",
+  "look": "criatura de cauda longa sentada num banco em sala escura, fala com Yi"
+ },
+ {
+  "name": "Barbudo de Suspensórios",
+  "look": "cabelo escuro curto, barba por fazer, camisa clara, suspensórios escuros, cara brava"
+ },
+ {
+  "name": "Anotador",
+  "look": "cabelo castanho espetado, camisa clara, suspensórios, segura bloco, sorriso"
+ }
+]

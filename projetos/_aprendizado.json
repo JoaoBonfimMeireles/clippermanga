@@ -1,29 +1,29 @@
 {
   "rules": [
     "Nunca use rodapé, créditos, capa com logo da scan ou propaganda (Patreon, Discord, pedidos de apoio) como imagem nem como opção de dúvida. A abertura do capítulo usa o primeiro quadro real da história.",
-    "O foco é sempre a CENA, não os balões, porque a narração já conta a história. Prefira quadros com personagens e ação. Quadro só de balão, legenda, texto ou disco com escrita não vale sozinho, exceto quando a fala é sobre o sistema.",
-    "Falas vizinhas sobre o mesmo momento usam a MESMA imagem, de 2 a 4 falas por quadro: reação, resposta, transição, comentário, ameaça, recusa, pensamento, a mesma pessoa continuando e a conversa alternada do mesmo grupo. Frase curta que fecha o momento e o encerramento repetem o quadro anterior.",
-    "Frase de suspense ('ainda não imaginava o que estava por vir', 'será que eu ia conseguir?') ou que fala de escuridão e tela preta repete o quadro anterior ou usa a cena geral dos personagens juntos, nunca um quadro isolado.",
-    "Narração de rotina ou deslocamento do protagonista (acordar, chegar, cavalgar, pagar, comprar, sair, andar sozinho, ser chamado e entrar numa sala, apertar um dispositivo) em quadros seguidos usa a cena geral desses quadros, mantida nas 3 ou 4 falas do trecho.",
-    "Se o que a fala descreve não aparece inteiro em nenhum quadro (objeto, papel tremendo nas mãos, sensação, tecido, pessoa só narrada, multidão ausente) ou o quadro mostra outra coisa, repita a cena anterior com a pessoa que segura ou sente, nunca a página inteira.",
-    "Fala que encerra uma cena e já leva à próxima, ou que anuncia algo chegando cujo quadro é fraco, usa o quadro da fala posterior, onde as pessoas reagem ao que chegou.",
-    "Quando o quadro próprio da fala é fraco (silhueta, figura sem rosto, braço, mão ou armadura solta, bota, olho, nariz e boca, rosto suando de perto, rosto encarando) repita a imagem anterior ou use o bloco vizinho com as pessoas inteiras. Ao repetir, escolha a imagem mais completa.",
-    "Texto narrado dividido em duas partes (a primeira termina em vírgula ou reticências, a segunda começa em minúscula) usa a mesma imagem nas duas partes, normalmente a da ação principal da segunda.",
-    "Só troque de quadro quando a fala trouxer um momento novo, um personagem novo ou uma ação nova com quadro próprio. Siga a ordem das páginas. Confira o quadro exato da ação ou de quem fala, porque a IA erra um quadro para frente ou para trás.",
-    "Quando os membros de um grupo são descritos um por vez (capangas avançando, o chefe que pergunta, um que ri, outro que ameaça), use a cena do grupo inteiro e repita-a nas 2 ou 3 falas, em vez de um quadro para cada um.",
-    "Fala que cita duas pessoas ou dois momentos em quadros VIZINHOS usa a cena geral só desses quadros (quem fala + quem ouve, grito + quem fica parado, ameaça + avanço, objeto + grupo que reage). Não acrescente quadro de fumaça, balão ou outro assunto.",
-    "Use um quadro só quando a fala descreve UM personagem inteiro nele (alguém entrando correndo, quem chega) e o vizinho é fumaça, balão, fundo ou outro assunto. Pensamento do protagonista sobre alguém usa o protagonista. Xingamento sobre alguém citado antes repete o quadro dessa pessoa.",
-    "Fala com dois momentos em quadros distantes usa UM quadro: o da ação mais forte ou do assunto principal. Narrador só calado, parado ou chocado não ganha quadro próprio: repete a ação que ele está vendo.",
-    "Em luta contínua, falas seguidas de ação (golpe, chute, avanço, bloqueio, alguém agarrado, voando ou caindo, estilhaços, sangue) e o pensamento do protagonista no meio da luta repetem o quadro da ação completa por 2 a 4 falas.",
-    "Quadros que se sobrepõem numa mesma ação (golpe + queda, arma apontada + vítima, criatura avançando + alvo) viram um bloco único. Golpe narrado antes do resultado pode usar o quadro do resultado (quem caiu e reage). Efeito, dor e nova ameaça repetem o quadro da ação completa.",
-    "Lembrança, sonho, visão do passado, explicação ou reflexão do narrador (mundo, níveis, poderes, profissão, motivos, culpa, luto, decisões) sem quadro próprio usa a cena geral de quem explica e quem ouve, e as 2 ou 3 falas do mesmo raciocínio reutilizam esse bloco.",
+    "O foco é sempre a CENA, não os balões, porque a narração já conta a história. Prefira quadros com personagens e ação. Quadro só de balão, legenda ou texto não vale sozinho, exceto quando a fala é só sobre ler a janela.",
+    "Falas vizinhas sobre o mesmo momento usam a MESMA imagem por 2 a 4 falas: reação, resposta, admissão, comentário de colega, deboche, desculpa, transição, pensamento, entrega de objeto e quem o recebe, a mesma pessoa continuando a explicação. Frase curta que fecha a anterior repete o quadro anterior.",
+    "Narração de rotina ou deslocamento do protagonista (acordar, chegar, voltar para casa, ser recebido na entrada, pagar, comprar, sair, andar sozinho, apertar um dispositivo) em quadros seguidos usa a cena geral desses quadros, mantida nas 3 ou 4 falas do trecho.",
+    "Se o que a fala descreve não aparece inteiro em nenhum quadro (poção, objeto, sensação, pessoa só narrada, acontecimento de minutos antes) ou o quadro mostra outra coisa, repita a cena anterior com a pessoa que segura ou sente. Beber ou usar o item recém-oferecido repete a cena da oferta.",
+    "Fala que encerra uma cena e já leva à próxima, ou que anuncia algo chegando (missão ou aviso novo do sistema) cujo quadro é fraco, usa o quadro da fala posterior, onde as pessoas reagem ao que chegou.",
+    "Quando o quadro próprio da fala é fraco (silhueta, figura sem rosto, braço, mão, pernas, bota, armadura solta, olho, nariz e boca, só cabelo, rosto suando de perto) repita a imagem anterior ou use o bloco vizinho com as pessoas inteiras. Ao repetir, escolha a imagem mais completa.",
+    "Texto narrado dividido em partes (a primeira termina em vírgula ou reticências, as seguintes são frases curtas começando com 'E', 'Que', minúscula ou sem sujeito) usa a mesma imagem em todas as partes, a da ação principal da primeira.",
+    "Só troque de quadro quando a fala trouxer um momento novo, um personagem novo ou uma ação nova com quadro próprio e forte. Siga a ordem das páginas. Confira o quadro exato da ação ou de quem fala, porque a IA erra um quadro para frente ou para trás.",
+    "Quando os membros de um grupo são descritos um por vez (capangas avançando, o chefe que pergunta, um que ri, outro que ameaça, outro que só observa do alto), use a cena do grupo inteiro e repita-a nas 2 ou 3 falas, em vez de um quadro para cada um.",
+    "Fala que cita duas pessoas ou dois momentos em quadros VIZINHOS usa a cena geral só desses quadros (quem age + quem reage, grito + aliado lutando, ataque + revide, objeto + quem o usa). Mesmo sem a ação exata, junte os vizinhos com os personagens citados.",
+    "Use um quadro só quando a fala descreve UM personagem inteiro nele (quem chega, quem responde, quem grita) e o vizinho é fumaça, balão, fundo ou outro assunto. Pensamento do protagonista sobre alguém usa o protagonista. Xingamento sobre alguém citado antes repete o quadro dessa pessoa.",
+    "Fala com dois momentos em quadros distantes usa UM quadro: o da ação mais forte ou do resultado (inimigo derrubado, criaturas caídas com os colegas). Narrador só calado, parado ou chocado não ganha quadro próprio: repete a ação que ele está vendo.",
+    "Em luta contínua, a fala seguinte a um anúncio, grito ou golpe (golpes seguidos, urro, bombardeio, magia lançada, figura que salta e acerta, inimigo do fundo atingido, ameaça nova, queda na explosão) repete o quadro da ação completa anterior por 2 a 4 falas.",
+    "Quadros que se sobrepõem numa mesma ação (golpe + queda, arma apontada + vítima, criatura avançando + alvo) viram um bloco único. Golpe ou pancada narrada antes do resultado pode usar o quadro do resultado. Efeito, dor e nova ameaça repetem o quadro da ação completa.",
+    "Lembrança, sonho, flashback ('antes disso', 'minutos antes'), explicação ou reflexão do narrador (mundo, níveis, poderes, torneios, recompensas, motivos, culpa, luto, promessas) sem quadro próprio usa a cena geral de quem explica e quem ouve, ou o quadro do acontecimento lembrado.",
     "Página inteira só quando ela é uma única cena grande (conversa parada, personagem posando, paisagem, briga caótica num só quadro), mantida nas 3 ou 4 falas do trecho. Se a página tem vários quadros, use o quadro ou o bloco da fala.",
-    "Ação, impacto, explosão e combate usam o quadro inteiro, com corpo, inimigo e efeito. Feixe de luz, clarão, anéis de energia, rastro, linhas de velocidade ou punho não valem sozinhos: prefira o quadro onde o poder aparece sendo ativado por quem o usa, ou o do resultado.",
-    "Fala sobre o sistema, habilidade, poder, ficha ou documento mostra o efeito junto de quem o usa ou segura. Conteúdo lido de um papel ou tela usa a cena de quem lê, repetida nas falas que listam o conteúdo. Aviso do sistema numa ação repete o quadro da ação.",
+    "Ação, impacto, explosão e combate usam o quadro inteiro, com o protagonista, o inimigo e o efeito. Feixe de luz, clarão, rastro, lâmina riscando, linhas de velocidade, inimigos atingidos sem quem ataca ou punho não valem sozinhos: prefira quem ativa o poder ou o resultado.",
+    "Mensagem do sistema que acompanha uma ação ou mudança (morte do inimigo com EXP, subida de nível, habilidade ou equipamento liberado, item sacado, troca de classe, cura) repete a cena do personagem inteiro com a arma ou o resultado. A janela sozinha só quando a fala é ler a janela.",
     "Voz de fora ou de quem não aparece: se o balão dela está num quadro vizinho de quem reage, use a cena geral dos dois; se não, repita o quadro anterior. Se a fala seguinte revela quem falou, use o quadro da seguinte.",
-    "Revelação de personagem, criatura, objeto, grupo ou poder novo usa o primeiro quadro nítido e inteiro dele, mantido nas falas que explicam o que é, no comentário e na reação imediata. Silhueta não entra sozinha. Multidão usa o grupo inteiro.",
-    "GEOMETRIA: a caixa pega o quadro inteiro de borda a borda, com cabeça, pés, arma, corpo da criatura e efeito. O erro mais frequente é a faixa baixa e fina demais: suba até a borda real superior e desça até a inferior, usando a largura toda em quadro largo.",
-    "GEOMETRIA: quadro de ação, revelação ou personagem nunca vira tira fina nem recorte só do rosto. Se o quadro é curto e o vizinho mostra o mesmo momento, a caixa abraça os dois; deixe de fora balões, legendas, pedaços de cabeça na borda e quadros de outro assunto."
+    "Revelação de personagem, criatura, lugar, objeto, grupo ou poder novo usa o primeiro quadro nítido e inteiro dele, mantido nas falas que descrevem quem já espera ali, explicam o que é, comentam e reagem. Silhueta não entra sozinha. Multidão usa o grupo inteiro.",
+    "GEOMETRIA: a caixa pega o quadro inteiro de borda a borda, com cabeça, tronco, pés, arma, montaria, corpo da criatura e efeito. O erro mais frequente é a faixa baixa e fina, só de rostos, objeto ou meio quadro: suba até a borda real superior e desça até a inferior.",
+    "GEOMETRIA: o balão grande no topo ou entre quadros NÃO é o quadro. Nunca desenhe a caixa em volta de balão, onomatopeia, lâmina riscando ou fundo; desça até o quadro do personagem logo abaixo e pegue-o inteiro, junto com a janela do sistema colada a ele.",
+    "GEOMETRIA: nunca recorte só um pedaço lateral ou central; se o quadro ocupa a largura da página, vá de lado a lado com todos os personagens. Pare na sarjeta: não engula o quadro vizinho, balões soltos nem cabeça cortada de outro quadro. Ação nunca vira tira de rosto ou bota."
   ],
   "questions": [
     {
@@ -333,29 +333,29 @@
       "answer": "dar foco a cena"
     },
     {
-      "id": "fd3ee6a3",
-      "projectId": "2f068130-53d2-4c02-9e7d-48f450dde8be",
-      "title": "The Crazy Villain Regains His Sanity",
-      "part": 51,
-      "question": "Na parte 51 (rosnando com o peito sujo de sangue) você estreitou e baixou o recorte, ao contrário do resto. Foi para tirar um balão ou o outro personagem e focar só no protagonista?",
-      "at": "2026-11-19T03:30:40.861Z"
+      "id": "aa258fc6",
+      "projectId": "dc709f65-6a98-4550-961c-917232241927",
+      "title": "Global Game: I Can Amplify Everything by a Hundred Times",
+      "part": 110,
+      "question": "Nas partes 107, 110 e 111 (conversas na sala) você diminuiu a altura do recorte. Foi para tirar balões de cima/baixo ou para cortar outro quadro que entrava junto?",
+      "at": "2026-11-20T09:25:07.564Z"
     },
     {
-      "id": "fd404154",
-      "projectId": "2f068130-53d2-4c02-9e7d-48f450dde8be",
-      "title": "The Crazy Villain Regains His Sanity",
-      "part": 146,
-      "question": "Nas partes 146 e 147 (explosão de energia e de pé sobre o soldado) você trocou de página. O quadro original não mostrava a explosão ou só estava cortado?",
-      "at": "2026-11-19T03:30:40.861Z"
+      "id": "57512b9f",
+      "projectId": "dc709f65-6a98-4550-961c-917232241927",
+      "title": "Global Game: I Can Amplify Everything by a Hundred Times",
+      "part": 416,
+      "question": "Nas partes 416 e 417 (armadura em fumaça e missão oculta) você diminuiu o bloco grande para uma faixa no meio. Foi para tirar balões/outro quadro ou para focar na janela do sistema?",
+      "at": "2026-11-20T09:25:07.564Z"
     },
     {
-      "id": "27aa6206",
-      "projectId": "2f068130-53d2-4c02-9e7d-48f450dde8be",
-      "title": "The Crazy Villain Regains His Sanity",
-      "part": 309,
-      "question": "Nas partes 309 e 310 (Da-hyun chegando com os funcionários) você diminuiu o recorte. Foi para tirar um balão ou outro quadro que entrava embaixo, ou para aproximar os personagens?",
-      "at": "2026-11-19T03:30:40.861Z"
+      "id": "c5459daf",
+      "projectId": "dc709f65-6a98-4550-961c-917232241927",
+      "title": "Global Game: I Can Amplify Everything by a Hundred Times",
+      "part": 384,
+      "question": "Na parte 384 você reduziu o recorte pela metade. Foi para tirar um quadro de outro momento que entrava embaixo, ou para focar só no protagonista com a espada?",
+      "at": "2026-11-20T09:25:07.564Z"
     }
   ],
-  "updatedAt": "2026-11-19T03:30:40.862Z"
+  "updatedAt": "2026-11-20T09:25:07.564Z"
 }

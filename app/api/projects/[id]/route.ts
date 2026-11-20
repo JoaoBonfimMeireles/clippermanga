@@ -7,6 +7,7 @@ import { dedupeImports, hasDuplicateImports, healTest } from '@/lib/cut-profiles
 import { logDoubtAnswers, logEdits } from '@/lib/learning';
 import { mergeShots } from '@/lib/shots-merge';
 import { syncHookShots } from '@/lib/parts';
+import { applyChapterLimit } from '@/lib/chapter-limit';
 
 export const dynamic = 'force-dynamic';
 type Ctx = { params: Promise<{ id: string }> };
@@ -33,7 +34,13 @@ export async function PUT(req: Request, { params }: Ctx) {
   const body = (await req.json()) as Partial<StudioProject> & { doubtAnswers?: (Doubt & { manual?: boolean })[]; changedIds?: string[]; removedIds?: string[] };
   try {
     const pid = (await params).id;
+    // "Usar X capítulos": mexe nas páginas e na linha do tempo, então não pode ser durante um processo nem durante o teste
+    if ('chapterLimit' in body) {
+      if (projectJobs(pid).some((j) => j.status === 'running')) return new Response('Tem processo rodando neste projeto: espere terminar antes de mudar quantos capítulos usar.', { status: 409 });
+      if (peekProject(pid)?.test) return new Response('Termine o modo teste antes de mudar quantos capítulos usar.', { status: 409 });
+    }
     const p = updateProject(pid, (cur) => {
+      if ('chapterLimit' in body) applyChapterLimit(cur, body.chapterLimit == null ? undefined : Number(body.chapterLimit));
       // a tela diz quais partes mudou: só essas valem; o resto fica como está no disco (um job pode ter mexido depois
       // que a tela carregou). Sem isso o salvamento desfazia o trabalho do job e anotava a diferença como correção sua.
       if (body.shots && Array.isArray(body.changedIds)) body.shots = mergeShots(cur.shots, body.shots, { changedIds: body.changedIds, removedIds: body.removedIds ?? [] });
@@ -59,7 +66,7 @@ export async function PUT(req: Request, { params }: Ctx) {
         if (cur.part) syncHookShots(cur);
         else cur.shots = cur.shots.filter((s) => !s.hook);
       }
-      for (const k of ['title', 'context', 'format', 'narration', 'voice', 'subtitles', 'endSilence', 'endTalkPad', 'chapterContexts', 'shots', 'cutWords', 'targetMinutes', 'englishAudio', 'autoPaid', 'series', 'fullVideoUrl', 'doubts', 'lockedPages', 'lastImportUrl', 'ytTitle', 'publishedAt', 'partLabel'] as const) {
+      for (const k of ['title', 'context', 'format', 'narration', 'voice', 'subtitles', 'endSilence', 'endTalkPad', 'chapterContexts', 'shots', 'cutWords', 'targetMinutes', 'englishAudio', 'autoPaid', 'series', 'fullVideoUrl', 'doubts', 'lockedPages', 'lastImportUrl', 'ytTitle', 'publishedAt', 'partLabel', 'auto'] as const) {
         if (body[k] === undefined) continue;
         // guarda a data anterior para poder voltar (trocar de lugar com a atual = desfazer/refazer)
         if (k === 'publishedAt' && (body[k] || undefined) !== cur.publishedAt) cur.prevPublishedAt = cur.publishedAt;

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import './globals.css';
 import { QuestionsLink } from '@/components/learn-questions';
+import { ClaudeUsageBadge } from '@/components/claude-usage-badge';
 
 export const metadata: Metadata = { title: 'Mangá em Vídeo', description: 'Transforme capítulos de mangá em vídeo com controle manual' };
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="font-semibold">
               Mangá <span className="text-primary">em Vídeo</span>
             </Link>
+            <ClaudeUsageBadge />
             <Link href="/gestao" className="ml-auto text-sm text-muted-foreground hover:text-foreground">
               Gestão
             </Link>

@@ -1,0 +1,1142 @@
+[
+ {
+  "name": "Gilphas",
+  "look": "bebê de cabelos castanho-escuros, rosto redondo, pinta no rosto; reencarnado na família Eldragon"
+ },
+ {
+  "name": "Idoso",
+  "look": "Homem idoso, cabelos longos presos, expressão severa, olhos intensos."
+ },
+ {
+  "name": "Filho",
+  "look": "Homem adulto de cabelos escuros, veste terno, filho de Gilphas."
+ },
+ {
+  "name": "Zeke",
+  "look": "cabelo escuro espetado, uniforme escuro com ombreira, visto de costas; protagonista"
+ },
+ {
+  "name": "Gilliam",
+  "look": "filho de Gilphas, chora ao lado do pai no leito de morte"
+ },
+ {
+  "name": "Bebê",
+  "look": "Recém-nascido, cabelos escuros, cicatrizes no rosto, expressão intensa e olhos brilhantes."
+ },
+ {
+  "name": "Empregada",
+  "look": "Mulher jovem, uniforme de empregada, cabelo preso com touca, expressão de choque."
+ },
+ {
+  "name": "Figura sombria",
+  "look": "punho cerrado em sombra, sem rosto visível"
+ },
+ {
+  "name": "Vozes não identificadas",
+  "look": "balões de fala sem personagem visível"
+ },
+ {
+  "name": "Dragão",
+  "look": "serpente-dragão escura com dentes e crista, boca aberta"
+ },
+ {
+  "name": "Criatura",
+  "look": "Criatura grande de quatro patas, vista só pelas patas, entre a grama alta"
+ },
+ {
+  "name": "Crianças do Teste",
+  "look": "grupo de crianças de colete e gravata, em fila no pátio, rostos borrados"
+ },
+ {
+  "name": "Pai",
+  "look": "homem de sobretudo militar com dragonas, de costas, rosto nunca mostrado"
+ },
+ {
+  "name": "Mãe",
+  "look": "mulher de vestido longo, cabelo preso, segura bebê no colo, já falecida"
+ },
+ {
+  "name": "Observador",
+  "look": "figura encapuzada de manto escuro, segura bastão ou espada longa, visível na mata"
+ },
+ {
+  "name": "Javali",
+  "look": "Javali gigante, pelo escuro e manchado, presas curvas, olhos brilhantes"
+ },
+ {
+  "name": "Bebês adormecidos",
+  "look": "vários bebês dormindo em berços de madeira num quarto grande"
+ },
+ {
+  "name": "Criada Coque",
+  "look": "criada de cabelo preso em coque, uniforme preto com avental branco"
+ },
+ {
+  "name": "Criada Franja",
+  "look": "criada com franja cobrindo parte do rosto, uniforme preto com avental branco"
+ },
+ {
+  "name": "Goblin",
+  "look": "criatura musculosa, pele acinzentada, orelhas pontudas, grita e ataca"
+ },
+ {
+  "name": "Guardas",
+  "look": "três guardas de quepe com distintivo, uniforme escuro, rostos sem traços"
+ },
+ {
+  "name": "Oficial idoso",
+  "look": "homem idoso de bigode, cabelo penteado para trás, olhos fechados, segura quepe"
+ },
+ {
+  "name": "Garoto",
+  "look": "menino de cabelo escuro, camisa clara e calça bege, entrando por porta de madeira"
+ },
+ {
+  "name": "Oficial de bigode",
+  "look": "homem idoso de quepe, bigode, cabelo curto e emblema Eldragon no peito"
+ },
+ {
+  "name": "Oficial jovem",
+  "look": "homem de quepe, cabelo castanho liso na altura do queixo, expressão séria"
+ },
+ {
+  "name": "Figura de bota",
+  "look": "bota preta de cadarço em movimento, dono não visível"
+ },
+ {
+  "name": "Candidato",
+  "look": "garoto de cabelo escuro bagunçado, pinta no rosto, colete e gravata borboleta, grita"
+ },
+ {
+  "name": "Acompanhantes",
+  "look": "adultos e crianças de colete e gravata, de costas ou em sombra, no pátio"
+ },
+ {
+  "name": "Mordomo",
+  "look": "homem adulto de colete e camisa branca, cabelo curto penteado"
+ },
+ {
+  "name": "Rangis",
+  "look": "Amigo de Zeke; cabelo claro, suado, reclama e grita, come e viaja muito"
+ },
+ {
+  "name": "Retton",
+  "look": "candidato que avisa Zeke sobre a lança; boca aberta, aponta, grita"
+ },
+ {
+  "name": "Garoto loiro",
+  "look": "cabelo loiro-claro, uniforme escuro com ombreiras, expressão assustada"
+ },
+ {
+  "name": "Criança do teste",
+  "look": "criança de colete escuro e gravata-fita, mãos entrelaçadas, rosto fora do quadro"
+ },
+ {
+  "name": "Loiro",
+  "look": "cabelo loiro-claro liso na altura da orelha, uniforme escuro, suando, expressão tensa"
+ },
+ {
+  "name": "Figura escura",
+  "look": "figura musculosa de roupa escura, boca aberta, garras pretas"
+ },
+ {
+  "name": "Pseudo-dragão",
+  "look": "dragão pálido e sem asas, corpo longo, garras longas, em queda na escuridão"
+ },
+ {
+  "name": "Adulto de terno",
+  "look": "adultos de terno escuro ao fundo do pátio, caminhando"
+ },
+ {
+  "name": "Criança da mão",
+  "look": "criança de cabelo escuro, camisa clara e calça escura, segura a mão do adulto"
+ },
+ {
+  "name": "Figura de capa",
+  "look": "capa escura com capuz, rosto oculto, atrás de Zeke na escada"
+ },
+ {
+  "name": "Figura de sabre",
+  "look": "figura de uniforme escuro com sabre na cintura, no alto da tira"
+ },
+ {
+  "name": "Oficial de quepe",
+  "look": "uniforme escuro, quepe com emblema, mão levantada, rosto fora do quadro"
+ },
+ {
+  "name": "Criança em salto",
+  "look": "criança de cabelo espetado, capa escura, saltando com chamas nas mãos"
+ },
+ {
+  "name": "Examinador",
+  "look": "homem de gravata escura, segura cartão com número 1 e placa Adult Dragon Examiner"
+ },
+ {
+  "name": "Figura de sobretudo",
+  "look": "de costas, sobretudo escuro de gola alta com ombreiras, cabelo não visível"
+ },
+ {
+  "name": "Pessoa de olho arregalado",
+  "look": "olho grande em close, cabelo castanho, sombras ao redor"
+ },
+ {
+  "name": "Garoto do teste",
+  "look": "cabelo castanho bagunçado espetado, colete escuro, gravata-fita, sorriso largo"
+ },
+ {
+  "name": "Garoto de cabelo castanho",
+  "look": "cabelo castanho liso, uniforme escuro, pergunta quem é o cara"
+ },
+ {
+  "name": "Figura caída",
+  "look": "cabelo castanho-avermelhado, caída no chão, uniforme escuro"
+ },
+ {
+  "name": "Oficial sorridente",
+  "look": "quepe com emblema Eldragon, sorriso de olhos semifechados, cabelo castanho curto"
+ },
+ {
+  "name": "Oficial da lâmina",
+  "look": "homem de quepe, segura lâmina longa com cabo trançado"
+ },
+ {
+  "name": "Oficial de capa",
+  "look": "homem de capa escura com ombreiras, quepe com emblema, fala ao grupo"
+ },
+ {
+  "name": "Figura de uniforme",
+  "look": "uniforme escuro, de costas, caminha até o portão do castelo, rosto não visível"
+ },
+ {
+  "name": "Criatura de cabelo claro",
+  "look": "criatura de cabelo claro e espetado, envolta em chamas, traços borrados"
+ },
+ {
+  "name": "Oficial do quepe",
+  "look": "quepe escuro com emblema, uniforme escuro, ao lado de Freya no castelo"
+ },
+ {
+  "name": "Garoto castanho",
+  "look": "cabelo castanho-claro espetado, uniforme escuro, sobrancelhas franzidas, grita"
+ },
+ {
+  "name": "Candidato ferido",
+  "look": "garoto de cabelo castanho bagunçado, curativo na cabeça, colete rasgado, mão na testa"
+ },
+ {
+  "name": "Candidato da poção",
+  "look": "garoto de cabelo escuro espetado, colete rasgado, segura frasco com líquido brilhante"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro, cabeça baixa, visto de cima"
+ },
+ {
+  "name": "Figura de pé",
+  "look": "figura de pé ao fundo, braços cruzados, colete e calça escura"
+ },
+ {
+  "name": "Figura adulta de colete",
+  "look": "adulto de colete escuro e calça escura, lança na mão, rosto fora do quadro"
+ },
+ {
+  "name": "Instrutor",
+  "look": "cabelo castanho espetado e bagunçado, uniforme escuro com botões brancos, sorriso largo"
+ },
+ {
+  "name": "Balza",
+  "look": "cabelo longo claro, barba, olhar severo, chefe da família Eldragon"
+ },
+ {
+  "name": "Guerreiro de pele",
+  "look": "cabelo cacheado escuro, manto de pele, de pé no flashback"
+ },
+ {
+  "name": "Guerreira de armadura",
+  "look": "cabelo branco-claro, armadura escura, de pé no flashback"
+ },
+ {
+  "name": "Garoto antigo",
+  "look": "garoto de cabelo escuro, roupa simples, ao lado da guerreira"
+ },
+ {
+  "name": "Guerreiro de capa",
+  "look": "homem de cabelo espetado, capa escura, faixas brilhantes, à direita"
+ },
+ {
+  "name": "Eldragon",
+  "look": "adulto de cabelo branco longo, sobretudo escuro de gola de pele, olhos brilhantes"
+ },
+ {
+  "name": "Mestre Balza",
+  "look": "mencionado nas falas; aparência não mostrada nestas páginas"
+ },
+ {
+  "name": "Adulto de colete",
+  "look": "adulto de colete e calça escura, sombra escura, rosto fora do quadro, à esquerda"
+ },
+ {
+  "name": "Garoto do sorriso",
+  "look": "cabelo castanho bagunçado espetado, colete escuro, sorriso largo com dentes"
+ },
+ {
+  "name": "Figura do rosto suado",
+  "look": "rosto pálido e suado, boca aberta, close-up de expressão tensa"
+ },
+ {
+  "name": "Garoto espetado",
+  "look": "cabelo castanho curto espetado, uniforme escuro com ombreiras, olhos arregalados"
+ },
+ {
+  "name": "Oficial Tapa-olho",
+  "look": "oficial de quepe com emblema Eldragon, tapa-olho no olho esquerdo, sobretudo escuro"
+ },
+ {
+  "name": "Garoto de cabelo escuro",
+  "look": "cabelo escuro bagunçado, camiseta clara, calça escura"
+ },
+ {
+  "name": "Lika",
+  "look": "criança de cabelo loiro-claro preso em rabo de cavalo, roupa clara, expressão séria"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "sem camisa, cabelo espetado escuro, de costas, cercada de luz"
+ },
+ {
+  "name": "Adulto loiro",
+  "look": "homem adulto de cabelo claro penteado, uniforme escuro, de costas, mão erguida à mesa"
+ },
+ {
+  "name": "Criança de pé",
+  "look": "criança de cabelo claro, uniforme escuro, em pé ao fundo da mesa"
+ },
+ {
+  "name": "Garoto raivoso",
+  "look": "cabelo loiro-claro espetado, uniforme escuro, olhos bravos, boca aberta gritando"
+ },
+ {
+  "name": "Dono da mão",
+  "look": "braço de uniforme escuro com botões, mão aberta no peito, rosto fora do quadro"
+ },
+ {
+  "name": "Criança de óculos",
+  "look": "criança de cabelo escuro, óculos redondos, uniforme escuro, aparece atrás do banco"
+ },
+ {
+  "name": "Garoto sorridente",
+  "look": "cabelo castanho espetado, sorriso largo com dentes, pinta no rosto"
+ },
+ {
+  "name": "Rival loiro",
+  "look": "cabelo loiro-claro espetado com topete, uniforme escuro, boca aberta gritando, olhos bravos"
+ },
+ {
+  "name": "Espadachim",
+  "look": "cabelo claro preso, uniforme escuro, de costas, espada longa em primeiro plano"
+ },
+ {
+  "name": "Oficial da saudação",
+  "look": "oficial de uniforme escuro com ombreiras, em continência, rosto fora do quadro"
+ },
+ {
+  "name": "Candidatos adultos",
+  "look": "figuras adultas de uniforme escuro, rostos ofuscados pela luz"
+ },
+ {
+  "name": "Garoto de franja",
+  "look": "cabelo claro liso com franja, uniforme escuro, suando, boca aberta"
+ },
+ {
+  "name": "Garoto do dedo",
+  "look": "cabelo castanho bagunçado espetado, colete escuro, gravata-fita, aponta com o dedo, sorriso largo"
+ },
+ {
+  "name": "Irmãos mais velhos",
+  "look": "três figuras de uniforme escuro diante de dragão alado; uma de cabelo longo claro"
+ },
+ {
+  "name": "Figura correndo",
+  "look": "duas figuras de corpos escuros em alta velocidade, uma com rastro de relâmpago"
+ },
+ {
+  "name": "Criaturas espinhosas",
+  "look": "criaturas magras e pontudas, olhos grandes no corpo escuro, membros longos com pontas, partes claras"
+ },
+ {
+  "name": "Figura de cabelo longo",
+  "look": "cabelo longo claro, sobretudo escuro com cordão trançado claro, de costas"
+ },
+ {
+  "name": "Espadachim saltador",
+  "look": "cabelo claro espetado, uniforme escuro com ombreiras, espada, saltando"
+ },
+ {
+  "name": "Relator",
+  "look": "homem de quepe com emblema, sobretudo escuro de gola alta, de pé, fala a Balza"
+ },
+ {
+  "name": "Criança de rabo de cavalo",
+  "look": "cabelo claro preso em rabo, uniforme escuro com frisos brancos, em pé"
+ },
+ {
+  "name": "Garoto do grito",
+  "look": "cabelo castanho espetado, uniforme escuro, chorando e gritando"
+ },
+ {
+  "name": "Garotos de regata",
+  "look": "meninos de regata branca e calça escura treinando no pátio"
+ },
+ {
+  "name": "Freya",
+  "look": "cabelo castanho ondulado longo, sobretudo escuro com frisos brancos, broche prateado"
+ },
+ {
+  "name": "Criatura sombria",
+  "look": "criatura escura e volumosa envolta em energia, aparece no chão junto de Zeke"
+ },
+ {
+  "name": "Franja",
+  "look": "cabelo castanho liso na altura do queixo, camisa clara, boca aberta, suando"
+ },
+ {
+  "name": "Adulto da direita",
+  "look": "regata clara, calça escura, mão na cintura, gigante em primeiro plano"
+ },
+ {
+  "name": "Adulto da esquerda",
+  "look": "regata clara, calça escura, punhos erguidos, gigante em primeiro plano"
+ },
+ {
+  "name": "Figura de uniforme militar",
+  "look": "homem de uniforme escuro com ombreiras, capa, cabelo penteado, rosto apagado"
+ },
+ {
+  "name": "Figura de vestido de noiva",
+  "look": "mulher de vestido longo claro e véu, buquê de flores, rosto apagado"
+ },
+ {
+  "name": "Criança da regata",
+  "look": "criança de regata branca e calça escura, cabelo claro, aponta com dois dedos"
+ },
+ {
+  "name": "Adulto de uniforme",
+  "look": "uniforme escuro, braço erguido, mão no cinto, rosto fora do quadro"
+ },
+ {
+  "name": "Garoto de regata loiro",
+  "look": "cabelo loiro-claro espetado, regata branca, de costas, braço estendido à direita"
+ },
+ {
+  "name": "Adulto de camiseta",
+  "look": "adulto de camiseta cinza, em sombra, rosto fora do quadro"
+ },
+ {
+  "name": "Examinadora",
+  "look": "cabelo longo e ondulado, uniforme escuro com ombreiras e emblema, sorriso de olhos fechados, dedo apontado"
+ },
+ {
+  "name": "Garoto de regata",
+  "look": "cabelo escuro bagunçado, regata branca, sentado encostado na parede"
+ },
+ {
+  "name": "Criança de cabelo claro",
+  "look": "cabelo claro, camisa clara, calça escura, mãos juntas"
+ },
+ {
+  "name": "Oficial apontando",
+  "look": "quepe com emblema, sobretudo escuro de botões, braço estendido apontando"
+ },
+ {
+  "name": "Freyja",
+  "look": "cabelo castanho longo ondulado, sobretudo escuro com frisos brancos, broche prateado, sorriso de olhos fechados"
+ },
+ {
+  "name": "Garoto de cabelo claro",
+  "look": "cabelo claro, uniforme escuro, parado no centro do pátio"
+ },
+ {
+  "name": "Oficial de olhos brancos",
+  "look": "uniforme escuro, olhos brilhando brancos, cabelo castanho espetado ou curto"
+ },
+ {
+  "name": "Instrutora",
+  "look": "cabelo claro preso em coque, uniforme escuro com ombreira, sorriso confiante"
+ },
+ {
+  "name": "Oficiais",
+  "look": "dois oficiais de uniforme e quepe escuro atrás da instrutora, rostos sombreados"
+ },
+ {
+  "name": "Garoto de cabelo castanho-claro",
+  "look": "cabelo castanho-claro espetado, uniforme escuro, agachado na floresta"
+ },
+ {
+  "name": "Garoto da fala",
+  "look": "cabelo escuro bagunçado e espetado, regata clara, olhos arregalados"
+ },
+ {
+  "name": "Raymond",
+  "look": "cabelo castanho espetado, uniforme com ombreira, escudo e espada; antigo Escudeiro"
+ },
+ {
+  "name": "Selene",
+  "look": "cabelo escuro longo, uniforme escuro, espada, pétalas de Windflower"
+ },
+ {
+  "name": "Garoto do meio",
+  "look": "cabelo escuro liso, colete escuro, expressão séria, atrás de Zeke"
+ },
+ {
+  "name": "Garoto sério",
+  "look": "cabelo castanho-claro, uniforme escuro, segura lança, expressão séria"
+ },
+ {
+  "name": "Garoto de rabo",
+  "look": "cabelo claro preso em rabo, uniforme escuro com ombreiras, sorriso animado, segura livro"
+ },
+ {
+  "name": "Plebeu",
+  "look": "só topo da cabeça de cabelo cinza claro na base; mão segurando haste"
+ },
+ {
+  "name": "Garoto de escudo",
+  "look": "cabelo castanho espetado, uniforme escuro, segura escudo, chibi"
+ },
+ {
+  "name": "Oficial de gola alta",
+  "look": "uniforme escuro de gola alta com botões brancos, rosto fora do quadro"
+ },
+ {
+  "name": "Garoto do martelo",
+  "look": "cabelo escuro, uniforme escuro, segura martelo grande"
+ },
+ {
+  "name": "Figura agachada",
+  "look": "figura de uniforme escuro agachada, punhos cerrados, correndo"
+ },
+ {
+  "name": "Criança de rabo",
+  "look": "chibi, cabelo claro preso em rabo, estrelas ao redor da cabeça"
+ },
+ {
+  "name": "Garoto da lança",
+  "look": "cabelo castanho, uniforme escuro, segura lança longa"
+ },
+ {
+  "name": "Garoto de mochila",
+  "look": "cabelo claro, uniforme escuro, mochila nas costas, de pé à esquerda"
+ },
+ {
+  "name": "Oficial olhos brancos",
+  "look": "uniforme escuro, olhos brilhando brancos, cabelo claro espetado, segura haste longa, sorriso tenso"
+ },
+ {
+  "name": "Candidato de cabelo longo",
+  "look": "cabelo escuro longo cobrindo um olho, uniforme escuro, à esquerda da corrida"
+ },
+ {
+  "name": "Candidato sorridente",
+  "look": "cabelo claro espetado, uniforme escuro, sorriso largo, atrás do grupo"
+ },
+ {
+  "name": "Candidato de rabo",
+  "look": "cabelo claro preso em rabo de cavalo, uniforme escuro, à direita, correndo"
+ },
+ {
+  "name": "Oficiais ao fundo",
+  "look": "uniformes escuros e quepes, perfilados ao fundo da cena"
+ },
+ {
+  "name": "Garoto de ombreiras",
+  "look": "cabelo castanho-claro espetado, uniforme escuro com ombreiras e botões"
+ },
+ {
+  "name": "Garoto de óculos",
+  "look": "cabelo escuro curto, óculos, uniforme escuro, braços cruzados"
+ },
+ {
+  "name": "Loiro da haste",
+  "look": "cabelo loiro-claro, uniforme escuro, segura haste longa de lança"
+ },
+ {
+  "name": "Garoto suado",
+  "look": "cabelo castanho bagunçado, chibi, língua de fora, suando"
+ },
+ {
+  "name": "Lutador",
+  "look": "cabelo escuro bagunçado e espetado, roupa escura, grita de ataque"
+ },
+ {
+  "name": "Criatura manchada",
+  "look": "anfíbio gigante manchado, boca cheia de dentes, língua longa"
+ },
+ {
+  "name": "Lanceiro",
+  "look": "cabelo castanho espetado, uniforme escuro com frisos, segura lança longa"
+ },
+ {
+  "name": "Companheiro sorridente",
+  "look": "cabelo claro espetado, uniforme escuro, sorriso largo, observa a luta"
+ },
+ {
+  "name": "Garoto do fundo",
+  "look": "cabelo castanho espetado, uniforme escuro, boca aberta gritando, ao fundo"
+ },
+ {
+  "name": "Guerreira",
+  "look": "cabelo claro preso em rabo de cavalo, uniforme escuro com ombreira, rosto suado"
+ },
+ {
+  "name": "Atacantes",
+  "look": "dois vultos de cabelo branco, borrados, em alta velocidade"
+ },
+ {
+  "name": "Garoto das duas estrelas",
+  "look": "cabelo claro espetado, sorriso largo de olhos fechados, uniforme escuro com estrelas e faixa LV.2"
+ },
+ {
+  "name": "Garoto da mochila",
+  "look": "cabelo castanho espetado, uniforme escuro, mochila nas costas, sorriso largo"
+ },
+ {
+  "name": "Soldado",
+  "look": "uniforme escuro, caído no chão, rosto fora do balão"
+ },
+ {
+  "name": "Figura de botas",
+  "look": "botas e calça escuras, de pé em terra, rosto fora do quadro"
+ },
+ {
+  "name": "Rosto de cabelo escuro",
+  "look": "close-up, cabelo escuro bagunçado, olhar tenso e lateral"
+ },
+ {
+  "name": "Loira de rabo",
+  "look": "cabelo loiro-claro em rabo de cavalo, uniforme escuro, segura espada enorme"
+ },
+ {
+  "name": "Espadachim do salto",
+  "look": "cabelo claro espetado, uniforme escuro com ombreiras, espada, saltando"
+ },
+ {
+  "name": "Sorridente",
+  "look": "cabelo castanho espetado, uniforme escuro, sorriso largo com dentes"
+ },
+ {
+  "name": "Portador do cabo",
+  "look": "mão de uniforme escuro segurando cabo de arma brilhante, rosto fora do quadro"
+ },
+ {
+  "name": "Criança loira",
+  "look": "cabelo loiro-claro curto, roupa escura, sentada com lança ao lado, rosto assustado"
+ },
+ {
+  "name": "Garoto de cabelo espetado",
+  "look": "cabelo castanho espetado, uniforme escuro, rosto de perfil sério, algo na boca"
+ },
+ {
+  "name": "Garoto caído",
+  "look": "cabelo castanho liso, uniforme escuro, deitado no chão com lança"
+ },
+ {
+  "name": "Figura de braços erguidos",
+  "look": "adulto de uniforme escuro, braços erguidos, de costas, ao fundo da floresta"
+ },
+ {
+  "name": "Figura caída de cabelo escuro",
+  "look": "cabelo escuro, caído no chão, sob brilho, perto de Zeke"
+ },
+ {
+  "name": "Rival",
+  "look": "cabelo castanho espetado e bagunçado, sorriso largo com dentes, colete escuro com gravata-fita, segura bastão escuro"
+ },
+ {
+  "name": "Garoto gritando",
+  "look": "cabelo loiro-claro espetado, olhos fechados, boca aberta gritando, uniforme escuro"
+ },
+ {
+  "name": "Personagem fora do quadro",
+  "look": "braço de manga listrada erguendo escudo, rosto fora do quadro"
+ },
+ {
+  "name": "Corredor",
+  "look": "cabelo claro, uniforme escuro com frisos, correndo entre árvores"
+ },
+ {
+  "name": "Garoto de costas",
+  "look": "cabelo castanho espetado, uniforme escuro, de costas, diante de explosão de luz"
+ },
+ {
+  "name": "Figura do brilho",
+  "look": "figura escura de cabelo espetado, uniforme escuro, em meio a brilho branco"
+ },
+ {
+  "name": "Soldado caído",
+  "look": "uniforme escuro, caído no chão do palácio, rosto fora do quadro"
+ },
+ {
+  "name": "Oficial suado",
+  "look": "rosto suado, boca aberta, cabelo castanho curto, uniforme escuro com ombreiras"
+ },
+ {
+  "name": "Oficial de gravata",
+  "look": "cabelo escuro penteado para trás, uniforme escuro de botões, gravata escura, olhar sério"
+ },
+ {
+  "name": "Carregador",
+  "look": "homem de peito nu, faixa na cabeça, cabelo escuro, de costas, carrega carga"
+ },
+ {
+  "name": "Javali furioso",
+  "look": "javali escuro e eriçado, presas brancas, olhos furiosos"
+ },
+ {
+  "name": "Golem",
+  "look": "criatura de pedra rachada, buracos como olhos, cristais na base"
+ },
+ {
+  "name": "Garoto chibi",
+  "look": "chibi de cabelo escuro, olhos arregalados, expressão assustada"
+ },
+ {
+  "name": "Garoto das estrelas",
+  "look": "cabelo escuro, uniforme escuro com estrela no peito, de braços abertos"
+ },
+ {
+  "name": "Figuras de botas",
+  "look": "botas e calça escuras, correndo, rosto fora do quadro"
+ },
+ {
+  "name": "Corredores",
+  "look": "dois corredores de uniforme escuro correndo entre árvores"
+ },
+ {
+  "name": "Loiro raivoso",
+  "look": "cabelo loiro-claro espetado, uniforme escuro, olhos bravos, boca aberta gritando"
+ },
+ {
+  "name": "Escudeiro",
+  "look": "cabelo castanho espetado, uniforme escuro, segura escudo, expressão tensa"
+ },
+ {
+  "name": "Atacante de uniforme",
+  "look": "uniforme escuro, em combate, rosto sem detalhe visível, braço erguido"
+ },
+ {
+  "name": "Castanho espetado",
+  "look": "cabelo castanho espetado, uniforme escuro, boca aberta, assustado"
+ },
+ {
+  "name": "Loiro do ahoge",
+  "look": "cabelo loiro-claro espetado com mecha, uniforme escuro, segura espada erguida, gritando"
+ },
+ {
+  "name": "Criatura de pedra",
+  "look": "golem gigante de pedra, olhos brancos brilhantes"
+ },
+ {
+  "name": "Figura caída de cabelo claro",
+  "look": "cabelo claro, caída no chão, rosto não visível, espada ao lado"
+ },
+ {
+  "name": "Garoto do escudo",
+  "look": "cabelo castanho espetado, uniforme escuro, agachado segurando escudo"
+ },
+ {
+  "name": "Laika",
+  "look": "cabelo loiro-claro em rabo de cavalo, uniforme escuro, segura espada com raio"
+ },
+ {
+  "name": "Garoto do raio",
+  "look": "cabelo claro espetado, uniforme escuro, lança com raios"
+ },
+ {
+  "name": "Garoto do rabo",
+  "look": "cabelo claro preso em rabo, mochila, sorriso animado"
+ },
+ {
+  "name": "Garoto da lança branca",
+  "look": "cabelo claro, mochila nas costas, segura lança longa"
+ },
+ {
+  "name": "Garoto da esquerda",
+  "look": "cabelo castanho, aparece só no canto inferior esquerdo, fora de foco"
+ },
+ {
+  "name": "Gigante",
+  "look": "criatura musculosa escura, ombreiras espinhosas, de pé na floresta"
+ },
+ {
+  "name": "Loiro de rabo",
+  "look": "cabelo loiro-claro preso em rabo, uniforme escuro, correndo"
+ },
+ {
+  "name": "Figura de baixo",
+  "look": "cabeça escura no canto inferior, rosto fora do quadro, uniforme escuro"
+ },
+ {
+  "name": "Garoto do livro",
+  "look": "cabelo castanho-claro liso em corte tigela, uniforme escuro, segura livro com emblema, rosto apagado"
+ },
+ {
+  "name": "Loiro assustado",
+  "look": "cabelo loiro-claro espetado, uniforme escuro, boca aberta, suando"
+ },
+ {
+  "name": "Grupo de candidatos",
+  "look": "vários garotos de uniforme escuro, cabelos claros e castanhos, perfilados ou correndo"
+ },
+ {
+  "name": "Companheiro tenso",
+  "look": "cabelo escuro, uniforme escuro, rosto corado e tenso, correndo ao lado de Castanho"
+ },
+ {
+  "name": "Figura escura de baixo",
+  "look": "cabeça escura no canto inferior, rosto fora do quadro"
+ },
+ {
+  "name": "Guardas da porta",
+  "look": "dois soldados de uniforme escuro e quepe, de braços cruzados ao lado do portão"
+ },
+ {
+  "name": "Amigo de cabelo claro",
+  "look": "cabelo castanho-claro, uniforme escuro com botões, suado, boca aberta, braço no ombro de Guerreira"
+ },
+ {
+  "name": "Ancião de cabelo branco",
+  "look": "cabelo branco longo, olhos estreitados, expressão severa, visto de perto"
+ },
+ {
+  "name": "Figura ajoelhada de cabelo claro",
+  "look": "cabelo claro, ajoelhada numa sala de janelas altas, uniforme escuro"
+ },
+ {
+  "name": "Freya Winkick",
+  "look": "cabelo castanho longo ondulado, uniforme escuro com cinto e broche"
+ },
+ {
+  "name": "Oficial do fundo",
+  "look": "uniforme escuro e quepe, de pé ao lado da porta"
+ },
+ {
+  "name": "Garoto da escada",
+  "look": "cabelo castanho espetado, uniforme escuro com botões, atrás de Zeke na escada"
+ },
+ {
+  "name": "Rosto de olhar frio",
+  "look": "cabelo escuro longo, olho claro fixo, close no rosto, identidade ambígua"
+ },
+ {
+  "name": "Figura de espada",
+  "look": "uniforme escuro, empunha espada, de pé na parte inferior do quadro"
+ },
+ {
+  "name": "Oficial barbudo",
+  "look": "cabelo claro comprido, barba por fazer, mão no queixo, uniforme escuro"
+ },
+ {
+  "name": "Mestre Head",
+  "look": "figura sentada atrás da mesa escura no salão gótico, sem detalhe visível"
+ },
+ {
+  "name": "Vulto de cabelo escuro",
+  "look": "cabelo escuro espetado, de costas ou de perfil, fala em close"
+ },
+ {
+  "name": "Criatura de garras",
+  "look": "criatura escura de garras pretas e presas, olhos brancos brilhantes"
+ },
+ {
+  "name": "Mestre de capa",
+  "look": "figura alta de capa escura com ombreiras, cabelo claro, de costas"
+ },
+ {
+  "name": "Colega de cabelo claro",
+  "look": "cabelo claro liso com franja, uniforme escuro com ombreiras, sorriso ou boca aberta rindo"
+ },
+ {
+  "name": "Colega de rabo de cavalo",
+  "look": "cabelo claro preso em rabo, uniforme escuro com frisos brancos, em pé ao lado de Zeke"
+ },
+ {
+  "name": "Garoto Franja Clara",
+  "look": "cabelo claro liso com franja, uniforme escuro, suando, olhos desviados"
+ },
+ {
+  "name": "Monstro do Caos",
+  "look": "criatura escura de chifres, olho grande central, garras longas"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "capa e capuz escuros, rosto oculto, de pé entre raios"
+ },
+ {
+  "name": "Encapuzado do arco",
+  "look": "capa e capuz escuros, segura arco ou lâmina curva, de perfil"
+ },
+ {
+  "name": "Typona",
+  "look": "cabelo claro longo, perfil, escudo ornamentado no topo"
+ },
+ {
+  "name": "Fafnild",
+  "look": "cabelo ruivo-castanho longo e ondulado, perfil"
+ },
+ {
+  "name": "Levias",
+  "look": "cabelo castanho curto em corte bob, presilha, perfil"
+ },
+ {
+  "name": "Bahamut",
+  "look": "cabelo preto longo e reto com franja, perfil"
+ },
+ {
+  "name": "Figura do escudo",
+  "look": "cabelo claro longo, perfil, escudo ornamentado sem nome visível"
+ },
+ {
+  "name": "Livreiro",
+  "look": "cabelo castanho-claro liso em corte tigela, uniforme escuro, segura livro com emblema de nuvem, rosto cortado"
+ },
+ {
+  "name": "Ein",
+  "look": "cabelo escuro penteado para trás, gravata, uniforme com ombreiras e broche; comandante do Corpo Dragão Negro"
+ },
+ {
+  "name": "Cão de caça",
+  "look": "criatura escura de cabeça enorme, olhos brancos brilhantes, presas à mostra"
+ },
+ {
+  "name": "Parza",
+  "look": "mago da família, citado na narração; aparência não confirmada na imagem"
+ },
+ {
+  "name": "Oficial do cálice",
+  "look": "quepe com estrela, uniforme escuro com ombreiras, ergue cálice de água mágica"
+ },
+ {
+  "name": "Mago de cabelo claro",
+  "look": "cabelo claro longo, curvado no canto inferior, uniforme escuro"
+ },
+ {
+  "name": "Oficial de pasta",
+  "look": "cabelo escuro curto, uniforme escuro de botões, segura pasta"
+ },
+ {
+  "name": "Langis",
+  "look": "cabelo claro, uniforme escuro, empunha lança longa"
+ },
+ {
+  "name": "Oficial de cabelo claro",
+  "look": "cabelo claro penteado, uniforme escuro com ombreira, visto de costas"
+ },
+ {
+  "name": "Oficial de rabo de cavalo",
+  "look": "cabelo claro em rabo alto, uniforme escuro com frisos brancos, braços cruzados"
+ },
+ {
+  "name": "Sieg",
+  "look": "cabelo castanho-escuro espetado, uniforme escuro com botões, corpo musculoso"
+ },
+ {
+  "name": "Colega de rabo",
+  "look": "cabelo claro preso em rabo alto, uniforme escuro com frisos brancos, braços cruzados"
+ },
+ {
+  "name": "Garoto da estrela",
+  "look": "cabelo claro, estrela na cabeça, uniforme escuro, de perfil"
+ },
+ {
+  "name": "Garoto de braços cruzados",
+  "look": "cabelo escuro espetado, uniforme escuro, braços cruzados, sorriso de olhos fechados"
+ },
+ {
+  "name": "Garoto agachado",
+  "look": "cabelo loiro-claro, uniforme escuro, agachado, rosto apagado"
+ },
+ {
+  "name": "Loiro de punhos",
+  "look": "cabelo loiro-claro espetado, uniforme escuro, punhos cerrados"
+ },
+ {
+  "name": "Garoto pequeno",
+  "look": "cabelo escuro, uniforme escuro, baixinho, de pé à esquerda"
+ },
+ {
+  "name": "Cadetes de costas",
+  "look": "uniforme escuro, de costas, caminhando para o portão gótico"
+ },
+ {
+  "name": "Figura de cima",
+  "look": "voz fora do quadro, uniforme escuro cortado no topo"
+ },
+ {
+  "name": "Loiro sofrido",
+  "look": "cabelo claro penteado para trás, uniforme escuro com botões, suando, mão na testa"
+ },
+ {
+  "name": "Loiro de costas",
+  "look": "cabelo loiro-claro longo, de costas, sobretudo escuro com ombreiras"
+ },
+ {
+  "name": "Figura da lança",
+  "look": "cabelo claro espetado, uniforme escuro, segura lança longa"
+ },
+ {
+  "name": "Voz fora do quadro",
+  "look": "sem rosto visível; só balões de fala fora do quadro"
+ },
+ {
+  "name": "Oficial de tapa-olho",
+  "look": "cabelo castanho espetado avermelhado, tapa-olho, uniforme escuro, sorriso confiante, segura cabo de arma"
+ },
+ {
+  "name": "Garoto da frente",
+  "look": "cabelo castanho curto, uniforme escuro com ombreiras, de costas no canto inferior esquerdo"
+ },
+ {
+  "name": "Colega de braços cruzados",
+  "look": "cabelo castanho-claro com franja, uniforme escuro com frisos brancos, braços cruzados, rosto tenso"
+ },
+ {
+  "name": "Oficial da porta",
+  "look": "quepe e uniforme escuro, de pé ao lado de Freya"
+ },
+ {
+  "name": "Oficial alto",
+  "look": "uniforme escuro de botões brancos, alto, punho cerrado, rosto fora do quadro"
+ },
+ {
+  "name": "Oficial Gravata",
+  "look": "cabelo escuro penteado para trás, uniforme de botões, gravata escura, olhar sério"
+ },
+ {
+  "name": "Rick",
+  "look": "cabelo castanho espetado, uniforme escuro, boca aberta gritando, segura placa 'SENIOR: RICK'"
+ },
+ {
+  "name": "Garoto castanho espetado",
+  "look": "cabelo castanho espetado, uniforme escuro, atrás de Zeke, boca aberta"
+ },
+ {
+  "name": "Colega de canto",
+  "look": "cabelo castanho curto, rosto apagado, agachado no canto inferior"
+ },
+ {
+  "name": "Colega sentado",
+  "look": "cabelo castanho espetado, uniforme escuro, sentado com boca aberta"
+ },
+ {
+  "name": "Voz não identificada",
+  "look": "sem rosto visível; só balões de fala"
+ },
+ {
+  "name": "Figura de uniforme com lança",
+  "look": "uniforme escuro de botões, segura lança longa, rosto cortado"
+ },
+ {
+  "name": "Oficial do ombro",
+  "look": "uniforme escuro com ombreiras e botões, dedo nos lábios ou mão erguida, rosto cortado"
+ },
+ {
+  "name": "Colega esquerdo",
+  "look": "cabelo claro, uniforme escuro, rosto apagado, segura adaga"
+ },
+ {
+  "name": "Colega direito",
+  "look": "cabelo claro, uniforme escuro, rosto apagado, segura adaga"
+ },
+ {
+  "name": "Colega de cabelo escuro",
+  "look": "cabelo escuro, uniforme escuro, olhos fechados, ao lado do Oficial"
+ },
+ {
+  "name": "Colega de cabelo longo",
+  "look": "cabelo escuro longo e reto, uniforme escuro, em pé à direita"
+ },
+ {
+  "name": "Colegas",
+  "look": "vários cadetes de uniforme escuro caindo na explosão"
+ },
+ {
+  "name": "Oponente",
+  "look": "cabelo escuro curto, uniforme escuro com botões, mãos abertas gesticulando"
+ },
+ {
+  "name": "Loiro da espada",
+  "look": "cabelo loiro-claro espetado, uniforme escuro, sentado no chão segurando espada"
+ },
+ {
+  "name": "Cadete da lança",
+  "look": "cabelo claro, uniforme escuro, segura lança longa"
+ },
+ {
+  "name": "Cadete da espada",
+  "look": "cabelo escuro, uniforme escuro, empunha espada, em pé no pátio"
+ },
+ {
+  "name": "Cadete do escudo",
+  "look": "cabelo claro, uniforme escuro, segura escudo"
+ },
+ {
+  "name": "Cadete caído",
+  "look": "cabelo claro, uniforme escuro, caído no chão"
+ },
+ {
+  "name": "Cadete do ahoge",
+  "look": "cabelo claro com mecha, uniforme escuro, espada erguida"
+ },
+ {
+  "name": "Oficial Rabo",
+  "look": "cabelo claro preso em rabo alto, uniforme escuro com frisos brancos, braços cruzados"
+ },
+ {
+  "name": "Veneal",
+  "look": "cabelo castanho penteado para trás, uniforme escuro com ombreiras, olhar frio"
+ },
+ {
+  "name": "Alan",
+  "look": "uniforme escuro com botões, rosto censurado, entre os auxiliares de Veneal"
+ },
+ {
+  "name": "Figura de rabo",
+  "look": "cabelo escuro preso em rabo, uniforme escuro, canto inferior"
+ },
+ {
+  "name": "Loiro caído",
+  "look": "cabelo loiro-claro, deitado no chão, lâmina acima"
+ },
+ {
+  "name": "Gilphas Eldragon",
+  "look": "Patriarca fundador dos Eldragon, musculoso, cabelo escuro; é a vida passada de Zeke"
+ },
+ {
+  "name": "Zeke Eldragon",
+  "look": "protagonista, reencarnação de Gilphas; cabelo escuro bagunçado, olhar sério"
+ },
+ {
+  "name": "Balza Eldragon",
+  "look": "chefe atual da família Eldragon; cabelo longo, manto escuro com brilhos"
+ },
+ {
+  "name": "Lika Typhona Eldragon",
+  "look": "Filha do chefe Balza, próxima candidata a chefe; cabelo claro, óculos, uniforme escuro com placa"
+ },
+ {
+  "name": "Garoto de cabelo escuro espetado",
+  "look": "cabelo escuro espetado, uniforme escuro com gola, fala sobre o duelo"
+ },
+ {
+  "name": "Loiro sorridente",
+  "look": "cabelo loiro-claro espetado, uniforme escuro, sorriso largo, segura adaga"
+ },
+ {
+  "name": "Oficial de rabo escuro",
+  "look": "cabelo escuro preso em rabo ou coque, uniforme escuro com frisos brancos, sorriso confiante"
+ },
+ {
+  "name": "Colega de cabelo espetado",
+  "look": "cabelo castanho espetado, uniforme escuro, olhos fechados"
+ }
+]

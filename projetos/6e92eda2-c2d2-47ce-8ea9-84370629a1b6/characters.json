@@ -1,0 +1,2066 @@
+[
+ {
+  "name": "Vera",
+  "look": "Cabelo escuro espetado, capa escura, protagonista, ex-mendigo renascido, tenta se tornar Cavaleiro"
+ },
+ {
+  "name": "Figura de sobretudo escuro",
+  "look": "sobretudo escuro longo, mão estendida, rosto não visível"
+ },
+ {
+  "name": "Figura sombria",
+  "look": "silhueta escura em penumbra, sem rosto visível"
+ },
+ {
+  "name": "Renée",
+  "look": "Santa cega, encapuzada, cabelo claro, cicatrizes de queimadura, de cabeça baixa"
+ },
+ {
+  "name": "Guerreiro de gola de pele",
+  "look": "armadura com gola de pele, espada longa, rosto apagado"
+ },
+ {
+  "name": "Herói de lança",
+  "look": "cabelo claro, uniforme militar com ombreiras franjadas, lança, rosto apagado"
+ },
+ {
+  "name": "Figura de vestido branco",
+  "look": "vestido branco longo, pés descalços sobre pedra, pétalas ao redor"
+ },
+ {
+  "name": "Criança de cabelo escuro",
+  "look": "Pequena, cabelo escuro, canto inferior esquerdo da cena."
+ },
+ {
+  "name": "Figura de cabelo escuro",
+  "look": "cabelo escuro, borrado em movimento, na base da cena"
+ },
+ {
+  "name": "Santa",
+  "look": "cabelo claro com faixa, véu claro, sentada numa cadeira"
+ },
+ {
+  "name": "Figura sorridente",
+  "look": "cabelo claro penteado para trás, gola alta escura, sorriso de canto, olhos fechados"
+ },
+ {
+  "name": "Sobretudo",
+  "look": "sobretudo escuro longo, descalço, mão no peito, sorriso"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro, visto de cima, sobre piso de azulejos"
+ },
+ {
+  "name": "Figura não identificada",
+  "look": "capa escura longa, correndo em alta velocidade entre pedras, rosto não visível"
+ },
+ {
+  "name": "Figura de manto branco",
+  "look": "cabelo claro, manto claro rasgado, colar de contas e cruz no peito"
+ },
+ {
+  "name": "Figura Clara",
+  "look": "cabelo claro espetado, olho estreito, sorriso de canto, marca escura perto do olho"
+ },
+ {
+  "name": "Branco",
+  "look": "vestido ou manto branco longo, pés descalços, caminha no chão de pedra"
+ },
+ {
+  "name": "Vulto",
+  "look": "cabeça em primeiro plano, cabelo liso, visto de cima; identidade incerta"
+ },
+ {
+  "name": "Criança de cabelo claro",
+  "look": "pequena, descalça, roupa rasgada manchada de sangue"
+ },
+ {
+  "name": "Figura caída",
+  "look": "capa escura longa, caída no chão, braço erguido, em clarão branco"
+ },
+ {
+  "name": "Sombrio",
+  "look": "cabelo escuro, cicatriz em X no rosto, olhar furioso, sorriso frio, gola alta escura"
+ },
+ {
+  "name": "Figura de capa escura",
+  "look": "capa ou casaco escuro longo com cinto, em pé à esquerda, rosto fora do quadro"
+ },
+ {
+  "name": "Figura de uniforme escuro",
+  "look": "uniforme escuro de gola alta, cabelo castanho escuro curto"
+ },
+ {
+  "name": "Figura de perfil",
+  "look": "cabelo claro espetado, cicatriz na testa, gola alta escura, olhos fechados, grita"
+ },
+ {
+  "name": "Figura da lâmina",
+  "look": "ombro e braço escuros, lâmina pálida, rosto fora do quadro"
+ },
+ {
+  "name": "Voz fora de cena",
+  "look": "balão sem rabicho visível, fora de quadro, sem rosto"
+ },
+ {
+  "name": "Mão sombria",
+  "look": "mão ensanguentada com garras estendida no escuro, dono não visível"
+ },
+ {
+  "name": "Figura da mão mágica",
+  "look": "mão estendida brilhando, marca solar no pulso, manga escura"
+ },
+ {
+  "name": "Capa escura",
+  "look": "capa escura longa, perna clara de bota, em meio a faíscas"
+ },
+ {
+  "name": "Figura chibi",
+  "look": "rosto pequeno estilo chibi, cabelo claro, olhos fechados, bochechas coradas, sorriso aberto"
+ },
+ {
+  "name": "Voz oculta",
+  "look": "balão sem figura visível, fala de fora do quadro"
+ },
+ {
+  "name": "Figura Ajoelhada",
+  "look": "de joelhos no chão, cabelo claro, roupa escura com faixas"
+ },
+ {
+  "name": "Jovem de cabelo claro",
+  "look": "cabelo claro longo, roupa clara, sentada no sofá ao lado de Vera"
+ },
+ {
+  "name": "Jovem de vestido branco",
+  "look": "vestido longo branco, faixa na cintura, cabelo longo à esquerda, pétalas caindo"
+ },
+ {
+  "name": "Mãos estendidas",
+  "look": "mãos de contorno desenhado, estendidas na escuridão, sem dono visível"
+ },
+ {
+  "name": "Vulto de cabelo claro",
+  "look": "cabeça em primeiro plano, cabelo claro comprido, rosto coberto pela mão"
+ },
+ {
+  "name": "Sorridente",
+  "look": "rosto em close, cabelo escuro, sorriso de canto, olhar sério"
+ },
+ {
+  "name": "Capa esquerda",
+  "look": "figura encapuzada de capa escura longa, rosto na sombra, à esquerda do quadro"
+ },
+ {
+  "name": "Capa direita",
+  "look": "figura encapuzada de capa escura longa, rosto na sombra, à direita do quadro"
+ },
+ {
+  "name": "Sombra de capa",
+  "look": "ombro e braço em tecido escuro de capa longa, rosto fora do quadro"
+ },
+ {
+  "name": "Vestido Branco",
+  "look": "pés claros descalços sobre chão de pedra, vestido branco possível, identidade incerta"
+ },
+ {
+  "name": "Figura escura",
+  "look": "cabelo escuro, roupa escura de gola alta, de costas"
+ },
+ {
+  "name": "Figura agachada",
+  "look": "figura pequena agachada, correndo no centro do quadro"
+ },
+ {
+  "name": "Jovem de camisa clara",
+  "look": "cabelo escuro espetado, camisa clara, colete escuro, de costas, cavalga cavalo escuro"
+ },
+ {
+  "name": "Figura de capa caída",
+  "look": "capa escura longa, caída perto de espadas, rosto não visível"
+ },
+ {
+  "name": "Figura de cabelo castanho caída",
+  "look": "cabelo castanho, caída à direita do quadro, rosto parcialmente visível"
+ },
+ {
+  "name": "Figura de calças escuras",
+  "look": "calças escuras, sem rosto visível, em corrida ou chute"
+ },
+ {
+  "name": "Vultos do corredor",
+  "look": "três silhuetas escuras caminhando sobre tapete ornamentado"
+ },
+ {
+  "name": "Figura de cabelo espetado",
+  "look": "cabelo escuro espetado, rosto na sombra, no alto à direita"
+ },
+ {
+  "name": "Figura caída de cabelo castanho",
+  "look": "cabelo castanho, roupa escura, caída no chão, mão na cabeça"
+ },
+ {
+  "name": "Mão mágica",
+  "look": "mão estendida de manopla cinza, brilhando em luz, dono fora do quadro"
+ },
+ {
+  "name": "Corpo de cabelo castanho",
+  "look": "cabelo castanho, caído de bruços, espada cravada nas costas"
+ },
+ {
+  "name": "Corpo de cabelo escuro",
+  "look": "cabelo escuro, caído no chão, espada cravada, roupa escura"
+ },
+ {
+  "name": "Caído barbudo",
+  "look": "cabelo escuro desgrenhado, barba, caído de rosto para cima, sangue"
+ },
+ {
+  "name": "Perfil",
+  "look": "perfil, cabelo claro espetado, cicatriz sob o olho, gola alta escura, olhar baixo"
+ },
+ {
+  "name": "Voz sem rosto",
+  "look": "fala de fora do quadro, sem rosto visível"
+ },
+ {
+  "name": "Garoto Furioso",
+  "look": "cabelo castanho claro penteado, suado, gola alta clara, olhar furioso de perfil"
+ },
+ {
+  "name": "Perfil de cabelo claro",
+  "look": "perfil, cabelo claro espetado, gola alta escura"
+ },
+ {
+  "name": "Figura esquelética",
+  "look": "crânio de animal com estrela de seis pontas, correntes, esqueleto no peito, capa escura"
+ },
+ {
+  "name": "Figura da estátua",
+  "look": "estátua de mulher com véu segurando esqueleto deitado no colo, flores ao redor"
+ },
+ {
+  "name": "Figura cabisbaixa",
+  "look": "cabelo escuro com reflexos claros, cabeça baixa, de costas, entre correntes, sem rosto visível"
+ },
+ {
+  "name": "Figura de casaco cinza",
+  "look": "casaco cinza de ombro largo, à esquerda do quadro, rosto fora de cena"
+ },
+ {
+  "name": "Figura caída de cabelo escuro",
+  "look": "cabelo escuro, caída de cabeça baixa, mão na cabeça, roupa escura, suando"
+ },
+ {
+  "name": "Uniforme",
+  "look": "uniforme escuro de gola alta, cabelo castanho escuro curto, rosto de frente"
+ },
+ {
+  "name": "Sentada",
+  "look": "sentada no chão, cinto de couro com fivela, faixas brancas nas pernas, mãos juntas"
+ },
+ {
+  "name": "Figura do close",
+  "look": "rosto em close, cabelo escuro comprido cobrindo parte dos olhos, faixa escura na testa"
+ },
+ {
+  "name": "Carregador",
+  "look": "roupa escura de gola alta, mangas escuras, segura Renée nos braços"
+ },
+ {
+  "name": "Figura ao fundo",
+  "look": "silhueta escura desfocada sobre a grama, rosto não visível"
+ },
+ {
+  "name": "Jovem",
+  "look": "cabelo claro longo, olhos arregalados, expressão assustada"
+ },
+ {
+  "name": "Figura do medalhão",
+  "look": "mão escura no peito, medalhão redondo prateado, rosto não visível"
+ },
+ {
+  "name": "Figura em queda",
+  "look": "corpo de cabeça para baixo entre rochas, roupa escura, cabelo escuro, pernas com placas claras"
+ },
+ {
+  "name": "Figura da tosse",
+  "look": "fora de cena, sem rosto visível, fala em balão sem rabicho, tosse de dor"
+ },
+ {
+  "name": "Suspenso",
+  "look": "preso de cabeça para baixo por correntes, roupa escura, sem rosto visível"
+ },
+ {
+  "name": "Caído da chuva",
+  "look": "cabelo castanho, roupa escura, sangue na boca, caído na chuva; provável Vera"
+ },
+ {
+  "name": "Figura encapuzada",
+  "look": "capuz claro, rosto parcialmente oculto, pequena na base da cena"
+ },
+ {
+  "name": "Figura ferida",
+  "look": "capa escura longa, rosto ensanguentado, cai no chão molhado"
+ },
+ {
+  "name": "Figura do olhar",
+  "look": "olho em close, sobrancelha franzida, cabelo escuro espetado à esquerda"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "mão cerrada segurando tecido de vestido claro"
+ },
+ {
+  "name": "Figura irônica",
+  "look": "cabelo claro longo, sorriso de canto, tom irônico, fora do quadro"
+ },
+ {
+  "name": "Vulto escuro",
+  "look": "cabelo escuro molhado e espetado, rosto na sombra, perto de lâmina pálida"
+ },
+ {
+  "name": "Figura sombria de olhos brancos",
+  "look": "silhueta negra, olhos brancos brilhantes, boca aberta gritando, garras pontiagudas"
+ },
+ {
+  "name": "Rachado",
+  "look": "rosto rachado, cabelo escuro, olho brilhante arregalado"
+ },
+ {
+  "name": "Mão ferida",
+  "look": "mão com arranhões e sangue estendida sobre fundo escuro"
+ },
+ {
+  "name": "Mágica",
+  "look": "mão estendida com marca solar no antebraço, faíscas brilhantes"
+ },
+ {
+  "name": "Garoto de cabelo castanho",
+  "look": "cabelo castanho espetado, suado, olhos brilhando, olhar furioso de lado"
+ },
+ {
+  "name": "Caído de cabelo escuro",
+  "look": "cabelo escuro, roupa escura, caído de rosto para o chão em poça d'água"
+ },
+ {
+  "name": "Figura do espelho",
+  "look": "silhueta de ombros largos refletida em caco de espelho"
+ },
+ {
+  "name": "Espetado",
+  "look": "cabelo escuro espetado, sobrancelha tensa, olhar de lado, rosto tenso"
+ },
+ {
+  "name": "Doran",
+  "look": "colete escuro sem mangas, cinto com fivela, cabelo escuro curto, mão no rosto"
+ },
+ {
+  "name": "Silhueta",
+  "look": "silhueta escura de cabeça e ombros refletida em caco de vidro"
+ },
+ {
+  "name": "Figura do insulto",
+  "look": "fora de cena, balão gritado sem rabicho visível"
+ },
+ {
+  "name": "Jovem de cabelo escuro",
+  "look": "cabelo escuro espetado, roupa escura de gola alta, sobrancelha tensa"
+ },
+ {
+  "name": "Olhar",
+  "look": "rosto de perfil, olho de lado, sobrancelha tensa, cabelo cinza espetado"
+ },
+ {
+  "name": "Close",
+  "look": "cabelo escuro comprido cobrindo os olhos, faixa escura na testa, mão no queixo"
+ },
+ {
+  "name": "Punho",
+  "look": "punho fechado tenso, dono não visível"
+ },
+ {
+  "name": "Chorando",
+  "look": "cabelo escuro, lágrimas no rosto, olho aberto, em close"
+ },
+ {
+  "name": "Garras",
+  "look": "figura pálida de boca aberta gritando, na sombra"
+ },
+ {
+  "name": "Colete",
+  "look": "cabelo castanho curto, colete escuro, cruz no peito, suado"
+ },
+ {
+  "name": "Vítima",
+  "look": "cabelo escuro, caída no chão, canto inferior direito"
+ },
+ {
+  "name": "Agressor",
+  "look": "sapato e calça escuros, chuta com força, rosto fora do quadro"
+ },
+ {
+  "name": "Ombro sombrio",
+  "look": "ombro e cabeça escuros na borda esquerda, rosto na sombra"
+ },
+ {
+  "name": "Deus Supremo",
+  "look": "sentado em trono alto, rosto apagado, cabelo cacheado, trança longa no peito, manto claro"
+ },
+ {
+  "name": "Figura do cigarro",
+  "look": "homem de roupa escura com cigarro na boca, sentado à mesa, à esquerda"
+ },
+ {
+  "name": "Figura sentada de costas",
+  "look": "homem de costas, jaqueta escura, sentado num banco de madeira"
+ },
+ {
+  "name": "Jovem de casaco escuro",
+  "look": "casaco escuro longo, cabelo escuro, braços cruzados, junto a pilar"
+ },
+ {
+  "name": "Cavaleiro",
+  "look": "cabelo escuro espetado, gola alta escura; chibi de olhos semicerrados"
+ },
+ {
+  "name": "Velho de bengala",
+  "look": "cabelo claro, roupa clara comprida, segura bengala, à esquerda do quadro"
+ },
+ {
+  "name": "Cicatriz",
+  "look": "cabelo escuro espetado, cicatriz diagonal no rosto, gola de pele"
+ },
+ {
+  "name": "Krek",
+  "look": "gêmeo que empunha lança com poder divino"
+ },
+ {
+  "name": "Marek",
+  "look": "cavaleiro de armadura, interlocutor de Vera"
+ },
+ {
+  "name": "Cavaleiro de capa",
+  "look": "capa escura longa sobre armadura clara, cabelo castanho, segura lança"
+ },
+ {
+  "name": "Cavaleiro de cabelo curto",
+  "look": "cabelo castanho claro curto, olha de lado, expressão neutra"
+ },
+ {
+  "name": "Figura de botas",
+  "look": "calça escura e botas escuras, de pé no piso de pedra"
+ },
+ {
+  "name": "Escolta",
+  "look": "armadura escura de placas, cabelo castanho curto, lança com bandeira escura"
+ },
+ {
+  "name": "Cavaleiro da esquerda",
+  "look": "cabelo castanho curto, armadura escura com capa curta"
+ },
+ {
+  "name": "Guerreiros de capa",
+  "look": "dois vultos de capa escura longa com lanças, caminhando em trilha"
+ },
+ {
+  "name": "Criatura esquelética",
+  "look": "criatura gigante de crânio, garras e esqueleto, ao lado de monstros"
+ },
+ {
+  "name": "Mão da marca solar",
+  "look": "mão escura de manopla com marca solar no antebraço, segura pilha de livros"
+ },
+ {
+  "name": "Rushan",
+  "look": "nome invocado nas regras; nenhuma aparência nesta página"
+ },
+ {
+  "name": "Estátua encapuzada",
+  "look": "estátua de manto escuro com capuz, auréola de luz, em nicho ornamentado"
+ },
+ {
+  "name": "Figura do rabo",
+  "look": "cabelo claro preso em rabo, colete escuro, de costas, ombros largos"
+ },
+ {
+  "name": "Trevo",
+  "look": "aparência ainda não mostrada; nome dito pela Figura do cinto"
+ },
+ {
+  "name": "Voz fora de quadro",
+  "look": "balão gritado serrilhado, sem rabicho, fora de quadro"
+ },
+ {
+  "name": "Chibi espantado",
+  "look": "cabeça chibi, cabelo escuro curto, olhos arregalados, boca aberta, sobrancelhas erguidas"
+ },
+ {
+  "name": "Chibi boquiaberto",
+  "look": "cabeça chibi, cabelo escuro curto, suor, boca aberta"
+ },
+ {
+  "name": "Vargo",
+  "look": "Idoso de barba longa e branca, cabelo claro preso para trás, bengala, manto claro bordado"
+ },
+ {
+  "name": "Imperador",
+  "look": "De costas, cabelo claro longo, gola alta bordada em dourado"
+ },
+ {
+  "name": "Velho barbudo",
+  "look": "cabelo grisalho preso para trás, barba branca, perfil, testa franzida, roupa escura com gola"
+ },
+ {
+  "name": "Garoto",
+  "look": "cabelo escuro, casaco claro comprido sobre roupa escura, anda ao lado do Velho"
+ },
+ {
+  "name": "Figuras do salão",
+  "look": "duas figuras caídas sob lustre quebrado, uma de capa escura, vistas de cima"
+ },
+ {
+  "name": "Cavaleiro do centro",
+  "look": "armadura clara com placas, capa escura, cabelo castanho curto, segura espada"
+ },
+ {
+  "name": "Cavaleiro da direita",
+  "look": "cabelo claro curto, armadura escura com capa curta, ombros largos"
+ },
+ {
+  "name": "Cavaleiro da arena",
+  "look": "armadura e capa, cabelo curto, cercando Vera na arena"
+ },
+ {
+  "name": "Figura de capa suja",
+  "look": "capa escura suja de manchas, espada na mão, cabeça fora do quadro"
+ },
+ {
+  "name": "Cavaleiro do elmo",
+  "look": "elmo com viseira escura, armadura clara com emblema, capa escura"
+ },
+ {
+  "name": "Criatura sombria",
+  "look": "silhueta negra com olhos brancos brilhantes e fumaça roxa em tentáculos"
+ },
+ {
+  "name": "Cavaleiro da luva",
+  "look": "luva de armadura escura e clara, dono fora do quadro"
+ },
+ {
+  "name": "Figura de ombro claro",
+  "look": "ombro claro e cabelo escuro, fora de foco, fala em balão"
+ },
+ {
+  "name": "Cavaleiro gritão",
+  "look": "cabelo castanho curto, boca aberta gritando, sobrancelhas franzidas, de frente"
+ },
+ {
+  "name": "Cavaleiro da espada grande",
+  "look": "armadura clara, de costas, espada grande desembainhada em golpe"
+ },
+ {
+  "name": "Cavaleiro agachado",
+  "look": "armadura clara, luva metálica, ajoelhado com mão no chão"
+ },
+ {
+  "name": "Caído da esquerda",
+  "look": "armadura escura, caído no chão, braço estendido"
+ },
+ {
+  "name": "Caída",
+  "look": "cabelo castanho, roupa escura, caída no chão, mão na cabeça"
+ },
+ {
+  "name": "Cavaleiro caído",
+  "look": "calças escuras e botas, deitado fora do quadro, perto de Vera"
+ },
+ {
+  "name": "Cavaleiro de armadura",
+  "look": "armadura clara de placas, capa escura longa, cabelo castanho curto, espada"
+ },
+ {
+  "name": "Espadachim",
+  "look": "cabelo escuro espetado, capa escura longa, espada na mão, rosto sério"
+ },
+ {
+  "name": "Cavaleiro de armadura escura",
+  "look": "armadura escura de placas com gola e fivela, luva metálica, espada"
+ },
+ {
+  "name": "Cavaleiro caído A",
+  "look": "armadura clara, cabelo castanho curto, caído no chão de pedra"
+ },
+ {
+  "name": "Cavaleiro caído B",
+  "look": "armadura prateada, cabelo castanho curto, caído com espada no chão"
+ },
+ {
+  "name": "Figura de roupa escura",
+  "look": "roupa escura, bolsa, visto de cima, ao lado de figura clara"
+ },
+ {
+  "name": "Manto branco",
+  "look": "cabelo claro, manto claro, cruz grande no peito"
+ },
+ {
+  "name": "Cabelo claro",
+  "look": "cabelo claro espetado, gola alta escura, abraça o garoto por trás"
+ },
+ {
+  "name": "Insultador",
+  "look": "fora do quadro, sombra escura embaixo à direita, balão gritado sem rabicho"
+ },
+ {
+  "name": "Cavaleiro sagrado",
+  "look": "armadura clara com elmo fechado, espada brilhando com poder divino, capa escura"
+ },
+ {
+  "name": "Figura de cabelo longo",
+  "look": "cabelo longo cobrindo quase todo o quadro, rosto escondido, close"
+ },
+ {
+  "name": "Figura de gola de pelo",
+  "look": "cabelo castanho desgrenhado, gola de pelo, rosto de perfil, desdenhoso"
+ },
+ {
+  "name": "Guerreiro",
+  "look": "cabelo claro longo preso em rabo, peito nu musculoso, rosto oculto, segura maça com corrente; identidade ambígua"
+ },
+ {
+  "name": "Figura do punho no rosto",
+  "look": "cabelo escuro, roupa escura, punho cerrado junto ao rosto"
+ },
+ {
+  "name": "Figura das botas",
+  "look": "botas e calça escuras sobre grama e pedra, dono fora de cena"
+ },
+ {
+  "name": "Garoto de cabelo escuro",
+  "look": "cabelo escuro espetado, uniforme branco, capa escura curta, luva preta, óculos"
+ },
+ {
+  "name": "Cavaleiro apontando",
+  "look": "cabelo castanho curto, armadura cinza com emblema no peito, dedo indicador erguido, boca em O"
+ },
+ {
+  "name": "Mãos escuras",
+  "look": "mãos escuras de garras grandes cercando a garota, sem rosto"
+ },
+ {
+  "name": "Chibi claro",
+  "look": "cabeça chibi, cabelo claro, óculos, sorriso aberto, boca aberta"
+ },
+ {
+  "name": "Chibi sorridente",
+  "look": "rosto chibi, cabelo castanho curto, olhos fechados, bochechas coradas, sorriso orgulhoso"
+ },
+ {
+  "name": "Figura alta",
+  "look": "calça escura com cinto, corpo alto cortado acima do quadro"
+ },
+ {
+  "name": "Figura de cabelo castanho",
+  "look": "cabelo castanho desgrenhado, de lado, rosto fora do quadro"
+ },
+ {
+  "name": "Acompanhante",
+  "look": "cabelo claro, armadura clara, roupa escura, ao lado de Vera"
+ },
+ {
+  "name": "Rabo",
+  "look": "cabelo claro preso em rabo, colete escuro, de costas, mexe em frascos"
+ },
+ {
+  "name": "Cavaleiro chibi",
+  "look": "cabeça chibi, cabelo castanho escuro, língua de fora, tonto, segura machado-alabarda"
+ },
+ {
+  "name": "Figura da vara",
+  "look": "cabelo claro, olho em close, vara escura cruzando o rosto"
+ },
+ {
+  "name": "Voz do alto",
+  "look": "fala em balão no alto, sem rosto visível, fora de quadro"
+ },
+ {
+  "name": "Irmão de Krek",
+  "look": "cabelo castanho curto, armadura clara, grita de boca aberta, suado"
+ },
+ {
+  "name": "Criatura acorrentada",
+  "look": "criatura musculosa cinza, calva, orelhas pontudas, presa em correntes, boca gritando"
+ },
+ {
+  "name": "Óculos",
+  "look": "cabelo castanho, óculos redondos, camisa clara, espiando atrás de árvore"
+ },
+ {
+  "name": "Voz",
+  "look": "balão sem rabicho visível, fala de fora de quadro, sem rosto"
+ },
+ {
+  "name": "Garoto de óculos",
+  "look": "cabelo escuro com mechas claras, óculos redondos, colete escuro, segura livros"
+ },
+ {
+  "name": "Figura da luva",
+  "look": "luva escura com placas e rebites, em impacto com linhas de luz"
+ },
+ {
+  "name": "Garoto da esquerda",
+  "look": "Cabelo castanho curto, túnica clara com cadarço, estilo chibi, expressão pensativa"
+ },
+ {
+  "name": "Garoto da direita",
+  "look": "Cabelo castanho curto, túnica clara com cadarço, estilo chibi, punho na boca, testa franzida"
+ },
+ {
+  "name": "Garoto de armadura",
+  "look": "Cabelo escuro espetado, armadura escura de placas, pequeno, de pé na escadaria"
+ },
+ {
+  "name": "Garoto de uniforme",
+  "look": "cabelo castanho curto, uniforme escuro de gola alta, olhos fechados sorrindo"
+ },
+ {
+  "name": "Garoto de uniforme escuro",
+  "look": "cabelo escuro espetado, uniforme escuro de gola branca, suado"
+ },
+ {
+  "name": "Garoto Castanho",
+  "look": "cabelo castanho espetado, suado, gola alta clara, olhar de lado"
+ },
+ {
+  "name": "Caído de Cabelo Claro",
+  "look": "cabelo claro, roupa escura, caído no chão"
+ },
+ {
+  "name": "Garoto da runa",
+  "look": "cabelo castanho espetado, roupa escura, cai em vórtice de runas"
+ },
+ {
+  "name": "Mão grande",
+  "look": "mão enorme de manopla escura, aberta, embaixo do garoto"
+ },
+ {
+  "name": "Escudeiro",
+  "look": "cabelo claro, colete escuro sobre camisa clara, de pé à direita"
+ },
+ {
+  "name": "Figura de armadura",
+  "look": "armadura escura de placas com gola de pele, de costas, cabelo castanho curto"
+ },
+ {
+  "name": "Jovem de cabelo castanho",
+  "look": "cabelo castanho curto, armadura escura de placas, de perfil, sobrancelha franzida"
+ },
+ {
+  "name": "Cavaleiro da capa clara",
+  "look": "armadura cinza, capa clara longa, cabelo castanho curto, sorriso"
+ },
+ {
+  "name": "Voz de cima",
+  "look": "balão no alto, fora de quadro, sem rosto visível"
+ },
+ {
+  "name": "Dono das botas",
+  "look": "botas e calça escuras, pisando, dono fora de cena"
+ },
+ {
+  "name": "Figura da mesa",
+  "look": "braços de manga clara e roupa escura sobre mesa inclinada"
+ },
+ {
+  "name": "Garoto de jaqueta escura",
+  "look": "cabelo escuro espetado, jaqueta escura de gola alta com listras brancas, calça clara, pequeno"
+ },
+ {
+  "name": "Figura de coque",
+  "look": "cabelo preso em coque, visto de cima no canto inferior direito"
+ },
+ {
+  "name": "Rohan",
+  "look": "cabelo claro, cara séria, ergue o braço sob círculo mágico; possui autoridade de orientação"
+ },
+ {
+  "name": "Figura de casaco claro",
+  "look": "casaco claro comprido sobre roupa escura, gola alta, cabeça fora do quadro, ao lado de pilar"
+ },
+ {
+  "name": "Figura de armadura escura",
+  "look": "armadura escura, cabelo escuro, andando ao lado da Figura do cajado"
+ },
+ {
+  "name": "Jovem Surpreso",
+  "look": "cabelo castanho claro médio, olhos arregalados, colete escuro de gola alta sobre túnica clara"
+ },
+ {
+  "name": "Figura Deitada",
+  "look": "cabelo escuro, camisa escura, calça clara, deitado de braços atrás da cabeça na cama"
+ },
+ {
+  "name": "Garoto do close",
+  "look": "cabelo escuro comprido cobrindo parte dos olhos, faixa escura na testa, em close"
+ },
+ {
+  "name": "Velho",
+  "look": "cabelo grisalho preso em rabo, barba grisalha, manto claro, mãos juntas sobre a mesa"
+ },
+ {
+  "name": "Figura do trono",
+  "look": "sentada em trono, manto branco, cabelo longo trançado, rosto sem traços"
+ },
+ {
+  "name": "Garoto de capa",
+  "look": "cabelo escuro espetado, capa escura curta, de costas, armadura clara no braço"
+ },
+ {
+  "name": "Figura do cinto",
+  "look": "tronco escuro, cinto largo com fivela metálica, sem rosto visível"
+ },
+ {
+  "name": "Mãos luminosas",
+  "look": "mãos brancas estendidas, faíscas douradas, dono fora do quadro"
+ },
+ {
+  "name": "Figura do banco",
+  "look": "de costas, jaqueta escura, sentada num banco de madeira"
+ },
+ {
+  "name": "Cavaleiro de cruz",
+  "look": "cabelo castanho curto, armadura escura com cruz no peito, segura lança"
+ },
+ {
+  "name": "Figura de manto escuro",
+  "look": "manto escuro, sem rosto visível"
+ },
+ {
+  "name": "Figura da mão com anel",
+  "look": "mão escura de manga longa, anel no dedo, em close, fala sobre os deuses"
+ },
+ {
+  "name": "Figura alada",
+  "look": "figura com asas abertas e escuras, em movimento borrado"
+ },
+ {
+  "name": "Figura de calça clara",
+  "look": "calça clara, botas escuras, pernas cortadas, caminha sobre folhas"
+ },
+ {
+  "name": "Cavaleiro esquerdo",
+  "look": "cabelo castanho escuro penteado, armadura clara, capa escura, segura alabarda"
+ },
+ {
+  "name": "Cavaleiro direito",
+  "look": "cabelo castanho curto, armadura clara com placas, capa escura, segura alabarda"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "de costas, camisa clara, faixa escura na cintura, calça escura com listra branca"
+ },
+ {
+  "name": "Figura caída de manto bordado",
+  "look": "manto claro bordado, cabelo claro longo, caída no chão, rosto não visível"
+ },
+ {
+  "name": "Jovem de vestido claro",
+  "look": "cabelo longo claro, vestido longo claro, de costas, em feixe de luz"
+ },
+ {
+  "name": "Mão escura",
+  "look": "mão cerrada de manga escura sobre tecido claro, em close"
+ },
+ {
+  "name": "Figura em pé",
+  "look": "de pé no chão de pedra da praça, figura escura pequena"
+ },
+ {
+  "name": "Figura do manto claro",
+  "look": "manto claro com cajado, cabelo claro, parte de cima do quadro"
+ },
+ {
+  "name": "Garoto caído",
+  "look": "cabelo escuro espetado, caído no chão de cabeça baixa, roupa escura"
+ },
+ {
+  "name": "Figura de gola alta",
+  "look": "gola alta escura com emblema metálico pentagonal no peito, capa clara, rosto em close fora de foco"
+ },
+ {
+  "name": "Figura da cruz de prata",
+  "look": "gola alta escura, cruz de prata com pedras no peito, capa escura"
+ },
+ {
+  "name": "Norn",
+  "look": "armadura clara de placas com ombreira, capa escura, rosto fora do quadro"
+ },
+ {
+  "name": "Figura da pena",
+  "look": "mão com pena, manga clara, escrevendo runas num pergaminho"
+ },
+ {
+  "name": "Mão com anel",
+  "look": "mão escura de manga longa, anel no dedo, em close"
+ },
+ {
+  "name": "Figura sentada",
+  "look": "manto claro, mãos sobre o joelho, sentada entre plantas, botas escuras"
+ },
+ {
+  "name": "Mestre da Torre",
+  "look": "capuz escuro, segura cajado com orbe, à esquerda, de costas"
+ },
+ {
+  "name": "Figura de chifres",
+  "look": "chifres curvos, capuz escuro, cabelo claro, capa escura"
+ },
+ {
+  "name": "Figura de garras escamosas",
+  "look": "braço escuro com escamas e garras, lâmina de luz ao redor"
+ },
+ {
+  "name": "Figura de cabelo claro longo",
+  "look": "cabelo claro longo, mão segurando mecha, close sem rosto visível"
+ },
+ {
+  "name": "Cavaleiro sorridente",
+  "look": "cabelo castanho curto, armadura clara, sorriso largo, mão no rosto"
+ },
+ {
+  "name": "Figura de túnica com cadarço",
+  "look": "túnica clara com cadarço no peito, mangas arregaçadas, acaricia touro"
+ },
+ {
+  "name": "Touro",
+  "look": "animal de chifres curvos, focinho cinza, usa cabresto"
+ },
+ {
+  "name": "Figura da porta",
+  "look": "mão escura fechada junto a porta de madeira com cruz de metal"
+ },
+ {
+  "name": "Figura do fundo",
+  "look": "roupa escura, de costas, perto da casa de madeira"
+ },
+ {
+  "name": "Jovem de vestido",
+  "look": "cabelo longo claro, vestido claro com corpete escuro, segura cajado escuro"
+ },
+ {
+  "name": "Figura da estrada",
+  "look": "cabelo claro, saia ou vestido escuro, segura cajado, à direita da casa"
+ },
+ {
+  "name": "Aldeão",
+  "look": "cabelo escuro penteado para trás, colete com cadarço, aponta para a vila"
+ },
+ {
+  "name": "Garoto da aldeia",
+  "look": "criança de cabelo castanho curto, correndo de braços abertos"
+ },
+ {
+  "name": "Figura de corpete com cadarço",
+  "look": "cabelo longo emaranhado, corpete escuro com cadarço cruzado no peito"
+ },
+ {
+  "name": "Jovem do close",
+  "look": "cabelo claro, rosto corado, olhar baixo, close de perfil"
+ },
+ {
+  "name": "Figura das pernas",
+  "look": "calças escuras, botas escuras, de pé sobre piso de pedra, rosto fora do quadro"
+ },
+ {
+  "name": "Garoto da capa",
+  "look": "cabelo escuro espetado, capa escura curta, gola alta escura, olhar de lado"
+ },
+ {
+  "name": "Figura de manga escura",
+  "look": "braço de manga escura, mão clara estendida, em close"
+ },
+ {
+  "name": "Figura de casaco",
+  "look": "casaco escuro longo com cinto, de pé na porta da casa de madeira"
+ },
+ {
+  "name": "Caminhante",
+  "look": "calça clara, botas escuras, casaco escuro longo, visto de costas"
+ },
+ {
+  "name": "Jovem do vestido",
+  "look": "cabelo longo claro, vestido claro com corpete escuro, olhos arregalados"
+ },
+ {
+  "name": "Guarda da capa escura",
+  "look": "cabelo castanho escuro penteado, armadura clara, capa escura, segura alabarda"
+ },
+ {
+  "name": "Cavaleiro de armadura clara",
+  "look": "armadura clara com placas e emblema de cruz, luva metálica"
+ },
+ {
+  "name": "Garoto de cabelo claro",
+  "look": "cabelo claro, olhos arregalados, expressão assustada"
+ },
+ {
+  "name": "Cavaleira de colete",
+  "look": "cabelo claro longo, colete escuro com cadarço sobre camisa clara, suada"
+ },
+ {
+  "name": "Jovem de túnica",
+  "look": "cabelo longo claro, túnica clara com faixa, olha por cima do ombro, assustada"
+ },
+ {
+  "name": "Garoto de gola escura",
+  "look": "cabelo escuro espetado, gola alta escura, rosto na sombra, fala de cavaleiro sagrado"
+ },
+ {
+  "name": "Figura da esquerda",
+  "look": "jaqueta escura longa, de pé à esquerda, rosto borrado, fora de foco"
+ },
+ {
+  "name": "Cavaleiro da armadura",
+  "look": "elmo e armadura clara de placas, anda pela praça"
+ },
+ {
+  "name": "Garoto chibi esquerdo",
+  "look": "cabelo castanho curto, túnica clara com cadarço, estilo chibi, expressão séria"
+ },
+ {
+  "name": "Garoto chibi direito",
+  "look": "cabelo castanho curto, túnica clara com cadarço, estilo chibi, boca em O, sobrancelha franzida"
+ },
+ {
+  "name": "Figura do vendado",
+  "look": "cabelo claro penteado, faixa escura nos olhos, suado, jaqueta escura"
+ },
+ {
+  "name": "Figura do olho claro",
+  "look": "cabelo claro longo, olho em close, olhar sério"
+ },
+ {
+  "name": "Figura da voz",
+  "look": "balão gritado com borda de espinhos, sem rabicho, fora de quadro, sem rosto visível"
+ },
+ {
+  "name": "Criatura do olho",
+  "look": "olho amarelo-claro de pupila fendida, pele escura de escamas, em close"
+ },
+ {
+  "name": "Seguidor da Noite",
+  "look": "silhueta com asas de morcego escuras, brilho ao redor, voando"
+ },
+ {
+  "name": "Dragoniano encapuzado",
+  "look": "cabeça de dragão, chifres curvos, capuz escuro"
+ },
+ {
+  "name": "Dragoniano da cauda",
+  "look": "cauda escamosa com espinhos, enrolada sobre pedras"
+ },
+ {
+  "name": "Criatura escamosa",
+  "look": "escamas escuras, garras, olho amarelo brilhante, raios brancos"
+ },
+ {
+  "name": "Vulto caindo",
+  "look": "capa escura longa, de cabeça para baixo, rosto aberto em grito, correntes"
+ },
+ {
+  "name": "Vulto menor",
+  "look": "figura pequena no centro, ombros com espinhos, de cabeça para baixo"
+ },
+ {
+  "name": "Criatura espinhosa",
+  "look": "escamas cinza, espinhos nos ombros e na cabeça, à direita"
+ },
+ {
+  "name": "Estranho",
+  "look": "casaco escuro comprido, de costas, manga dobrada, fala com deboche"
+ },
+ {
+  "name": "Figura de cabelo bicolor",
+  "look": "cabelo escuro à esquerda e claro à direita, rosto em close fora de foco"
+ },
+ {
+  "name": "Figura do bastão",
+  "look": "braço de manga escura segurando haste escura, fora de quadro"
+ },
+ {
+  "name": "Jovem da bengala",
+  "look": "cabelo longo claro, capuz escuro, vestido claro com corpete escuro, segura bengala escura"
+ },
+ {
+  "name": "Figura da armadura",
+  "look": "armadura clara de placas, cinto escuro, espada na cintura, capa, rosto fora do quadro"
+ },
+ {
+  "name": "Jovem do cajado",
+  "look": "cabelo claro longo, manto ou capuz claro, segura cajado"
+ },
+ {
+  "name": "Cavaleiro da capa escura",
+  "look": "armadura de placas com ombreira e fivelas, capa escura longa, de costas"
+ },
+ {
+  "name": "Figura caída de cabelo claro",
+  "look": "cabelo claro, caída de lado no chão, fala só com reticências"
+ },
+ {
+  "name": "Jovem Corada",
+  "look": "cabelo claro longo ao vento, rosto corado, lágrimas, boca aberta, olhos arregalados"
+ },
+ {
+  "name": "Jovem Cajado",
+  "look": "cabelo longo claro, vestido claro com corpete escuro de cadarço, segura cajado escuro"
+ },
+ {
+  "name": "Cavaleiro Suado",
+  "look": "cabelo castanho curto, suado, de bruços, punho cerrado"
+ },
+ {
+  "name": "Cabeça de cabelo claro",
+  "look": "cabelo claro, só a cabeça visível na parte inferior do quadro"
+ },
+ {
+  "name": "Figura da espada",
+  "look": "capa escura longa, espada erguida na trilha noturna"
+ },
+ {
+  "name": "Garoto de cabelo castanho claro",
+  "look": "cabelo castanho claro penteado, gola alta clara, olhar tenso de perfil, sombra enorme atrás"
+ },
+ {
+  "name": "Figura do sobretudo",
+  "look": "sobretudo escuro longo, de costas na trilha noturna, carrega outra figura"
+ },
+ {
+  "name": "Coruja",
+  "look": "coruja de orelhas pontudas, olhos claros brilhantes, empoleirada em galho à noite"
+ },
+ {
+  "name": "Cavaleiro do queixo",
+  "look": "armadura clara, cabelo castanho escuro curto, luva escura no queixo, testa franzida"
+ },
+ {
+  "name": "Vulto da esquerda",
+  "look": "capa escura longa, de cabeça para baixo, à esquerda do quadro"
+ },
+ {
+  "name": "Vulto do centro",
+  "look": "capa escura, de cabeça para baixo, pernas para cima, no alto"
+ },
+ {
+  "name": "Vulto da direita",
+  "look": "capa escura longa, de cabeça para baixo, à direita"
+ },
+ {
+  "name": "Vulto de baixo",
+  "look": "capa escura com cinto, de cabeça para baixo, na parte inferior"
+ },
+ {
+  "name": "Figura da bengala",
+  "look": "vestido longo claro com casaco escuro, bengala de castão, sapatos escuros"
+ },
+ {
+  "name": "Dragonianos",
+  "look": "dragonianos de focinho, chifres curvos e capas escuras, em grupo"
+ },
+ {
+  "name": "Encapuzado sombrio",
+  "look": "manto escuro, capuz, rosto invisível; segundo vulto à direita"
+ },
+ {
+  "name": "Sombra da lâmina",
+  "look": "ombro e braço escuros, lâmina de luz pálida"
+ },
+ {
+  "name": "Criatura-dragão",
+  "look": "cabeça de dragão com mandíbula cheia de dentes, armadura escura, punho erguido"
+ },
+ {
+  "name": "Encapuzado de chifres",
+  "look": "capuz escuro, chifres curvos, cabelo claro, capa escura"
+ },
+ {
+  "name": "Figura do punho",
+  "look": "punho cerrado de manga escura junto ao corpo, em close"
+ },
+ {
+  "name": "Silhueta sombria",
+  "look": "silhueta escura com brilhos brancos, em penumbra"
+ },
+ {
+  "name": "Falante da voz",
+  "look": "balão gritado sem rabicho, fora do quadro, sem rosto visível"
+ },
+ {
+  "name": "Vulto dentuço",
+  "look": "silhueta escura, cabeça baixa, sorriso com dentes à mostra, em penumbra"
+ },
+ {
+  "name": "Figura dos estilhaços",
+  "look": "silhueta escura cercada de cacos brancos de luz, grita sem rabicho"
+ },
+ {
+  "name": "Silhueta da queda",
+  "look": "silhueta escura caindo dentro de círculo de runas brilhantes, rosto invisível"
+ },
+ {
+  "name": "Silhueta com garras",
+  "look": "forma escura com garras, sob símbolo de runa prateado, sem rosto visível"
+ },
+ {
+  "name": "Encapuzado sorridente",
+  "look": "capuz escuro, cabelo claro na franja, sorriso largo, fala com deboche"
+ },
+ {
+  "name": "Guerreiro de armadura escura",
+  "look": "armadura escura de placas, ombreira com fivelas, rosto fora do quadro"
+ },
+ {
+  "name": "Figura do manto escuro",
+  "look": "manto escuro longo, de costas, andando sobre círculo mágico"
+ },
+ {
+  "name": "Dragoniano do fundo",
+  "look": "capuz escuro, focinho de dragão, garras com espinhos, à esquerda do quadro"
+ },
+ {
+  "name": "Figura da calça clara",
+  "look": "calça clara, botas escuras, segura lâmina, corre sobre pedra"
+ },
+ {
+  "name": "Espadachim encapuzado",
+  "look": "capuz escuro, cabelo escuro espetado, capa escura longa, espada na mão, rosto sério"
+ },
+ {
+  "name": "Guerreiro de armadura",
+  "look": "armadura clara de placas, perfil em close, lâmina escura no quadro"
+ },
+ {
+  "name": "Mão em primeiro plano",
+  "look": "mão cinza borrada em movimento, em primeiro plano"
+ },
+ {
+  "name": "Olho em close",
+  "look": "olho em close, cílios, cabelo claro com fios soltos, sobrancelha, olhar sério"
+ },
+ {
+  "name": "Encapuzado da lua",
+  "look": "capuz escuro, cabelo castanho, rosto franzido, capa escura com ombreira, sob a lua"
+ },
+ {
+  "name": "Corpo caído",
+  "look": "armadura escura e calça manchadas de sangue, rosto fora do quadro"
+ },
+ {
+  "name": "Dragoniano ferido",
+  "look": "olho de pupila fendida, escamas escuras, lágrima escorrendo"
+ },
+ {
+  "name": "Cavaleiro da capa",
+  "look": "armadura clara com placas, capa escura longa, cabelo castanho curto"
+ },
+ {
+  "name": "Figura carregada",
+  "look": "cabelo claro, levada nos braços, sem rosto visível"
+ },
+ {
+  "name": "Cavaleiro Castanho",
+  "look": "cabelo castanho curto, armadura de placas, gola escura, perfil tenso"
+ },
+ {
+  "name": "Jovem do corpete",
+  "look": "cabelo claro longo, vestido claro com corpete escuro de cadarço, olhos fechados"
+ },
+ {
+  "name": "Figura de cabelo claro espetado",
+  "look": "cabelo claro espetado, roupa escura, rosto fora do quadro"
+ },
+ {
+  "name": "Corpos caídos",
+  "look": "figuras caídas em close, roupas escuras, uma mão cerrada no chão"
+ },
+ {
+  "name": "Cavaleiro de gola alta",
+  "look": "cabelo castanho escuro curto, uniforme escuro de gola alta com fivela"
+ },
+ {
+  "name": "Figura do olho",
+  "look": "cabelo claro e cinza, olho arregalado em close, sobrancelha marcada"
+ },
+ {
+  "name": "Guerreiro de placas",
+  "look": "armadura escura de placas, emblema no ombro, em pé ao alto"
+ },
+ {
+  "name": "Figura da capa",
+  "look": "Capa escura longa, de pé ao lado de dois cavalos, cabelo curto"
+ },
+ {
+  "name": "Vera criança",
+  "look": "cabelo castanho escuro espetado, camiseta vermelha, shorts, correndo na rua"
+ },
+ {
+  "name": "Cavaleiro da frente",
+  "look": "figura pequena em cavalo escuro à esquerda, roupa escura, rosto não visível"
+ },
+ {
+  "name": "Cavaleiro da capa esvoaçante",
+  "look": "capa escura longa esvoaçante, ombros largos, cavalo claro à direita"
+ },
+ {
+  "name": "Viajante",
+  "look": "capa escura longa, cabelo escuro curto, de costas ao lado de cavalo selado"
+ },
+ {
+  "name": "Falante não identificado",
+  "look": "balão sem figura visível, fora de quadro"
+ },
+ {
+  "name": "Cavaleiro de cabelo claro",
+  "look": "cabelo claro penteado para trás, sobrancelhas grossas, perfil sério"
+ },
+ {
+  "name": "Guerreiro da gola de pele",
+  "look": "armadura clara com gola de pele, em pé perto da fogueira"
+ },
+ {
+  "name": "Garoto espadachim",
+  "look": "cabelo castanho espetado, casaco escuro de gola, espada larga"
+ },
+ {
+  "name": "Figura do peito",
+  "look": "roupa escura de gola, cabelo claro na borda direita, em close"
+ },
+ {
+  "name": "Figura fora de quadro",
+  "look": "fala de fora de quadro, balão com rabicho para baixo; aparência não vista"
+ },
+ {
+  "name": "Figura da sombra",
+  "look": "silhueta escura em penumbra, capa escura, rosto invisível, fala de fora do quadro"
+ },
+ {
+  "name": "Figura sentada clara",
+  "look": "cabelo claro, sentada num tronco junto à fogueira"
+ },
+ {
+  "name": "Figura sentada escura",
+  "look": "cabelo escuro, capa escura, sentada no tronco, espada cravada ao lado"
+ },
+ {
+  "name": "Figura do cobertor",
+  "look": "cabelo longo solto, deitada sob cobertor junto à fogueira"
+ },
+ {
+  "name": "Cavalo escuro",
+  "look": "cavalo escuro de focinho aberto, dentes à mostra, rédea e gola de couro"
+ },
+ {
+  "name": "Vulto da mata",
+  "look": "silhueta clara caindo entre árvores, perto de lâmina de luz"
+ },
+ {
+  "name": "Vulto caído",
+  "look": "capa escura longa com tiras, caído no chão, rosto não visível"
+ },
+ {
+  "name": "Vultos menores",
+  "look": "silhuetas pequenas agachadas nos cantos inferiores, sem rosto visível"
+ },
+ {
+  "name": "Vultos do grupo",
+  "look": "silhuetas escuras de capa em grupo, rostos visíveis em alguns"
+ },
+ {
+  "name": "Figura barbuda",
+  "look": "cabelo escuro penteado para trás, barba, presas, sorriso malicioso, capa escura com gola"
+ },
+ {
+  "name": "Falante invisível",
+  "look": "voz em balão sem rabicho visível, fora de quadro, sem rosto"
+ },
+ {
+  "name": "Guerreiro armado",
+  "look": "armadura clara de placas com grevas, espada longa, rosto fora do quadro"
+ },
+ {
+  "name": "Carregada",
+  "look": "cabelo claro cacheado, olhos arregalados, levada nos braços"
+ },
+ {
+  "name": "Sombras",
+  "look": "silhuetas escuras pontudas em campo de espinhos, sem rosto visível"
+ },
+ {
+  "name": "Chifrudo",
+  "look": "chifres curvos, capa e capuz escuros, rosto claro iluminado em penumbra"
+ },
+ {
+  "name": "Falante da cena",
+  "look": "voz em balão sem rabicho visível, fora de cena"
+ },
+ {
+  "name": "Sombra",
+  "look": "silhueta escura com espinhos no alto à direita, em meio à luz branca"
+ },
+ {
+  "name": "Espadachim de cabelo castanho",
+  "look": "cabelo castanho, armadura de placas com gola escura, espada longa"
+ },
+ {
+  "name": "Figura de capa escura caindo",
+  "look": "capa escura longa, corpo caindo em movimento borrado"
+ },
+ {
+  "name": "Falante gritando",
+  "look": "balão serrilhado de grito, sem figura visível"
+ },
+ {
+  "name": "Rosto de cabelo escuro",
+  "look": "cabelo escuro cobrindo os olhos, faixa escura na testa, em close"
+ },
+ {
+  "name": "Figura de capa ao fundo de cabelo claro",
+  "look": "cabelo claro preso, capa escura, ao fundo entre árvores"
+ },
+ {
+  "name": "Dragoniano",
+  "look": "capuz escuro, focinho de dragão, garras com espinhos, à esquerda"
+ },
+ {
+  "name": "Voz gritada",
+  "look": "balão gritado serrilhado, fora de quadro, sem figura"
+ },
+ {
+  "name": "Falante fora de cena",
+  "look": "voz em balão com rabicho para baixo, sem figura visível"
+ },
+ {
+  "name": "Figura da garra",
+  "look": "cabelo escuro, roupa escura, à direita, perto da garra negra gigante"
+ },
+ {
+  "name": "Figura de capa",
+  "look": "capa escura longa com capuz, segura orbe de luz diante de dragão"
+ },
+ {
+  "name": "Figura da mão no peito",
+  "look": "mão escura de manga longa sobre o peito, em close, rosto fora de cena"
+ },
+ {
+  "name": "Anjo de véu",
+  "look": "mulher alada com véu e auréola, olhos fechados, rosário no peito"
+ },
+ {
+  "name": "Figura de mãos dadas",
+  "look": "cabelo claro espetado, gola clara, olhos fechados, mãos entrelaçadas com Vera"
+ },
+ {
+  "name": "Garoto Franja",
+  "look": "cabelo escuro comprido cobrindo os olhos, faixa escura na testa, casaco escuro de gola"
+ },
+ {
+  "name": "Vulto esquerdo",
+  "look": "capa escura longa, de cabeça para baixo, à esquerda"
+ },
+ {
+  "name": "Vulto direito",
+  "look": "capa escura longa, de cabeça para baixo, à direita"
+ },
+ {
+  "name": "Dragoniano do alto",
+  "look": "cabeça de dragão, chifres curvos, capuz escuro, no alto da cena"
+ },
+ {
+  "name": "Barbudo",
+  "look": "cabelo grisalho penteado para trás, barba longa, sorriso, gola escura, xícara de chá"
+ },
+ {
+  "name": "Caído",
+  "look": "capa escura longa, cabelo escuro espetado, caído no chão, segura espada"
+ },
+ {
+  "name": "Armadura",
+  "look": "armadura clara de placas nos ombros, de costas, cabelo escuro"
+ },
+ {
+  "name": "Figura de camisa clara",
+  "look": "camisa clara, deitada no chão em primeiro plano"
+ },
+ {
+  "name": "Companheiro",
+  "look": "capa escura longa esvoaçante, voando ao lado do Espadachim"
+ },
+ {
+  "name": "Vulto de capa",
+  "look": "capa escura longa, descendo no alto à direita"
+ },
+ {
+  "name": "Criatura de carapaça",
+  "look": "cabeça coberta de placas, presas grandes, olhos pequenos, corpo blindado"
+ },
+ {
+  "name": "Jovem caída",
+  "look": "cabelo claro longo, rosto ensanguentado, caída no chão"
+ },
+ {
+  "name": "Espadachim de capa",
+  "look": "cabelo escuro espetado, capa escura longa, espada na mão, rosto sério"
+ },
+ {
+  "name": "Franja",
+  "look": "cabelo escuro comprido cobrindo os olhos, faixa escura na testa"
+ },
+ {
+  "name": "Terdan",
+  "look": "gigante de pedra coberto de árvores, braços longos, olhos brilhantes"
+ },
+ {
+  "name": "Criatura",
+  "look": "rosto escuro de criatura, olhos brancos brilhantes, presas grandes, visto de baixo"
+ },
+ {
+  "name": "Jovem Clara",
+  "look": "cabelo claro longo, rosto corado, encostada no ombro, carregada no colo"
+ },
+ {
+  "name": "Outro corredor",
+  "look": "botas escuras, correndo no alto à direita da planície, fora de quadro"
+ },
+ {
+  "name": "Criatura de presas",
+  "look": "rosto escuro de criatura, presas grandes, olhos brancos arregalados"
+ },
+ {
+  "name": "Garoto chibi",
+  "look": "cabelo castanho curto, túnica clara com cadarço, estilo chibi"
+ },
+ {
+  "name": "Criatura de pedra",
+  "look": "criatura gigante de pedra rachada, musgo, olhos brancos brilhantes, possivelmente Terdan"
+ },
+ {
+  "name": "Voz não identificada",
+  "look": "balão branco sem figura visível, fala de fora de quadro"
+ },
+ {
+  "name": "Garoto de casaco claro",
+  "look": "cabelo escuro, casaco claro comprido sobre roupa escura, anda ao lado de Norn"
+ },
+ {
+  "name": "Figura sombria dos olhos brancos",
+  "look": "silhueta negra, olhos brancos brilhantes, mão estendida brilhando"
+ },
+ {
+  "name": "Penteado",
+  "look": "cabelo claro penteado para trás, caído no chão, mão na testa"
+ },
+ {
+  "name": "Ancião",
+  "look": "cabelo e barba brancos longos, roupa clara bordada, sentado à mesa"
+ },
+ {
+  "name": "Soldado",
+  "look": "armadura escura de placas, no alto do quadro, gritando"
+ },
+ {
+  "name": "Figura de manto bordado",
+  "look": "manto claro bordado em dourado, cabelo claro longo, de costas, figura alta"
+ },
+ {
+  "name": "Sombra de olhos brancos",
+  "look": "silhueta negra, olhos brancos brilhantes, boca aberta gritando, garras pontiagudas"
+ },
+ {
+  "name": "Mago de manto",
+  "look": "manto claro com cajado, cabelo claro longo"
+ },
+ {
+  "name": "Lutador do mangual",
+  "look": "cabelo longo claro preso em rabo, manto claro, de costas, segura corrente com mangual de espinhos"
+ },
+ {
+  "name": "Dono do olho estrelado",
+  "look": "olho em close, íris com estrela de oito pontas dentro de círculo, sobrancelha escura, rosto não visível"
+ },
+ {
+  "name": "Chibi de cabelo escuro",
+  "look": "rosto chibi, cabelo escuro, boca aberta, olhos arregalados"
+ },
+ {
+  "name": "Figura de olhos brancos",
+  "look": "silhueta negra, olhos brancos brilhantes, mão estendida brilhando com rachaduras de luz"
+ },
+ {
+  "name": "Voz sem figura",
+  "look": "balão branco sem rabicho visível, fora de quadro, sem rosto"
+ },
+ {
+  "name": "Jovem do ombro",
+  "look": "cabelo claro longo, encostada no ombro de Vera, de costas"
+ },
+ {
+  "name": "Jovem da cama",
+  "look": "cabelo claro longo, vestido branco, deitada, olhos fechados, é a Santa"
+ },
+ {
+  "name": "Figura de cabelo escuro espetado",
+  "look": "cabelo escuro espetado, perfil em close, rosto virado"
+ },
+ {
+  "name": "Clara",
+  "look": "cabelo claro longo, capuz claro, franja, olhos fechados e sorriso largo"
+ },
+ {
+  "name": "Enlutados",
+  "look": "figuras de roupas escuras em volta do caixão, vistas de cima"
+ },
+ {
+  "name": "Vulto de costas",
+  "look": "casaco escuro longo com forro claro, cabelo preso em coque, de costas"
+ },
+ {
+  "name": "Vulto da capa longa",
+  "look": "capa escura longa esvoaçante, no alto, sobre espadas e ossadas"
+ },
+ {
+  "name": "Dragão alado",
+  "look": "asas escuras de membrana, voando sobre névoa"
+ },
+ {
+  "name": "Figura da manga clara",
+  "look": "mão clara com anéis, manga larga, entrelaçada com a mão de Vera"
+ },
+ {
+  "name": "Figura abraçada",
+  "look": "capa escura, cabelo escuro, braço de manga escura ao redor, rosto oculto; identidade ambígua"
+ },
+ {
+  "name": "Jovem do olho",
+  "look": "cabelo claro longo, olho em close, cílios, lágrima, olhar sério"
+ },
+ {
+  "name": "Jovem de cabelo escuro comprido",
+  "look": "cabelo escuro comprido com mecha clara, roupa escura, olhar de lado"
+ },
+ {
+  "name": "Figura em silhueta",
+  "look": "silhueta escura de perfil, nariz pontudo, contorno branco, sem traços visíveis"
+ },
+ {
+  "name": "Interlocutor",
+  "look": "fala de fora de quadro, balões com rabicho, rosto nunca visto"
+ },
+ {
+  "name": "Encapuzado",
+  "look": "manto claro longo com capuz, de costas, corredor de pedra"
+ },
+ {
+  "name": "Mantos ao fundo",
+  "look": "duas figuras de manto claro pequenas ao fundo do corredor"
+ },
+ {
+  "name": "Mão de manga escura",
+  "look": "mão de manga escura cerrada em tecido claro, em close"
+ },
+ {
+  "name": "Manto Bordado",
+  "look": "cabelo claro longo, manto claro bordado em dourado, de costas, figura alta"
+ },
+ {
+  "name": "Atacante",
+  "look": "figura borrada em movimento, cabelo escuro volumoso, vinda da esquerda"
+ },
+ {
+  "name": "Figura da faixa",
+  "look": "jaqueta escura, camisa clara, faixa preta na cintura, rosto fora do quadro"
+ },
+ {
+  "name": "Companheiro de Rohan",
+  "look": "cabelo castanho curto, gola alta clara, par de Rohan, mão no rosto"
+ },
+ {
+  "name": "Voz do aviso",
+  "look": "balão sem figura visível, fala de fora de quadro"
+ },
+ {
+  "name": "Espadachim escuro",
+  "look": "cabelo escuro espetado, dentes cerrados, rosto furioso em close"
+ },
+ {
+  "name": "Falante incerto",
+  "look": "balão gritado serrilhado sem figura visível"
+ },
+ {
+  "name": "Fugitivo",
+  "look": "roupa clara, cabelo escuro, corre por corredor de tijolos"
+ },
+ {
+  "name": "Perseguidor",
+  "look": "pé de bota escura e calça escura, visto de cima, fora de quadro"
+ },
+ {
+  "name": "Escriba",
+  "look": "cabelo claro, óculos redondos, colete escuro, laço, pena na mão"
+ },
+ {
+  "name": "Hela",
+  "look": "cabelo castanho trançado, camisa clara de gola alta, sorriso aberto"
+ },
+ {
+  "name": "Perfil escuro",
+  "look": "cabelo escuro espetado, visto de perfil, olhar de lado"
+ },
+ {
+  "name": "Jovem sorridente",
+  "look": "capuz claro, cabelo claro com franja, olhos fechados, sorriso largo"
+ },
+ {
+  "name": "Figura ajoelhada de manga clara",
+  "look": "manga clara larga, ajoelhada calçando sapato preto em pé descalço"
+ },
+ {
+  "name": "Figura da gola escura",
+  "look": "gola alta escura, rosto fora do quadro, entre brilhos"
+ },
+ {
+  "name": "Figura da cama",
+  "look": "duas cabeças sobre cama de ferro, luz intensa atrás"
+ },
+ {
+  "name": "Figura do vestido",
+  "look": "vestido longo claro, sapatos escuros, pés no piso de pedra"
+ },
+ {
+  "name": "Figura da trança",
+  "look": "trança escura, camisa clara, calça escura, segura a mão do vestido"
+ },
+ {
+  "name": "Figura da capa escura",
+  "look": "capa escura curta com gola, de costas, ombro à direita, rosto fora do quadro"
+ },
+ {
+  "name": "Criada",
+  "look": "cabelo claro longo, vestido escuro com gola clara, segura vassoura, sorriso"
+ },
+ {
+  "name": "Banhista de cabelo curto",
+  "look": "cabelo escuro curto, roupa clara, ajuda a banhar a Santa"
+ },
+ {
+  "name": "Banhista de coque",
+  "look": "cabelo escuro em coque, roupa escura, ajuda a banhar a Santa"
+ },
+ {
+  "name": "Figura de capa clara",
+  "look": "cabelo longo claro, capa escura, de costas, caminha rumo à luz"
+ },
+ {
+  "name": "Figura de vestido",
+  "look": "vestido longo claro, sentada no piso de pedra, pétalas ao redor"
+ },
+ {
+  "name": "Jovem encapuzada",
+  "look": "capuz claro, cabelo claro com franja, rosto corado, olhar assustado"
+ },
+ {
+  "name": "Apóstolo da Abundância",
+  "look": "chapéu de aba larga, coque, suspensórios, avental, maçã na mão, de costas"
+ },
+ {
+  "name": "Luvas Negras",
+  "look": "cabelo escuro, roupa escura, mão com luva negra gigante, à direita"
+ },
+ {
+  "name": "Rabo de Cavalo",
+  "look": "cabelo claro preso em rabo, colete escuro, de costas, braço estendido"
+ },
+ {
+  "name": "Encapuzada",
+  "look": "capuz claro, cabelo claro, rosto corado, olhar baixo"
+ },
+ {
+  "name": "Rabo-de-cavalo",
+  "look": "cabelo claro preso em rabo, de costas, capa escura, ombros largos"
+ },
+ {
+  "name": "Figura da mecha",
+  "look": "cabelo claro longo, segura mecha junto ao pescoço, capa clara, close"
+ },
+ {
+  "name": "Figura de véu",
+  "look": "cabelo claro com faixa, véu claro, de costas, sentada à mesa"
+ },
+ {
+  "name": "Hegerion",
+  "look": "cabelo claro espetado, armadura escura com gola de pelo, olhos brilhando atrás de visor"
+ },
+ {
+  "name": "Aisha",
+  "look": "cabelo claro curto, orelhas e cauda felinas, roupa escura, espada na mão"
+ },
+ {
+  "name": "Albrecht",
+  "look": "cabelo castanho escuro com mecha clara, uniforme escuro com ombreira de borlas, espada"
+ },
+ {
+  "name": "Garoto de orelhas de gato",
+  "look": "cabelo claro espetado, orelhas de gato, roupa escura com alça clara, de costas"
+ },
+ {
+  "name": "Jovem castanho",
+  "look": "cabelo castanho curto, capa escura com forro claro, luva escura, de perfil"
+ },
+ {
+  "name": "Grandalhão",
+  "look": "cabelo escuro, ombros largos, camisa clara, segura sacola de pão"
+ },
+ {
+  "name": "Jovem escuro",
+  "look": "cabelo escuro espetado, gola alta escura, sorriso aberto, mãos cruzadas"
+ },
+ {
+  "name": "Lorde Trevo",
+  "look": "não aparece nestas páginas; descrito como excêntrico e pervertido"
+ },
+ {
+  "name": "Prisioneiro",
+  "look": "cabelo claro, óculos redondos, terno claro, mãos amarradas atrás das costas"
+ },
+ {
+  "name": "Jovem do colete",
+  "look": "cabelo escuro, colete escuro sobre camisa clara, braços cruzados"
+ },
+ {
+  "name": "Trebo",
+  "look": "cabelo escuro espetado, roupa escura, visto de cima ao lado de mesa com círculo mágico"
+ },
+ {
+  "name": "Mão estendida",
+  "look": "mão clara de dedos abertos estendida sobre fundo escuro com brilho mágico"
+ },
+ {
+  "name": "Sir Bera",
+  "look": "citado em balão; não aparece nestas páginas"
+ },
+ {
+  "name": "Figura de ombros largos",
+  "look": "ombros largos, cabelo castanho, rosto suado de perfil, roupa clara de gola alta"
+ },
+ {
+  "name": "Jovem assustada",
+  "look": "cabelo claro longo, touca clara, olhos arregalados, gola clara"
+ },
+ {
+  "name": "Homens caídos",
+  "look": "dois homens de roupa escura com cabeça tombada para trás, sustentados pela sombra"
+ },
+ {
+  "name": "Jovem loira caída",
+  "look": "cabelo claro longo, caída no chão"
+ },
+ {
+  "name": "Figura de cabelo claro à mesa",
+  "look": "cabelo claro, sentada à esquerda da mesa do pátio, sem rosto em destaque"
+ },
+ {
+  "name": "Chibi de óculos",
+  "look": "cabelo claro, óculos redondos, chibi de boca aberta, suando"
+ },
+ {
+  "name": "Criada de bandeja",
+  "look": "cabelo escuro preso em rabo, camisa clara, calça escura, segura bandeja com xícara"
+ },
+ {
+  "name": "Curandeira",
+  "look": "cabelo castanho preso em trança, jaleco claro comprido, calça escura"
+ },
+ {
+  "name": "Ancião barbudo",
+  "look": "cabelo branco preso em rabo, barba longa branca, manto claro bordado em dourado"
+ },
+ {
+  "name": "Jovem da mão brilhante",
+  "look": "cabelo claro, capuz claro, olhos arregalados, mão brilhante estendida"
+ },
+ {
+  "name": "Sacerdote",
+  "look": "cabelo grisalho preso em rabo, barba longa e branca, manto claro bordado"
+ },
+ {
+  "name": "Jovem da mesa",
+  "look": "capuz claro, cabelo claro, olhos arregalados, sentada à mesa"
+ },
+ {
+  "name": "Rosto do close",
+  "look": "cabelo claro médio com franja, olhar baixo, close de perfil, balão serrilhado acima"
+ },
+ {
+  "name": "Figura do cajado",
+  "look": "manto claro, cajado escuro, de pé sobre piso de pedra; rosto não visível"
+ },
+ {
+  "name": "Perfil claro",
+  "look": "cabelo claro espetado, perfil, gola alta escura, possível cicatriz na testa"
+ },
+ {
+  "name": "Idosa do cajado",
+  "look": "cabelo claro curto, capa escura, bengala, rosto enrugado"
+ },
+ {
+  "name": "Rabo escuro",
+  "look": "cabelo escuro preso em rabo, casaco escuro, de costas, aponta o dedo"
+ },
+ {
+  "name": "Deitado",
+  "look": "cabelo escuro, camisa clara, calça escura, deitado no banco"
+ },
+ {
+  "name": "Jovem do capuz",
+  "look": "capuz claro, cabelo claro longo com franja, olhos arregalados, rosto corado"
+ },
+ {
+  "name": "Senhora idosa",
+  "look": "cabelo grisalho preso em coque, capa escura de gola alta, bengala, sorriso"
+ },
+ {
+  "name": "Criança",
+  "look": "figura pequena de pé, à frente dos homens, na base da cena"
+ },
+ {
+  "name": "Dama de coque",
+  "look": "cabelo claro preso em coque, visto de trás à esquerda, roupa escura"
+ },
+ {
+  "name": "Falante oculto",
+  "look": "fala em balão sem figura visível, fora do quadro"
+ },
+ {
+  "name": "Falante fora de quadro",
+  "look": "voz em balão sem rabicho visível, fora de quadro, sem rosto"
+ },
+ {
+  "name": "Senhora da bengala",
+  "look": "cabelo claro curto, casaco escuro sobre vestido claro, bengala, rosto preocupado"
+ },
+ {
+  "name": "Gêmeo caído",
+  "look": "cabelo escuro espetado, rosto com X nos olhos, caído no chão, estilo chibi"
+ },
+ {
+  "name": "Gêmeo de coque",
+  "look": "cabelo escuro preso em dois coques, olhos arregalados, boca aberta, caído no chão"
+ },
+ {
+  "name": "Cavaleiro Barbudo",
+  "look": "barba, cabelo escuro, de costas, curativo no rosto, olhos fechados"
+ },
+ {
+  "name": "Figura da direita",
+  "look": "ombros largos, cabelo castanho, rosto suado, roupa clara de gola alta, bengala"
+ },
+ {
+  "name": "Cavaleiro Sério",
+  "look": "cabelo claro penteado para trás, sobrancelhas grossas, perfil sério, armadura"
+ },
+ {
+  "name": "Ferido",
+  "look": "cabelo claro longo ondulado, sangue no nariz, suado, sobrancelhas franzidas, gritando"
+ },
+ {
+  "name": "Ajoelhado",
+  "look": "cabelo claro, roupa escura com faixas, de joelhos no chão de madeira"
+ },
+ {
+  "name": "Mão clara",
+  "look": "mão clara de dedos abertos, manga escura, sobre fundo claro com brilho"
+ },
+ {
+  "name": "Jovem da mão no rosto",
+  "look": "cabelo escuro espetado, mão cobrindo o rosto, brilho claro ao fundo"
+ },
+ {
+  "name": "Figura de bota",
+  "look": "perna e bota escura de homem grande, sem rosto visível"
+ },
+ {
+  "name": "Terisa",
+  "look": "cabelo claro longo, capa clara com gola, sentada no banco, sorriso aberto, mão erguida"
+ },
+ {
+  "name": "Jovem da faixa",
+  "look": "cabelo escuro espetado, faixa escura na testa, de perfil, olhos arregalados"
+ },
+ {
+  "name": "Lutador de cabelo escuro",
+  "look": "cabelo escuro espetado, sobrancelha tensa, roupa escura de gola alta, soca"
+ },
+ {
+  "name": "Cavaleiro de cabelo escuro",
+  "look": "cabelo escuro espetado, roupa escura, mão cobrindo o rosto, brilho claro ao fundo"
+ },
+ {
+  "name": "Gesticulante",
+  "look": "cabelo claro curto penteado para trás, casaco escuro, sentado à mesa, braço estendido"
+ },
+ {
+  "name": "Cavaleiro escuro",
+  "look": "cabelo escuro espetado, gola alta escura, capa escura, sentado no sofá"
+ },
+ {
+  "name": "Colega de capa escura",
+  "look": "cabelo castanho longo, capa escura sobre camisa clara, de costas"
+ },
+ {
+  "name": "Colega sorridente",
+  "look": "cabelo castanho curto, capa escura, olha por cima do ombro, sorrindo"
+ },
+ {
+  "name": "Colega dos livros",
+  "look": "cabelo castanho curto, casaco escuro, pilha de livros nos braços, cora e se assusta"
+ },
+ {
+  "name": "Jovem do sobretudo",
+  "look": "cabelo escuro comprido cobrindo um olho, sobretudo escuro de botões duplos, rosto sério"
+ },
+ {
+  "name": "Colega de vestido escuro",
+  "look": "cabelo escuro preso, vestido escuro, segura livro, de lado"
+ },
+ {
+  "name": "Queixo em close",
+  "look": "queixo e boca em close, cabelo claro à direita, gola escura embaixo"
+ },
+ {
+  "name": "Dama do cajado",
+  "look": "cabelo longo claro, vestido claro com corpete escuro, segura cajado escuro"
+ },
+ {
+  "name": "Casal nos degraus",
+  "look": "duas figuras pequenas nos degraus de pedra, uma de roupa escura"
+ },
+ {
+  "name": "Figuras sombrias",
+  "look": "silhuetas escuras em fila entre colunas e arcos, sem rosto visível"
+ },
+ {
+  "name": "Vargo Saintlore",
+  "look": "Sagrado Imperador, sorriso com dentes à mostra, punho diante da barba"
+ },
+ {
+  "name": "Sir Norn",
+  "look": "cavaleiro sagrado emprestado pelo Velho; aparência não descrita nestas páginas"
+ },
+ {
+  "name": "Cobb",
+  "look": "pai de Renée, morador da vila; citado por um Aldeão, não aparece nestas páginas"
+ },
+ {
+  "name": "Lord Trevo",
+  "look": "(aparência ainda não vista) mentor de Vera em magia sagrada e energia divina."
+ }
+]

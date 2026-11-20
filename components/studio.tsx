@@ -1,6 +1,7 @@
 'use client';
 // Estúdio do projeto: importar páginas → montar a linha do tempo (ordem, duração, foco, movimento, texto)
 // com a prévia ao lado → escolher a narração → gerar roteiro pela IA (opcional) → renderizar.
+import { ChapterLimitControl } from './chapter-limit-control';
 import { LastRenderInfo } from './last-render';
 import { PaidAsk } from './paid-ask';
 import { useStickBottom } from './use-stick-bottom';
@@ -87,6 +88,7 @@ export function Studio({ id }: { id: string }) {
   const [err, setErr] = useState('');
   const [tab, setTab] = useState<'edit' | 'pages'>('edit');
   const dirty = useRef(false);
+  const [serverAuto, setServerAuto] = useState<boolean | null>(null); // o que o servidor confirmou de "Automático"
   const finalVideo = useRef<HTMLVideoElement>(null);
   const [videoTime, setVideoTime] = useState(0);
   const [polishPrompt, setPolishPrompt] = useState('');
@@ -106,6 +108,7 @@ export function Studio({ id }: { id: string }) {
           const j = (await r.json()) as StudioProject;
           base.current = baseOf(j.shots ?? []);
           partKey.current = `${j.part?.number ?? 0}`;
+          setServerAuto(!!j.auto);
           setLoadError('');
           return setP(j);
         }
@@ -123,8 +126,11 @@ export function Studio({ id }: { id: string }) {
   const partKey = useRef<string | null>(null);
   const save = useCallback(async (cur: StudioProject) => {
     dirty.current = false;
-    const r = await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ title: cur.title, context: cur.context, format: cur.format, narration: cur.narration, voice: cur.voice, subtitles: !!cur.subtitles, chapterContexts: cur.chapterContexts, shots: cur.shots, ...shotsDelta(base.current, cur.shots), cutWords: cur.cutWords, targetMinutes: cur.targetMinutes ?? 0, englishAudio: !!cur.englishAudio, autoPaid: !!cur.autoPaid, series: cur.series ?? '', part: cur.part?.number ? { number: cur.part.number, recapUrl: cur.part.recapUrl ?? '' } : null }) });
-    if (r.ok) base.current = baseOf(cur.shots);
+    const r = await fetch(`/api/projects/${id}`, { method: 'PUT', body: JSON.stringify({ title: cur.title, context: cur.context, format: cur.format, narration: cur.narration, voice: cur.voice, subtitles: !!cur.subtitles, chapterContexts: cur.chapterContexts, shots: cur.shots, ...shotsDelta(base.current, cur.shots), cutWords: cur.cutWords, targetMinutes: cur.targetMinutes ?? 0, englishAudio: !!cur.englishAudio, autoPaid: !!cur.autoPaid, series: cur.series ?? '', auto: !!cur.auto, part: cur.part?.number ? { number: cur.part.number, recapUrl: cur.part.recapUrl ?? '' } : null }) });
+    if (r.ok) {
+      base.current = baseOf(cur.shots);
+      setServerAuto(!!cur.auto);
+    }
     // número da parte mudou: o servidor pôs ou tirou as partes de gancho da linha do tempo, então recarrega
     const pk = `${cur.part?.number ?? 0}`;
     if (r.ok && pk !== partKey.current) {
@@ -207,7 +213,7 @@ export function Studio({ id }: { id: string }) {
     const next = NEXT[a.kind];
     const forced = a.kind === 'check' && forceRender.current;
     forceRender.current = false;
-    if (done.status === 'done' && next && (forced || (a.kind === 'render' ? englishRef.current : autoRef.current))) {
+    if (done.status === 'done' && next && forced) {
       load().then(() => startRef.current?.({ kind: next }));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -236,10 +242,7 @@ export function Studio({ id }: { id: string }) {
   useEffect(() => {
     if (doubtKey && validated && !running) setDoubtsOpen(true);
   }, [doubtKey, validated, running]);
-  const [auto, setAuto] = useState(false);
-  const autoRef = useRef(auto);
-  autoRef.current = auto;
-  const englishRef = useRef(false);
+    const englishRef = useRef(false);
   englishRef.current = !!p?.englishAudio;
   const forceRender = useRef(false);
   const chain = useRef<{ jobId: string; kind: string } | null>(null);
@@ -293,6 +296,7 @@ export function Studio({ id }: { id: string }) {
     ) : (
       <p className="text-muted-foreground">Carregando…</p>
     );
+  const autoSaved = !!p.auto && serverAuto === true;
   const segs = p.lastRender?.segments ?? [];
   const playingId = segs.find((g) => videoTime >= g.start && videoTime < g.start + g.dur)?.id;
   const seekTo = (shotId: string) => {
@@ -356,6 +360,7 @@ export function Studio({ id }: { id: string }) {
       {/* Cabeçalho: título, formato, narração, ações */}
       <div className="flex flex-wrap items-end gap-3">
         <input className="field max-w-xs text-base font-semibold" value={p.title} onChange={(e) => edit((d) => (d.title = e.target.value))} />
+        <ChapterLimitControl id={id} p={p} busy={running} onChanged={() => void load()} />
         <select className="field w-auto" value={p.format} onChange={(e) => edit((d) => (d.format = e.target.value as MangaFormat))}>
           {Object.entries(MANGA_SIZES).map(([k, v]) => (
             <option key={k} value={k}>
@@ -428,9 +433,15 @@ export function Studio({ id }: { id: string }) {
         </label>
         <div className="ml-auto flex flex-wrap items-center gap-2">
           <label className="flex cursor-pointer items-center gap-1 text-sm" title="Ao terminar um passo sem erro, já começa o próximo: roteiro → editar com IA → validar → renderizar. Clique no passo de onde quer começar.">
-            <input type="checkbox" checked={auto} onChange={(e) => setAuto(e.target.checked)} />
+            <input type="checkbox" checked={!!p.auto} onChange={(e) => edit((d) => (d.auto = e.target.checked))} />
             Automático
           </label>
+          {p.auto && !autoSaved && <span className="text-xs text-amber-500">salvando…</span>}
+          {p.auto && autoSaved && (
+            <span className="rounded bg-emerald-600/25 px-1.5 py-0.5 text-xs font-medium text-emerald-300" title="Ativo e salvo no servidor: o próximo passo começa sozinho quando o anterior terminar, mesmo com esta tela fechada, recarregada ou o computador sem ninguém. Roteiro → edição → validação → render (→ inglês, se marcado).">
+              ✔ Automático ativo
+            </span>
+          )}
           <label className="flex cursor-pointer items-center gap-1 text-sm" title="Se a OmniRoute acabar, usa o Claude direto, sem perguntar na tela (gasta o seu plano). Desligado: pergunta Sim/Não em cada processo.">
             <input type="checkbox" checked={!!p?.autoPaid} onChange={(e) => edit((d) => (d.autoPaid = e.target.checked))} />
             Usar o Claude se a OmniRoute acabar

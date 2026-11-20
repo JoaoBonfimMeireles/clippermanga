@@ -146,6 +146,10 @@ export interface StudioProject {
   testSummary?: string;
   /** Parte em que o encerramento ("não percam os próximos capítulos") já foi retirado ao continuar a história. */
   outroTrimmedFor?: string;
+  /** Modo automático (roteiro → edição → validação → render): fica salvo no projeto e é o SERVIDOR que emenda os passos (lib/jobs.ts), então vale mesmo com a tela fechada ou recarregada. */
+  auto?: boolean;
+  /** Quantos capítulos baixados entram nos processos (roteiro, edição, validação, render), em ordem de capítulo. Vazio = todos. Os demais ficam estacionados (`parked`) e voltam ao aumentar o número ou na próxima parte (lib/chapter-limit.ts). */
+  chapterLimit?: number;
   /** Último link usado para baixar capítulos (um por linha, pode ter {n}). */
   lastImportUrl?: string;
   /** Nome da obra como está no canal (editável na tela inicial; se vazio, usa o título gerado em Publicação). */

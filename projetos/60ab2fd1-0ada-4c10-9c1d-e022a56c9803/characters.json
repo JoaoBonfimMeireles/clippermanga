@@ -1,0 +1,718 @@
+[
+ {
+  "name": "Jio",
+  "look": "cabelo escuro bagunçado, camisa escura, visto de costas"
+ },
+ {
+  "name": "Criatura de orelhas longas",
+  "look": "criatura pálida de orelhas longas e pontudas, voando entre folhas claras"
+ },
+ {
+  "name": "Figura de robe",
+  "look": "robe longo escuro com capuz, pés descalços, no salão ornamentado"
+ },
+ {
+  "name": "Criatura alada",
+  "look": "corpo de cavalo com asas e chifre, pelagem clara"
+ },
+ {
+  "name": "Coelho",
+  "look": "coelho assustadiço de olhos arregalados, aparece na grama sob a árvore"
+ },
+ {
+  "name": "Coelho de três olhos",
+  "look": "coelho de orelhas longas, três olhos, pelagem clara, sentado"
+ },
+ {
+  "name": "Unicórnio de chifre",
+  "look": "criatura pequena de chifre torto, orelhas grandes, de pé inclinada"
+ },
+ {
+  "name": "Esquilo de chifrinhos",
+  "look": "esquilo gordinho de dois chifrinhos pequenos e cauda fofa"
+ },
+ {
+  "name": "Unicórnio alado",
+  "look": "unicórnio branco de asas emplumadas, chifre longo, corpo esguio"
+ },
+ {
+  "name": "Coelho branco",
+  "look": "coelho branco pequeno de pelagem clara, corre ao lado do unicórnio"
+ },
+ {
+  "name": "Figura de trança",
+  "look": "cabelo escuro preso em trança, roupa escura, rosto colado ao de outra figura"
+ },
+ {
+  "name": "Criatura de mandíbula enorme",
+  "look": "criatura escura com presas brancas enormes e boca aberta, brilho nas bordas"
+ },
+ {
+  "name": "Esquilo",
+  "look": "criatura gorducha de cauda grande e fofa, pelagem escura, orelhas pequenas"
+ },
+ {
+  "name": "Silhuetas da porta",
+  "look": "duas silhuetas escuras de pé na entrada envidraçada, sem rosto visível"
+ },
+ {
+  "name": "Figura de cabelo claro",
+  "look": "cabelo claro, rosto tenso de perfil, segura objeto metálico longo"
+ },
+ {
+  "name": "Figura de coque",
+  "look": "cabelo escuro preso em coque, visto de costas, olha por cima do ombro, camisa escura"
+ },
+ {
+  "name": "Figura de costas",
+  "look": "de costas, cabelo curto escuro, roupa escura, descalço, mão no rosto"
+ },
+ {
+  "name": "Licitante 4",
+  "look": "plaqueta redonda com o número 4, ao fundo da plateia"
+ },
+ {
+  "name": "Licitante 79",
+  "look": "plaqueta redonda com o número 79 erguida com a mão"
+ },
+ {
+  "name": "Licitante 5",
+  "look": "plaqueta 5 erguida, punho com anel e relógio de metal no pulso"
+ },
+ {
+  "name": "Plateia",
+  "look": "pessoas de terno sentadas em poltronas de teatro, de costas ou de perfil"
+ },
+ {
+  "name": "Bisabeol",
+  "look": "líder da guilda Colecionador, sorridente, sentado com anel na mão, galeria própria"
+ },
+ {
+  "name": "Criatura presa",
+  "look": "criatura escura de chifres e garras, coberta de talismãs de papel"
+ },
+ {
+  "name": "Multidão",
+  "look": "silhuetas escuras de costas, olhando para o alto, sem rosto visível"
+ },
+ {
+  "name": "Criatura de mandíbula",
+  "look": "criatura escura, dentes enormes e brancos, boca aberta, em close"
+ },
+ {
+  "name": "Figura da mão",
+  "look": "de costas, cabelo escuro curto, roupa cinza clara, mão erguida tocando a moldura"
+ },
+ {
+  "name": "Figura dos olhos",
+  "look": "cabelo escuro caindo sobre o rosto, olhos entreabertos, close-up"
+ },
+ {
+  "name": "Avaliador",
+  "look": "cabeça baixa, óculos, terno escuro, cabelo escuro curto"
+ },
+ {
+  "name": "Silhuetas brancas",
+  "look": "silhuetas brancas sem rosto sobre cidade escura"
+ },
+ {
+  "name": "Figura de cabelo longo",
+  "look": "de costas, cabelo longo escuro ondulado, sobre ondas brancas"
+ },
+ {
+  "name": "Figura de cabelo curto",
+  "look": "de costas, cabelo escuro curto, roupa escura, ao lado da figura de cabelo longo"
+ },
+ {
+  "name": "Dan Haera",
+  "look": "presidente da Associação de Caçadores; aparência não mostrada"
+ },
+ {
+  "name": "Licitante 1",
+  "look": "plaqueta redonda com número 1 erguida, na plateia"
+ },
+ {
+  "name": "Criatura dos olhos",
+  "look": "par de olhos brancos brilhantes, pupila vertical, em escuridão total"
+ },
+ {
+  "name": "Criatura de presas",
+  "look": "criatura escura de mandíbula enorme, presas brancas, boca aberta, brilho nas bordas"
+ },
+ {
+  "name": "Guarda",
+  "look": "boné escuro, uniforme escuro, de pé com a mão na cintura, sem rosto detalhado"
+ },
+ {
+  "name": "Figura do retrato",
+  "look": "cabelo claro preso, visto de lado, roupa escura, dentro de moldura dourada, ri alto"
+ },
+ {
+  "name": "Figura de gola",
+  "look": "de costas, cabelo claro, sobretudo escuro de gola alta"
+ },
+ {
+  "name": "Aprendiz",
+  "look": "cabelo escuro, sorriso largo, versão chibi com flores ao redor"
+ },
+ {
+  "name": "Figura de terno",
+  "look": "de pé à esquerda, terno escuro, mãos cruzadas ou segurando prancheta, sem rosto visível"
+ },
+ {
+  "name": "Criatura do olho único",
+  "look": "massa escura informe, um olho único, gotas de suor, presença sombria"
+ },
+ {
+  "name": "Figura do caderno",
+  "look": "cabelo escuro longo amarrado, roupa escura, carrega caderno ou livro, sapatos pretos grossos"
+ },
+ {
+  "name": "Criaturas pálidas",
+  "look": "criaturas brancas de rosto manchado de pontos escuros, caídas no chão"
+ },
+ {
+  "name": "Silhueta escura",
+  "look": "silhueta escura de pé ao fundo, sem rosto visível"
+ },
+ {
+  "name": "Figura do cartão",
+  "look": "de costas, cabelo escuro preso, roupa escura, segura cartão brilhante no salão"
+ },
+ {
+  "name": "Figura de perfil",
+  "look": "perfil pálido, cabelo escuro caindo sobre a testa, boca entreaberta"
+ },
+ {
+  "name": "Figura de capuz",
+  "look": "capuz escuro cobrindo a cabeça, visto de costas"
+ },
+ {
+  "name": "Figura de cabelo castanho",
+  "look": "cabelo castanho ondulado, visto de cima, cabeça inclinada; mão com objeto brilhante"
+ },
+ {
+  "name": "Figura de laço",
+  "look": "cabelo escuro ondulado preso com laço, de costas, cabeça baixa, roupa escura"
+ },
+ {
+  "name": "Figura dos pés",
+  "look": "pés de botas pretas com fivela, sobre piso quadriculado claro"
+ },
+ {
+  "name": "Figura da xícara",
+  "look": "de costas, cabelo escuro curto, roupa escura, mão com xícara sobre a mesa"
+ },
+ {
+  "name": "Figura da caixa",
+  "look": "cabelo claro longo, óculos brilhantes, segura caixa com laço"
+ },
+ {
+  "name": "Figura de sobretudo",
+  "look": "cabelo claro, sobretudo escuro longo, puxa mala preta"
+ },
+ {
+  "name": "Mão de luva",
+  "look": "mão escura de luva, aperta botão do elevador"
+ },
+ {
+  "name": "Seong-un",
+  "look": "caçador classe A, curador e jardineiro do Colecionador, sobretudo escuro, cigarro, mão no rosto"
+ },
+ {
+  "name": "Figura da prancheta",
+  "look": "de pé, de costas, suéter escuro, cabelo escuro curto, segura prancheta"
+ },
+ {
+  "name": "Fantasma",
+  "look": "homem alto, cabelo preto, pele pálida, capa preta; aparece em retrato-robô de rosto difícil de ver"
+ },
+ {
+  "name": "Mão pálida",
+  "look": "mão pálida e longa, dedos finos, surgindo da escuridão"
+ },
+ {
+  "name": "Olho gigante",
+  "look": "olho enorme e brilhante sobre montanhas escuras"
+ },
+ {
+  "name": "Figura de jaleco",
+  "look": "jaleco branco, sentado à mesa com prancheta, gravata escura"
+ },
+ {
+  "name": "Fotógrafos",
+  "look": "silhuetas de terno com câmeras, cercando a criatura"
+ },
+ {
+  "name": "Figura do cabelo cacheado",
+  "look": "cabelo castanho cacheado, de perfil, em escuridão"
+ },
+ {
+  "name": "Funcionário",
+  "look": "terno escuro, crachá triangular na lapela, suando, cabeça baixa"
+ },
+ {
+  "name": "Capuz",
+  "look": "encapuzado, olhos negros, ornamento prateado no peito, capa com broches prateados"
+ },
+ {
+  "name": "Funcionário da prancheta",
+  "look": "camisa escura com gravata escura e crachá, segura prancheta com documento"
+ },
+ {
+  "name": "Figura dos olhos fechados",
+  "look": "cabelo escuro caindo sobre o rosto, olhos fechados, camisa escura de gola, segura pincel"
+ },
+ {
+  "name": "Silhueta borrada",
+  "look": "silhueta escura borrada no canto inferior direito, fundo de fumaça"
+ },
+ {
+  "name": "Figura do console",
+  "look": "cabelo escuro e olhar baixo, visto de lado, diante de console"
+ },
+ {
+  "name": "Figura digital",
+  "look": "silhueta de impressão digital emergindo de superfície, olhos brilhantes"
+ },
+ {
+  "name": "Figura de camisa escura",
+  "look": "homem de roupa escura, de pé, de frente para a Figura de robe"
+ },
+ {
+  "name": "Figura das pernas",
+  "look": "pernas de calça escura e botas pretas, caminhando"
+ },
+ {
+  "name": "Criatura de três olhos",
+  "look": "criatura de corpo oval com três olhos brancos no centro, cercada de olhos flutuantes"
+ },
+ {
+  "name": "Delegado",
+  "look": "pernas de meias escuras e sapatos pretos, sem rosto visível"
+ },
+ {
+  "name": "Criatura nº1",
+  "look": "massa escura informe sobre mesa, marcada com plaqueta 1"
+ },
+ {
+  "name": "Prisioneiro",
+  "look": "pálido, suado, cabelo escuro bagunçado, deitado, olhos fechados"
+ },
+ {
+  "name": "Delegação",
+  "look": "quatro figuras de capa clara e roupa escura caminhando rumo ao portão"
+ },
+ {
+  "name": "Mão estendida",
+  "look": "mão pálida de manga escura estendida, dedos abertos, sem corpo visível"
+ },
+ {
+  "name": "Figura dos óculos",
+  "look": "cabelo escuro, óculos escuros de aviador, sorriso largo com presas"
+ },
+ {
+  "name": "Figura do rosto franzido",
+  "look": "cabelo escuro, testa franzida, sobrancelhas tensas, rosto em close"
+ },
+ {
+  "name": "Figura do quadro negro",
+  "look": "cabelo castanho claro, suéter escuro, segura quadro negro, olhos fechados"
+ },
+ {
+  "name": "Figura da gravata",
+  "look": "gravata escura, camisa clara, gola de terno, só o pescoço visível"
+ },
+ {
+  "name": "Dono do sapato",
+  "look": "sapato social preto de cadarço, visto de baixo, em queda sobre clarão"
+ },
+ {
+  "name": "Funcionário do crachá",
+  "look": "terno escuro, crachá triangular na lapela, suando, cabeça baixa"
+ },
+ {
+  "name": "Figura de uniforme",
+  "look": "de costas, cabelo claro, uniforme escuro com emblema no ombro, rosto não visível"
+ },
+ {
+  "name": "Figura de luva",
+  "look": "mão escura de luva e rosto carrancudo na parte inferior do quadro, com balões de pensamento"
+ },
+ {
+  "name": "Figura do clarão",
+  "look": "apoiada em balcão de madeira, cabelo castanho claro, clarão branco ao lado"
+ },
+ {
+  "name": "Cabelo claro",
+  "look": "cabelo claro bagunçado visto de trás, na base do quadro"
+ },
+ {
+  "name": "Robe",
+  "look": "robe longo com capuz, descalço, mãos cruzadas no colo"
+ },
+ {
+  "name": "Olhos fechados",
+  "look": "cabelo escuro caindo sobre o rosto, olhos fechados, close-up; identidade incerta"
+ },
+ {
+  "name": "Observador",
+  "look": "observa com mão no queixo, ativa habilidade de ajuste de som ambiente"
+ },
+ {
+  "name": "Figura do emblema",
+  "look": "de costas, cabelo escuro curto, gola alta escura, segura emblema prateado de flor"
+ },
+ {
+  "name": "Figura da lágrima",
+  "look": "cabelo escuro caindo sobre o rosto, olhos claros lacrimejando, close-up"
+ },
+ {
+  "name": "Figura da queda",
+  "look": "roupa escura, corpo inclinado caindo sobre o piso, poeira no impacto"
+ },
+ {
+  "name": "Figura do chão",
+  "look": "cabelo claro, caída no chão, roupa escura, caixa preta sobre o corpo"
+ },
+ {
+  "name": "Figura do broto",
+  "look": "cabeça redonda com broto na testa, roupa escura, mãos claras, caído de joelhos na grama"
+ },
+ {
+  "name": "Figura sentada",
+  "look": "figura escura sentada sobre pedestal, olhos brilhantes, em penumbra"
+ },
+ {
+  "name": "Figura do quadro",
+  "look": "cabelo escuro, sobretudo escuro com botões e broche, dentro de moldura dourada; identidade incerta"
+ },
+ {
+  "name": "Figura do suor",
+  "look": "cabelo claro bagunçado, gota de suor, sorriso tenso, mão no pescoço"
+ },
+ {
+  "name": "Figura algemada",
+  "look": "mãos algemadas por correntes, rosto fora do quadro"
+ },
+ {
+  "name": "Franjudo",
+  "look": "cabelo claro bagunçado com franja, presilha em X, rosto apreensivo"
+ },
+ {
+  "name": "Criatura felina",
+  "look": "criatura pequena de pelo claro, deitada aos pés de Jio"
+ },
+ {
+  "name": "Figura da prece",
+  "look": "cabelo escuro, olhos fechados, mãos postas em prece, sobretudo escuro; identidade incerta"
+ },
+ {
+  "name": "Criatura gigante",
+  "look": "massa escura enorme, mandíbula aberta, brilhos e espinhos"
+ },
+ {
+  "name": "Figura central",
+  "look": "sobretudo escuro longo, cabelo escuro espetado, andando no corredor"
+ },
+ {
+  "name": "Sombra do quadro",
+  "look": "silhueta escura sem traços, olhos brancos brilhantes, dentro de moldura dourada"
+ },
+ {
+  "name": "Espectro",
+  "look": "figura encapuzada com véu, olhos negros vazios, textura de glitch"
+ },
+ {
+  "name": "Figura do topete",
+  "look": "cabelo escuro bagunçado com topete e franja, camisa escura de gola alta, olhar baixo"
+ },
+ {
+  "name": "Suado",
+  "look": "terno escuro, crachá triangular na lapela, suando, cabeça baixa"
+ },
+ {
+  "name": "Retrato",
+  "look": "homem de cabelo escuro, sobretudo escuro com botões, dentro de moldura dourada"
+ },
+ {
+  "name": "Cabelo longo",
+  "look": "de costas, cabelo longo escuro ondulado, levanta a mão"
+ },
+ {
+  "name": "Cabelo curto",
+  "look": "de costas, cabelo escuro curto, roupa escura, ao lado da mulher"
+ },
+ {
+  "name": "Figura de baixo",
+  "look": "figura escura na base da tira, só parte visível, dona de balão preto"
+ },
+ {
+  "name": "Figura franzida",
+  "look": "cabelo claro bagunçado, cara franzida, olhos fechados, visto de lado à esquerda"
+ },
+ {
+  "name": "Mão com objeto",
+  "look": "mão fechada segurando objeto metálico com anel, manga escura"
+ },
+ {
+  "name": "Figura do pedido de desculpas",
+  "look": "figura borrada em fundo claro, fala educada pedindo desculpas, sem rosto visível"
+ },
+ {
+  "name": "Perfil",
+  "look": "perfil pálido, cabelo escuro caindo sobre a testa, cabeça baixa"
+ },
+ {
+  "name": "Figura do olhar sério",
+  "look": "cabelo escuro espetado caindo na testa, olho aberto, sobretudo escuro; identidade incerta"
+ },
+ {
+  "name": "Sobretudo",
+  "look": "cabelo claro, sobretudo escuro longo, puxa mala preta"
+ },
+ {
+  "name": "Equipe da galeria",
+  "look": "quatro figuras brilhantes de sobretudo e terno, em piso quadriculado"
+ },
+ {
+  "name": "Figura do rabisco",
+  "look": "cabelo escuro rabiscado em traços, terno escuro, de costas ou caída"
+ },
+ {
+  "name": "Figura de capa escura",
+  "look": "silhueta de capa escura longa, rosto oculto, mão clara"
+ },
+ {
+  "name": "Figura ajoelhada",
+  "look": "cabelo escuro, terno escuro, curvada de joelhos, punho cerrado, em chamas"
+ },
+ {
+  "name": "Figura de colete",
+  "look": "silhueta escura de colete e gravata, rosto na sombra, no alto da cena"
+ },
+ {
+  "name": "Uniforme",
+  "look": "de costas, cabelo claro, sentado em cadeira, sobretudo escuro com emblema estrelado"
+ },
+ {
+  "name": "Figura invertida",
+  "look": "cabelo escuro, sobretudo escuro, de cabeça para baixo entre folhas e luz"
+ },
+ {
+  "name": "Figura sombria",
+  "look": "silhueta escura alta, cabelo espetado, desfaz-se em fragmentos brancos"
+ },
+ {
+  "name": "Gola Alta",
+  "look": "de costas, cabelo claro, sobretudo escuro de gola alta"
+ },
+ {
+  "name": "Castanho",
+  "look": "cabelo castanho ondulado, visto de baixo, na base da tira, em silêncio"
+ },
+ {
+  "name": "Figura borrada",
+  "look": "figura borrada em fundo branco, quase invisível, transição"
+ },
+ {
+  "name": "Mão da maçã",
+  "look": "mão pálida segurando maçã vermelha mordida, manga escura"
+ },
+ {
+  "name": "Mão com comida",
+  "look": "mão pálida de manga escura segurando coxa de comida"
+ },
+ {
+  "name": "Pintor",
+  "look": "mão clara de manga escura segurando pincel longo, em fumaça"
+ },
+ {
+  "name": "Figura das mãos",
+  "look": "mãos e braços de manga escura, roupa escura, sem rosto visível"
+ },
+ {
+  "name": "Topete",
+  "look": "cabelo escuro bagunçado com topete e franja, camisa escura de gola alta, olhar baixo"
+ },
+ {
+  "name": "Mão da gema",
+  "look": "mão pálida de manga escura segurando gema cristalina com anel"
+ },
+ {
+  "name": "Figura da gema",
+  "look": "cabeça envolta em cristal brilhante, cabelo claro, manto branco amplo"
+ },
+ {
+  "name": "Figura do olho na testa",
+  "look": "cabelo escuro espetado, olho brilhante na testa, sobre piso quadriculado"
+ },
+ {
+  "name": "Capa escura",
+  "look": "silhueta de capa ou sobretudo escuro longo, rosto oculto, respingo de água e brilhos"
+ },
+ {
+  "name": "Jaleco",
+  "look": "jaleco branco, gravata escura, cabelo escuro penteado com mecha clara, sentado à mesa"
+ },
+ {
+  "name": "Pássaro luminoso",
+  "look": "criatura brilhante de corpo redondo, cheia de frutinhas vermelhas"
+ },
+ {
+  "name": "criaturas brancas",
+  "look": "pássaros-criatura pequenos, brancos e brilhantes, aos montes, voando e falando"
+ },
+ {
+  "name": "Figuras de manto",
+  "look": "quatro figuras de mantos brancos com estrelas e chapéus pontudos"
+ },
+ {
+  "name": "Figura da gola",
+  "look": "cabelo escuro, sobretudo escuro de gola alta com fivelas ornamentadas, rosto em close"
+ },
+ {
+  "name": "Figura do sorriso",
+  "look": "sorriso largo em close, gola de terno escura e colarinho claro"
+ },
+ {
+  "name": "Loiro",
+  "look": "cabelo claro penteado para o lado, uniforme ou camisa escura com gola, olhar sério"
+ },
+ {
+  "name": "Sorridente",
+  "look": "cabelo escuro bagunçado, presas, brinco na orelha, sorriso largo, terno claro e gravata estampada"
+ },
+ {
+  "name": "Figura da lança",
+  "look": "figura de manto branco longo com cabelo claro, segura lança"
+ },
+ {
+  "name": "Figura do martelo",
+  "look": "figura escura robusta segurando martelo, em silhueta"
+ },
+ {
+  "name": "Figura pequena",
+  "look": "silhueta pequena de criança ou figura baixa, à esquerda da entrada"
+ },
+ {
+  "name": "Figura do quiosque",
+  "look": "cabelo escuro, roupa escura, atrás do balcão de doces com comida na mão"
+ },
+ {
+  "name": "Vendedor",
+  "look": "chapéu branco, avental, atrás do balcão de barraca de bungeo-ppang"
+ },
+ {
+  "name": "Seong-eun",
+  "look": "cabelo claro, sobretudo escuro com emblema no ombro, de costas"
+ },
+ {
+  "name": "Figura pálida",
+  "look": "figura pálida sem traços, deitada de bruços, braço estendido, em luz"
+ },
+ {
+  "name": "Figura de mechas",
+  "look": "cabelo escuro com mechas claras caindo sobre o rosto, olhos fechados, visto de cima"
+ },
+ {
+  "name": "Figura escura",
+  "look": "silhueta escura no alto da tira, dona do balão 'comprou o Jio'"
+ },
+ {
+  "name": "Cheong-un",
+  "look": "cabelo escuro bagunçado, sobretudo escuro com botões, moldura dourada; identidade incerta"
+ },
+ {
+  "name": "Bubble",
+  "look": "criatura pálida, redonda e brilhante, rosto simples, cercada de brilhos"
+ },
+ {
+  "name": "Figura fora do quadro",
+  "look": "ombro de sobretudo escuro no alto do quadro, rosto fora da cena; balões sem autor visível"
+ },
+ {
+  "name": "Figura do pensamento",
+  "look": "cabeça escura na base do quadro, balão de pensamento branco"
+ },
+ {
+  "name": "Figura do olho",
+  "look": "olho escuro aberto em close, cílios longos, textura de glitch"
+ },
+ {
+  "name": "Figura do chapéu de apicultor",
+  "look": "chapéu de malha com topo metálico, de pé no gramado, mãos na cintura"
+ },
+ {
+  "name": "Figura do chapéu de aba",
+  "look": "cabelo escuro, chapéu de aba larga com véu branco, pássaro branco na aba"
+ },
+ {
+  "name": "Pássaro branco",
+  "look": "pássaro branco com topete, pousado na aba do chapéu"
+ },
+ {
+  "name": "Pássaro cinza",
+  "look": "pássaro cinzento pequeno, asa erguida, marca de # na cabeça"
+ },
+ {
+  "name": "Figura da árvore",
+  "look": "cabelo escuro, cabeça baixa na base do quadro, sob árvore"
+ },
+ {
+  "name": "Figura do corredor",
+  "look": "silhueta escura de cabelo curto, ao lado da Figura central, andando"
+ },
+ {
+  "name": "Criatura dentuça",
+  "look": "criatura escura de boca aberta com dentes brancos afiados"
+ },
+ {
+  "name": "Figura da cama",
+  "look": "cabelo escuro, roupa escura, sentada na cama de madeira, olhando para baixo"
+ },
+ {
+  "name": "Figura do quadro de costas",
+  "look": "de costas, cabelo escuro, roupa escura, dentro de moldura dourada"
+ },
+ {
+  "name": "Criatura de crânio",
+  "look": "crânio de animal com chifres curvos, manto escuro, folhagens"
+ },
+ {
+  "name": "Argeo",
+  "look": "silhueta de cabelo espetado com tufos, moldura dourada, placa com nome"
+ },
+ {
+  "name": "Silhueta da moldura",
+  "look": "silhueta escura de cabelo preso em rabo, dentro de moldura dourada, visto de costas"
+ },
+ {
+  "name": "Giovanni",
+  "look": "cabelo claro longo e solto, sorriso, mão no peito, manto claro com broche escuro"
+ },
+ {
+  "name": "Figura de manto branco",
+  "look": "cabelo claro longo, manto branco longo, sandálias pretas, em pé na porta"
+ },
+ {
+  "name": "Figura do broche",
+  "look": "sobretudo escuro com botões e broche brilhante no peito, cabelo escuro, em pé"
+ },
+ {
+  "name": "Haera",
+  "look": "presidente da Associação de Caçadores, visto em frente ao prédio da associação"
+ },
+ {
+  "name": "Seo Jio",
+  "look": "ex-professor de arte, protagonista preso no quadro; cabelo escuro, camisa escura"
+ },
+ {
+  "name": "Yu Seong-un",
+  "look": "sobretudo escuro com broche, educado e sorridente, retrato falante"
+ },
+ {
+  "name": "Honey",
+  "look": "(aparência ainda não vista) não foi com Jio na viagem até o hospital."
+ }
+]
