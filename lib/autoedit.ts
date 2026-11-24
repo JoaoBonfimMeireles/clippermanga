@@ -48,6 +48,7 @@ ESCOLHA ("panel": número do quadro na página):
 
 LIMITES DA IMAGEM (obrigatórios: a imagem NUNCA pode ficar cortada nem impossível de ver; valem junto com as regras do app):
 - ENQUADRAMENTO: o recorte mostra a CENA COMPLETA do quadro (personagem inteiro, espada inteira, criatura inteira). NUNCA corte cabeça, corpo ou arma ao meio, nem uma cena pela metade. Quadro que só serviria cortado (a cena continua no quadro vizinho e nenhum dos dois mostra tudo) não entra: escolha outro quadro da página ou junte os quadros vizinhos da mesma cena ("panel" com os dois, quando o formato deixar).
+- NUNCA corte rosto, corpo, espada/arma, poder (aura, magia, raio, explosão), ação nem qualquer elemento significativo da cena: se o recorte não mostra isso por inteiro, escolha o quadro maior que o contém.
 - "close": NÃO use se ele cortar o personagem; só quando o quadro inteiro é muito maior que o rosto e o rosto cabe inteiro.
 - TAMANHO MÍNIMO: a imagem nunca vira uma tirinha fina. Prefira quadros com altura até 1,7 vezes a largura; formato "alto" demais = escolha outro quadro que ilustre a cena.
 - (limite duro) nenhum recorte tem altura maior que 2,4 vezes a largura (formato "muito alto" ou "alto" demais = divida em recortes menores ou escolha outros quadros). Página inteira só quando ela cabe na tela (altura até 2,4 vezes a largura) e é desenho contínuo sem molduras: aí é melhor a página inteira do que um recorte que corta personagem ao meio; tira alta demais nunca vai inteira. Nas tiras altas de webtoon todo recorte é UM quadro (ou um close) com formato que caiba na tela.
@@ -90,6 +91,14 @@ ${NARRATOR_STYLE}
 Responda SOMENTE JSON, com TODAS as páginas recebidas, na ordem:
 {"pages":[{"page":12,"shots":[{"panel":2,"close":false,"kind":"action","fit":"contain","motion":"zoom-in","impact":7,"text":"..."}],"summary":"o que aconteceu nesta página, em uma frase"}]}`;
 
+/** Regras do scroll (faixa alta que rola). Só entram no prompt de projetos novos (project.scrollEdit). */
+export const SCROLL_RULES = `SCROLL (faixa alta rolando): quadro "ALTO" (ou qualquer quadro em pé que mostra o corpo inteiro de alguém, uma queda, uma subida, uma criatura, arma ou poder enorme) pode virar "scroll": a imagem preenche a largura da tela e ROLA em velocidade média, mostrando o quadro inteiro de uma vez só, em vez de vários cortes. Escreva no recorte "scroll":"down" (rola de cima para baixo: queda, descida, revelar o corpo da cabeça aos pés) ou "scroll":"up" (de baixo para cima: subida, aparição, dos pés à cabeça). Varie as direções para ficar dinâmico; pode usar à vontade sempre que o quadro for alto e mostrar corpo, ação ou poder.
+- O scroll usa SÓ o quadro escolhido ("panel"): nunca a página inteira nem vários quadros juntos. O resto (corte, tamanho, velocidade) o app faz.
+- A imagem pode aparecer um pouco antes ou depois da fala que a descreve, sem problema. Balão cortado dentro do scroll não importa: o que vale é a narração.
+- NUNCA corte rosto, corpo, espada, poder ou ação: o quadro escolhido tem que ter tudo isso por inteiro.
+- Narração de um scroll: no máximo 4 frases e cerca de 8 segundos de fala (o app divide em scrolls seguidos se passar disso).
+- Em "scroll", não escreva "motion" nem "fit": o app já define.`;
+
 const MOTIONS: Motion[] = ['zoom-in', 'zoom-out', 'pan', 'static'];
 const KINDS = ['action', 'reaction', 'dialogue', 'scene'] as const;
 
@@ -103,13 +112,51 @@ interface RawShot {
   duration?: number;
   impact?: number;
   text?: string;
+  scroll?: string;
 }
 
 /** Duração pela nota de impacto: 1 → 1,6 s; 5 → 3 s; 10 → 4,8 s. */
 export const durationForImpact = (impact: number) => Math.round((1.25 + Math.min(10, Math.max(1, impact)) * 0.355) * 10) / 10;
 
 /** Valida o que a IA devolveu: descarta recortes inválidos ou minúsculos e limita valores. */
-export function toShots(page: StudioPage, raw: RawShot[], voice: boolean, aspect = 16 / 9): Shot[] {
+/** Trava do scroll: a faixa nunca passa de 3,3x a largura (velocidade ok em 8 s) nem de 65% da página (nunca a página inteira). */
+const SCROLL_MAX_RATIO = 3.3;
+
+/**
+ * Scroll: a faixa alta do quadro rola de cima para baixo ("down") ou de baixo para cima ("up"). Fala com mais de 4 frases ou
+ * 8 s vira scrolls seguidos (cada um com até 4 frases e 8 s). Devolve null se o quadro não é alto o bastante (segue como recorte comum).
+ */
+function scrollShots(page: StudioPage, focus: Shot['focus'], dir: 'down' | 'up', r: RawShot, voice: boolean, aspect: number): Shot[] | null {
+  if (r.rotate) return null;
+  const wpx = (focus.x1 - focus.x0) * page.width;
+  let f = focus;
+  const capPx = Math.min(SCROLL_MAX_RATIO * wpx, 0.65 * page.height);
+  if ((f.y1 - f.y0) * page.height > capPx) f = dir === 'down' ? { ...f, y1: f.y0 + capPx / page.height } : { ...f, y0: f.y1 - capPx / page.height };
+  const hpx = (f.y1 - f.y0) * page.height;
+  if (wpx < 120 || hpx < 120 || hpx / wpx < 1.2) return null;
+  const impact = Math.round(Math.min(10, Math.max(1, Number(r.impact) || 5)));
+  if (impact <= 1) return null;
+  const kind = KINDS.find((k) => k === r.kind) ?? 'scene';
+  const text = (r.text ?? '').toString().trim();
+  const sentences = text.match(/[^.!?…]+[.!?…]*/g)?.filter((x) => x.trim()).length ?? 0;
+  const speech = voice && text ? text.split(/\s+/).length / 2.5 : 0;
+  let n = text ? Math.max(1, Math.ceil(speech / 8), Math.ceil(sentences / 4)) : 1;
+  while (n > 1 && hpx / n / wpx < 0.8) n--; // cada janela continua alta o bastante para rolar na vertical
+  const texts = n > 1 ? splitText(text, n) : [text];
+  const hh = (f.y1 - f.y0) / n;
+  const wins = Array.from({ length: n }, (_, k) => ({ x0: f.x0, x1: f.x1, y0: Math.max(f.y0, f.y0 + k * hh - (k ? hh * 0.04 : 0)), y1: Math.min(f.y1, f.y0 + (k + 1) * hh + (k < n - 1 ? hh * 0.04 : 0)) }));
+  if (dir === 'up') wins.reverse(); // de baixo para cima: lê a faixa de baixo primeiro (o texto segue a ordem em que aparecem)
+  return wins.map((w, k) => {
+    const focusK = cleanRect(w);
+    const ca = wpx / (((focusK.y1 - focusK.y0) * page.height) || 1);
+    const windowsToScroll = Math.max(0, aspect / ca - 1); // quantas telas a faixa percorre
+    const base = voice && texts[k] ? texts[k].split(/\s+/).length / 2.5 : durationForImpact(impact);
+    const duration = Math.round(Math.min(8, Math.max(3, base, 1.6 * windowsToScroll)) * 10) / 10;
+    return { id: randomUUID().slice(0, 8), pageId: page.id, focus: focusK, fit: 'cover' as const, rotate: 0, stretch: 1, zoom: 1, kind, impact, motion: 'pan' as const, scroll: dir, duration, text: texts[k] ?? '' };
+  });
+}
+
+export function toShots(page: StudioPage, raw: RawShot[], voice: boolean, aspect = 16 / 9, scrollOn = false): Shot[] {
   const out: Shot[] = [];
   for (const r of raw.slice(0, 8)) {
     if (!Array.isArray(r.box) || r.box.length !== 4 || !r.box.every((v) => typeof v === 'number' && Number.isFinite(v))) continue;
@@ -120,6 +167,14 @@ export function toShots(page: StudioPage, raw: RawShot[], voice: boolean, aspect
       [x0, x1, y0, y1] = [x0 / sx, x1 / sx, y0 / sy, y1 / sy];
     }
     let focus = cleanRect({ x0, y0, x1, y1 });
+    // scroll (projetos novos): faixa alta que rola, em vez de virar vários cortes
+    if (scrollOn && (r.scroll === 'down' || r.scroll === 'up')) {
+      const sc = scrollShots(page, focus, r.scroll, r, voice, aspect);
+      if (sc) {
+        out.push(...sc);
+        continue;
+      }
+    }
     // quadro alto demais vira tirinha na tela: fica só o topo (onde costuma estar o rosto), com altura até 1,9x a largura
     {
       const w0 = (focus.x1 - focus.x0) * page.width, h0 = (focus.y1 - focus.y0) * page.height;
@@ -265,7 +320,7 @@ export async function keepLegible(img: string, page: StudioPage, shots: Shot[], 
     const ef = effSize({ w: c.w, h: c.h }, { rotate: s.rotate });
     const a = (ef.w * (s.stretch ?? 1)) / ef.h; // proporção do recorte como aparece
     // formato: tira alta fina (altura > 2,5x a largura) ou faixa larga demais (> 4,5) não dá para ler na tela
-    if (a < 1 / MAX_TALL_RATIO || a > 4.5) {
+    if (!s.scroll && (a < 1 / MAX_TALL_RATIO || a > 4.5)) {
       ok.push(false);
       continue;
     }
@@ -343,7 +398,7 @@ export async function legibleOrSplit(img: string, page: StudioPage, shots: Shot[
     const ef = effSize({ w: c.w, h: c.h }, { rotate: s.rotate });
     const ratio = ef.h / ef.w;
     let parts: Shot[] = [s];
-    if (ratio > MAX_TALL_RATIO) parts = ratio > 9 ? [] : await splitTall(img, page, s, voice, aspect);
+    if (!s.scroll && ratio > MAX_TALL_RATIO) parts = ratio > 9 ? [] : await splitTall(img, page, s, voice, aspect);
     const lg = await keepLegible(img, page, parts, aspect);
     const kept = lg.shots;
     const lost = [s.text, ...(s.extra ? [] : [])].filter(Boolean).join(' ');
@@ -360,7 +415,7 @@ export async function legibleOrSplit(img: string, page: StudioPage, shots: Shot[
 }
 
 /** Só a imagem de uma parte (página, recorte, câmera), para mostrar durante a fala de outra. */
-export const viewOf = (s: Shot): ShotView => ({ pageId: s.pageId, focus: s.focus, fit: s.fit, rotate: s.rotate, stretch: s.stretch, zoom: s.zoom, motion: s.motion, bgBand: s.bgBand });
+export const viewOf = (s: Shot): ShotView => ({ pageId: s.pageId, focus: s.focus, fit: s.fit, rotate: s.rotate, stretch: s.stretch, zoom: s.zoom, motion: s.motion, bgBand: s.bgBand, ...(s.scroll ? { scroll: s.scroll } : {}) });
 
 /**
  * Regra fixa: nenhuma parte fica só com imagem, sem fala. Recorte sem "text" vira imagem EXTRA da parte com fala
@@ -429,7 +484,7 @@ function splitText(text: string, n: number): string[] {
  * linhas mais "calmas" (sarjeta, fundo liso) perto das posições ideais. O texto e a duração são repartidos.
  */
 export async function splitTall(img: string, page: StudioPage, shot: Shot, voice: boolean, aspect = 16 / 9): Promise<Shot[]> {
-  if (shot.rotate) return [shot];
+  if (shot.rotate || shot.scroll) return [shot];
   const c = cropPx(shot.focus, page.width, page.height);
   const ratio = c.h / c.w;
   if (ratio < SPLIT_RATIO) return [shot];
@@ -564,10 +619,10 @@ function shape(pg: StudioPage, r: Shot['focus']): string {
 }
 
 /** Leitura de uma página como texto para a edição: acontecimentos, falas, roteiro e quadros numerados. */
-function pageBlock(pg: StudioPage, n: number, total: number, note: PageNote, script?: string): string {
+function pageBlock(pg: StudioPage, n: number, total: number, note: PageNote, script?: string, scrollOn = false): string {
   const panels = note.panels.map(
     (q, k) =>
-      `  ${k + 1}. ${q.what || '(sem descrição)'} [${q.kind}, impacto ${q.impact}, ${shape(pg, q.box)}${q.rotate ? ', desenhado de lado' : ''}${q.focus ? ', close disponível' : ''}${isSmallSource(pg, q.box) ? ', pequeno' : ''}${q.box.y1 - q.box.y0 > maxHeightFrac(q.box, pg) * 1.02 ? ', ALTO: prefira outro quadro; este vira cortes rápidos' : ''}]`,
+      `  ${k + 1}. ${q.what || '(sem descrição)'} [${q.kind}, impacto ${q.impact}, ${shape(pg, q.box)}${q.rotate ? ', desenhado de lado' : ''}${q.focus ? ', close disponível' : ''}${isSmallSource(pg, q.box) ? ', pequeno' : ''}${q.box.y1 - q.box.y0 > maxHeightFrac(q.box, pg) * 1.02 ? (scrollOn ? ', ALTO: bom para "scroll" (rola inteiro, sem cortes)' : ', ALTO: prefira outro quadro; este vira cortes rápidos') : ''}]`,
   );
   return [
     `PÁGINA ${n} (de ${total}, ${pg.chapter})`,
@@ -655,7 +710,7 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
     `Tela do vídeo: ${w}x${h} (${p.format}). Modo de narração: ${voice ? 'voz' : 'texto'}. ` +
     `${capped ? `Orçamento de tempo: o vídeo inteiro tem no máximo ${Math.round(budget / 60)} min para ${pages.length} páginas; cada página tem cerca de ${Math.max(1, Math.round(secPerPage))} s em média. ${budgetHint(secPerPage)}` : 'SEM teto de duração: o tempo de cada página é o que o roteiro pede. Páginas de capítulos importantes (apresentação, origem, poder, explicações) mostram tudo o que o capítulo traz; o que o roteiro não cita fica fora.'} Dê "impact" alto (8-10) só ao que é realmente marcante.
 `;
-  const system = `${EDIT_SYSTEM}\n\n${fixed}`;
+  const system = `${EDIT_SYSTEM}\n\n${p.scrollEdit ? `${SCROLL_RULES}\n\n` : ''}${fixed}`;
   let calls = 0;
   let stop = false;
   // Opus confere os recortes ao passar de 10% e 25% das páginas (e no fim, 100%) e corrige na hora
@@ -724,7 +779,7 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
           system,
           prompt:
             `${coach.prompt()}${p.chapterContexts?.[batch[0].pg.chapter] ? `Resumo do capítulo: ${p.chapterContexts[batch[0].pg.chapter]}\n` : ''}${story ? `História até aqui: ${story.slice(-1200)}\n` : ''}\n` +
-            batch.map(({ pg, n }) => pageBlock(pg, n, pages.length, notes[pg.id], script[pg.id])).join('\n\n'),
+            batch.map(({ pg, n }) => pageBlock(pg, n, pages.length, notes[pg.id], script[pg.id], !!p.scrollEdit)).join('\n\n'),
           maxTokens: (600 + batch.length * 700) * attempt,
           temperature: 0.5,
           tier: 'small', // escolha do usuario: Haiku na edicao; Sonnet so no aprendizado
@@ -756,7 +811,7 @@ export async function autoEdit(projectId: string, ctx: JobCtx): Promise<string> 
           const b = s.close && q.focus ? q.focus : q.box;
           raws.push({ ...s, box: [b.x0, b.y0, b.x1, b.y1], rotate: q.rotate, kind: s.kind ?? q.kind, impact: s.impact ?? q.impact });
         }
-        const shots = toShots(pg, raws, voice, w / h);
+        const shots = toShots(pg, raws, voice, w / h, !!p.scrollEdit);
         const img = path.join(projectDir(p.id), pg.file);
         const ads = adsOf.get(pg.id) ?? [];
         for (const sh of shots) {

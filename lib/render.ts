@@ -8,7 +8,7 @@ import { MANGA_SIZES } from '@clipper/shared';
 import { dataPaths, getAppSettings } from '@clipper/shared/server';
 import { runFfmpeg } from '@clipper/video-processing';
 import { audioDuration, fileHash } from './media';
-import { cropPx, effSize, frameAt, isPan, rotateFilter, bgBandRange } from './camera';
+import { continuityMap, cropPx, effSize, frameAt, isPan, rotateFilter, bgBandRange } from './camera';
 import { projectDir, readProject, updateProject } from './store';
 import { dropSilentShots, hasSpeech } from './speech-only';
 import { needsPanelCrops, wholeTallPageShots } from './crop-guard';
@@ -230,6 +230,8 @@ async function renderProjectInner(projectId: string, ctx: JobCtx, signal: AbortS
   };
   type SegOut = { seg: string; D: number; wordCuts: number; cached: boolean; sp: number } | null;
 
+  // imagem reaproveitada em partes seguidas: o zoom é um movimento só, dividido entre elas (lib/camera.ts)
+  const cont = continuityMap(p.shots);
   const renderShot = async (shot: (typeof p.shots)[number], i: number): Promise<SegOut> => {
     if (signal?.aborted) throw new Error('cancelado');
     const pg = pageById.get(shot.pageId);
@@ -246,7 +248,7 @@ async function renderProjectInner(projectId: string, ctx: JobCtx, signal: AbortS
     const mine = p.narration === 'mic' ? await processedRecording(p.id, shot.id) : null;
     const audioSig = [pre?.file, mine?.file].filter((f): f is string => !!f && fs.existsSync(f)).map(fileHash).join(',') // mesmo sha1 do conteúdo, mas lembrado entre renders;
     const segKey = createHash('sha1')
-      .update(JSON.stringify({ v: 3, ...(isLast ? { endPad } : {}), ...(gains.get(shot.id) ? { gain: gains.get(shot.id) } : {}), W, H, sub: !!p.subtitles, nar: p.narration, voice: p.voice, page: [pg.file, pg.width, pg.height], audioSig, cut: hasCutWord(shot.text, cutWords) ? cutWords : [], s: { ...shot, id: undefined, kind: undefined, impact: undefined, newImage: undefined } }))
+      .update(JSON.stringify({ v: 3, ...(isLast ? { endPad } : {}), ...([...cont].some(([k]) => k.startsWith(`${i}:`)) ? { cont: [...cont].filter(([k]) => k.startsWith(`${i}:`)) } : {}), ...(gains.get(shot.id) ? { gain: gains.get(shot.id) } : {}), W, H, sub: !!p.subtitles, nar: p.narration, voice: p.voice, page: [pg.file, pg.width, pg.height], audioSig, cut: hasCutWord(shot.text, cutWords) ? cutWords : [], s: { ...shot, id: undefined, kind: undefined, impact: undefined, newImage: undefined } }))
       .digest('hex')
       .slice(0, 24);
     const cachedSeg = path.join(segCache, `${segKey}.mp4`);
@@ -261,12 +263,13 @@ async function renderProjectInner(projectId: string, ctx: JobCtx, signal: AbortS
     //    Recorte do foco na resolução original. Parado/zoom leve: tela pronta (recorte + laterais desfocadas)
     //    e a câmera aproxima/afasta sobre ela. Pan: o recorte em tela cheia, percorrido por uma janela.
     const views: ShotView[] = [shot, ...(shot.extra ?? [])];
-    const prepared: { canvas: string; pan: boolean; vpg: StudioPage; v: ShotView; adj: { rotate?: number; stretch?: number; zoom?: number } }[] = [];
+    const prepared: { canvas: string; pan: boolean; vpg: StudioPage; v: ShotView; adj: { rotate?: number; stretch?: number; zoom?: number; reverse?: boolean; span?: [number, number] }; motion: ShotView['motion'] }[] = [];
     for (const [k, v] of views.entries()) {
       const vpg = pageById.get(v.pageId) ?? pg;
       const vimg = path.join(projectDir(p.id), vpg.file);
       const c = cropPx(v.focus, vpg.width, vpg.height);
-      const adj = { rotate: v.rotate, stretch: v.stretch, zoom: v.zoom };
+      const ct = cont.get(`${i}:${k}`);
+      const adj = { rotate: v.rotate, stretch: v.stretch, zoom: v.zoom, reverse: v.scroll === 'up', ...(ct ? { span: ct.span } : {}) };
       const ef = effSize(c, adj);
       // recorte → girar (0/90/180/270)
       const crop = `crop=${c.w}:${c.h}:${c.x}:${c.y}${rotateFilter(adj)}`;
@@ -286,7 +289,7 @@ async function renderProjectInner(projectId: string, ctx: JobCtx, signal: AbortS
         const ox = Math.round(box.x * CW), oy = Math.round(box.y * CH);
         await runFfmpeg(['-i', vimg, '-filter_complex', `[0:v]${crop},split[a][b];[a]${bgCrop}scale=${CW}:${CH}:force_original_aspect_ratio=increase,crop=${CW}:${CH},boxblur=30:3,eq=brightness=-0.15[bg];[b]scale=${fw}:${fh}:flags=lanczos[fg];[bg][fg]overlay=${ox}:${oy}`, '-frames:v', '1', '-q:v', '2', canvas], { signal });
       }
-      prepared.push({ canvas, pan, vpg, v, adj });
+      prepared.push({ canvas, pan, vpg, v, adj, motion: ct?.motion ?? v.motion });
     }
 
     // 2) Áudio: fala (modo voz) ou silêncio
@@ -354,17 +357,20 @@ async function renderProjectInner(projectId: string, ctx: JobCtx, signal: AbortS
 
     // 3) Câmera, com a mesma suavização da prévia (lib/camera.ts); com várias imagens, o tempo é dividido entre elas
     const Dk = D / prepared.length;
-    const camOf = ({ pan, vpg, v, adj }: (typeof prepared)[number]) => {
+    const camOf = ({ pan, vpg, v, adj, motion }: (typeof prepared)[number]) => {
       const N = Math.max(2, Math.round(Dk * FPS));
       const e = `(min(on/${N - 1},1)*min(on/${N - 1},1)*(3-2*min(on/${N - 1},1)))`;
       if (pan) {
         // janela do tamanho da tela andando pelo recorte; "t" do crop é o tempo desta imagem
-        const et = `(min(t/${Dk.toFixed(3)},1)*min(t/${Dk.toFixed(3)},1)*(3-2*min(t/${Dk.toFixed(3)},1)))`;
+        const u = `min(t/${Dk.toFixed(3)},1)`;
+        const et0 = `(0.6*${u}+0.4*${u}*${u}*(3-2*${u}))`; // igual a panK() de lib/camera.ts
+        const et = adj.reverse ? `(1-${et0})` : et0;
         return `crop=w='min(iw,ih*${W}/${H})':h='min(ih,iw*${H}/${W})':x='(iw-ow)*${et}':y='(ih-oh)*${et}',scale=${W}:${H}:flags=lanczos,fps=${FPS}`;
       }
-      const a = frameAt(v.focus, v.motion, v.fit, vpg.width, vpg.height, W / H, 0, adj).cam;
-      const b = frameAt(v.focus, v.motion, v.fit, vpg.width, vpg.height, W / H, 1, adj).cam;
-      const lerp = (u: number, w: number) => `(${u.toFixed(5)}+${(w - u).toFixed(5)}*${e})`;
+      const a = frameAt(v.focus, motion, v.fit, vpg.width, vpg.height, W / H, 0, adj).cam;
+      const b = frameAt(v.focus, motion, v.fit, vpg.width, vpg.height, W / H, 1, adj).cam;
+      // imagem reaproveitada: a suavização já está no movimento todo (frameAt com span), então dentro da fatia a passagem é linear
+      const lerp = (u: number, w: number) => `(${u.toFixed(5)}+${(w - u).toFixed(5)}*${adj.span ? `min(on/${N - 1},1)` : e})`;
       return `zoompan=z='1/${lerp(a.w, b.w)}':x='${lerp(a.x, b.x)}*iw':y='${lerp(a.y, b.y)}*ih':d=1:s=${W}x${H}:fps=${FPS}`;
     };
     let vf = prepared.map((x, k) => `[${k}:v]${camOf(x)},format=yuv420p,setsar=1[p${k}]`).join(';') + `;${prepared.map((_, k) => `[p${k}]`).join('')}concat=n=${prepared.length}:v=1:a=0`;

@@ -1152,7 +1152,7 @@ export function VideoEditor({ id }: { id: string }) {
                 </div>
                 <div className="flex flex-wrap gap-1">
                   {(['contain', 'cover'] as const).map((f) => (
-                    <button key={f} className={`btn px-2 py-0.5 text-xs ${(shot.fit ?? 'contain') === f ? 'border-primary' : ''}`} onClick={() => patch({ fit: f })}>
+                    <button key={f} className={`btn px-2 py-0.5 text-xs ${(shot.fit ?? 'contain') === f ? 'border-primary' : ''}`} onClick={() => patch(f === 'contain' ? { fit: f, scroll: undefined } : { fit: f })}>
                       {f === 'contain' ? 'Encaixar' : 'Tela cheia'}
                     </button>
                   ))}
@@ -1163,12 +1163,25 @@ export function VideoEditor({ id }: { id: string }) {
                     Página inteira
                   </button>
                 </div>
-                <select className="field py-1 text-xs" value={shot.motion} onChange={(e) => patch({ motion: e.target.value as Shot['motion'] })}>
+                <select className="field py-1 text-xs" value={shot.motion} onChange={(e) => patch({ motion: e.target.value as Shot['motion'], ...(e.target.value !== 'pan' ? { scroll: undefined } : {}) })}>
                   {Object.entries(MOTIONS).map(([k, v]) => (
                     <option key={k} value={k}>
                       Movimento: {v}
                     </option>
                   ))}
+                </select>
+                <select
+                  className="field py-1 text-xs"
+                  value={shot.scroll ?? ''}
+                  title="Scroll: a faixa alta do recorte rola pela tela durante a fala (preenche a largura). Escolha o recorte alto antes. A velocidade é a duração da parte: quanto maior, mais devagar rola."
+                  onChange={(e) => {
+                    const v = e.target.value as '' | 'down' | 'up';
+                    patch(v ? { scroll: v, fit: 'cover', motion: 'pan', stretch: 1, zoom: 1, rotate: 0 } : { scroll: undefined, fit: 'contain', motion: 'zoom-in' });
+                  }}
+                >
+                  <option value="">Scroll: desligado</option>
+                  <option value="down">Scroll: de cima para baixo ↓</option>
+                  <option value="up">Scroll: de baixo para cima ↑</option>
                 </select>
                 <select className="field py-1 text-xs" value={shot.bgBand ?? 'top'} onChange={(e) => patch({ bgBand: e.target.value as Shot['bgBand'] })}>
                   <option value="top">Fundo desfocado: topo do recorte</option>

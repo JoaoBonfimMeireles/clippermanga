@@ -79,7 +79,7 @@ export function Preview({ projectId, format, shots, pages, selected, onSelect, s
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selected]);
 
-  const frame = shot && pg ? frameAt(shot.focus, shot.motion, shot.fit, pg.width, pg.height, W / H, shot.duration ? (externalTime ?? time) / shot.duration : 0, { rotate: shot.rotate, stretch: shot.stretch, zoom: shot.zoom }) : null;
+  const frame = shot && pg ? frameAt(shot.focus, shot.motion, shot.fit, pg.width, pg.height, W / H, shot.duration ? (externalTime ?? time) / shot.duration : 0, { rotate: shot.rotate, stretch: shot.stretch, zoom: shot.zoom, reverse: shot.scroll === 'up' }) : null;
   const cam = frame?.cam;
   const band = bgBandRange(shot?.bgBand);
   const r = shot ? cleanRect(shot.focus) : null;

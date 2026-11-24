@@ -101,7 +101,7 @@ export async function checkShots(projectId: string, ctx: JobCtx, range?: { from?
   const ids: string[] = [];
   updateProject(projectId, (cur) => {
     for (const [i, s] of cur.shots.entries()) {
-      if (i + 1 < from || i + 1 > to || s.newImage || !pageOf.has(s.pageId) || locked.has(s.pageId)) continue;
+      if (i + 1 < from || i + 1 > to || s.newImage || s.scroll || !pageOf.has(s.pageId) || locked.has(s.pageId)) continue;
       if ((s.fit ?? 'contain') === 'contain' && ((s.zoom ?? 1) > 1 || (s.stretch ?? 1) > 1)) {
         s.zoom = 1;
         s.stretch = 1;

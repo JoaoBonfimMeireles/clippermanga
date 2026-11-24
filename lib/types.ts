@@ -23,6 +23,8 @@ export interface Shot {
   motion: Motion;
   /** contain = quadro inteiro com laterais desfocadas; cover = tela cheia (ação). Padrão: contain. */
   fit?: 'contain' | 'cover';
+  /** Scroll: faixa alta percorrida de cima para baixo (down) ou de baixo para cima (up) durante a fala. Sempre com motion 'pan' e fit 'cover' (lib/autoedit.ts, lib/camera.ts). */
+  scroll?: 'down' | 'up';
   /** Gira o recorte, sentido horário: 0, 90, 180 ou 270. */
   rotate?: number;
   /** Estica na horizontal (1 = original). A IA usa até 1.35; à mão, o quanto quiser. */
@@ -49,7 +51,7 @@ export interface Shot {
 }
 
 /** Uma imagem na tela: página, recorte e câmera (sem fala). */
-export type ShotView = Pick<Shot, 'pageId' | 'focus' | 'fit' | 'rotate' | 'stretch' | 'zoom' | 'motion' | 'bgBand'>;
+export type ShotView = Pick<Shot, 'pageId' | 'focus' | 'fit' | 'rotate' | 'stretch' | 'zoom' | 'motion' | 'bgBand' | 'scroll'>;
 
 export interface Doubt {
   id: string;
@@ -146,6 +148,8 @@ export interface StudioProject {
   testSummary?: string;
   /** Parte em que o encerramento ("não percam os próximos capítulos") já foi retirado ao continuar a história. */
   outroTrimmedFor?: string;
+  /** Projeto criado com o scroll de faixas altas ligado (só projetos novos; os antigos seguem como estavam). */
+  scrollEdit?: boolean;
   /** Modo automático (roteiro → edição → validação → render): fica salvo no projeto e é o SERVIDOR que emenda os passos (lib/jobs.ts), então vale mesmo com a tela fechada ou recarregada. */
   auto?: boolean;
   /** Quantos capítulos baixados entram nos processos (roteiro, edição, validação, render), em ordem de capítulo. Vazio = todos. Os demais ficam estacionados (`parked`) e voltam ao aumentar o número ou na próxima parte (lib/chapter-limit.ts). */

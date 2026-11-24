@@ -2,12 +2,12 @@
   "edicao": {
     "kinds": {
       "cortado": {
-        "hits": 26,
-        "at": 1795204628454
+        "hits": 28,
+        "at": 1795210499882
       },
       "vazio": {
         "hits": 2,
-        "at": 1795204628454
+        "at": 1795210499882
       }
     },
     "works": {
@@ -17,7 +17,7 @@
       },
       "": {
         "lessons": [],
-        "at": 1795204628454
+        "at": 1795210499882
       },
       "Kidnapped Dragons": {
         "lessons": [],
@@ -34,16 +34,16 @@
     },
     "global": {
       "lessons": [
-        "Não termine o recorte no meio de um balão ou texto; estenda até incluir a frase inteira.",
-        "Se os rostos aparecem só até os olhos na borda, estenda o recorte até mostrar a cabeça inteira.",
-        "Nunca termine o recorte no meio de um balão de fala; inclua o balão inteiro ou corte antes dele.",
         "Evite recortes em que os personagens aparecem só como topo de cabeça na borda inferior; desça até mostrar os rostos.",
         "Evite quadros que são quase só balões de fala ou texto sobre fundo liso; escolha o quadro com o personagem ou a ação da narração.",
         "Garanta que o rosto inteiro (testa ao queixo) e os balões fiquem dentro do recorte, sem cortar na borda.",
         "Avoid crops that join the end of one panel with the start of the next across the gutter; pick a single complete panel.",
-        "Make sure every speech balloon at the edge of the crop is fully visible; if it is cut, extend the crop to include the whole balloon."
+        "Make sure every speech balloon at the edge of the crop is fully visible; if it is cut, extend the crop to include the whole balloon.",
+        "Quando o rosto ou um balão de fala encosta na borda de baixo do quadro, inclua o quadro seguinte ou estenda o recorte até o rosto e o balão aparecerem inteiros.",
+        "Em quadros de ataque, inclua a cabeça inteira do monstro ou do atacante, não só as garras ou a arma.",
+        "Ao recortar personagens de corpo inteiro em páginas altas, inclua a cabeça; evite quadros que mostram só o tronco e as pernas."
       ],
-      "at": 1795204628454
+      "at": 1795210499882
     }
   },
   "roteiro": {

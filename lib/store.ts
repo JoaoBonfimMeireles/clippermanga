@@ -173,7 +173,7 @@ export function updateProject(id: string, fn: (p: StudioProject) => void): Studi
 
 export function createProject(title: string): StudioProject {
   const ts = new Date().toISOString();
-  return writeProject({ id: randomUUID(), title, context: '', format: 'horizontal', narration: 'voice', pages: [], shots: [], lastRender: null, createdAt: ts, updatedAt: ts });
+  return writeProject({ id: randomUUID(), title, context: '', format: 'horizontal', narration: 'voice', scrollEdit: true, pages: [], shots: [], lastRender: null, createdAt: ts, updatedAt: ts });
 }
 
 export function deleteProject(id: string): void {

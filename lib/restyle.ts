@@ -53,7 +53,7 @@ export async function tidyGroups(projectId: string, from: number, to: number, ct
   const groups: number[][] = [];
   for (let i = from - 1; i < to; i++) {
     const s = p.shots[i], prev = p.shots[i - 1], g = groups[groups.length - 1];
-    if (g && i > from - 1 && prev && prev.pageId === s.pageId && !s.newImage && !prev.newImage && overlap(prev.focus, s.focus) > 0.75 && Math.abs(prev.focus.x0 - s.focus.x0) < 0.05 && Math.abs(prev.focus.x1 - s.focus.x1) < 0.05) g.push(i);
+    if (g && i > from - 1 && prev && prev.pageId === s.pageId && !s.scroll && !prev.scroll && !s.newImage && !prev.newImage && overlap(prev.focus, s.focus) > 0.75 && Math.abs(prev.focus.x0 - s.focus.x0) < 0.05 && Math.abs(prev.focus.x1 - s.focus.x1) < 0.05) g.push(i);
     else groups.push([i]);
   }
   const fixes = new Map<number, Rect>();
@@ -95,7 +95,7 @@ export async function restyleProject(projectId: string, ctx: JobCtx, opts: { tid
   const runs: { pageId: string; idx: number[] }[] = [];
   for (let i = from - 1; i < to; i++) {
     const s = p0.shots[i];
-    if (locked.has(s.pageId)) continue; // capítulos prontos ficam como estão
+    if (locked.has(s.pageId) || s.scroll) continue; // capítulos prontos e scrolls ficam como estão
     if (p0.narration !== 'mic' && !s.text.trim()) continue; // sem fala não entra no vídeo: sem IA e sem dúvida no modal
     const last = runs[runs.length - 1];
     if (last && last.pageId === s.pageId && last.idx[last.idx.length - 1] === i - 1) last.idx.push(i);

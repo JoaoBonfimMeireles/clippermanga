@@ -45,14 +45,14 @@
     "voice": "fish-animado-dark",
     "name": "Animado Dark",
     "provider": "fishaudio",
-    "requests": 30283,
-    "ok": 30260,
-    "fail": 23,
+    "requests": 36164,
+    "ok": 36111,
+    "fail": 53,
     "quotaHits": 0,
-    "chars": 3439095,
-    "audioSec": 173536.81304732518,
-    "ms": 115668233,
-    "lastAt": "2026-11-20T20:05:37.257Z",
+    "chars": 4040787,
+    "audioSec": 203341.8317348199,
+    "ms": 137900043,
+    "lastAt": "2026-11-21T20:56:33.222Z",
     "days": {
       "2026-11-05": {
         "requests": 661,
@@ -139,13 +139,19 @@
         "fail": 2
       },
       "2026-11-20": {
-        "requests": 2235,
-        "chars": 216336,
-        "audioSec": 10823.25937499999,
+        "requests": 3935,
+        "chars": 393689,
+        "audioSec": 19588.325958333364,
         "fail": 2
+      },
+      "2026-11-21": {
+        "requests": 4181,
+        "chars": 424339,
+        "audioSec": 21039.95210416664,
+        "fail": 30
       }
     },
-    "lastError": "terminated"
+    "lastError": "fetch failed"
   },
   "eleven-will": {
     "voice": "eleven-will",
